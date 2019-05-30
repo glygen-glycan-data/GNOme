@@ -17,3 +17,7 @@ http://purl.obolibrary.org/obo/gno.owl
 ## Contact
 
 Please use this GitHub repository's [Issue tracker](https://github.com/glygen-glycan-data/GNOme/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
+
+
+## Graphical Navigation
+[Try me!](https://hendricks27.github.io/presentation/cbtn/tn_demo.html)
