@@ -20,4 +20,4 @@ Please use this GitHub repository's [Issue tracker](https://github.com/glygen-gl
 
 
 ## Graphical Navigation
-[Try me!](https://hendricks27.github.io/presentation/cbtn/demo.html)
+[Try me!](https://raw.githubusercontent.com/Hendricks27/GNOme/master/GNOme.browser.html)
