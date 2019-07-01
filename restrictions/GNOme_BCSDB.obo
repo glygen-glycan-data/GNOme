@@ -46,8 +46,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10000262
-name: glycan of molecular weight 162.1 Da.
-def: "A glycan characterized by underivitized molecular weight of 162.1 Daltons" []
+name: glycan of molecular weight 162.10 Da.
+def: "A glycan characterized by underivitized molecular weight of 162.10 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -67,8 +67,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10000344
-name: glycan of molecular weight 177.1 Da.
-def: "A glycan characterized by underivitized molecular weight of 177.1 Daltons" []
+name: glycan of molecular weight 177.10 Da.
+def: "A glycan characterized by underivitized molecular weight of 177.10 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -81,8 +81,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10000352
-name: glycan of molecular weight 178.1 Da.
-def: "A glycan characterized by underivitized molecular weight of 178.1 Daltons" []
+name: glycan of molecular weight 178.10 Da.
+def: "A glycan characterized by underivitized molecular weight of 178.10 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -109,8 +109,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10000419
-name: glycan of molecular weight 192.1 Da.
-def: "A glycan characterized by underivitized molecular weight of 192.1 Daltons" []
+name: glycan of molecular weight 192.10 Da.
+def: "A glycan characterized by underivitized molecular weight of 192.10 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -130,8 +130,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10000490
-name: glycan of molecular weight 205.1 Da.
-def: "A glycan characterized by underivitized molecular weight of 205.1 Daltons" []
+name: glycan of molecular weight 205.10 Da.
+def: "A glycan characterized by underivitized molecular weight of 205.10 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -200,8 +200,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10000726
-name: glycan of molecular weight 246.1 Da.
-def: "A glycan characterized by underivitized molecular weight of 246.1 Daltons" []
+name: glycan of molecular weight 246.10 Da.
+def: "A glycan characterized by underivitized molecular weight of 246.10 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -277,8 +277,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10000974
-name: glycan of molecular weight 282.1 Da.
-def: "A glycan characterized by underivitized molecular weight of 282.1 Daltons" []
+name: glycan of molecular weight 282.10 Da.
+def: "A glycan characterized by underivitized molecular weight of 282.10 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -438,8 +438,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10001422
-name: glycan of molecular weight 340.1 Da.
-def: "A glycan characterized by underivitized molecular weight of 340.1 Daltons" []
+name: glycan of molecular weight 340.10 Da.
+def: "A glycan characterized by underivitized molecular weight of 340.10 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -515,8 +515,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10001553
-name: glycan of molecular weight 356.1 Da.
-def: "A glycan characterized by underivitized molecular weight of 356.1 Daltons" []
+name: glycan of molecular weight 356.10 Da.
+def: "A glycan characterized by underivitized molecular weight of 356.10 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -606,8 +606,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10001719
-name: glycan of molecular weight 380.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 380.2 Daltons" []
+name: glycan of molecular weight 380.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 380.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -711,8 +711,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10001962
-name: glycan of molecular weight 414.1 Da.
-def: "A glycan characterized by underivitized molecular weight of 414.1 Daltons" []
+name: glycan of molecular weight 414.10 Da.
+def: "A glycan characterized by underivitized molecular weight of 414.10 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -886,8 +886,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10002228
-name: glycan of molecular weight 449.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 449.2 Daltons" []
+name: glycan of molecular weight 449.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 449.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -963,8 +963,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10002385
-name: glycan of molecular weight 470.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 470.2 Daltons" []
+name: glycan of molecular weight 470.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 470.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -1278,8 +1278,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10002795
-name: glycan of molecular weight 529.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 529.2 Daltons" []
+name: glycan of molecular weight 529.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 529.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -1348,8 +1348,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10002879
-name: glycan of molecular weight 545.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 545.2 Daltons" []
+name: glycan of molecular weight 545.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 545.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -1383,8 +1383,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10002895
-name: glycan of molecular weight 548.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 548.2 Daltons" []
+name: glycan of molecular weight 548.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 548.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -1432,8 +1432,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10002955
-name: glycan of molecular weight 560.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 560.2 Daltons" []
+name: glycan of molecular weight 560.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 560.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -1579,8 +1579,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10003106
-name: glycan of molecular weight 591.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 591.2 Daltons" []
+name: glycan of molecular weight 591.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 591.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -1607,8 +1607,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10003125
-name: glycan of molecular weight 594.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 594.2 Daltons" []
+name: glycan of molecular weight 594.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 594.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -1649,8 +1649,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10003157
-name: glycan of molecular weight 600.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 600.2 Daltons" []
+name: glycan of molecular weight 600.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 600.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -1691,8 +1691,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10003185
-name: glycan of molecular weight 606.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 606.2 Daltons" []
+name: glycan of molecular weight 606.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 606.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -1782,8 +1782,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10003253
-name: glycan of molecular weight 622.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 622.2 Daltons" []
+name: glycan of molecular weight 622.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 622.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -2244,8 +2244,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10003536
-name: glycan of molecular weight 680.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 680.2 Daltons" []
+name: glycan of molecular weight 680.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 680.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -2335,8 +2335,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10003626
-name: glycan of molecular weight 704.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 704.2 Daltons" []
+name: glycan of molecular weight 704.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 704.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -2377,8 +2377,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10003645
-name: glycan of molecular weight 708.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 708.2 Daltons" []
+name: glycan of molecular weight 708.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 708.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -2489,8 +2489,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10003732
-name: glycan of molecular weight 724.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 724.3 Daltons" []
+name: glycan of molecular weight 724.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 724.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -2517,8 +2517,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10003765
-name: glycan of molecular weight 731.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 731.3 Daltons" []
+name: glycan of molecular weight 731.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 731.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -2650,8 +2650,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10003900
-name: glycan of molecular weight 757.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 757.4 Daltons" []
+name: glycan of molecular weight 757.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 757.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -2685,8 +2685,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10003936
-name: glycan of molecular weight 764.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 764.3 Daltons" []
+name: glycan of molecular weight 764.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 764.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -2734,8 +2734,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10003975
-name: glycan of molecular weight 773.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 773.2 Daltons" []
+name: glycan of molecular weight 773.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 773.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -2923,8 +2923,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004189
-name: glycan of molecular weight 811.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 811.3 Daltons" []
+name: glycan of molecular weight 811.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 811.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -2951,8 +2951,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004204
-name: glycan of molecular weight 814.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 814.3 Daltons" []
+name: glycan of molecular weight 814.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 814.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -2972,8 +2972,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004228
-name: glycan of molecular weight 820.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 820.3 Daltons" []
+name: glycan of molecular weight 820.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 820.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -2993,8 +2993,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004239
-name: glycan of molecular weight 823.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 823.3 Daltons" []
+name: glycan of molecular weight 823.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 823.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -3049,8 +3049,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004286
-name: glycan of molecular weight 834.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 834.2 Daltons" []
+name: glycan of molecular weight 834.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 834.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -3189,8 +3189,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004430
-name: glycan of molecular weight 869.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 869.3 Daltons" []
+name: glycan of molecular weight 869.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 869.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -3224,8 +3224,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004442
-name: glycan of molecular weight 872.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 872.3 Daltons" []
+name: glycan of molecular weight 872.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 872.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -3238,8 +3238,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004449
-name: glycan of molecular weight 875.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 875.3 Daltons" []
+name: glycan of molecular weight 875.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 875.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -3294,8 +3294,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004491
-name: glycan of molecular weight 885.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 885.3 Daltons" []
+name: glycan of molecular weight 885.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 885.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -3315,8 +3315,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004504
-name: glycan of molecular weight 891.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 891.3 Daltons" []
+name: glycan of molecular weight 891.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 891.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -3588,8 +3588,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004669
-name: glycan of molecular weight 940.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 940.2 Daltons" []
+name: glycan of molecular weight 940.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 940.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -3630,8 +3630,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004680
-name: glycan of molecular weight 943.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 943.2 Daltons" []
+name: glycan of molecular weight 943.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 943.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -3721,8 +3721,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004741
-name: glycan of molecular weight 959.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 959.3 Daltons" []
+name: glycan of molecular weight 959.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 959.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -3777,8 +3777,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004771
-name: glycan of molecular weight 971.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 971.3 Daltons" []
+name: glycan of molecular weight 971.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 971.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -3833,8 +3833,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004792
-name: glycan of molecular weight 976.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 976.4 Daltons" []
+name: glycan of molecular weight 976.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 976.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -3931,8 +3931,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004839
-name: glycan of molecular weight 991.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 991.4 Daltons" []
+name: glycan of molecular weight 991.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 991.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -4029,8 +4029,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004897
-name: glycan of molecular weight 1008.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1008.4 Daltons" []
+name: glycan of molecular weight 1008.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1008.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -4057,8 +4057,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004925
-name: glycan of molecular weight 1015.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1015.4 Daltons" []
+name: glycan of molecular weight 1015.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1015.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -4071,8 +4071,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10004939
-name: glycan of molecular weight 1020.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 1020.3 Daltons" []
+name: glycan of molecular weight 1020.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 1020.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -4295,8 +4295,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005058
-name: glycan of molecular weight 1058.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1058.4 Daltons" []
+name: glycan of molecular weight 1058.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1058.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -4372,8 +4372,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005107
-name: glycan of molecular weight 1074.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 1074.2 Daltons" []
+name: glycan of molecular weight 1074.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 1074.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -4386,8 +4386,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005113
-name: glycan of molecular weight 1074.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1074.4 Daltons" []
+name: glycan of molecular weight 1074.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1074.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -4484,8 +4484,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005152
-name: glycan of molecular weight 1088.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1088.4 Daltons" []
+name: glycan of molecular weight 1088.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1088.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -4568,8 +4568,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005228
-name: glycan of molecular weight 1116.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 1116.3 Daltons" []
+name: glycan of molecular weight 1116.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 1116.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -4666,8 +4666,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005303
-name: glycan of molecular weight 1148.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1148.4 Daltons" []
+name: glycan of molecular weight 1148.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1148.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -4736,8 +4736,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005333
-name: glycan of molecular weight 1160.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1160.4 Daltons" []
+name: glycan of molecular weight 1160.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1160.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -4813,8 +4813,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005390
-name: glycan of molecular weight 1183.1 Da.
-def: "A glycan characterized by underivitized molecular weight of 1183.1 Daltons" []
+name: glycan of molecular weight 1183.10 Da.
+def: "A glycan characterized by underivitized molecular weight of 1183.10 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -4939,8 +4939,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005462
-name: glycan of molecular weight 1209.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 1209.3 Daltons" []
+name: glycan of molecular weight 1209.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 1209.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -5009,8 +5009,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005506
-name: glycan of molecular weight 1228.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1228.4 Daltons" []
+name: glycan of molecular weight 1228.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1228.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -5065,8 +5065,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005535
-name: glycan of molecular weight 1237.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1237.4 Daltons" []
+name: glycan of molecular weight 1237.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1237.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -5079,8 +5079,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005540
-name: glycan of molecular weight 1240.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1240.4 Daltons" []
+name: glycan of molecular weight 1240.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1240.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -5184,8 +5184,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005588
-name: glycan of molecular weight 1261.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1261.4 Daltons" []
+name: glycan of molecular weight 1261.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1261.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -5261,8 +5261,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005630
-name: glycan of molecular weight 1277.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1277.5 Daltons" []
+name: glycan of molecular weight 1277.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1277.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -5317,8 +5317,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005659
-name: glycan of molecular weight 1292.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1292.5 Daltons" []
+name: glycan of molecular weight 1292.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1292.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -5366,15 +5366,15 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005682
-name: glycan of molecular weight 1302.3 Da.
-def: "A glycan characterized by underivitized molecular weight of 1302.3 Daltons" []
+name: glycan of molecular weight 1302.30 Da.
+def: "A glycan characterized by underivitized molecular weight of 1302.30 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005683
-name: glycan of molecular weight 1302.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1302.4 Daltons" []
+name: glycan of molecular weight 1302.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1302.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -5597,8 +5597,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005835
-name: glycan of molecular weight 1364.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1364.5 Daltons" []
+name: glycan of molecular weight 1364.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1364.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -5632,8 +5632,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005854
-name: glycan of molecular weight 1371.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1371.5 Daltons" []
+name: glycan of molecular weight 1371.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1371.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -5653,8 +5653,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005872
-name: glycan of molecular weight 1379.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1379.4 Daltons" []
+name: glycan of molecular weight 1379.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1379.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -5716,8 +5716,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005917
-name: glycan of molecular weight 1398.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1398.4 Daltons" []
+name: glycan of molecular weight 1398.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1398.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -5751,8 +5751,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10005932
-name: glycan of molecular weight 1404.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1404.4 Daltons" []
+name: glycan of molecular weight 1404.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1404.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -5919,8 +5919,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006003
-name: glycan of molecular weight 1428.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1428.5 Daltons" []
+name: glycan of molecular weight 1428.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1428.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -5968,8 +5968,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006031
-name: glycan of molecular weight 1440.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1440.4 Daltons" []
+name: glycan of molecular weight 1440.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1440.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -5989,8 +5989,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006045
-name: glycan of molecular weight 1446.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 1446.2 Daltons" []
+name: glycan of molecular weight 1446.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 1446.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -6031,8 +6031,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006064
-name: glycan of molecular weight 1453.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1453.4 Daltons" []
+name: glycan of molecular weight 1453.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1453.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -6206,8 +6206,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006144
-name: glycan of molecular weight 1481.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1481.5 Daltons" []
+name: glycan of molecular weight 1481.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1481.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -6311,8 +6311,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006199
-name: glycan of molecular weight 1503.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1503.5 Daltons" []
+name: glycan of molecular weight 1503.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1503.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -6479,8 +6479,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006277
-name: glycan of molecular weight 1533.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1533.4 Daltons" []
+name: glycan of molecular weight 1533.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1533.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -6507,8 +6507,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006285
-name: glycan of molecular weight 1534.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1534.5 Daltons" []
+name: glycan of molecular weight 1534.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1534.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -6542,8 +6542,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006324
-name: glycan of molecular weight 1552.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1552.5 Daltons" []
+name: glycan of molecular weight 1552.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1552.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -6556,8 +6556,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006343
-name: glycan of molecular weight 1561.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1561.5 Daltons" []
+name: glycan of molecular weight 1561.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1561.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -6570,8 +6570,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006348
-name: glycan of molecular weight 1564.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1564.5 Daltons" []
+name: glycan of molecular weight 1564.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1564.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -6612,8 +6612,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006381
-name: glycan of molecular weight 1577.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1577.5 Daltons" []
+name: glycan of molecular weight 1577.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1577.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -6836,8 +6836,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006494
-name: glycan of molecular weight 1623.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1623.4 Daltons" []
+name: glycan of molecular weight 1623.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1623.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -6850,8 +6850,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006506
-name: glycan of molecular weight 1626.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1626.4 Daltons" []
+name: glycan of molecular weight 1626.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1626.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -6934,8 +6934,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006568
-name: glycan of molecular weight 1654.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1654.5 Daltons" []
+name: glycan of molecular weight 1654.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1654.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -7214,8 +7214,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006745
-name: glycan of molecular weight 1727.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1727.4 Daltons" []
+name: glycan of molecular weight 1727.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1727.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -7249,8 +7249,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006759
-name: glycan of molecular weight 1732.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1732.5 Daltons" []
+name: glycan of molecular weight 1732.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1732.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -7305,22 +7305,22 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006789
-name: glycan of molecular weight 1746.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 1746.6 Daltons" []
+name: glycan of molecular weight 1746.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 1746.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006792
-name: glycan of molecular weight 1747.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1747.5 Daltons" []
+name: glycan of molecular weight 1747.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1747.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006793
-name: glycan of molecular weight 1747.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 1747.6 Daltons" []
+name: glycan of molecular weight 1747.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 1747.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -7368,8 +7368,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006818
-name: glycan of molecular weight 1756.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1756.5 Daltons" []
+name: glycan of molecular weight 1756.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1756.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -7494,8 +7494,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006882
-name: glycan of molecular weight 1784.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 1784.6 Daltons" []
+name: glycan of molecular weight 1784.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 1784.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -7697,8 +7697,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10006984
-name: glycan of molecular weight 1827.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1827.5 Daltons" []
+name: glycan of molecular weight 1827.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1827.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -7823,8 +7823,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007045
-name: glycan of molecular weight 1852.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 1852.6 Daltons" []
+name: glycan of molecular weight 1852.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 1852.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -7865,8 +7865,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007062
-name: glycan of molecular weight 1858.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 1858.6 Daltons" []
+name: glycan of molecular weight 1858.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 1858.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -7893,8 +7893,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007078
-name: glycan of molecular weight 1866.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 1866.6 Daltons" []
+name: glycan of molecular weight 1866.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 1866.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -8187,8 +8187,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007206
-name: glycan of molecular weight 1914.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 1914.6 Daltons" []
+name: glycan of molecular weight 1914.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 1914.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -8208,8 +8208,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007217
-name: glycan of molecular weight 1917.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 1917.5 Daltons" []
+name: glycan of molecular weight 1917.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 1917.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -8229,8 +8229,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007224
-name: glycan of molecular weight 1918.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 1918.7 Daltons" []
+name: glycan of molecular weight 1918.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 1918.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -8418,8 +8418,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007305
-name: glycan of molecular weight 1951.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 1951.6 Daltons" []
+name: glycan of molecular weight 1951.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 1951.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -8432,8 +8432,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007307
-name: glycan of molecular weight 1951.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 1951.7 Daltons" []
+name: glycan of molecular weight 1951.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 1951.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -8453,8 +8453,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007317
-name: glycan of molecular weight 1955.4 Da.
-def: "A glycan characterized by underivitized molecular weight of 1955.4 Daltons" []
+name: glycan of molecular weight 1955.40 Da.
+def: "A glycan characterized by underivitized molecular weight of 1955.40 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -8551,8 +8551,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007362
-name: glycan of molecular weight 1974.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 1974.7 Daltons" []
+name: glycan of molecular weight 1974.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 1974.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -8572,8 +8572,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007369
-name: glycan of molecular weight 1979.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 1979.6 Daltons" []
+name: glycan of molecular weight 1979.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 1979.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -8712,8 +8712,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007460
-name: glycan of molecular weight 2019.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 2019.5 Daltons" []
+name: glycan of molecular weight 2019.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 2019.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -8817,8 +8817,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007503
-name: glycan of molecular weight 2035.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 2035.6 Daltons" []
+name: glycan of molecular weight 2035.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 2035.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -8845,8 +8845,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007517
-name: glycan of molecular weight 2041.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2041.7 Daltons" []
+name: glycan of molecular weight 2041.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2041.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -8859,8 +8859,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007523
-name: glycan of molecular weight 2044.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2044.7 Daltons" []
+name: glycan of molecular weight 2044.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2044.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -8922,8 +8922,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007556
-name: glycan of molecular weight 2059.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2059.7 Daltons" []
+name: glycan of molecular weight 2059.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2059.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -8985,8 +8985,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007593
-name: glycan of molecular weight 2077.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 2077.6 Daltons" []
+name: glycan of molecular weight 2077.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 2077.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -9125,8 +9125,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007647
-name: glycan of molecular weight 2099.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2099.7 Daltons" []
+name: glycan of molecular weight 2099.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2099.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -9167,8 +9167,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007661
-name: glycan of molecular weight 2105.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2105.7 Daltons" []
+name: glycan of molecular weight 2105.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2105.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -9272,8 +9272,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007696
-name: glycan of molecular weight 2118.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2118.7 Daltons" []
+name: glycan of molecular weight 2118.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2118.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -9377,15 +9377,15 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007749
-name: glycan of molecular weight 2140.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2140.7 Daltons" []
+name: glycan of molecular weight 2140.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2140.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007751
-name: glycan of molecular weight 2141.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 2141.5 Daltons" []
+name: glycan of molecular weight 2141.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 2141.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -9482,8 +9482,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007792
-name: glycan of molecular weight 2160.5 Da.
-def: "A glycan characterized by underivitized molecular weight of 2160.5 Daltons" []
+name: glycan of molecular weight 2160.50 Da.
+def: "A glycan characterized by underivitized molecular weight of 2160.50 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -9503,8 +9503,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007800
-name: glycan of molecular weight 2164.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 2164.6 Daltons" []
+name: glycan of molecular weight 2164.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 2164.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -9622,8 +9622,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007849
-name: glycan of molecular weight 2184.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2184.7 Daltons" []
+name: glycan of molecular weight 2184.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2184.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -9643,8 +9643,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007862
-name: glycan of molecular weight 2191.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 2191.6 Daltons" []
+name: glycan of molecular weight 2191.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 2191.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -9664,8 +9664,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007871
-name: glycan of molecular weight 2195.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2195.7 Daltons" []
+name: glycan of molecular weight 2195.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2195.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -9706,8 +9706,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007896
-name: glycan of molecular weight 2208.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2208.7 Daltons" []
+name: glycan of molecular weight 2208.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2208.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -9811,8 +9811,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007953
-name: glycan of molecular weight 2237.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 2237.6 Daltons" []
+name: glycan of molecular weight 2237.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 2237.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -9832,8 +9832,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007962
-name: glycan of molecular weight 2241.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2241.7 Daltons" []
+name: glycan of molecular weight 2241.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2241.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -9881,8 +9881,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10007988
-name: glycan of molecular weight 2257.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2257.7 Daltons" []
+name: glycan of molecular weight 2257.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2257.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -9930,8 +9930,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008019
-name: glycan of molecular weight 2267.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2267.7 Daltons" []
+name: glycan of molecular weight 2267.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2267.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -10021,8 +10021,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008074
-name: glycan of molecular weight 2294.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2294.7 Daltons" []
+name: glycan of molecular weight 2294.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2294.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -10133,8 +10133,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008145
-name: glycan of molecular weight 2326.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2326.7 Daltons" []
+name: glycan of molecular weight 2326.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2326.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -10189,8 +10189,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008178
-name: glycan of molecular weight 2344.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2344.7 Daltons" []
+name: glycan of molecular weight 2344.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2344.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -10217,8 +10217,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008188
-name: glycan of molecular weight 2347.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2347.7 Daltons" []
+name: glycan of molecular weight 2347.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2347.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -10252,8 +10252,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008205
-name: glycan of molecular weight 2352.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2352.7 Daltons" []
+name: glycan of molecular weight 2352.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2352.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -10287,8 +10287,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008222
-name: glycan of molecular weight 2360.8 Da.
-def: "A glycan characterized by underivitized molecular weight of 2360.8 Daltons" []
+name: glycan of molecular weight 2360.80 Da.
+def: "A glycan characterized by underivitized molecular weight of 2360.80 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -10357,8 +10357,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008262
-name: glycan of molecular weight 2384.8 Da.
-def: "A glycan characterized by underivitized molecular weight of 2384.8 Daltons" []
+name: glycan of molecular weight 2384.80 Da.
+def: "A glycan characterized by underivitized molecular weight of 2384.80 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -10392,8 +10392,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008306
-name: glycan of molecular weight 2411.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 2411.6 Daltons" []
+name: glycan of molecular weight 2411.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 2411.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -10637,8 +10637,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008456
-name: glycan of molecular weight 2508.8 Da.
-def: "A glycan characterized by underivitized molecular weight of 2508.8 Daltons" []
+name: glycan of molecular weight 2508.80 Da.
+def: "A glycan characterized by underivitized molecular weight of 2508.80 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -10735,8 +10735,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008535
-name: glycan of molecular weight 2566.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2566.7 Daltons" []
+name: glycan of molecular weight 2566.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2566.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -10756,8 +10756,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008544
-name: glycan of molecular weight 2569.9 Da.
-def: "A glycan characterized by underivitized molecular weight of 2569.9 Daltons" []
+name: glycan of molecular weight 2569.90 Da.
+def: "A glycan characterized by underivitized molecular weight of 2569.90 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -10777,8 +10777,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008551
-name: glycan of molecular weight 2573.8 Da.
-def: "A glycan characterized by underivitized molecular weight of 2573.8 Daltons" []
+name: glycan of molecular weight 2573.80 Da.
+def: "A glycan characterized by underivitized molecular weight of 2573.80 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -10812,8 +10812,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008567
-name: glycan of molecular weight 2582.9 Da.
-def: "A glycan characterized by underivitized molecular weight of 2582.9 Daltons" []
+name: glycan of molecular weight 2582.90 Da.
+def: "A glycan characterized by underivitized molecular weight of 2582.90 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -10840,8 +10840,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008592
-name: glycan of molecular weight 2597.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2597.7 Daltons" []
+name: glycan of molecular weight 2597.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2597.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -10882,8 +10882,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008610
-name: glycan of molecular weight 2609.7 Da.
-def: "A glycan characterized by underivitized molecular weight of 2609.7 Daltons" []
+name: glycan of molecular weight 2609.70 Da.
+def: "A glycan characterized by underivitized molecular weight of 2609.70 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -11064,8 +11064,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008843
-name: glycan of molecular weight 2799.8 Da.
-def: "A glycan characterized by underivitized molecular weight of 2799.8 Daltons" []
+name: glycan of molecular weight 2799.80 Da.
+def: "A glycan characterized by underivitized molecular weight of 2799.80 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -11092,8 +11092,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008880
-name: glycan of molecular weight 2824.9 Da.
-def: "A glycan characterized by underivitized molecular weight of 2824.9 Daltons" []
+name: glycan of molecular weight 2824.90 Da.
+def: "A glycan characterized by underivitized molecular weight of 2824.90 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -11141,8 +11141,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10008960
-name: glycan of molecular weight 2901.0 Da.
-def: "A glycan characterized by underivitized molecular weight of 2901.0 Daltons" []
+name: glycan of molecular weight 2901.00 Da.
+def: "A glycan characterized by underivitized molecular weight of 2901.00 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -11169,8 +11169,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10009006
-name: glycan of molecular weight 2945.9 Da.
-def: "A glycan characterized by underivitized molecular weight of 2945.9 Daltons" []
+name: glycan of molecular weight 2945.90 Da.
+def: "A glycan characterized by underivitized molecular weight of 2945.90 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -11232,8 +11232,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10009122
-name: glycan of molecular weight 3055.9 Da.
-def: "A glycan characterized by underivitized molecular weight of 3055.9 Daltons" []
+name: glycan of molecular weight 3055.90 Da.
+def: "A glycan characterized by underivitized molecular weight of 3055.90 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -11337,8 +11337,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10009516
-name: glycan of molecular weight 3500.2 Da.
-def: "A glycan characterized by underivitized molecular weight of 3500.2 Daltons" []
+name: glycan of molecular weight 3500.20 Da.
+def: "A glycan characterized by underivitized molecular weight of 3500.20 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -11421,8 +11421,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10010154
-name: glycan of molecular weight 4692.6 Da.
-def: "A glycan characterized by underivitized molecular weight of 4692.6 Daltons" []
+name: glycan of molecular weight 4692.60 Da.
+def: "A glycan characterized by underivitized molecular weight of 4692.60 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -11477,8 +11477,8 @@ property_value: GNO:00000021 GNO:00000012
 
 [Term]
 id: GNO:10010237
-name: glycan of molecular weight 7058.8 Da.
-def: "A glycan characterized by underivitized molecular weight of 7058.8 Daltons" []
+name: glycan of molecular weight 7058.80 Da.
+def: "A glycan characterized by underivitized molecular weight of 7058.80 Daltons" []
 is_a: GNO:00000001 ! glycan
 property_value: GNO:00000021 GNO:00000012
 
@@ -11646,7 +11646,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G00059MO
 
 [Term]
 id: GNO:G00060PV
-is_a: GNO:10006003 ! glycan of molecular weight 1428.5 Da.
+is_a: GNO:10006003 ! glycan of molecular weight 1428.50 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G00060PV" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G00060PV
@@ -12140,7 +12140,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G00834JO
 
 [Term]
 id: GNO:G00871RD
-is_a: GNO:10007062 ! glycan of molecular weight 1858.6 Da.
+is_a: GNO:10007062 ! glycan of molecular weight 1858.60 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G00871RD" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G00871RD
@@ -12260,7 +12260,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G01043BT
 
 [Term]
 id: GNO:G01045DN
-is_a: GNO:10005917 ! glycan of molecular weight 1398.4 Da.
+is_a: GNO:10005917 ! glycan of molecular weight 1398.40 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G01045DN" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G01045DN
@@ -13403,7 +13403,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G03456SB
 
 [Term]
 id: GNO:G03483XY
-is_a: GNO:10007460 ! glycan of molecular weight 2019.5 Da.
+is_a: GNO:10007460 ! glycan of molecular weight 2019.50 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G03483XY" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G03483XY
@@ -13636,7 +13636,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G03950MV
 
 [Term]
 id: GNO:G03958LE
-is_a: GNO:10004442 ! glycan of molecular weight 872.3 Da.
+is_a: GNO:10004442 ! glycan of molecular weight 872.30 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G03958LE" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G03958LE
@@ -13692,7 +13692,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G03987YE
 
 [Term]
 id: GNO:G04001WU
-is_a: GNO:10008880 ! glycan of molecular weight 2824.9 Da.
+is_a: GNO:10008880 ! glycan of molecular weight 2824.90 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G04001WU" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G04001WU
@@ -13854,7 +13854,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G04365IW
 
 [Term]
 id: GNO:G04395QR
-is_a: GNO:10006199 ! glycan of molecular weight 1503.5 Da.
+is_a: GNO:10006199 ! glycan of molecular weight 1503.50 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G04395QR" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G04395QR
@@ -14159,7 +14159,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G04927WN
 
 [Term]
 id: GNO:G04930MI
-is_a: GNO:10005659 ! glycan of molecular weight 1292.5 Da.
+is_a: GNO:10005659 ! glycan of molecular weight 1292.50 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G04930MI" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G04930MI
@@ -14352,7 +14352,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G05351XN
 
 [Term]
 id: GNO:G05394UY
-is_a: GNO:10002879 ! glycan of molecular weight 545.2 Da.
+is_a: GNO:10002879 ! glycan of molecular weight 545.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G05394UY" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G05394UY
@@ -14527,7 +14527,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G05749GZ
 
 [Term]
 id: GNO:G05755MI
-is_a: GNO:10005228 ! glycan of molecular weight 1116.3 Da.
+is_a: GNO:10005228 ! glycan of molecular weight 1116.30 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G05755MI" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G05755MI
@@ -14541,7 +14541,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G05770AV
 
 [Term]
 id: GNO:G05883YV
-is_a: GNO:10005932 ! glycan of molecular weight 1404.4 Da.
+is_a: GNO:10005932 ! glycan of molecular weight 1404.40 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G05883YV" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G05883YV
@@ -15876,7 +15876,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G08429SI
 
 [Term]
 id: GNO:G08435RL
-is_a: GNO:10003106 ! glycan of molecular weight 591.2 Da.
+is_a: GNO:10003106 ! glycan of molecular weight 591.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G08435RL" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G08435RL
@@ -16095,7 +16095,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G08822BC
 
 [Term]
 id: GNO:G08829DO
-is_a: GNO:10004449 ! glycan of molecular weight 875.3 Da.
+is_a: GNO:10004449 ! glycan of molecular weight 875.30 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G08829DO" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G08829DO
@@ -16187,7 +16187,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G09040HN
 
 [Term]
 id: GNO:G09042IA
-is_a: GNO:10007556 ! glycan of molecular weight 2059.7 Da.
+is_a: GNO:10007556 ! glycan of molecular weight 2059.70 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G09042IA" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G09042IA
@@ -17284,7 +17284,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G10931IT
 
 [Term]
 id: GNO:G10935SM
-is_a: GNO:10000490 ! glycan of molecular weight 205.1 Da.
+is_a: GNO:10000490 ! glycan of molecular weight 205.10 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G10935SM" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G10935SM
@@ -17460,7 +17460,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G11222BK
 
 [Term]
 id: GNO:G11231EG
-is_a: GNO:10000490 ! glycan of molecular weight 205.1 Da.
+is_a: GNO:10000490 ! glycan of molecular weight 205.10 Da.
 property_value: GNO:00000021 GNO:00000014
 property_value: GNO:00000022 "G11231EG" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G11231EG
@@ -17635,7 +17635,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G11499FP
 
 [Term]
 id: GNO:G11513IX
-is_a: GNO:10003185 ! glycan of molecular weight 606.2 Da.
+is_a: GNO:10003185 ! glycan of molecular weight 606.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G11513IX" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G11513IX
@@ -17698,7 +17698,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G11639GZ
 
 [Term]
 id: GNO:G11641JL
-is_a: GNO:10006745 ! glycan of molecular weight 1727.4 Da.
+is_a: GNO:10006745 ! glycan of molecular weight 1727.40 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G11641JL" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G11641JL
@@ -17909,7 +17909,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G11989ZW
 
 [Term]
 id: GNO:G12002EC
-is_a: GNO:10001422 ! glycan of molecular weight 340.1 Da.
+is_a: GNO:10001422 ! glycan of molecular weight 340.10 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G12002EC" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G12002EC
@@ -18487,7 +18487,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G13065IY
 
 [Term]
 id: GNO:G13081GV
-is_a: GNO:10007988 ! glycan of molecular weight 2257.7 Da.
+is_a: GNO:10007988 ! glycan of molecular weight 2257.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G13081GV" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G13081GV
@@ -18699,7 +18699,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G13628FE
 
 [Term]
 id: GNO:G13629UQ
-is_a: GNO:10008074 ! glycan of molecular weight 2294.7 Da.
+is_a: GNO:10008074 ! glycan of molecular weight 2294.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G13629UQ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G13629UQ
@@ -18755,7 +18755,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G13740OM
 
 [Term]
 id: GNO:G13749LN
-is_a: GNO:10006792 ! glycan of molecular weight 1747.5 Da.
+is_a: GNO:10006792 ! glycan of molecular weight 1747.50 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G13749LN" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G13749LN
@@ -19328,7 +19328,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G14984KA
 
 [Term]
 id: GNO:G14995TE
-is_a: GNO:10007800 ! glycan of molecular weight 2164.6 Da.
+is_a: GNO:10007800 ! glycan of molecular weight 2164.60 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G14995TE" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G14995TE
@@ -19724,7 +19724,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G15618KV
 
 [Term]
 id: GNO:G15666IG
-is_a: GNO:10004430 ! glycan of molecular weight 869.3 Da.
+is_a: GNO:10004430 ! glycan of molecular weight 869.30 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G15666IG" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G15666IG
@@ -19877,7 +19877,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G15953HT
 
 [Term]
 id: GNO:G15962XL
-is_a: GNO:10006277 ! glycan of molecular weight 1533.4 Da.
+is_a: GNO:10006277 ! glycan of molecular weight 1533.40 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G15962XL" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G15962XL
@@ -19975,7 +19975,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G16143DQ
 
 [Term]
 id: GNO:G16159OQ
-is_a: GNO:10005462 ! glycan of molecular weight 1209.3 Da.
+is_a: GNO:10005462 ! glycan of molecular weight 1209.30 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G16159OQ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G16159OQ
@@ -20032,7 +20032,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G16316EY
 
 [Term]
 id: GNO:G16323ZH
-is_a: GNO:10005303 ! glycan of molecular weight 1148.4 Da.
+is_a: GNO:10005303 ! glycan of molecular weight 1148.40 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G16323ZH" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G16323ZH
@@ -20428,7 +20428,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G17008DI
 
 [Term]
 id: GNO:G17008ZD
-is_a: GNO:10007749 ! glycan of molecular weight 2140.7 Da.
+is_a: GNO:10007749 ! glycan of molecular weight 2140.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G17008ZD" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G17008ZD
@@ -20576,7 +20576,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G17310TH
 
 [Term]
 id: GNO:G17312AV
-is_a: GNO:10008262 ! glycan of molecular weight 2384.8 Da.
+is_a: GNO:10008262 ! glycan of molecular weight 2384.80 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G17312AV" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G17312AV
@@ -21156,7 +21156,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G18320BP
 
 [Term]
 id: GNO:G18331ZS
-is_a: GNO:10006818 ! glycan of molecular weight 1756.5 Da.
+is_a: GNO:10006818 ! glycan of molecular weight 1756.50 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G18331ZS" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G18331ZS
@@ -21610,7 +21610,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G19166ZL
 
 [Term]
 id: GNO:G19193XX
-is_a: GNO:10007517 ! glycan of molecular weight 2041.7 Da.
+is_a: GNO:10007517 ! glycan of molecular weight 2041.70 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G19193XX" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G19193XX
@@ -21787,7 +21787,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G19460GT
 
 [Term]
 id: GNO:G19471MQ
-is_a: GNO:10006343 ! glycan of molecular weight 1561.5 Da.
+is_a: GNO:10006343 ! glycan of molecular weight 1561.50 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G19471MQ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G19471MQ
@@ -22340,7 +22340,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G20726EG
 
 [Term]
 id: GNO:G20728HQ
-is_a: GNO:10002955 ! glycan of molecular weight 560.2 Da.
+is_a: GNO:10002955 ! glycan of molecular weight 560.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G20728HQ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G20728HQ
@@ -22694,7 +22694,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G21482YS
 
 [Term]
 id: GNO:G21486LO
-is_a: GNO:10007696 ! glycan of molecular weight 2118.7 Da.
+is_a: GNO:10007696 ! glycan of molecular weight 2118.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G21486LO" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G21486LO
@@ -22919,7 +22919,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G21948DG
 
 [Term]
 id: GNO:G21953ME
-is_a: GNO:10003125 ! glycan of molecular weight 594.2 Da.
+is_a: GNO:10003125 ! glycan of molecular weight 594.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G21953ME" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G21953ME
@@ -23672,7 +23672,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G23301FT
 
 [Term]
 id: GNO:G23312KJ
-is_a: GNO:10004839 ! glycan of molecular weight 991.4 Da.
+is_a: GNO:10004839 ! glycan of molecular weight 991.40 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G23312KJ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G23312KJ
@@ -23792,7 +23792,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G23621PF
 
 [Term]
 id: GNO:G23625UX
-is_a: GNO:10005683 ! glycan of molecular weight 1302.4 Da.
+is_a: GNO:10005683 ! glycan of molecular weight 1302.40 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G23625UX" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G23625UX
@@ -23993,14 +23993,14 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G23976OT
 
 [Term]
 id: GNO:G24001ZG
-is_a: GNO:10008262 ! glycan of molecular weight 2384.8 Da.
+is_a: GNO:10008262 ! glycan of molecular weight 2384.80 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G24001ZG" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G24001ZG
 
 [Term]
 id: GNO:G24007LV
-is_a: GNO:10001553 ! glycan of molecular weight 356.1 Da.
+is_a: GNO:10001553 ! glycan of molecular weight 356.10 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G24007LV" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G24007LV
@@ -24324,7 +24324,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G24567UL
 
 [Term]
 id: GNO:G24573YQ
-is_a: GNO:10008610 ! glycan of molecular weight 2609.7 Da.
+is_a: GNO:10008610 ! glycan of molecular weight 2609.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G24573YQ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G24573YQ
@@ -24352,7 +24352,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G24637YU
 
 [Term]
 id: GNO:G24645JR
-is_a: GNO:10004925 ! glycan of molecular weight 1015.4 Da.
+is_a: GNO:10004925 ! glycan of molecular weight 1015.40 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G24645JR" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G24645JR
@@ -24758,7 +24758,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G25429ME
 
 [Term]
 id: GNO:G25429ZB
-is_a: GNO:10008306 ! glycan of molecular weight 2411.6 Da.
+is_a: GNO:10008306 ! glycan of molecular weight 2411.60 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G25429ZB" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G25429ZB
@@ -24786,7 +24786,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G25475CB
 
 [Term]
 id: GNO:G25479BB
-is_a: GNO:10008843 ! glycan of molecular weight 2799.8 Da.
+is_a: GNO:10008843 ! glycan of molecular weight 2799.80 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G25479BB" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G25479BB
@@ -25181,7 +25181,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G26014QP
 
 [Term]
 id: GNO:G26016PC
-is_a: GNO:10007305 ! glycan of molecular weight 1951.6 Da.
+is_a: GNO:10007305 ! glycan of molecular weight 1951.60 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G26016PC" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G26016PC
@@ -25272,7 +25272,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G26164BG
 
 [Term]
 id: GNO:G26175GE
-is_a: GNO:10004204 ! glycan of molecular weight 814.3 Da.
+is_a: GNO:10004204 ! glycan of molecular weight 814.30 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G26175GE" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G26175GE
@@ -25356,7 +25356,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G26304AE
 
 [Term]
 id: GNO:G26304QY
-is_a: GNO:10000344 ! glycan of molecular weight 177.1 Da.
+is_a: GNO:10000344 ! glycan of molecular weight 177.10 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G26304QY" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G26304QY
@@ -25377,7 +25377,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G26315WE
 
 [Term]
 id: GNO:G26323MB
-is_a: GNO:10004504 ! glycan of molecular weight 891.3 Da.
+is_a: GNO:10004504 ! glycan of molecular weight 891.30 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G26323MB" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G26323MB
@@ -25654,7 +25654,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G26930JP
 
 [Term]
 id: GNO:G26946JT
-is_a: GNO:10003732 ! glycan of molecular weight 724.3 Da.
+is_a: GNO:10003732 ! glycan of molecular weight 724.30 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G26946JT" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G26946JT
@@ -25739,7 +25739,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G27032IY
 
 [Term]
 id: GNO:G27079RE
-is_a: GNO:10006568 ! glycan of molecular weight 1654.5 Da.
+is_a: GNO:10006568 ! glycan of molecular weight 1654.50 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G27079RE" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G27079RE
@@ -26304,7 +26304,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G28141KV
 
 [Term]
 id: GNO:G28155JW
-is_a: GNO:10003157 ! glycan of molecular weight 600.2 Da.
+is_a: GNO:10003157 ! glycan of molecular weight 600.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G28155JW" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G28155JW
@@ -26402,7 +26402,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G28342UW
 
 [Term]
 id: GNO:G28343AT
-is_a: GNO:10005682 ! glycan of molecular weight 1302.3 Da.
+is_a: GNO:10005682 ! glycan of molecular weight 1302.30 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G28343AT" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G28343AT
@@ -26536,7 +26536,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G28681TP
 
 [Term]
 id: GNO:G28710EA
-is_a: GNO:10008188 ! glycan of molecular weight 2347.7 Da.
+is_a: GNO:10008188 ! glycan of molecular weight 2347.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G28710EA" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G28710EA
@@ -26775,7 +26775,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G29211KV
 
 [Term]
 id: GNO:G29218GS
-is_a: GNO:10007792 ! glycan of molecular weight 2160.5 Da.
+is_a: GNO:10007792 ! glycan of molecular weight 2160.50 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G29218GS" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G29218GS
@@ -26903,7 +26903,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G29484KH
 
 [Term]
 id: GNO:G29490DB
-is_a: GNO:10006064 ! glycan of molecular weight 1453.4 Da.
+is_a: GNO:10006064 ! glycan of molecular weight 1453.40 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G29490DB" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G29490DB
@@ -27405,7 +27405,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G30293FZ
 
 [Term]
 id: GNO:G30295CN
-is_a: GNO:10006045 ! glycan of molecular weight 1446.2 Da.
+is_a: GNO:10006045 ! glycan of molecular weight 1446.20 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G30295CN" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G30295CN
@@ -27574,7 +27574,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G30621FL
 
 [Term]
 id: GNO:G30639TN
-is_a: GNO:10003536 ! glycan of molecular weight 680.2 Da.
+is_a: GNO:10003536 ! glycan of molecular weight 680.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G30639TN" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G30639TN
@@ -27623,7 +27623,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G30789RG
 
 [Term]
 id: GNO:G30815MA
-is_a: GNO:10005152 ! glycan of molecular weight 1088.4 Da.
+is_a: GNO:10005152 ! glycan of molecular weight 1088.40 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G30815MA" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G30815MA
@@ -27891,7 +27891,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G31441CA
 
 [Term]
 id: GNO:G31461DV
-is_a: GNO:10000726 ! glycan of molecular weight 246.1 Da.
+is_a: GNO:10000726 ! glycan of molecular weight 246.10 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G31461DV" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G31461DV
@@ -27976,7 +27976,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G31637LE
 
 [Term]
 id: GNO:G31673BO
-is_a: GNO:10007792 ! glycan of molecular weight 2160.5 Da.
+is_a: GNO:10007792 ! glycan of molecular weight 2160.50 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G31673BO" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G31673BO
@@ -28475,7 +28475,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G32467KD
 
 [Term]
 id: GNO:G32498MG
-is_a: GNO:10005152 ! glycan of molecular weight 1088.4 Da.
+is_a: GNO:10005152 ! glycan of molecular weight 1088.40 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G32498MG" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G32498MG
@@ -28637,7 +28637,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G32875HM
 
 [Term]
 id: GNO:G32878LA
-is_a: GNO:10006348 ! glycan of molecular weight 1564.5 Da.
+is_a: GNO:10006348 ! glycan of molecular weight 1564.50 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G32878LA" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G32878LA
@@ -28737,7 +28737,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G32944ZN
 
 [Term]
 id: GNO:G32954RS
-is_a: GNO:10007962 ! glycan of molecular weight 2241.7 Da.
+is_a: GNO:10007962 ! glycan of molecular weight 2241.70 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G32954RS" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G32954RS
@@ -29151,7 +29151,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G33588RF
 
 [Term]
 id: GNO:G33589OZ
-is_a: GNO:10003157 ! glycan of molecular weight 600.2 Da.
+is_a: GNO:10003157 ! glycan of molecular weight 600.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G33589OZ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G33589OZ
@@ -29640,7 +29640,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G34445OD
 
 [Term]
 id: GNO:G34465XB
-is_a: GNO:10004491 ! glycan of molecular weight 885.3 Da.
+is_a: GNO:10004491 ! glycan of molecular weight 885.30 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G34465XB" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G34465XB
@@ -29703,7 +29703,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G34602QH
 
 [Term]
 id: GNO:G34609KU
-is_a: GNO:10004189 ! glycan of molecular weight 811.3 Da.
+is_a: GNO:10004189 ! glycan of molecular weight 811.30 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G34609KU" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G34609KU
@@ -31188,7 +31188,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G37474QO
 
 [Term]
 id: GNO:G37477SY
-is_a: GNO:10002228 ! glycan of molecular weight 449.2 Da.
+is_a: GNO:10002228 ! glycan of molecular weight 449.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G37477SY" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G37477SY
@@ -31237,7 +31237,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G37554CT
 
 [Term]
 id: GNO:G37576ZX
-is_a: GNO:10007871 ! glycan of molecular weight 2195.7 Da.
+is_a: GNO:10007871 ! glycan of molecular weight 2195.70 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G37576ZX" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G37576ZX
@@ -31286,7 +31286,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G37655TX
 
 [Term]
 id: GNO:G37669BK
-is_a: GNO:10005588 ! glycan of molecular weight 1261.4 Da.
+is_a: GNO:10005588 ! glycan of molecular weight 1261.40 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G37669BK" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G37669BK
@@ -31478,7 +31478,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G38004VG
 
 [Term]
 id: GNO:G38021JO
-is_a: GNO:10007317 ! glycan of molecular weight 1955.4 Da.
+is_a: GNO:10007317 ! glycan of molecular weight 1955.40 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G38021JO" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G38021JO
@@ -31745,7 +31745,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G38754BV
 
 [Term]
 id: GNO:G38769OU
-is_a: GNO:10005835 ! glycan of molecular weight 1364.5 Da.
+is_a: GNO:10005835 ! glycan of molecular weight 1364.50 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G38769OU" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G38769OU
@@ -32094,7 +32094,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G39442TM
 
 [Term]
 id: GNO:G39449HV
-is_a: GNO:10005872 ! glycan of molecular weight 1379.4 Da.
+is_a: GNO:10005872 ! glycan of molecular weight 1379.40 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G39449HV" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G39449HV
@@ -32186,7 +32186,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G39558JW
 
 [Term]
 id: GNO:G39568OT
-is_a: GNO:10000262 ! glycan of molecular weight 162.1 Da.
+is_a: GNO:10000262 ! glycan of molecular weight 162.10 Da.
 property_value: GNO:00000021 GNO:00000014
 property_value: GNO:00000022 "G39568OT" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G39568OT
@@ -32214,7 +32214,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G39585CV
 
 [Term]
 id: GNO:G39590NE
-is_a: GNO:10005683 ! glycan of molecular weight 1302.4 Da.
+is_a: GNO:10005683 ! glycan of molecular weight 1302.40 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G39590NE" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G39590NE
@@ -32784,7 +32784,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G40745RU
 
 [Term]
 id: GNO:G40750NK
-is_a: GNO:10006064 ! glycan of molecular weight 1453.4 Da.
+is_a: GNO:10006064 ! glycan of molecular weight 1453.40 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G40750NK" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G40750NK
@@ -32938,7 +32938,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G40955CS
 
 [Term]
 id: GNO:G40961AI
-is_a: GNO:10007849 ! glycan of molecular weight 2184.7 Da.
+is_a: GNO:10007849 ! glycan of molecular weight 2184.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G40961AI" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G40961AI
@@ -33183,7 +33183,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G41522BY
 
 [Term]
 id: GNO:G41535HQ
-is_a: GNO:10006793 ! glycan of molecular weight 1747.6 Da.
+is_a: GNO:10006793 ! glycan of molecular weight 1747.60 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G41535HQ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G41535HQ
@@ -33887,7 +33887,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G42668TI
 
 [Term]
 id: GNO:G42676EB
-is_a: GNO:10009516 ! glycan of molecular weight 3500.2 Da.
+is_a: GNO:10009516 ! glycan of molecular weight 3500.20 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G42676EB" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G42676EB
@@ -34014,14 +34014,14 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G42925TW
 
 [Term]
 id: GNO:G42932DS
-is_a: GNO:10004228 ! glycan of molecular weight 820.3 Da.
+is_a: GNO:10004228 ! glycan of molecular weight 820.30 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G42932DS" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G42932DS
 
 [Term]
 id: GNO:G42936VU
-is_a: GNO:10005506 ! glycan of molecular weight 1228.4 Da.
+is_a: GNO:10005506 ! glycan of molecular weight 1228.40 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G42936VU" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G42936VU
@@ -34056,7 +34056,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G42997MD
 
 [Term]
 id: GNO:G43004GV
-is_a: GNO:10003645 ! glycan of molecular weight 708.2 Da.
+is_a: GNO:10003645 ! glycan of molecular weight 708.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G43004GV" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G43004GV
@@ -34189,7 +34189,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G43281LA
 
 [Term]
 id: GNO:G43295RJ
-is_a: GNO:10003936 ! glycan of molecular weight 764.3 Da.
+is_a: GNO:10003936 ! glycan of molecular weight 764.30 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G43295RJ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G43295RJ
@@ -34773,7 +34773,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G44448QD
 
 [Term]
 id: GNO:G44455GV
-is_a: GNO:10007317 ! glycan of molecular weight 1955.4 Da.
+is_a: GNO:10007317 ! glycan of molecular weight 1955.40 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G44455GV" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G44455GV
@@ -35050,7 +35050,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G44931EN
 
 [Term]
 id: GNO:G44932JC
-is_a: GNO:10007217 ! glycan of molecular weight 1917.5 Da.
+is_a: GNO:10007217 ! glycan of molecular weight 1917.50 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G44932JC" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G44932JC
@@ -35292,7 +35292,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G45369GY
 
 [Term]
 id: GNO:G45372SP
-is_a: GNO:10008592 ! glycan of molecular weight 2597.7 Da.
+is_a: GNO:10008592 ! glycan of molecular weight 2597.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G45372SP" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G45372SP
@@ -35306,7 +35306,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G45391HU
 
 [Term]
 id: GNO:G45402AD
-is_a: GNO:10006381 ! glycan of molecular weight 1577.5 Da.
+is_a: GNO:10006381 ! glycan of molecular weight 1577.50 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G45402AD" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G45402AD
@@ -35875,7 +35875,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G46411CN
 
 [Term]
 id: GNO:G46415KQ
-is_a: GNO:10008188 ! glycan of molecular weight 2347.7 Da.
+is_a: GNO:10008188 ! glycan of molecular weight 2347.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G46415KQ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G46415KQ
@@ -36058,7 +36058,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G46661PH
 
 [Term]
 id: GNO:G46670FD
-is_a: GNO:10008843 ! glycan of molecular weight 2799.8 Da.
+is_a: GNO:10008843 ! glycan of molecular weight 2799.80 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G46670FD" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G46670FD
@@ -36269,7 +36269,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G47098KU
 
 [Term]
 id: GNO:G47106QZ
-is_a: GNO:10006568 ! glycan of molecular weight 1654.5 Da.
+is_a: GNO:10006568 ! glycan of molecular weight 1654.50 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G47106QZ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G47106QZ
@@ -36608,7 +36608,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G47677PY
 
 [Term]
 id: GNO:G47690ZG
-is_a: GNO:10004771 ! glycan of molecular weight 971.3 Da.
+is_a: GNO:10004771 ! glycan of molecular weight 971.30 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G47690ZG" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G47690ZG
@@ -37617,7 +37617,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G49551WD
 
 [Term]
 id: GNO:G49556OB
-is_a: GNO:10005113 ! glycan of molecular weight 1074.4 Da.
+is_a: GNO:10005113 ! glycan of molecular weight 1074.40 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G49556OB" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G49556OB
@@ -37944,7 +37944,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G50188LW
 
 [Term]
 id: GNO:G50196BC
-is_a: GNO:10006381 ! glycan of molecular weight 1577.5 Da.
+is_a: GNO:10006381 ! glycan of molecular weight 1577.50 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G50196BC" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G50196BC
@@ -38021,7 +38021,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G50336VA
 
 [Term]
 id: GNO:G50352NX
-is_a: GNO:10005540 ! glycan of molecular weight 1240.4 Da.
+is_a: GNO:10005540 ! glycan of molecular weight 1240.40 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G50352NX" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G50352NX
@@ -38300,7 +38300,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G50906TV
 
 [Term]
 id: GNO:G50917BW
-is_a: GNO:10004792 ! glycan of molecular weight 976.4 Da.
+is_a: GNO:10004792 ! glycan of molecular weight 976.40 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G50917BW" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G50917BW
@@ -38674,7 +38674,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G51535NO
 
 [Term]
 id: GNO:G51562KU
-is_a: GNO:10006984 ! glycan of molecular weight 1827.5 Da.
+is_a: GNO:10006984 ! glycan of molecular weight 1827.50 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G51562KU" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G51562KU
@@ -38886,7 +38886,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G51984LA
 
 [Term]
 id: GNO:G51992SM
-is_a: GNO:10001719 ! glycan of molecular weight 380.2 Da.
+is_a: GNO:10001719 ! glycan of molecular weight 380.20 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G51992SM" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G51992SM
@@ -38949,7 +38949,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G52078MT
 
 [Term]
 id: GNO:G52080XN
-is_a: GNO:10005113 ! glycan of molecular weight 1074.4 Da.
+is_a: GNO:10005113 ! glycan of molecular weight 1074.40 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G52080XN" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G52080XN
@@ -39561,7 +39561,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G53203NX
 
 [Term]
 id: GNO:G53205WQ
-is_a: GNO:10006759 ! glycan of molecular weight 1732.5 Da.
+is_a: GNO:10006759 ! glycan of molecular weight 1732.50 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G53205WQ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G53205WQ
@@ -39977,7 +39977,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G53970CJ
 
 [Term]
 id: GNO:G53974JH
-is_a: GNO:10003253 ! glycan of molecular weight 622.2 Da.
+is_a: GNO:10003253 ! glycan of molecular weight 622.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G53974JH" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G53974JH
@@ -40062,7 +40062,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G54122PF
 
 [Term]
 id: GNO:G54129SE
-is_a: GNO:10002795 ! glycan of molecular weight 529.2 Da.
+is_a: GNO:10002795 ! glycan of molecular weight 529.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G54129SE" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G54129SE
@@ -40168,14 +40168,14 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G54285AH
 
 [Term]
 id: GNO:G54300XR
-is_a: GNO:10005058 ! glycan of molecular weight 1058.4 Da.
+is_a: GNO:10005058 ! glycan of molecular weight 1058.40 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G54300XR" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G54300XR
 
 [Term]
 id: GNO:G54326OA
-is_a: GNO:10004669 ! glycan of molecular weight 940.2 Da.
+is_a: GNO:10004669 ! glycan of molecular weight 940.20 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G54326OA" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G54326OA
@@ -40365,7 +40365,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G54696HV
 
 [Term]
 id: GNO:G54718IW
-is_a: GNO:10004204 ! glycan of molecular weight 814.3 Da.
+is_a: GNO:10004204 ! glycan of molecular weight 814.30 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G54718IW" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G54718IW
@@ -40555,7 +40555,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G55042EV
 
 [Term]
 id: GNO:G55042GN
-is_a: GNO:10000352 ! glycan of molecular weight 178.1 Da.
+is_a: GNO:10000352 ! glycan of molecular weight 178.10 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G55042GN" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G55042GN
@@ -40934,7 +40934,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G55827FI
 
 [Term]
 id: GNO:G55845XN
-is_a: GNO:10004939 ! glycan of molecular weight 1020.3 Da.
+is_a: GNO:10004939 ! glycan of molecular weight 1020.30 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G55845XN" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G55845XN
@@ -40969,7 +40969,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G55877XW
 
 [Term]
 id: GNO:G55883AC
-is_a: GNO:10007862 ! glycan of molecular weight 2191.6 Da.
+is_a: GNO:10007862 ! glycan of molecular weight 2191.60 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G55883AC" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G55883AC
@@ -41430,7 +41430,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G56794UF
 
 [Term]
 id: GNO:G56816DQ
-is_a: GNO:10003900 ! glycan of molecular weight 757.4 Da.
+is_a: GNO:10003900 ! glycan of molecular weight 757.40 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G56816DQ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G56816DQ
@@ -41570,7 +41570,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G57058RR
 
 [Term]
 id: GNO:G57082ER
-is_a: GNO:10007503 ! glycan of molecular weight 2035.6 Da.
+is_a: GNO:10007503 ! glycan of molecular weight 2035.60 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G57082ER" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G57082ER
@@ -42504,7 +42504,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G58732VR
 
 [Term]
 id: GNO:G58749TX
-is_a: GNO:10006285 ! glycan of molecular weight 1534.5 Da.
+is_a: GNO:10006285 ! glycan of molecular weight 1534.50 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G58749TX" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G58749TX
@@ -42546,7 +42546,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G58822UJ
 
 [Term]
 id: GNO:G58836LN
-is_a: GNO:10008567 ! glycan of molecular weight 2582.9 Da.
+is_a: GNO:10008567 ! glycan of molecular weight 2582.90 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G58836LN" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G58836LN
@@ -43025,7 +43025,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G59909XD
 
 [Term]
 id: GNO:G59927SH
-is_a: GNO:10010154 ! glycan of molecular weight 4692.6 Da.
+is_a: GNO:10010154 ! glycan of molecular weight 4692.60 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G59927SH" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G59927SH
@@ -43242,7 +43242,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G60275FD
 
 [Term]
 id: GNO:G60276ZH
-is_a: GNO:10007217 ! glycan of molecular weight 1917.5 Da.
+is_a: GNO:10007217 ! glycan of molecular weight 1917.50 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G60276ZH" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G60276ZH
@@ -43340,7 +43340,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G60424KM
 
 [Term]
 id: GNO:G60434ZD
-is_a: GNO:10008145 ! glycan of molecular weight 2326.7 Da.
+is_a: GNO:10008145 ! glycan of molecular weight 2326.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G60434ZD" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G60434ZD
@@ -43567,7 +43567,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G60848RS
 
 [Term]
 id: GNO:G60856DN
-is_a: GNO:10004286 ! glycan of molecular weight 834.2 Da.
+is_a: GNO:10004286 ! glycan of molecular weight 834.20 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G60856DN" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G60856DN
@@ -43651,7 +43651,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G60982XF
 
 [Term]
 id: GNO:G60991LG
-is_a: GNO:10006031 ! glycan of molecular weight 1440.4 Da.
+is_a: GNO:10006031 ! glycan of molecular weight 1440.40 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G60991LG" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G60991LG
@@ -43721,7 +43721,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G61101XV
 
 [Term]
 id: GNO:G61109FN
-is_a: GNO:10003975 ! glycan of molecular weight 773.2 Da.
+is_a: GNO:10003975 ! glycan of molecular weight 773.20 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G61109FN" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G61109FN
@@ -44108,7 +44108,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G61686KQ
 
 [Term]
 id: GNO:G61693XA
-is_a: GNO:10004680 ! glycan of molecular weight 943.2 Da.
+is_a: GNO:10004680 ! glycan of molecular weight 943.20 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G61693XA" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G61693XA
@@ -44185,7 +44185,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G61794VJ
 
 [Term]
 id: GNO:G61796TT
-is_a: GNO:10005630 ! glycan of molecular weight 1277.5 Da.
+is_a: GNO:10005630 ! glycan of molecular weight 1277.50 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G61796TT" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G61796TT
@@ -44433,7 +44433,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G62204FH
 
 [Term]
 id: GNO:G62204FQ
-is_a: GNO:10003253 ! glycan of molecular weight 622.2 Da.
+is_a: GNO:10003253 ! glycan of molecular weight 622.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G62204FQ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G62204FQ
@@ -44682,7 +44682,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G62650JK
 
 [Term]
 id: GNO:G62731PT
-is_a: GNO:10000344 ! glycan of molecular weight 177.1 Da.
+is_a: GNO:10000344 ! glycan of molecular weight 177.10 Da.
 property_value: GNO:00000021 GNO:00000014
 property_value: GNO:00000022 "G62731PT" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G62731PT
@@ -45153,7 +45153,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G63589EK
 
 [Term]
 id: GNO:G63594XJ
-is_a: GNO:10008074 ! glycan of molecular weight 2294.7 Da.
+is_a: GNO:10008074 ! glycan of molecular weight 2294.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G63594XJ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G63594XJ
@@ -45778,7 +45778,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G64656HQ
 
 [Term]
 id: GNO:G64669WW
-is_a: GNO:10006882 ! glycan of molecular weight 1784.6 Da.
+is_a: GNO:10006882 ! glycan of molecular weight 1784.60 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G64669WW" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G64669WW
@@ -46214,7 +46214,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G65365MD
 
 [Term]
 id: GNO:G65376OM
-is_a: GNO:10002895 ! glycan of molecular weight 548.2 Da.
+is_a: GNO:10002895 ! glycan of molecular weight 548.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G65376OM" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G65376OM
@@ -46410,7 +46410,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G65733RG
 
 [Term]
 id: GNO:G65747NZ
-is_a: GNO:10006818 ! glycan of molecular weight 1756.5 Da.
+is_a: GNO:10006818 ! glycan of molecular weight 1756.50 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G65747NZ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G65747NZ
@@ -46608,7 +46608,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G66065IY
 
 [Term]
 id: GNO:G66107HI
-is_a: GNO:10007206 ! glycan of molecular weight 1914.6 Da.
+is_a: GNO:10007206 ! glycan of molecular weight 1914.60 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G66107HI" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G66107HI
@@ -46897,7 +46897,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G66583FX
 
 [Term]
 id: GNO:G66588CP
-is_a: GNO:10008456 ! glycan of molecular weight 2508.8 Da.
+is_a: GNO:10008456 ! glycan of molecular weight 2508.80 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G66588CP" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G66588CP
@@ -47100,7 +47100,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G66936WL
 
 [Term]
 id: GNO:G66937CL
-is_a: GNO:10000344 ! glycan of molecular weight 177.1 Da.
+is_a: GNO:10000344 ! glycan of molecular weight 177.10 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G66937CL" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G66937CL
@@ -47142,7 +47142,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G67001ZR
 
 [Term]
 id: GNO:G67017DH
-is_a: GNO:10007896 ! glycan of molecular weight 2208.7 Da.
+is_a: GNO:10007896 ! glycan of molecular weight 2208.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G67017DH" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G67017DH
@@ -47198,7 +47198,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G67122BG
 
 [Term]
 id: GNO:G67127VI
-is_a: GNO:10008535 ! glycan of molecular weight 2566.7 Da.
+is_a: GNO:10008535 ! glycan of molecular weight 2566.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G67127VI" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G67127VI
@@ -47226,7 +47226,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G67172VF
 
 [Term]
 id: GNO:G67178QL
-is_a: GNO:10009122 ! glycan of molecular weight 3055.9 Da.
+is_a: GNO:10009122 ! glycan of molecular weight 3055.90 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G67178QL" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G67178QL
@@ -47654,7 +47654,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G68029GE
 
 [Term]
 id: GNO:G68041LF
-is_a: GNO:10006789 ! glycan of molecular weight 1746.6 Da.
+is_a: GNO:10006789 ! glycan of molecular weight 1746.60 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G68041LF" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G68041LF
@@ -47810,7 +47810,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G68265LH
 
 [Term]
 id: GNO:G68271CF
-is_a: GNO:10004897 ! glycan of molecular weight 1008.4 Da.
+is_a: GNO:10004897 ! glycan of molecular weight 1008.40 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G68271CF" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G68271CF
@@ -48241,7 +48241,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G68992YY
 
 [Term]
 id: GNO:G68998ML
-is_a: GNO:10000419 ! glycan of molecular weight 192.1 Da.
+is_a: GNO:10000419 ! glycan of molecular weight 192.10 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G68998ML" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G68998ML
@@ -48297,7 +48297,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G69085LJ
 
 [Term]
 id: GNO:G69091ZR
-is_a: GNO:10001962 ! glycan of molecular weight 414.1 Da.
+is_a: GNO:10001962 ! glycan of molecular weight 414.10 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G69091ZR" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G69091ZR
@@ -48445,7 +48445,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G69382ZH
 
 [Term]
 id: GNO:G69384CV
-is_a: GNO:10007078 ! glycan of molecular weight 1866.6 Da.
+is_a: GNO:10007078 ! glycan of molecular weight 1866.60 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G69384CV" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G69384CV
@@ -48679,7 +48679,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G69812KU
 
 [Term]
 id: GNO:G69836BL
-is_a: GNO:10000490 ! glycan of molecular weight 205.1 Da.
+is_a: GNO:10000490 ! glycan of molecular weight 205.10 Da.
 property_value: GNO:00000021 GNO:00000014
 property_value: GNO:00000022 "G69836BL" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G69836BL
@@ -48735,7 +48735,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G69925AX
 
 [Term]
 id: GNO:G69941KB
-is_a: GNO:10004669 ! glycan of molecular weight 940.2 Da.
+is_a: GNO:10004669 ! glycan of molecular weight 940.20 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G69941KB" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G69941KB
@@ -49396,7 +49396,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G71249TU
 
 [Term]
 id: GNO:G71261TC
-is_a: GNO:10005659 ! glycan of molecular weight 1292.5 Da.
+is_a: GNO:10005659 ! glycan of molecular weight 1292.50 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G71261TC" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G71261TC
@@ -49474,7 +49474,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G71420PK
 
 [Term]
 id: GNO:G71436DB
-is_a: GNO:10006031 ! glycan of molecular weight 1440.4 Da.
+is_a: GNO:10006031 ! glycan of molecular weight 1440.40 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G71436DB" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G71436DB
@@ -49502,7 +49502,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G71524FT
 
 [Term]
 id: GNO:G71529UW
-is_a: GNO:10005333 ! glycan of molecular weight 1160.4 Da.
+is_a: GNO:10005333 ! glycan of molecular weight 1160.40 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G71529UW" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G71529UW
@@ -49789,7 +49789,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G71996PX
 
 [Term]
 id: GNO:G72025DF
-is_a: GNO:10007751 ! glycan of molecular weight 2141.5 Da.
+is_a: GNO:10007751 ! glycan of molecular weight 2141.50 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G72025DF" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G72025DF
@@ -49922,7 +49922,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G72457JI
 
 [Term]
 id: GNO:G72475JO
-is_a: GNO:10007661 ! glycan of molecular weight 2105.7 Da.
+is_a: GNO:10007661 ! glycan of molecular weight 2105.70 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G72475JO" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G72475JO
@@ -50034,7 +50034,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G72710VI
 
 [Term]
 id: GNO:G72712OQ
-is_a: GNO:10006984 ! glycan of molecular weight 1827.5 Da.
+is_a: GNO:10006984 ! glycan of molecular weight 1827.50 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G72712OQ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G72712OQ
@@ -50076,7 +50076,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G72803JZ
 
 [Term]
 id: GNO:G72806LI
-is_a: GNO:10008178 ! glycan of molecular weight 2344.7 Da.
+is_a: GNO:10008178 ! glycan of molecular weight 2344.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G72806LI" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G72806LI
@@ -50882,7 +50882,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G74352OS
 
 [Term]
 id: GNO:G74362QC
-is_a: GNO:10007593 ! glycan of molecular weight 2077.6 Da.
+is_a: GNO:10007593 ! glycan of molecular weight 2077.60 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G74362QC" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G74362QC
@@ -51045,7 +51045,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G74616HH
 
 [Term]
 id: GNO:G74620LG
-is_a: GNO:10000419 ! glycan of molecular weight 192.1 Da.
+is_a: GNO:10000419 ! glycan of molecular weight 192.10 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G74620LG" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G74620LG
@@ -51712,7 +51712,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G75745SJ
 
 [Term]
 id: GNO:G75748FM
-is_a: GNO:10003157 ! glycan of molecular weight 600.2 Da.
+is_a: GNO:10003157 ! glycan of molecular weight 600.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G75748FM" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G75748FM
@@ -51834,7 +51834,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G76041OA
 
 [Term]
 id: GNO:G76042BH
-is_a: GNO:10007647 ! glycan of molecular weight 2099.7 Da.
+is_a: GNO:10007647 ! glycan of molecular weight 2099.70 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G76042BH" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G76042BH
@@ -52385,7 +52385,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G77120YG
 
 [Term]
 id: GNO:G77123WH
-is_a: GNO:10008205 ! glycan of molecular weight 2352.7 Da.
+is_a: GNO:10008205 ! glycan of molecular weight 2352.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G77123WH" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G77123WH
@@ -52504,7 +52504,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G77273YB
 
 [Term]
 id: GNO:G77278YP
-is_a: GNO:10003765 ! glycan of molecular weight 731.3 Da.
+is_a: GNO:10003765 ! glycan of molecular weight 731.30 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G77278YP" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G77278YP
@@ -52715,7 +52715,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G77695JA
 
 [Term]
 id: GNO:G77696IM
-is_a: GNO:10005390 ! glycan of molecular weight 1183.1 Da.
+is_a: GNO:10005390 ! glycan of molecular weight 1183.10 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G77696IM" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G77696IM
@@ -52807,7 +52807,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G77811RK
 
 [Term]
 id: GNO:G77822IF
-is_a: GNO:10008551 ! glycan of molecular weight 2573.8 Da.
+is_a: GNO:10008551 ! glycan of molecular weight 2573.80 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G77822IF" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G77822IF
@@ -53225,7 +53225,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G78602CZ
 
 [Term]
 id: GNO:G78609KE
-is_a: GNO:10008019 ! glycan of molecular weight 2267.7 Da.
+is_a: GNO:10008019 ! glycan of molecular weight 2267.70 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G78609KE" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G78609KE
@@ -53953,7 +53953,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G80138YD
 
 [Term]
 id: GNO:G80175XI
-is_a: GNO:10004239 ! glycan of molecular weight 823.3 Da.
+is_a: GNO:10004239 ! glycan of molecular weight 823.30 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G80175XI" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G80175XI
@@ -54128,7 +54128,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G80556KC
 
 [Term]
 id: GNO:G80560NX
-is_a: GNO:10005535 ! glycan of molecular weight 1237.4 Da.
+is_a: GNO:10005535 ! glycan of molecular weight 1237.40 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G80560NX" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G80560NX
@@ -54308,7 +54308,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G81010YF
 
 [Term]
 id: GNO:G81028ML
-is_a: GNO:10007362 ! glycan of molecular weight 1974.7 Da.
+is_a: GNO:10007362 ! glycan of molecular weight 1974.70 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G81028ML" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G81028ML
@@ -54422,7 +54422,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G81175YD
 
 [Term]
 id: GNO:G81180SE
-is_a: GNO:10006144 ! glycan of molecular weight 1481.5 Da.
+is_a: GNO:10006144 ! glycan of molecular weight 1481.50 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G81180SE" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G81180SE
@@ -55179,7 +55179,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G82662IE
 
 [Term]
 id: GNO:G82682VB
-is_a: GNO:10010237 ! glycan of molecular weight 7058.8 Da.
+is_a: GNO:10010237 ! glycan of molecular weight 7058.80 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G82682VB" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G82682VB
@@ -55586,7 +55586,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G83448VJ
 
 [Term]
 id: GNO:G83460ZZ
-is_a: GNO:10007523 ! glycan of molecular weight 2044.7 Da.
+is_a: GNO:10007523 ! glycan of molecular weight 2044.70 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G83460ZZ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G83460ZZ
@@ -55614,7 +55614,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G83528OE
 
 [Term]
 id: GNO:G83535JT
-is_a: GNO:10006568 ! glycan of molecular weight 1654.5 Da.
+is_a: GNO:10006568 ! glycan of molecular weight 1654.50 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G83535JT" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G83535JT
@@ -55790,7 +55790,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G83788BY
 
 [Term]
 id: GNO:G83812RL
-is_a: GNO:10000352 ! glycan of molecular weight 178.1 Da.
+is_a: GNO:10000352 ! glycan of molecular weight 178.10 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G83812RL" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G83812RL
@@ -55944,7 +55944,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G83992LI
 
 [Term]
 id: GNO:G84002SJ
-is_a: GNO:10003536 ! glycan of molecular weight 680.2 Da.
+is_a: GNO:10003536 ! glycan of molecular weight 680.20 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G84002SJ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G84002SJ
@@ -56084,7 +56084,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G84175RS
 
 [Term]
 id: GNO:G84197RM
-is_a: GNO:10008960 ! glycan of molecular weight 2901.0 Da.
+is_a: GNO:10008960 ! glycan of molecular weight 2901.00 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G84197RM" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G84197RM
@@ -56516,7 +56516,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G85062XR
 
 [Term]
 id: GNO:G85065KK
-is_a: GNO:10007307 ! glycan of molecular weight 1951.7 Da.
+is_a: GNO:10007307 ! glycan of molecular weight 1951.70 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G85065KK" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G85065KK
@@ -56677,7 +56677,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G85340IM
 
 [Term]
 id: GNO:G85341BJ
-is_a: GNO:10007045 ! glycan of molecular weight 1852.6 Da.
+is_a: GNO:10007045 ! glycan of molecular weight 1852.60 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G85341BJ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G85341BJ
@@ -56719,7 +56719,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G85377QW
 
 [Term]
 id: GNO:G85402AO
-is_a: GNO:10005107 ! glycan of molecular weight 1074.2 Da.
+is_a: GNO:10005107 ! glycan of molecular weight 1074.20 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G85402AO" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G85402AO
@@ -56761,7 +56761,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G85445AQ
 
 [Term]
 id: GNO:G85447KS
-is_a: GNO:10008567 ! glycan of molecular weight 2582.9 Da.
+is_a: GNO:10008567 ! glycan of molecular weight 2582.90 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G85447KS" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G85447KS
@@ -57114,7 +57114,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G86115ZG
 
 [Term]
 id: GNO:G86128TC
-is_a: GNO:10007369 ! glycan of molecular weight 1979.6 Da.
+is_a: GNO:10007369 ! glycan of molecular weight 1979.60 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G86128TC" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G86128TC
@@ -57805,7 +57805,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G87484LI
 
 [Term]
 id: GNO:G87488ZG
-is_a: GNO:10006506 ! glycan of molecular weight 1626.4 Da.
+is_a: GNO:10006506 ! glycan of molecular weight 1626.40 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G87488ZG" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G87488ZG
@@ -57931,7 +57931,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G87658PA
 
 [Term]
 id: GNO:G87676CF
-is_a: GNO:10003626 ! glycan of molecular weight 704.2 Da.
+is_a: GNO:10003626 ! glycan of molecular weight 704.20 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G87676CF" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G87676CF
@@ -58903,7 +58903,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G89392AS
 
 [Term]
 id: GNO:G89424DQ
-is_a: GNO:10007224 ! glycan of molecular weight 1918.7 Da.
+is_a: GNO:10007224 ! glycan of molecular weight 1918.70 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G89424DQ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G89424DQ
@@ -58931,7 +58931,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G89489JX
 
 [Term]
 id: GNO:G89494ZA
-is_a: GNO:10006324 ! glycan of molecular weight 1552.5 Da.
+is_a: GNO:10006324 ! glycan of molecular weight 1552.50 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G89494ZA" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G89494ZA
@@ -59009,7 +59009,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G89671UU
 
 [Term]
 id: GNO:G89679BE
-is_a: GNO:10006494 ! glycan of molecular weight 1623.4 Da.
+is_a: GNO:10006494 ! glycan of molecular weight 1623.40 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G89679BE" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G89679BE
@@ -59368,7 +59368,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G90240NA
 
 [Term]
 id: GNO:G90245OA
-is_a: GNO:10007953 ! glycan of molecular weight 2237.6 Da.
+is_a: GNO:10007953 ! glycan of molecular weight 2237.60 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G90245OA" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G90245OA
@@ -60706,7 +60706,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G92604EE
 
 [Term]
 id: GNO:G92612QM
-is_a: GNO:10004741 ! glycan of molecular weight 959.3 Da.
+is_a: GNO:10004741 ! glycan of molecular weight 959.30 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G92612QM" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G92612QM
@@ -60989,7 +60989,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G93013AY
 
 [Term]
 id: GNO:G93019QA
-is_a: GNO:10002385 ! glycan of molecular weight 470.2 Da.
+is_a: GNO:10002385 ! glycan of molecular weight 470.20 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G93019QA" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G93019QA
@@ -61940,7 +61940,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G94822NJ
 
 [Term]
 id: GNO:G94837SS
-is_a: GNO:10008544 ! glycan of molecular weight 2569.9 Da.
+is_a: GNO:10008544 ! glycan of molecular weight 2569.90 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G94837SS" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G94837SS
@@ -62111,7 +62111,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G95160NQ
 
 [Term]
 id: GNO:G95161VZ
-is_a: GNO:10008222 ! glycan of molecular weight 2360.8 Da.
+is_a: GNO:10008222 ! glycan of molecular weight 2360.80 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G95161VZ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G95161VZ
@@ -62625,7 +62625,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G96133KN
 
 [Term]
 id: GNO:G96137ZW
-is_a: GNO:10005854 ! glycan of molecular weight 1371.5 Da.
+is_a: GNO:10005854 ! glycan of molecular weight 1371.50 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G96137ZW" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G96137ZW
@@ -62732,7 +62732,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G96267FF
 
 [Term]
 id: GNO:G96282GW
-is_a: GNO:10000726 ! glycan of molecular weight 246.1 Da.
+is_a: GNO:10000726 ! glycan of molecular weight 246.10 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G96282GW" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G96282GW
@@ -63790,7 +63790,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G98310MH
 
 [Term]
 id: GNO:G98317WN
-is_a: GNO:10009006 ! glycan of molecular weight 2945.9 Da.
+is_a: GNO:10009006 ! glycan of molecular weight 2945.90 Da.
 property_value: GNO:00000021 GNO:00000016
 property_value: GNO:00000022 "G98317WN" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G98317WN
@@ -63931,7 +63931,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G98558WY
 
 [Term]
 id: GNO:G98582ID
-is_a: GNO:10006381 ! glycan of molecular weight 1577.5 Da.
+is_a: GNO:10006381 ! glycan of molecular weight 1577.50 Da.
 property_value: GNO:00000021 GNO:00000015
 property_value: GNO:00000022 "G98582ID" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G98582ID
@@ -64616,7 +64616,7 @@ property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G99710HC
 
 [Term]
 id: GNO:G99713BQ
-is_a: GNO:10000974 ! glycan of molecular weight 282.1 Da.
+is_a: GNO:10000974 ! glycan of molecular weight 282.10 Da.
 property_value: GNO:00000021 GNO:00000013
 property_value: GNO:00000022 "G99713BQ" xsd:string
 property_value: GNO:00000023 http://glytoucan.org/Structures/Glycans/G99713BQ
