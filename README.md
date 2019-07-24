@@ -21,5 +21,3 @@ Please use this GitHub repository's [Issue tracker](https://github.com/glygen-gl
 
 ## Graphical Navigation
 [GNOme](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html)<br>
-[GNOme GlyGen subset](https://raw.githack.com/glygen-glycan-data/GNOme/master/restrictions/GNOme_GlyGen.browser.html)<br>
-[GNOme BCSDB subset](https://raw.githack.com/glygen-glycan-data/GNOme/master/restrictions/GNOme_BCSDB.browser.html)
