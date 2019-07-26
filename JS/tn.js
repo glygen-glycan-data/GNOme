@@ -534,6 +534,10 @@ function loadHGV(gtcid, glycanType) {
                 option.essentials.component = thing;
                 break
             }
+            if (thing.top.includes(gtcid)) {
+                option.essentials.component = thing;
+                break
+            }
         }
     } else if (glycanType == "saccharide"){
         for (var thing of data_topology_related) {
