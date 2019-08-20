@@ -386,6 +386,12 @@ function updateRightPanel() {
                 ind2 = ind
             }
         }
+        if (ind1 == undefined){
+            return 1000
+        }
+        if (ind2 == undefined){
+            return -1000
+        }
         var x = Object.keys(data_topology_related[ind2].nodes).length - Object.keys(data_topology_related[ind1].nodes).length;
         var y = 0;
         //if (data_topology_related[id1].top.includes(id1)) {y = -0.1;}
@@ -527,6 +533,10 @@ function loadHGV(gtcid, glycanType) {
         for (var thing of data_topology_related) {
 
             if (thing.topology.includes(gtcid)) {
+                option.essentials.component = thing;
+                break
+            }
+            if (thing.top.includes(gtcid)) {
                 option.essentials.component = thing;
                 break
             }
