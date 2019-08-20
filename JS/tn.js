@@ -319,7 +319,9 @@ function afterCompostionChanged() {
             }
             if (flag) {
                 for (var t of thing.top) {
-                    matchedTopologies.push(t)
+                    if(thing.topology.includes(t)){
+                        matchedTopologies.push(t)
+                    }
                 }
                 //matchedTopologies.concat(thing.top);
             }
