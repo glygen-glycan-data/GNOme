@@ -20,4 +20,5 @@ Please use this GitHub repository's [Issue tracker](https://github.com/glygen-gl
 
 
 ## Graphical Navigation
-[GNOme](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html)<br>
+[GNOme Viewer](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html)<br>
+[GNOme Viewer (support base composition)](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.myopic.html)<br>
