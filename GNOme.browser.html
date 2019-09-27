@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>CBTN</title>
-    <script src="GNOme.browser.js"></script>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.js"></script>
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
     <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.css" rel="stylesheet" type="text/css"/>
 
@@ -13,7 +12,9 @@
     <script src="https://cdn.jsdelivr.net/npm/zebra_dialog@latest/dist/zebra_dialog.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/zebra_dialog@latest/dist/css/flat/zebra_dialog.min.css">
 
-    <script src="./JS/hgv.js"></script>
+    <script src="./JS/hgv2.js"></script>
+    <script src="./JS/CBTNm.js"></script>
+
     <style>
         html *
         {
@@ -24,9 +25,30 @@
 <body>
 
 <div id="container"></div>
+<script>
+    "use strict";
+
+    var CBTNPara = {};
+
+    var urlobj = new URL(window.location);
+    for (var p of urlobj.searchParams) {
+        CBTNPara[p[0]] = p[1];
+    }
+
+    CBTNPara["div_id"] = "container";
+    CBTNPara["subsumption_json_url"] = "./GNOme.browser.json";
+    CBTNPara["glycandata_json_url"] = "./JS/glycandata_accession.json";
+    CBTNPara["glygen_json_url"] = "./JS/glygen_accession.json";
+
+    var cbtn = CBTN();
+    cbtn.initializeFromPara(CBTNPara);
 
 
-<script src="./JS/tn.js"></script>
+</script>
+
+<script>
+
+</script>
 
 </body>
 </html>
