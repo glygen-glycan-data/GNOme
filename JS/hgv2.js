@@ -735,12 +735,12 @@ var glycanviewer = {
             if (selectedNode !== undefined && selectedNode !== "Topology" && !selectedNode.startsWith("fake")){
 
                 var entry2 = document.createElement("dt");
-                entry2.style = "display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
+                entry2.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
                 entry2.onmouseover = function(d){
-                    entry2.style = "display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #111111";
+                    entry2.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #111111";
                 };
                 entry2.onmouseout = function(d){
-                    entry2.style = "display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333";
+                    entry2.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333";
                 };
                 entry2.innerHTML = "GlyTouCan"; //change the description
                 entry2.name = selectedNode;
@@ -758,7 +758,7 @@ var glycanviewer = {
 
                 var entry3 = document.createElement("dt");
                 var textDecoration = "line-through";
-                if (glycandataAccession.includes(selectedNode)){
+                if (glycandata_accession.includes(selectedNode)){
                     textDecoration = "none";
                     entry3.onclick = function(){
                         var nodeID = this.name;
@@ -770,23 +770,25 @@ var glycanviewer = {
                         window.open(externalURL);
                     };
                 }
-                entry3.style = "display: block; color: white; text-align: left; padding: 5px; text-decoration: " + textDecoration + ";";
+                entry3.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: " + textDecoration + ";";
                 entry3.onmouseover = function(d){
-                    entry3.style = "display: block; color: white; text-align: left; padding: 5px; background-color: #111111; text-decoration: "+ textDecoration + ";";
+                    entry3.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; background-color: #111111; text-decoration: "+ textDecoration + ";";
                 };
                 entry3.onmouseout = function(d){
-                    entry3.style = "display: block; color: white; text-align: left; padding: 5px; background-color: #333333; text-decoration: "+ textDecoration + ";";
+                    entry3.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; background-color: #333333; text-decoration: "+ textDecoration + ";";
                 };
                 entry3.innerHTML = "GlycanData"; //change the description
                 entry3.name = selectedNode;
 
-                menuList.appendChild(entry3);
+                if (glycandata_accession.includes(selectedNode)) {
+                    menuList.appendChild(entry3);
+                }
 
 
 
                 var entry4 = document.createElement("dt");
                 var textDecoration4 = "line-through";
-                if (glygenAccession.includes(selectedNode)){
+                if (glygen_accession.includes(selectedNode)){
                     textDecoration4 = "none";
                     entry4.onclick = function(){
                         var nodeID = this.name;
@@ -798,17 +800,19 @@ var glycanviewer = {
                         window.open(externalURL);
                     };
                 }
-                entry4.style = "display: block; color: white; text-align: left; padding: 5px; text-decoration: " + textDecoration4 + ";";
+                entry4.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: " + textDecoration4 + ";";
                 entry4.onmouseover = function(d){
-                    entry4.style = "display: block; color: white; text-align: left; padding: 5px; background-color: #111111; text-decoration: "+ textDecoration4 + ";";
+                    entry4.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; background-color: #111111; text-decoration: "+ textDecoration4 + ";";
                 };
                 entry4.onmouseout = function(d){
-                    entry4.style = "display: block; color: white; text-align: left; padding: 5px; background-color: #333333; text-decoration: "+ textDecoration4 + ";";
+                    entry4.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; background-color: #333333; text-decoration: "+ textDecoration4 + ";";
                 };
                 entry4.innerHTML = "GlyGen"; //change the description
                 entry4.name = selectedNode;
 
-                menuList.appendChild(entry4);
+                if (glygen_accession.includes(selectedNode)) {
+                    menuList.appendChild(entry4);
+                }
 
 
 

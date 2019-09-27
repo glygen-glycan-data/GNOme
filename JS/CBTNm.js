@@ -61,6 +61,11 @@ var CBTN = function () {
         "* Right click popup to jump to GlyGen, GlycanData, GlyTouCan.";
     var hintContentCurrent = hintContentUpper;
 
+
+    var hintHeaderUpper = "Composition Browser";
+    var hintHeaderLower = "Subsumption Navigator";
+    var hintHeaderCurrent = hintHeaderUpper;
+
     var lastClickedTopology = [];
     var matchedTopologies = [];
 
@@ -350,7 +355,7 @@ var CBTN = function () {
         iconHint.onclick = function () {
             var dialog = new $.Zebra_Dialog(hintContentCurrent, {
                 type: 'information',
-                title: 'Hint',
+                title: hintHeaderCurrent,
                 buttons: ['Ok!'],
                 onClose: function (caption) {
 
@@ -363,7 +368,7 @@ var CBTN = function () {
             });
         };
 
-        iconHint.style = "position: absolute; top: 30px; right: 30px; z-index: 500;";
+        iconHint.style = "position: absolute; top: 10px; right: 10px; z-index: 500; cursor: help;";
 
         container.appendChild(iconHint);
     }
@@ -666,6 +671,7 @@ var CBTN = function () {
         panelcontainer.style = cssUpperShow;
 
         hintContentCurrent = hintContentUpper;
+        hintHeaderCurrent = hintHeaderUpper;
 
         resizeContainer();
     }
@@ -692,6 +698,7 @@ var CBTN = function () {
         lowerPrep();
         statusLog(data[acc].type, acc);
         hintContentCurrent = hintContentLower;
+        hintHeaderCurrent = hintHeaderLower;
 
         //document.getElementById("img_" + acc).style = "border-style: solid; border-color: rgb(42,124,233); margin: 0;";
 
