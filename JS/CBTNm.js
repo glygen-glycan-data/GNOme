@@ -1,8 +1,5 @@
 "use strict";
 
-var glycandata_accession = [];
-var glygen_accession = [];
-
 
 var CBTN = function () {
     var div_id;
@@ -109,8 +106,7 @@ var CBTN = function () {
         contextMenu: {
             enable: true,
             defaultMenu: false,
-            externalURL1: "https://glytoucan.org/glycans/",
-            externalURL2: "/image?style=extended&format=png&notation=cfg"
+            externalLinks: []
         }
     };
 
@@ -917,44 +913,15 @@ var CBTN = function () {
         div_id = p["div_id"];
         container = document.getElementById(div_id);
 
-        var requiredJSONs = {};
-        requiredJSONs["data"] = p["subsumption_json_url"];
-        requiredJSONs["glycandata_accession"] = p["glycandata_json_url"];
-        requiredJSONs["glygen_accession"] = p["glygen_json_url"];
+        option.contextMenu.externalLinks = p["jumps"];
+        option["cbtn"] = p["this"];
 
 
-        var resourcesStatus = {};
-        resourcesStatus["data"] = false;
-        resourcesStatus["glycandata_accession"] = false;
-        resourcesStatus["glygen_accession"] = true;
-
-        var initBool = false;
-        function resourceSync(item) {
-            if (! Object.values(resourcesStatus).includes(false)){
-                if (!initBool){
-                    init();
-                }
-            }
-        }
-
-        jQuery.getJSON(requiredJSONs["data"], function (d) {
+        jQuery.getJSON(p["subsumption_json_url"], function (d) {
             data = d;
-            resourcesStatus["data"] = true;
-            resourceSync(1);
+            init();
         });
 
-        jQuery.getJSON(requiredJSONs["glycandata_accession"], function (d) {
-            glycandata_accession = d;
-            resourcesStatus["glycandata_accession"] = true;
-            resourceSync();
-        });
-
-
-        jQuery.getJSON(requiredJSONs["glygen_accession"], function (d) {
-            glygen_accession = d;
-            resourcesStatus["glygen_accession"] = true;
-            resourceSync();
-        });
 
 
     }

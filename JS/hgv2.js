@@ -542,12 +542,14 @@ var glycanviewer = {
     doubleClickEvent: function(){
         var thisLib = this;
 
-        thisLib.network.on("doubleClick",zoomWhenDoubleClicked);
-        function zoomWhenDoubleClicked(data) {
+        thisLib.network.on("doubleClick", function (clickData) {
+            zoomWhenDoubleClicked(clickData, thisLib.para)
+        });
+        function zoomWhenDoubleClicked(data, para) {
             var selectnode = data.nodes;
 
             if (selectnode.length>0){
-                cbtn.showLower(selectnode[0]);
+                para.cbtn.showLower(selectnode[0]);
             }
         }
     },
@@ -706,9 +708,11 @@ var glycanviewer = {
         var thisLib = this;
         // Context menu, pop-up when you right click
         // The default context menu give you to chance to change to sub graph view
-        thisLib.div_network.addEventListener("contextmenu", rightClickMenuGenerator, false);
+        thisLib.div_network.addEventListener("contextmenu", function (clickData){
+            rightClickMenuGenerator(clickData, thisLib.para);
+        }, false);
 
-        function rightClickMenuGenerator(clickData){
+        function rightClickMenuGenerator(clickData, para){
             //console.log(clickData);
             document.addEventListener("click",clearEverythingInContextMenu,{once: true});
 
@@ -731,92 +735,47 @@ var glycanviewer = {
             menuELE.style = "margin: 0; padding: 0; overflow: hidden; position: absolute; left: "+x+"px; top: "+y+"px; background-color: #333333; border: none; ";//width: 100px; height: 100px
 
             // updateList("Jump to:", "dt");
+            var externalLinks = para["contextMenu"]["externalLinks"];
+            for (var externalLink of externalLinks){
+                var title = externalLink["title"] || "";
+                var prefix = externalLink["prefix"] || "";
+                var suffix = externalLink["suffix"] || "";
+                var accs = externalLink["accessions"];
 
-            if (selectedNode !== undefined && selectedNode !== "Topology" && !selectedNode.startsWith("fake")){
+                if (selectedNode !== undefined && selectedNode !== "Topology" && !selectedNode.startsWith("fake")){
+                    var entry = document.createElement("dt");
+                    entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
+                    entry.onmouseover = function(d){
+                        this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #111111";
+                    };
+                    entry.onmouseout = function(d){
+                        this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333";
+                    };
+                    entry.innerHTML = title; //change the description
+                    entry.name = selectedNode;
+                    entry.setAttribute("data-prefix", prefix);
+                    entry.setAttribute("data-suffix", suffix);
 
-                var entry2 = document.createElement("dt");
-                entry2.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
-                entry2.onmouseover = function(d){
-                    entry2.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #111111";
-                };
-                entry2.onmouseout = function(d){
-                    entry2.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333";
-                };
-                entry2.innerHTML = "GlyTouCan"; //change the description
-                entry2.name = selectedNode;
-
-                entry2.onclick = function(){
-                    var nodeID = this.name;
-                    var pre, suf;
-                    pre = "https://glytoucan.org/Structures/Glycans/";
-                    suf = "";
-                    //var acc = nodeID.split("_")[0];
-                    var externalURL = pre + nodeID + suf;
-                    window.open(externalURL);
-                };
-                menuList.appendChild(entry2);
-
-                var entry3 = document.createElement("dt");
-                var textDecoration = "line-through";
-                if (glycandata_accession.includes(selectedNode)){
-                    textDecoration = "none";
-                    entry3.onclick = function(){
+                    entry.onclick = function(){
                         var nodeID = this.name;
-                        var pre, suf;
-                        pre = "https://edwardslab.bmcb.georgetown.edu/glycandata/";
-                        suf = "";
-                        //var acc = nodeID.split("_")[0];
+                        var pre = this.getAttribute("data-prefix");
+                        var suf = this.getAttribute("data-suffix");
                         var externalURL = pre + nodeID + suf;
                         window.open(externalURL);
                     };
+
+                    var existFlag = false;
+                    if (accs == undefined){
+                        existFlag = true;
+                    }
+                    else if (accs.includes(selectedNode)){
+                        existFlag = true;
+                    }
+
+                    if (existFlag){
+                        menuList.appendChild(entry);
+                    }
                 }
-                entry3.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: " + textDecoration + ";";
-                entry3.onmouseover = function(d){
-                    entry3.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; background-color: #111111; text-decoration: "+ textDecoration + ";";
-                };
-                entry3.onmouseout = function(d){
-                    entry3.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; background-color: #333333; text-decoration: "+ textDecoration + ";";
-                };
-                entry3.innerHTML = "GlycanData"; //change the description
-                entry3.name = selectedNode;
-
-                if (glycandata_accession.includes(selectedNode)) {
-                    menuList.appendChild(entry3);
-                }
-
-
-
-                var entry4 = document.createElement("dt");
-                var textDecoration4 = "line-through";
-                if (glygen_accession.includes(selectedNode)){
-                    textDecoration4 = "none";
-                    entry4.onclick = function(){
-                        var nodeID = this.name;
-                        var pre, suf;
-                        pre = "https://www.glygen.org/glycan_detail.html?glytoucan_ac=";
-                        suf = "";
-                        //var acc = nodeID.split("_")[0];
-                        var externalURL = pre + nodeID + suf;
-                        window.open(externalURL);
-                    };
-                }
-                entry4.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: " + textDecoration4 + ";";
-                entry4.onmouseover = function(d){
-                    entry4.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; background-color: #111111; text-decoration: "+ textDecoration4 + ";";
-                };
-                entry4.onmouseout = function(d){
-                    entry4.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; background-color: #333333; text-decoration: "+ textDecoration4 + ";";
-                };
-                entry4.innerHTML = "GlyGen"; //change the description
-                entry4.name = selectedNode;
-
-                if (glygen_accession.includes(selectedNode)) {
-                    menuList.appendChild(entry4);
-                }
-
-
-
-
             }
 
             menuELE.appendChild(menuList);
