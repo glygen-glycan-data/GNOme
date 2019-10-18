@@ -928,9 +928,12 @@ var CBTN = function () {
         resourcesStatus["glycandata_accession"] = false;
         resourcesStatus["glygen_accession"] = true;
 
+        var initBool = false;
         function resourceSync(item) {
             if (! Object.values(resourcesStatus).includes(false)){
-                init();
+                if (!initBool){
+                    init();
+                }
             }
         }
 
