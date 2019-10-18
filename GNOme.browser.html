@@ -68,10 +68,22 @@
 
         CBTNPara["jumps"] = [];
         CBTNPara["jumps"].push({
+            "title": "GlycanData",
+            "prefix": "https://edwardslab.bmcb.georgetown.edu/glycandata/",
+            "suffix": "",
+            "accessions": glycandata_accs
+        });
+        CBTNPara["jumps"].push({
             "title": "GlyGen",
             "prefix": "https://www.glygen.org/glycan_detail.html?glytoucan_ac=",
             "suffix": "",
             "accessions": glygen_accs
+        });
+        CBTNPara["jumps"].push({
+            "title": "GlyTouCan",
+            "prefix": "https://glytoucan.org/Structures/Glycans/",
+            "suffix": "",
+            "accessions": undefined
         });
         CBTNPara["this"] = cbtn;
 
