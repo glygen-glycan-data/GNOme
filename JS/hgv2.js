@@ -734,7 +734,13 @@ var glycanviewer = {
             //updateList("Close Menu","dt");
             menuELE.style = "margin: 0; padding: 0; overflow: hidden; position: absolute; left: "+x+"px; top: "+y+"px; background-color: #333333; border: none; ";//width: 100px; height: 100px
 
-            // updateList("Jump to:", "dt");
+            var entry = document.createElement("dt");
+            entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
+            entry.innerHTML = "Go to:";
+            menuList.appendChild(entry);
+
+
+            var nojumpflag = true;
             var externalLinks = para["contextMenu"]["externalLinks"];
             for (var externalLink of externalLinks){
                 var title = externalLink["title"] || "";
@@ -751,7 +757,7 @@ var glycanviewer = {
                     entry.onmouseout = function(d){
                         this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333";
                     };
-                    entry.innerHTML = title; //change the description
+                    entry.innerHTML = " - " + title; //change the description
                     entry.name = selectedNode;
                     entry.setAttribute("data-prefix", prefix);
                     entry.setAttribute("data-suffix", suffix);
@@ -773,11 +779,18 @@ var glycanviewer = {
                     }
 
                     if (existFlag){
+                        nojumpflag = false;
                         menuList.appendChild(entry);
                     }
                 }
             }
-
+            if (nojumpflag){
+                var entry = document.createElement("dt");
+                entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
+                entry.innerHTML = "Sorry, no link available.";
+                var menuList = document.createElement("dl");
+                menuList.appendChild(entry);
+            }
             menuELE.appendChild(menuList);
 
 
