@@ -769,8 +769,31 @@ var CBTN = function () {
             temp2.push(e);
         }
         edges["Pseudo"] = temp2;
-        //console.log(nodes);
-        //console.log(edges);
+
+
+        for (var c of children){
+            // console.log(c, getDecedents(c).length);
+            if (getDecedents(c).length < 1){
+                continue;
+            }
+            var tridot_name = c + "3dots";
+            nodes[tridot_name] = {
+                "name": tridot_name,
+                "alternativeImageURL": "data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAABkCAYAAABkW8nwAAAACXBIWXMAAC4jAAAuIwF4pT92AAAGAGlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTktMTAtMjBUMjE6MzY6MzEtMDQ6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTktMTAtMjBUMjE6MzY6MzEtMDQ6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE5LTEwLTIwVDIxOjM2OjMxLTA0OjAwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOmU4ZTNmNGZlLTMwZTAtNGNhMy1hOTgyLWNlMjllZjI0NjZmOCIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOmM1ZTczMTU4LTgxZGMtZDU0Yy1hYzhkLTVmMGMzYzIxYzBjZSIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOmI1NjYwNzczLTQxZGQtNGFiOC1hZThkLWE1OWVhZGYyMWYzOSIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSI+IDx4bXBNTTpIaXN0b3J5PiA8cmRmOlNlcT4gPHJkZjpsaSBzdEV2dDphY3Rpb249ImNyZWF0ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6YjU2NjA3NzMtNDFkZC00YWI4LWFlOGQtYTU5ZWFkZjIxZjM5IiBzdEV2dDp3aGVuPSIyMDE5LTEwLTIwVDIxOjM2OjMxLTA0OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoTWFjaW50b3NoKSIvPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0ic2F2ZWQiIHN0RXZ0Omluc3RhbmNlSUQ9InhtcC5paWQ6ZThlM2Y0ZmUtMzBlMC00Y2EzLWE5ODItY2UyOWVmMjQ2NmY4IiBzdEV2dDp3aGVuPSIyMDE5LTEwLTIwVDIxOjM2OjMxLTA0OjAwIiBzdEV2dDpzb2Z0d2FyZUFnZW50PSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoTWFjaW50b3NoKSIgc3RFdnQ6Y2hhbmdlZD0iLyIvPiA8L3JkZjpTZXE+IDwveG1wTU06SGlzdG9yeT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7/UYV9AAADYklEQVR42u3a24uNURjH8S2HFKIkOSQRyYXDntxhQiHJaf4BapJDiRlJlIgbTHPBNDQl5UKTRq7Jaa5cECURYpS5M2EmkeP2W7X2zbTXnne969lT9H3rk4uJx7vWN9te71solUoFwBqLAMICYYGwWAQQFggLhAUQFggLhAUQFggLhAUQFggLhAUQFggLhAUQFggLhAUQFggLhAUQFggLhAUQFggLhAUQFggLhAUQFggLhAX822EFrhGyTtrkptyTW3JRNsnoQu2uOdIsXXLHuy4HZW4N546RzdLh77Xb/9ouG2Rkpd9EWNnDWiUP5Ldbt4Cnss14YydKiwxUmet+1iqTjGe7e3lWZe4feSRrCStfWE1VFreSk0YbO18eR8x9IguMZp+KvOcjhBUX1q7IBbaKa7q8yjH3rcwc5qjKmggrW1iL/D/3pZzWJGxuZ8LcroS5qxPmOnWEVT0s95/Wa4mLfNf/ObHXisS5Jf9/wtjLffm4nTj3hrtnwgqHtVK+GWzwshwbfMFgbkeOuXUGc3/KcsIKh3XMYJGdvZGbO0peGsx9LWMjZ+82uuejhBUO64rRIrdGbu7kIY4WsvoqUyNntxjd82XCCofVabTIbZGbO02+GMz9LjMiZ58zuuerhBUOq91okU9Ebu546TOY+ynHgelxo3s+T1jhsBqNFrkhcnPdY6P7BnO7Q49bqlxbje55O2GFw5ot7xIXuC/nYeU+g81tyjHXfQx/SJz7XmYRVvUD0ubERT6b85DSbfDHhLmfE07fzyTe82EOSIcOa1zks7rBj1amJJyA70jY3MaEue7v3JNz7nOZQFjZnhW6b1YvIhe4V4oGD4JPD8PxRuigtDdy7hv/ag/PCiPebpjn30HKssAPZanhqyuHpD/D3P7yx5DRVfT3kvXR1ULebsj/ot9OH9iPCu8luW9y+/3JufXlQr0U+Ijq8T8r1mCuu5cDgW+pv/xzxT286JceVvlaLOv9UcJGv6m1CGrw5T6W62WLf6uzPschaN7Aiv5eG/ybo0v80UiBsMA77wBhgbBAWABhgbBAWABhgbBAWABhgbBAWABhgbBAWABhgbBAWABhgbBAWABhgbBAWABhgbBAWABhgbBAWABhgbBAWABhgbBAWABhgbBAWABhgbDwH/kLFZBoSd1aAPgAAAAASUVORK5CYII=",
+                "label": getDecedents(c).length.toString() + " more underneath"
+            };
+            edges[c] = [{
+                "from": c,
+                "to": tridot_name,
+                "type": "contains"
+            }];
+
+        }
+
+        // console.log(nodes);
+        // console.log(edges);
+
+
         component["nodes"] = nodes;
         component["edges"] = edges;
         component["root"] = "Pseudo";
