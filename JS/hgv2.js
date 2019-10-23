@@ -549,7 +549,9 @@ var glycanviewer = {
             var selectnode = data.nodes;
 
             if (selectnode.length>0){
-                para.cbtn.showLower(selectnode[0]);
+                if (!selectnode[0].includes("dot")){
+                    para.cbtn.showLower(selectnode[0]);
+                }
             }
         }
     },
