@@ -167,7 +167,7 @@ var glycanviewer = {
                         var currentEdge = edgesOfCurrentNode[currentEdgeIndex];
                         nextLevelNodes.push(currentEdge.to);
                         component.nodes[ currentNode ].level = thisLevel;
-                        if (thisLevel < 10001 || boolDisplayAll){
+                        if (thisLevel < 10001 ){
                             displaynodes[ currentNode ] = 1;
                         }
                         else{
@@ -178,7 +178,7 @@ var glycanviewer = {
                 else{
                     component.nodes[ currentNode ].level = thisLevel;
 
-                    if (thisLevel < 10000 || boolDisplayAll){
+                    if (thisLevel < 10000 ){
                         displaynodes[ currentNode ] = 1;
                     }
                     else {
@@ -195,6 +195,12 @@ var glycanviewer = {
             thisLevelNodes = nextLevelNodes;
             nextLevelNodes = [];
             thisLevel += 1;
+        }
+
+        for (var node of Object.keys(component.nodes)){
+            if (node.includes("3dots")){
+                component.nodes[node].level -= 0.33;
+            }
         }
 
         this.rootlevel = rootlevel;
@@ -550,7 +556,7 @@ var glycanviewer = {
 
             if (selectnode.length>0){
                 if (!selectnode[0].includes("dot")){
-                    para.cbtn.showLower(selectnode[0]);
+                    para.cbtn.showLower(selectnode[0], true);
                 }
             }
         }
@@ -842,6 +848,7 @@ var glycanviewer = {
         options = thisLib.options;
         naviNetwork.setOptions(options);
         naviNetwork.setData(data);
+        glycanviewer.network.selectNodes(thisLib.para.essentials.highLightedNodes);
 
         thisLib.naviNetwork = naviNetwork;
 

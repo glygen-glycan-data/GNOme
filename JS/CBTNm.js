@@ -6,6 +6,7 @@ var CBTN = function () {
     var container;
 
     var data;
+    var data_composition;
 
     var panelcontainer, hgvcontainer, showAndHideButton;
     var leftPanel, rightPanel;
@@ -19,6 +20,9 @@ var CBTN = function () {
     var maxCompAtCurrentComp = {};
     var topTopology =[];
     var cacheForMatchedTopology = {};
+
+    var fromRightPanel;
+    var lastfocus;
 
     var icon_config = {
         'GlcNAc': {"shape": "square", "icon_color": "rgb(17,0,250)", "count_color": "white"},
@@ -36,6 +40,7 @@ var CBTN = function () {
     };
 
     var urlPara = {};
+    var suppressStatusChange = false;
 
     var keyMap = {
         "n": "GlcNAc",
@@ -49,11 +54,11 @@ var CBTN = function () {
     var hintContentUpper = "* Click controls at left to add/remove monosaccharides<br>" +
         "* Click a Topology to jump to Subsumption Navigator<br>" +
         "* Shortcuts:<br>" +
-        "    n/N - add/remove GlcNAc<br>" +
-        "    m/M - add/remove Man<br>" +
-        "    g/G - add/remove Gal<br>" +
-        "    f/F - add/remove Fuc<br>" +
-        "    s/S - add/remove NeuAc";
+        "&nbsp&nbsp&nbsp&nbsp&nbspn/N - add/remove GlcNAc<br>" +
+        "&nbsp&nbsp&nbsp&nbsp&nbspm/M - add/remove Man<br>" +
+        "&nbsp&nbsp&nbsp&nbsp&nbspg/G - add/remove Gal<br>" +
+        "&nbsp&nbsp&nbsp&nbsp&nbspf/F - add/remove Fuc<br>" +
+        "&nbsp&nbsp&nbsp&nbsp&nbsps/S - add/remove NeuAc";
     var hintContentLower = "* Double click on structure to navigate subsumption hierarchy.<br>" +
         "* Right click popup to jump to GlyGen, GlycanData, GlyTouCan.";
     var hintContentCurrent = hintContentUpper;
@@ -92,7 +97,8 @@ var CBTN = function () {
                 notation: "cfg" // Other Options: cfgbw, uoxf, uoxf-color, cfg-uoxf, iupac
             },
             imgURL1: "http://edwardslab.bmcb.georgetown.edu/~wzhang/web/glycan_images/cfg/extended/", // Unnecessary if useGlyTouCanAsImageSource is true
-            imgURL2: ".png"
+            imgURL2: ".png",
+            highLightedNodes: []
         },
         display: {
             enableTitle: false,
@@ -111,6 +117,8 @@ var CBTN = function () {
     };
 
     function allcateDIV() {
+        container.innerHTML = "";
+
         panelcontainer = document.createElement("div");
         hgvcontainer = document.createElement("div");
         hgvcontainer.setAttribute("id", "viewer");
@@ -147,6 +155,7 @@ var CBTN = function () {
 
     function getParaFromURL() {
         var urlobj = new URL(window.location);
+        urlPara = {};
         for (var p of urlobj.searchParams) {
             urlPara[p[0]] = p[1];
         }
@@ -326,6 +335,7 @@ var CBTN = function () {
         img.src = "https://edwardslab.bmcb.georgetown.edu/~wzhang/web/glycan_images/cfg/extended/" + gtcid + ".png";
         img.style = "width: 200px; height: auto;";
         img.onclick = function () {
+            fromRightPanel = gtcid;
             showLower(gtcid);
         };
         var caption = document.createElement("figcaption");
@@ -350,7 +360,7 @@ var CBTN = function () {
         iconHint.height = 40;
         iconHint.onclick = function () {
             var dialog = new $.Zebra_Dialog(hintContentCurrent, {
-                type: 'information',
+                type: false,
                 title: hintHeaderCurrent,
                 buttons: ['Ok!'],
                 onClose: function (caption) {
@@ -418,7 +428,7 @@ var CBTN = function () {
         return true
     }
 
-    function getDecedents(n) {
+    function getDescendants(n) {
         if (!Array.isArray(data[n].children)){
             // console.log(data[n].children);
             return []
@@ -426,7 +436,7 @@ var CBTN = function () {
 
         var res = [];
         for (var nc of data[n].children){
-            res = res.concat(JSON.parse(JSON.stringify(getDecedents(nc))));
+            res = res.concat(JSON.parse(JSON.stringify(getDescendants(nc))));
             res.push(nc);
         }
 
@@ -439,12 +449,39 @@ var CBTN = function () {
 
         return res2
     }
+    function getParents(n) {
+        var res = [];
+        for (var p of Object.keys(data)){
+            if (data[p].children.includes(n)){
+                res.push(p)
+            }
+        }
+        return res
+    }
+    function getAncesters(n) {
+        var res = getParents(n);
+        if (res.length == 0){
+            return []
+        }
+
+        for (var p of res){
+            res = res.concat(getAncesters(p));
+            var res2 = [];
+            res.forEach(function (d) {
+                if (!Object.keys(res2).includes(d)){
+                    res2.push(d);
+                }
+            });
+            res = res2;
+        }
+        return res
+    }
 
     function dataPreprocess() {
         for (var acc of Object.keys(data)){
             for (var m of allMono){
                 if (data[acc].comp[m] == undefined){
-                    data[acc].comp[m] =0;
+                    data[acc].comp[m] = 0;
                 }
             }
 
@@ -452,7 +489,15 @@ var CBTN = function () {
                 topTopology.push(acc);
             }
 
-            data[acc].decedentNum = getDecedents(acc).length;
+            data[acc].decedentNum = getDescendants(acc).length;
+        }
+
+        for (var acc of Object.keys(data_composition)){
+            for (var m of allMono){
+                if (data_composition[acc].comp[m] == undefined){
+                    data_composition[acc].comp[m] = 0;
+                }
+            }
         }
     }
 
@@ -462,7 +507,6 @@ var CBTN = function () {
 
         var currentCompStr = monofreq2str(monofreq);
         if (Object.keys(cacheForMatchedTopology).includes(currentCompStr)){
-            console.log("cached");
             matchedTopologies = cacheForMatchedTopology[currentCompStr];
         }
         else{
@@ -626,6 +670,12 @@ var CBTN = function () {
     }
 
     function statusLog(t, gtcid) {
+
+        if (suppressStatusChange){
+            suppressStatusChange = false;
+            return
+        }
+
         var p = "?";
         if (t == "comp") {
             for (var iupac of allMono) {
@@ -638,10 +688,14 @@ var CBTN = function () {
         } else if (["composition", "topology", "saccharide"].includes(t)) {
             p += t + "=" + gtcid;
         }
+
+        var html_title = "CBTN (" + p.substring(1, p.length) + ")";
+        window.document.title = html_title;
+
         if (p.length < 3) {
             p = location.protocol + '//' + location.host + location.pathname;
         }
-        history.pushState({}, null, p);
+        history.pushState({}, "", p);
     }
 
     function updateUpper() {
@@ -658,6 +712,19 @@ var CBTN = function () {
         statusLog("comp");
     }
 
+    function updateUpperSilent() {
+
+        afterCompostionChanged();
+        updateLeftPanel();
+        updateRightPanel();
+    }
+
+    function highlightTopTopology(acc) {
+        if (document.getElementById("img_" + acc) != null){
+            document.getElementById("img_" + acc).style = "border-style: solid; border-color: rgb(42,124,233); margin: 0;";
+        }
+    }
+
     function showUpper() {
         showAndHideButton.style = cssButtonHide;
         leftTurnButton.style = cssButtonHide;
@@ -668,6 +735,16 @@ var CBTN = function () {
 
         hintContentCurrent = hintContentUpper;
         hintHeaderCurrent = hintHeaderUpper;
+
+        if (lastfocus){
+            if (lastfocus != fromRightPanel){
+                var ancestors = getAncesters(lastfocus);
+                for (var anc of ancestors){
+                    highlightTopTopology(anc);
+                }
+            }
+            highlightTopTopology(lastfocus);
+        }
 
         resizeContainer();
     }
@@ -690,9 +767,14 @@ var CBTN = function () {
 
     }
 
-    function showLower(acc) {
+    function showLower(acc, changeMonoFreq) {
         lowerPrep();
         statusLog(data[acc].type, acc);
+        lastfocus = acc;
+        if (changeMonoFreq){
+            monofreq = data[acc].comp;
+            updateUpperSilent();
+        }
         hintContentCurrent = hintContentLower;
         hintHeaderCurrent = hintHeaderLower;
 
@@ -772,15 +854,15 @@ var CBTN = function () {
 
 
         for (var c of children){
-            // console.log(c, getDecedents(c).length);
-            if (getDecedents(c).length < 1){
+            // console.log(c, getDescendants(c).length);
+            if (getDescendants(c).length < 1){
                 continue;
             }
             var tridot_name = c + "3dots";
             nodes[tridot_name] = {
                 "name": tridot_name,
                 "alternativeImageURL": "data:image/jpeg;base64,/9j/4QQuRXhpZgAATU0AKgAAAAgABwESAAMAAAABAAEAAAEaAAUAAAABAAAAYgEbAAUAAAABAAAAagEoAAMAAAABAAIAAAExAAIAAAAkAAAAcgEyAAIAAAAUAAAAlodpAAQAAAABAAAArAAAANgACvyAAAAnEAAK/IAAACcQQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKE1hY2ludG9zaCkAMjAxOToxMDoyMiAyMzoyOTowMwAAAAADoAEAAwAAAAH//wAAoAIABAAAAAEAAAAooAMABAAAAAEAAAAPAAAAAAAAAAYBAwADAAAAAQAGAAABGgAFAAAAAQAAASYBGwAFAAAAAQAAAS4BKAADAAAAAQACAAACAQAEAAAAAQAAATYCAgAEAAAAAQAAAvAAAAAAAAAASAAAAAEAAABIAAAAAf/Y/+0ADEFkb2JlX0NNAAH/7gAOQWRvYmUAZIAAAAAB/9sAhAAMCAgICQgMCQkMEQsKCxEVDwwMDxUYExMVExMYEQwMDAwMDBEMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMAQ0LCw0ODRAODhAUDg4OFBQODg4OFBEMDAwMDBERDAwMDAwMEQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAPACgDASIAAhEBAxEB/90ABAAD/8QBPwAAAQUBAQEBAQEAAAAAAAAAAwABAgQFBgcICQoLAQABBQEBAQEBAQAAAAAAAAABAAIDBAUGBwgJCgsQAAEEAQMCBAIFBwYIBQMMMwEAAhEDBCESMQVBUWETInGBMgYUkaGxQiMkFVLBYjM0coLRQwclklPw4fFjczUWorKDJkSTVGRFwqN0NhfSVeJl8rOEw9N14/NGJ5SkhbSVxNTk9KW1xdXl9VZmdoaWprbG1ub2N0dXZ3eHl6e3x9fn9xEAAgIBAgQEAwQFBgcHBgU1AQACEQMhMRIEQVFhcSITBTKBkRShsUIjwVLR8DMkYuFygpJDUxVjczTxJQYWorKDByY1wtJEk1SjF2RFVTZ0ZeLys4TD03Xj80aUpIW0lcTU5PSltcXV5fVWZnaGlqa2xtbm9ic3R1dnd4eXp7fH/9oADAMBAAIRAxEAPwD1VYHRfrx9Xet9Tv6X0+8vyaASNzS1tgadr3UPP09q31xf1W+rv1B6d1yzN6L1CrKz7g8V44yarfTafdb9nqq/S/R/0nq/o0lOrkfXn6uY3X2fV+3IIznubWTtJrbY/wDm6X2/6R+5ql9Yvrp0H6t349HU7XNtyfc1tbS8tYDt9Wzb9GvcsbN+rn+L6762DquT1ClnVG3Mc7COVU1rr27fT34x/T+rv2fo9/6R/wDg0f66fV/6ldXzsaz6wdQZgZdLPY37RVQ6youJa17cjc51XqepsdXs/wAIkp69JJJJT//Z/+0MNFBob3Rvc2hvcCAzLjAAOEJJTQQlAAAAAAAQAAAAAAAAAAAAAAAAAAAAADhCSU0EOgAAAAAA5QAAABAAAAABAAAAAAALcHJpbnRPdXRwdXQAAAAFAAAAAFBzdFNib29sAQAAAABJbnRlZW51bQAAAABJbnRlAAAAAENscm0AAAAPcHJpbnRTaXh0ZWVuQml0Ym9vbAAAAAALcHJpbnRlck5hbWVURVhUAAAAAQAAAAAAD3ByaW50UHJvb2ZTZXR1cE9iamMAAAAMAFAAcgBvAG8AZgAgAFMAZQB0AHUAcAAAAAAACnByb29mU2V0dXAAAAABAAAAAEJsdG5lbnVtAAAADGJ1aWx0aW5Qcm9vZgAAAAlwcm9vZkNNWUsAOEJJTQQ7AAAAAAItAAAAEAAAAAEAAAAAABJwcmludE91dHB1dE9wdGlvbnMAAAAXAAAAAENwdG5ib29sAAAAAABDbGJyYm9vbAAAAAAAUmdzTWJvb2wAAAAAAENybkNib29sAAAAAABDbnRDYm9vbAAAAAAATGJsc2Jvb2wAAAAAAE5ndHZib29sAAAAAABFbWxEYm9vbAAAAAAASW50cmJvb2wAAAAAAEJja2dPYmpjAAAAAQAAAAAAAFJHQkMAAAADAAAAAFJkICBkb3ViQG/gAAAAAAAAAAAAR3JuIGRvdWJAb+AAAAAAAAAAAABCbCAgZG91YkBv4AAAAAAAAAAAAEJyZFRVbnRGI1JsdAAAAAAAAAAAAAAAAEJsZCBVbnRGI1JsdAAAAAAAAAAAAAAAAFJzbHRVbnRGI1B4bEBSAAAAAAAAAAAACnZlY3RvckRhdGFib29sAQAAAABQZ1BzZW51bQAAAABQZ1BzAAAAAFBnUEMAAAAATGVmdFVudEYjUmx0AAAAAAAAAAAAAAAAVG9wIFVudEYjUmx0AAAAAAAAAAAAAAAAU2NsIFVudEYjUHJjQFkAAAAAAAAAAAAQY3JvcFdoZW5QcmludGluZ2Jvb2wAAAAADmNyb3BSZWN0Qm90dG9tbG9uZwAAAAAAAAAMY3JvcFJlY3RMZWZ0bG9uZwAAAAAAAAANY3JvcFJlY3RSaWdodGxvbmcAAAAAAAAAC2Nyb3BSZWN0VG9wbG9uZwAAAAAAOEJJTQPtAAAAAAAQAEgAAAABAAEASAAAAAEAAThCSU0EJgAAAAAADgAAAAAAAAAAAAA/gAAAOEJJTQQNAAAAAAAEAAAAWjhCSU0EGQAAAAAABAAAAB44QklNA/MAAAAAAAkAAAAAAAAAAAEAOEJJTScQAAAAAAAKAAEAAAAAAAAAAThCSU0D9QAAAAAASAAvZmYAAQBsZmYABgAAAAAAAQAvZmYAAQChmZoABgAAAAAAAQAyAAAAAQBaAAAABgAAAAAAAQA1AAAAAQAtAAAABgAAAAAAAThCSU0D+AAAAAAAcAAA/////////////////////////////wPoAAAAAP////////////////////////////8D6AAAAAD/////////////////////////////A+gAAAAA/////////////////////////////wPoAAA4QklNBAAAAAAAAAIAADhCSU0EAgAAAAAAAgAAOEJJTQQwAAAAAAABAQA4QklNBC0AAAAAAAYAAQAAAAU4QklNBAgAAAAAABAAAAABAAACQAAAAkAAAAAAOEJJTQQeAAAAAAAEAAAAADhCSU0EGgAAAAADSQAAAAYAAAAAAAAAAAAAAA8AAAAoAAAACgBVAG4AdABpAHQAbABlAGQALQAxAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAoAAAADwAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAbnVsbAAAAAIAAAAGYm91bmRzT2JqYwAAAAEAAAAAAABSY3QxAAAABAAAAABUb3AgbG9uZwAAAAAAAAAATGVmdGxvbmcAAAAAAAAAAEJ0b21sb25nAAAADwAAAABSZ2h0bG9uZwAAACgAAAAGc2xpY2VzVmxMcwAAAAFPYmpjAAAAAQAAAAAABXNsaWNlAAAAEgAAAAdzbGljZUlEbG9uZwAAAAAAAAAHZ3JvdXBJRGxvbmcAAAAAAAAABm9yaWdpbmVudW0AAAAMRVNsaWNlT3JpZ2luAAAADWF1dG9HZW5lcmF0ZWQAAAAAVHlwZWVudW0AAAAKRVNsaWNlVHlwZQAAAABJbWcgAAAABmJvdW5kc09iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAAAAAAAAExlZnRsb25nAAAAAAAAAABCdG9tbG9uZwAAAA8AAAAAUmdodGxvbmcAAAAoAAAAA3VybFRFWFQAAAABAAAAAAAAbnVsbFRFWFQAAAABAAAAAAAATXNnZVRFWFQAAAABAAAAAAAGYWx0VGFnVEVYVAAAAAEAAAAAAA5jZWxsVGV4dElzSFRNTGJvb2wBAAAACGNlbGxUZXh0VEVYVAAAAAEAAAAAAAlob3J6QWxpZ25lbnVtAAAAD0VTbGljZUhvcnpBbGlnbgAAAAdkZWZhdWx0AAAACXZlcnRBbGlnbmVudW0AAAAPRVNsaWNlVmVydEFsaWduAAAAB2RlZmF1bHQAAAALYmdDb2xvclR5cGVlbnVtAAAAEUVTbGljZUJHQ29sb3JUeXBlAAAAAE5vbmUAAAAJdG9wT3V0c2V0bG9uZwAAAAAAAAAKbGVmdE91dHNldGxvbmcAAAAAAAAADGJvdHRvbU91dHNldGxvbmcAAAAAAAAAC3JpZ2h0T3V0c2V0bG9uZwAAAAAAOEJJTQQoAAAAAAAMAAAAAj/wAAAAAAAAOEJJTQQRAAAAAAABAQA4QklNBBQAAAAAAAQAAAAGOEJJTQQMAAAAAAMMAAAAAQAAACgAAAAPAAAAeAAABwgAAALwABgAAf/Y/+0ADEFkb2JlX0NNAAH/7gAOQWRvYmUAZIAAAAAB/9sAhAAMCAgICQgMCQkMEQsKCxEVDwwMDxUYExMVExMYEQwMDAwMDBEMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMAQ0LCw0ODRAODhAUDg4OFBQODg4OFBEMDAwMDBERDAwMDAwMEQwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCAAPACgDASIAAhEBAxEB/90ABAAD/8QBPwAAAQUBAQEBAQEAAAAAAAAAAwABAgQFBgcICQoLAQABBQEBAQEBAQAAAAAAAAABAAIDBAUGBwgJCgsQAAEEAQMCBAIFBwYIBQMMMwEAAhEDBCESMQVBUWETInGBMgYUkaGxQiMkFVLBYjM0coLRQwclklPw4fFjczUWorKDJkSTVGRFwqN0NhfSVeJl8rOEw9N14/NGJ5SkhbSVxNTk9KW1xdXl9VZmdoaWprbG1ub2N0dXZ3eHl6e3x9fn9xEAAgIBAgQEAwQFBgcHBgU1AQACEQMhMRIEQVFhcSITBTKBkRShsUIjwVLR8DMkYuFygpJDUxVjczTxJQYWorKDByY1wtJEk1SjF2RFVTZ0ZeLys4TD03Xj80aUpIW0lcTU5PSltcXV5fVWZnaGlqa2xtbm9ic3R1dnd4eXp7fH/9oADAMBAAIRAxEAPwD1VYHRfrx9Xet9Tv6X0+8vyaASNzS1tgadr3UPP09q31xf1W+rv1B6d1yzN6L1CrKz7g8V44yarfTafdb9nqq/S/R/0nq/o0lOrkfXn6uY3X2fV+3IIznubWTtJrbY/wDm6X2/6R+5ql9Yvrp0H6t349HU7XNtyfc1tbS8tYDt9Wzb9GvcsbN+rn+L6762DquT1ClnVG3Mc7COVU1rr27fT34x/T+rv2fo9/6R/wDg0f66fV/6ldXzsaz6wdQZgZdLPY37RVQ6youJa17cjc51XqepsdXs/wAIkp69JJJJT//ZOEJJTQQhAAAAAABdAAAAAQEAAAAPAEEAZABvAGIAZQAgAFAAaABvAHQAbwBzAGgAbwBwAAAAFwBBAGQAbwBiAGUAIABQAGgAbwB0AG8AcwBoAG8AcAAgAEMAQwAgADIAMAAxADkAAAABADhCSU0EBgAAAAAABwAIAAAAAQEA/+EN4Wh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8APD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDUgNzkuMTYzNDk5LCAyMDE4LzA4LzEzLTE2OjQwOjIyICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgMjAxOSAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMTktMTAtMjJUMjM6Mjk6MDMtMDQ6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMTktMTAtMjJUMjM6Mjk6MDMtMDQ6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDE5LTEwLTIyVDIzOjI5OjAzLTA0OjAwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjFjYjdiYzRlLWY0YTUtNDY3NC1hODUzLWEwMmQ2OGI5MTdmNyIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOmMzMmM4M2FiLTNlMTItNTk0My05ZWIyLTgxMWYwNTEzN2NhOCIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjZhZmI2YmNhLWU1MjgtNGM3ZS1hNGFkLWU0MDdhY2Q0NDc4MyIgZGM6Zm9ybWF0PSJpbWFnZS9qcGVnIiBwaG90b3Nob3A6Q29sb3JNb2RlPSIzIj4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo2YWZiNmJjYS1lNTI4LTRjN2UtYTRhZC1lNDA3YWNkNDQ3ODMiIHN0RXZ0OndoZW49IjIwMTktMTAtMjJUMjM6Mjk6MDMtMDQ6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChNYWNpbnRvc2gpIi8+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJzYXZlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDoxY2I3YmM0ZS1mNGE1LTQ2NzQtYTg1My1hMDJkNjhiOTE3ZjciIHN0RXZ0OndoZW49IjIwMTktMTAtMjJUMjM6Mjk6MDMtMDQ6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE5IChNYWNpbnRvc2gpIiBzdEV2dDpjaGFuZ2VkPSIvIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8P3hwYWNrZXQgZW5kPSJ3Ij8+/+4ADkFkb2JlAGRAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQICAgICAgICAgICAwMDAwMDAwMDAwEBAQEBAQEBAQEBAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD/8AAEQgADwAoAwERAAIRAQMRAf/dAAQABf/EAaIAAAAGAgMBAAAAAAAAAAAAAAcIBgUECQMKAgEACwEAAAYDAQEBAAAAAAAAAAAABgUEAwcCCAEJAAoLEAACAQMEAQMDAgMDAwIGCXUBAgMEEQUSBiEHEyIACDEUQTIjFQlRQhZhJDMXUnGBGGKRJUOhsfAmNHIKGcHRNSfhUzaC8ZKiRFRzRUY3R2MoVVZXGrLC0uLyZIN0k4Rlo7PD0+MpOGbzdSo5OkhJSlhZWmdoaWp2d3h5eoWGh4iJipSVlpeYmZqkpaanqKmqtLW2t7i5usTFxsfIycrU1dbX2Nna5OXm5+jp6vT19vf4+foRAAIBAwIEBAMFBAQEBgYFbQECAxEEIRIFMQYAIhNBUQcyYRRxCEKBI5EVUqFiFjMJsSTB0UNy8BfhgjQlklMYY0TxorImNRlUNkVkJwpzg5NGdMLS4vJVZXVWN4SFo7PD0+PzKRqUpLTE1OT0laW1xdXl9ShHV2Y4doaWprbG1ub2Z3eHl6e3x9fn90hYaHiImKi4yNjo+DlJWWl5iZmpucnZ6fkqOkpaanqKmqq6ytrq+v/aAAwDAQACEQMRAD8A3+PfuvdVIfDP+d//AC8Pnr8mO0Pid8c+18vuHtjrSmzuRphnNp5Hbu1+zcNtXJriN0ZrqrcFYzRboocFUyxSOk0dHU1NHJ93SxVFLFPNF7r3WLsL+eP/AC5esPnvt/8Alw7u7jr6P5FZ3Pbc2VNPBtXK1XWm3eyd5RUc20us9x79jAoKHeWe/ilHEiRxz0NNVVkdNVVNPUiSGP3Xunv+Yf8Azn/gd/K93r1F158rt/bow27+5IKjL4TC7J2bkN7Vu29m0mUjwtRv/elNjZY6nD7TOU80EDQpVV1bJSVIpaaY082j3XurWffuvdf/0N/j37r3Wsh/K5/l4fyEfjL8494d4/BH5g9S95/JTfuG39R7L6gxXy/6C7nXq3b+cnfMb3j6j6+6+FPvuOmosLTvRy1WWqs5UUWJEsfmQSTO/uvdNHdX8un/AIT7by/mu0Xy97R+YPTG3PmbiO59jZ7O/F+p+ZHQW29t7h+Q22KvC0u0qrdXSmSmHav9/azclBjZ5sLT5OjpcrkkX7ign+5qY6j3XuhU/nP/AAB/kq/Mvu/o7cX8x35ebE+L/d/XWxxBtjGT/Kzor4/7v7K6krt25SuxOM3Jgu3KTL5nMbIod30uaTH1+HjxtQlVVZCNatnUCH3XutjL37r3X//Z",
-                "label": "(" + getDecedents(c).length.toString() + ")"
+                "label": "(" + getDescendants(c).length.toString() + ")"
             };
             edges[c] = [{
                 "from": c,
@@ -799,6 +881,7 @@ var CBTN = function () {
         component["root"] = "Pseudo";
 
         option.essentials.component = component;
+        option.essentials.highLightedNodes = [acc];
         glycanviewer.init(option);
 
         // glycanviewer.network.on("click", captureClickNode);
@@ -811,13 +894,19 @@ var CBTN = function () {
                 statusLog(glycanType, accx);
             }
         }
-        function highlight(x) {
-            glycanviewer.network.selectNodes([x]);
-        }
-        setTimeout(highlight, 1500, acc);
-        // console.log(parent, acc, children)
     }
 
+    function accessionValidation(acc) {
+        var gtc_acc_re = /G\d{5}\w{2}/;
+        return gtc_acc_re.test(acc)
+    }
+
+    function pop_up(title, msg) {
+        new $.Zebra_Dialog(msg, {
+            type: false,
+            title: title,
+            buttons: ['Ok!']})
+    }
 
 
     function init() {
@@ -825,6 +914,12 @@ var CBTN = function () {
         allcateDIV();
         keyPress();
         dataPreprocess();
+
+
+        window.onpopstate = function(event) {
+            getParaFromURL();
+            testFunc();
+        };
 
 
         var altOri = getCookie("orientation");
@@ -848,13 +943,54 @@ var CBTN = function () {
             lowerInit(urlPara["saccharide"]);
         } else if (Object.keys(urlPara).includes("topology")) {
             lowerInit(urlPara["topology"]);
-        }else if (Object.keys(urlPara).includes("focus")) {
-            lowerInit(urlPara["focus"]);
         } else if (Object.keys(urlPara).includes("composition")) {
-            glytoucanCompositionInit()
+            glytoucanCompositionInit();
+        } else if (Object.keys(urlPara).includes("focus")) {
+            if (Object.keys(data_composition).includes(urlPara["focus"])){
+                glytoucanCompositionInit();
+            }
+            else{
+                lowerInit(urlPara["focus"]);
+            }
+
         } else if (iupacCompositionInitFlag) {
             iupacCompositionInit();
         } else {
+            normalInit();
+        }
+    }
+
+    function testFunc(){
+        suppressStatusChange = true;
+
+        var iupacCompositionInitFlag = false;
+        for (var iupac of allMono) {
+            if (Object.keys(urlPara).includes(iupac)) {
+                iupacCompositionInitFlag = true;
+                break
+            }
+        }
+
+        if (Object.keys(urlPara).includes("saccharide")) {
+            lowerInit(urlPara["saccharide"]);
+        } else if (Object.keys(urlPara).includes("topology")) {
+            lowerInit(urlPara["topology"]);
+        } else if (Object.keys(urlPara).includes("composition")) {
+            glytoucanCompositionInit();
+        } else if (Object.keys(urlPara).includes("focus")) {
+            if (Object.keys(data_composition).includes(urlPara["focus"])){
+                glytoucanCompositionInit();
+            }
+            else{
+                lowerInit(urlPara["focus"]);
+            }
+
+        } else if (iupacCompositionInitFlag) {
+            iupacCompositionInit();
+        } else {
+            for (var m of allMono) {
+                monofreq[m] = 0;
+            }
             normalInit();
         }
     }
@@ -865,16 +1001,29 @@ var CBTN = function () {
     }
 
     function lowerInit(acc) {
+        if (!accessionValidation(acc)){
+            pop_up("Error", "Bad GlyTouCan accession: " + acc);
+            normalInit();
+            return
+        }
+        if (!Object.keys(data).includes(acc)){
+            pop_up("Error", "Unsupported GlyTouCan accession: " + acc);
+            normalInit();
+            return
+        }
         for (var m of allMono){
             monofreq[m] = data[acc].comp[m];
         }
 
-        updateUpper();
+        // updateUpper();
+        updateUpperSilent();
         showLower(acc);
     }
 
     function iupacCompositionInit(){
-
+        for (var m of allMono){
+            monofreq[m] = 0;
+        }
         for (var m of Object.keys(urlPara)){
             if (allMono.includes(m)){
                 monofreq[m] = parseInt(urlPara[m]);
@@ -886,8 +1035,23 @@ var CBTN = function () {
 
 
     function glytoucanCompositionInit() {
-        monofreq = data[urlPara["composition"]].comp;
-        updateUpper();
+        var comp_acc = urlPara["composition"];
+
+        if (!accessionValidation(comp_acc)){
+            normalInit();
+            return
+        }
+        if (!Object.keys(data_composition).includes(comp_acc)){
+            normalInit();
+            return
+        }
+
+        if (Object.keys(data_composition).includes(comp_acc)){
+            monofreq = data_composition[comp_acc].comp;
+            updateUpper();
+        }else{
+            normalInit();
+        }
     }
 
     function setCookie(cname, cvalue, exdays) {
@@ -929,8 +1093,16 @@ var CBTN = function () {
         setCookie("orientation", newOri, 365);
         glycanviewer.init(option);
     }
+    
+    function getJSON(url) {
+        return new Promise(resolve => {
+            jQuery.getJSON(url, function(d) {
+                resolve(d);
+            });
+        })
+    }
 
-    function initializeFromPara(p) {
+    async function initializeFromPara(p) {
         urlPara = p;
 
         div_id = p["div_id"];
@@ -940,13 +1112,13 @@ var CBTN = function () {
         option["cbtn"] = p["this"];
 
 
-        jQuery.getJSON(p["subsumption_json_url"], function (d) {
-            data = d;
-            init();
-        });
+        data = await getJSON(p["subsumption_json_url"]);
+        data_composition = {};
+        if (Object.keys(p).includes("compositon")){
+            data_composition = await getJSON(p["compositon"]);
+        }
 
-
-
+        init();
     }
 
 
