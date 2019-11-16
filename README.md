@@ -5,6 +5,7 @@ Glycan Naming Ontology.
 More information can be found at http://obofoundry.org/ontology/gno
 
 ## Versions
+[Newest GNOme.owl](https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.owl)<br>
 [Newest package available here](https://github.com/glygen-glycan-data/GNOme/releases/latest)
 
 ### Stable release versions

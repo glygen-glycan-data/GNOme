@@ -11,6 +11,7 @@ var CBTN = function () {
     var panelcontainer, hgvcontainer, showAndHideButton;
     var leftPanel, rightPanel;
     var leftTurnButton, rightTurnButton;
+    var badge;
 
     var monoExceptForXxx = ['GlcNAc', 'GalNAc', 'ManNAc', 'HexNAc','Glc', 'Gal', 'Man', 'Hex','Fuc', 'NeuAc', 'NeuGc'];
     var allMono = monoExceptForXxx.concat(["Xxx"]);
@@ -61,6 +62,17 @@ var CBTN = function () {
         "&nbsp&nbsp&nbsp&nbsp&nbsps/S - add/remove NeuAc";
     var hintContentLower = "* Double click on structure to navigate subsumption hierarchy.<br>" +
         "* Right click popup to jump to GlyGen, GlycanData, GlyTouCan.";
+
+    var hintContentUpper = "<ul style='position: relative; top: -20px;'><li>Click controls at left to add/remove monosaccharides</li>" +
+        "<li>Click a Topology to jump to Subsumption Navigator</li>" +
+        "<li>Shortcuts:</li><ul>" +
+        "<li>n/N - add/remove GlcNAc</li>" +
+        "<li>m/M - add/remove Man</li>" +
+        "<li>g/G - add/remove Gal</li>" +
+        "<li>f/F - add/remove Fuc</li>" +
+        "<li>s/S - add/remove NeuAc</li></ul></ul>";
+    var hintContentLower = "<ul style='position: relative; top: -20px;'><li>Double click on structure to navigate subsumption hierarchy.</li>" +
+        "<li>Right click popup to jump to GlyGen, GlycanData, GlyTouCan.</li></ul>";
     var hintContentCurrent = hintContentUpper;
 
 
@@ -146,11 +158,19 @@ var CBTN = function () {
         panelcontainer.appendChild(leftPanel);
         panelcontainer.appendChild(rightPanel);
 
+        badge = document.createElement("h4");
+        badge.innerHTML = "GNOme: Glycan Naming and subsumption Ontology";
+        badge.style = "position: absolute; bottom: 10px; width: 100%; z-index: 500; text-align: center; color: grey; ";
+        badge.onclick = function(){
+            window.open("https://github.com/glygen-glycan-data/GNOme");
+        };
+
         container.appendChild(showAndHideButton);
         //container.appendChild(leftTurnButton);
         //container.appendChild(rightTurnButton);
         container.appendChild(panelcontainer);
         container.appendChild(hgvcontainer);
+        container.appendChild(badge);
     }
 
     function getParaFromURL() {
@@ -185,7 +205,6 @@ var CBTN = function () {
             hexCount += monofreq[m];
         }
         flags["Hex"] = hexCount < monofreq["Hex"];
-
 
         return flags
     }
@@ -359,10 +378,10 @@ var CBTN = function () {
         iconHint.width = 40;
         iconHint.height = 40;
         iconHint.onclick = function () {
-            var dialog = new $.Zebra_Dialog(hintContentCurrent, {
+            var dialog = new $.Zebra_Dialog(hintContentCurrent + "<a href='https://github.com/glygen-glycan-data/GNOme' style='position: absolute; bottom: 10px; right: 30px; text-align: right;'>GNOme</a>", {
                 type: false,
                 title: hintHeaderCurrent,
-                buttons: ['Ok!'],
+                buttons: false,
                 onClose: function (caption) {
 
                     // notice that we use the button's label to determine which button was clicked
@@ -374,7 +393,7 @@ var CBTN = function () {
             });
         };
 
-        iconHint.style = "position: absolute; top: 10px; right: 10px; z-index: 500; cursor: help;";
+        iconHint.style = "position: absolute; top: 10px; right: 10px; z-index: 500; ";
 
         container.appendChild(iconHint);
     }
@@ -689,7 +708,51 @@ var CBTN = function () {
             p += t + "=" + gtcid;
         }
 
-        var html_title = "CBTN (" + p.substring(1, p.length) + ")";
+
+
+        var title_prefix = "";
+        var title_content = "";
+        if (["topology", "saccharide"].includes(t)){
+            title_prefix = "GNOme Subsumption Navigator:";
+            title_content = gtcid;
+        }
+        else{
+            title_prefix = "GNOme Composition Browser:";
+            title_content = "";
+
+            var temp_monofreq = {};
+            var hexCount = 0, hexnacCount = 0;
+            for (var m of allMono) {
+                if ( !m.includes("Hex") ){
+                    if (monofreq[m] > 0){
+                        temp_monofreq[m] = monofreq[m];
+                    }
+                }
+            }
+            for (var m of ['GlcNAc', 'GalNAc', 'ManNAc']){
+                hexnacCount += monofreq[m];
+            }
+            for (var m of ['Glc', 'Gal', 'Man']){
+                hexCount += monofreq[m];
+            }
+
+
+            if (monofreq["Hex"] - hexCount > 0){
+                temp_monofreq["Hex"] = monofreq["Hex"] - hexCount;
+            }
+            if (monofreq["HexNAc"] - hexnacCount > 0){
+                temp_monofreq["HexNAc"] = monofreq["HexNAc"] - hexnacCount;
+            }
+
+            for (var m of allMono){
+                if (temp_monofreq[m]){
+                    title_content += m + "(" + temp_monofreq[m].toString() + ")";
+                }
+            }
+        }
+
+
+        var html_title = title_prefix + " " + title_content;
         window.document.title = html_title;
 
         if (p.length < 3) {
@@ -905,7 +968,7 @@ var CBTN = function () {
         new $.Zebra_Dialog(msg, {
             type: false,
             title: title,
-            buttons: ['Ok!']})
+            buttons: false})
     }
 
 
