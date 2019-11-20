@@ -810,6 +810,7 @@ var CBTN = function () {
         }
 
         resizeContainer();
+        statusLog("comp", "");
     }
 
     function lowerPrep() {
