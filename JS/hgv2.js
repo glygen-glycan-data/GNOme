@@ -739,6 +739,40 @@ var glycanviewer = {
             var selectedNodes = [ selectedNode ];
             var connectedNodes = [];
 
+            if (selectedNode !== undefined && selectedNode !== "Topology" && !selectedNode.startsWith("fake") && !selectedNode.endsWith("3dots")){
+
+            }else{
+                return
+            }
+
+            var pureGTCre = /^G\d{5}\w{2}$/;
+            var pureGTCres = selectedNode.match(pureGTCre);
+            if (Array.isArray(pureGTCres) && pureGTCres.length == 1){
+                var entry = document.createElement("dt");
+                entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
+                entry.onmouseover = function(d){
+                    this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #111111";
+                };
+                entry.onmouseout = function(d){
+                    this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333";
+                };
+                entry.innerHTML = "Copy accession to clipboard"; //change the description
+                entry.name = selectedNode;
+
+                entry.onclick = function(){
+                    var nodeID = this.name;
+
+                    const el = document.createElement('textarea');
+                    el.value = nodeID;
+                    document.body.appendChild(el);
+                    el.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(el);
+
+                };
+                menuList.appendChild(entry);
+            }
+
             //updateList("Close Menu","dt");
             menuELE.style = "margin: 0; padding: 0; overflow: hidden; position: absolute; left: "+x+"px; top: "+y+"px; background-color: #333333; border: none; ";//width: 100px; height: 100px
 
@@ -746,7 +780,6 @@ var glycanviewer = {
             entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
             entry.innerHTML = "Go to:";
             menuList.appendChild(entry);
-
 
             var nojumpflag = true;
             var externalLinks = para["contextMenu"]["externalLinks"];
@@ -756,7 +789,7 @@ var glycanviewer = {
                 var suffix = externalLink["suffix"] || "";
                 var accs = externalLink["accessions"];
 
-                if (selectedNode !== undefined && selectedNode !== "Topology" && !selectedNode.startsWith("fake")){
+                if (selectedNode !== undefined && selectedNode !== "Topology" && !selectedNode.startsWith("fake") && !selectedNode.endsWith("3dots")){
                     var entry = document.createElement("dt");
                     entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
                     entry.onmouseover = function(d){
@@ -792,6 +825,7 @@ var glycanviewer = {
                     }
                 }
             }
+            /*
             if (nojumpflag){
                 var entry = document.createElement("dt");
                 entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
@@ -799,6 +833,8 @@ var glycanviewer = {
                 var menuList = document.createElement("dl");
                 menuList.appendChild(entry);
             }
+
+             */
             menuELE.appendChild(menuList);
 
 
