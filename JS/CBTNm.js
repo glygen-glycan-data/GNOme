@@ -25,7 +25,7 @@ var CBTN = function () {
     var fromRightPanel;
     var lastfocus;
 
-    var icon_config = {
+    var icon_config_cfg = {
         'GlcNAc': {"shape": "square", "icon_color": "rgb(17,0,250)", "count_color": "white"},
         'ManNAc': {"shape": "square", "icon_color": "rgb(0,200,50)", "count_color": "white"},
         'GalNAc': {"shape": "square", "icon_color": "rgb(254,255,0)", "count_color": "black"},
@@ -39,6 +39,41 @@ var CBTN = function () {
         'NeuGc': {"shape": "diamond", "icon_color": "rgb(233,255,255)", "count_color": "black"},
         'Xxx': {"shape": "circle", "icon_color": "grey", "count_color": "white"}
     };
+
+    var icon_config_snfg = {
+        'GlcNAc': {"shape": "square", "icon_color": "rgb(2,145,188)", "count_color": "white"},
+        'ManNAc': {"shape": "square", "icon_color": "rgb(3,166,81)", "count_color": "white"},
+        'GalNAc': {"shape": "square", "icon_color": "rgb(255,212,0)", "count_color": "black"},
+        'HexNAc': {"shape": "square", "icon_color": "rgb(255,255,255)", "count_color": "black"},
+        'Glc': {"shape": "circle", "icon_color": "rgb(2,145,188)", "count_color": "white"},
+        'Man': {"shape": "circle", "icon_color": "rgb(3,166,81)", "count_color": "white"},
+        'Gal': {"shape": "circle", "icon_color": "rgb(255,212,0)", "count_color": "black"},
+        'Hex': {"shape": "circle", "icon_color": "rgb(255,255,255)", "count_color": "black"},
+        'Fuc': {"shape": "triangle", "icon_color": "rgb(237,29,37)", "count_color": "white"},
+        'NeuAc': {"shape": "diamond", "icon_color": "rgb(165,68,153)", "count_color": "white"},
+        'NeuGc': {"shape": "diamond", "icon_color": "rgb(143,203,233)", "count_color": "black"},
+        'Xxx': {"shape": "circle", "icon_color": "grey", "count_color": "white"}
+    };
+
+    var image_url_prefix_cfg = "http://edwardslab.bmcb.georgetown.edu/~wzhang/web/glycan_images/cfg/extended/";
+    var image_url_suffix_cfg = ".png";
+
+    var image_url_prefix_snfg = "https://image.glycosmos.org/snfg/png/";
+    var image_url_suffix_snfg = "";
+
+    var image_url_prefix;
+    var image_url_suffix;
+    var icon_config = icon_config_cfg;
+    if (true){
+        image_url_prefix = image_url_prefix_cfg;
+        image_url_suffix = image_url_suffix_cfg;
+        icon_config = icon_config_cfg;
+    }else{
+        image_url_prefix = image_url_prefix_snfg;
+        image_url_suffix = image_url_suffix_snfg;
+        icon_config = icon_config_snfg;
+    }
+
 
     var urlPara = {};
     var suppressStatusChange = false;
@@ -108,8 +143,8 @@ var CBTN = function () {
                 format: "png", // Other Options: jpg
                 notation: "cfg" // Other Options: cfgbw, uoxf, uoxf-color, cfg-uoxf, iupac
             },
-            imgURL1: "http://edwardslab.bmcb.georgetown.edu/~wzhang/web/glycan_images/cfg/extended/", // Unnecessary if useGlyTouCanAsImageSource is true
-            imgURL2: ".png",
+            imgURL1: image_url_prefix, // Unnecessary if useGlyTouCanAsImageSource is true
+            imgURL2: image_url_suffix,
             highLightedNodes: []
         },
         display: {
@@ -351,7 +386,7 @@ var CBTN = function () {
         figure.style.margin = 0;
         figure.id = "img_" + gtcid;
         var img = document.createElement("img");
-        img.src = "https://edwardslab.bmcb.georgetown.edu/~wzhang/web/glycan_images/cfg/extended/" + gtcid + ".png";
+        img.src = image_url_prefix + gtcid + image_url_suffix;
         img.style = "width: 200px; height: auto;";
         img.onclick = function () {
             fromRightPanel = gtcid;
@@ -1011,6 +1046,7 @@ var CBTN = function () {
             glytoucanCompositionInit();
         } else if (Object.keys(urlPara).includes("focus")) {
             if (Object.keys(data_composition).includes(urlPara["focus"])){
+                urlPara["composition"] = urlPara["focus"];
                 glytoucanCompositionInit();
             }
             else{
@@ -1043,6 +1079,7 @@ var CBTN = function () {
             glytoucanCompositionInit();
         } else if (Object.keys(urlPara).includes("focus")) {
             if (Object.keys(data_composition).includes(urlPara["focus"])){
+                urlPara["composition"] = urlPara["focus"];
                 glytoucanCompositionInit();
             }
             else{

@@ -756,7 +756,7 @@ var glycanviewer = {
                 entry.onmouseout = function(d){
                     this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333";
                 };
-                entry.innerHTML = "Copy accession to clipboard"; //change the description
+                entry.innerHTML = "Copy accession"; //change the description
                 entry.name = selectedNode;
 
                 entry.onclick = function(){
@@ -779,7 +779,7 @@ var glycanviewer = {
             var entry = document.createElement("dt");
             entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
             entry.innerHTML = "Go to:";
-            menuList.appendChild(entry);
+            // menuList.appendChild(entry);
 
             var nojumpflag = true;
             var externalLinks = para["contextMenu"]["externalLinks"];
@@ -798,7 +798,7 @@ var glycanviewer = {
                     entry.onmouseout = function(d){
                         this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333";
                     };
-                    entry.innerHTML = " - " + title; //change the description
+                    entry.innerHTML = "&nbsp&#x2192;&nbsp" + title; //change the description
                     entry.name = selectedNode;
                     entry.setAttribute("data-prefix", prefix);
                     entry.setAttribute("data-suffix", suffix);
