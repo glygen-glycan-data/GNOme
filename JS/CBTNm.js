@@ -1251,7 +1251,7 @@ var CBTN = function () {
             themeURL = themename;
         }else {
             // themeURL = "./JS/theme/" + themename + ".json";
-            themeURL = "https://raw.githack.com/glygen-glycan-data/GNOme/tree/master/JS/theme" + themename + ".json";
+            themeURL = "https://raw.githack.com/glygen-glycan-data/GNOme/master/JS/theme/" + themename + ".json";
         }
         theme = await getJSON(themeURL);
 
