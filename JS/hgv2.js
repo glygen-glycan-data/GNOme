@@ -768,10 +768,42 @@ var glycanviewer = {
                     el.select();
                     document.execCommand('copy');
                     document.body.removeChild(el);
-
                 };
                 menuList.appendChild(entry);
             }
+
+            var descendants = thisLib.para.cbtn.getDescendants(selectedNode);
+            if (descendants.length > 0){
+                var entry = document.createElement("dt");
+                entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
+                entry.onmouseover = function(d){
+                    this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #111111";
+                };
+                entry.onmouseout = function(d){
+                    this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333";
+                };
+                entry.innerHTML = "Copy descendants"; //change the description
+
+                var descendants_str = "";
+                for (var des of descendants){
+                    descendants_str += des + "\n";
+                }
+                entry.name = descendants_str;
+
+                entry.onclick = function(){
+                    var nodeID = this.name;
+
+                    const el = document.createElement('textarea');
+                    el.value = nodeID;
+                    document.body.appendChild(el);
+                    el.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(el);
+                };
+                menuList.appendChild(entry);
+            }
+
+
 
             //updateList("Close Menu","dt");
             menuELE.style = "margin: 0; padding: 0; overflow: hidden; position: absolute; left: "+x+"px; top: "+y+"px; background-color: #333333; border: none; ";//width: 100px; height: 100px
@@ -784,10 +816,10 @@ var glycanviewer = {
             var nojumpflag = true;
             var externalLinks = para["contextMenu"]["externalLinks"];
             for (var externalLink of externalLinks){
-                var title = externalLink["title"] || "";
-                var prefix = externalLink["prefix"] || "";
-                var suffix = externalLink["suffix"] || "";
-                var accs = externalLink["accessions"];
+                var title = externalLink["name"] || "";
+                var prefix = externalLink["url_prefix"] || "";
+                var suffix = externalLink["url_suffix"] || "";
+                var accs = externalLink["glycan_set"];
 
                 if (selectedNode !== undefined && selectedNode !== "Topology" && !selectedNode.startsWith("fake") && !selectedNode.endsWith("3dots")){
                     var entry = document.createElement("dt");

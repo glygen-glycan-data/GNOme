@@ -64,6 +64,40 @@ var CBTN = function () {
     var image_url_prefix;
     var image_url_suffix;
     var icon_config = icon_config_cfg;
+    var theme = {};
+    /*
+    var themeConfig = {
+        "GlyTouCan": {
+            "image_style": "snfg",
+            "jump": ["GlyTouCan"]
+        },
+        "GlyGen": {
+            "image_style": "cfg",
+            "jump": ["GlyGen"]
+        },
+        "default": {
+            "image_style": "cfg",
+            "jump": ["GlycanData", "GlyGen", "GlyTouCan"]
+        }
+    };
+    var externalResourcesConfig = {
+        "GlyTouCan": {
+            "url_prefix": "https://glytoucan.org/Structures/Glycans/",
+            "url_suffix": "",
+            "accession_list_json_url": undefined
+        },
+        "GlyGen": {
+            "url_prefix": "https://www.glygen.org/glycan_detail.html?glytoucan_ac=",
+            "url_suffix": "",
+            "accession_list_json_url": "https://raw.githack.com/glygen-glycan-data/GNOme/master/JS/glygen_accession.json"
+        },
+        "GlycanData": {
+            "url_prefix": "https://edwardslab.bmcb.georgetown.edu/glycandata/",
+            "url_suffix": "",
+            "accession_list_json_url": "https://raw.githack.com/glygen-glycan-data/GNOme/master/JS/glycandata_accession.json"
+        }
+    };
+
     if (true){
         image_url_prefix = image_url_prefix_cfg;
         image_url_suffix = image_url_suffix_cfg;
@@ -73,6 +107,8 @@ var CBTN = function () {
         image_url_suffix = image_url_suffix_snfg;
         icon_config = icon_config_snfg;
     }
+
+     */
 
 
     var urlPara = {};
@@ -1209,7 +1245,49 @@ var CBTN = function () {
         div_id = p["div_id"];
         container = document.getElementById(div_id);
 
-        option.contextMenu.externalLinks = p["jumps"];
+        var themename = p["theme"];
+        var themeURL = "";
+        if (themename.startsWith("http")){
+            themeURL = themename;
+        }else {
+            // themeURL = "./JS/theme/" + themename + ".json";
+            themeURL = "https://raw.githack.com/glygen-glycan-data/GNOme/tree/master/JS/theme" + themename + ".json";
+        }
+        theme = await getJSON(themeURL);
+
+        for (var j of theme["external_resources"]){
+            if (j["glycan_set"] == null){
+                j["glycan_set"] = undefined;
+            }
+        }
+        /*
+        if (themeConfig[theme]["image_style"] == "cfg"){
+            image_url_prefix = image_url_prefix_cfg;
+            image_url_suffix = image_url_suffix_cfg;
+            icon_config = icon_config_cfg;
+        }else if (themeConfig[theme]["image_style"] == "snfg"){
+            image_url_prefix = image_url_prefix_snfg;
+            image_url_suffix = image_url_suffix_snfg;
+            icon_config = icon_config_snfg;
+        }else{
+
+        }
+
+         */
+
+        image_url_prefix = theme["image_source_prefix"];
+        image_url_suffix = theme["image_source_suffix"];
+        if (theme["icon_style"] == "cfg"){
+            icon_config = icon_config_cfg;
+        }else if (theme["icon_style"] == "snfg"){
+            icon_config = icon_config_snfg;
+        }else{
+
+        }
+
+        option.contextMenu.externalLinks = theme["external_resources"];
+        option.essentials.imgURL1 = image_url_prefix;
+        option.essentials.imgURL2 = image_url_suffix;
         option["cbtn"] = p["this"];
 
 
@@ -1227,7 +1305,8 @@ var CBTN = function () {
     return {
         initializeFromPara: initializeFromPara,
         init: init,
-        showLower: showLower
+        showLower: showLower,
+        getDescendants: getDescendants
     }
 
 };

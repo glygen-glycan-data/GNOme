@@ -28,70 +28,23 @@
 <script>
     "use strict";
 
-    // Get accessions for GlyGen and GlyTouCan first
+    var CBTNPara = {};
+    var cbtn = CBTN();
 
-    var glygen_accs, glycandata_accs;
-    var accs_received = {
-        "GlyGen": false,
-        "GlycanData": false
-    };
-    d3.json("../JS/glygen_accession.json", function (d) {
-        glygen_accs = d;
-        accs_received["GlyGen"] = true;
-        sync();
-    });
-
-    d3.json("../JS/glycandata_accession.json", function (d) {
-        glycandata_accs = d;
-        accs_received["GlycanData"] = true;
-        sync();
-    });
-
-    function sync(){
-        if ( !Object.values(accs_received).includes(false) ){
-            init_CBTN();
-        }
+    CBTNPara["theme"] = "default";
+    var urlobj = new URL(window.location);
+    for (var p of urlobj.searchParams) {
+        CBTNPara[p[0]] = p[1];
     }
 
-
-    function init_CBTN() {
-        var CBTNPara = {};
-        var cbtn = CBTN();
-
-        var urlobj = new URL(window.location);
-        for (var p of urlobj.searchParams) {
-            CBTNPara[p[0]] = p[1];
-        }
-
-        CBTNPara["div_id"] = "container";
-        CBTNPara["subsumption_json_url"] = "./GNOme_BCSDB.browser.json";
-        CBTNPara["compositon"] = "./GNOme_BCSDB.browser.composition.json";
-
-        CBTNPara["jumps"] = [];
-        CBTNPara["jumps"].push({
-            "title": "GlycanData",
-            "prefix": "https://edwardslab.bmcb.georgetown.edu/glycandata/",
-            "suffix": "",
-            "accessions": glycandata_accs
-        });
-        CBTNPara["jumps"].push({
-            "title": "GlyGen",
-            "prefix": "https://www.glygen.org/glycan_detail.html?glytoucan_ac=",
-            "suffix": "",
-            "accessions": glygen_accs
-        });
-        CBTNPara["jumps"].push({
-            "title": "GlyTouCan",
-            "prefix": "https://glytoucan.org/Structures/Glycans/",
-            "suffix": "",
-            "accessions": undefined
-        });
-        CBTNPara["this"] = cbtn;
-
-        cbtn.initializeFromPara(CBTNPara);
-    }
+    CBTNPara["div_id"] = "container";
+    CBTNPara["subsumption_json_url"] = "./GNOme_BCSDB.browser.json";
+    CBTNPara["compositon"] = "./GNOme_BCSDB.browser.composition.json";
 
 
+    CBTNPara["this"] = cbtn;
+
+    cbtn.initializeFromPara(CBTNPara);
 </script>
 
 <script>
