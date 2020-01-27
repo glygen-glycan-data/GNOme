@@ -532,7 +532,7 @@ var CBTN = function () {
 
         var res2 = [];
         res.forEach(function (d) {
-            if (!Object.keys(res2).includes(d)){
+            if (!res2.includes(d)){
                 res2.push(d);
             }
         });
