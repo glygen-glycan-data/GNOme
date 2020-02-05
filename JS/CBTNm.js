@@ -231,7 +231,7 @@ var CBTN = function () {
 
         badge = document.createElement("h4");
         badge.innerHTML = "GNOme: Glycan Naming and subsumption Ontology";
-        badge.style = "position: absolute; bottom: 10px; width: 100%; z-index: 500; text-align: center; color: grey; ";
+        badge.style = "position: absolute; bottom: 10px; width: 97%; z-index: 500; text-align: center; color: grey; ";
         badge.onclick = function(){
             window.open("https://github.com/glygen-glycan-data/GNOme");
         };
