@@ -16871,6 +16871,13 @@
     }, 
     "type": "basecomposition"
   }, 
+  "G45924NL": {
+    "comp": {
+      "Hex": 1, 
+      "HexNAc": 1
+    }, 
+    "type": "basecomposition"
+  }, 
   "G45943MT": {
     "comp": {
       "Hex": 6, 
@@ -17689,6 +17696,13 @@
       "HexNAc": 2
     }, 
     "type": "composition"
+  }, 
+  "G48302UE": {
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 3
+    }, 
+    "type": "basecomposition"
   }, 
   "G48331ZE": {
     "comp": {
