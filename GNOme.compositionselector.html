@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Composition Selector</title>
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.css" rel="stylesheet" type="text/css"/>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zebra_dialog@latest/dist/zebra_dialog.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/zebra_dialog@latest/dist/css/flat/zebra_dialog.min.css">
+
+    <script src="./JS/hgv_CS.js"></script>
+    <script src="./JS/CBTN_CS.js"></script>
+
+    <style>
+        html *
+        {
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+
+<div id="container"></div>
+<script>
+    "use strict";
+
+    var CBTNPara = {};
+    var cbtn = CBTN();
+
+    CBTNPara["theme"] = "GlyTouCan";
+    var urlobj = new URL(window.location);
+    for (var p of urlobj.searchParams) {
+        CBTNPara[p[0]] = p[1];
+    }
+
+    CBTNPara["div_id"] = "container";
+    CBTNPara["subsumption_json_url"] = "./GNOme.compositionselector.json";
+    CBTNPara["compositon"] = "./GNOme.compositionselector.composition.json";
+
+
+    CBTNPara["this"] = cbtn;
+
+    cbtn.initializeFromPara(CBTNPara);
+
+</script>
+
+<script>
+
+</script>
+
+</body>
+</html>
