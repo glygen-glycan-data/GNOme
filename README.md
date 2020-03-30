@@ -1,26 +1,20 @@
-# GNOme
+# GNOme - Glycan Naming and Subsumption Ontology
+An [OBO Foundry](http://obofoundry.org/ontology/gno) ontology.
 
-Glycan Naming Ontology.
+## Interactive Tools
+[GNOme Glycan Structure Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html)<br>
+[GNOme Glycan Composition Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.compositionselector.html)
 
-More information can be found at http://obofoundry.org/ontology/gno
+## Current Release
+[GNOme.owl](https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.owl)<br>
+[GNOme.obo](https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.obo)
 
-## Versions
-[Newest GNOme.owl](https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.owl)<br>
-[Newest package available here](https://github.com/glygen-glycan-data/GNOme/releases/latest)
-
-### Stable release versions
-
-The latest version of the ontology can always be found at:
-
-http://purl.obolibrary.org/obo/gno.owl
-
+### Stable URLs
+The current release of GNOme is available at the permanent URLs:<br/>
+http://purl.obolibrary.org/obo/gno.owl<br/>
+http://purl.obolibrary.org/obo/gno.obo<br/>
 
 ## Contact
 
 Please use this GitHub repository's [Issue tracker](https://github.com/glygen-glycan-data/GNOme/issues) to request new terms/classes or report errors or specific concerns related to the ontology.
 
-
-## Graphical Navigation
-[GNOme Viewer](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html)
-and [Composition Selector](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.compositionselector.html)<br>
-<br>
