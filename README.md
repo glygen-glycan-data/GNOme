@@ -7,12 +7,14 @@ An [OBO Foundry](http://obofoundry.org/ontology/gno) ontology.
 
 ## Current Release
 [GNOme.owl](https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.owl)<br>
-[GNOme.obo](https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.obo)
+[GNOme.obo](https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.obo)<br>
+[GNOme.json](https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.json)
 
 ### Stable URLs
 The current release of GNOme is available at the permanent URLs:<br/>
 http://purl.obolibrary.org/obo/gno.owl<br/>
 http://purl.obolibrary.org/obo/gno.obo<br/>
+http://purl.obolibrary.org/obo/gno.json<br/>
 
 ## Contact
 
