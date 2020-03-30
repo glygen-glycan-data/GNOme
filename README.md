@@ -6,6 +6,9 @@ Use the [GNOme Glycan Structure Browser](https://raw.githack.com/glygen-glycan-d
 
 Use the [GNOme Glycan Composition Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.compositionselector.html) to find glycan compositions by composition and subsumption relationships.
 
+## Semantic Names
+GNOme [synonyms](data/byonic2glytoucan.txt) support quick lookup of commonly used composition strings.
+
 ## Current Release
 [GNOme.owl](https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.owl), 
 [GNOme.obo](https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.obo), 
