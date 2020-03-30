@@ -12,7 +12,7 @@ Use the [GNOme Glycan Composition Browser](https://raw.githack.com/glygen-glycan
 [GNOme.json](https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.json)
 
 ### Stable URLs
-The current release of GNOme is available at the permanent URLs: 
+The current release of GNOme is always available at the permanent URLs: 
 * http://purl.obolibrary.org/obo/gno.owl
 * http://purl.obolibrary.org/obo/gno.obo
 * http://purl.obolibrary.org/obo/gno.json
