@@ -715,14 +715,20 @@ var CBTN = function () {
 
         if (width == 0){
             width = document.documentElement.clientWidth;
+            container.style.width = width - 10 + "px";
+        }
+        else {
+            container.style.width = width + 15 + "px";
         }
         if (height == 0){
             height = document.documentElement.clientHeight;
+            container.style.height = height - 20 + "px";
+        }
+        else {
+            container.style.height = height + 5 + "px";
         }
         //console.log(width, height);
 
-        container.style.height = height + 5 + "px";
-        container.style.width = width + 15 + "px";
 
     }
 
@@ -922,7 +928,7 @@ var CBTN = function () {
         var w = document.documentElement.clientWidth - 20;
         var h = document.documentElement.clientHeight - 25;
 
-        hgvcontainer.style = "border-style: none; border-color: lightgrey; width: " + w + "px; right: 0; height: " + h + "px";
+        hgvcontainer.style = "border-style: none; border-color: lightgrey; width: " + w + "px; right: 0; height: " + h + "px; ";
 
     }
 
@@ -1264,6 +1270,13 @@ var CBTN = function () {
                 j["glycan_set"] = undefined;
             }
         }
+
+        theme.external_resources.unshift({
+            "name": "GNOme",
+            "url_prefix": "https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html?composition=",
+            "url_suffix": "",
+            "glycan_set": undefined,
+        });
         /*
         if (themeConfig[theme]["image_style"] == "cfg"){
             image_url_prefix = image_url_prefix_cfg;

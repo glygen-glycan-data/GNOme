@@ -691,14 +691,19 @@ var CBTN = function () {
 
         if (width == 0){
             width = document.documentElement.clientWidth;
+            container.style.width = width - 10 + "px";
+        }
+        else {
+            container.style.width = width + 15 + "px";
         }
         if (height == 0){
             height = document.documentElement.clientHeight;
+            container.style.height = height - 20 + "px";
+        }
+        else {
+            container.style.height = height + 5 + "px";
         }
         //console.log(width, height);
-
-        container.style.height = height + 5 + "px";
-        container.style.width = width + 15 + "px";
 
     }
 
