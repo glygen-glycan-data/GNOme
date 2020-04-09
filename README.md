@@ -7,7 +7,7 @@ GNOme organizes these stable accessions
 * for [automated reasoning](#current-release)
 * with well-defined characterization levels.
 
-An [OBO Foundry](http://obofoundry.org/ontology/gno) ontology.
+GNOme is an [OBO Foundry](http://obofoundry.org/ontology/gno) ontology.
 
 ## Interactive Tools
 Use the [GNOme Glycan Structure Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html) to find glycan structures by composition, topology, and subsumption relationships. 
