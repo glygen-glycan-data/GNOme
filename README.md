@@ -14,8 +14,9 @@ Use the [GNOme Glycan Structure Browser](https://raw.githack.com/glygen-glycan-d
 
 Use the [GNOme Glycan Composition Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.compositionselector.html) to find glycan compositions by composition and subsumption relationships.
 
-### Restrictions ###
+Deep-linking is also supported, to jump to a specific GlyTouCan acccession: [G62109NW](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html?focus=G62109NW), or button state: [HexNAc(5)Hex(6)](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html?HexNAc=5&Hex=6).
 
+### Restrictions ###
 [GNOme restrictions](restrictions) support speciifc subsets of GlyTouCan accessions:
 * [GlyGen](http://glygen.org): [Structure Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/restrictions/GNOme_GlyGen.browser.html), [Composition Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/restrictions/GNOme_GlyGen.compositionselector.html).
 * [GlycanData](http://grg.tn/GlycanData): [Structure Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/restrictions/GNOme_GlycanData.browser.html), [Composition Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/restrictions/GNOme_GlycanData.compositionselector.html).
