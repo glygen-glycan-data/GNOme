@@ -1,6 +1,4 @@
 # GNOme - Glycan Naming and Subsumption Ontology
-An [OBO Foundry](http://obofoundry.org/ontology/gno) ontology.
-
 [GlyTouCan](http://glytoucan.org) provides stable accessions for glycans described at varyious degrees of characterization, including compositions (no linkage) and topologies (no carbon bond positions or anomeric configurations). 
 
 GNOme organizes these stable accessions  
@@ -8,6 +6,8 @@ GNOme organizes these stable accessions
 * for automated reasoning, and
 * for text-based searching 
 * with well-defined characterization levels.
+
+An [OBO Foundry](http://obofoundry.org/ontology/gno) ontology.
 
 ## Interactive Tools
 Use the [GNOme Glycan Structure Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html) to find glycan structures by composition, topology, and subsumption relationships. 
