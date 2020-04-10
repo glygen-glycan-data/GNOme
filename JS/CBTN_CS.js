@@ -169,7 +169,7 @@ var CBTN = function () {
     var cssUpperHide = "";
     var cssLeftPanelShow = "display: inline";
     var cssLeftPanelHide = "display: none";
-    var cssButtonShow = "width: 200px; height: 30px; position: absolute; top: 20px; left: 20px; z-index: 500;";
+    var cssButtonShow = "width: 50px; height: 50px; position: absolute; top: 20px; left: 20px; z-index: 500; font-size: 30px;";
     var cssButtonShowL = "width: 30px; height: 30px; position: absolute; top: 20px; left: 250px; z-index: 500;";
     var cssButtonShowR = "width: 30px; height: 30px; position: absolute; top: 20px; left: 280px; z-index: 500;";
     var cssButtonHide = "display: none";
@@ -217,7 +217,7 @@ var CBTN = function () {
         hgvcontainer.setAttribute("id", "viewer");
 
         showAndHideButton = document.createElement("button");
-        showAndHideButton.innerText = "Composition Browser";
+        showAndHideButton.innerHTML = "&#8679;";
         showAndHideButton.onclick = showUpper;
 
         leftTurnButton = document.createElement("button");
@@ -287,6 +287,8 @@ var CBTN = function () {
         }
         flags["Hex"] = hexCount < monofreq["Hex"];
 
+        flags["dHex"] = monofreq["Fuc"] < monofreq["dHex"];
+
         return flags
     }
 
@@ -307,6 +309,9 @@ var CBTN = function () {
             monofreq[iupac] = monofreq[iupac] + num;
             if (['GlcNAc', 'GalNAc', 'ManNAc', 'Glc', 'Gal', 'Man'].includes(iupac)){
                 monofreq[{3: "Hex", 6:"HexNAc"}[iupac.length]] = monofreq[{3: "Hex", 6:"HexNAc"}[iupac.length]]+ num;
+            }
+            if (iupac == "Fuc"){
+                monofreq["dHex"] = monofreq["dHex"] + num;
             }
             //afterCompostionChanged();
             updateUpper();
@@ -1271,12 +1276,16 @@ var CBTN = function () {
             }
         }
 
+        /*
         theme.external_resources.unshift({
             "name": "GNOme",
             "url_prefix": "https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html?composition=",
             "url_suffix": "",
             "glycan_set": undefined,
         });
+        */
+
+
         /*
         if (themeConfig[theme]["image_style"] == "cfg"){
             image_url_prefix = image_url_prefix_cfg;
