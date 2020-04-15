@@ -23,7 +23,7 @@ Deep-linking is also supported, to jump to a specific GlyTouCan acccession: [G62
 * [BCSDB](http://http://csdb.glycoscience.ru/bacterial/): [Structure Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/restrictions/GNOme_BCSDB.browser.html), [Composition Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/restrictions/GNOme_BCSDB.compositionselector.html).
 
 ## Semantic Names
-[GNOme Glycan Synonyms](data/byonic2glytoucan.txt) support quick lookup of commonly used composition strings and other semantic glycan names. 
+[GNOme Glycan Synonyms](data/exact_synonym.txt) support quick lookup of commonly used composition strings and other semantic glycan names. 
 
 ## Current Release
 [GNOme.owl](https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.owl), 
