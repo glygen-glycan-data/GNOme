@@ -518,7 +518,7 @@ var CBTN = function () {
                 if (currentComp[mc] != thisComp[mc]) {
                     return false
                 }
-            }else if (['Fuc', 'NeuAc', 'NeuGc', "Xxx", "S", "P", "Me", "X"].includes(mc)){
+            }else if (['NeuAc', 'NeuGc', "Xxx", "S", "P", "Me", "X"].includes(mc)){
                 if (currentComp[mc] != thisComp[mc]) {
                     return false
                 }
@@ -543,7 +543,7 @@ var CBTN = function () {
                 if (nextComp[mc] != thisComp[mc]) {
                     return false
                 }
-            }else if (['Fuc', 'NeuAc', 'NeuGc', "Xxx", "S", "P", "Me", "X"].includes(mc)){
+            }else if (['NeuAc', 'NeuGc', "Xxx", "S", "P", "Me", "X"].includes(mc)){
                 if (nextComp[mc] != thisComp[mc]) {
                     return false
                 }

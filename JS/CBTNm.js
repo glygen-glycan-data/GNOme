@@ -13,7 +13,7 @@ var CBTN = function () {
     var leftTurnButton, rightTurnButton;
     var badge;
 
-    var monoExceptForXxx = ['GlcNAc', 'GalNAc', 'ManNAc', 'HexNAc','Glc', 'Gal', 'Man', 'Hex','Fuc', 'NeuAc', 'NeuGc'];
+    var monoExceptForXxx = ['GlcNAc', 'GalNAc', 'ManNAc', 'HexNAc','Glc', 'Gal', 'Man', 'Hex','Fuc', 'dHex', 'NeuAc', 'NeuGc'];
     var allMono = monoExceptForXxx.concat(["Xxx"]);
 
     var monofreq = {};
@@ -35,6 +35,7 @@ var CBTN = function () {
         'Gal': {"shape": "circle", "icon_color": "rgb(254,255,0)", "count_color": "black"},
         'Hex': {"shape": "circle", "icon_color": "rgb(255,255,255)", "count_color": "black"},
         'Fuc': {"shape": "triangle", "icon_color": "rgb(250,0,0)", "count_color": "white"},
+        'dHex': {"shape": "triangle", "icon_color": "rgb(255,255,255)", "count_color": "black"},
         'NeuAc': {"shape": "diamond", "icon_color": "rgb(200,0,200)", "count_color": "white"},
         'NeuGc': {"shape": "diamond", "icon_color": "rgb(233,255,255)", "count_color": "black"},
         'Xxx': {"shape": "circle", "icon_color": "grey", "count_color": "white"}
@@ -50,6 +51,7 @@ var CBTN = function () {
         'Gal': {"shape": "circle", "icon_color": "rgb(255,212,0)", "count_color": "black"},
         'Hex': {"shape": "circle", "icon_color": "rgb(255,255,255)", "count_color": "black"},
         'Fuc': {"shape": "triangle", "icon_color": "rgb(237,29,37)", "count_color": "white"},
+        'dHex': {"shape": "triangle", "icon_color": "rgb(255,255,255)", "count_color": "black"},
         'NeuAc': {"shape": "diamond", "icon_color": "rgb(165,68,153)", "count_color": "white"},
         'NeuGc': {"shape": "diamond", "icon_color": "rgb(143,203,233)", "count_color": "black"},
         'Xxx': {"shape": "circle", "icon_color": "grey", "count_color": "white"}
@@ -283,6 +285,8 @@ var CBTN = function () {
         }
         flags["Hex"] = hexCount < monofreq["Hex"];
 
+        flags["dHex"] = monofreq["Fuc"] < monofreq["dHex"];
+
         return flags
     }
 
@@ -303,6 +307,9 @@ var CBTN = function () {
             monofreq[iupac] = monofreq[iupac] + num;
             if (['GlcNAc', 'GalNAc', 'ManNAc', 'Glc', 'Gal', 'Man'].includes(iupac)){
                 monofreq[{3: "Hex", 6:"HexNAc"}[iupac.length]] = monofreq[{3: "Hex", 6:"HexNAc"}[iupac.length]]+ num;
+            }
+            if (iupac == "Fuc"){
+                monofreq["dHex"] = monofreq["dHex"] + num;
             }
             //afterCompostionChanged();
             updateUpper();
@@ -486,7 +493,7 @@ var CBTN = function () {
                 if (currentComp[mc] != thisComp[mc]) {
                     return false
                 }
-            }else if (['Fuc', 'NeuAc', 'NeuGc', "Xxx"].includes(mc)){
+            }else if (['NeuAc', 'NeuGc', "Xxx"].includes(mc)){
                 if (currentComp[mc] != thisComp[mc]) {
                     return false
                 }
@@ -509,7 +516,7 @@ var CBTN = function () {
                 if (nextComp[mc] != thisComp[mc]) {
                     return false
                 }
-            }else if (['Fuc', 'NeuAc', 'NeuGc', "Xxx"].includes(mc)){
+            }else if (['NeuAc', 'NeuGc', "Xxx"].includes(mc)){
                 if (nextComp[mc] != thisComp[mc]) {
                     return false
                 }
