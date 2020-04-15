@@ -123,7 +123,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -134,7 +135,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -145,7 +147,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -157,7 +160,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "NeuAc": 1
+      "NeuAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -217,7 +221,8 @@
     "comp": {
       "Fuc": 1, 
       "Gal": 1, 
-      "Hex": 1
+      "Hex": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -278,7 +283,8 @@
       "GlcNAc": 1, 
       "Hex": 2, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -924,7 +930,8 @@
       "GlcNAc": 1, 
       "Hex": 2, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -993,7 +1000,8 @@
       "GlcNAc": 4, 
       "Hex": 5, 
       "HexNAc": 4, 
-      "Xxx": 9
+      "Xxx": 9, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -1108,7 +1116,8 @@
       "Fuc": 1, 
       "GlcNAc": 1, 
       "HexNAc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -1337,7 +1346,8 @@
       "Glc": 1, 
       "GlcNAc": 1, 
       "Hex": 3, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -1382,7 +1392,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -1516,7 +1527,8 @@
       "Hex": 2, 
       "HexNAc": 1, 
       "Man": 1, 
-      "Xxx": 3
+      "Xxx": 3, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -1560,7 +1572,8 @@
       "Gal": 2, 
       "GalNAc": 2, 
       "Hex": 2, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -1680,8 +1693,8 @@
   }, 
   "G02273PO": {
     "children": [
-      "G92716XZ", 
-      "G63317HU"
+      "G63317HU", 
+      "G92716XZ"
     ], 
     "comp": {
       "Gal": 2, 
@@ -1737,8 +1750,8 @@
   }, 
   "G02304CM": {
     "children": [
-      "G84153IE", 
-      "G46462LL"
+      "G46462LL", 
+      "G84153IE"
     ], 
     "comp": {
       "Xxx": 2
@@ -1853,8 +1866,8 @@
   }, 
   "G02733VV": {
     "children": [
-      "G73448DX", 
-      "G03616EA"
+      "G03616EA", 
+      "G73448DX"
     ], 
     "comp": {
       "Gal": 1, 
@@ -1942,7 +1955,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -2038,7 +2052,8 @@
       "Glc": 1, 
       "GlcNAc": 2, 
       "Hex": 4, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -2108,7 +2123,8 @@
       "GalNAc": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -2144,7 +2160,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "Xxx": 3
+      "Xxx": 3, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -2327,7 +2344,8 @@
       "GlcNAc": 1, 
       "Hex": 5, 
       "HexNAc": 2, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -2533,8 +2551,8 @@
   "G03707TR": {
     "children": [
       "G21243UC", 
-      "G78655HP", 
-      "G79848CM"
+      "G79848CM", 
+      "G78655HP"
     ], 
     "comp": {
       "Glc": 2, 
@@ -2568,7 +2586,8 @@
       "GlcNAc": 2, 
       "Hex": 1, 
       "HexNAc": 2, 
-      "Xxx": 24
+      "Xxx": 24, 
+      "dHex": 21
     }, 
     "type": "saccharide"
   }, 
@@ -2592,7 +2611,8 @@
       "Fuc": 1, 
       "GlcNAc": 4, 
       "HexNAc": 4, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -2815,7 +2835,8 @@
       "GlcNAc": 1, 
       "Hex": 3, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -3011,15 +3032,16 @@
   }, 
   "G04690JX": {
     "children": [
-      "G96179XD", 
-      "G49963IQ"
+      "G49963IQ", 
+      "G96179XD"
     ], 
     "comp": {
       "Fuc": 2, 
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -3040,13 +3062,14 @@
   }, 
   "G04784IY": {
     "children": [
-      "G26014QP", 
-      "G42105XL"
+      "G42105XL", 
+      "G26014QP"
     ], 
     "comp": {
       "Fuc": 1, 
       "GalNAc": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -3501,7 +3524,8 @@
       "HexNAc": 2, 
       "Man": 2, 
       "ManNAc": 1, 
-      "Xxx": 4
+      "Xxx": 4, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -3627,10 +3651,10 @@
   }, 
   "G05964OQ": {
     "children": [
-      "G74118TJ", 
       "G30018MT", 
-      "G31262MM", 
-      "G98298FN"
+      "G74118TJ", 
+      "G98298FN", 
+      "G31262MM"
     ], 
     "comp": {
       "Xxx": 2
@@ -3672,8 +3696,8 @@
   }, 
   "G06028TA": {
     "children": [
-      "G54163HM", 
-      "G32114AT"
+      "G32114AT", 
+      "G54163HM"
     ], 
     "comp": {
       "Hex": 5, 
@@ -3778,8 +3802,8 @@
   }, 
   "G06163TX": {
     "children": [
-      "G79464CU", 
-      "G94046PW"
+      "G94046PW", 
+      "G79464CU"
     ], 
     "comp": {
       "GlcNAc": 1, 
@@ -4321,7 +4345,8 @@
       "Gal": 2, 
       "Glc": 2, 
       "Hex": 4, 
-      "Xxx": 12
+      "Xxx": 12, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -4442,8 +4467,8 @@
   }, 
   "G07390LB": {
     "children": [
-      "G15363UG", 
-      "G87457BT"
+      "G87457BT", 
+      "G15363UG"
     ], 
     "comp": {
       "Gal": 1, 
@@ -4616,7 +4641,8 @@
     "children": [], 
     "comp": {
       "Fuc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -4706,7 +4732,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -4896,8 +4923,8 @@
   }, 
   "G08060KQ": {
     "children": [
-      "G69952BC", 
-      "G24481XT"
+      "G24481XT", 
+      "G69952BC"
     ], 
     "comp": {
       "Gal": 1, 
@@ -5316,7 +5343,8 @@
       "GlcNAc": 1, 
       "Hex": 2, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -5414,7 +5442,8 @@
       "GalNAc": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -5530,7 +5559,8 @@
       "Hex": 2, 
       "HexNAc": 1, 
       "Man": 1, 
-      "Xxx": 7
+      "Xxx": 7, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -5936,7 +5966,8 @@
       "GalNAc": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -6132,7 +6163,8 @@
       "GlcNAc": 1, 
       "Hex": 8, 
       "HexNAc": 1, 
-      "Xxx": 14
+      "Xxx": 14, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -6298,7 +6330,8 @@
       "Gal": 3, 
       "Hex": 6, 
       "Man": 3, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -6360,7 +6393,8 @@
       "Fuc": 1, 
       "GlcNAc": 2, 
       "HexNAc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -6471,7 +6505,8 @@
       "Gal": 2, 
       "GlcNAc": 1, 
       "Hex": 2, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -6592,7 +6627,8 @@
       "Fuc": 1, 
       "Glc": 1, 
       "Hex": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -6737,8 +6773,8 @@
   }, 
   "G10801TB": {
     "children": [
-      "G97391ON", 
-      "G29763FF"
+      "G29763FF", 
+      "G97391ON"
     ], 
     "comp": {
       "Gal": 1, 
@@ -7104,7 +7140,8 @@
       "Fuc": 2, 
       "Glc": 2, 
       "Hex": 2, 
-      "Xxx": 2
+      "Xxx": 2, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -7164,7 +7201,8 @@
       "Gal": 2, 
       "Glc": 2, 
       "Hex": 4, 
-      "Xxx": 12
+      "Xxx": 12, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -7451,7 +7489,8 @@
       "Gal": 1, 
       "GalNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -7683,7 +7722,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 1, 
-      "Xxx": 4
+      "Xxx": 4, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -7897,7 +7937,8 @@
       "Hex": 3, 
       "HexNAc": 1, 
       "Man": 1, 
-      "Xxx": 6
+      "Xxx": 6, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -7914,8 +7955,8 @@
   }, 
   "G12624QG": {
     "children": [
-      "G07348UY", 
-      "G12085RE"
+      "G12085RE", 
+      "G07348UY"
     ], 
     "comp": {
       "Xxx": 3
@@ -7977,7 +8018,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "NeuAc": 1
+      "NeuAc": 1, 
+      "dHex": 1
     }, 
     "type": "topology"
   }, 
@@ -8107,8 +8149,8 @@
   }, 
   "G13024ER": {
     "children": [
-      "G87838NG", 
-      "G15825TO"
+      "G15825TO", 
+      "G87838NG"
     ], 
     "comp": {
       "Gal": 2, 
@@ -8160,8 +8202,8 @@
   }, 
   "G13081NG": {
     "children": [
-      "G68509AD", 
-      "G26203MK"
+      "G26203MK", 
+      "G68509AD"
     ], 
     "comp": {
       "Gal": 2, 
@@ -8249,8 +8291,8 @@
   }, 
   "G13171MH": {
     "children": [
-      "G11358BQ", 
-      "G57932TJ"
+      "G57932TJ", 
+      "G11358BQ"
     ], 
     "comp": {
       "Gal": 2, 
@@ -8380,8 +8422,8 @@
   }, 
   "G13407AB": {
     "children": [
-      "G22174FD", 
-      "G86597IT"
+      "G86597IT", 
+      "G22174FD"
     ], 
     "comp": {
       "Hex": 4, 
@@ -8474,8 +8516,8 @@
   }, 
   "G13706JB": {
     "children": [
-      "G12404LF", 
-      "G14044IT"
+      "G14044IT", 
+      "G12404LF"
     ], 
     "comp": {
       "Glc": 2, 
@@ -8550,7 +8592,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 1, 
-      "Xxx": 4
+      "Xxx": 4, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -8574,7 +8617,8 @@
       "Fuc": 1, 
       "Hex": 1, 
       "Man": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -8605,7 +8649,8 @@
     "comp": {
       "Fuc": 1, 
       "Gal": 1, 
-      "Hex": 1
+      "Hex": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -8710,8 +8755,8 @@
   }, 
   "G14044IT": {
     "children": [
-      "G27516QG", 
-      "G18940XJ"
+      "G18940XJ", 
+      "G27516QG"
     ], 
     "comp": {
       "Glc": 2, 
@@ -8856,7 +8901,8 @@
       "Gal": 2, 
       "GalNAc": 2, 
       "Hex": 2, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -8906,7 +8952,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -8953,7 +9000,8 @@
       "GlcNAc": 1, 
       "Hex": 3, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -9085,8 +9133,8 @@
   }, 
   "G14660IB": {
     "children": [
-      "G67200RM", 
       "G78249UI", 
+      "G67200RM", 
       "G00032MO"
     ], 
     "comp": {
@@ -9114,7 +9162,8 @@
       "Gal": 1, 
       "Hex": 3, 
       "Man": 2, 
-      "Xxx": 7
+      "Xxx": 7, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -9126,7 +9175,8 @@
       "Fuc": 1, 
       "Glc": 1, 
       "Hex": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -9240,8 +9290,8 @@
   }, 
   "G14872MO": {
     "children": [
-      "G52342NM", 
-      "G79471SO"
+      "G79471SO", 
+      "G52342NM"
     ], 
     "comp": {
       "Gal": 1, 
@@ -9294,8 +9344,8 @@
   }, 
   "G14944ZX": {
     "children": [
-      "G68423TR", 
-      "G00229BZ"
+      "G00229BZ", 
+      "G68423TR"
     ], 
     "comp": {
       "Gal": 4, 
@@ -9326,10 +9376,10 @@
   }, 
   "G14967ME": {
     "children": [
-      "G86240AI", 
-      "G14801WA", 
       "G84444TS", 
-      "G60277KD"
+      "G60277KD", 
+      "G86240AI", 
+      "G14801WA"
     ], 
     "comp": {
       "Gal": 1, 
@@ -9389,8 +9439,8 @@
   }, 
   "G15021LG": {
     "children": [
-      "G71142DF", 
-      "G58161NS"
+      "G58161NS", 
+      "G71142DF"
     ], 
     "comp": {
       "Glc": 1, 
@@ -9541,7 +9591,8 @@
       "HexNAc": 2, 
       "Man": 2, 
       "ManNAc": 1, 
-      "Xxx": 4
+      "Xxx": 4, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -9621,8 +9672,8 @@
   }, 
   "G15280ZC": {
     "children": [
-      "G48207KG", 
-      "G69561VU"
+      "G69561VU", 
+      "G48207KG"
     ], 
     "comp": {
       "Gal": 2, 
@@ -9956,7 +10007,8 @@
       "GlcNAc": 1, 
       "Hex": 2, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -9969,8 +10021,8 @@
   }, 
   "G15763XI": {
     "children": [
-      "G36041SC", 
-      "G60111KE"
+      "G60111KE", 
+      "G36041SC"
     ], 
     "comp": {
       "Gal": 1, 
@@ -9982,8 +10034,8 @@
   }, 
   "G15765GX": {
     "children": [
-      "G63336AX", 
-      "G79379XF"
+      "G79379XF", 
+      "G63336AX"
     ], 
     "comp": {
       "Gal": 1, 
@@ -9994,8 +10046,8 @@
   }, 
   "G15786UX": {
     "children": [
-      "G83249ZP", 
-      "G87955KP"
+      "G87955KP", 
+      "G83249ZP"
     ], 
     "comp": {
       "Xxx": 2
@@ -10039,7 +10091,8 @@
       "Gal": 4, 
       "GlcNAc": 4, 
       "Hex": 4, 
-      "HexNAc": 4
+      "HexNAc": 4, 
+      "dHex": 4
     }, 
     "top": true, 
     "type": "topology"
@@ -10181,8 +10234,8 @@
   }, 
   "G16078IV": {
     "children": [
-      "G93938NM", 
-      "G75286TM"
+      "G75286TM", 
+      "G93938NM"
     ], 
     "comp": {
       "Xxx": 2
@@ -10427,7 +10480,8 @@
     ], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 4
+      "Xxx": 4, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -10624,8 +10678,8 @@
   }, 
   "G16754AD": {
     "children": [
-      "G59877ZI", 
-      "G91608NF"
+      "G91608NF", 
+      "G59877ZI"
     ], 
     "comp": {
       "Gal": 3, 
@@ -10689,9 +10743,9 @@
   }, 
   "G16956RN": {
     "children": [
-      "G38576MD", 
       "G17527ZC", 
-      "G86277UP"
+      "G86277UP", 
+      "G38576MD"
     ], 
     "comp": {
       "Gal": 1, 
@@ -10740,7 +10794,8 @@
       "Fuc": 1, 
       "Glc": 1, 
       "Hex": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -10755,7 +10810,8 @@
       "GlcNAc": 1, 
       "Hex": 3, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -11230,8 +11286,8 @@
   }, 
   "G17805DC": {
     "children": [
-      "G16642FB", 
-      "G04602LA"
+      "G04602LA", 
+      "G16642FB"
     ], 
     "comp": {
       "GalNAc": 1, 
@@ -11330,8 +11386,8 @@
   }, 
   "G18034QI": {
     "children": [
-      "G13108ER", 
-      "G99516CU"
+      "G99516CU", 
+      "G13108ER"
     ], 
     "comp": {
       "Gal": 2, 
@@ -11365,8 +11421,8 @@
   }, 
   "G18085FX": {
     "children": [
-      "G49480AS", 
-      "G99436AO"
+      "G99436AO", 
+      "G49480AS"
     ], 
     "comp": {
       "GlcNAc": 1, 
@@ -11495,8 +11551,8 @@
   }, 
   "G18262PW": {
     "children": [
-      "G59469UV", 
-      "G09214PK"
+      "G09214PK", 
+      "G59469UV"
     ], 
     "comp": {
       "Gal": 2, 
@@ -11588,15 +11644,16 @@
   "G18342LK": {
     "children": [
       "G87090RU", 
-      "G77761PN", 
-      "G22725MK"
+      "G22725MK", 
+      "G77761PN"
     ], 
     "comp": {
       "Fuc": 1, 
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "topology"
   }, 
@@ -11676,7 +11733,8 @@
       "Gal": 1, 
       "Glc": 4, 
       "Hex": 5, 
-      "Xxx": 11
+      "Xxx": 11, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -11932,8 +11990,8 @@
   }, 
   "G18910SZ": {
     "children": [
-      "G05471TX", 
-      "G76158IJ"
+      "G76158IJ", 
+      "G05471TX"
     ], 
     "comp": {
       "Xxx": 2
@@ -11998,7 +12056,8 @@
       "Fuc": 2, 
       "Glc": 2, 
       "Hex": 2, 
-      "Xxx": 2
+      "Xxx": 2, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -12518,7 +12577,8 @@
       "GlcNAc": 5, 
       "Hex": 8, 
       "HexNAc": 5, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 5
     }, 
     "type": "saccharide"
   }, 
@@ -12602,8 +12662,8 @@
   }, 
   "G20235QE": {
     "children": [
-      "G00902FP", 
-      "G68427ZO"
+      "G68427ZO", 
+      "G00902FP"
     ], 
     "comp": {
       "Glc": 1, 
@@ -12734,8 +12794,8 @@
   }, 
   "G20365GH": {
     "children": [
-      "G94447ZX", 
-      "G40380TK"
+      "G40380TK", 
+      "G94447ZX"
     ], 
     "comp": {
       "Gal": 2, 
@@ -13007,7 +13067,8 @@
       "Gal": 1, 
       "Glc": 1, 
       "Hex": 2, 
-      "Xxx": 8
+      "Xxx": 8, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -13141,7 +13202,8 @@
     "children": [], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -13303,7 +13365,8 @@
       "Fuc": 1, 
       "Hex": 1, 
       "Man": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -13386,7 +13449,8 @@
       "GlcNAc": 1, 
       "Hex": 3, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -13429,8 +13493,8 @@
   }, 
   "G21893NI": {
     "children": [
-      "G73975FD", 
-      "G14882GJ"
+      "G14882GJ", 
+      "G73975FD"
     ], 
     "comp": {
       "GlcNAc": 1, 
@@ -13632,7 +13696,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 2, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -13690,7 +13755,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "NeuAc": 1
+      "NeuAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -13942,7 +14008,8 @@
       "GlcNAc": 2, 
       "Hex": 5, 
       "HexNAc": 2, 
-      "NeuAc": 2
+      "NeuAc": 2, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -14021,8 +14088,8 @@
   }, 
   "G22721MZ": {
     "children": [
-      "G35326SZ", 
-      "G21669BF"
+      "G21669BF", 
+      "G35326SZ"
     ], 
     "comp": {
       "Glc": 2, 
@@ -14034,15 +14101,16 @@
   }, 
   "G22725MK": {
     "children": [
-      "G39023AU", 
-      "G00051MO"
+      "G00051MO", 
+      "G39023AU"
     ], 
     "comp": {
       "Fuc": 1, 
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "topology"
   }, 
@@ -14052,7 +14120,8 @@
       "Fuc": 1, 
       "Glc": 1, 
       "Hex": 1, 
-      "Xxx": 4
+      "Xxx": 4, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -14149,8 +14218,8 @@
   "G22933CR": {
     "children": [
       "G22325PI", 
-      "G95160NQ", 
-      "G37125WK"
+      "G37125WK", 
+      "G95160NQ"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -14158,7 +14227,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "NeuAc": 1
+      "NeuAc": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -14217,8 +14287,8 @@
   }, 
   "G23068RX": {
     "children": [
-      "G64740VY", 
-      "G25431IR"
+      "G25431IR", 
+      "G64740VY"
     ], 
     "comp": {
       "Xxx": 2
@@ -14451,8 +14521,8 @@
   }, 
   "G23528AT": {
     "children": [
-      "G17278UV", 
-      "G13754OJ"
+      "G13754OJ", 
+      "G17278UV"
     ], 
     "comp": {
       "Xxx": 3
@@ -14581,9 +14651,9 @@
   }, 
   "G23800PV": {
     "children": [
+      "G52453RD", 
       "G57701UA", 
-      "G52373YI", 
-      "G52453RD"
+      "G52373YI"
     ], 
     "comp": {
       "Hex": 1, 
@@ -14686,7 +14756,8 @@
       "Gal": 1, 
       "Glc": 1, 
       "Hex": 2, 
-      "Xxx": 8
+      "Xxx": 8, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -14754,7 +14825,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -14782,7 +14854,8 @@
       "GlcNAc": 1, 
       "Hex": 7, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -14794,7 +14867,8 @@
       "Gal": 2, 
       "GlcNAc": 1, 
       "Hex": 2, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -14842,8 +14916,8 @@
   }, 
   "G24228EA": {
     "children": [
-      "G25612XH", 
-      "G95796GB"
+      "G95796GB", 
+      "G25612XH"
     ], 
     "comp": {
       "Xxx": 2
@@ -15016,8 +15090,8 @@
   }, 
   "G24521PI": {
     "children": [
-      "G93472KA", 
-      "G84899DL"
+      "G84899DL", 
+      "G93472KA"
     ], 
     "comp": {
       "Gal": 3, 
@@ -15031,7 +15105,8 @@
     "children": [], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 4
+      "Xxx": 4, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -15254,10 +15329,10 @@
   }, 
   "G24949QH": {
     "children": [
-      "G34762SR", 
+      "G88948EN", 
       "G13811ZZ", 
-      "G49914LY", 
-      "G88948EN"
+      "G34762SR", 
+      "G49914LY"
     ], 
     "comp": {
       "Gal": 1, 
@@ -15780,7 +15855,8 @@
       "GlcNAc": 2, 
       "Hex": 5, 
       "HexNAc": 2, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -15875,14 +15951,14 @@
   }, 
   "G25818RY": {
     "children": [
-      "G47329OU", 
-      "G91077TI", 
+      "G25623VL", 
       "G55560AP", 
       "G45179WE", 
       "G69512CI", 
-      "G32819WD", 
-      "G25623VL", 
-      "G36281WI"
+      "G91077TI", 
+      "G36281WI", 
+      "G47329OU", 
+      "G32819WD"
     ], 
     "comp": {
       "Glc": 2, 
@@ -15975,7 +16051,8 @@
     "comp": {
       "Fuc": 1, 
       "GalNAc": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -15990,7 +16067,8 @@
       "GlcNAc": 1, 
       "Hex": 3, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -16124,8 +16202,8 @@
   }, 
   "G26203XU": {
     "children": [
-      "G68294HW", 
-      "G49678FC"
+      "G49678FC", 
+      "G68294HW"
     ], 
     "comp": {
       "Xxx": 2
@@ -16198,9 +16276,9 @@
   }, 
   "G26293YS": {
     "children": [
+      "G49914LY", 
       "G88948EN", 
-      "G96163VP", 
-      "G49914LY"
+      "G96163VP"
     ], 
     "comp": {
       "Gal": 1, 
@@ -16239,8 +16317,8 @@
   }, 
   "G26306QY": {
     "children": [
-      "G93517DB", 
-      "G84677GR"
+      "G84677GR", 
+      "G93517DB"
     ], 
     "comp": {
       "GalNAc": 2, 
@@ -16264,8 +16342,8 @@
   }, 
   "G26346GZ": {
     "children": [
-      "G57105CQ", 
-      "G12754LN"
+      "G12754LN", 
+      "G57105CQ"
     ], 
     "comp": {
       "Gal": 2, 
@@ -16296,7 +16374,8 @@
       "GlcNAc": 3, 
       "Hex": 2, 
       "HexNAc": 3, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -16465,8 +16544,8 @@
   }, 
   "G26686WO": {
     "children": [
-      "G24001ZG", 
-      "G17312AV"
+      "G17312AV", 
+      "G24001ZG"
     ], 
     "comp": {
       "Gal": 1, 
@@ -16889,8 +16968,8 @@
   }, 
   "G27314PN": {
     "children": [
-      "G99415BV", 
-      "G41702OS"
+      "G41702OS", 
+      "G99415BV"
     ], 
     "comp": {
       "Gal": 2, 
@@ -16934,7 +17013,8 @@
       "Gal": 1, 
       "Glc": 4, 
       "Hex": 5, 
-      "Xxx": 10
+      "Xxx": 10, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -17013,8 +17093,8 @@
   }, 
   "G27520VN": {
     "children": [
-      "G20881LM", 
-      "G42357GM"
+      "G42357GM", 
+      "G20881LM"
     ], 
     "comp": {
       "Gal": 2, 
@@ -17102,7 +17182,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -17137,15 +17218,16 @@
   }, 
   "G27653YS": {
     "children": [
-      "G49963IQ", 
-      "G00048MO"
+      "G00048MO", 
+      "G49963IQ"
     ], 
     "comp": {
       "Fuc": 2, 
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "type": "topology"
   }, 
@@ -17244,8 +17326,8 @@
   }, 
   "G27838JR": {
     "children": [
-      "G09342SH", 
-      "G68558BC"
+      "G68558BC", 
+      "G09342SH"
     ], 
     "comp": {
       "Hex": 3, 
@@ -17704,8 +17786,8 @@
   }, 
   "G28733RA": {
     "children": [
-      "G10740OF", 
-      "G03491TL"
+      "G03491TL", 
+      "G10740OF"
     ], 
     "comp": {
       "Xxx": 3
@@ -17803,8 +17885,8 @@
   }, 
   "G28961PZ": {
     "children": [
-      "G83842VI", 
-      "G46528GO"
+      "G46528GO", 
+      "G83842VI"
     ], 
     "comp": {
       "Gal": 1, 
@@ -17865,7 +17947,8 @@
       "Gal": 1, 
       "Glc": 1, 
       "Hex": 2, 
-      "Xxx": 4
+      "Xxx": 4, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -18106,7 +18189,8 @@
       "Gal": 4, 
       "GlcNAc": 4, 
       "Hex": 4, 
-      "HexNAc": 4
+      "HexNAc": 4, 
+      "dHex": 5
     }, 
     "top": true, 
     "type": "topology"
@@ -18202,8 +18286,8 @@
   }, 
   "G29561WO": {
     "children": [
-      "G07020HS", 
-      "G75010IM"
+      "G75010IM", 
+      "G07020HS"
     ], 
     "comp": {
       "Gal": 2, 
@@ -18451,7 +18535,8 @@
       "Glc": 1, 
       "GlcNAc": 1, 
       "Hex": 3, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -18781,7 +18866,8 @@
       "Hex": 2, 
       "HexNAc": 1, 
       "Man": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -18816,7 +18902,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -18919,8 +19006,8 @@
   }, 
   "G30753MN": {
     "children": [
-      "G20365GH", 
-      "G23151AQ"
+      "G23151AQ", 
+      "G20365GH"
     ], 
     "comp": {
       "Gal": 2, 
@@ -19078,8 +19165,8 @@
   }, 
   "G31080DL": {
     "children": [
-      "G15255MA", 
-      "G26756OQ"
+      "G26756OQ", 
+      "G15255MA"
     ], 
     "comp": {
       "Xxx": 1
@@ -19731,7 +19818,8 @@
       "GalNAc": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 1
     }, 
     "type": "topology"
   }, 
@@ -20012,8 +20100,8 @@
   }, 
   "G32579PL": {
     "children": [
-      "G13324MV", 
-      "G43162DT"
+      "G43162DT", 
+      "G13324MV"
     ], 
     "comp": {
       "Gal": 1, 
@@ -20054,8 +20142,8 @@
   }, 
   "G32672ZN": {
     "children": [
-      "G44074ID", 
-      "G37554CT"
+      "G37554CT", 
+      "G44074ID"
     ], 
     "comp": {
       "Gal": 2, 
@@ -20157,8 +20245,8 @@
   }, 
   "G32794XJ": {
     "children": [
-      "G16094HT", 
-      "G38791MM"
+      "G38791MM", 
+      "G16094HT"
     ], 
     "comp": {
       "Gal": 2, 
@@ -20249,11 +20337,11 @@
   }, 
   "G32907QK": {
     "children": [
-      "G20458SE", 
-      "G91174VX", 
       "G39857AH", 
+      "G88228YC", 
       "G10903IC", 
-      "G88228YC"
+      "G91174VX", 
+      "G20458SE"
     ], 
     "comp": {
       "Glc": 5, 
@@ -20353,8 +20441,8 @@
   }, 
   "G32986UK": {
     "children": [
-      "G63561BR", 
-      "G00229BZ"
+      "G00229BZ", 
+      "G63561BR"
     ], 
     "comp": {
       "Gal": 4, 
@@ -20688,7 +20776,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -20747,7 +20836,8 @@
       "Hex": 11, 
       "HexNAc": 4, 
       "NeuAc": 4, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 4
     }, 
     "type": "saccharide"
   }, 
@@ -20808,8 +20898,8 @@
   }, 
   "G33543KS": {
     "children": [
-      "G98866SX", 
-      "G00834JO"
+      "G00834JO", 
+      "G98866SX"
     ], 
     "comp": {
       "Xxx": 5
@@ -21090,7 +21180,8 @@
       "GlcNAc": 2, 
       "Hex": 1, 
       "HexNAc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -21188,7 +21279,8 @@
       "Gal": 2, 
       "GlcNAc": 1, 
       "Hex": 2, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -21377,7 +21469,8 @@
       "Glc": 1, 
       "GlcNAc": 1, 
       "Hex": 3, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -21798,8 +21891,8 @@
   }, 
   "G35058AB": {
     "children": [
-      "G77260AJ", 
-      "G91956AJ"
+      "G91956AJ", 
+      "G77260AJ"
     ], 
     "comp": {
       "GlcNAc": 3, 
@@ -21987,7 +22080,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -22043,7 +22137,8 @@
       "Hex": 5, 
       "HexNAc": 3, 
       "Man": 1, 
-      "Xxx": 7
+      "Xxx": 7, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -22152,7 +22247,8 @@
     ], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 4
+      "Xxx": 4, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -22210,7 +22306,8 @@
       "GlcNAc": 1, 
       "Hex": 2, 
       "HexNAc": 1, 
-      "Xxx": 6
+      "Xxx": 6, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -22796,15 +22893,16 @@
       "HexNAc": 2, 
       "Man": 2, 
       "ManNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
   "G36660PJ": {
     "children": [
-      "G73814US", 
       "G40389FN", 
-      "G94678GU"
+      "G94678GU", 
+      "G73814US"
     ], 
     "comp": {
       "Gal": 2, 
@@ -22907,7 +23005,8 @@
       "Fuc": 1, 
       "Glc": 1, 
       "Hex": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -23013,7 +23112,8 @@
       "GlcNAc": 5, 
       "Hex": 8, 
       "HexNAc": 5, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 5
     }, 
     "top": true, 
     "type": "topology"
@@ -23095,7 +23195,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "NeuAc": 1
+      "NeuAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -23116,7 +23217,8 @@
       "Fuc": 1, 
       "Gal": 2, 
       "Hex": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -23295,7 +23397,8 @@
       "Fuc": 2, 
       "Glc": 2, 
       "Hex": 2, 
-      "Xxx": 2
+      "Xxx": 2, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -23400,7 +23503,8 @@
       "Gal": 4, 
       "GlcNAc": 4, 
       "Hex": 4, 
-      "HexNAc": 4
+      "HexNAc": 4, 
+      "dHex": 4
     }, 
     "type": "saccharide"
   }, 
@@ -23667,7 +23771,8 @@
       "Gal": 3, 
       "GlcNAc": 3, 
       "Hex": 3, 
-      "HexNAc": 3
+      "HexNAc": 3, 
+      "dHex": 3
     }, 
     "top": true, 
     "type": "topology"
@@ -23974,8 +24079,8 @@
   }, 
   "G38523DM": {
     "children": [
-      "G31440UT", 
-      "G67948AK"
+      "G67948AK", 
+      "G31440UT"
     ], 
     "comp": {
       "Gal": 3, 
@@ -24113,8 +24218,8 @@
   }, 
   "G38730VI": {
     "children": [
-      "G64990UK", 
-      "G05741PH"
+      "G05741PH", 
+      "G64990UK"
     ], 
     "comp": {
       "Gal": 2, 
@@ -24320,7 +24425,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -24442,7 +24548,8 @@
     "children": [], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -24532,7 +24639,8 @@
       "GlcNAc": 2, 
       "Hex": 2, 
       "HexNAc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -24735,7 +24843,8 @@
     "comp": {
       "Fuc": 1, 
       "GlcNAc": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -25021,7 +25130,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -25174,7 +25284,8 @@
       "GlcNAc": 2, 
       "Hex": 5, 
       "HexNAc": 2, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -25370,7 +25481,8 @@
       "Gal": 1, 
       "Glc": 1, 
       "Hex": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -25457,7 +25569,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -25497,7 +25610,8 @@
       "Glc": 1, 
       "GlcNAc": 1, 
       "Hex": 3, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -25727,7 +25841,8 @@
       "Hex": 2, 
       "HexNAc": 1, 
       "Man": 1, 
-      "Xxx": 2
+      "Xxx": 2, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -25786,8 +25901,8 @@
   "G41114SG": {
     "children": [
       "G71235UJ", 
-      "G51919WT", 
-      "G00122SS"
+      "G00122SS", 
+      "G51919WT"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -25796,7 +25911,8 @@
       "GlcNAc": 1, 
       "Hex": 2, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -25833,8 +25949,8 @@
   }, 
   "G41136XZ": {
     "children": [
-      "G32166NC", 
-      "G32406ES"
+      "G32406ES", 
+      "G32166NC"
     ], 
     "comp": {
       "GalNAc": 2, 
@@ -26008,8 +26124,8 @@
   }, 
   "G41498UU": {
     "children": [
-      "G82611JH", 
-      "G79618ZJ"
+      "G79618ZJ", 
+      "G82611JH"
     ], 
     "comp": {
       "Gal": 1, 
@@ -26153,7 +26269,8 @@
       "Hex": 2, 
       "HexNAc": 1, 
       "Man": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -26197,7 +26314,8 @@
       "Fuc": 1, 
       "Gal": 2, 
       "Hex": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -26273,7 +26391,8 @@
       "GlcNAc": 3, 
       "Hex": 2, 
       "HexNAc": 3, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -26300,7 +26419,8 @@
       "Hex": 6, 
       "HexNAc": 2, 
       "Man": 1, 
-      "Xxx": 7
+      "Xxx": 7, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -26401,8 +26521,8 @@
   }, 
   "G42093HE": {
     "children": [
-      "G37364EM", 
-      "G56136QU"
+      "G56136QU", 
+      "G37364EM"
     ], 
     "comp": {
       "Xxx": 3
@@ -26415,7 +26535,8 @@
     "comp": {
       "Fuc": 1, 
       "GalNAc": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -26438,7 +26559,8 @@
       "Fuc": 1, 
       "Glc": 1, 
       "Hex": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -26582,16 +26704,17 @@
   }, 
   "G42357OQ": {
     "children": [
-      "G01706RV", 
+      "G39995KJ", 
       "G18342LK", 
-      "G39995KJ"
+      "G01706RV"
     ], 
     "comp": {
       "Fuc": 1, 
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -26612,9 +26735,9 @@
   }, 
   "G42404BO": {
     "children": [
-      "G00583PX", 
       "G12214WI", 
-      "G89834DK"
+      "G89834DK", 
+      "G00583PX"
     ], 
     "comp": {
       "Gal": 1, 
@@ -26861,8 +26984,8 @@
   }, 
   "G42608NW": {
     "children": [
-      "G68489YV", 
       "G13108ER", 
+      "G68489YV", 
       "G99516CU"
     ], 
     "comp": {
@@ -26919,7 +27042,8 @@
       "Gal": 1, 
       "Glc": 4, 
       "Hex": 5, 
-      "Xxx": 13
+      "Xxx": 13, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -27092,7 +27216,8 @@
       "GlcNAc": 2, 
       "Hex": 5, 
       "HexNAc": 2, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -27343,9 +27468,9 @@
   }, 
   "G43342ZI": {
     "children": [
-      "G51088NT", 
+      "G14280CN", 
       "G25402ER", 
-      "G14280CN"
+      "G51088NT"
     ], 
     "comp": {
       "Gal": 3, 
@@ -27614,8 +27739,8 @@
   }, 
   "G43811GN": {
     "children": [
-      "G21948DG", 
-      "G94563NM"
+      "G94563NM", 
+      "G21948DG"
     ], 
     "comp": {
       "GlcNAc": 4, 
@@ -28072,7 +28197,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "Xxx": 2
+      "Xxx": 2, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -28220,7 +28346,8 @@
     "comp": {
       "Fuc": 1, 
       "Gal": 1, 
-      "Hex": 1
+      "Hex": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -28339,7 +28466,8 @@
       "Gal": 4, 
       "GlcNAc": 4, 
       "Hex": 4, 
-      "HexNAc": 4
+      "HexNAc": 4, 
+      "dHex": 5
     }, 
     "type": "saccharide"
   }, 
@@ -28401,7 +28529,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -28528,10 +28657,10 @@
   }, 
   "G45179WE": {
     "children": [
-      "G47825JC", 
-      "G36535HU", 
       "G84824ZO", 
+      "G47825JC", 
       "G07411ON", 
+      "G36535HU", 
       "G81189IV"
     ], 
     "comp": {
@@ -28909,7 +29038,8 @@
       "Gal": 2, 
       "GlcNAc": 1, 
       "Hex": 2, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -29034,8 +29164,8 @@
   "G46075PC": {
     "children": [
       "G47809DN", 
-      "G15983PD", 
-      "G23545MH"
+      "G23545MH", 
+      "G15983PD"
     ], 
     "comp": {
       "Gal": 1, 
@@ -29144,8 +29274,8 @@
   }, 
   "G46210WG": {
     "children": [
-      "G17809WC", 
-      "G61022IH"
+      "G61022IH", 
+      "G17809WC"
     ], 
     "comp": {
       "GlcNAc": 4, 
@@ -30001,7 +30131,8 @@
       "Gal": 1, 
       "Glc": 4, 
       "Hex": 5, 
-      "Xxx": 10
+      "Xxx": 10, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -30143,9 +30274,9 @@
   }, 
   "G47545YP": {
     "children": [
-      "G16593JC", 
       "G87645WU", 
-      "G69172EK"
+      "G69172EK", 
+      "G16593JC"
     ], 
     "comp": {
       "Gal": 3, 
@@ -30163,7 +30294,8 @@
     "comp": {
       "Fuc": 1, 
       "Gal": 2, 
-      "Hex": 2
+      "Hex": 2, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -30642,8 +30774,8 @@
   }, 
   "G48231YD": {
     "children": [
-      "G62122HK", 
-      "G13065IY"
+      "G13065IY", 
+      "G62122HK"
     ], 
     "comp": {
       "Gal": 1, 
@@ -30718,7 +30850,8 @@
       "Hex": 2, 
       "HexNAc": 1, 
       "Man": 1, 
-      "Xxx": 3
+      "Xxx": 3, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -30783,7 +30916,8 @@
       "GlcNAc": 1, 
       "Hex": 8, 
       "HexNAc": 1, 
-      "Xxx": 14
+      "Xxx": 14, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -31205,7 +31339,8 @@
     "comp": {
       "Fuc": 1, 
       "Gal": 2, 
-      "Hex": 2
+      "Hex": 2, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -31230,7 +31365,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "Xxx": 3
+      "Xxx": 3, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -31310,8 +31446,8 @@
   }, 
   "G49505EH": {
     "children": [
-      "G13369WJ", 
-      "G28456YG"
+      "G28456YG", 
+      "G13369WJ"
     ], 
     "comp": {
       "Glc": 1, 
@@ -31323,8 +31459,8 @@
   }, 
   "G49524AO": {
     "children": [
-      "G79710SV", 
-      "G88550UP"
+      "G88550UP", 
+      "G79710SV"
     ], 
     "comp": {
       "Gal": 2, 
@@ -31387,8 +31523,8 @@
   }, 
   "G49578MS": {
     "children": [
-      "G82587YH", 
-      "G46048FK"
+      "G46048FK", 
+      "G82587YH"
     ], 
     "comp": {
       "Xxx": 3
@@ -31430,8 +31566,8 @@
   }, 
   "G49712HR": {
     "children": [
-      "G53118AN", 
       "G70873CF", 
+      "G53118AN", 
       "G26660XA"
     ], 
     "comp": {
@@ -31601,7 +31737,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -31655,7 +31792,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -31708,8 +31846,8 @@
   }, 
   "G50243AX": {
     "children": [
-      "G21130JE", 
-      "G99528VX"
+      "G99528VX", 
+      "G21130JE"
     ], 
     "comp": {
       "Gal": 1, 
@@ -31721,9 +31859,9 @@
   }, 
   "G50245FP": {
     "children": [
+      "G33084IA", 
       "G55338XL", 
-      "G14813DS", 
-      "G33084IA"
+      "G14813DS"
     ], 
     "comp": {
       "Gal": 1, 
@@ -31832,8 +31970,8 @@
   }, 
   "G50443XC": {
     "children": [
-      "G50006VR", 
-      "G86956PP"
+      "G86956PP", 
+      "G50006VR"
     ], 
     "comp": {
       "Xxx": 4
@@ -31909,7 +32047,8 @@
       "Glc": 1, 
       "GlcNAc": 1, 
       "Hex": 3, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -31953,7 +32092,8 @@
       "Gal": 1, 
       "GalNAc": 2, 
       "Hex": 1, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -31994,9 +32134,9 @@
   }, 
   "G50736GY": {
     "children": [
-      "G67431EZ", 
+      "G99821VN", 
       "G89329UM", 
-      "G99821VN"
+      "G67431EZ"
     ], 
     "comp": {
       "Gal": 1, 
@@ -32360,7 +32500,8 @@
       "Fuc": 1, 
       "GlcNAc": 2, 
       "HexNAc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -32389,7 +32530,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 2, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -32421,8 +32563,8 @@
   }, 
   "G51516JY": {
     "children": [
-      "G99434MG", 
-      "G43883KP"
+      "G43883KP", 
+      "G99434MG"
     ], 
     "comp": {
       "Gal": 2, 
@@ -32591,14 +32733,15 @@
       "GalNAc": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
   "G51843CK": {
     "children": [
-      "G02124MH", 
-      "G40137LR"
+      "G40137LR", 
+      "G02124MH"
     ], 
     "comp": {
       "Gal": 1, 
@@ -32642,7 +32785,8 @@
       "GlcNAc": 1, 
       "Hex": 2, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -32738,7 +32882,8 @@
       "Gal": 1, 
       "GalNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -32804,8 +32949,8 @@
   }, 
   "G52185CV": {
     "children": [
-      "G76206IA", 
-      "G10509UC"
+      "G10509UC", 
+      "G76206IA"
     ], 
     "comp": {
       "Gal": 1, 
@@ -32836,8 +32981,8 @@
   }, 
   "G52250XY": {
     "children": [
-      "G73465XX", 
-      "G94300JD"
+      "G94300JD", 
+      "G73465XX"
     ], 
     "comp": {
       "Glc": 2, 
@@ -32888,8 +33033,8 @@
   }, 
   "G52356RS": {
     "children": [
-      "G69340HY", 
-      "G09736PR"
+      "G09736PR", 
+      "G69340HY"
     ], 
     "comp": {
       "Xxx": 6
@@ -33540,9 +33685,9 @@
   }, 
   "G53324AH": {
     "children": [
-      "G92851NC", 
       "G43149YM", 
-      "G85508FM"
+      "G85508FM", 
+      "G92851NC"
     ], 
     "comp": {
       "Glc": 1, 
@@ -33734,7 +33879,8 @@
       "GlcNAc": 2, 
       "Hex": 5, 
       "HexNAc": 2, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -34095,8 +34241,8 @@
   }, 
   "G54344JF": {
     "children": [
-      "G29333JX", 
-      "G42513JA"
+      "G42513JA", 
+      "G29333JX"
     ], 
     "comp": {
       "Gal": 2, 
@@ -34360,7 +34506,8 @@
     "comp": {
       "Fuc": 1, 
       "Glc": 1, 
-      "Hex": 1
+      "Hex": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -34437,8 +34584,8 @@
   }, 
   "G54882OF": {
     "children": [
-      "G05893YT", 
-      "G96265XF"
+      "G96265XF", 
+      "G05893YT"
     ], 
     "comp": {
       "Gal": 2, 
@@ -34451,8 +34598,8 @@
   }, 
   "G54892JD": {
     "children": [
-      "G64402PV", 
-      "G43382JE"
+      "G43382JE", 
+      "G64402PV"
     ], 
     "comp": {
       "GlcNAc": 1, 
@@ -35025,8 +35172,8 @@
   }, 
   "G55871BX": {
     "children": [
-      "G96537FF", 
-      "G13139KX"
+      "G13139KX", 
+      "G96537FF"
     ], 
     "comp": {
       "Hex": 2, 
@@ -35060,8 +35207,8 @@
   }, 
   "G55905OQ": {
     "children": [
-      "G41743VV", 
-      "G52034KL"
+      "G52034KL", 
+      "G41743VV"
     ], 
     "comp": {
       "Gal": 2, 
@@ -35241,7 +35388,8 @@
       "Hex": 2, 
       "HexNAc": 1, 
       "Man": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -35395,8 +35543,8 @@
   }, 
   "G56468IE": {
     "children": [
-      "G60702BP", 
-      "G69340OO"
+      "G69340OO", 
+      "G60702BP"
     ], 
     "comp": {
       "Hex": 2, 
@@ -35508,9 +35656,9 @@
   }, 
   "G56672XX": {
     "children": [
-      "G68602RE", 
+      "G04967BI", 
       "G81574MQ", 
-      "G04967BI"
+      "G68602RE"
     ], 
     "comp": {
       "Gal": 1, 
@@ -35562,7 +35710,8 @@
       "Hex": 2, 
       "HexNAc": 1, 
       "Man": 1, 
-      "Xxx": 7
+      "Xxx": 7, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -35979,7 +36128,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -36004,7 +36154,8 @@
       "Hex": 5, 
       "HexNAc": 2, 
       "NeuAc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -36052,8 +36203,8 @@
   }, 
   "G57445PF": {
     "children": [
-      "G85621OT", 
-      "G33683TA"
+      "G33683TA", 
+      "G85621OT"
     ], 
     "comp": {
       "Glc": 1, 
@@ -36265,7 +36416,8 @@
       "GlcNAc": 2, 
       "Hex": 1, 
       "HexNAc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -36307,15 +36459,16 @@
       "GalNAc": 1, 
       "Glc": 1, 
       "Hex": 2, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
   }, 
   "G57749EC": {
     "children": [
-      "G70769YH", 
-      "G27447TV"
+      "G27447TV", 
+      "G70769YH"
     ], 
     "comp": {
       "GlcNAc": 1, 
@@ -36421,7 +36574,8 @@
       "Gal": 3, 
       "GlcNAc": 3, 
       "Hex": 3, 
-      "HexNAc": 3
+      "HexNAc": 3, 
+      "dHex": 3
     }, 
     "type": "saccharide"
   }, 
@@ -36483,8 +36637,8 @@
   }, 
   "G57981RI": {
     "children": [
-      "G23063OP", 
-      "G91918PB"
+      "G91918PB", 
+      "G23063OP"
     ], 
     "comp": {
       "Gal": 1, 
@@ -36498,8 +36652,8 @@
   }, 
   "G57988LL": {
     "children": [
-      "G14809QG", 
-      "G46421ZK"
+      "G46421ZK", 
+      "G14809QG"
     ], 
     "comp": {
       "Xxx": 5
@@ -36573,9 +36727,9 @@
   }, 
   "G58124XI": {
     "children": [
-      "G78242EN", 
       "G62204FH", 
       "G84117HN", 
+      "G78242EN", 
       "G67710XV"
     ], 
     "comp": {
@@ -36619,7 +36773,8 @@
       "Gal": 2, 
       "GalNAc": 2, 
       "Hex": 2, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -36801,8 +36956,8 @@
   }, 
   "G58392XZ": {
     "children": [
-      "G97359RD", 
-      "G65214YE"
+      "G65214YE", 
+      "G97359RD"
     ], 
     "comp": {
       "Gal": 2, 
@@ -37119,8 +37274,8 @@
   }, 
   "G58939ZP": {
     "children": [
-      "G72886QB", 
-      "G46749KP"
+      "G46749KP", 
+      "G72886QB"
     ], 
     "comp": {
       "Glc": 1, 
@@ -37136,7 +37291,8 @@
     "children": [], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -37459,8 +37615,8 @@
   }, 
   "G59790GN": {
     "children": [
-      "G58465JR", 
-      "G75402LQ"
+      "G75402LQ", 
+      "G58465JR"
     ], 
     "comp": {
       "Gal": 2, 
@@ -37761,7 +37917,8 @@
       "GlcNAc": 1, 
       "Hex": 2, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -37792,9 +37949,9 @@
   }, 
   "G60206PP": {
     "children": [
-      "G58131UG", 
       "G66219HQ", 
-      "G53830UQ"
+      "G53830UQ", 
+      "G58131UG"
     ], 
     "comp": {
       "Xxx": 5
@@ -37830,7 +37987,8 @@
     "comp": {
       "Fuc": 1, 
       "Glc": 1, 
-      "Hex": 1
+      "Hex": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -37919,7 +38077,8 @@
       "GlcNAc": 3, 
       "Hex": 2, 
       "HexNAc": 3, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -38035,7 +38194,8 @@
       "Fuc": 1, 
       "Gal": 1, 
       "Glc": 1, 
-      "Hex": 2
+      "Hex": 2, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -38347,7 +38507,8 @@
       "Gal": 2, 
       "GlcNAc": 2, 
       "Hex": 2, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -38567,7 +38728,8 @@
       "Gal": 2, 
       "GalNAc": 2, 
       "Hex": 2, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -38611,7 +38773,8 @@
       "Fuc": 1, 
       "GlcNAc": 2, 
       "HexNAc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -38704,7 +38867,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -38768,8 +38932,8 @@
   }, 
   "G61508YB": {
     "children": [
-      "G00708XG", 
-      "G85986DR"
+      "G85986DR", 
+      "G00708XG"
     ], 
     "comp": {
       "GalNAc": 1, 
@@ -38795,9 +38959,9 @@
   }, 
   "G61512WH": {
     "children": [
+      "G66065IY", 
       "G98383HZ", 
-      "G29712FA", 
-      "G66065IY"
+      "G29712FA"
     ], 
     "comp": {
       "Xxx": 4
@@ -38818,8 +38982,8 @@
   }, 
   "G61615PG": {
     "children": [
-      "G86523VR", 
-      "G24898PU"
+      "G24898PU", 
+      "G86523VR"
     ], 
     "comp": {
       "GlcNAc": 1, 
@@ -38840,11 +39004,11 @@
   }, 
   "G61666PA": {
     "children": [
-      "G00046MO", 
-      "G53230PK", 
+      "G31763WG", 
       "G00016MO", 
       "G40768MU", 
-      "G31763WG"
+      "G00046MO", 
+      "G53230PK"
     ], 
     "comp": {
       "Gal": 2, 
@@ -39149,24 +39313,24 @@
   }, 
   "G62082AD": {
     "children": [
-      "G68113KQ", 
-      "G86723LO", 
-      "G92082JS", 
-      "G14787DY", 
-      "G16302TV", 
-      "G71987VX", 
-      "G19927IA", 
-      "G44612JM", 
-      "G63977XF", 
-      "G30409YH", 
-      "G59716ZO", 
-      "G72627IU", 
-      "G66763JM", 
       "G61305ZB", 
-      "G51465VH", 
-      "G94641WA", 
+      "G19927IA", 
+      "G59716ZO", 
+      "G14787DY", 
+      "G66763JM", 
       "G61896ZX", 
-      "G76949FV"
+      "G72627IU", 
+      "G51465VH", 
+      "G68113KQ", 
+      "G92082JS", 
+      "G94641WA", 
+      "G44612JM", 
+      "G16302TV", 
+      "G30409YH", 
+      "G76949FV", 
+      "G71987VX", 
+      "G63977XF", 
+      "G86723LO"
     ], 
     "comp": {
       "Glc": 3, 
@@ -39292,8 +39456,8 @@
   }, 
   "G62314WM": {
     "children": [
-      "G54949LB", 
-      "G46661PH"
+      "G46661PH", 
+      "G54949LB"
     ], 
     "comp": {
       "Glc": 1, 
@@ -39547,7 +39711,8 @@
       "GlcNAc": 2, 
       "Hex": 1, 
       "HexNAc": 2, 
-      "Xxx": 24
+      "Xxx": 24, 
+      "dHex": 21
     }, 
     "top": true, 
     "type": "topology"
@@ -39929,7 +40094,8 @@
       "Glc": 1, 
       "GlcNAc": 1, 
       "Hex": 3, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -39990,8 +40156,8 @@
   }, 
   "G63601QR": {
     "children": [
-      "G32944ZN", 
-      "G91745MT"
+      "G91745MT", 
+      "G32944ZN"
     ], 
     "comp": {
       "GlcNAc": 1, 
@@ -40236,14 +40402,15 @@
       "GlcNAc": 3, 
       "Hex": 2, 
       "HexNAc": 3, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
   "G64014BL": {
     "children": [
-      "G84224TW", 
-      "G31761VE"
+      "G31761VE", 
+      "G84224TW"
     ], 
     "comp": {
       "Gal": 1, 
@@ -40349,7 +40516,8 @@
       "Fuc": 1, 
       "GlcNAc": 4, 
       "HexNAc": 4, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -40508,16 +40676,17 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 2, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
   }, 
   "G64368XX": {
     "children": [
-      "G63907RJ", 
       "G96891HD", 
-      "G81446MP"
+      "G81446MP", 
+      "G63907RJ"
     ], 
     "comp": {
       "GlcNAc": 1, 
@@ -40539,7 +40708,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 2, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -40567,8 +40737,8 @@
   }, 
   "G64427GY": {
     "children": [
-      "G25464VS", 
-      "G40482KL"
+      "G40482KL", 
+      "G25464VS"
     ], 
     "comp": {
       "Gal": 1, 
@@ -40669,8 +40839,8 @@
   }, 
   "G64581RP": {
     "children": [
-      "G68544GH", 
-      "G49108TO"
+      "G49108TO", 
+      "G68544GH"
     ], 
     "comp": {
       "GlcNAc": 1, 
@@ -40708,7 +40878,8 @@
       "GlcNAc": 4, 
       "Hex": 11, 
       "HexNAc": 4, 
-      "NeuAc": 4
+      "NeuAc": 4, 
+      "dHex": 4
     }, 
     "type": "saccharide"
   }, 
@@ -40759,8 +40930,8 @@
   }, 
   "G64693HH": {
     "children": [
-      "G96163VP", 
-      "G24949QH"
+      "G24949QH", 
+      "G96163VP"
     ], 
     "comp": {
       "Gal": 1, 
@@ -40824,8 +40995,8 @@
   }, 
   "G64760PZ": {
     "children": [
-      "G00035VF", 
-      "G89292OK"
+      "G89292OK", 
+      "G00035VF"
     ], 
     "comp": {
       "Xxx": 3
@@ -41144,7 +41315,8 @@
       "Hex": 8, 
       "HexNAc": 3, 
       "NeuAc": 3, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 3
     }, 
     "top": true, 
     "type": "topology"
@@ -41447,7 +41619,8 @@
       "Hex": 3, 
       "HexNAc": 1, 
       "Man": 1, 
-      "Xxx": 6
+      "Xxx": 6, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -41486,7 +41659,8 @@
     ], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 2
+      "Xxx": 2, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -41666,8 +41840,8 @@
   }, 
   "G65690HQ": {
     "children": [
-      "G97726OP", 
-      "G29583ZK"
+      "G29583ZK", 
+      "G97726OP"
     ], 
     "comp": {
       "Hex": 1, 
@@ -41704,7 +41878,8 @@
       "Fuc": 1, 
       "GlcNAc": 1, 
       "HexNAc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -41732,7 +41907,8 @@
       "Hex": 2, 
       "HexNAc": 1, 
       "Man": 1, 
-      "Xxx": 2
+      "Xxx": 2, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -41774,14 +41950,15 @@
       "GlcNAc": 1, 
       "Hex": 2, 
       "HexNAc": 1, 
-      "Xxx": 6
+      "Xxx": 6, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
   "G65875YA": {
     "children": [
-      "G24718DZ", 
-      "G67966NM"
+      "G67966NM", 
+      "G24718DZ"
     ], 
     "comp": {
       "Xxx": 4
@@ -41921,8 +42098,8 @@
   }, 
   "G66065IY": {
     "children": [
-      "G03828QF", 
-      "G91030FZ"
+      "G91030FZ", 
+      "G03828QF"
     ], 
     "comp": {
       "Xxx": 4
@@ -41931,8 +42108,8 @@
   }, 
   "G66128JY": {
     "children": [
-      "G64301WQ", 
-      "G41876BL"
+      "G41876BL", 
+      "G64301WQ"
     ], 
     "comp": {
       "Gal": 2, 
@@ -41980,7 +42157,8 @@
       "GalNAc": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -42104,7 +42282,8 @@
       "Glc": 7, 
       "Hex": 11, 
       "Man": 4, 
-      "Xxx": 12
+      "Xxx": 12, 
+      "dHex": 10
     }, 
     "type": "saccharide"
   }, 
@@ -42243,7 +42422,8 @@
     ], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -42263,8 +42443,8 @@
   }, 
   "G66466WW": {
     "children": [
-      "G75274QJ", 
-      "G96797LC"
+      "G96797LC", 
+      "G75274QJ"
     ], 
     "comp": {
       "Gal": 3, 
@@ -42313,7 +42493,8 @@
       "Glc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -42405,7 +42586,8 @@
       "GlcNAc": 2, 
       "Hex": 5, 
       "HexNAc": 2, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -43168,7 +43350,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -43312,8 +43495,8 @@
   }, 
   "G68367TH": {
     "children": [
-      "G78416OZ", 
-      "G61928QB"
+      "G61928QB", 
+      "G78416OZ"
     ], 
     "comp": {
       "Glc": 1, 
@@ -43727,7 +43910,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -43934,8 +44118,8 @@
   }, 
   "G69157JA": {
     "children": [
-      "G61727JL", 
-      "G18162AG"
+      "G18162AG", 
+      "G61727JL"
     ], 
     "comp": {
       "Gal": 1, 
@@ -43967,7 +44151,8 @@
       "Hex": 11, 
       "HexNAc": 4, 
       "NeuAc": 4, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 4
     }, 
     "top": true, 
     "type": "topology"
@@ -44090,10 +44275,10 @@
   }, 
   "G69382ZH": {
     "children": [
-      "G29313LW", 
-      "G77384RA", 
       "G71124KE", 
-      "G78297FC"
+      "G29313LW", 
+      "G78297FC", 
+      "G77384RA"
     ], 
     "comp": {
       "Hex": 2, 
@@ -44284,7 +44469,8 @@
       "Gal": 1, 
       "Glc": 4, 
       "Hex": 5, 
-      "Xxx": 10
+      "Xxx": 10, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -44402,7 +44588,8 @@
     ], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -44626,8 +44813,8 @@
   }, 
   "G70323CJ": {
     "children": [
-      "G61491DK", 
-      "G74840NI"
+      "G74840NI", 
+      "G61491DK"
     ], 
     "comp": {
       "Hex": 1, 
@@ -44729,8 +44916,8 @@
   }, 
   "G70437HZ": {
     "children": [
-      "G65365MD", 
-      "G53203NX"
+      "G53203NX", 
+      "G65365MD"
     ], 
     "comp": {
       "Xxx": 4
@@ -44752,16 +44939,17 @@
   }, 
   "G70505CA": {
     "children": [
-      "G96179XD", 
       "G50093PV", 
-      "G27653YS"
+      "G27653YS", 
+      "G96179XD"
     ], 
     "comp": {
       "Fuc": 2, 
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "type": "topology"
   }, 
@@ -44802,7 +44990,8 @@
       "GlcNAc": 2, 
       "Hex": 2, 
       "HexNAc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -45178,8 +45367,8 @@
   }, 
   "G71235UJ": {
     "children": [
-      "G08611VN", 
-      "G15744QK"
+      "G15744QK", 
+      "G08611VN"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -45188,7 +45377,8 @@
       "GlcNAc": 1, 
       "Hex": 2, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "topology"
   }, 
@@ -45257,7 +45447,8 @@
     "children": [], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 4
+      "Xxx": 4, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -45282,7 +45473,8 @@
       "Gal": 1, 
       "Glc": 4, 
       "Hex": 5, 
-      "Xxx": 11
+      "Xxx": 11, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -45358,7 +45550,8 @@
       "GlcNAc": 1, 
       "Hex": 3, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -45415,7 +45608,8 @@
       "GlcNAc": 2, 
       "Hex": 2, 
       "HexNAc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -45588,7 +45782,8 @@
       "Glc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -45658,11 +45853,11 @@
   }, 
   "G72079HR": {
     "children": [
-      "G62288XJ", 
+      "G93641DP", 
       "G23068LG", 
       "G55699TS", 
       "G24276RE", 
-      "G93641DP"
+      "G62288XJ"
     ], 
     "comp": {
       "Glc": 6, 
@@ -45712,7 +45907,8 @@
       "Fuc": 1, 
       "Glc": 1, 
       "Hex": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -45998,7 +46194,8 @@
       "GlcNAc": 1, 
       "Hex": 7, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -46199,8 +46396,8 @@
   }, 
   "G73087YE": {
     "children": [
-      "G37699VO", 
-      "G53026MA"
+      "G53026MA", 
+      "G37699VO"
     ], 
     "comp": {
       "Gal": 1, 
@@ -46268,7 +46465,8 @@
       "Glc": 1, 
       "GlcNAc": 2, 
       "Hex": 4, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -46386,7 +46584,8 @@
       "Fuc": 1, 
       "Glc": 1, 
       "Hex": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "topology"
   }, 
@@ -46575,9 +46774,9 @@
   "G73711GZ": {
     "children": [
       "G80981NI", 
+      "G59594LT", 
       "G40004EU", 
-      "G66213AR", 
-      "G59594LT"
+      "G66213AR"
     ], 
     "comp": {
       "Gal": 1, 
@@ -46638,7 +46837,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -46705,8 +46905,8 @@
   }, 
   "G73924LK": {
     "children": [
-      "G31322EH", 
-      "G25664IH"
+      "G25664IH", 
+      "G31322EH"
     ], 
     "comp": {
       "Gal": 3, 
@@ -46956,7 +47156,8 @@
     "children": [], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -47414,7 +47615,8 @@
       "Gal": 2, 
       "GlcNAc": 2, 
       "Hex": 2, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 3
     }, 
     "type": "saccharide"
   }, 
@@ -47434,7 +47636,8 @@
       "Gal": 1, 
       "Glc": 1, 
       "Hex": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -47476,7 +47679,8 @@
       "Gal": 1, 
       "GalNAc": 2, 
       "Hex": 1, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -47673,7 +47877,8 @@
       "Fuc": 1, 
       "GlcNAc": 2, 
       "HexNAc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -47717,8 +47922,8 @@
   }, 
   "G75283XJ": {
     "children": [
-      "G77013AS", 
-      "G36970QG"
+      "G36970QG", 
+      "G77013AS"
     ], 
     "comp": {
       "GlcNAc": 4, 
@@ -47764,7 +47969,8 @@
       "Fuc": 1, 
       "Gal": 1, 
       "Glc": 1, 
-      "Hex": 2
+      "Hex": 2, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -47789,7 +47995,8 @@
       "Gal": 1, 
       "Hex": 2, 
       "Man": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -47805,7 +48012,8 @@
       "HexNAc": 2, 
       "Man": 2, 
       "ManNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -47978,8 +48186,8 @@
   }, 
   "G75739JE": {
     "children": [
-      "G86334FA", 
-      "G85971IA"
+      "G85971IA", 
+      "G86334FA"
     ], 
     "comp": {
       "Gal": 1, 
@@ -48073,7 +48281,8 @@
       "Hex": 2, 
       "HexNAc": 1, 
       "Man": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -48126,9 +48335,9 @@
   }, 
   "G75961FY": {
     "children": [
-      "G53433KR", 
       "G69734RY", 
-      "G43056AO"
+      "G43056AO", 
+      "G53433KR"
     ], 
     "comp": {
       "Gal": 1, 
@@ -48149,12 +48358,13 @@
   }, 
   "G76013QP": {
     "children": [
-      "G39206LJ", 
-      "G59001XI"
+      "G59001XI", 
+      "G39206LJ"
     ], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -48338,7 +48548,8 @@
       "Fuc": 1, 
       "Glc": 1, 
       "Hex": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -48814,8 +49025,8 @@
   }, 
   "G77013AS": {
     "children": [
-      "G91900JK", 
-      "G75741HZ"
+      "G75741HZ", 
+      "G91900JK"
     ], 
     "comp": {
       "GlcNAc": 4, 
@@ -48988,8 +49199,8 @@
   "G77134WP": {
     "children": [
       "G50336VA", 
-      "G09049BP", 
-      "G27138YU"
+      "G27138YU", 
+      "G09049BP"
     ], 
     "comp": {
       "Hex": 1, 
@@ -49042,8 +49253,8 @@
   }, 
   "G77159UT": {
     "children": [
-      "G43527II", 
-      "G25333HH"
+      "G25333HH", 
+      "G43527II"
     ], 
     "comp": {
       "Gal": 2, 
@@ -49260,8 +49471,8 @@
   }, 
   "G77440MK": {
     "children": [
-      "G14274UI", 
-      "G41778UW"
+      "G41778UW", 
+      "G14274UI"
     ], 
     "comp": {
       "Gal": 2, 
@@ -49459,7 +49670,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -49605,8 +49817,8 @@
   }, 
   "G77990CZ": {
     "children": [
-      "G12147HW", 
-      "G23946HU"
+      "G23946HU", 
+      "G12147HW"
     ], 
     "comp": {
       "Gal": 2, 
@@ -49697,7 +49909,8 @@
       "HexNAc": 5, 
       "Man": 3, 
       "ManNAc": 1, 
-      "Xxx": 7
+      "Xxx": 7, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -49822,7 +50035,8 @@
       "GlcNAc": 3, 
       "Hex": 8, 
       "HexNAc": 3, 
-      "NeuAc": 3
+      "NeuAc": 3, 
+      "dHex": 3
     }, 
     "top": true, 
     "type": "topology"
@@ -49862,10 +50076,10 @@
   }, 
   "G78330MN": {
     "children": [
-      "G41804RQ", 
-      "G96531FD", 
+      "G25725HP", 
       "G41812TB", 
-      "G25725HP"
+      "G41804RQ", 
+      "G96531FD"
     ], 
     "comp": {
       "Xxx": 3
@@ -49947,8 +50161,8 @@
   }, 
   "G78499BU": {
     "children": [
-      "G65808IP", 
-      "G62973WE"
+      "G62973WE", 
+      "G65808IP"
     ], 
     "comp": {
       "Xxx": 3
@@ -49986,8 +50200,8 @@
   }, 
   "G78508PE": {
     "children": [
-      "G08822BC", 
-      "G32072PH"
+      "G32072PH", 
+      "G08822BC"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -49995,7 +50209,8 @@
       "GalNAc": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 1
     }, 
     "type": "topology"
   }, 
@@ -50037,8 +50252,8 @@
   }, 
   "G78602CZ": {
     "children": [
-      "G36348JQ", 
-      "G45712HH"
+      "G45712HH", 
+      "G36348JQ"
     ], 
     "comp": {
       "Xxx": 2
@@ -50070,8 +50285,8 @@
   "G78620TU": {
     "children": [
       "G79536OW", 
-      "G35448LP", 
-      "G01767JJ"
+      "G01767JJ", 
+      "G35448LP"
     ], 
     "comp": {
       "Gal": 2, 
@@ -50169,8 +50384,8 @@
   }, 
   "G78851KK": {
     "children": [
-      "G97052JQ", 
-      "G65652FM"
+      "G65652FM", 
+      "G97052JQ"
     ], 
     "comp": {
       "Gal": 3, 
@@ -50328,15 +50543,16 @@
   }, 
   "G79028QV": {
     "children": [
-      "G45802NQ", 
-      "G10254ON"
+      "G10254ON", 
+      "G45802NQ"
     ], 
     "comp": {
       "Fuc": 1, 
       "Gal": 2, 
       "GlcNAc": 1, 
       "Hex": 2, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "topology"
   }, 
@@ -50523,8 +50739,8 @@
   }, 
   "G79464CU": {
     "children": [
-      "G85150TV", 
-      "G99730WL"
+      "G99730WL", 
+      "G85150TV"
     ], 
     "comp": {
       "GlcNAc": 1, 
@@ -50549,7 +50765,8 @@
       "Gal": 2, 
       "GlcNAc": 2, 
       "Hex": 2, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -50811,7 +51028,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "Xxx": 3
+      "Xxx": 3, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -51136,7 +51354,8 @@
     "comp": {
       "Fuc": 1, 
       "GlcNAc": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -51152,7 +51371,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -51181,8 +51401,8 @@
   }, 
   "G80658WG": {
     "children": [
-      "G48197UZ", 
-      "G00010XO"
+      "G00010XO", 
+      "G48197UZ"
     ], 
     "comp": {
       "GlcNAc": 1, 
@@ -51324,10 +51544,10 @@
   }, 
   "G80981NI": {
     "children": [
-      "G51331BY", 
-      "G00056MO", 
       "G15031WB", 
-      "G18438YA"
+      "G51331BY", 
+      "G18438YA", 
+      "G00056MO"
     ], 
     "comp": {
       "Gal": 1, 
@@ -51455,8 +51675,8 @@
   }, 
   "G81175YD": {
     "children": [
-      "G18034QI", 
-      "G42608NW"
+      "G42608NW", 
+      "G18034QI"
     ], 
     "comp": {
       "Gal": 2, 
@@ -51486,8 +51706,8 @@
   }, 
   "G81216LK": {
     "children": [
-      "G04690JX", 
       "G70505CA", 
+      "G04690JX", 
       "G93507IP"
     ], 
     "comp": {
@@ -51495,7 +51715,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -51512,15 +51733,16 @@
   }, 
   "G81221PX": {
     "children": [
-      "G98013XS", 
-      "G82746GL"
+      "G82746GL", 
+      "G98013XS"
     ], 
     "comp": {
       "Fuc": 1, 
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "topology"
   }, 
@@ -51543,7 +51765,8 @@
       "Fuc": 1, 
       "Glc": 1, 
       "Hex": 1, 
-      "Xxx": 4
+      "Xxx": 4, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -51798,7 +52021,8 @@
       "Hex": 5, 
       "HexNAc": 2, 
       "NeuAc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -52165,7 +52389,8 @@
       "Hex": 8, 
       "HexNAc": 3, 
       "NeuAc": 3, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 3
     }, 
     "type": "saccharide"
   }, 
@@ -52180,7 +52405,8 @@
       "GlcNAc": 4, 
       "Hex": 5, 
       "HexNAc": 4, 
-      "Xxx": 9
+      "Xxx": 9, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -52341,7 +52567,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -52354,8 +52581,8 @@
   }, 
   "G82923KB": {
     "children": [
-      "G09347BT", 
-      "G52467GX"
+      "G52467GX", 
+      "G09347BT"
     ], 
     "comp": {
       "Glc": 1, 
@@ -52454,7 +52681,8 @@
     "children": [], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -52492,8 +52720,8 @@
   }, 
   "G83106GD": {
     "children": [
-      "G35602ZL", 
-      "G41498UU"
+      "G41498UU", 
+      "G35602ZL"
     ], 
     "comp": {
       "Gal": 1, 
@@ -52638,7 +52866,8 @@
       "GlcNAc": 2, 
       "Hex": 1, 
       "HexNAc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "topology"
   }, 
@@ -52679,7 +52908,8 @@
       "Gal": 2, 
       "GlcNAc": 2, 
       "Hex": 2, 
-      "HexNAc": 2
+      "HexNAc": 2, 
+      "dHex": 3
     }, 
     "top": true, 
     "type": "topology"
@@ -52722,8 +52952,8 @@
   }, 
   "G83535JT": {
     "children": [
-      "G45140EG", 
-      "G87132AW"
+      "G87132AW", 
+      "G45140EG"
     ], 
     "comp": {
       "Gal": 2, 
@@ -52801,15 +53031,16 @@
   }, 
   "G83613IB": {
     "children": [
-      "G24090VR", 
-      "G79028QV"
+      "G79028QV", 
+      "G24090VR"
     ], 
     "comp": {
       "Fuc": 1, 
       "Gal": 2, 
       "GlcNAc": 1, 
       "Hex": 2, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -53008,7 +53239,8 @@
       "Glc": 1, 
       "GlcNAc": 1, 
       "Hex": 3, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -53119,8 +53351,8 @@
   }, 
   "G84013OY": {
     "children": [
-      "G24636UZ", 
-      "G65231JH"
+      "G65231JH", 
+      "G24636UZ"
     ], 
     "comp": {
       "Gal": 3, 
@@ -53290,15 +53522,16 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
   }, 
   "G84327FX": {
     "children": [
-      "G98582OJ", 
       "G69046ZP", 
+      "G98582OJ", 
       "G37322FV"
     ], 
     "comp": {
@@ -53418,7 +53651,8 @@
       "GalNAc": 1, 
       "Glc": 1, 
       "Hex": 2, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -53674,7 +53908,8 @@
       "Glc": 1, 
       "Hex": 2, 
       "Man": 1, 
-      "Xxx": 4
+      "Xxx": 4, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -53716,7 +53951,8 @@
       "Hex": 6, 
       "HexNAc": 2, 
       "Man": 1, 
-      "Xxx": 7
+      "Xxx": 7, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -54044,7 +54280,8 @@
     ], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -54270,8 +54507,8 @@
   }, 
   "G85703QZ": {
     "children": [
-      "G15561CU", 
-      "G08591PY"
+      "G08591PY", 
+      "G15561CU"
     ], 
     "comp": {
       "Gal": 1, 
@@ -54357,7 +54594,8 @@
       "Gal": 1, 
       "Hex": 3, 
       "Man": 2, 
-      "Xxx": 7
+      "Xxx": 7, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -54435,7 +54673,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "topology"
   }, 
@@ -54482,7 +54721,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -54844,16 +55084,17 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
   }, 
   "G86523VR": {
     "children": [
-      "G90328LW", 
       "G68517GO", 
-      "G64814JN"
+      "G64814JN", 
+      "G90328LW"
     ], 
     "comp": {
       "GlcNAc": 1, 
@@ -55037,7 +55278,8 @@
       "GlcNAc": 2, 
       "Hex": 2, 
       "HexNAc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -55127,7 +55369,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -55213,8 +55456,8 @@
   }, 
   "G86932UM": {
     "children": [
-      "G97358JJ", 
-      "G20879YX"
+      "G20879YX", 
+      "G97358JJ"
     ], 
     "comp": {
       "Glc": 3, 
@@ -55267,7 +55510,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -55329,7 +55573,8 @@
       "Fuc": 1, 
       "GlcNAc": 1, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -55382,8 +55627,8 @@
   }, 
   "G87354NN": {
     "children": [
-      "G77030OR", 
-      "G42997MD"
+      "G42997MD", 
+      "G77030OR"
     ], 
     "comp": {
       "GlcNAc": 2, 
@@ -55424,8 +55669,8 @@
   }, 
   "G87399YO": {
     "children": [
-      "G32701FH", 
-      "G91674TR"
+      "G91674TR", 
+      "G32701FH"
     ], 
     "comp": {
       "Glc": 1, 
@@ -55489,8 +55734,8 @@
   }, 
   "G87491FI": {
     "children": [
-      "G26610PL", 
-      "G31749OE"
+      "G31749OE", 
+      "G26610PL"
     ], 
     "comp": {
       "Glc": 2, 
@@ -55615,8 +55860,8 @@
   }, 
   "G87694BT": {
     "children": [
-      "G56272EE", 
-      "G39105QY"
+      "G39105QY", 
+      "G56272EE"
     ], 
     "comp": {
       "Gal": 3, 
@@ -55666,8 +55911,8 @@
   }, 
   "G87708TW": {
     "children": [
-      "G15763XI", 
-      "G64821LW"
+      "G64821LW", 
+      "G15763XI"
     ], 
     "comp": {
       "Gal": 1, 
@@ -55687,7 +55932,8 @@
       "Gal": 1, 
       "Hex": 2, 
       "Man": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -55979,7 +56225,8 @@
       "Gal": 1, 
       "Glc": 1, 
       "Hex": 2, 
-      "Xxx": 4
+      "Xxx": 4, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -56003,7 +56250,8 @@
       "GlcNAc": 2, 
       "Hex": 1, 
       "HexNAc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -56030,7 +56278,8 @@
       "Hex": 5, 
       "HexNAc": 3, 
       "Man": 1, 
-      "Xxx": 7
+      "Xxx": 7, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -56199,9 +56448,9 @@
   }, 
   "G88420XA": {
     "children": [
+      "G58799YW", 
       "G45058WE", 
-      "G75848FE", 
-      "G58799YW"
+      "G75848FE"
     ], 
     "comp": {
       "Gal": 1, 
@@ -56244,8 +56493,8 @@
   }, 
   "G88477GG": {
     "children": [
-      "G03840DL", 
-      "G95436OR"
+      "G95436OR", 
+      "G03840DL"
     ], 
     "comp": {
       "Glc": 2, 
@@ -56395,7 +56644,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -56521,7 +56771,8 @@
       "GlcNAc": 4, 
       "Hex": 11, 
       "HexNAc": 4, 
-      "NeuAc": 4
+      "NeuAc": 4, 
+      "dHex": 4
     }, 
     "top": true, 
     "type": "topology"
@@ -56677,10 +56928,10 @@
   }, 
   "G89237QS": {
     "children": [
-      "G28141KV", 
       "G76044NZ", 
+      "G14769CB", 
       "G37117TJ", 
-      "G14769CB"
+      "G28141KV"
     ], 
     "comp": {
       "Glc": 3, 
@@ -56823,7 +57074,8 @@
       "Glc": 1, 
       "GlcNAc": 1, 
       "Hex": 3, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -56925,7 +57177,8 @@
       "GlcNAc": 2, 
       "Hex": 5, 
       "HexNAc": 2, 
-      "NeuAc": 2
+      "NeuAc": 2, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -56971,7 +57224,8 @@
       "Glc": 1, 
       "GlcNAc": 1, 
       "Hex": 3, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -56982,7 +57236,8 @@
       "Fuc": 2, 
       "Glc": 2, 
       "Hex": 2, 
-      "Xxx": 2
+      "Xxx": 2, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -57013,8 +57268,8 @@
   }, 
   "G89806TD": {
     "children": [
-      "G77255RV", 
-      "G43480FM"
+      "G43480FM", 
+      "G77255RV"
     ], 
     "comp": {
       "Glc": 1, 
@@ -57055,7 +57310,8 @@
       "Gal": 3, 
       "Hex": 6, 
       "Man": 3, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -57157,7 +57413,8 @@
       "Gal": 2, 
       "GlcNAc": 1, 
       "Hex": 2, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -57455,7 +57712,8 @@
       "Fuc": 1, 
       "Gal": 1, 
       "Hex": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -57598,7 +57856,8 @@
       "GlcNAc": 2, 
       "Hex": 5, 
       "HexNAc": 2, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -57616,8 +57875,8 @@
   }, 
   "G90739PL": {
     "children": [
-      "G81217RA", 
-      "G57431TS"
+      "G57431TS", 
+      "G81217RA"
     ], 
     "comp": {
       "Gal": 1, 
@@ -57720,7 +57979,8 @@
       "HexNAc": 5, 
       "Man": 3, 
       "ManNAc": 1, 
-      "Xxx": 7
+      "Xxx": 7, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -57753,7 +58013,8 @@
       "Fuc": 1, 
       "GlcNAc": 1, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -58175,8 +58436,8 @@
   }, 
   "G91642FU": {
     "children": [
-      "G83059HZ", 
-      "G30601EG"
+      "G30601EG", 
+      "G83059HZ"
     ], 
     "comp": {
       "Gal": 3, 
@@ -58257,8 +58518,8 @@
   }, 
   "G91779TD": {
     "children": [
-      "G17920XS", 
-      "G33020NO"
+      "G33020NO", 
+      "G17920XS"
     ], 
     "comp": {
       "Glc": 1, 
@@ -58284,7 +58545,8 @@
     "children": [], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 2
+      "Xxx": 2, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -58451,8 +58713,8 @@
   }, 
   "G91975UP": {
     "children": [
-      "G43788SW", 
-      "G15825TO"
+      "G15825TO", 
+      "G43788SW"
     ], 
     "comp": {
       "Gal": 2, 
@@ -58590,8 +58852,8 @@
   }, 
   "G92160IU": {
     "children": [
-      "G81313VC", 
-      "G25694FU"
+      "G25694FU", 
+      "G81313VC"
     ], 
     "comp": {
       "Glc": 1, 
@@ -58637,8 +58899,8 @@
   "G92258RH": {
     "children": [
       "G23909UE", 
-      "G61776FU", 
-      "G40955CS"
+      "G40955CS", 
+      "G61776FU"
     ], 
     "comp": {
       "Glc": 1, 
@@ -58761,8 +59023,8 @@
   }, 
   "G92495JT": {
     "children": [
-      "G87841AX", 
-      "G60184IZ"
+      "G60184IZ", 
+      "G87841AX"
     ], 
     "comp": {
       "Glc": 4, 
@@ -58846,8 +59108,8 @@
   }, 
   "G92661WR": {
     "children": [
-      "G33587UQ", 
-      "G07670MV"
+      "G07670MV", 
+      "G33587UQ"
     ], 
     "comp": {
       "Xxx": 3
@@ -59004,7 +59266,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -59087,7 +59350,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "NeuAc": 1
+      "NeuAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -59097,7 +59361,8 @@
     ], 
     "comp": {
       "Fuc": 2, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -59111,7 +59376,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -59310,7 +59576,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -59546,7 +59813,8 @@
       "Glc": 7, 
       "Hex": 11, 
       "Man": 4, 
-      "Xxx": 12
+      "Xxx": 12, 
+      "dHex": 10
     }, 
     "top": true, 
     "type": "topology"
@@ -59597,20 +59865,20 @@
   }, 
   "G93921SI": {
     "children": [
-      "G63250DI", 
-      "G92495JT", 
-      "G91844AP", 
-      "G79444AJ", 
-      "G82662IE", 
-      "G42970NZ", 
       "G05979DP", 
+      "G42970NZ", 
+      "G83645HN", 
+      "G82662IE", 
+      "G63250DI", 
+      "G91844AP", 
+      "G80123RH", 
       "G37552GA", 
+      "G04949TM", 
       "G81485FV", 
       "G43277KK", 
-      "G83645HN", 
-      "G95051LD", 
-      "G80123RH", 
-      "G04949TM"
+      "G79444AJ", 
+      "G92495JT", 
+      "G95051LD"
     ], 
     "comp": {
       "Glc": 4, 
@@ -59903,8 +60171,8 @@
   }, 
   "G94356BS": {
     "children": [
-      "G74468IA", 
-      "G21722RW"
+      "G21722RW", 
+      "G74468IA"
     ], 
     "comp": {
       "Hex": 1, 
@@ -60162,8 +60430,8 @@
   "G94819PH": {
     "children": [
       "G96133KN", 
-      "G23800PV", 
-      "G15201OK"
+      "G15201OK", 
+      "G23800PV"
     ], 
     "comp": {
       "Hex": 1, 
@@ -60175,9 +60443,9 @@
   }, 
   "G94822NJ": {
     "children": [
+      "G27838JR", 
       "G12878WE", 
-      "G25656CV", 
-      "G27838JR"
+      "G25656CV"
     ], 
     "comp": {
       "Hex": 3, 
@@ -60212,7 +60480,8 @@
       "GlcNAc": 1, 
       "Hex": 3, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 2
     }, 
     "top": true, 
     "type": "topology"
@@ -60341,8 +60610,8 @@
   }, 
   "G95071FH": {
     "children": [
-      "G82634ZJ", 
-      "G15081PF"
+      "G15081PF", 
+      "G82634ZJ"
     ], 
     "comp": {
       "Xxx": 4
@@ -60383,8 +60652,8 @@
   }, 
   "G95160NQ": {
     "children": [
-      "G12750SG", 
-      "G92992DL"
+      "G92992DL", 
+      "G12750SG"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -60392,7 +60661,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "NeuAc": 1
+      "NeuAc": 1, 
+      "dHex": 1
     }, 
     "type": "topology"
   }, 
@@ -60650,7 +60920,8 @@
       "GlcNAc": 3, 
       "Hex": 8, 
       "HexNAc": 3, 
-      "NeuAc": 3
+      "NeuAc": 3, 
+      "dHex": 3
     }, 
     "type": "saccharide"
   }, 
@@ -60664,7 +60935,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "Xxx": 2
+      "Xxx": 2, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -60706,7 +60978,8 @@
       "Gal": 1, 
       "Glc": 4, 
       "Hex": 5, 
-      "Xxx": 13
+      "Xxx": 13, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -60783,7 +61056,8 @@
       "Fuc": 1, 
       "Gal": 1, 
       "Hex": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -60917,7 +61191,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "Xxx": 3
+      "Xxx": 3, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -60988,7 +61263,8 @@
       "GlcNAc": 1, 
       "Hex": 1, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -61037,8 +61313,8 @@
   }, 
   "G96163VP": {
     "children": [
-      "G34762SR", 
-      "G13811ZZ"
+      "G13811ZZ", 
+      "G34762SR"
     ], 
     "comp": {
       "Gal": 1, 
@@ -61057,7 +61333,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 2
     }, 
     "type": "saccharide"
   }, 
@@ -61172,8 +61449,8 @@
   }, 
   "G96391QW": {
     "children": [
-      "G44795NZ", 
-      "G53122GG"
+      "G53122GG", 
+      "G44795NZ"
     ], 
     "comp": {
       "Xxx": 2
@@ -61396,7 +61673,8 @@
     "children": [], 
     "comp": {
       "Fuc": 1, 
-      "Xxx": 1
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -61572,8 +61850,8 @@
   }, 
   "G97048GO": {
     "children": [
-      "G00070MO", 
-      "G44029SF"
+      "G44029SF", 
+      "G00070MO"
     ], 
     "comp": {
       "Gal": 2, 
@@ -61628,7 +61906,8 @@
       "Gal": 1, 
       "Glc": 4, 
       "Hex": 5, 
-      "Xxx": 10
+      "Xxx": 10, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -61800,8 +62079,8 @@
   }, 
   "G97391ON": {
     "children": [
-      "G83777ZF", 
       "G42714FX", 
+      "G83777ZF", 
       "G09297WO"
     ], 
     "comp": {
@@ -61833,8 +62112,8 @@
   }, 
   "G97447VU": {
     "children": [
-      "G61172DQ", 
-      "G05655ME"
+      "G05655ME", 
+      "G61172DQ"
     ], 
     "comp": {
       "Glc": 1, 
@@ -61848,9 +62127,9 @@
   }, 
   "G97460BJ": {
     "children": [
-      "G88206YY", 
+      "G15109TD", 
       "G00401IE", 
-      "G15109TD"
+      "G88206YY"
     ], 
     "comp": {
       "Gal": 3, 
@@ -62228,7 +62507,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "topology"
   }, 
@@ -62250,7 +62530,8 @@
       "Gal": 1, 
       "GlcNAc": 1, 
       "Hex": 1, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -62323,7 +62604,8 @@
       "Glc": 1, 
       "GlcNAc": 1, 
       "Hex": 3, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -62486,8 +62768,8 @@
   }, 
   "G98476IR": {
     "children": [
-      "G96433QO", 
-      "G49578MS"
+      "G49578MS", 
+      "G96433QO"
     ], 
     "comp": {
       "Xxx": 3
@@ -62658,7 +62940,8 @@
       "Glc": 1, 
       "Hex": 2, 
       "Man": 1, 
-      "Xxx": 4
+      "Xxx": 4, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -62702,9 +62985,9 @@
   }, 
   "G98720ER": {
     "children": [
+      "G75557QL", 
       "G15765GX", 
-      "G85016IG", 
-      "G75557QL"
+      "G85016IG"
     ], 
     "comp": {
       "Gal": 1, 
@@ -62942,7 +63225,8 @@
       "GlcNAc": 1, 
       "Hex": 5, 
       "HexNAc": 2, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
@@ -62959,8 +63243,8 @@
   }, 
   "G99066TX": {
     "children": [
-      "G98173LG", 
-      "G83916HL"
+      "G83916HL", 
+      "G98173LG"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -62968,7 +63252,8 @@
       "Glc": 1, 
       "GlcNAc": 1, 
       "Hex": 3, 
-      "HexNAc": 1
+      "HexNAc": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "topology"
@@ -63315,9 +63600,9 @@
   }, 
   "G99563LI": {
     "children": [
-      "G38310GJ", 
       "G42049JU", 
-      "G90852NI"
+      "G90852NI", 
+      "G38310GJ"
     ], 
     "comp": {
       "Gal": 1, 
@@ -63341,8 +63626,8 @@
   }, 
   "G99570CG": {
     "children": [
-      "G01283EG", 
-      "G31534HC"
+      "G31534HC", 
+      "G01283EG"
     ], 
     "comp": {
       "Glc": 1, 
@@ -63412,8 +63697,8 @@
   }, 
   "G99669ZF": {
     "children": [
-      "G10158SF", 
-      "G25315HI"
+      "G25315HI", 
+      "G10158SF"
     ], 
     "comp": {
       "Gal": 1, 
@@ -63618,7 +63903,8 @@
       "GlcNAc": 1, 
       "Hex": 4, 
       "HexNAc": 1, 
-      "Xxx": 5
+      "Xxx": 5, 
+      "dHex": 1
     }, 
     "type": "saccharide"
   }, 
