@@ -246,10 +246,10 @@ var CBTN = function () {
         panelcontainer.appendChild(rightPanel);
 
         badge = document.createElement("h4");
-        badge.innerHTML = "GNOme: Glycan Naming and subsumption Ontology";
+        badge.innerHTML = "GNOme - Glycan Naming and Subsumption Ontology";
         badge.style = "position: absolute; bottom: 10px; width: 97%; z-index: 500; text-align: center; color: grey; ";
         badge.onclick = function(){
-            window.open("https://github.com/glygen-glycan-data/GNOme");
+            window.open("https://github.com/glygen-glycan-data/GNOme/blob/master/README.md");
         };
 
         container.appendChild(showAndHideButton);
@@ -487,7 +487,7 @@ var CBTN = function () {
         iconHint.width = 40;
         iconHint.height = 40;
         iconHint.onclick = function () {
-            var dialog = new $.Zebra_Dialog(hintContentCurrent + "<a href='https://github.com/glygen-glycan-data/GNOme' style='position: absolute; bottom: 10px; right: 30px; text-align: right;'>GNOme</a>", {
+            var dialog = new $.Zebra_Dialog(hintContentCurrent + "<a href='https://github.com/glygen-glycan-data/GNOme/blob/master/README.md' style='position: absolute; bottom: 10px; right: 30px; text-align: right;'>GNOme</a>", {
                 type: false,
                 title: hintHeaderCurrent,
                 buttons: false,
