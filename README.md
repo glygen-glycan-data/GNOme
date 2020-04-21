@@ -1,5 +1,4 @@
-<a name="readme"/>
-
+<a name="readme"></A>
 [GlyTouCan](http://glytoucan.org) provides stable accessions for glycans described at varyious degrees of characterization, including compositions (no linkage) and topologies (no carbon bond positions or anomeric configurations). 
 
 GNOme organizes these stable accessions  
