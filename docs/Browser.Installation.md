@@ -28,4 +28,6 @@ Only used for quickly configuring to selected GlyTouCan composition. [Example](h
 See example: [GNOme Topology Browser](https://github.com/glygen-glycan-data/GNOme/blob/master/GNOme.browser.html)
 
 ## Retired viewer
-[First version of GNOme viewer](https://rawcdn.githack.com/glygen-glycan-data/GNOme/3df5b91aaafcc83fe24b14103d7288822200830d/GNOme.browser.old.html)
+First version of GNOme viewer: [GlyTouCan](https://rawcdn.githack.com/glygen-glycan-data/GNOme/3df5b91aaafcc83fe24b14103d7288822200830d/GNOme.browser.old.html), 
+[BCSDB](https://rawcdn.githack.com/glygen-glycan-data/GNOme/3df5b91aaafcc83fe24b14103d7288822200830d/restrictions/GNOme_BCSDB.browser.old.html) and
+[GlyGen](https://rawcdn.githack.com/glygen-glycan-data/GNOme/3df5b91aaafcc83fe24b14103d7288822200830d/restrictions/GNOme_GlyGen.browser.old.html)
