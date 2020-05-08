@@ -2118,6 +2118,13 @@
     }, 
     "type": "composition"
   }, 
+  "G05428EU": {
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 3
+    }, 
+    "type": "basecomposition"
+  }, 
   "G05460KC": {
     "comp": {
       "Hex": 1, 
@@ -16239,13 +16246,6 @@
     }, 
     "type": "composition"
   }, 
-  "G42738BT": {
-    "comp": {
-      "Hex": 2, 
-      "HexNAc": 4
-    }, 
-    "type": "basecomposition"
-  }, 
   "G42789YX": {
     "comp": {
       "Hex": 7, 
@@ -16370,6 +16370,14 @@
       "dHex": 1
     }, 
     "type": "composition"
+  }, 
+  "G43094UN": {
+    "comp": {
+      "Hex": 2, 
+      "HexNAc": 1, 
+      "dHex": 1
+    }, 
+    "type": "basecomposition"
   }, 
   "G43130DH": {
     "comp": {
@@ -20126,6 +20134,14 @@
     }, 
     "type": "basecomposition"
   }, 
+  "G52874JC": {
+    "comp": {
+      "Hex": 1, 
+      "HexNAc": 2, 
+      "dHex": 2
+    }, 
+    "type": "basecomposition"
+  }, 
   "G52925VL": {
     "comp": {
       "Xxx": 2
@@ -20191,6 +20207,13 @@
       "dHex": 1
     }, 
     "type": "composition"
+  }, 
+  "G52963ZW": {
+    "comp": {
+      "Hex": 2, 
+      "HexNAc": 1
+    }, 
+    "type": "basecomposition"
   }, 
   "G52971JG": {
     "comp": {
@@ -25123,6 +25146,13 @@
     }, 
     "type": "composition"
   }, 
+  "G65681LR": {
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 5
+    }, 
+    "type": "basecomposition"
+  }, 
   "G65758JQ": {
     "comp": {
       "Hex": 2, 
@@ -26395,6 +26425,13 @@
     }, 
     "type": "composition"
   }, 
+  "G68990JR": {
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 4
+    }, 
+    "type": "basecomposition"
+  }, 
   "G69004ZT": {
     "comp": {
       "HexNAc": 1, 
@@ -26467,6 +26504,13 @@
       "Man": 1
     }, 
     "type": "composition"
+  }, 
+  "G69222XZ": {
+    "comp": {
+      "Hex": 3, 
+      "HexNAc": 5
+    }, 
+    "type": "basecomposition"
   }, 
   "G69231HI": {
     "comp": {
@@ -30984,6 +31028,13 @@
       "Xxx": 1
     }, 
     "type": "composition"
+  }, 
+  "G81098PF": {
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 6
+    }, 
+    "type": "basecomposition"
   }, 
   "G81124ET": {
     "comp": {
@@ -36447,6 +36498,13 @@
     }, 
     "type": "composition"
   }, 
+  "G94094XU": {
+    "comp": {
+      "Hex": 2, 
+      "NeuAc": 1
+    }, 
+    "type": "composition"
+  }, 
   "G94114XI": {
     "comp": {
       "Fuc": 1, 
@@ -37536,6 +37594,13 @@
       "Xxx": 2
     }, 
     "type": "composition"
+  }, 
+  "G96743ZH": {
+    "comp": {
+      "Hex": 3, 
+      "HexNAc": 4
+    }, 
+    "type": "basecomposition"
   }, 
   "G96761QO": {
     "comp": {

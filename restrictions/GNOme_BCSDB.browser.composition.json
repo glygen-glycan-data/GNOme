@@ -1546,13 +1546,6 @@
     }, 
     "type": "basecomposition"
   }, 
-  "G05394UY": {
-    "comp": {
-      "Hex": 2, 
-      "HexNAc": 1
-    }, 
-    "type": "basecomposition"
-  }, 
   "G05400MZ": {
     "comp": {
       "Hex": 5, 
@@ -1570,11 +1563,10 @@
     }, 
     "type": "composition"
   }, 
-  "G05460KC": {
+  "G05428EU": {
     "comp": {
-      "Hex": 1, 
-      "HexNAc": 2, 
-      "dHex": 2
+      "Hex": 4, 
+      "HexNAc": 3
     }, 
     "type": "basecomposition"
   }, 
@@ -3523,14 +3515,6 @@
       "Xxx": 1
     }, 
     "type": "composition"
-  }, 
-  "G11235SR": {
-    "comp": {
-      "Hex": 2, 
-      "HexNAc": 1, 
-      "dHex": 1
-    }, 
-    "type": "basecomposition"
   }, 
   "G11285WI": {
     "comp": {
@@ -12830,6 +12814,14 @@
     }, 
     "type": "basecomposition"
   }, 
+  "G43094UN": {
+    "comp": {
+      "Hex": 2, 
+      "HexNAc": 1, 
+      "dHex": 1
+    }, 
+    "type": "basecomposition"
+  }, 
   "G43112WD": {
     "comp": {
       "Gal": 1, 
@@ -15994,6 +15986,14 @@
     }, 
     "type": "composition"
   }, 
+  "G52874JC": {
+    "comp": {
+      "Hex": 1, 
+      "HexNAc": 2, 
+      "dHex": 2
+    }, 
+    "type": "basecomposition"
+  }, 
   "G52903II": {
     "comp": {
       "Gal": 1, 
@@ -16043,6 +16043,13 @@
       "Xxx": 10
     }, 
     "type": "composition"
+  }, 
+  "G52963ZW": {
+    "comp": {
+      "Hex": 2, 
+      "HexNAc": 1
+    }, 
+    "type": "basecomposition"
   }, 
   "G53010CE": {
     "comp": {
@@ -17256,13 +17263,6 @@
   "G57751KJ": {
     "comp": {
       "Xxx": 3
-    }, 
-    "type": "basecomposition"
-  }, 
-  "G57776ZU": {
-    "comp": {
-      "Hex": 4, 
-      "HexNAc": 3
     }, 
     "type": "basecomposition"
   }, 
