@@ -43,7 +43,7 @@ The current release of GNOme is always available at the permanent URLs:
 Tagged and versioned releases are also [available](https://github.com/glygen-glycan-data/GNOme/releases).
 
 ## Repository
-GNOme input data-files, resulting ontologies, and interactive widgets are managed at (GitHub)[https://github.com/glygen-glycan-data/GNOme]. 
+GNOme input data-files, resulting ontologies, and interactive widgets are managed at [GitHub](https://github.com/glygen-glycan-data/GNOme). 
 
 ## Contact
 Please submit issues, suggestions, corrections to the [issue tracker](https://github.com/glygen-glycan-data/GNOme/issues).  
