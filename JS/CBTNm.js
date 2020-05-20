@@ -1282,12 +1282,19 @@ var CBTN = function () {
         container = document.getElementById(div_id);
 
         var themename = p["theme"];
+        if (!Object.keys(p).includes("theme")){
+            themename = "";
+        }
         var themeURL = "";
         if (themename.startsWith("http")){
             themeURL = themename;
         }else {
             // themeURL = "./JS/theme/" + themename + ".json";
             themeURL = "https://raw.githack.com/glygen-glycan-data/GNOme/master/JS/theme/" + themename + ".json";
+        }
+
+        if (Object.keys(p).includes("theme_URL")){
+            themeURL = p["theme_URL"];
         }
         theme = await getJSON(themeURL);
 
