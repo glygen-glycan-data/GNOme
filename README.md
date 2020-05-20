@@ -13,17 +13,17 @@ GNOme organizes these stable accessions
 GNOme is an [OBO Foundry](http://obofoundry.org/ontology/gno) ontology.
 
 ## Interactive Tools
-Use the [GNOme Glycan Structure Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html) to find glycan structures by composition, topology, and subsumption relationships. 
+Use the [GNOme Glycan Structure Browser](https://gnome.glyomics.org/GNOme.browser.html) to find glycan structures by composition, topology, and subsumption relationships. 
 
-Use the [GNOme Glycan Composition Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.compositionselector.html) to find glycan compositions by composition and subsumption relationships.
+Use the [GNOme Glycan Composition Browser](https://gnome.glyomics.org/GNOme.compositionselector.html) to find glycan compositions by composition and subsumption relationships.
 
-Deep-linking is also supported, to jump to a specific GlyTouCan acccession: [G62109NW](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html?focus=G62109NW) or button state: [HexNAc(5)Hex(6)](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html?HexNAc=5&Hex=6).
+Deep-linking is also supported, to jump to a specific GlyTouCan acccession: [G62109NW](https://gnome.glyomics.org/GNOme.browser.html?focus=G62109NW) or button state: [HexNAc(5)Hex(6)](https://gnome.glyomics.org/GNOme.browser.html?HexNAc=5&Hex=6).
 
 ### Restrictions ###
 [GNOme restrictions](restrictions) support speciifc subsets of GlyTouCan accessions:
-* [GlyGen](http://glygen.org): [Structure Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/restrictions/GNOme_GlyGen.browser.html), [Composition Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/restrictions/GNOme_GlyGen.compositionselector.html).
-* [GlycanData](http://grg.tn/GlycanData): [Structure Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/restrictions/GNOme_GlycanData.browser.html), [Composition Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/restrictions/GNOme_GlycanData.compositionselector.html).
-* [BCSDB](http://http://csdb.glycoscience.ru/bacterial/): [Structure Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/restrictions/GNOme_BCSDB.browser.html), [Composition Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/restrictions/GNOme_BCSDB.compositionselector.html).
+* [GlyGen](http://glygen.org): [Structure Browser](https://gnome.glyomics.org/restrictions/GNOme_GlyGen.browser.html), [Composition Browser](https://gnome.glyomics.org/restrictions/GNOme_GlyGen.compositionselector.html).
+* [GlycanData](http://grg.tn/GlycanData): [Structure Browser](https://gnome.glyomics.org/restrictions/GNOme_GlycanData.browser.html), [Composition Browser](https://gnome.glyomics.org/restrictions/GNOme_GlycanData.compositionselector.html).
+* [BCSDB](http://csdb.glycoscience.ru/bacterial/): [Structure Browser](https://gnome.glyomics.org/restrictions/GNOme_BCSDB.browser.html), [Composition Browser](https://gnome.glyomics.org/restrictions/GNOme_BCSDB.compositionselector.html).
 
 ## Semantic Names
 [GNOme Glycan Synonyms](data/exact_synonym.txt) support quick lookup of commonly used composition strings and other semantic glycan names. 
