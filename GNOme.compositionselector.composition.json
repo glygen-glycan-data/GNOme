@@ -135763,13 +135763,6 @@
     }, 
     "type": "composition"
   }, 
-  "G69222XZ": {
-    "comp": {
-      "Hex": 3, 
-      "HexNAc": 5
-    }, 
-    "type": "composition"
-  }, 
   "G69231HI": {
     "comp": {
       "GlcNAc": 6, 
@@ -149555,6 +149548,15 @@
       "Hex": 1, 
       "X": 1, 
       "Xxx": 10
+    }, 
+    "type": "composition"
+  }, 
+  "G76100HQ": {
+    "comp": {
+      "Hex": 1, 
+      "HexNAc": 1, 
+      "NeuAc": 1, 
+      "NeuGc": 1
     }, 
     "type": "composition"
   }, 
