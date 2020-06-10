@@ -39,7 +39,7 @@
   }, 
   "G00082CQ": {
     "children": [
-      "G70990JM"
+      "G56602KR"
     ], 
     "comp": {
       "Hex": 2, 
@@ -121,8 +121,8 @@
   }, 
   "G00229TF": {
     "children": [
-      "G69682OQ", 
-      "G42231PV"
+      "G42231PV", 
+      "G69682OQ"
     ], 
     "comp": {
       "Hex": 2, 
@@ -182,8 +182,8 @@
   }, 
   "G00338CG": {
     "children": [
-      "G23136PY", 
-      "G08580UN"
+      "G08580UN", 
+      "G23136PY"
     ], 
     "comp": {
       "Gal": 1, 
@@ -339,7 +339,6 @@
       "Glc": 6, 
       "Hex": 6
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G00824LK": {
@@ -357,11 +356,11 @@
   }, 
   "G00912UN": {
     "children": [
-      "G06981MP", 
       "G10058ZS", 
+      "G13140RC", 
       "G94649IC", 
-      "G43177PB", 
-      "G13140RC"
+      "G06981MP", 
+      "G43177PB"
     ], 
     "comp": {
       "Hex": 5, 
@@ -558,6 +557,16 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G01197SX": {
+    "children": [
+      "G72116MB"
+    ], 
+    "comp": {
+      "Glc": 3, 
+      "Hex": 3
+    }, 
+    "type": "composition"
+  }, 
   "G01254YI": {
     "children": [], 
     "comp": {
@@ -599,8 +608,8 @@
   }, 
   "G01351UQ": {
     "children": [
-      "G66271DA", 
-      "G42661YK"
+      "G42661YK", 
+      "G66271DA"
     ], 
     "comp": {
       "Hex": 1, 
@@ -832,11 +841,11 @@
   }, 
   "G01650EU": {
     "children": [
-      "G31407SH", 
-      "G23294PN", 
       "G43993LA", 
-      "G31261NL", 
-      "G11843JH"
+      "G23294PN", 
+      "G31407SH", 
+      "G11843JH", 
+      "G31261NL"
     ], 
     "comp": {
       "Hex": 6, 
@@ -1120,8 +1129,8 @@
   "G02191FD": {
     "children": [
       "G99218ZY", 
-      "G21523WH", 
-      "G92400XR"
+      "G92400XR", 
+      "G21523WH"
     ], 
     "comp": {
       "Gal": 1, 
@@ -1135,8 +1144,8 @@
   }, 
   "G02231DC": {
     "children": [
-      "G56585AG", 
-      "G21040TX"
+      "G21040TX", 
+      "G56585AG"
     ], 
     "comp": {
       "Gal": 1, 
@@ -1276,16 +1285,16 @@
   }, 
   "G02438LG": {
     "children": [
-      "G25239HU", 
-      "G73700KU", 
-      "G44075GK", 
-      "G09737HO", 
-      "G56446JU", 
-      "G58914HF", 
+      "G52607ZP", 
       "G57120PR", 
       "G03183MG", 
+      "G73700KU", 
+      "G56446JU", 
+      "G58914HF", 
+      "G25239HU", 
+      "G09737HO", 
+      "G44075GK", 
       "G71839JL", 
-      "G52607ZP", 
       "G22864DM"
     ], 
     "comp": {
@@ -1293,6 +1302,16 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G02447BS": {
+    "children": [], 
+    "comp": {
+      "Hex": 7, 
+      "HexNAc": 6, 
+      "NeuAc": 1, 
+      "dHex": 2
+    }, 
+    "type": "composition"
   }, 
   "G02497EU": {
     "children": [], 
@@ -1323,8 +1342,8 @@
   }, 
   "G02612GE": {
     "children": [
-      "G32286UR", 
-      "G19879XX"
+      "G19879XX", 
+      "G32286UR"
     ], 
     "comp": {
       "Hex": 1, 
@@ -1388,17 +1407,17 @@
   }, 
   "G02727WK": {
     "children": [
+      "G96119OS", 
       "G68569EB", 
       "G63155AL", 
+      "G49281AX", 
+      "G05285ZE", 
       "G81793MS", 
       "G94918BJ", 
-      "G77403VP", 
-      "G05285ZE", 
       "G63616MO", 
-      "G49281AX", 
-      "G96665ZH", 
       "G36169GF", 
-      "G96119OS"
+      "G77403VP", 
+      "G96665ZH"
     ], 
     "comp": {
       "Hex": 3, 
@@ -1453,13 +1472,13 @@
   }, 
   "G02815KT": {
     "children": [
-      "G46969RI", 
-      "G41331NG", 
       "G06110VR", 
-      "G05561KC", 
-      "G89929IA", 
+      "G41331NG", 
       "G88150AI", 
-      "G84768BJ"
+      "G84768BJ", 
+      "G05561KC", 
+      "G46969RI", 
+      "G89929IA"
     ], 
     "comp": {
       "Hex": 5, 
@@ -1508,9 +1527,9 @@
   }, 
   "G02860WV": {
     "children": [
+      "G15531KO", 
       "G88035HT", 
-      "G14895EX", 
-      "G15531KO"
+      "G14895EX"
     ], 
     "comp": {
       "Hex": 6, 
@@ -1534,10 +1553,10 @@
   }, 
   "G02886BB": {
     "children": [
-      "G99872BC", 
-      "G65092SV", 
       "G60742LQ", 
-      "G55285GU"
+      "G55285GU", 
+      "G99872BC", 
+      "G65092SV"
     ], 
     "comp": {
       "Hex": 6, 
@@ -1576,8 +1595,8 @@
   }, 
   "G03042EN": {
     "children": [
-      "G07131KY", 
-      "G28356JF"
+      "G28356JF", 
+      "G07131KY"
     ], 
     "comp": {
       "Gal": 1, 
@@ -1843,12 +1862,12 @@
   }, 
   "G03574QJ": {
     "children": [
-      "G93056KO", 
-      "G86061SP", 
-      "G82230HL", 
       "G74655LE", 
+      "G83650SN", 
+      "G82230HL", 
       "G23067BX", 
-      "G83650SN"
+      "G86061SP", 
+      "G93056KO"
     ], 
     "comp": {
       "Hex": 6, 
@@ -1885,8 +1904,8 @@
   }, 
   "G03596YS": {
     "children": [
-      "G75473HW", 
       "G49241TZ", 
+      "G75473HW", 
       "G86795LJ"
     ], 
     "comp": {
@@ -1933,6 +1952,22 @@
       "dHex": 1
     }, 
     "type": "basecomposition"
+  }, 
+  "G03691ST": {
+    "children": [
+      "G95344OF"
+    ], 
+    "comp": {
+      "Fuc": 2, 
+      "Gal": 2, 
+      "Glc": 1, 
+      "GlcNAc": 1, 
+      "Hex": 3, 
+      "HexNAc": 1, 
+      "dHex": 2
+    }, 
+    "top": true, 
+    "type": "composition"
   }, 
   "G03692CL": {
     "children": [], 
@@ -2037,6 +2072,19 @@
     }, 
     "type": "basecomposition"
   }, 
+  "G03877EO": {
+    "children": [
+      "G90245IA"
+    ], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 7, 
+      "NeuAc": 1, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G03895RQ": {
     "children": [], 
     "comp": {
@@ -2117,8 +2165,8 @@
   }, 
   "G03959QN": {
     "children": [
-      "G15529JT", 
-      "G28311SS"
+      "G28311SS", 
+      "G15529JT"
     ], 
     "comp": {
       "Hex": 5, 
@@ -2178,6 +2226,17 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G04055MU": {
+    "children": [], 
+    "comp": {
+      "Hex": 7, 
+      "HexNAc": 9, 
+      "NeuAc": 1, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G04083LP": {
     "children": [
       "G63377AI"
@@ -2206,8 +2265,8 @@
   }, 
   "G04190CM": {
     "children": [
-      "G92914YI", 
-      "G05287EJ"
+      "G05287EJ", 
+      "G92914YI"
     ], 
     "comp": {
       "Hex": 4, 
@@ -2293,12 +2352,12 @@
   }, 
   "G04371QE": {
     "children": [
-      "G91331SN", 
-      "G75178ER", 
-      "G63952ML", 
-      "G83619DN", 
       "G62941WT", 
-      "G76585PB"
+      "G75178ER", 
+      "G91331SN", 
+      "G76585PB", 
+      "G83619DN", 
+      "G63952ML"
     ], 
     "comp": {
       "Hex": 4, 
@@ -2412,8 +2471,8 @@
   }, 
   "G04657PL": {
     "children": [
-      "G72191MQ", 
       "G36202LB", 
+      "G72191MQ", 
       "G19576EP"
     ], 
     "comp": {
@@ -2441,11 +2500,11 @@
   }, 
   "G04681UD": {
     "children": [
-      "G34077LV", 
       "G55328QW", 
+      "G34077LV", 
       "G87203IU", 
-      "G84662CQ", 
-      "G88312OR"
+      "G88312OR", 
+      "G84662CQ"
     ], 
     "comp": {
       "Hex": 10, 
@@ -2484,8 +2543,8 @@
   }, 
   "G04784US": {
     "children": [
-      "G74930DK", 
-      "G96234CW"
+      "G96234CW", 
+      "G74930DK"
     ], 
     "comp": {
       "Hex": 6, 
@@ -2602,12 +2661,12 @@
   }, 
   "G05049IC": {
     "children": [
-      "G87026IC", 
-      "G35279VV", 
-      "G25103RK", 
-      "G29654WM", 
       "G45978IP", 
-      "G12054UE"
+      "G35279VV", 
+      "G12054UE", 
+      "G29654WM", 
+      "G25103RK", 
+      "G87026IC"
     ], 
     "comp": {
       "Hex": 6, 
@@ -2619,10 +2678,10 @@
   }, 
   "G05049YU": {
     "children": [
+      "G14187IZ", 
       "G68013XJ", 
-      "G75960US", 
       "G17152TS", 
-      "G14187IZ"
+      "G75960US"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -2731,10 +2790,10 @@
   "G05194RK": {
     "children": [
       "G78355JG", 
-      "G35398DS", 
-      "G65877AW", 
       "G82491NO", 
-      "G18787WH"
+      "G65877AW", 
+      "G18787WH", 
+      "G35398DS"
     ], 
     "comp": {
       "Hex": 3, 
@@ -2746,8 +2805,8 @@
   }, 
   "G05273UJ": {
     "children": [
-      "G28923WQ", 
       "G07700RW", 
+      "G28923WQ", 
       "G59384WC"
     ], 
     "comp": {
@@ -2968,11 +3027,11 @@
   }, 
   "G05645NK": {
     "children": [
-      "G10309VC", 
       "G50738IZ", 
+      "G53697BI", 
       "G99374HY", 
       "G90275DB", 
-      "G53697BI"
+      "G10309VC"
     ], 
     "comp": {
       "Hex": 6, 
@@ -3161,8 +3220,8 @@
   }, 
   "G05972VS": {
     "children": [
-      "G33495EJ", 
-      "G53900TG"
+      "G53900TG", 
+      "G33495EJ"
     ], 
     "comp": {
       "Hex": 3, 
@@ -3184,8 +3243,8 @@
   }, 
   "G06042JP": {
     "children": [
-      "G20391ZE", 
-      "G80413LB"
+      "G80413LB", 
+      "G20391ZE"
     ], 
     "comp": {
       "HexNAc": 2, 
@@ -3328,10 +3387,10 @@
   }, 
   "G06231AO": {
     "children": [
-      "G64145OG", 
-      "G49813VI", 
       "G92062TF", 
-      "G55348TP"
+      "G55348TP", 
+      "G49813VI", 
+      "G64145OG"
     ], 
     "comp": {
       "Hex": 5, 
@@ -3344,9 +3403,9 @@
   "G06247RL": {
     "children": [
       "G33240JG", 
+      "G58318SA", 
       "G19446DF", 
-      "G83037OI", 
-      "G58318SA"
+      "G83037OI"
     ], 
     "comp": {
       "Hex": 6, 
@@ -3357,9 +3416,9 @@
   }, 
   "G06281SB": {
     "children": [
+      "G78073TS", 
       "G03641VM", 
-      "G08490CT", 
-      "G78073TS"
+      "G08490CT"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -3388,8 +3447,8 @@
   }, 
   "G06313MM": {
     "children": [
-      "G22659EW", 
-      "G98677HD"
+      "G98677HD", 
+      "G22659EW"
     ], 
     "comp": {
       "Gal": 2, 
@@ -3419,9 +3478,9 @@
   }, 
   "G06346LX": {
     "children": [
-      "G55139FY", 
+      "G13188BW", 
       "G17844SN", 
-      "G13188BW"
+      "G55139FY"
     ], 
     "comp": {
       "Hex": 2, 
@@ -3480,9 +3539,9 @@
   "G06628ZF": {
     "children": [
       "G39085DT", 
-      "G20567HS", 
       "G30235PC", 
-      "G89711AE"
+      "G89711AE", 
+      "G20567HS"
     ], 
     "comp": {
       "S": 1, 
@@ -3493,9 +3552,9 @@
   }, 
   "G06704MH": {
     "children": [
-      "G40360IE", 
       "G54948WU", 
-      "G79861RM"
+      "G79861RM", 
+      "G40360IE"
     ], 
     "comp": {
       "Hex": 6, 
@@ -3555,8 +3614,8 @@
   }, 
   "G06853GH": {
     "children": [
-      "G39592HT", 
-      "G29256WH"
+      "G29256WH", 
+      "G39592HT"
     ], 
     "comp": {
       "Hex": 4, 
@@ -3585,10 +3644,10 @@
   "G06932DR": {
     "children": [
       "G00058XR", 
-      "G21259BQ", 
-      "G82217WD", 
+      "G27690BE", 
       "G94848LT", 
-      "G27690BE"
+      "G82217WD", 
+      "G21259BQ"
     ], 
     "comp": {
       "Hex": 2, 
@@ -4025,10 +4084,10 @@
   }, 
   "G07755XJ": {
     "children": [
+      "G33315ON", 
       "G85243XR", 
       "G54927UK", 
-      "G79667NI", 
-      "G33315ON"
+      "G79667NI"
     ], 
     "comp": {
       "Fuc": 2, 
@@ -4090,8 +4149,8 @@
   }, 
   "G07920KW": {
     "children": [
-      "G28912BK", 
       "G95948HR", 
+      "G28912BK", 
       "G50726KV"
     ], 
     "comp": {
@@ -4194,6 +4253,20 @@
     }, 
     "type": "composition"
   }, 
+  "G08180WU": {
+    "children": [
+      "G70511GI", 
+      "G98556BK"
+    ], 
+    "comp": {
+      "Gal": 1, 
+      "Hex": 1, 
+      "HexNAc": 1, 
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G08182IE": {
     "children": [
       "G95678HJ"
@@ -4283,9 +4356,9 @@
   }, 
   "G08290VR": {
     "children": [
-      "G10532TO", 
       "G49671KH", 
       "G71834LX", 
+      "G10532TO", 
       "G17692UQ"
     ], 
     "comp": {
@@ -4300,9 +4373,9 @@
   }, 
   "G08293MJ": {
     "children": [
-      "G54382UL", 
+      "G27058EU", 
       "G84452RH", 
-      "G27058EU"
+      "G54382UL"
     ], 
     "comp": {
       "Hex": 5, 
@@ -4377,8 +4450,8 @@
   }, 
   "G08453HV": {
     "children": [
-      "G61197BF", 
-      "G53862OE"
+      "G53862OE", 
+      "G61197BF"
     ], 
     "comp": {
       "Hex": 1, 
@@ -4475,13 +4548,13 @@
   }, 
   "G08590QR": {
     "children": [
+      "G12630GO", 
       "G40866TN", 
+      "G82930TB", 
       "G87067NW", 
       "G17202MP", 
-      "G12630GO", 
-      "G47270FQ", 
-      "G82930TB", 
-      "G53509NM"
+      "G49958GL", 
+      "G47270FQ"
     ], 
     "comp": {
       "Hex": 3, 
@@ -4516,8 +4589,8 @@
   }, 
   "G08691QG": {
     "children": [
-      "G86531QZ", 
-      "G56344DH"
+      "G56344DH", 
+      "G86531QZ"
     ], 
     "comp": {
       "Hex": 4, 
@@ -4635,8 +4708,8 @@
   }, 
   "G08910PK": {
     "children": [
-      "G27514DO", 
       "G07306BM", 
+      "G27514DO", 
       "G87109FP"
     ], 
     "comp": {
@@ -4663,10 +4736,10 @@
   }, 
   "G08939MW": {
     "children": [
-      "G58917OJ", 
+      "G39451BK", 
       "G50129LB", 
-      "G40436IV", 
-      "G39451BK"
+      "G58917OJ", 
+      "G40436IV"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -4692,6 +4765,32 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G08962XM": {
+    "children": [
+      "G90721BU"
+    ], 
+    "comp": {
+      "Glc": 1, 
+      "Hex": 1, 
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G08994YL": {
+    "children": [
+      "G75086OY"
+    ], 
+    "comp": {
+      "Gal": 2, 
+      "GlcNAc": 2, 
+      "Hex": 11, 
+      "HexNAc": 2, 
+      "Man": 9
+    }, 
+    "top": true, 
+    "type": "composition"
   }, 
   "G09016GK": {
     "children": [], 
@@ -4797,11 +4896,11 @@
   }, 
   "G09197ZW": {
     "children": [
-      "G07489GQ", 
-      "G85292ZL", 
-      "G96870OT", 
       "G88366NM", 
-      "G46902YN"
+      "G85292ZL", 
+      "G07489GQ", 
+      "G46902YN", 
+      "G96870OT"
     ], 
     "comp": {
       "Hex": 6, 
@@ -4857,7 +4956,6 @@
       "NeuAc": 1, 
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G09330JX": {
@@ -4955,9 +5053,9 @@
   }, 
   "G09528DL": {
     "children": [
-      "G10773YW", 
+      "G75566BJ", 
       "G54670DG", 
-      "G75566BJ"
+      "G10773YW"
     ], 
     "comp": {
       "Hex": 6, 
@@ -5055,22 +5153,22 @@
   }, 
   "G09597LJ": {
     "children": [
-      "G06080FF", 
       "G12969NX", 
-      "G91689SS", 
-      "G59743JO", 
-      "G06186NU", 
-      "G14987PW", 
-      "G79319EQ", 
-      "G38427JR", 
       "G64134SS", 
+      "G38427JR", 
+      "G91689SS", 
       "G36445ON", 
+      "G06080FF", 
+      "G14987PW", 
       "G64863OF", 
-      "G69182II", 
+      "G55420MQ", 
+      "G59743JO", 
+      "G79319EQ", 
       "G95531HX", 
       "G93924TT", 
-      "G55420MQ", 
-      "G97146EI"
+      "G97146EI", 
+      "G69182II", 
+      "G06186NU"
     ], 
     "comp": {
       "Hex": 1
@@ -5151,8 +5249,8 @@
   }, 
   "G09737HO": {
     "children": [
-      "G49112ZN", 
-      "G28820LZ"
+      "G28820LZ", 
+      "G49112ZN"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -5436,10 +5534,10 @@
   }, 
   "G10339FR": {
     "children": [
+      "G29880MM", 
       "G80460CF", 
-      "G41099CL", 
       "G11314AS", 
-      "G29880MM"
+      "G41099CL"
     ], 
     "comp": {
       "Hex": 4, 
@@ -5617,9 +5715,9 @@
   "G10634LC": {
     "children": [
       "G84360TM", 
+      "G49743CE", 
       "G69004ZT", 
-      "G55124HO", 
-      "G49743CE"
+      "G55124HO"
     ], 
     "comp": {
       "HexNAc": 1, 
@@ -5732,9 +5830,9 @@
   }, 
   "G11009FR": {
     "children": [
+      "G24839KW", 
       "G09544FO", 
-      "G47448YK", 
-      "G24839KW"
+      "G47448YK"
     ], 
     "comp": {
       "Hex": 4, 
@@ -5810,8 +5908,8 @@
   }, 
   "G11123OD": {
     "children": [
-      "G79886GQ", 
-      "G08017RF"
+      "G08017RF", 
+      "G79886GQ"
     ], 
     "comp": {
       "Gal": 2, 
@@ -5848,8 +5946,8 @@
   }, 
   "G11145KS": {
     "children": [
-      "G39477LE", 
-      "G45688LI"
+      "G45688LI", 
+      "G39477LE"
     ], 
     "comp": {
       "Hex": 3, 
@@ -5888,6 +5986,31 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G11155NP": {
+    "children": [
+      "G22646XA"
+    ], 
+    "comp": {
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G11157ZG": {
+    "children": [
+      "G43275VO", 
+      "G44748WB", 
+      "G98002LE", 
+      "G10701QX", 
+      "G17209HH"
+    ], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 3, 
+      "NeuAc": 2
+    }, 
+    "type": "composition"
+  }, 
   "G11162IA": {
     "children": [], 
     "comp": {
@@ -5907,8 +6030,8 @@
   }, 
   "G11169GF": {
     "children": [
-      "G18377EC", 
       "G83451BF", 
+      "G18377EC", 
       "G00338CG"
     ], 
     "comp": {
@@ -5946,8 +6069,8 @@
   }, 
   "G11248PY": {
     "children": [
-      "G74814FU", 
-      "G98445GL"
+      "G98445GL", 
+      "G74814FU"
     ], 
     "comp": {
       "Hex": 3, 
@@ -5972,8 +6095,8 @@
   }, 
   "G11313VR": {
     "children": [
-      "G10453DD", 
       "G34932KD", 
+      "G10453DD", 
       "G80778DH"
     ], 
     "comp": {
@@ -5987,15 +6110,15 @@
   }, 
   "G11314AS": {
     "children": [
-      "G05133TU", 
+      "G57401ZT", 
+      "G76651NP", 
+      "G09873KE", 
       "G66731MU", 
       "G10350IX", 
-      "G76651NP", 
-      "G63840IZ", 
-      "G57401ZT", 
-      "G09873KE", 
       "G95436QM", 
-      "G06971WM"
+      "G63840IZ", 
+      "G06971WM", 
+      "G05133TU"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -6048,6 +6171,21 @@
       "HexNAc": 6
     }, 
     "top": true, 
+    "type": "composition"
+  }, 
+  "G11499FP": {
+    "children": [
+      "G58879PQ"
+    ], 
+    "comp": {
+      "Fuc": 1, 
+      "Gal": 1, 
+      "GlcNAc": 1, 
+      "Hex": 1, 
+      "HexNAc": 1, 
+      "NeuAc": 1, 
+      "dHex": 1
+    }, 
     "type": "composition"
   }, 
   "G11504VM": {
@@ -6106,8 +6244,8 @@
   }, 
   "G11568WU": {
     "children": [
-      "G51359PF", 
-      "G09782NR"
+      "G09782NR", 
+      "G51359PF"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -6119,6 +6257,15 @@
       "dHex": 1
     }, 
     "top": true, 
+    "type": "composition"
+  }, 
+  "G11633WO": {
+    "children": [
+      "G90846UZ"
+    ], 
+    "comp": {
+      "Xxx": 1
+    }, 
     "type": "composition"
   }, 
   "G11664SJ": {
@@ -6389,8 +6536,8 @@
   }, 
   "G12341GU": {
     "children": [
-      "G76417NN", 
-      "G21610QZ"
+      "G21610QZ", 
+      "G76417NN"
     ], 
     "comp": {
       "Hex": 8, 
@@ -6401,7 +6548,7 @@
   }, 
   "G12344AO": {
     "children": [
-      "G50498MJ"
+      "G62204DP"
     ], 
     "comp": {
       "Hex": 1, 
@@ -6411,6 +6558,17 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G12365LP": {
+    "children": [
+      "G45116DB"
+    ], 
+    "comp": {
+      "Gal": 1, 
+      "Glc": 1, 
+      "Hex": 2
+    }, 
+    "type": "composition"
   }, 
   "G12379UK": {
     "children": [], 
@@ -6495,8 +6653,8 @@
   }, 
   "G12578LS": {
     "children": [
-      "G63402HR", 
-      "G40484SI"
+      "G40484SI", 
+      "G63402HR"
     ], 
     "comp": {
       "Fuc": 2, 
@@ -6512,10 +6670,10 @@
   }, 
   "G12580WI": {
     "children": [
-      "G42161EG", 
       "G41845AT", 
-      "G82901MT", 
-      "G38161UJ"
+      "G38161UJ", 
+      "G42161EG", 
+      "G82901MT"
     ], 
     "comp": {
       "Hex": 5, 
@@ -6739,11 +6897,37 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G12959FT": {
+    "children": [], 
+    "comp": {
+      "Hex": 13, 
+      "HexNAc": 2
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G12969NX": {
     "children": [], 
     "comp": {
       "Xxx": 1
     }, 
+    "type": "composition"
+  }, 
+  "G13029ZY": {
+    "children": [
+      "G40694IQ"
+    ], 
+    "comp": {
+      "Fuc": 1, 
+      "GalNAc": 1, 
+      "GlcNAc": 4, 
+      "Hex": 3, 
+      "HexNAc": 5, 
+      "Man": 3, 
+      "S": 1, 
+      "dHex": 1
+    }, 
+    "top": true, 
     "type": "composition"
   }, 
   "G13038XR": {
@@ -6786,8 +6970,8 @@
   }, 
   "G13058MK": {
     "children": [
-      "G44009TT", 
-      "G55239YU"
+      "G55239YU", 
+      "G44009TT"
     ], 
     "comp": {
       "Hex": 3, 
@@ -6812,8 +6996,8 @@
   }, 
   "G13140RC": {
     "children": [
-      "G69265CM", 
       "G69235GE", 
+      "G69265CM", 
       "G73366EA"
     ], 
     "comp": {
@@ -6842,13 +7026,13 @@
   }, 
   "G13144LI": {
     "children": [
-      "G08378VD", 
-      "G05360GS", 
+      "G81357VU", 
       "G52287BM", 
-      "G13315PB", 
+      "G05360GS", 
+      "G94213WH", 
       "G12849CJ", 
-      "G54801RD", 
-      "G81357VU"
+      "G08378VD", 
+      "G13315PB"
     ], 
     "comp": {
       "Hex": 7, 
@@ -6926,8 +7110,8 @@
   }, 
   "G13327KS": {
     "children": [
-      "G77654FE", 
-      "G81627MW"
+      "G81627MW", 
+      "G77654FE"
     ], 
     "comp": {
       "Gal": 3, 
@@ -7131,13 +7315,13 @@
   }, 
   "G13630PK": {
     "children": [
-      "G22826FC", 
       "G88779RV", 
+      "G06965TR", 
+      "G22826FC", 
       "G59219YB", 
-      "G67567SF", 
-      "G79254FF", 
       "G71925GA", 
-      "G06965TR"
+      "G67567SF", 
+      "G79254FF"
     ], 
     "comp": {
       "Hex": 3, 
@@ -7265,8 +7449,8 @@
   }, 
   "G13789CZ": {
     "children": [
-      "G83482GN", 
-      "G53362BE"
+      "G53362BE", 
+      "G83482GN"
     ], 
     "comp": {
       "Hex": 2, 
@@ -7382,8 +7566,8 @@
   }, 
   "G14003KG": {
     "children": [
-      "G83090ZI", 
       "G66708CO", 
+      "G83090ZI", 
       "G53214CA"
     ], 
     "comp": {
@@ -7450,9 +7634,9 @@
     "children": [
       "G74354NS", 
       "G40943ZI", 
+      "G77936HD", 
       "G08718YM", 
       "G79137ZX", 
-      "G77936HD", 
       "G29847FN"
     ], 
     "comp": {
@@ -7522,8 +7706,8 @@
   }, 
   "G14238ED": {
     "children": [
-      "G33165OJ", 
-      "G88245MJ"
+      "G88245MJ", 
+      "G33165OJ"
     ], 
     "comp": {
       "Hex": 7, 
@@ -7591,8 +7775,8 @@
   }, 
   "G14368ET": {
     "children": [
-      "G88433MG", 
-      "G79301FF"
+      "G79301FF", 
+      "G88433MG"
     ], 
     "comp": {
       "Hex": 7, 
@@ -7619,10 +7803,10 @@
   }, 
   "G14378SA": {
     "children": [
-      "G34364AA", 
       "G66008AV", 
-      "G25637MW", 
-      "G30655SR"
+      "G34364AA", 
+      "G30655SR", 
+      "G25637MW"
     ], 
     "comp": {
       "Hex": 2, 
@@ -7662,6 +7846,16 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G14440NQ": {
+    "children": [], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 7, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G14445VK": {
     "children": [], 
     "comp": {
@@ -7676,8 +7870,8 @@
   }, 
   "G14455BR": {
     "children": [
-      "G10271OK", 
-      "G98677HD"
+      "G98677HD", 
+      "G10271OK"
     ], 
     "comp": {
       "Hex": 2, 
@@ -7886,8 +8080,8 @@
   }, 
   "G14844BI": {
     "children": [
-      "G42019CN", 
-      "G87936QS"
+      "G87936QS", 
+      "G42019CN"
     ], 
     "comp": {
       "Hex": 7, 
@@ -7901,7 +8095,7 @@
   }, 
   "G14854VJ": {
     "children": [
-      "G77412GQ"
+      "G53516DW"
     ], 
     "comp": {
       "Hex": 1, 
@@ -7961,9 +8155,9 @@
   }, 
   "G14968PV": {
     "children": [
-      "G91572VB", 
+      "G95614RP", 
       "G61811CM", 
-      "G95614RP"
+      "G91572VB"
     ], 
     "comp": {
       "Hex": 2, 
@@ -7997,12 +8191,12 @@
   }, 
   "G15038BD": {
     "children": [
-      "G39456KE", 
-      "G59794LC", 
+      "G76932ZZ", 
       "G82830MN", 
       "G98433CL", 
       "G86955YX", 
-      "G76932ZZ"
+      "G39456KE", 
+      "G59794LC"
     ], 
     "comp": {
       "Hex": 6, 
@@ -8011,6 +8205,16 @@
       "dHex": 1
     }, 
     "type": "composition"
+  }, 
+  "G15064OQ": {
+    "children": [], 
+    "comp": {
+      "Hex": 1, 
+      "HexNAc": 6, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
   }, 
   "G15067LN": {
     "children": [
@@ -8072,9 +8276,9 @@
   }, 
   "G15240ZB": {
     "children": [
-      "G47791FS", 
+      "G16201EW", 
       "G25511ES", 
-      "G16201EW"
+      "G47791FS"
     ], 
     "comp": {
       "Hex": 3, 
@@ -8138,7 +8342,6 @@
     "comp": {
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G15478WH": {
@@ -8152,13 +8355,13 @@
   }, 
   "G15486FH": {
     "children": [
-      "G07564NA", 
-      "G87469RB", 
-      "G34943QI", 
+      "G82119TF", 
       "G86144YL", 
-      "G78890AO", 
+      "G34943QI", 
+      "G87469RB", 
       "G23179JZ", 
-      "G82119TF"
+      "G07564NA", 
+      "G78890AO"
     ], 
     "comp": {
       "Hex": 5, 
@@ -8216,8 +8419,8 @@
   }, 
   "G15567JJ": {
     "children": [
-      "G81655ZA", 
-      "G68576NC"
+      "G68576NC", 
+      "G81655ZA"
     ], 
     "comp": {
       "Hex": 3, 
@@ -8252,9 +8455,7 @@
   }, 
   "G15622GU": {
     "children": [
-      "G02889TC", 
-      "G13728QT", 
-      "G73360PF"
+      "G32633LC"
     ], 
     "comp": {
       "Hex": 7, 
@@ -8267,12 +8468,12 @@
   }, 
   "G15666IG": {
     "children": [
-      "G19727AD", 
-      "G28372ZN", 
-      "G59986YN", 
       "G00917AF", 
+      "G28372ZN", 
+      "G13628FE", 
       "G47397QL", 
-      "G13628FE"
+      "G59986YN", 
+      "G19727AD"
     ], 
     "comp": {
       "Hex": 4, 
@@ -8458,6 +8659,17 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G16060FD": {
+    "children": [
+      "G01197SX"
+    ], 
+    "comp": {
+      "Glc": 3, 
+      "Hex": 3
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G16096FI": {
     "children": [], 
     "comp": {
@@ -8488,12 +8700,12 @@
   }, 
   "G16175ZV": {
     "children": [
-      "G80322NI", 
+      "G99698TC", 
+      "G04010WJ", 
       "G80223IX", 
       "G76776CG", 
-      "G04010WJ", 
-      "G99698TC", 
-      "G08548AD"
+      "G08548AD", 
+      "G80322NI"
     ], 
     "comp": {
       "Hex": 6, 
@@ -8572,6 +8784,22 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G16340GB": {
+    "children": [
+      "G66768WN"
+    ], 
+    "comp": {
+      "Fuc": 1, 
+      "Gal": 1, 
+      "GlcNAc": 1, 
+      "Hex": 1, 
+      "HexNAc": 1, 
+      "NeuAc": 1, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G16342TP": {
     "children": [
       "G59355TA", 
@@ -8645,10 +8873,10 @@
   }, 
   "G16407EV": {
     "children": [
-      "G25637MV", 
+      "G05364NW", 
       "G48194ZX", 
       "G14489PV", 
-      "G05364NW"
+      "G25637MV"
     ], 
     "comp": {
       "Hex": 5, 
@@ -8843,8 +9071,8 @@
   }, 
   "G16864PW": {
     "children": [
-      "G76124IU", 
-      "G22800BY"
+      "G22800BY", 
+      "G76124IU"
     ], 
     "comp": {
       "Gal": 2, 
@@ -8895,13 +9123,13 @@
   }, 
   "G17015OC": {
     "children": [
-      "G88931XN", 
-      "G25863BT", 
       "G05102QO", 
-      "G83992LI", 
-      "G74722FL", 
       "G71950EM", 
-      "G14596AP"
+      "G83992LI", 
+      "G25863BT", 
+      "G14596AP", 
+      "G74722FL", 
+      "G88931XN"
     ], 
     "comp": {
       "Hex": 1, 
@@ -8928,8 +9156,8 @@
   "G17067SW": {
     "children": [
       "G25745LS", 
-      "G30116LI", 
-      "G79876YN"
+      "G79876YN", 
+      "G30116LI"
     ], 
     "comp": {
       "Gal": 2, 
@@ -9180,6 +9408,18 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G17425SJ": {
+    "children": [
+      "G65968NT"
+    ], 
+    "comp": {
+      "Gal": 3, 
+      "Glc": 1, 
+      "Hex": 4
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G17485EK": {
     "children": [], 
     "comp": {
@@ -9234,9 +9474,9 @@
   }, 
   "G17605FD": {
     "children": [
-      "G62146BY", 
+      "G72393QD", 
       "G40430VA", 
-      "G72393QD"
+      "G62146BY"
     ], 
     "comp": {
       "GalNAc": 1, 
@@ -9244,7 +9484,6 @@
       "HexNAc": 2, 
       "S": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G17631NW": {
@@ -9341,8 +9580,8 @@
   }, 
   "G17698CK": {
     "children": [
-      "G12258ZA", 
-      "G47654FF"
+      "G47654FF", 
+      "G12258ZA"
     ], 
     "comp": {
       "Xxx": 2
@@ -9479,6 +9718,21 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G17991UN": {
+    "children": [
+      "G22979OY"
+    ], 
+    "comp": {
+      "Fuc": 2, 
+      "Gal": 1, 
+      "GlcNAc": 1, 
+      "Hex": 1, 
+      "HexNAc": 1, 
+      "dHex": 2
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G18022IK": {
     "children": [
       "G85556MF"
@@ -9562,6 +9816,16 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G18123SG": {
+    "children": [], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 6, 
+      "dHex": 4
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G18140UF": {
     "children": [], 
     "comp": {
@@ -9625,9 +9889,9 @@
   }, 
   "G18254BG": {
     "children": [
-      "G84371YD", 
+      "G14887UT", 
       "G10496WL", 
-      "G14887UT"
+      "G84371YD"
     ], 
     "comp": {
       "Hex": 1, 
@@ -9888,8 +10152,8 @@
   }, 
   "G18942RK": {
     "children": [
-      "G49199DP", 
-      "G19520PI"
+      "G19520PI", 
+      "G49199DP"
     ], 
     "comp": {
       "Hex": 3, 
@@ -10129,8 +10393,8 @@
   "G19379ID": {
     "children": [
       "G07755XJ", 
-      "G98089JQ", 
-      "G94021IF"
+      "G94021IF", 
+      "G98089JQ"
     ], 
     "comp": {
       "Hex": 4, 
@@ -10251,8 +10515,8 @@
   }, 
   "G19517GM": {
     "children": [
-      "G72597SM", 
       "G00459BD", 
+      "G72597SM", 
       "G69860JP"
     ], 
     "comp": {
@@ -10365,8 +10629,8 @@
   }, 
   "G19865KY": {
     "children": [
-      "G31147CJ", 
       "G96724BJ", 
+      "G31147CJ", 
       "G86056PA"
     ], 
     "comp": {
@@ -10432,8 +10696,8 @@
   "G19990PZ": {
     "children": [
       "G71997DD", 
-      "G09558QE", 
-      "G80452AC"
+      "G80452AC", 
+      "G09558QE"
     ], 
     "comp": {
       "Hex": 4, 
@@ -10545,9 +10809,9 @@
   }, 
   "G20309KB": {
     "children": [
-      "G55702BI", 
+      "G34488MU", 
       "G81708OL", 
-      "G34488MU"
+      "G55702BI"
     ], 
     "comp": {
       "Hex": 3, 
@@ -10560,10 +10824,10 @@
   "G20358QB": {
     "children": [
       "G55614WT", 
-      "G41915IH", 
-      "G47203JO", 
       "G16391NR", 
+      "G47203JO", 
       "G88438YV", 
+      "G41915IH", 
       "G01550VL", 
       "G95233PP", 
       "G23537ZN"
@@ -10835,6 +11099,32 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G20897XG": {
+    "children": [
+      "G77710TJ"
+    ], 
+    "comp": {
+      "GlcNAc": 1, 
+      "Hex": 9, 
+      "HexNAc": 1, 
+      "Man": 9, 
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G20934GG": {
+    "children": [
+      "G47913JC"
+    ], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 3, 
+      "NeuGc": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G20934TL": {
     "children": [], 
     "comp": {
@@ -10847,9 +11137,9 @@
   "G20956ZV": {
     "children": [
       "G45290PW", 
-      "G19929CB", 
+      "G92275SC", 
       "G74724QE", 
-      "G92275SC"
+      "G19929CB"
     ], 
     "comp": {
       "Hex": 3, 
@@ -10931,11 +11221,11 @@
   }, 
   "G21103RE": {
     "children": [
-      "G05922RQ", 
       "G28644LX", 
-      "G52961LR", 
+      "G31902HI", 
+      "G05922RQ", 
       "G16395LO", 
-      "G31902HI"
+      "G52961LR"
     ], 
     "comp": {
       "Hex": 2, 
@@ -10955,7 +11245,6 @@
       "HexNAc": 2, 
       "Man": 9
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G21161GI": {
@@ -11230,6 +11519,16 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G21670TV": {
+    "children": [], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 6, 
+      "NeuAc": 2, 
+      "NeuGc": 1
+    }, 
+    "type": "composition"
+  }, 
   "G21703HL": {
     "children": [
       "G28955QE"
@@ -11256,10 +11555,10 @@
   "G21726WW": {
     "children": [
       "G85039KQ", 
+      "G84244ND", 
       "G64162JC", 
       "G15666OL", 
-      "G14676RK", 
-      "G84244ND"
+      "G14676RK"
     ], 
     "comp": {
       "Hex": 3, 
@@ -11330,8 +11629,8 @@
   "G22020EN": {
     "children": [
       "G08062SX", 
-      "G06076AB", 
-      "G16864PW"
+      "G16864PW", 
+      "G06076AB"
     ], 
     "comp": {
       "Gal": 2, 
@@ -11556,8 +11855,8 @@
   }, 
   "G22525FU": {
     "children": [
-      "G41068DN", 
-      "G23098ZZ"
+      "G23098ZZ", 
+      "G41068DN"
     ], 
     "comp": {
       "Gal": 1, 
@@ -11664,6 +11963,16 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G22646XA": {
+    "children": [
+      "G99135JL", 
+      "G64665BQ"
+    ], 
+    "comp": {
+      "Xxx": 1
+    }, 
+    "type": "composition"
+  }, 
   "G22655LJ": {
     "children": [], 
     "comp": {
@@ -11730,6 +12039,32 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G22715NH": {
+    "children": [
+      "G98544EX"
+    ], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 6, 
+      "NeuAc": 2, 
+      "dHex": 2
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
+  "G22788YM": {
+    "children": [
+      "G82348RD"
+    ], 
+    "comp": {
+      "Hex": 8, 
+      "HexNAc": 7, 
+      "NeuAc": 1, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G22800BY": {
     "children": [], 
     "comp": {
@@ -11737,6 +12072,20 @@
       "Hex": 2, 
       "Xxx": 4
     }, 
+    "type": "composition"
+  }, 
+  "G22816WV": {
+    "children": [
+      "G58169SI"
+    ], 
+    "comp": {
+      "Fuc": 1, 
+      "Gal": 1, 
+      "Glc": 1, 
+      "Hex": 2, 
+      "dHex": 1
+    }, 
+    "top": true, 
     "type": "composition"
   }, 
   "G22826FC": {
@@ -11851,6 +12200,7 @@
   }, 
   "G22955WV": {
     "children": [
+      "G03691ST", 
       "G23581QL", 
       "G92628UB"
     ], 
@@ -11872,19 +12222,28 @@
       "HexNAc": 1, 
       "dHex": 2
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G22997XD": {
     "children": [
-      "G56377KB", 
+      "G06571VN", 
       "G82097CF", 
       "G93526UZ", 
-      "G06571VN"
+      "G56377KB"
     ], 
     "comp": {
       "S": 5, 
       "Xxx": 5
+    }, 
+    "type": "composition"
+  }, 
+  "G23010ZW": {
+    "children": [], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 5, 
+      "NeuAc": 2, 
+      "dHex": 3
     }, 
     "type": "composition"
   }, 
@@ -12111,8 +12470,8 @@
   }, 
   "G23341KY": {
     "children": [
-      "G53790NZ", 
-      "G99848BA"
+      "G99848BA", 
+      "G53790NZ"
     ], 
     "comp": {
       "Hex": 1, 
@@ -12281,10 +12640,10 @@
   }, 
   "G23729WG": {
     "children": [
-      "G81006GJ", 
-      "G56829FS", 
+      "G38539SC", 
       "G08570DT", 
-      "G38539SC"
+      "G56829FS", 
+      "G81006GJ"
     ], 
     "comp": {
       "Hex": 1, 
@@ -12429,15 +12788,15 @@
   }, 
   "G23974XB": {
     "children": [
-      "G79732HM", 
-      "G43442VS", 
-      "G84905ME", 
-      "G75019CB", 
-      "G43580WW", 
-      "G01655FT", 
       "G43146CV", 
+      "G84905ME", 
+      "G43580WW", 
       "G67672CS", 
-      "G06954BB"
+      "G43442VS", 
+      "G79732HM", 
+      "G01655FT", 
+      "G06954BB", 
+      "G75019CB"
     ], 
     "comp": {
       "Hex": 1, 
@@ -12581,6 +12940,16 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G24202RA": {
+    "children": [], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 7, 
+      "dHex": 3
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G24211OH": {
     "children": [
       "G74684KO"
@@ -12628,8 +12997,8 @@
   }, 
   "G24261ED": {
     "children": [
-      "G18476BB", 
       "G31736JN", 
+      "G18476BB", 
       "G20392MD"
     ], 
     "comp": {
@@ -12656,8 +13025,8 @@
   }, 
   "G24306VC": {
     "children": [
-      "G17290QT", 
-      "G86813OK"
+      "G86813OK", 
+      "G17290QT"
     ], 
     "comp": {
       "Hex": 3, 
@@ -12809,6 +13178,16 @@
     }, 
     "top": true, 
     "type": "composition"
+  }, 
+  "G24481HY": {
+    "children": [], 
+    "comp": {
+      "Hex": 8, 
+      "HexNAc": 8, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
   }, 
   "G24493HX": {
     "children": [
@@ -12999,10 +13378,10 @@
   }, 
   "G25046GI": {
     "children": [
-      "G81747JQ", 
-      "G78437FV", 
       "G29802DQ", 
-      "G40133HG"
+      "G40133HG", 
+      "G81747JQ", 
+      "G78437FV"
     ], 
     "comp": {
       "Hex": 4, 
@@ -13078,8 +13457,8 @@
   }, 
   "G25235BX": {
     "children": [
-      "G95451TB", 
-      "G64730RH"
+      "G64730RH", 
+      "G95451TB"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -13128,12 +13507,12 @@
   }, 
   "G25325JY": {
     "children": [
-      "G89012SB", 
       "G13739BE", 
-      "G90721BU", 
-      "G98454CE", 
-      "G80636IF", 
       "G96899QX", 
+      "G89012SB", 
+      "G08962XM", 
+      "G80636IF", 
+      "G98454CE", 
       "G18716RI"
     ], 
     "comp": {
@@ -13329,8 +13708,8 @@
   }, 
   "G25571PV": {
     "children": [
-      "G51853HW", 
-      "G10508JF"
+      "G10508JF", 
+      "G51853HW"
     ], 
     "comp": {
       "Hex": 4, 
@@ -13516,9 +13895,9 @@
   }, 
   "G25928EE": {
     "children": [
-      "G20593DD", 
       "G88353XM", 
       "G53549WY", 
+      "G20593DD", 
       "G40902NG"
     ], 
     "comp": {
@@ -13582,9 +13961,9 @@
   }, 
   "G25987BV": {
     "children": [
-      "G28722QH", 
+      "G23719VF", 
       "G01953DT", 
-      "G23719VF"
+      "G28722QH"
     ], 
     "comp": {
       "Hex": 3, 
@@ -13681,10 +14060,22 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G26169VM": {
+    "children": [
+      "G47314ZV"
+    ], 
+    "comp": {
+      "Gal": 1, 
+      "Hex": 1, 
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G26195QL": {
     "children": [
-      "G89516XH", 
-      "G13334HZ"
+      "G13334HZ", 
+      "G89516XH"
     ], 
     "comp": {
       "Hex": 3, 
@@ -13693,6 +14084,15 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G26198JI": {
+    "children": [], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 3, 
+      "NeuGc": 1
+    }, 
+    "type": "composition"
   }, 
   "G26237XF": {
     "children": [
@@ -13742,6 +14142,15 @@
     }, 
     "top": true, 
     "type": "composition"
+  }, 
+  "G26330YA": {
+    "children": [], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 7
+    }, 
+    "top": true, 
+    "type": "basecomposition"
   }, 
   "G26365PU": {
     "children": [], 
@@ -13959,8 +14368,8 @@
   }, 
   "G26645ZT": {
     "children": [
-      "G16487ID", 
-      "G51535UO"
+      "G51535UO", 
+      "G16487ID"
     ], 
     "comp": {
       "Hex": 2, 
@@ -14131,9 +14540,9 @@
   }, 
   "G27058EU": {
     "children": [
-      "G48050CZ", 
+      "G08939MW", 
       "G93950WA", 
-      "G08939MW"
+      "G48050CZ"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -14173,11 +14582,11 @@
   }, 
   "G27126ED": {
     "children": [
-      "G51759SF", 
-      "G67646FC", 
       "G00449DS", 
+      "G67646FC", 
+      "G22525MY", 
       "G25418HZ", 
-      "G22525MY"
+      "G51759SF"
     ], 
     "comp": {
       "Hex": 6, 
@@ -14262,10 +14671,10 @@
   }, 
   "G27391WQ": {
     "children": [
+      "G58852GK", 
       "G94131HY", 
       "G54064OC", 
-      "G71838YU", 
-      "G58852GK"
+      "G71838YU"
     ], 
     "comp": {
       "HexNAc": 2
@@ -14289,8 +14698,8 @@
   "G27508XR": {
     "children": [
       "G85700PZ", 
-      "G94473GQ", 
-      "G46728JX"
+      "G46728JX", 
+      "G94473GQ"
     ], 
     "comp": {
       "S": 1, 
@@ -14318,8 +14727,8 @@
   }, 
   "G27525WI": {
     "children": [
-      "G99764BJ", 
-      "G16342TP"
+      "G16342TP", 
+      "G99764BJ"
     ], 
     "comp": {
       "HexNAc": 1, 
@@ -14347,7 +14756,6 @@
     "comp": {
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G27540UT": {
@@ -14414,12 +14822,12 @@
   "G27622TD": {
     "children": [
       "G88823RD", 
-      "G12313PD", 
-      "G47390BA", 
       "G28132XU", 
-      "G80840RW", 
+      "G47390BA", 
+      "G49283QJ", 
       "G72289VH", 
-      "G49283QJ"
+      "G80840RW", 
+      "G12313PD"
     ], 
     "comp": {
       "Hex": 5, 
@@ -14506,8 +14914,8 @@
   }, 
   "G27947YN": {
     "children": [
-      "G44018SV", 
-      "G60942FK"
+      "G60942FK", 
+      "G44018SV"
     ], 
     "comp": {
       "Hex": 6, 
@@ -14710,6 +15118,19 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G28290AV": {
+    "children": [
+      "G39689FZ"
+    ], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 5, 
+      "NeuAc": 1, 
+      "dHex": 4
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G28311SS": {
     "children": [], 
     "comp": {
@@ -14840,12 +15261,12 @@
   }, 
   "G28541PG": {
     "children": [
-      "G54698HY", 
-      "G16365RF", 
-      "G72735IY", 
-      "G02672SI", 
       "G81713KT", 
-      "G55719HL"
+      "G02672SI", 
+      "G54698HY", 
+      "G55719HL", 
+      "G72735IY", 
+      "G16365RF"
     ], 
     "comp": {
       "Hex": 6, 
@@ -14866,10 +15287,19 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G28603RA": {
+    "children": [], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 7, 
+      "NeuAc": 1
+    }, 
+    "type": "composition"
+  }, 
   "G28619LO": {
     "children": [
-      "G34884BV", 
-      "G82789VD"
+      "G82789VD", 
+      "G34884BV"
     ], 
     "comp": {
       "Xxx": 2
@@ -14879,8 +15309,8 @@
   }, 
   "G28622IK": {
     "children": [
-      "G07166XN", 
-      "G35849YC"
+      "G35849YC", 
+      "G07166XN"
     ], 
     "comp": {
       "Hex": 7, 
@@ -14936,16 +15366,16 @@
   }, 
   "G28681TP": {
     "children": [
-      "G04582LB", 
       "G42566OB", 
-      "G14669DU", 
       "G88207OU", 
-      "G51823YA", 
       "G17387JZ", 
+      "G04582LB", 
+      "G28326HR", 
       "G71678CK", 
+      "G14669DU", 
+      "G51823YA", 
       "G00066WY", 
-      "G68986OJ", 
-      "G28326HR"
+      "G68986OJ"
     ], 
     "comp": {
       "Hex": 3, 
@@ -15082,8 +15512,8 @@
   }, 
   "G28912BK": {
     "children": [
-      "G48736VD", 
-      "G44392FU"
+      "G44392FU", 
+      "G48736VD"
     ], 
     "comp": {
       "Gal": 1, 
@@ -15122,6 +15552,16 @@
       "Xxx": 1
     }, 
     "top": true, 
+    "type": "composition"
+  }, 
+  "G28937TW": {
+    "children": [], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 5, 
+      "NeuAc": 3, 
+      "dHex": 1
+    }, 
     "type": "composition"
   }, 
   "G28955QE": {
@@ -15183,6 +15623,21 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G29043AF": {
+    "children": [
+      "G09327UV"
+    ], 
+    "comp": {
+      "Gal": 1, 
+      "GlcNAc": 1, 
+      "Hex": 1, 
+      "HexNAc": 1, 
+      "NeuAc": 1, 
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G29046XY": {
     "children": [], 
     "comp": {
@@ -15227,17 +15682,17 @@
   }, 
   "G29068FM": {
     "children": [
-      "G64091KS", 
-      "G81202UN", 
-      "G51203CY", 
-      "G51360DN", 
-      "G55996RK", 
-      "G73951PH", 
-      "G14843DJ", 
       "G74462ZI", 
+      "G81202UN", 
       "G36312PO", 
       "G87682NE", 
-      "G18476LA"
+      "G51360DN", 
+      "G73951PH", 
+      "G64091KS", 
+      "G18476LA", 
+      "G55996RK", 
+      "G14843DJ", 
+      "G51203CY"
     ], 
     "comp": {
       "HexNAc": 1
@@ -15413,10 +15868,10 @@
   }, 
   "G29651HS": {
     "children": [
-      "G20879VM", 
-      "G87661QW", 
       "G70822IO", 
-      "G86838ZQ"
+      "G86838ZQ", 
+      "G87661QW", 
+      "G20879VM"
     ], 
     "comp": {
       "Hex": 5, 
@@ -15550,9 +16005,9 @@
   }, 
   "G29871AR": {
     "children": [
+      "G76530ZL", 
       "G83475VH", 
-      "G21193WJ", 
-      "G76530ZL"
+      "G21193WJ"
     ], 
     "comp": {
       "Hex": 4, 
@@ -15572,6 +16027,16 @@
       "dHex": 1
     }, 
     "type": "basecomposition"
+  }, 
+  "G29898ES": {
+    "children": [], 
+    "comp": {
+      "Hex": 3, 
+      "HexNAc": 5, 
+      "NeuAc": 1
+    }, 
+    "top": true, 
+    "type": "composition"
   }, 
   "G29906QS": {
     "children": [], 
@@ -15658,8 +16123,8 @@
   }, 
   "G30110MN": {
     "children": [
-      "G10979DP", 
-      "G61219IG"
+      "G61219IG", 
+      "G10979DP"
     ], 
     "comp": {
       "Hex": 5, 
@@ -15680,6 +16145,16 @@
       "Xxx": 2
     }, 
     "top": true, 
+    "type": "composition"
+  }, 
+  "G30123TP": {
+    "children": [], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 4, 
+      "NeuGc": 1, 
+      "dHex": 2
+    }, 
     "type": "composition"
   }, 
   "G30154JG": {
@@ -15713,9 +16188,9 @@
   }, 
   "G30189TQ": {
     "children": [
-      "G22402II", 
       "G80294ZS", 
-      "G86996BA"
+      "G86996BA", 
+      "G22402II"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -15728,6 +16203,15 @@
     }, 
     "top": true, 
     "type": "composition"
+  }, 
+  "G30190ML": {
+    "children": [], 
+    "comp": {
+      "Hex": 1, 
+      "HexNAc": 4
+    }, 
+    "top": true, 
+    "type": "basecomposition"
   }, 
   "G30213GE": {
     "children": [], 
@@ -15772,6 +16256,20 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G30364ZU": {
+    "children": [
+      "G80517ZY"
+    ], 
+    "comp": {
+      "Gal": 1, 
+      "GlcNAc": 2, 
+      "Hex": 1, 
+      "HexNAc": 2, 
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G30407TS": {
     "children": [
       "G45008VQ"
@@ -15808,6 +16306,20 @@
       "Man": 4, 
       "Xxx": 1, 
       "dHex": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G30502CS": {
+    "children": [
+      "G59848RU"
+    ], 
+    "comp": {
+      "Gal": 1, 
+      "GalNAc": 1, 
+      "GlcNAc": 1, 
+      "Hex": 1, 
+      "HexNAc": 2
     }, 
     "top": true, 
     "type": "composition"
@@ -15855,9 +16367,9 @@
   }, 
   "G30581JZ": {
     "children": [
+      "G98288RW", 
       "G83224HD", 
-      "G76945EC", 
-      "G98288RW"
+      "G76945EC"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -15869,6 +16381,18 @@
     }, 
     "top": true, 
     "type": "composition"
+  }, 
+  "G30583FG": {
+    "children": [
+      "G32392SM"
+    ], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 6, 
+      "NeuAc": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
   }, 
   "G30600DE": {
     "children": [
@@ -15904,6 +16428,18 @@
     }, 
     "type": "composition"
   }, 
+  "G30621VE": {
+    "children": [
+      "G23010ZW"
+    ], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 5, 
+      "NeuAc": 2, 
+      "dHex": 3
+    }, 
+    "type": "composition"
+  }, 
   "G30630UO": {
     "children": [
       "G00996DG"
@@ -15931,9 +16467,9 @@
   }, 
   "G30664IS": {
     "children": [
+      "G27785LA", 
       "G25815GV", 
-      "G64818UY", 
-      "G27785LA"
+      "G64818UY"
     ], 
     "comp": {
       "Hex": 2, 
@@ -16017,13 +16553,12 @@
       "HexNAc": 1, 
       "dHex": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G30947MQ": {
     "children": [
-      "G80092LU", 
-      "G35415UM"
+      "G35415UM", 
+      "G80092LU"
     ], 
     "comp": {
       "Hex": 3, 
@@ -16109,6 +16644,21 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G31112LT": {
+    "children": [
+      "G30886AB"
+    ], 
+    "comp": {
+      "Fuc": 1, 
+      "Gal": 1, 
+      "GalNAc": 1, 
+      "Hex": 1, 
+      "HexNAc": 1, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G31126EW": {
     "children": [], 
     "comp": {
@@ -16142,6 +16692,16 @@
       "Glc": 1, 
       "Hex": 4, 
       "dHex": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G31166QV": {
+    "children": [], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 8, 
+      "NeuAc": 1
     }, 
     "top": true, 
     "type": "composition"
@@ -16213,8 +16773,8 @@
   }, 
   "G31282CB": {
     "children": [
-      "G49589HV", 
-      "G17605FD"
+      "G57195RJ", 
+      "G49589HV"
     ], 
     "comp": {
       "HexNAc": 2, 
@@ -16307,6 +16867,16 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G31458KO": {
+    "children": [], 
+    "comp": {
+      "Hex": 10, 
+      "HexNAc": 7, 
+      "dHex": 2
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G31471VL": {
     "children": [], 
     "comp": {
@@ -16318,6 +16888,16 @@
     }, 
     "top": true, 
     "type": "composition"
+  }, 
+  "G31483BB": {
+    "children": [], 
+    "comp": {
+      "Hex": 3, 
+      "HexNAc": 8, 
+      "dHex": 2
+    }, 
+    "top": true, 
+    "type": "basecomposition"
   }, 
   "G31510XO": {
     "children": [
@@ -16436,13 +17016,23 @@
   }, 
   "G31629OB": {
     "children": [
-      "G17142OC", 
-      "G99747RT"
+      "G99747RT", 
+      "G17142OC"
     ], 
     "comp": {
       "HexNAc": 1, 
       "NeuAc": 1, 
       "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
+  "G31632CJ": {
+    "children": [], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 5, 
+      "dHex": 4
     }, 
     "top": true, 
     "type": "basecomposition"
@@ -16580,12 +17170,12 @@
   }, 
   "G31852PQ": {
     "children": [
-      "G45552IY", 
-      "G33458WJ", 
       "G71666DH", 
+      "G68381LV", 
       "G53642AM", 
+      "G45552IY", 
       "G56824FQ", 
-      "G68381LV"
+      "G33458WJ"
     ], 
     "comp": {
       "Hex": 7, 
@@ -16659,10 +17249,10 @@
   }, 
   "G32030CB": {
     "children": [
-      "G59062KT", 
-      "G19275UG", 
+      "G34707SL", 
       "G62146UL", 
-      "G00803PJ"
+      "G19275UG", 
+      "G59062KT"
     ], 
     "comp": {
       "Hex": 6
@@ -16700,9 +17290,10 @@
   }, 
   "G32067JF": {
     "children": [
-      "G70511GI", 
-      "G98556BK", 
-      "G72524CO"
+      "G08180WU", 
+      "G72524CO", 
+      "G74314SG", 
+      "G97108FC"
     ], 
     "comp": {
       "Hex": 1, 
@@ -16756,8 +17347,8 @@
   }, 
   "G32118LZ": {
     "children": [
-      "G54416OL", 
       "G69538RU", 
+      "G54416OL", 
       "G47967RK"
     ], 
     "comp": {
@@ -16779,7 +17370,6 @@
       "HexNAc": 1, 
       "Xxx": 3
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G32127JA": {
@@ -16946,13 +17536,22 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G32392SM": {
+    "children": [], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 6, 
+      "NeuAc": 1
+    }, 
+    "type": "composition"
+  }, 
   "G32406CO": {
     "children": [
-      "G42080JL", 
       "G33589DL", 
+      "G18254BG", 
       "G02820IE", 
       "G10714EP", 
-      "G18254BG"
+      "G42080JL"
     ], 
     "comp": {
       "Hex": 1, 
@@ -17000,6 +17599,20 @@
     }, 
     "type": "composition"
   }, 
+  "G32633LC": {
+    "children": [
+      "G73360PF", 
+      "G13728QT", 
+      "G02889TC"
+    ], 
+    "comp": {
+      "Hex": 7, 
+      "HexNAc": 5, 
+      "NeuAc": 1, 
+      "dHex": 1
+    }, 
+    "type": "composition"
+  }, 
   "G32683ZN": {
     "children": [], 
     "comp": {
@@ -17014,8 +17627,8 @@
   }, 
   "G32779HW": {
     "children": [
-      "G39068FB", 
-      "G10564VR"
+      "G10564VR", 
+      "G39068FB"
     ], 
     "comp": {
       "Xxx": 2
@@ -17085,7 +17698,6 @@
       "Xxx": 1, 
       "dHex": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G32909UL": {
@@ -17129,8 +17741,8 @@
     "children": [
       "G23299ZA", 
       "G57431ZL", 
-      "G78138CS", 
-      "G96776MR"
+      "G96776MR", 
+      "G78138CS"
     ], 
     "comp": {
       "Hex": 1, 
@@ -17259,9 +17871,9 @@
   "G33181PQ": {
     "children": [
       "G73114PU", 
-      "G44536OJ", 
       "G43410ZR", 
-      "G39558DK"
+      "G39558DK", 
+      "G44536OJ"
     ], 
     "comp": {
       "Hex": 2, 
@@ -17329,7 +17941,7 @@
   }, 
   "G33261MF": {
     "children": [
-      "G89172MA"
+      "G33780VO"
     ], 
     "comp": {
       "Xxx": 2
@@ -17351,8 +17963,8 @@
   }, 
   "G33315ON": {
     "children": [
-      "G04604QI", 
-      "G63062OT"
+      "G63062OT", 
+      "G04604QI"
     ], 
     "comp": {
       "Fuc": 2, 
@@ -17484,9 +18096,9 @@
   }, 
   "G33573NA": {
     "children": [
-      "G86478ZT", 
       "G22525FU", 
-      "G00232ED"
+      "G00232ED", 
+      "G86478ZT"
     ], 
     "comp": {
       "Hex": 4, 
@@ -17500,8 +18112,8 @@
   "G33589DL": {
     "children": [
       "G25573QU", 
-      "G82955US", 
-      "G14887UT"
+      "G14887UT", 
+      "G82955US"
     ], 
     "comp": {
       "Gal": 1, 
@@ -17551,8 +18163,8 @@
   "G33623LN": {
     "children": [
       "G67281OF", 
-      "G47434YR", 
-      "G81858IB"
+      "G81858IB", 
+      "G47434YR"
     ], 
     "comp": {
       "HexNAc": 2, 
@@ -17575,6 +18187,15 @@
   }, 
   "G33737PI": {
     "children": [], 
+    "comp": {
+      "Xxx": 2
+    }, 
+    "type": "composition"
+  }, 
+  "G33780VO": {
+    "children": [
+      "G89172MA"
+    ], 
     "comp": {
       "Xxx": 2
     }, 
@@ -17783,9 +18404,9 @@
   }, 
   "G34092QJ": {
     "children": [
+      "G25993OX", 
       "G53363RM", 
-      "G00970CP", 
-      "G25993OX"
+      "G00970CP"
     ], 
     "comp": {
       "Hex": 3, 
@@ -17815,8 +18436,8 @@
   }, 
   "G34216OT": {
     "children": [
-      "G55092AK", 
-      "G45074XX"
+      "G45074XX", 
+      "G55092AK"
     ], 
     "comp": {
       "Hex": 5, 
@@ -17864,9 +18485,9 @@
   }, 
   "G34364AA": {
     "children": [
-      "G99360HM", 
       "G52713CF", 
-      "G23344MW"
+      "G23344MW", 
+      "G99360HM"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -17913,9 +18534,9 @@
   }, 
   "G34412GZ": {
     "children": [
+      "G24087OI", 
       "G51088QH", 
-      "G39068FB", 
-      "G24087OI"
+      "G39068FB"
     ], 
     "comp": {
       "GalNAc": 1, 
@@ -17961,14 +18582,14 @@
   }, 
   "G34516JZ": {
     "children": [
-      "G47681UP", 
-      "G27021HB", 
-      "G82408LA", 
-      "G72310OG", 
       "G05387BJ", 
       "G77556QM", 
+      "G57403MY", 
+      "G72310OG", 
+      "G82408LA", 
       "G39515IW", 
-      "G57403MY"
+      "G27021HB", 
+      "G47681UP"
     ], 
     "comp": {
       "Hex": 3, 
@@ -18070,6 +18691,17 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G34707SL": {
+    "children": [
+      "G00803PJ"
+    ], 
+    "comp": {
+      "Glc": 6, 
+      "Hex": 6
+    }, 
+    "top": true, 
+    "type": "composition"
   }, 
   "G34730YF": {
     "children": [
@@ -18304,6 +18936,20 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G35106NY": {
+    "children": [
+      "G32904GJ"
+    ], 
+    "comp": {
+      "Fuc": 1, 
+      "Gal": 1, 
+      "Hex": 1, 
+      "Xxx": 1, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G35145LR": {
     "children": [], 
     "comp": {
@@ -18358,10 +19004,10 @@
   }, 
   "G35235RT": {
     "children": [
-      "G94305RI", 
-      "G64512RX", 
       "G13891WJ", 
-      "G71569SN"
+      "G71569SN", 
+      "G94305RI", 
+      "G64512RX"
     ], 
     "comp": {
       "Hex": 5, 
@@ -18536,8 +19182,8 @@
   }, 
   "G35522XB": {
     "children": [
-      "G33737PI", 
-      "G39155PH"
+      "G39155PH", 
+      "G33737PI"
     ], 
     "comp": {
       "Xxx": 2
@@ -18664,8 +19310,8 @@
   }, 
   "G35821UR": {
     "children": [
-      "G90912BU", 
-      "G06230KM"
+      "G06230KM", 
+      "G90912BU"
     ], 
     "comp": {
       "Hex": 6, 
@@ -18823,8 +19469,8 @@
   }, 
   "G36098RZ": {
     "children": [
-      "G25194SR", 
       "G94641IC", 
+      "G25194SR", 
       "G53898QQ"
     ], 
     "comp": {
@@ -18845,7 +19491,7 @@
   }, 
   "G36144UT": {
     "children": [
-      "G32904GJ"
+      "G35106NY"
     ], 
     "comp": {
       "Hex": 1, 
@@ -18937,13 +19583,24 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G36357CE": {
+    "children": [], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 5, 
+      "NeuAc": 2, 
+      "dHex": 4
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G36379GD": {
     "children": [
+      "G00628MV", 
       "G55710AV", 
-      "G24929AX", 
       "G16650JL", 
-      "G98983WU", 
-      "G00628MV"
+      "G24929AX", 
+      "G98983WU"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -19081,8 +19738,8 @@
   }, 
   "G36670VW": {
     "children": [
-      "G90382BL", 
       "G72205TD", 
+      "G90382BL", 
       "G81316HC"
     ], 
     "comp": {
@@ -19108,8 +19765,8 @@
   }, 
   "G36813CY": {
     "children": [
-      "G09372SQ", 
-      "G50503FZ"
+      "G50503FZ", 
+      "G09372SQ"
     ], 
     "comp": {
       "Xxx": 1
@@ -19263,9 +19920,9 @@
   "G37399XV": {
     "children": [
       "G71132GC", 
-      "G94020CX", 
       "G82463GQ", 
-      "G52428WX"
+      "G52428WX", 
+      "G94020CX"
     ], 
     "comp": {
       "Hex": 5, 
@@ -19287,8 +19944,8 @@
   }, 
   "G37502PY": {
     "children": [
-      "G63342MB", 
-      "G81993MP"
+      "G81993MP", 
+      "G63342MB"
     ], 
     "comp": {
       "Hex": 1, 
@@ -19363,7 +20020,6 @@
     "comp": {
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G37772BP": {
@@ -19501,9 +20157,9 @@
   }, 
   "G38161UJ": {
     "children": [
+      "G41185ZB", 
       "G59034SK", 
-      "G47289JI", 
-      "G41185ZB"
+      "G47289JI"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -19551,14 +20207,24 @@
   }, 
   "G38376CI": {
     "children": [
-      "G61769MA", 
-      "G82718YC"
+      "G82718YC", 
+      "G61769MA"
     ], 
     "comp": {
       "Hex": 6, 
       "HexNAc": 7, 
       "NeuAc": 2, 
       "S": 1, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
+  "G38398KX": {
+    "children": [], 
+    "comp": {
+      "Hex": 1, 
+      "HexNAc": 9, 
       "dHex": 1
     }, 
     "top": true, 
@@ -19628,8 +20294,8 @@
   }, 
   "G38621WW": {
     "children": [
-      "G40783MY", 
-      "G50999NW"
+      "G50999NW", 
+      "G96296PU"
     ], 
     "comp": {
       "Hex": 2, 
@@ -19754,8 +20420,8 @@
   }, 
   "G38769OU": {
     "children": [
-      "G73361JJ", 
       "G01555RW", 
+      "G73361JJ", 
       "G21876AF"
     ], 
     "comp": {
@@ -19855,7 +20521,7 @@
   }, 
   "G39041KZ": {
     "children": [
-      "G09327UV"
+      "G29043AF"
     ], 
     "comp": {
       "Hex": 1, 
@@ -19910,8 +20576,8 @@
   }, 
   "G39144DK": {
     "children": [
-      "G39447YE", 
-      "G96092AR"
+      "G96092AR", 
+      "G39447YE"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -20017,11 +20683,12 @@
   }, 
   "G39365VM": {
     "children": [
-      "G72116MB", 
       "G99375FM", 
       "G57150KB", 
+      "G83448VJ", 
+      "G46456ZC", 
       "G39466FU", 
-      "G89489JX"
+      "G16060FD"
     ], 
     "comp": {
       "Hex": 3
@@ -20073,14 +20740,13 @@
       "Man": 8, 
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G39432YS": {
     "children": [
+      "G98800EH", 
       "G53664GU", 
-      "G80648FL", 
-      "G98800EH"
+      "G80648FL"
     ], 
     "comp": {
       "Hex": 4, 
@@ -20107,12 +20773,12 @@
   }, 
   "G39446WN": {
     "children": [
-      "G33609NS", 
-      "G20034JD", 
       "G00204EX", 
-      "G70412HV", 
       "G80212LK", 
-      "G32909UL"
+      "G32909UL", 
+      "G70412HV", 
+      "G20034JD", 
+      "G33609NS"
     ], 
     "comp": {
       "Hex": 5, 
@@ -20315,6 +20981,18 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G39689FZ": {
+    "children": [
+      "G90386IR"
+    ], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 5, 
+      "NeuAc": 1, 
+      "dHex": 4
+    }, 
+    "type": "composition"
+  }, 
   "G39738WL": {
     "children": [
       "G42313WU"
@@ -20503,9 +21181,9 @@
   }, 
   "G40258WO": {
     "children": [
+      "G72126TO", 
       "G84089LI", 
-      "G36565DS", 
-      "G72126TO"
+      "G36565DS"
     ], 
     "comp": {
       "Hex": 3, 
@@ -20524,13 +21202,13 @@
   }, 
   "G40309AV": {
     "children": [
-      "G32090WI", 
-      "G86403ZK", 
       "G44907HQ", 
       "G11755EM", 
-      "G57095WM", 
       "G87346MV", 
-      "G13661VV"
+      "G86403ZK", 
+      "G13661VV", 
+      "G57095WM", 
+      "G32090WI"
     ], 
     "comp": {
       "Hex": 4, 
@@ -20785,7 +21463,6 @@
       "S": 1, 
       "dHex": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G40699LE": {
@@ -20825,13 +21502,13 @@
   }, 
   "G40753AI": {
     "children": [
-      "G73721RY", 
-      "G47314ZV", 
-      "G19829NV", 
-      "G87860XP", 
-      "G07136UD", 
       "G90434JX", 
-      "G13803EC"
+      "G19829NV", 
+      "G73721RY", 
+      "G87860XP", 
+      "G13803EC", 
+      "G07136UD", 
+      "G26169VM"
     ], 
     "comp": {
       "Hex": 1, 
@@ -20849,15 +21526,24 @@
       "Man": 2, 
       "P": 1
     }, 
-    "top": true, 
     "type": "composition"
+  }, 
+  "G40792UP": {
+    "children": [], 
+    "comp": {
+      "Hex": 3, 
+      "HexNAc": 5, 
+      "dHex": 2
+    }, 
+    "top": true, 
+    "type": "basecomposition"
   }, 
   "G40834TG": {
     "children": [
-      "G98069EP", 
       "G37752FV", 
-      "G31818IJ", 
-      "G17704UG"
+      "G17704UG", 
+      "G98069EP", 
+      "G31818IJ"
     ], 
     "comp": {
       "Hex": 6, 
@@ -20873,6 +21559,18 @@
       "GlcNAc": 1, 
       "Hex": 3, 
       "HexNAc": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G40897XZ": {
+    "children": [
+      "G92553LF"
+    ], 
+    "comp": {
+      "Gal": 6, 
+      "Glc": 1, 
+      "Hex": 7
     }, 
     "top": true, 
     "type": "composition"
@@ -20902,8 +21600,8 @@
   }, 
   "G40926MX": {
     "children": [
-      "G58524PT", 
-      "G52223PR"
+      "G52223PR", 
+      "G58524PT"
     ], 
     "comp": {
       "Hex": 6, 
@@ -20924,8 +21622,8 @@
   "G40959OV": {
     "children": [
       "G73255ZH", 
-      "G57626NI", 
-      "G11067PN"
+      "G11067PN", 
+      "G57626NI"
     ], 
     "comp": {
       "Hex": 7, 
@@ -21010,8 +21708,8 @@
   }, 
   "G41044JW": {
     "children": [
-      "G18743DS", 
-      "G02256NN"
+      "G02256NN", 
+      "G18743DS"
     ], 
     "comp": {
       "Hex": 7, 
@@ -21047,10 +21745,10 @@
   }, 
   "G41071NU": {
     "children": [
-      "G86854GO", 
       "G03090HG", 
+      "G58918WG", 
       "G28171JR", 
-      "G58918WG"
+      "G86854GO"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -21129,8 +21827,8 @@
   }, 
   "G41170CG": {
     "children": [
-      "G74964VW", 
-      "G48957JP"
+      "G48957JP", 
+      "G74964VW"
     ], 
     "comp": {
       "HexNAc": 2, 
@@ -21142,7 +21840,7 @@
   }, 
   "G41170RM": {
     "children": [
-      "G32126LE"
+      "G43018OT"
     ], 
     "comp": {
       "Hex": 2, 
@@ -21179,15 +21877,15 @@
   }, 
   "G41247ZX": {
     "children": [
-      "G28830ZA", 
-      "G23768YE", 
-      "G29783EW", 
+      "G55725ZC", 
+      "G62239ZY", 
       "G95791KX", 
       "G56093KS", 
-      "G62239ZY", 
-      "G55725ZC", 
+      "G92043YA", 
+      "G28830ZA", 
+      "G23768YE", 
       "G52609AS", 
-      "G92043YA"
+      "G29783EW"
     ], 
     "comp": {
       "Hex": 6, 
@@ -21443,8 +22141,8 @@
   }, 
   "G42124LM": {
     "children": [
-      "G30189TQ", 
       "G92287RI", 
+      "G30189TQ", 
       "G44516FH"
     ], 
     "comp": {
@@ -21668,7 +22366,7 @@
   }, 
   "G42513HD": {
     "children": [
-      "G56335QN"
+      "G79739FS"
     ], 
     "comp": {
       "Hex": 1, 
@@ -21681,9 +22379,9 @@
   "G42518JM": {
     "children": [
       "G94829QB", 
+      "G33349XD", 
       "G75407EJ", 
       "G92543AO", 
-      "G33349XD", 
       "G26991VV"
     ], 
     "comp": {
@@ -21757,8 +22455,8 @@
   }, 
   "G42684TA": {
     "children": [
-      "G75496QY", 
-      "G97371FD"
+      "G97371FD", 
+      "G75496QY"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -21774,8 +22472,8 @@
   "G42694OB": {
     "children": [
       "G03084ZT", 
-      "G50123OM", 
-      "G96359OF"
+      "G96359OF", 
+      "G50123OM"
     ], 
     "comp": {
       "Hex": 3, 
@@ -21809,9 +22507,9 @@
   }, 
   "G42817NX": {
     "children": [
-      "G07215AE", 
+      "G48601KV", 
       "G72785KP", 
-      "G48601KV"
+      "G07215AE"
     ], 
     "comp": {
       "Hex": 3, 
@@ -21875,7 +22573,7 @@
   }, 
   "G42932DS": {
     "children": [
-      "G58879PQ", 
+      "G16340GB", 
       "G18559OI"
     ], 
     "comp": {
@@ -21928,6 +22626,20 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G43018OT": {
+    "children": [
+      "G91809AH"
+    ], 
+    "comp": {
+      "Gal": 2, 
+      "GalNAc": 1, 
+      "Hex": 2, 
+      "HexNAc": 1, 
+      "Xxx": 3
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G43037OL": {
     "children": [
       "G70321JY", 
@@ -21972,11 +22684,11 @@
   }, 
   "G43094UN": {
     "children": [
-      "G03577SC", 
+      "G21622VG", 
       "G25105CR", 
-      "G11787ET", 
+      "G03577SC", 
       "G47718YD", 
-      "G21622VG"
+      "G11787ET"
     ], 
     "comp": {
       "Hex": 2, 
@@ -22039,6 +22751,19 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G43166YW": {
+    "children": [
+      "G87139BK"
+    ], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 6, 
+      "NeuAc": 2, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G43177PB": {
     "children": [], 
     "comp": {
@@ -22095,9 +22820,9 @@
   }, 
   "G43315IV": {
     "children": [
-      "G08317JP", 
       "G80778DH", 
-      "G51090RT"
+      "G51090RT", 
+      "G08317JP"
     ], 
     "comp": {
       "Gal": 1, 
@@ -22140,9 +22865,9 @@
   }, 
   "G43410ZR": {
     "children": [
+      "G28176EM", 
       "G50282YC", 
-      "G03585GW", 
-      "G28176EM"
+      "G03585GW"
     ], 
     "comp": {
       "Gal": 1, 
@@ -22156,16 +22881,16 @@
   }, 
   "G43417UB": {
     "children": [
-      "G94084DC", 
-      "G46658HL", 
-      "G29931IJ", 
-      "G75012ZP", 
       "G47884NA", 
-      "G12647HM", 
-      "G83223NT", 
+      "G94084DC", 
       "G64346BI", 
+      "G29931IJ", 
+      "G83223NT", 
+      "G75012ZP", 
+      "G12647HM", 
       "G66778OK", 
-      "G26250DY"
+      "G26250DY", 
+      "G46658HL"
     ], 
     "comp": {
       "Hex": 1, 
@@ -22191,6 +22916,20 @@
     "comp": {
       "NeuAc": 1, 
       "Xxx": 4
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G43448GF": {
+    "children": [
+      "G21122WA"
+    ], 
+    "comp": {
+      "Gal": 1, 
+      "GlcNAc": 2, 
+      "Hex": 10, 
+      "HexNAc": 2, 
+      "Man": 9
     }, 
     "top": true, 
     "type": "composition"
@@ -22273,6 +23012,26 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G43638QT": {
+    "children": [], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 6, 
+      "NeuAc": 1, 
+      "dHex": 1
+    }, 
+    "type": "composition"
+  }, 
+  "G43642TU": {
+    "children": [], 
+    "comp": {
+      "Hex": 3, 
+      "HexNAc": 4, 
+      "dHex": 3
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G43669FQ": {
     "children": [
       "G57860PF"
@@ -22342,10 +23101,10 @@
   }, 
   "G43769HG": {
     "children": [
-      "G11928YV", 
       "G69231HI", 
+      "G19504QQ", 
       "G03539UU", 
-      "G19504QQ"
+      "G11928YV"
     ], 
     "comp": {
       "Hex": 5, 
@@ -22375,6 +23134,21 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G43827XX": {
+    "children": [
+      "G83604ZB"
+    ], 
+    "comp": {
+      "Gal": 2, 
+      "GalNAc": 1, 
+      "GlcNAc": 1, 
+      "Hex": 2, 
+      "HexNAc": 2, 
+      "NeuAc": 1
+    }, 
+    "top": true, 
+    "type": "composition"
   }, 
   "G43847EM": {
     "children": [], 
@@ -22543,9 +23317,9 @@
   }, 
   "G44211QA": {
     "children": [
-      "G70441OD", 
       "G72797UR", 
-      "G55963SC"
+      "G55963SC", 
+      "G70441OD"
     ], 
     "comp": {
       "Hex": 6, 
@@ -22680,10 +23454,10 @@
   "G44435OT": {
     "children": [
       "G35096UG", 
-      "G33169DF", 
-      "G63825EI", 
       "G50075DK", 
-      "G64733SB"
+      "G64733SB", 
+      "G63825EI", 
+      "G33169DF"
     ], 
     "comp": {
       "HexNAc": 1, 
@@ -22801,8 +23575,8 @@
   }, 
   "G44753VC": {
     "children": [
-      "G97763ON", 
-      "G72354DK"
+      "G72354DK", 
+      "G97763ON"
     ], 
     "comp": {
       "Hex": 7, 
@@ -22909,8 +23683,8 @@
   "G44900AP": {
     "children": [
       "G53010TY", 
-      "G76086AZ", 
-      "G64448TS"
+      "G64448TS", 
+      "G76086AZ"
     ], 
     "comp": {
       "Hex": 2, 
@@ -22956,8 +23730,8 @@
   "G44953PJ": {
     "children": [
       "G71135EZ", 
-      "G11568WU", 
-      "G65012HL"
+      "G65012HL", 
+      "G11568WU"
     ], 
     "comp": {
       "Hex": 4, 
@@ -22969,9 +23743,9 @@
   }, 
   "G44967LM": {
     "children": [
+      "G86917EG", 
       "G24790TV", 
       "G24113GT", 
-      "G86917EG", 
       "G84449FE"
     ], 
     "comp": {
@@ -23044,7 +23818,6 @@
       "Glc": 1, 
       "Hex": 2
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G45127TQ": {
@@ -23142,8 +23915,8 @@
   }, 
   "G45378FS": {
     "children": [
-      "G43932TS", 
-      "G70642YI"
+      "G70642YI", 
+      "G43932TS"
     ], 
     "comp": {
       "Hex": 3, 
@@ -23206,11 +23979,11 @@
   }, 
   "G45504EY": {
     "children": [
-      "G15347NT", 
       "G01599KP", 
-      "G29361QX", 
       "G11545WS", 
-      "G65238IV"
+      "G65238IV", 
+      "G29361QX", 
+      "G15347NT"
     ], 
     "comp": {
       "Hex": 4, 
@@ -23331,8 +24104,8 @@
   "G45703RF": {
     "children": [
       "G18197EH", 
-      "G65917JH", 
       "G33955JK", 
+      "G65917JH", 
       "G95312NC"
     ], 
     "comp": {
@@ -23416,8 +24189,8 @@
   }, 
   "G45924NL": {
     "children": [
-      "G80869MR", 
       "G10634LC", 
+      "G90703NA", 
       "G88563PL"
     ], 
     "comp": {
@@ -23652,6 +24425,18 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G46456ZC": {
+    "children": [
+      "G91341CB"
+    ], 
+    "comp": {
+      "Gal": 2, 
+      "Glc": 1, 
+      "Hex": 3
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G46489EK": {
     "children": [], 
     "comp": {
@@ -23754,14 +24539,26 @@
   }, 
   "G46611ZC": {
     "children": [
-      "G11775ES", 
-      "G82986ZQ"
+      "G82986ZQ", 
+      "G11775ES"
     ], 
     "comp": {
       "Xxx": 4
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G46621QD": {
+    "children": [
+      "G12365LP"
+    ], 
+    "comp": {
+      "Gal": 1, 
+      "Glc": 1, 
+      "Hex": 2
+    }, 
+    "top": true, 
+    "type": "composition"
   }, 
   "G46633LE": {
     "children": [], 
@@ -23844,6 +24641,17 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G46823ME": {
+    "children": [], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 4, 
+      "NeuAc": 3, 
+      "dHex": 2
+    }, 
+    "top": true, 
+    "type": "composition"
   }, 
   "G46827KB": {
     "children": [
@@ -23990,8 +24798,8 @@
   }, 
   "G47028HE": {
     "children": [
-      "G95523EJ", 
       "G50562US", 
+      "G95523EJ", 
       "G52342QP"
     ], 
     "comp": {
@@ -24041,8 +24849,8 @@
   }, 
   "G47184DD": {
     "children": [
-      "G40278HT", 
-      "G34992NI"
+      "G34992NI", 
+      "G40278HT"
     ], 
     "comp": {
       "Xxx": 2
@@ -24143,7 +24951,6 @@
       "Hex": 1, 
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G47324JU": {
@@ -24161,8 +24968,8 @@
   }, 
   "G47329VU": {
     "children": [
-      "G17485EK", 
-      "G38755RX"
+      "G38755RX", 
+      "G17485EK"
     ], 
     "comp": {
       "Gal": 1, 
@@ -24176,9 +24983,9 @@
   }, 
   "G47333SK": {
     "children": [
-      "G27605KR", 
-      "G60423RL", 
-      "G32997SC"
+      "G32997SC", 
+      "G57125PO", 
+      "G27605KR"
     ], 
     "comp": {
       "Hex": 2, 
@@ -24259,8 +25066,8 @@
   }, 
   "G47644PP": {
     "children": [
-      "G99663DA", 
-      "G25509HT"
+      "G25509HT", 
+      "G99663DA"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -24422,13 +25229,23 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G47913JC": {
+    "children": [
+      "G26198JI"
+    ], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 3, 
+      "NeuGc": 1
+    }, 
+    "type": "composition"
+  }, 
   "G47957HH": {
     "children": [
+      "G01046SL", 
       "G44250CH", 
       "G67674FY", 
-      "G01046SL", 
-      "G52120VJ", 
-      "G17684ZL", 
+      "G11633WO", 
       "G20358QB"
     ], 
     "comp": {
@@ -24516,6 +25333,29 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G48144YJ": {
+    "children": [
+      "G02447BS"
+    ], 
+    "comp": {
+      "Hex": 7, 
+      "HexNAc": 6, 
+      "NeuAc": 1, 
+      "dHex": 2
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
+  "G48149UR": {
+    "children": [], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 6, 
+      "NeuAc": 1, 
+      "dHex": 3
+    }, 
+    "type": "composition"
   }, 
   "G48181XF": {
     "children": [], 
@@ -24628,8 +25468,8 @@
   }, 
   "G48475CO": {
     "children": [
-      "G61641LL", 
-      "G45516UK"
+      "G45516UK", 
+      "G61641LL"
     ], 
     "comp": {
       "Hex": 6, 
@@ -24656,8 +25496,8 @@
   }, 
   "G48601KV": {
     "children": [
-      "G96284AG", 
-      "G31531NC"
+      "G31531NC", 
+      "G96284AG"
     ], 
     "comp": {
       "Hex": 3, 
@@ -24756,8 +25596,8 @@
   "G48842HP": {
     "children": [
       "G42933QU", 
-      "G58761SA", 
-      "G48473LB"
+      "G48473LB", 
+      "G58761SA"
     ], 
     "comp": {
       "HexNAc": 1, 
@@ -24812,8 +25652,8 @@
   }, 
   "G48927BJ": {
     "children": [
-      "G21161GI", 
-      "G45652AG"
+      "G45652AG", 
+      "G21161GI"
     ], 
     "comp": {
       "Hex": 3, 
@@ -24853,8 +25693,8 @@
   }, 
   "G49012OF": {
     "children": [
-      "G36619DF", 
-      "G51402BN"
+      "G51402BN", 
+      "G36619DF"
     ], 
     "comp": {
       "HexNAc": 2, 
@@ -24890,6 +25730,16 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G49035CH": {
+    "children": [], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 6, 
+      "NeuAc": 1, 
+      "dHex": 2
+    }, 
+    "type": "composition"
+  }, 
   "G49112ZN": {
     "children": [], 
     "comp": {
@@ -24900,9 +25750,9 @@
   }, 
   "G49139YY": {
     "children": [
-      "G83604ZB", 
-      "G49520SO", 
-      "G71918XM"
+      "G71918XM", 
+      "G43827XX", 
+      "G49520SO"
     ], 
     "comp": {
       "Hex": 2, 
@@ -24948,8 +25798,8 @@
   }, 
   "G49199DP": {
     "children": [
-      "G22336TM", 
-      "G18229DV"
+      "G18229DV", 
+      "G22336TM"
     ], 
     "comp": {
       "Hex": 3, 
@@ -25010,6 +25860,16 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G49284IH": {
+    "children": [], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 4, 
+      "NeuAc": 1, 
+      "dHex": 2
+    }, 
+    "type": "composition"
+  }, 
   "G49331GC": {
     "children": [
       "G77103ER"
@@ -25028,6 +25888,16 @@
     }, 
     "top": true, 
     "type": "composition"
+  }, 
+  "G49345XT": {
+    "children": [], 
+    "comp": {
+      "Hex": 7, 
+      "HexNAc": 4, 
+      "dHex": 2
+    }, 
+    "top": true, 
+    "type": "basecomposition"
   }, 
   "G49358BI": {
     "children": [], 
@@ -25151,8 +26021,8 @@
   "G49589HV": {
     "children": [
       "G92024ZJ", 
-      "G40430VA", 
-      "G24537WJ"
+      "G24537WJ", 
+      "G40430VA"
     ], 
     "comp": {
       "HexNAc": 1, 
@@ -25255,8 +26125,8 @@
   "G49739MP": {
     "children": [
       "G31763XS", 
-      "G30827KR", 
-      "G80479JV"
+      "G80479JV", 
+      "G30827KR"
     ], 
     "comp": {
       "Hex": 7, 
@@ -25291,8 +26161,8 @@
   }, 
   "G49789IH": {
     "children": [
-      "G68137BA", 
-      "G73687QN"
+      "G73687QN", 
+      "G68137BA"
     ], 
     "comp": {
       "Gal": 1, 
@@ -25360,10 +26230,10 @@
   }, 
   "G49906RN": {
     "children": [
-      "G50448JS", 
-      "G58153GJ", 
       "G15971GJ", 
-      "G80518RB"
+      "G50448JS", 
+      "G80518RB", 
+      "G58153GJ"
     ], 
     "comp": {
       "Hex": 6, 
@@ -25387,7 +26257,10 @@
   }, 
   "G49955PK": {
     "children": [
-      "G69222XZ"
+      "G10979BZ", 
+      "G39900FY", 
+      "G38788CP", 
+      "G97859UQ"
     ], 
     "comp": {
       "Hex": 3, 
@@ -25395,6 +26268,20 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G49958GL": {
+    "children": [
+      "G53509NM"
+    ], 
+    "comp": {
+      "Gal": 2, 
+      "GalNAc": 1, 
+      "Glc": 1, 
+      "Hex": 3, 
+      "HexNAc": 1
+    }, 
+    "top": true, 
+    "type": "composition"
   }, 
   "G49985LA": {
     "children": [], 
@@ -25445,12 +26332,12 @@
   }, 
   "G50073PQ": {
     "children": [
-      "G35886NT", 
-      "G74100BS", 
+      "G14513OM", 
       "G93100YB", 
-      "G09504NU", 
+      "G35886NT", 
       "G12863RW", 
-      "G14513OM"
+      "G09504NU", 
+      "G74100BS"
     ], 
     "comp": {
       "Hex": 4, 
@@ -25494,6 +26381,17 @@
       "HexNAc": 4, 
       "Man": 3, 
       "NeuAc": 1, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G50143PC": {
+    "children": [], 
+    "comp": {
+      "Hex": 7, 
+      "HexNAc": 9, 
+      "NeuAc": 2, 
       "dHex": 1
     }, 
     "top": true, 
@@ -25595,8 +26493,8 @@
   }, 
   "G50372IH": {
     "children": [
-      "G78651SL", 
-      "G24417DY"
+      "G24417DY", 
+      "G78651SL"
     ], 
     "comp": {
       "Hex": 6, 
@@ -25705,8 +26603,8 @@
   }, 
   "G50562US": {
     "children": [
-      "G09102DD", 
-      "G44879DD"
+      "G44879DD", 
+      "G09102DD"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -25718,6 +26616,31 @@
       "dHex": 1
     }, 
     "type": "composition"
+  }, 
+  "G50565IN": {
+    "children": [
+      "G49035CH"
+    ], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 6, 
+      "NeuAc": 1, 
+      "dHex": 2
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
+  "G50576VG": {
+    "children": [
+      "G28603RA"
+    ], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 7, 
+      "NeuAc": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
   }, 
   "G50576YD": {
     "children": [
@@ -25800,10 +26723,19 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G50713DU": {
+    "children": [], 
+    "comp": {
+      "Hex": 9, 
+      "HexNAc": 3
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G50726KV": {
     "children": [
-      "G67560CZ", 
-      "G44392FU"
+      "G44392FU", 
+      "G67560CZ"
     ], 
     "comp": {
       "Hex": 1, 
@@ -25844,6 +26776,18 @@
     }, 
     "top": true, 
     "type": "composition"
+  }, 
+  "G50993XY": {
+    "children": [
+      "G92821TF"
+    ], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 4, 
+      "NeuGc": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
   }, 
   "G50999NW": {
     "children": [
@@ -26041,9 +26985,9 @@
   }, 
   "G51210WZ": {
     "children": [
+      "G18083QB", 
       "G71642GP", 
-      "G72933YZ", 
-      "G18083QB"
+      "G72933YZ"
     ], 
     "comp": {
       "Hex": 2, 
@@ -26112,8 +27056,8 @@
   }, 
   "G51371PH": {
     "children": [
-      "G16316EY", 
-      "G35789RG"
+      "G35789RG", 
+      "G16316EY"
     ], 
     "comp": {
       "Hex": 1, 
@@ -26283,8 +27227,8 @@
   }, 
   "G51644YP": {
     "children": [
-      "G72778MC", 
-      "G28799FE"
+      "G28799FE", 
+      "G72778MC"
     ], 
     "comp": {
       "Hex": 4, 
@@ -26298,8 +27242,8 @@
   }, 
   "G51653BI": {
     "children": [
-      "G85882VQ", 
-      "G96104TD"
+      "G96104TD", 
+      "G85882VQ"
     ], 
     "comp": {
       "Fuc": 2, 
@@ -26313,8 +27257,8 @@
   }, 
   "G51662LG": {
     "children": [
-      "G20163DC", 
-      "G13694MD"
+      "G13694MD", 
+      "G20163DC"
     ], 
     "comp": {
       "Hex": 3, 
@@ -26353,8 +27297,8 @@
   }, 
   "G51775EG": {
     "children": [
-      "G86811CV", 
-      "G60955JE"
+      "G60955JE", 
+      "G86811CV"
     ], 
     "comp": {
       "Hex": 3, 
@@ -26407,8 +27351,8 @@
   }, 
   "G51855FV": {
     "children": [
-      "G31349CX", 
-      "G88793UI"
+      "G88793UI", 
+      "G31349CX"
     ], 
     "comp": {
       "Hex": 7, 
@@ -26511,6 +27455,17 @@
     "comp": {
       "Xxx": 1
     }, 
+    "type": "composition"
+  }, 
+  "G52162PS": {
+    "children": [], 
+    "comp": {
+      "Hex": 3, 
+      "HexNAc": 4, 
+      "NeuAc": 1, 
+      "dHex": 2
+    }, 
+    "top": true, 
     "type": "composition"
   }, 
   "G52176KG": {
@@ -26874,8 +27829,8 @@
   }, 
   "G52687MJ": {
     "children": [
-      "G27908JU", 
-      "G39668NE"
+      "G39668NE", 
+      "G27908JU"
     ], 
     "comp": {
       "Hex": 11, 
@@ -26926,8 +27881,8 @@
   }, 
   "G52798MY": {
     "children": [
-      "G77078IK", 
-      "G74737SS"
+      "G74737SS", 
+      "G77078IK"
     ], 
     "comp": {
       "Hex": 5, 
@@ -27063,9 +28018,9 @@
   }, 
   "G52961LR": {
     "children": [
+      "G97440QZ", 
       "G46904MM", 
       "G19151DX", 
-      "G97440QZ", 
       "G84145VV"
     ], 
     "comp": {
@@ -27097,17 +28052,17 @@
   "G52963ZW": {
     "children": [
       "G22331NZ", 
-      "G06708ZY", 
+      "G53380FO", 
       "G75013DQ", 
+      "G03102IC", 
+      "G02653CW", 
+      "G75641SG", 
+      "G96927TT", 
       "G40745SR", 
       "G27221EC", 
-      "G03102IC", 
-      "G96927TT", 
-      "G02653CW", 
+      "G06708ZY", 
       "G46831QF", 
-      "G75641SG", 
-      "G35447RX", 
-      "G53380FO"
+      "G35447RX"
     ], 
     "comp": {
       "Hex": 2, 
@@ -27230,6 +28185,21 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G53166XK": {
+    "children": [
+      "G98759ZF"
+    ], 
+    "comp": {
+      "Gal": 3, 
+      "GlcNAc": 4, 
+      "Hex": 6, 
+      "HexNAc": 4, 
+      "Man": 3, 
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G53214CA": {
     "children": [], 
     "comp": {
@@ -27244,10 +28214,10 @@
   }, 
   "G53218VX": {
     "children": [
-      "G45731AY", 
-      "G55135CH", 
+      "G88134GC", 
       "G44787MY", 
-      "G88134GC"
+      "G45731AY", 
+      "G55135CH"
     ], 
     "comp": {
       "Hex": 5, 
@@ -27351,12 +28321,12 @@
   }, 
   "G53434XO": {
     "children": [
-      "G83574AW", 
       "G13934DF", 
-      "G46396AV", 
+      "G51934ND", 
       "G46127DK", 
-      "G63628AV", 
-      "G51934ND"
+      "G46396AV", 
+      "G83574AW", 
+      "G63628AV"
     ], 
     "comp": {
       "Hex": 2, 
@@ -27397,6 +28367,20 @@
       "Glc": 1, 
       "Hex": 3, 
       "HexNAc": 1
+    }, 
+    "type": "composition"
+  }, 
+  "G53516DW": {
+    "children": [
+      "G77412GQ"
+    ], 
+    "comp": {
+      "Fuc": 1, 
+      "Hex": 1, 
+      "HexNAc": 1, 
+      "NeuAc": 1, 
+      "Xxx": 1, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "composition"
@@ -27652,8 +28636,8 @@
   }, 
   "G53898QQ": {
     "children": [
-      "G85008FT", 
-      "G41433PY"
+      "G41433PY", 
+      "G85008FT"
     ], 
     "comp": {
       "Gal": 2, 
@@ -27690,10 +28674,10 @@
   }, 
   "G53969DE": {
     "children": [
-      "G78862RD", 
-      "G68302RL", 
       "G60232GL", 
-      "G87893AL"
+      "G68302RL", 
+      "G87893AL", 
+      "G78862RD"
     ], 
     "comp": {
       "Hex": 5, 
@@ -27758,6 +28742,16 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G54070FO": {
+    "children": [
+      "G80816VI"
+    ], 
+    "comp": {
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G54095VB": {
     "children": [
       "G54493PD"
@@ -27798,8 +28792,8 @@
   }, 
   "G54118YF": {
     "children": [
-      "G68159RN", 
       "G00728IS", 
+      "G68159RN", 
       "G91973NZ"
     ], 
     "comp": {
@@ -27814,10 +28808,10 @@
   }, 
   "G54129SE": {
     "children": [
-      "G30886AB", 
-      "G57207CV", 
       "G76163CP", 
-      "G02497EU"
+      "G02497EU", 
+      "G31112LT", 
+      "G57207CV"
     ], 
     "comp": {
       "Hex": 1, 
@@ -27829,8 +28823,8 @@
   }, 
   "G54168YD": {
     "children": [
-      "G30154JG", 
-      "G45378FS"
+      "G45378FS", 
+      "G30154JG"
     ], 
     "comp": {
       "Hex": 3, 
@@ -27883,8 +28877,8 @@
   }, 
   "G54300XR": {
     "children": [
-      "G57191CH", 
-      "G67450JX"
+      "G67450JX", 
+      "G57191CH"
     ], 
     "comp": {
       "Hex": 2, 
@@ -27973,8 +28967,8 @@
   }, 
   "G54417MJ": {
     "children": [
-      "G12437ZR", 
-      "G56194CX"
+      "G56194CX", 
+      "G12437ZR"
     ], 
     "comp": {
       "Hex": 6, 
@@ -28075,8 +29069,8 @@
     "children": [
       "G48331ZE", 
       "G08290VR", 
-      "G34785MA", 
-      "G49002BX"
+      "G49002BX", 
+      "G34785MA"
     ], 
     "comp": {
       "Hex": 4, 
@@ -28088,9 +29082,9 @@
   }, 
   "G54630CD": {
     "children": [
-      "G32220YP", 
-      "G31022UW", 
       "G05897GU", 
+      "G31022UW", 
+      "G32220YP", 
       "G84985UI"
     ], 
     "comp": {
@@ -28191,7 +29185,6 @@
       "Hex": 7, 
       "HexNAc": 3
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G54806CZ": {
@@ -28274,8 +29267,8 @@
   }, 
   "G54992TS": {
     "children": [
-      "G65969HW", 
-      "G21080QF"
+      "G21080QF", 
+      "G65969HW"
     ], 
     "comp": {
       "Hex": 3, 
@@ -28285,6 +29278,17 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G54992WG": {
+    "children": [], 
+    "comp": {
+      "Hex": 7, 
+      "HexNAc": 3, 
+      "NeuAc": 1, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "composition"
   }, 
   "G55000OF": {
     "children": [
@@ -28618,8 +29622,8 @@
       "G51136OY", 
       "G78015OA", 
       "G06223LU", 
-      "G90335LR", 
-      "G39331VI"
+      "G39331VI", 
+      "G90335LR"
     ], 
     "comp": {
       "Hex": 3, 
@@ -28674,9 +29678,9 @@
   }, 
   "G55457LM": {
     "children": [
-      "G36655RS", 
       "G39141SG", 
-      "G77152BR"
+      "G77152BR", 
+      "G36655RS"
     ], 
     "comp": {
       "Hex": 4, 
@@ -28689,8 +29693,8 @@
   }, 
   "G55477CD": {
     "children": [
-      "G35026MC", 
-      "G40324XZ"
+      "G40324XZ", 
+      "G35026MC"
     ], 
     "comp": {
       "Hex": 3, 
@@ -28702,8 +29706,8 @@
   }, 
   "G55497FS": {
     "children": [
-      "G76691FQ", 
-      "G75441FF"
+      "G75441FF", 
+      "G76691FQ"
     ], 
     "comp": {
       "Hex": 2, 
@@ -28714,9 +29718,9 @@
   }, 
   "G55568ER": {
     "children": [
+      "G89562GH", 
       "G79160YE", 
-      "G92190CH", 
-      "G89562GH"
+      "G92190CH"
     ], 
     "comp": {
       "Hex": 6, 
@@ -28909,7 +29913,7 @@
     "children": [
       "G25776KR", 
       "G01190ZZ", 
-      "G92553LF"
+      "G40897XZ"
     ], 
     "comp": {
       "Hex": 7
@@ -29062,6 +30066,15 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G56307ZW": {
+    "children": [], 
+    "comp": {
+      "Hex": 9, 
+      "HexNAc": 4
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G56324EJ": {
     "children": [], 
     "comp": {
@@ -29084,7 +30097,6 @@
       "NeuAc": 1, 
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G56344DH": {
@@ -29192,8 +30204,8 @@
   }, 
   "G56577ZU": {
     "children": [
-      "G42863FY", 
-      "G43159UR"
+      "G43159UR", 
+      "G42863FY"
     ], 
     "comp": {
       "Hex": 3, 
@@ -29209,6 +30221,18 @@
     "comp": {
       "Glc": 1, 
       "Hex": 1, 
+      "Xxx": 2
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G56602KR": {
+    "children": [
+      "G96311MW"
+    ], 
+    "comp": {
+      "Gal": 2, 
+      "Hex": 2, 
       "Xxx": 2
     }, 
     "top": true, 
@@ -29230,10 +30254,10 @@
   }, 
   "G56610MH": {
     "children": [
-      "G07549SR", 
       "G52494WI", 
+      "G76134AJ", 
       "G59100OC", 
-      "G76134AJ"
+      "G07549SR"
     ], 
     "comp": {
       "Hex": 4, 
@@ -29386,8 +30410,8 @@
   }, 
   "G56989OV": {
     "children": [
-      "G45208VC", 
-      "G38223JK"
+      "G38223JK", 
+      "G45208VC"
     ], 
     "comp": {
       "Hex": 2, 
@@ -29399,9 +30423,9 @@
   }, 
   "G57089SI": {
     "children": [
-      "G33882AG", 
+      "G99529XY", 
       "G20595AV", 
-      "G99529XY"
+      "G33882AG"
     ], 
     "comp": {
       "HexNAc": 1, 
@@ -29451,11 +30475,26 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G57125PO": {
+    "children": [
+      "G60423RL"
+    ], 
+    "comp": {
+      "Gal": 2, 
+      "GlcNAc": 1, 
+      "Hex": 2, 
+      "HexNAc": 1, 
+      "S": 1, 
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G57150KB": {
     "children": [
-      "G86570NJ", 
       "G91341CB", 
-      "G29136NI"
+      "G29136NI", 
+      "G86570NJ"
     ], 
     "comp": {
       "Gal": 1, 
@@ -29495,6 +30534,19 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G57195RJ": {
+    "children": [
+      "G17605FD"
+    ], 
+    "comp": {
+      "GalNAc": 1, 
+      "GlcNAc": 1, 
+      "HexNAc": 2, 
+      "S": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G57207CV": {
     "children": [], 
     "comp": {
@@ -29504,6 +30556,17 @@
       "HexNAc": 1, 
       "Man": 1, 
       "dHex": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G57220OY": {
+    "children": [], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 4, 
+      "NeuAc": 2, 
+      "dHex": 4
     }, 
     "top": true, 
     "type": "composition"
@@ -29537,8 +30600,8 @@
   }, 
   "G57269FM": {
     "children": [
-      "G66428ER", 
-      "G69298TS"
+      "G69298TS", 
+      "G66428ER"
     ], 
     "comp": {
       "Hex": 6, 
@@ -29576,9 +30639,9 @@
   }, 
   "G57317CE": {
     "children": [
+      "G64922VJ", 
       "G60145BJ", 
       "G92120IY", 
-      "G64922VJ", 
       "G21394HA", 
       "G07595HH"
     ], 
@@ -29759,10 +30822,10 @@
   "G57776ZU": {
     "children": [
       "G23453IV", 
-      "G27821VZ", 
+      "G98992FG", 
       "G40976UX", 
       "G86288VS", 
-      "G98992FG", 
+      "G27821VZ", 
       "G04263GM"
     ], 
     "comp": {
@@ -29799,8 +30862,8 @@
   }, 
   "G57965WS": {
     "children": [
-      "G88851YP", 
-      "G94887XK"
+      "G94887XK", 
+      "G88851YP"
     ], 
     "comp": {
       "Hex": 5, 
@@ -29813,10 +30876,11 @@
   }, 
   "G58001LT": {
     "children": [
-      "G70058BA", 
+      "G30502CS", 
+      "G92411CL", 
       "G32550BI", 
-      "G93562NG", 
-      "G92411CL"
+      "G70058BA", 
+      "G93562NG"
     ], 
     "comp": {
       "Hex": 1, 
@@ -29875,11 +30939,11 @@
   }, 
   "G58082FV": {
     "children": [
-      "G34412GZ", 
-      "G61215DZ", 
+      "G58985MU", 
       "G17251OY", 
+      "G61215DZ", 
       "G32779HW", 
-      "G58985MU"
+      "G34412GZ"
     ], 
     "comp": {
       "HexNAc": 1, 
@@ -29891,12 +30955,12 @@
   }, 
   "G58087IP": {
     "children": [
-      "G64926QS", 
-      "G09611TJ", 
+      "G08994YL", 
       "G64943NM", 
-      "G75086OY", 
+      "G51022MS", 
+      "G09611TJ", 
       "G57566HS", 
-      "G51022MS"
+      "G64926QS"
     ], 
     "comp": {
       "Hex": 11, 
@@ -29988,7 +31052,6 @@
       "Hex": 2, 
       "dHex": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G58175CM": {
@@ -30063,9 +31126,9 @@
   }, 
   "G58312FA": {
     "children": [
+      "G18356CD", 
       "G99294HS", 
-      "G49985LA", 
-      "G18356CD"
+      "G49985LA"
     ], 
     "comp": {
       "Hex": 4, 
@@ -30132,8 +31195,8 @@
   }, 
   "G58512JV": {
     "children": [
-      "G72937EV", 
-      "G37534XN"
+      "G37534XN", 
+      "G72937EV"
     ], 
     "comp": {
       "Hex": 3, 
@@ -30160,7 +31223,7 @@
   "G58530MW": {
     "children": [
       "G95073VE", 
-      "G77710TJ"
+      "G20897XG"
     ], 
     "comp": {
       "Hex": 9, 
@@ -30183,8 +31246,8 @@
   }, 
   "G58568BI": {
     "children": [
-      "G07581OV", 
-      "G04563ZO"
+      "G04563ZO", 
+      "G07581OV"
     ], 
     "comp": {
       "Hex": 4, 
@@ -30206,6 +31269,16 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G58598BO": {
+    "children": [], 
+    "comp": {
+      "Hex": 8, 
+      "HexNAc": 7, 
+      "NeuAc": 1, 
+      "dHex": 1
+    }, 
+    "type": "composition"
   }, 
   "G58607HL": {
     "children": [], 
@@ -30262,8 +31335,8 @@
   }, 
   "G58802FE": {
     "children": [
-      "G29362VC", 
-      "G35028BC"
+      "G35028BC", 
+      "G29362VC"
     ], 
     "comp": {
       "Hex": 6, 
@@ -30307,7 +31380,6 @@
       "NeuAc": 1, 
       "dHex": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G58914HF": {
@@ -30351,8 +31423,8 @@
   "G58929CB": {
     "children": [
       "G66377OC", 
-      "G58834BZ", 
-      "G24652NC"
+      "G24652NC", 
+      "G58834BZ"
     ], 
     "comp": {
       "Hex": 5, 
@@ -30453,9 +31525,9 @@
   }, 
   "G59203XD": {
     "children": [
-      "G79157DT", 
       "G81325LH", 
-      "G79770RZ"
+      "G79770RZ", 
+      "G79157DT"
     ], 
     "comp": {
       "Hex": 3, 
@@ -30495,10 +31567,10 @@
   }, 
   "G59271KV": {
     "children": [
-      "G61273QS", 
-      "G75825BE", 
+      "G15864EZ", 
       "G35278DR", 
-      "G15864EZ"
+      "G75825BE", 
+      "G61273QS"
     ], 
     "comp": {
       "Gal": 1, 
@@ -30522,14 +31594,23 @@
   }, 
   "G59324HL": {
     "children": [
+      "G31089UT", 
+      "G86325QC", 
       "G78417ZB", 
-      "G77864CN", 
-      "G67591LJ", 
-      "G31089UT"
+      "G67591LJ"
     ], 
     "comp": {
       "Hex": 12, 
       "HexNAc": 2
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
+  "G59334JE": {
+    "children": [], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 8
     }, 
     "top": true, 
     "type": "basecomposition"
@@ -30544,10 +31625,10 @@
   }, 
   "G59365RI": {
     "children": [
-      "G61397AQ", 
-      "G40488TS", 
       "G96430HG", 
-      "G59271KV"
+      "G40488TS", 
+      "G59271KV", 
+      "G61397AQ"
     ], 
     "comp": {
       "Hex": 2, 
@@ -30621,12 +31702,12 @@
   }, 
   "G59626AS": {
     "children": [
-      "G00057LF", 
-      "G23407LK", 
       "G74118WQ", 
-      "G06356OH", 
       "G91360AG", 
-      "G11276PR"
+      "G06356OH", 
+      "G23407LK", 
+      "G11276PR", 
+      "G00057LF"
     ], 
     "comp": {
       "Hex": 5, 
@@ -30696,7 +31777,6 @@
       "Hex": 1, 
       "HexNAc": 2
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G59863EK": {
@@ -30737,9 +31817,9 @@
   }, 
   "G59937CP": {
     "children": [
-      "G05049YU", 
       "G46687AB", 
-      "G23573QZ"
+      "G23573QZ", 
+      "G05049YU"
     ], 
     "comp": {
       "Hex": 4, 
@@ -30784,8 +31864,8 @@
   }, 
   "G60032AU": {
     "children": [
-      "G96945FZ", 
-      "G70242HE"
+      "G70242HE", 
+      "G96945FZ"
     ], 
     "comp": {
       "Hex": 3, 
@@ -30797,11 +31877,11 @@
   }, 
   "G60033FS": {
     "children": [
-      "G04964ME", 
-      "G59240PB", 
-      "G33942ZS", 
       "G62694TK", 
-      "G01291QB"
+      "G01291QB", 
+      "G33942ZS", 
+      "G59240PB", 
+      "G04964ME"
     ], 
     "comp": {
       "Hex": 6, 
@@ -30977,9 +32057,9 @@
   }, 
   "G60351DX": {
     "children": [
+      "G51146HY", 
       "G42283AW", 
-      "G10292FC", 
-      "G51146HY"
+      "G10292FC"
     ], 
     "comp": {
       "Hex": 7, 
@@ -31005,8 +32085,8 @@
   }, 
   "G60423RL": {
     "children": [
-      "G00936NZ", 
-      "G78138CS"
+      "G78138CS", 
+      "G00936NZ"
     ], 
     "comp": {
       "Gal": 2, 
@@ -31016,13 +32096,12 @@
       "S": 1, 
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G60470QT": {
     "children": [
-      "G31869RK", 
-      "G07748HG"
+      "G07748HG", 
+      "G31869RK"
     ], 
     "comp": {
       "Hex": 3, 
@@ -31271,9 +32350,9 @@
   "G60923RB": {
     "children": [
       "G70619PT", 
-      "G44215PV", 
+      "G72914GP", 
       "G23614KT", 
-      "G72914GP"
+      "G44215PV"
     ], 
     "comp": {
       "Hex": 5, 
@@ -31539,8 +32618,8 @@
   }, 
   "G61215DZ": {
     "children": [
-      "G60035WT", 
-      "G51088QH"
+      "G51088QH", 
+      "G60035WT"
     ], 
     "comp": {
       "Xxx": 2
@@ -31769,12 +32848,22 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G61605LI": {
+    "children": [], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 5, 
+      "dHex": 4
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G61613II": {
     "children": [
-      "G73412QU", 
       "G65612XR", 
       "G29666DI", 
-      "G06741XC"
+      "G06741XC", 
+      "G73412QU"
     ], 
     "comp": {
       "Hex": 5, 
@@ -31870,11 +32959,11 @@
   }, 
   "G61855PQ": {
     "children": [
-      "G74675LI", 
-      "G10470GL", 
       "G49358BI", 
       "G74522QO", 
-      "G31471VL"
+      "G10470GL", 
+      "G31471VL", 
+      "G74675LI"
     ], 
     "comp": {
       "Hex": 3, 
@@ -31946,8 +33035,8 @@
   }, 
   "G62000JW": {
     "children": [
-      "G00116QX", 
-      "G21641FN"
+      "G21641FN", 
+      "G00116QX"
     ], 
     "comp": {
       "Hex": 1, 
@@ -31960,8 +33049,8 @@
   }, 
   "G62001GM": {
     "children": [
-      "G08009WT", 
-      "G99149LX"
+      "G99149LX", 
+      "G08009WT"
     ], 
     "comp": {
       "Xxx": 2
@@ -32126,6 +33215,21 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G62204DP": {
+    "children": [
+      "G50498MJ"
+    ], 
+    "comp": {
+      "Fuc": 1, 
+      "GalNAc": 1, 
+      "Hex": 1, 
+      "HexNAc": 2, 
+      "NeuAc": 1, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G62239ZY": {
     "children": [], 
     "comp": {
@@ -32152,8 +33256,8 @@
   }, 
   "G62273EM": {
     "children": [
-      "G90805EM", 
-      "G96639QR"
+      "G96639QR", 
+      "G90805EM"
     ], 
     "comp": {
       "Hex": 4, 
@@ -32257,8 +33361,8 @@
   "G62595EF": {
     "children": [
       "G80542OK", 
-      "G33380RQ", 
       "G58607HL", 
+      "G33380RQ", 
       "G08807TL", 
       "G62052XR"
     ], 
@@ -32358,13 +33462,13 @@
   }, 
   "G62765YT": {
     "children": [
-      "G43723RI", 
-      "G62856WD", 
+      "G71621SZ", 
       "G86880YI", 
-      "G17843EV", 
+      "G43723RI", 
       "G18755EV", 
+      "G62856WD", 
       "G21194PE", 
-      "G71621SZ"
+      "G17843EV"
     ], 
     "comp": {
       "Hex": 8, 
@@ -32390,8 +33494,8 @@
   }, 
   "G62792OG": {
     "children": [
-      "G60869NB", 
-      "G88780PG"
+      "G88780PG", 
+      "G60869NB"
     ], 
     "comp": {
       "Hex": 3, 
@@ -32522,12 +33626,12 @@
   }, 
   "G63053UD": {
     "children": [
-      "G62828VD", 
-      "G49644CL", 
+      "G97203HL", 
       "G62266SD", 
+      "G49644CL", 
       "G55677NY", 
-      "G72763JE", 
-      "G97203HL"
+      "G62828VD", 
+      "G72763JE"
     ], 
     "comp": {
       "Hex": 2, 
@@ -32806,8 +33910,8 @@
   }, 
   "G63543FL": {
     "children": [
-      "G60849TG", 
-      "G94777TX"
+      "G94777TX", 
+      "G60849TG"
     ], 
     "comp": {
       "Hex": 3, 
@@ -32870,8 +33974,8 @@
   "G63825EI": {
     "children": [
       "G04813BI", 
-      "G35522XB", 
-      "G85098BI"
+      "G85098BI", 
+      "G35522XB"
     ], 
     "comp": {
       "Xxx": 2
@@ -33073,8 +34177,8 @@
   }, 
   "G64357FQ": {
     "children": [
-      "G85453WL", 
-      "G38664NZ"
+      "G38664NZ", 
+      "G85453WL"
     ], 
     "comp": {
       "Hex": 5, 
@@ -33173,6 +34277,16 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G64591YB": {
+    "children": [
+      "G99813OP"
+    ], 
+    "comp": {
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G64600FZ": {
     "children": [
       "G80874KA"
@@ -33227,7 +34341,6 @@
     "comp": {
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G64726EB": {
@@ -33259,9 +34372,9 @@
   }, 
   "G64733SB": {
     "children": [
-      "G70557RD", 
       "G40905TH", 
-      "G17275WK"
+      "G17275WK", 
+      "G70557RD"
     ], 
     "comp": {
       "Xxx": 2
@@ -33284,6 +34397,19 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G64802GX": {
+    "children": [
+      "G28937TW"
+    ], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 5, 
+      "NeuAc": 3, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G64818UY": {
     "children": [], 
     "comp": {
@@ -33297,8 +34423,8 @@
   }, 
   "G64824NL": {
     "children": [
-      "G83385WA", 
       "G44874SK", 
+      "G83385WA", 
       "G72843VN"
     ], 
     "comp": {
@@ -33507,12 +34633,12 @@
   }, 
   "G65184UU": {
     "children": [
-      "G76746OW", 
-      "G79568CQ", 
-      "G73489OC", 
+      "G24526DO", 
       "G88620WF", 
+      "G76746OW", 
+      "G73489OC", 
       "G31831PV", 
-      "G24526DO"
+      "G79568CQ"
     ], 
     "comp": {
       "Hex": 5, 
@@ -33750,8 +34876,8 @@
   }, 
   "G65807AE": {
     "children": [
-      "G63381RX", 
-      "G76994CV"
+      "G76994CV", 
+      "G63381RX"
     ], 
     "comp": {
       "Hex": 4, 
@@ -33862,7 +34988,6 @@
       "Glc": 1, 
       "Hex": 4
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G65969HW": {
@@ -33998,8 +35123,8 @@
   }, 
   "G66231VJ": {
     "children": [
-      "G38716CV", 
-      "G15014QH"
+      "G15014QH", 
+      "G38716CV"
     ], 
     "comp": {
       "Hex": 3, 
@@ -34063,8 +35188,8 @@
   }, 
   "G66377OC": {
     "children": [
-      "G23740WA", 
-      "G94058BV"
+      "G94058BV", 
+      "G23740WA"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -34119,6 +35244,20 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G66507XS": {
+    "children": [
+      "G39428SI"
+    ], 
+    "comp": {
+      "GlcNAc": 1, 
+      "Hex": 8, 
+      "HexNAc": 1, 
+      "Man": 8, 
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
   }, 
   "G66538GV": {
     "children": [
@@ -34202,8 +35341,8 @@
   }, 
   "G66700AL": {
     "children": [
-      "G62875RJ", 
-      "G12841QP"
+      "G12841QP", 
+      "G62875RJ"
     ], 
     "comp": {
       "Hex": 6, 
@@ -34216,11 +35355,11 @@
   }, 
   "G66706SL": {
     "children": [
-      "G18866TC", 
-      "G28988SP", 
       "G23393TB", 
+      "G84586GR", 
+      "G28988SP", 
       "G96308CY", 
-      "G84586GR"
+      "G18866TC"
     ], 
     "comp": {
       "HexNAc": 1, 
@@ -34248,7 +35387,6 @@
     "comp": {
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G66713JJ": {
@@ -34327,6 +35465,21 @@
     }, 
     "type": "composition"
   }, 
+  "G66768WN": {
+    "children": [
+      "G11499FP"
+    ], 
+    "comp": {
+      "Fuc": 1, 
+      "Gal": 1, 
+      "GlcNAc": 1, 
+      "Hex": 1, 
+      "HexNAc": 1, 
+      "NeuAc": 1, 
+      "dHex": 1
+    }, 
+    "type": "composition"
+  }, 
   "G66778OK": {
     "children": [], 
     "comp": {
@@ -34358,8 +35511,8 @@
       "G39478DH", 
       "G52732WT", 
       "G44967LM", 
-      "G97256JK", 
-      "G92759DT"
+      "G92759DT", 
+      "G97256JK"
     ], 
     "comp": {
       "Hex": 2, 
@@ -34383,12 +35536,12 @@
   }, 
   "G66933CM": {
     "children": [
-      "G57254KI", 
-      "G09047TX", 
       "G79132FD", 
       "G85918EB", 
       "G66163OV", 
-      "G22939AC"
+      "G22939AC", 
+      "G57254KI", 
+      "G09047TX"
     ], 
     "comp": {
       "Hex": 6, 
@@ -34427,9 +35580,9 @@
   }, 
   "G67090GA": {
     "children": [
-      "G54515XW", 
-      "G54666RX", 
       "G47329VU", 
+      "G54666RX", 
+      "G54515XW", 
       "G07450OC"
     ], 
     "comp": {
@@ -34471,9 +35624,9 @@
   }, 
   "G67199LR": {
     "children": [
+      "G24096BQ", 
       "G08600PN", 
       "G43311SI", 
-      "G24096BQ", 
       "G43291IC"
     ], 
     "comp": {
@@ -34510,10 +35663,10 @@
   }, 
   "G67324HN": {
     "children": [
-      "G34730YF", 
       "G69492TQ", 
-      "G76531DS", 
-      "G33056EO"
+      "G33056EO", 
+      "G34730YF", 
+      "G76531DS"
     ], 
     "comp": {
       "Hex": 5, 
@@ -34525,8 +35678,8 @@
   }, 
   "G67353LI": {
     "children": [
-      "G98897XC", 
-      "G16327GT"
+      "G16327GT", 
+      "G98897XC"
     ], 
     "comp": {
       "Hex": 6, 
@@ -34648,8 +35801,8 @@
   }, 
   "G67486RJ": {
     "children": [
-      "G55477CD", 
-      "G74337VG"
+      "G74337VG", 
+      "G55477CD"
     ], 
     "comp": {
       "Hex": 3, 
@@ -35064,8 +36217,8 @@
   "G68318VE": {
     "children": [
       "G16104HK", 
-      "G42124LM", 
-      "G06284QH"
+      "G06284QH", 
+      "G42124LM"
     ], 
     "comp": {
       "Hex": 4, 
@@ -35162,8 +36315,8 @@
   }, 
   "G68418WR": {
     "children": [
-      "G92019OA", 
-      "G47230UY"
+      "G47230UY", 
+      "G92019OA"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -35193,9 +36346,9 @@
   }, 
   "G68486KE": {
     "children": [
+      "G18535SF", 
       "G69939HY", 
-      "G51375HH", 
-      "G18535SF"
+      "G51375HH"
     ], 
     "comp": {
       "Hex": 5, 
@@ -35204,6 +36357,16 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G68533KR": {
+    "children": [
+      "G86430YS"
+    ], 
+    "comp": {
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
   }, 
   "G68558SR": {
     "children": [], 
@@ -35295,8 +36458,8 @@
   }, 
   "G68665HE": {
     "children": [
-      "G67610GV", 
       "G11053YN", 
+      "G67610GV", 
       "G94942SH"
     ], 
     "comp": {
@@ -35403,9 +36566,9 @@
   }, 
   "G68985JM": {
     "children": [
+      "G83049TZ", 
       "G86345VK", 
-      "G07707ZV", 
-      "G83049TZ"
+      "G07707ZV"
     ], 
     "comp": {
       "HexNAc": 2, 
@@ -35445,12 +36608,12 @@
   }, 
   "G68990JR": {
     "children": [
-      "G23794VW", 
-      "G46544JG", 
       "G02833LW", 
-      "G50045TK", 
+      "G23794VW", 
+      "G73811LP", 
       "G38626VI", 
-      "G73811LP"
+      "G50045TK", 
+      "G46544JG"
     ], 
     "comp": {
       "Hex": 5, 
@@ -35476,6 +36639,16 @@
       "Hex": 4, 
       "HexNAc": 5, 
       "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
+  "G69031IF": {
+    "children": [], 
+    "comp": {
+      "Hex": 8, 
+      "HexNAc": 2, 
+      "dHex": 1
     }, 
     "top": true, 
     "type": "basecomposition"
@@ -35508,9 +36681,9 @@
   }, 
   "G69107AL": {
     "children": [
-      "G28052FS", 
-      "G24913HX", 
       "G42085IV", 
+      "G24913HX", 
+      "G28052FS", 
       "G22625SJ"
     ], 
     "comp": {
@@ -35523,8 +36696,8 @@
   }, 
   "G69121UK": {
     "children": [
-      "G23122NR", 
-      "G40694IQ"
+      "G13029ZY", 
+      "G23122NR"
     ], 
     "comp": {
       "Hex": 3, 
@@ -35559,19 +36732,6 @@
       "Man": 1
     }, 
     "type": "composition"
-  }, 
-  "G69222XZ": {
-    "children": [
-      "G10979BZ", 
-      "G38788CP", 
-      "G39900FY", 
-      "G97859UQ"
-    ], 
-    "comp": {
-      "Hex": 3, 
-      "HexNAc": 5
-    }, 
-    "type": "basecomposition"
   }, 
   "G69231HI": {
     "children": [], 
@@ -35661,9 +36821,9 @@
   "G69364JQ": {
     "children": [
       "G51067CM", 
-      "G95640AM", 
       "G02253SS", 
-      "G34590ZX"
+      "G34590ZX", 
+      "G95640AM"
     ], 
     "comp": {
       "Hex": 5, 
@@ -35714,6 +36874,16 @@
     }, 
     "top": true, 
     "type": "composition"
+  }, 
+  "G69579SR": {
+    "children": [], 
+    "comp": {
+      "Hex": 9, 
+      "HexNAc": 2, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
   }, 
   "G69667ML": {
     "children": [], 
@@ -35771,6 +36941,17 @@
       "Man": 3, 
       "NeuAc": 2, 
       "dHex": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G69861RB": {
+    "children": [], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 4, 
+      "NeuAc": 2, 
+      "dHex": 3
     }, 
     "top": true, 
     "type": "composition"
@@ -35838,8 +37019,8 @@
   }, 
   "G70058BA": {
     "children": [
-      "G26162MM", 
-      "G59848RU"
+      "G59848RU", 
+      "G26162MM"
     ], 
     "comp": {
       "Gal": 1, 
@@ -35852,8 +37033,8 @@
   }, 
   "G70087PV": {
     "children": [
-      "G35218UM", 
       "G76574YM", 
+      "G35218UM", 
       "G24634JN"
     ], 
     "comp": {
@@ -36113,8 +37294,8 @@
   }, 
   "G70441OD": {
     "children": [
-      "G79284PO", 
-      "G16096FI"
+      "G16096FI", 
+      "G79284PO"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -36189,7 +37370,6 @@
       "HexNAc": 1, 
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G70555JJ": {
@@ -36220,8 +37400,8 @@
   "G70619PT": {
     "children": [
       "G00185NL", 
-      "G81910EG", 
-      "G46988ER"
+      "G46988ER", 
+      "G81910EG"
     ], 
     "comp": {
       "Fuc": 2, 
@@ -36246,8 +37426,8 @@
   }, 
   "G70677AG": {
     "children": [
-      "G00824LK", 
-      "G29080OD"
+      "G29080OD", 
+      "G00824LK"
     ], 
     "comp": {
       "Hex": 4, 
@@ -36256,6 +37436,16 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G70696MD": {
+    "children": [], 
+    "comp": {
+      "Hex": 7, 
+      "HexNAc": 3, 
+      "NeuAc": 1
+    }, 
+    "top": true, 
+    "type": "composition"
   }, 
   "G70727ST": {
     "children": [
@@ -36395,7 +37585,6 @@
       "Hex": 2, 
       "Xxx": 2
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G71001XO": {
@@ -36577,10 +37766,10 @@
   "G71529UW": {
     "children": [
       "G19160IM", 
-      "G89179XK", 
+      "G93481IU", 
       "G16356PF", 
-      "G27287UI", 
-      "G93481IU"
+      "G89179XK", 
+      "G27287UI"
     ], 
     "comp": {
       "Hex": 4, 
@@ -36638,8 +37827,8 @@
   }, 
   "G71600XR": {
     "children": [
-      "G98074UN", 
-      "G42401YF"
+      "G42401YF", 
+      "G98074UN"
     ], 
     "comp": {
       "Hex": 4, 
@@ -36703,8 +37892,8 @@
   }, 
   "G71678CK": {
     "children": [
-      "G34292BG", 
-      "G21599SH"
+      "G21599SH", 
+      "G34292BG"
     ], 
     "comp": {
       "GlcNAc": 2, 
@@ -36817,14 +38006,37 @@
   }, 
   "G71839JL": {
     "children": [
-      "G01573VB", 
-      "G78318TC"
+      "G78318TC", 
+      "G01573VB"
     ], 
     "comp": {
       "Xxx": 1
     }, 
     "top": true, 
     "type": "composition"
+  }, 
+  "G71858IU": {
+    "children": [
+      "G90960QG"
+    ], 
+    "comp": {
+      "Gal": 2, 
+      "Hex": 2
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G71866YU": {
+    "children": [
+      "G98208DX"
+    ], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 7, 
+      "NeuAc": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
   }, 
   "G71889QA": {
     "children": [
@@ -36841,8 +38053,8 @@
   }, 
   "G71911UE": {
     "children": [
-      "G40682DJ", 
-      "G14360WF"
+      "G14360WF", 
+      "G40682DJ"
     ], 
     "comp": {
       "Hex": 6, 
@@ -36885,9 +38097,9 @@
   }, 
   "G71943BP": {
     "children": [
-      "G05788ML", 
+      "G25566SL", 
       "G13327KS", 
-      "G25566SL"
+      "G05788ML"
     ], 
     "comp": {
       "Hex": 3, 
@@ -36912,9 +38124,9 @@
   }, 
   "G71981YX": {
     "children": [
+      "G88296EI", 
       "G27561GS", 
       "G91878CY", 
-      "G88296EI", 
       "G10506KQ"
     ], 
     "comp": {
@@ -36998,8 +38210,8 @@
   "G72061XS": {
     "children": [
       "G27322KS", 
-      "G44072KE", 
-      "G75529OX"
+      "G75529OX", 
+      "G44072KE"
     ], 
     "comp": {
       "Hex": 1, 
@@ -37030,7 +38242,6 @@
       "Glc": 3, 
       "Hex": 3
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G72126TO": {
@@ -37307,6 +38518,19 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G72544PU": {
+    "children": [
+      "G21670TV"
+    ], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 6, 
+      "NeuAc": 2, 
+      "NeuGc": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G72597SM": {
     "children": [], 
     "comp": {
@@ -37455,12 +38679,12 @@
   }, 
   "G72787SB": {
     "children": [
-      "G81295CK", 
-      "G14445VK", 
+      "G75216TK", 
       "G32127JA", 
-      "G77297OU", 
       "G36190WL", 
-      "G75216TK"
+      "G14445VK", 
+      "G77297OU", 
+      "G81295CK"
     ], 
     "comp": {
       "Hex": 4, 
@@ -37470,10 +38694,10 @@
   }, 
   "G72790NZ": {
     "children": [
-      "G28470QU", 
       "G26021HI", 
       "G47406YI", 
       "G97126PW", 
+      "G28470QU", 
       "G58543MF"
     ], 
     "comp": {
@@ -37484,8 +38708,8 @@
   }, 
   "G72791KH": {
     "children": [
-      "G69492OP", 
       "G11870QZ", 
+      "G69492OP", 
       "G47644PP"
     ], 
     "comp": {
@@ -37552,8 +38776,8 @@
   }, 
   "G72918SZ": {
     "children": [
-      "G77277NN", 
-      "G00940RO"
+      "G00940RO", 
+      "G77277NN"
     ], 
     "comp": {
       "Fuc": 3, 
@@ -37596,6 +38820,19 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G72961RM": {
+    "children": [
+      "G43638QT"
+    ], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 6, 
+      "NeuAc": 1, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G73004SD": {
     "children": [
       "G67090GA"
@@ -37628,8 +38865,8 @@
   }, 
   "G73134BJ": {
     "children": [
-      "G43523SA", 
       "G11150IJ", 
+      "G43523SA", 
       "G80948OS"
     ], 
     "comp": {
@@ -37643,8 +38880,8 @@
   }, 
   "G73192GF": {
     "children": [
-      "G31528EG", 
-      "G49200CP"
+      "G49200CP", 
+      "G31528EG"
     ], 
     "comp": {
       "Hex": 7, 
@@ -37727,7 +38964,6 @@
     "comp": {
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G73357FZ": {
@@ -37941,9 +39177,9 @@
   }, 
   "G73686WG": {
     "children": [
-      "G64651IS", 
       "G04650WV", 
-      "G93718GY"
+      "G93718GY", 
+      "G64651IS"
     ], 
     "comp": {
       "Hex": 7, 
@@ -38023,8 +39259,8 @@
   "G73857SS": {
     "children": [
       "G47115JI", 
-      "G02231DC", 
-      "G61407FO"
+      "G61407FO", 
+      "G02231DC"
     ], 
     "comp": {
       "Hex": 2, 
@@ -38065,8 +39301,8 @@
   }, 
   "G73918EY": {
     "children": [
-      "G00994CC", 
-      "G25541YH"
+      "G25541YH", 
+      "G00994CC"
     ], 
     "comp": {
       "Hex": 7, 
@@ -38083,13 +39319,12 @@
       "Hex": 1, 
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G73943YH": {
     "children": [
-      "G40144CP", 
-      "G22622LS"
+      "G22622LS", 
+      "G40144CP"
     ], 
     "comp": {
       "Hex": 4, 
@@ -38122,8 +39357,8 @@
   }, 
   "G74051XK": {
     "children": [
-      "G55586YF", 
-      "G08748WO"
+      "G08748WO", 
+      "G55586YF"
     ], 
     "comp": {
       "Hex": 7, 
@@ -38244,8 +39479,8 @@
   }, 
   "G74293ZH": {
     "children": [
-      "G49331GC", 
-      "G61995SP"
+      "G61995SP", 
+      "G49331GC"
     ], 
     "comp": {
       "Hex": 6, 
@@ -38265,6 +39500,31 @@
       "Hex": 1, 
       "HexNAc": 1, 
       "S": 1, 
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G74312HX": {
+    "children": [
+      "G88288TV"
+    ], 
+    "comp": {
+      "Glc": 4, 
+      "Hex": 4
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G74314SG": {
+    "children": [
+      "G70511GI"
+    ], 
+    "comp": {
+      "Gal": 1, 
+      "GalNAc": 1, 
+      "Hex": 1, 
+      "HexNAc": 1, 
       "Xxx": 1
     }, 
     "top": true, 
@@ -38479,8 +39739,8 @@
   }, 
   "G74737SS": {
     "children": [
-      "G61490XD", 
-      "G90514SP"
+      "G90514SP", 
+      "G61490XD"
     ], 
     "comp": {
       "Hex": 5, 
@@ -38505,8 +39765,8 @@
   }, 
   "G74857JH": {
     "children": [
-      "G79733RV", 
-      "G56304TZ"
+      "G56304TZ", 
+      "G79733RV"
     ], 
     "comp": {
       "HexNAc": 1, 
@@ -38630,7 +39890,6 @@
       "HexNAc": 2, 
       "Man": 9
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G75099AE": {
@@ -38701,10 +39960,10 @@
   }, 
   "G75299IA": {
     "children": [
-      "G17067SW", 
-      "G24493HX", 
       "G56300FZ", 
-      "G51581WO"
+      "G24493HX", 
+      "G51581WO", 
+      "G17067SW"
     ], 
     "comp": {
       "Hex": 2, 
@@ -38725,6 +39984,16 @@
     }, 
     "top": true, 
     "type": "composition"
+  }, 
+  "G75397RL": {
+    "children": [], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 6, 
+      "dHex": 3
+    }, 
+    "top": true, 
+    "type": "basecomposition"
   }, 
   "G75407EJ": {
     "children": [], 
@@ -38816,8 +40085,8 @@
   }, 
   "G75568BH": {
     "children": [
-      "G77582RK", 
-      "G55033UT"
+      "G55033UT", 
+      "G77582RK"
     ], 
     "comp": {
       "Hex": 8, 
@@ -38899,9 +40168,9 @@
   }, 
   "G75731FY": {
     "children": [
+      "G85465VT", 
       "G91239PO", 
-      "G66317YW", 
-      "G85465VT"
+      "G66317YW"
     ], 
     "comp": {
       "GalNAc": 1, 
@@ -38913,11 +40182,7 @@
   }, 
   "G75764QI": {
     "children": [
-      "G10701QX", 
-      "G17209HH", 
-      "G44748WB", 
-      "G43275VO", 
-      "G98002LE"
+      "G11157ZG"
     ], 
     "comp": {
       "Hex": 5, 
@@ -38929,8 +40194,8 @@
   }, 
   "G75782KF": {
     "children": [
-      "G52692YB", 
-      "G20403OQ"
+      "G20403OQ", 
+      "G52692YB"
     ], 
     "comp": {
       "Hex": 6, 
@@ -38992,6 +40257,19 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G75939KS": {
+    "children": [
+      "G48149UR"
+    ], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 6, 
+      "NeuAc": 1, 
+      "dHex": 3
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G75959TE": {
     "children": [
       "G14455BR", 
@@ -39022,13 +40300,13 @@
   }, 
   "G75998XY": {
     "children": [
-      "G62178NA", 
-      "G15531AF", 
-      "G80130HV", 
-      "G30565GZ", 
+      "G70369UN", 
       "G79277QK", 
+      "G62178NA", 
+      "G80130HV", 
       "G48389SQ", 
-      "G70369UN"
+      "G15531AF", 
+      "G30565GZ"
     ], 
     "comp": {
       "Hex": 3, 
@@ -39145,8 +40423,8 @@
   }, 
   "G76282XA": {
     "children": [
-      "G65153LB", 
-      "G32189RG"
+      "G32189RG", 
+      "G65153LB"
     ], 
     "comp": {
       "Hex": 3, 
@@ -39337,8 +40615,8 @@
   }, 
   "G76668FN": {
     "children": [
-      "G32216OS", 
-      "G02811DV"
+      "G02811DV", 
+      "G32216OS"
     ], 
     "comp": {
       "Hex": 7, 
@@ -39426,7 +40704,6 @@
     "comp": {
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G76809NR": {
@@ -39457,8 +40734,8 @@
   }, 
   "G76839XP": {
     "children": [
-      "G10140TR", 
-      "G05959HH"
+      "G05959HH", 
+      "G10140TR"
     ], 
     "comp": {
       "Xxx": 2
@@ -39468,8 +40745,8 @@
   }, 
   "G76855PV": {
     "children": [
-      "G01563KC", 
-      "G24399KR"
+      "G24399KR", 
+      "G01563KC"
     ], 
     "comp": {
       "Hex": 1, 
@@ -39557,9 +40834,9 @@
   }, 
   "G77068PP": {
     "children": [
-      "G41316XU", 
+      "G20934TL", 
       "G29827HT", 
-      "G20934TL"
+      "G41316XU"
     ], 
     "comp": {
       "Hex": 9, 
@@ -39618,8 +40895,8 @@
   }, 
   "G77131CL": {
     "children": [
-      "G19434QF", 
-      "G67443AS"
+      "G67443AS", 
+      "G19434QF"
     ], 
     "comp": {
       "Hex": 6, 
@@ -39671,8 +40948,8 @@
   }, 
   "G77274HK": {
     "children": [
-      "G23735VZ", 
-      "G29058BJ"
+      "G29058BJ", 
+      "G23735VZ"
     ], 
     "comp": {
       "Hex": 3, 
@@ -39732,6 +41009,16 @@
     }, 
     "top": true, 
     "type": "composition"
+  }, 
+  "G77380JK": {
+    "children": [], 
+    "comp": {
+      "Hex": 3, 
+      "HexNAc": 6, 
+      "dHex": 4
+    }, 
+    "top": true, 
+    "type": "basecomposition"
   }, 
   "G77403VP": {
     "children": [], 
@@ -39888,7 +41175,6 @@
       "Man": 9, 
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G77711DZ": {
@@ -40031,7 +41317,6 @@
       "HexNAc": 2, 
       "Man": 9
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G77865DP": {
@@ -40049,8 +41334,8 @@
   }, 
   "G77903VE": {
     "children": [
-      "G50648LW", 
-      "G74072TM"
+      "G74072TM", 
+      "G50648LW"
     ], 
     "comp": {
       "Hex": 4, 
@@ -40076,11 +41361,11 @@
   }, 
   "G77976VJ": {
     "children": [
-      "G37834XB", 
       "G39632CM", 
       "G29316OK", 
       "G94660EY", 
-      "G58081YQ"
+      "G58081YQ", 
+      "G37834XB"
     ], 
     "comp": {
       "Hex": 3, 
@@ -40120,9 +41405,9 @@
   }, 
   "G78138CS": {
     "children": [
-      "G85567KH", 
       "G34091LH", 
-      "G86678KD"
+      "G86678KD", 
+      "G85567KH"
     ], 
     "comp": {
       "Gal": 1, 
@@ -40271,8 +41556,8 @@
   "G78480MT": {
     "children": [
       "G26321KS", 
-      "G98829XK", 
-      "G30213GE"
+      "G30213GE", 
+      "G98829XK"
     ], 
     "comp": {
       "Hex": 3, 
@@ -40351,7 +41636,6 @@
       "Hex": 1, 
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G78616NO": {
@@ -40384,7 +41668,7 @@
   }, 
   "G78739DQ": {
     "children": [
-      "G98759ZF"
+      "G53166XK"
     ], 
     "comp": {
       "Hex": 6, 
@@ -40542,8 +41826,8 @@
   }, 
   "G79223ZW": {
     "children": [
-      "G78587RA", 
-      "G73938CM"
+      "G93931KT", 
+      "G94562PU"
     ], 
     "comp": {
       "Hex": 1, 
@@ -40636,7 +41920,7 @@
   }, 
   "G79500ZM": {
     "children": [
-      "G80517ZY"
+      "G30364ZU"
     ], 
     "comp": {
       "Hex": 1, 
@@ -40696,6 +41980,16 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G79635DB": {
+    "children": [], 
+    "comp": {
+      "Hex": 8, 
+      "HexNAc": 7, 
+      "dHex": 6
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G79667NI": {
     "children": [], 
     "comp": {
@@ -40727,14 +42021,14 @@
   }, 
   "G79732HM": {
     "children": [
-      "G91654NY", 
-      "G51195XO", 
-      "G15912SN", 
-      "G72501FZ", 
-      "G53717NP", 
       "G02425VX", 
+      "G91654NY", 
+      "G72501FZ", 
+      "G47001DQ", 
+      "G53717NP", 
+      "G15912SN", 
       "G09980AX", 
-      "G47001DQ"
+      "G51195XO"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -40754,6 +42048,19 @@
       "GlcNAc": 1, 
       "HexNAc": 1, 
       "NeuGc": 1, 
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G79739FS": {
+    "children": [
+      "G56335QN"
+    ], 
+    "comp": {
+      "Gal": 1, 
+      "Hex": 1, 
+      "NeuAc": 1, 
       "Xxx": 1
     }, 
     "top": true, 
@@ -40875,8 +42182,8 @@
   }, 
   "G79980BA": {
     "children": [
-      "G02433XU", 
       "G85145TZ", 
+      "G02433XU", 
       "G33559EY"
     ], 
     "comp": {
@@ -40989,9 +42296,9 @@
   }, 
   "G80280AS": {
     "children": [
-      "G83029YY", 
+      "G45595TI", 
       "G29791QA", 
-      "G45595TI"
+      "G83029YY"
     ], 
     "comp": {
       "Hex": 5, 
@@ -41052,8 +42359,8 @@
   }, 
   "G80408KP": {
     "children": [
-      "G94372TX", 
-      "G45640VZ"
+      "G45640VZ", 
+      "G94372TX"
     ], 
     "comp": {
       "Hex": 9, 
@@ -41088,8 +42395,8 @@
   }, 
   "G80452AC": {
     "children": [
-      "G93869NT", 
-      "G51984UL"
+      "G51984UL", 
+      "G93869NT"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -41120,8 +42427,8 @@
   }, 
   "G80475RE": {
     "children": [
-      "G36379GD", 
       "G94854LT", 
+      "G36379GD", 
       "G97654YR"
     ], 
     "comp": {
@@ -41134,10 +42441,10 @@
   }, 
   "G80479JV": {
     "children": [
-      "G98400VI", 
-      "G91136CO", 
       "G12725IE", 
-      "G83783DS"
+      "G83783DS", 
+      "G91136CO", 
+      "G98400VI"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -41160,9 +42467,9 @@
   }, 
   "G80497IU": {
     "children": [
-      "G53611MH", 
       "G72918SZ", 
-      "G89486DX"
+      "G89486DX", 
+      "G53611MH"
     ], 
     "comp": {
       "Hex": 5, 
@@ -41182,7 +42489,6 @@
       "HexNAc": 2, 
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G80518RB": {
@@ -41232,6 +42538,16 @@
     }, 
     "type": "composition"
   }, 
+  "G80586MF": {
+    "children": [], 
+    "comp": {
+      "Hex": 8, 
+      "HexNAc": 6, 
+      "NeuAc": 3, 
+      "dHex": 1
+    }, 
+    "type": "composition"
+  }, 
   "G80636IF": {
     "children": [], 
     "comp": {
@@ -41244,8 +42560,8 @@
   }, 
   "G80648FL": {
     "children": [
-      "G14371GW", 
-      "G01453HD"
+      "G01453HD", 
+      "G14371GW"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -41319,10 +42635,10 @@
   }, 
   "G80735OA": {
     "children": [
-      "G34026PF", 
-      "G64490RT", 
       "G60648TJ", 
-      "G68845FJ"
+      "G68845FJ", 
+      "G34026PF", 
+      "G64490RT"
     ], 
     "comp": {
       "Hex": 6, 
@@ -41387,6 +42703,16 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G80816VI": {
+    "children": [
+      "G73336PH", 
+      "G76789ES"
+    ], 
+    "comp": {
+      "Xxx": 1
+    }, 
+    "type": "composition"
+  }, 
   "G80840RW": {
     "children": [], 
     "comp": {
@@ -41404,11 +42730,11 @@
   }, 
   "G80869MR": {
     "children": [
-      "G31307FU", 
-      "G81190FF", 
-      "G59572XZ", 
+      "G62718WJ", 
       "G01924CV", 
-      "G62718WJ"
+      "G59572XZ", 
+      "G81190FF", 
+      "G31307FU"
     ], 
     "comp": {
       "Gal": 1, 
@@ -41417,7 +42743,6 @@
       "HexNAc": 1, 
       "S": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G80874KA": {
@@ -41448,11 +42773,11 @@
   }, 
   "G80920RR": {
     "children": [
-      "G43985ZW", 
-      "G22952TB", 
-      "G70101JE", 
       "G26416HF", 
       "G14351DY", 
+      "G70101JE", 
+      "G43985ZW", 
+      "G22952TB", 
       "G22428GQ"
     ], 
     "comp": {
@@ -41525,10 +42850,10 @@
   }, 
   "G81098PF": {
     "children": [
+      "G94548ZD", 
       "G17295UK", 
       "G63063HO", 
-      "G11853YG", 
-      "G94548ZD"
+      "G11853YG"
     ], 
     "comp": {
       "Hex": 4, 
@@ -41538,8 +42863,8 @@
   }, 
   "G81124ET": {
     "children": [
-      "G67929YA", 
-      "G56438GL"
+      "G56438GL", 
+      "G67929YA"
     ], 
     "comp": {
       "Hex": 9, 
@@ -41550,8 +42875,8 @@
   }, 
   "G81128KB": {
     "children": [
-      "G50427EO", 
-      "G70421YZ"
+      "G70421YZ", 
+      "G50427EO"
     ], 
     "comp": {
       "Hex": 7, 
@@ -41727,19 +43052,15 @@
   }, 
   "G81399MY": {
     "children": [
-      "G76789ES", 
-      "G99135JL", 
-      "G37766VB", 
+      "G52449VS", 
       "G14417VP", 
-      "G27539FC", 
-      "G09675LS", 
+      "G64591YB", 
+      "G11155NP", 
+      "G68533KR", 
+      "G54070FO", 
       "G09597LJ", 
-      "G64665BQ", 
-      "G66708XV", 
       "G47469ZG", 
-      "G15434YJ", 
-      "G73336PH", 
-      "G52449VS"
+      "G09675LS"
     ], 
     "comp": {
       "Hex": 1
@@ -41820,9 +43141,9 @@
   }, 
   "G81651WA": {
     "children": [
-      "G35522XB", 
       "G24153CB", 
-      "G70557RD"
+      "G70557RD", 
+      "G35522XB"
     ], 
     "comp": {
       "GalNAc": 1, 
@@ -42046,8 +43367,8 @@
   }, 
   "G81920XN": {
     "children": [
-      "G39428SI", 
-      "G04947MP"
+      "G04947MP", 
+      "G66507XS"
     ], 
     "comp": {
       "Hex": 8, 
@@ -42229,15 +43550,27 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G82348RD": {
+    "children": [
+      "G58598BO"
+    ], 
+    "comp": {
+      "Hex": 8, 
+      "HexNAc": 7, 
+      "NeuAc": 1, 
+      "dHex": 1
+    }, 
+    "type": "composition"
+  }, 
   "G82364UA": {
     "children": [
-      "G00406II", 
-      "G84032IV", 
-      "G04727QI", 
-      "G98562RJ", 
-      "G21581IH", 
       "G04809AM", 
-      "G32116PG"
+      "G98562RJ", 
+      "G04727QI", 
+      "G84032IV", 
+      "G32116PG", 
+      "G21581IH", 
+      "G00406II"
     ], 
     "comp": {
       "Hex": 4, 
@@ -42286,7 +43619,7 @@
   }, 
   "G82458HY": {
     "children": [
-      "G22979OY"
+      "G17991UN"
     ], 
     "comp": {
       "Hex": 1, 
@@ -42367,11 +43700,11 @@
   }, 
   "G82688EZ": {
     "children": [
-      "G49551WD", 
       "G44246MP", 
-      "G65165JE", 
+      "G49752DA", 
       "G44033UA", 
-      "G49752DA"
+      "G65165JE", 
+      "G49551WD"
     ], 
     "comp": {
       "Hex": 2, 
@@ -42556,10 +43889,10 @@
   }, 
   "G82985VK": {
     "children": [
-      "G82515BU", 
       "G89621BX", 
-      "G55394YE", 
+      "G82515BU", 
       "G59998BM", 
+      "G55394YE", 
       "G57307JZ"
     ], 
     "comp": {
@@ -42700,6 +44033,19 @@
     }, 
     "top": true, 
     "type": "composition"
+  }, 
+  "G83127FN": {
+    "children": [
+      "G49284IH"
+    ], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 4, 
+      "NeuAc": 1, 
+      "dHex": 2
+    }, 
+    "top": true, 
+    "type": "basecomposition"
   }, 
   "G83162QK": {
     "children": [], 
@@ -42858,6 +44204,17 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G83448VJ": {
+    "children": [
+      "G89489JX"
+    ], 
+    "comp": {
+      "Gal": 3, 
+      "Hex": 3
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G83451BF": {
     "children": [
       "G08580UN"
@@ -42871,12 +44228,12 @@
   }, 
   "G83460ZZ": {
     "children": [
-      "G90109YC", 
-      "G33970PJ", 
-      "G14791BA", 
       "G91301DM", 
+      "G90109YC", 
       "G22673CT", 
-      "G21122WA"
+      "G33970PJ", 
+      "G43448GF", 
+      "G14791BA"
     ], 
     "comp": {
       "Hex": 10, 
@@ -42942,9 +44299,9 @@
   "G83555HU": {
     "children": [
       "G61944JN", 
+      "G23863VK", 
       "G84064OW", 
-      "G65218NW", 
-      "G23863VK"
+      "G65218NW"
     ], 
     "comp": {
       "Hex": 5, 
@@ -42988,7 +44345,6 @@
       "HexNAc": 2, 
       "NeuAc": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G83619DN": {
@@ -43006,9 +44362,9 @@
   }, 
   "G83633GK": {
     "children": [
+      "G42734XB", 
       "G01998SG", 
-      "G07380MP", 
-      "G42734XB"
+      "G07380MP"
     ], 
     "comp": {
       "Hex": 3, 
@@ -43043,13 +44399,26 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G83657IL": {
+    "children": [
+      "G09082LJ", 
+      "G33151PY", 
+      "G46283XF"
+    ], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 3, 
+      "NeuGc": 1
+    }, 
+    "type": "composition"
+  }, 
   "G83720DE": {
     "children": [
       "G81275UQ", 
-      "G56731CY", 
       "G53469LR", 
-      "G66153HK", 
-      "G47256GA"
+      "G47256GA", 
+      "G56731CY", 
+      "G66153HK"
     ], 
     "comp": {
       "Hex": 2, 
@@ -43074,9 +44443,7 @@
   }, 
   "G83747TS": {
     "children": [
-      "G33151PY", 
-      "G46283XF", 
-      "G09082LJ"
+      "G83657IL"
     ], 
     "comp": {
       "Hex": 4, 
@@ -43117,8 +44484,8 @@
   }, 
   "G83791CV": {
     "children": [
-      "G55291BP", 
-      "G03436JS"
+      "G03436JS", 
+      "G55291BP"
     ], 
     "comp": {
       "Hex": 1, 
@@ -43189,8 +44556,8 @@
   }, 
   "G83973UR": {
     "children": [
-      "G73869UJ", 
-      "G13993IP"
+      "G13993IP", 
+      "G73869UJ"
     ], 
     "comp": {
       "Hex": 6, 
@@ -43444,8 +44811,8 @@
   }, 
   "G84289JA": {
     "children": [
-      "G46880SB", 
-      "G22074RM"
+      "G22074RM", 
+      "G46880SB"
     ], 
     "comp": {
       "HexNAc": 1, 
@@ -43470,10 +44837,10 @@
   }, 
   "G84291SQ": {
     "children": [
-      "G58123PM", 
-      "G07328FD", 
+      "G56784JY", 
       "G44688LJ", 
-      "G56784JY"
+      "G07328FD", 
+      "G58123PM"
     ], 
     "comp": {
       "Hex": 5, 
@@ -43498,8 +44865,8 @@
   "G84320LV": {
     "children": [
       "G71208PT", 
-      "G68685SI", 
-      "G07885PS"
+      "G07885PS", 
+      "G68685SI"
     ], 
     "comp": {
       "Hex": 6, 
@@ -43523,9 +44890,9 @@
   }, 
   "G84323AK": {
     "children": [
+      "G04360LE", 
       "G03042EN", 
-      "G84909TS", 
-      "G04360LE"
+      "G84909TS"
     ], 
     "comp": {
       "Hex": 1, 
@@ -43539,8 +44906,8 @@
   }, 
   "G84342AD": {
     "children": [
-      "G03187PO", 
-      "G80753ZP"
+      "G80753ZP", 
+      "G03187PO"
     ], 
     "comp": {
       "Glc": 1, 
@@ -43571,8 +44938,8 @@
   }, 
   "G84412XW": {
     "children": [
-      "G16708QN", 
-      "G95964HA"
+      "G95964HA", 
+      "G16708QN"
     ], 
     "comp": {
       "Hex": 2, 
@@ -43658,9 +45025,9 @@
   }, 
   "G84492TS": {
     "children": [
+      "G09305UU", 
       "G94763YB", 
-      "G65323BX", 
-      "G09305UU"
+      "G65323BX"
     ], 
     "comp": {
       "Hex": 5, 
@@ -43685,9 +45052,9 @@
   }, 
   "G84586GR": {
     "children": [
-      "G47184DD", 
+      "G85465VT", 
       "G67915OO", 
-      "G85465VT"
+      "G47184DD"
     ], 
     "comp": {
       "Xxx": 2
@@ -43743,6 +45110,17 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G84712KL": {
+    "children": [], 
+    "comp": {
+      "Hex": 3, 
+      "HexNAc": 7, 
+      "NeuAc": 1, 
+      "dHex": 2
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G84768BJ": {
     "children": [], 
     "comp": {
@@ -43752,6 +45130,20 @@
       "Hex": 5, 
       "HexNAc": 2, 
       "Man": 3
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G84800EW": {
+    "children": [
+      "G91614MN"
+    ], 
+    "comp": {
+      "GlcNAc": 1, 
+      "Hex": 7, 
+      "HexNAc": 1, 
+      "Man": 7, 
+      "Xxx": 1
     }, 
     "top": true, 
     "type": "composition"
@@ -43946,9 +45338,9 @@
   }, 
   "G85144OK": {
     "children": [
-      "G57776ZS", 
+      "G93563JK", 
       "G49917IO", 
-      "G93563JK"
+      "G57776ZS"
     ], 
     "comp": {
       "Hex": 6, 
@@ -44106,8 +45498,8 @@
   }, 
   "G85465VT": {
     "children": [
-      "G46127OH", 
-      "G40278HT"
+      "G40278HT", 
+      "G46127OH"
     ], 
     "comp": {
       "Xxx": 2
@@ -44162,8 +45554,8 @@
   }, 
   "G85582CB": {
     "children": [
-      "G47690PH", 
       "G27871JA", 
+      "G47690PH", 
       "G88990AT", 
       "G77831QL"
     ], 
@@ -44176,8 +45568,8 @@
   }, 
   "G85652JB": {
     "children": [
-      "G79625ND", 
-      "G54409DE"
+      "G54409DE", 
+      "G79625ND"
     ], 
     "comp": {
       "Fuc": 2, 
@@ -44213,8 +45605,8 @@
   "G85740DB": {
     "children": [
       "G41071NU", 
-      "G91636VS", 
-      "G03499NH"
+      "G03499NH", 
+      "G91636VS"
     ], 
     "comp": {
       "Hex": 5, 
@@ -44238,9 +45630,9 @@
   }, 
   "G85811SG": {
     "children": [
-      "G11785HS", 
+      "G29176XQ", 
       "G81851QZ", 
-      "G29176XQ"
+      "G11785HS"
     ], 
     "comp": {
       "Hex": 1, 
@@ -44315,11 +45707,11 @@
   }, 
   "G85945LZ": {
     "children": [
-      "G37265SJ", 
-      "G51359TW", 
       "G18022IK", 
-      "G54095ZD", 
-      "G72753IQ"
+      "G72753IQ", 
+      "G51359TW", 
+      "G37265SJ", 
+      "G54095ZD"
     ], 
     "comp": {
       "Hex": 7, 
@@ -44330,10 +45722,10 @@
   }, 
   "G85987RP": {
     "children": [
-      "G11787WA", 
-      "G88949GU", 
-      "G26114NE", 
       "G52589SM", 
+      "G26114NE", 
+      "G88949GU", 
+      "G11787WA", 
       "G73231OJ"
     ], 
     "comp": {
@@ -44445,8 +45837,8 @@
   }, 
   "G86270PX": {
     "children": [
-      "G88202ST", 
-      "G87630CX"
+      "G87630CX", 
+      "G88202ST"
     ], 
     "comp": {
       "Hex": 4, 
@@ -44503,6 +45895,20 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G86325QC": {
+    "children": [
+      "G77864CN"
+    ], 
+    "comp": {
+      "Gal": 3, 
+      "GlcNAc": 2, 
+      "Hex": 12, 
+      "HexNAc": 2, 
+      "Man": 9
+    }, 
+    "top": true, 
+    "type": "composition"
   }, 
   "G86332KJ": {
     "children": [], 
@@ -44568,6 +45974,16 @@
       "dHex": 1
     }, 
     "top": true, 
+    "type": "composition"
+  }, 
+  "G86430YS": {
+    "children": [
+      "G37766VB", 
+      "G15434YJ"
+    ], 
+    "comp": {
+      "Xxx": 1
+    }, 
     "type": "composition"
   }, 
   "G86458FO": {
@@ -44740,9 +46156,9 @@
   }, 
   "G86725SE": {
     "children": [
-      "G16864PW", 
       "G65043VH", 
-      "G86491NG"
+      "G86491NG", 
+      "G16864PW"
     ], 
     "comp": {
       "Hex": 2, 
@@ -44775,8 +46191,8 @@
   "G86752LQ": {
     "children": [
       "G81263BG", 
-      "G79141MO", 
-      "G95938CO"
+      "G95938CO", 
+      "G79141MO"
     ], 
     "comp": {
       "Hex": 6, 
@@ -44800,9 +46216,9 @@
   }, 
   "G86800DW": {
     "children": [
-      "G39978NC", 
+      "G51256LN", 
       "G08337RT", 
-      "G51256LN"
+      "G39978NC"
     ], 
     "comp": {
       "Hex": 12, 
@@ -44902,9 +46318,9 @@
   }, 
   "G86860DC": {
     "children": [
-      "G15611KL", 
+      "G95141UV", 
       "G82777VB", 
-      "G95141UV"
+      "G15611KL"
     ], 
     "comp": {
       "Hex": 1, 
@@ -45040,10 +46456,10 @@
   }, 
   "G87051GH": {
     "children": [
-      "G26600KF", 
       "G83854JB", 
       "G25451PN", 
-      "G04657PL"
+      "G04657PL", 
+      "G26600KF"
     ], 
     "comp": {
       "Hex": 5, 
@@ -45099,6 +46515,16 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G87139BK": {
+    "children": [], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 6, 
+      "NeuAc": 2, 
+      "dHex": 1
+    }, 
+    "type": "composition"
   }, 
   "G87183DD": {
     "children": [
@@ -45183,8 +46609,8 @@
   }, 
   "G87404HF": {
     "children": [
-      "G26542SK", 
-      "G54992TS"
+      "G54992TS", 
+      "G26542SK"
     ], 
     "comp": {
       "Hex": 3, 
@@ -45252,8 +46678,8 @@
   }, 
   "G87573HF": {
     "children": [
-      "G89317KQ", 
-      "G04277WT"
+      "G04277WT", 
+      "G89317KQ"
     ], 
     "comp": {
       "Hex": 3, 
@@ -45265,8 +46691,8 @@
   }, 
   "G87630CX": {
     "children": [
-      "G30433EA", 
-      "G14014XC"
+      "G14014XC", 
+      "G30433EA"
     ], 
     "comp": {
       "Hex": 4, 
@@ -45279,9 +46705,9 @@
   }, 
   "G87636JF": {
     "children": [
-      "G19399OS", 
       "G27964BX", 
-      "G77854OM"
+      "G77854OM", 
+      "G19399OS"
     ], 
     "comp": {
       "HexNAc": 1, 
@@ -45303,11 +46729,11 @@
   }, 
   "G87661QW": {
     "children": [
-      "G14719NG", 
-      "G13429XC", 
       "G45751MB", 
-      "G80567IM", 
-      "G69161EB"
+      "G13429XC", 
+      "G14719NG", 
+      "G69161EB", 
+      "G80567IM"
     ], 
     "comp": {
       "Fuc": 2, 
@@ -45320,8 +46746,8 @@
   }, 
   "G87682NE": {
     "children": [
-      "G62824GF", 
       "G42313WU", 
+      "G62824GF", 
       "G01864SU"
     ], 
     "comp": {
@@ -45395,6 +46821,16 @@
     }, 
     "type": "composition"
   }, 
+  "G87849RX": {
+    "children": [], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 5, 
+      "dHex": 5
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G87857TS": {
     "children": [], 
     "comp": {
@@ -45413,6 +46849,16 @@
       "Gal": 1, 
       "Hex": 1, 
       "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G87875QF": {
+    "children": [], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 4, 
+      "NeuAc": 4
     }, 
     "top": true, 
     "type": "composition"
@@ -45639,10 +47085,10 @@
   }, 
   "G88214CS": {
     "children": [
-      "G59273RK", 
+      "G99080VN", 
       "G90691JV", 
-      "G34898TQ", 
-      "G99080VN"
+      "G59273RK", 
+      "G34898TQ"
     ], 
     "comp": {
       "Hex": 2, 
@@ -45655,10 +47101,10 @@
   }, 
   "G88218MF": {
     "children": [
+      "G08276QL", 
       "G92073XL", 
-      "G06921NN", 
       "G75099AE", 
-      "G08276QL"
+      "G06921NN"
     ], 
     "comp": {
       "Hex": 5, 
@@ -45701,7 +47147,6 @@
       "Glc": 4, 
       "Hex": 4
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G88296EI": {
@@ -45812,8 +47257,8 @@
   }, 
   "G88374WZ": {
     "children": [
-      "G45395BF", 
       "G17664QO", 
+      "G45395BF", 
       "G93293NV"
     ], 
     "comp": {
@@ -45838,8 +47283,8 @@
   }, 
   "G88429QE": {
     "children": [
-      "G05480UW", 
-      "G74511TC"
+      "G74511TC", 
+      "G05480UW"
     ], 
     "comp": {
       "Hex": 5, 
@@ -45851,11 +47296,11 @@
   }, 
   "G88431DQ": {
     "children": [
-      "G62001GM", 
-      "G76839XP", 
       "G93729MV", 
+      "G62001GM", 
       "G17698CK", 
-      "G99699DW"
+      "G99699DW", 
+      "G76839XP"
     ], 
     "comp": {
       "HexNAc": 1, 
@@ -46045,9 +47490,9 @@
   }, 
   "G88713AC": {
     "children": [
+      "G08017ND", 
       "G71743JP", 
-      "G92052QZ", 
-      "G08017ND"
+      "G92052QZ"
     ], 
     "comp": {
       "Hex": 1, 
@@ -46058,9 +47503,9 @@
   }, 
   "G88725PI": {
     "children": [
-      "G95177YH", 
       "G99123WR", 
-      "G04281QP"
+      "G04281QP", 
+      "G95177YH"
     ], 
     "comp": {
       "Hex": 3, 
@@ -46249,8 +47694,8 @@
   }, 
   "G89009DQ": {
     "children": [
-      "G96154EW", 
-      "G95762CJ"
+      "G95762CJ", 
+      "G96154EW"
     ], 
     "comp": {
       "Hex": 6, 
@@ -46331,10 +47776,10 @@
   }, 
   "G89204HL": {
     "children": [
-      "G83035SR", 
-      "G22020EN", 
+      "G86725SE", 
       "G89136QW", 
-      "G86725SE"
+      "G22020EN", 
+      "G83035SR"
     ], 
     "comp": {
       "Hex": 2, 
@@ -46430,6 +47875,16 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G89373FA": {
+    "children": [], 
+    "comp": {
+      "Hex": 3, 
+      "HexNAc": 7, 
+      "NeuAc": 2
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G89377JS": {
     "children": [
       "G55584MG", 
@@ -46491,7 +47946,6 @@
       "Gal": 3, 
       "Hex": 3
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G89516XH": {
@@ -46617,8 +48071,8 @@
   }, 
   "G89711AE": {
     "children": [
-      "G83966OK", 
-      "G31296RY"
+      "G31296RY", 
+      "G83966OK"
     ], 
     "comp": {
       "Xxx": 2
@@ -46629,8 +48083,8 @@
   "G89753VJ": {
     "children": [
       "G66334HW", 
-      "G36101FO", 
-      "G78578OA"
+      "G78578OA", 
+      "G36101FO"
     ], 
     "comp": {
       "Xxx": 1
@@ -46652,7 +48106,7 @@
   }, 
   "G89864HJ": {
     "children": [
-      "G58169SI", 
+      "G22816WV", 
       "G09551MC"
     ], 
     "comp": {
@@ -46751,6 +48205,19 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G90112LJ": {
+    "children": [
+      "G30621VE"
+    ], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 5, 
+      "NeuAc": 2, 
+      "dHex": 3
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G90116OB": {
     "children": [
       "G67439KO"
@@ -46788,6 +48255,16 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G90245IA": {
+    "children": [], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 7, 
+      "NeuAc": 1, 
+      "dHex": 1
+    }, 
+    "type": "composition"
+  }, 
   "G90275DB": {
     "children": [], 
     "comp": {
@@ -46817,8 +48294,8 @@
   }, 
   "G90306QO": {
     "children": [
-      "G88288TV", 
-      "G65968NT", 
+      "G74312HX", 
+      "G17425SJ", 
       "G69791DF", 
       "G31690TW"
     ], 
@@ -46899,11 +48376,21 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G90386IR": {
+    "children": [], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 5, 
+      "NeuAc": 1, 
+      "dHex": 4
+    }, 
+    "type": "composition"
+  }, 
   "G90415UF": {
     "children": [
-      "G03789UH", 
+      "G11123OD", 
       "G51195LR", 
-      "G11123OD"
+      "G03789UH"
     ], 
     "comp": {
       "Hex": 2, 
@@ -47012,11 +48499,11 @@
   }, 
   "G90627TW": {
     "children": [
-      "G45116DB", 
-      "G90960QG", 
+      "G71858IU", 
       "G07133YY", 
-      "G85505CT", 
-      "G91902ZT"
+      "G46621QD", 
+      "G91902ZT", 
+      "G85505CT"
     ], 
     "comp": {
       "Hex": 2
@@ -47026,13 +48513,13 @@
   }, 
   "G90659AW": {
     "children": [
-      "G17637MB", 
       "G66600ZZ", 
-      "G34813CA", 
-      "G18140UF", 
-      "G18995QY", 
+      "G76605ZF", 
       "G10567NI", 
-      "G76605ZF"
+      "G34813CA", 
+      "G18995QY", 
+      "G17637MB", 
+      "G18140UF"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -47079,6 +48566,20 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G90703NA": {
+    "children": [
+      "G80869MR"
+    ], 
+    "comp": {
+      "Gal": 1, 
+      "GlcNAc": 1, 
+      "Hex": 1, 
+      "HexNAc": 1, 
+      "S": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G90721BU": {
     "children": [
       "G52945FK", 
@@ -47089,7 +48590,6 @@
       "Hex": 1, 
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G90731QG": {
@@ -47145,6 +48645,16 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G90846UZ": {
+    "children": [
+      "G52120VJ", 
+      "G17684ZL"
+    ], 
+    "comp": {
+      "Xxx": 1
+    }, 
+    "type": "composition"
+  }, 
   "G90856XJ": {
     "children": [
       "G65882PP"
@@ -47177,7 +48687,6 @@
       "Gal": 2, 
       "Hex": 2
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G90989JC": {
@@ -47195,9 +48704,9 @@
   }, 
   "G91034CB": {
     "children": [
-      "G97684YT", 
       "G87814KJ", 
-      "G54800IU"
+      "G54800IU", 
+      "G97684YT"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -47248,6 +48757,16 @@
       "HexNAc": 3, 
       "Xxx": 1
     }, 
+    "type": "basecomposition"
+  }, 
+  "G91158SA": {
+    "children": [], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 8, 
+      "dHex": 3
+    }, 
+    "top": true, 
     "type": "basecomposition"
   }, 
   "G91161EQ": {
@@ -47353,7 +48872,6 @@
       "Glc": 1, 
       "Hex": 3
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G91360AG": {
@@ -47440,11 +48958,11 @@
   }, 
   "G91507LH": {
     "children": [
-      "G22997XD", 
       "G45955HJ", 
-      "G07772WU", 
+      "G22997XD", 
+      "G67555FG", 
       "G51263YR", 
-      "G67555FG"
+      "G07772WU"
     ], 
     "comp": {
       "S": 5, 
@@ -47508,12 +49026,11 @@
       "Man": 7, 
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G91621FZ": {
     "children": [
-      "G91614MN"
+      "G84800EW"
     ], 
     "comp": {
       "Hex": 7, 
@@ -47578,6 +49095,19 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G91809AH": {
+    "children": [
+      "G32126LE"
+    ], 
+    "comp": {
+      "Gal": 2, 
+      "GalNAc": 1, 
+      "Hex": 2, 
+      "HexNAc": 1, 
+      "Xxx": 3
+    }, 
+    "type": "composition"
   }, 
   "G91872FW": {
     "children": [
@@ -47735,12 +49265,12 @@
   }, 
   "G92050GC": {
     "children": [
-      "G66538GV", 
-      "G38754EC", 
       "G12530CV", 
-      "G86052EW", 
+      "G74249RH", 
       "G53487IK", 
-      "G74249RH"
+      "G66538GV", 
+      "G86052EW", 
+      "G38754EC"
     ], 
     "comp": {
       "Hex": 4, 
@@ -47794,8 +49324,8 @@
   }, 
   "G92119WG": {
     "children": [
-      "G52554TX", 
-      "G05957DR"
+      "G05957DR", 
+      "G52554TX"
     ], 
     "comp": {
       "Hex": 4, 
@@ -47905,16 +49435,16 @@
   }, 
   "G92275SC": {
     "children": [
-      "G65925TC", 
-      "G26614JB", 
       "G72539HB", 
-      "G26852GL", 
       "G70862QJ", 
+      "G23088YX", 
+      "G65925TC", 
       "G51706ER", 
-      "G82121AH", 
       "G71001XO", 
       "G48695AS", 
-      "G23088YX"
+      "G82121AH", 
+      "G26852GL", 
+      "G26614JB"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -48055,15 +49585,14 @@
       "Glc": 1, 
       "Hex": 7
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G92597CK": {
     "children": [
-      "G55383ZG", 
       "G46998WZ", 
-      "G44778AE", 
-      "G92133SS"
+      "G92133SS", 
+      "G55383ZG", 
+      "G44778AE"
     ], 
     "comp": {
       "Hex": 4, 
@@ -48113,8 +49642,8 @@
   }, 
   "G92628UB": {
     "children": [
-      "G49831IG", 
       "G70375XQ", 
+      "G49831IG", 
       "G95344OF"
     ], 
     "comp": {
@@ -48146,8 +49675,8 @@
   }, 
   "G92638UJ": {
     "children": [
-      "G65153LB", 
-      "G33002XT"
+      "G33002XT", 
+      "G65153LB"
     ], 
     "comp": {
       "Hex": 2, 
@@ -48156,10 +49685,20 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G92646KL": {
+    "children": [], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 6, 
+      "dHex": 5
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G92672CY": {
     "children": [
-      "G41021HQ", 
-      "G46192UQ"
+      "G46192UQ", 
+      "G41021HQ"
     ], 
     "comp": {
       "Hex": 2, 
@@ -48248,6 +49787,15 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G92821TF": {
+    "children": [], 
+    "comp": {
+      "Hex": 4, 
+      "HexNAc": 4, 
+      "NeuGc": 1
+    }, 
+    "type": "composition"
   }, 
   "G92886PA": {
     "children": [], 
@@ -48375,8 +49923,8 @@
   }, 
   "G93060PB": {
     "children": [
-      "G35775NA", 
-      "G60073ZJ"
+      "G60073ZJ", 
+      "G35775NA"
     ], 
     "comp": {
       "Hex": 3, 
@@ -48418,8 +49966,8 @@
   "G93170PH": {
     "children": [
       "G03063FW", 
-      "G59437VP", 
-      "G26478VB"
+      "G26478VB", 
+      "G59437VP"
     ], 
     "comp": {
       "Hex": 4, 
@@ -48572,9 +50120,9 @@
   }, 
   "G93579XB": {
     "children": [
+      "G12641NB", 
       "G31685JQ", 
       "G40076YB", 
-      "G12641NB", 
       "G99932KY"
     ], 
     "comp": {
@@ -48649,9 +50197,9 @@
   }, 
   "G93729MV": {
     "children": [
-      "G05959HH", 
+      "G47654FF", 
       "G99149LX", 
-      "G47654FF"
+      "G05959HH"
     ], 
     "comp": {
       "GalNAc": 1, 
@@ -48716,6 +50264,15 @@
     }, 
     "type": "composition"
   }, 
+  "G93910IH": {
+    "children": [], 
+    "comp": {
+      "Hex": 8, 
+      "HexNAc": 8
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G93917TY": {
     "children": [], 
     "comp": {
@@ -48733,6 +50290,18 @@
       "Gal": 1, 
       "Hex": 1
     }, 
+    "type": "composition"
+  }, 
+  "G93931KT": {
+    "children": [
+      "G78587RA"
+    ], 
+    "comp": {
+      "Gal": 1, 
+      "Hex": 1, 
+      "Xxx": 1
+    }, 
+    "top": true, 
     "type": "composition"
   }, 
   "G93939KF": {
@@ -48847,11 +50416,11 @@
   }, 
   "G94094XU": {
     "children": [
-      "G17756LB", 
+      "G66150FA", 
+      "G05566SL", 
       "G50037ZJ", 
       "G69972LT", 
-      "G05566SL", 
-      "G66150FA"
+      "G17756LB"
     ], 
     "comp": {
       "Hex": 2, 
@@ -48932,6 +50501,20 @@
       "Hex": 2, 
       "HexNAc": 4, 
       "dHex": 2
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G94213WH": {
+    "children": [
+      "G54801RD"
+    ], 
+    "comp": {
+      "Gal": 6, 
+      "Glc": 1, 
+      "GlcNAc": 3, 
+      "Hex": 7, 
+      "HexNAc": 3
     }, 
     "top": true, 
     "type": "composition"
@@ -49081,12 +50664,24 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G94562PU": {
+    "children": [
+      "G73938CM"
+    ], 
+    "comp": {
+      "Gal": 1, 
+      "Hex": 1, 
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
   "G94583DZ": {
     "children": [
-      "G65070RM", 
       "G22355FZ", 
-      "G61985YC", 
-      "G97803FU"
+      "G65070RM", 
+      "G97803FU", 
+      "G61985YC"
     ], 
     "comp": {
       "Hex": 1, 
@@ -49247,9 +50842,9 @@
   }, 
   "G94917XT": {
     "children": [
-      "G52419HT", 
       "G02830TY", 
-      "G70232NH"
+      "G70232NH", 
+      "G52419HT"
     ], 
     "comp": {
       "Hex": 6, 
@@ -49297,10 +50892,10 @@
   }, 
   "G95024TJ": {
     "children": [
-      "G64645CG", 
       "G14551EO", 
-      "G44519PR", 
-      "G86273TY"
+      "G86273TY", 
+      "G64645CG", 
+      "G44519PR"
     ], 
     "comp": {
       "Hex": 3, 
@@ -49386,8 +50981,8 @@
   "G95177YH": {
     "children": [
       "G10821MC", 
-      "G16506QZ", 
-      "G96140ZQ"
+      "G96140ZQ", 
+      "G16506QZ"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -49479,7 +51074,6 @@
       "HexNAc": 1, 
       "dHex": 2
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G95345VY": {
@@ -49652,8 +51246,8 @@
   "G95678HJ": {
     "children": [
       "G25001IW", 
-      "G63445YU", 
-      "G53075ES"
+      "G53075ES", 
+      "G63445YU"
     ], 
     "comp": {
       "Hex": 7, 
@@ -49686,6 +51280,19 @@
       "Hex": 11, 
       "HexNAc": 5, 
       "Xxx": 1, 
+      "dHex": 1
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
+  "G95781QM": {
+    "children": [
+      "G80586MF"
+    ], 
+    "comp": {
+      "Hex": 8, 
+      "HexNAc": 6, 
+      "NeuAc": 3, 
       "dHex": 1
     }, 
     "top": true, 
@@ -49748,8 +51355,8 @@
   }, 
   "G95835XS": {
     "children": [
-      "G39144DK", 
-      "G92803WT"
+      "G92803WT", 
+      "G39144DK"
     ], 
     "comp": {
       "Hex": 4, 
@@ -49761,11 +51368,11 @@
   }, 
   "G95865ZB": {
     "children": [
-      "G61147VR", 
       "G72291OX", 
       "G76239MA", 
-      "G92886PA", 
-      "G11339YA"
+      "G11339YA", 
+      "G61147VR", 
+      "G92886PA"
     ], 
     "comp": {
       "Hex": 4, 
@@ -49791,9 +51398,9 @@
   }, 
   "G95938CO": {
     "children": [
-      "G39628JL", 
       "G54456ZM", 
-      "G37625RX"
+      "G37625RX", 
+      "G39628JL"
     ], 
     "comp": {
       "Fuc": 1, 
@@ -49875,8 +51482,8 @@
   }, 
   "G96042XF": {
     "children": [
-      "G90743YS", 
-      "G98643XP"
+      "G98643XP", 
+      "G90743YS"
     ], 
     "comp": {
       "Hex": 6, 
@@ -50053,8 +51660,8 @@
   }, 
   "G96284AG": {
     "children": [
-      "G54806CZ", 
       "G13539OP", 
+      "G54806CZ", 
       "G62765NO"
     ], 
     "comp": {
@@ -50063,6 +51670,18 @@
       "Xxx": 2
     }, 
     "type": "basecomposition"
+  }, 
+  "G96296PU": {
+    "children": [
+      "G40783MY"
+    ], 
+    "comp": {
+      "Hex": 2, 
+      "Man": 2, 
+      "P": 1
+    }, 
+    "top": true, 
+    "type": "composition"
   }, 
   "G96308CY": {
     "children": [
@@ -50075,6 +51694,17 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G96311MW": {
+    "children": [
+      "G70990JM"
+    ], 
+    "comp": {
+      "Gal": 2, 
+      "Hex": 2, 
+      "Xxx": 2
+    }, 
+    "type": "composition"
   }, 
   "G96356PZ": {
     "children": [
@@ -50150,9 +51780,9 @@
   }, 
   "G96461OX": {
     "children": [
-      "G15767QI", 
       "G33105JZ", 
-      "G14079XV"
+      "G14079XV", 
+      "G15767QI"
     ], 
     "comp": {
       "Hex": 7, 
@@ -50277,9 +51907,9 @@
   "G96743ZH": {
     "children": [
       "G80012SO", 
+      "G81621VO", 
       "G83162QK", 
-      "G00784PW", 
-      "G81621VO"
+      "G00784PW"
     ], 
     "comp": {
       "Hex": 3, 
@@ -50421,6 +52051,20 @@
     "comp": {
       "Hex": 4, 
       "Man": 4, 
+      "Xxx": 1
+    }, 
+    "top": true, 
+    "type": "composition"
+  }, 
+  "G97108FC": {
+    "children": [
+      "G98556BK"
+    ], 
+    "comp": {
+      "Gal": 1, 
+      "GlcNAc": 1, 
+      "Hex": 1, 
+      "HexNAc": 1, 
       "Xxx": 1
     }, 
     "top": true, 
@@ -50673,9 +52317,9 @@
   }, 
   "G97591GH": {
     "children": [
-      "G61307IR", 
       "G43847EM", 
-      "G04586OG"
+      "G04586OG", 
+      "G61307IR"
     ], 
     "comp": {
       "Hex": 8
@@ -50698,10 +52342,10 @@
   }, 
   "G97645GD": {
     "children": [
-      "G83435FE", 
       "G43819KA", 
-      "G28624WT", 
-      "G27508XR"
+      "G27508XR", 
+      "G83435FE", 
+      "G28624WT"
     ], 
     "comp": {
       "S": 1, 
@@ -50836,6 +52480,19 @@
     "top": true, 
     "type": "composition"
   }, 
+  "G97860KA": {
+    "children": [
+      "G30123TP"
+    ], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 4, 
+      "NeuGc": 1, 
+      "dHex": 2
+    }, 
+    "top": true, 
+    "type": "basecomposition"
+  }, 
   "G97877QT": {
     "children": [], 
     "comp": {
@@ -50911,9 +52568,9 @@
   }, 
   "G98062TX": {
     "children": [
-      "G53220RD", 
+      "G61888BG", 
       "G83275YO", 
-      "G61888BG"
+      "G53220RD"
     ], 
     "comp": {
       "Hex": 3, 
@@ -51015,10 +52672,19 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G98208DX": {
+    "children": [], 
+    "comp": {
+      "Hex": 5, 
+      "HexNAc": 7, 
+      "NeuAc": 1
+    }, 
+    "type": "composition"
+  }, 
   "G98209HP": {
     "children": [
-      "G52353WM", 
-      "G60900QT"
+      "G60900QT", 
+      "G52353WM"
     ], 
     "comp": {
       "Hex": 6, 
@@ -51073,8 +52739,8 @@
   }, 
   "G98316ZJ": {
     "children": [
-      "G99572EO", 
-      "G27976LM"
+      "G27976LM", 
+      "G99572EO"
     ], 
     "comp": {
       "S": 2, 
@@ -51215,6 +52881,16 @@
     "top": true, 
     "type": "basecomposition"
   }, 
+  "G98544EX": {
+    "children": [], 
+    "comp": {
+      "Hex": 6, 
+      "HexNAc": 6, 
+      "NeuAc": 2, 
+      "dHex": 2
+    }, 
+    "type": "composition"
+  }, 
   "G98556BK": {
     "children": [], 
     "comp": {
@@ -51224,7 +52900,6 @@
       "HexNAc": 1, 
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G98562RJ": {
@@ -51242,9 +52917,9 @@
   }, 
   "G98596OT": {
     "children": [
-      "G08236FT", 
       "G17145ZE", 
-      "G92963UI"
+      "G92963UI", 
+      "G08236FT"
     ], 
     "comp": {
       "Hex": 6, 
@@ -51256,8 +52931,8 @@
   }, 
   "G98611JV": {
     "children": [
-      "G82635ZC", 
-      "G73510JF"
+      "G73510JF", 
+      "G82635ZC"
     ], 
     "comp": {
       "Hex": 5, 
@@ -51315,14 +52990,13 @@
       "Man": 3, 
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G98784QC": {
     "children": [
-      "G17375VW", 
       "G70141XK", 
-      "G26485YR"
+      "G26485YR", 
+      "G17375VW"
     ], 
     "comp": {
       "Hex": 6, 
@@ -51413,8 +53087,8 @@
   }, 
   "G98993TR": {
     "children": [
-      "G73372SB", 
-      "G46433HY"
+      "G46433HY", 
+      "G73372SB"
     ], 
     "comp": {
       "Hex": 4, 
@@ -51427,17 +53101,17 @@
   }, 
   "G99055MR": {
     "children": [
-      "G14209ID", 
+      "G73117KN", 
+      "G29945WW", 
       "G82509CX", 
+      "G89279HX", 
+      "G23662YX", 
+      "G14209ID", 
       "G56432LZ", 
-      "G74976JY", 
+      "G80582MQ", 
       "G83239YN", 
       "G89753VJ", 
-      "G80582MQ", 
-      "G29945WW", 
-      "G73117KN", 
-      "G89279HX", 
-      "G23662YX"
+      "G74976JY"
     ], 
     "comp": {
       "Xxx": 1
@@ -51496,7 +53170,6 @@
     "comp": {
       "Xxx": 1
     }, 
-    "top": true, 
     "type": "composition"
   }, 
   "G99149LX": {
@@ -51772,9 +53445,9 @@
   }, 
   "G99699DW": {
     "children": [
-      "G08009WT", 
+      "G12258ZA", 
       "G10140TR", 
-      "G12258ZA"
+      "G08009WT"
     ], 
     "comp": {
       "GalNAc": 1, 
@@ -51815,6 +53488,16 @@
     }, 
     "top": true, 
     "type": "basecomposition"
+  }, 
+  "G99813OP": {
+    "children": [
+      "G66708XV", 
+      "G27539FC"
+    ], 
+    "comp": {
+      "Xxx": 1
+    }, 
+    "type": "composition"
   }, 
   "G99834WZ": {
     "children": [], 
