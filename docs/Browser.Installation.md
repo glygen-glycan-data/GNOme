@@ -7,23 +7,29 @@ Linked External resouces: display name, url and glycan set.
 ```
 
 ## Supporting data
-2 separate JSON files are required for the viewer.
-### [Primary data](https://github.com/glygen-glycan-data/GNOme/blob/master/GNOme.browser.json)
-Primary glycan relational information.
-### [Composition and base composition button configuration](https://github.com/glygen-glycan-data/GNOme/blob/master/GNOme.browser.composition.json)
-Only used for quickly configuring to selected GlyTouCan composition. [Example](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html?focus=G54064OC)
+### [GNOme Browser Data](https://github.com/glygen-glycan-data/GNOme/blob/master/BrowserData.json)
+It is a minimal version of GNOme data encoded by JSON, only used to support GNOme viewer.
 
 ## 3rd Party JavaScript Dependencies
-### [D3.js](https://d3js.org/)
 ### [Vis.js](https://visjs.org/)
 ### [jQuery](https://jquery.com/)
-### [zebra_dialog](https://github.com/stefangabos/Zebra_Dialog)
 
-## Installation
-1. Include JavaScript libraries, style sheet, and 2 driving scripts (CBTN.js/CBTN_cs.js and hgv2.js) in the head section of HTML.
+## Easy Installation
+1. Include 2 JavaScript libraries and the driving scripts (gnome.js) in the head section of HTML.
 2. Prepare a div in the page with explicit ID.
-3. Initiate a CBTN instance, and provide theme, ID of div container and data to the instance.
-4. Call initializeFromPara method.
+3. Initiate a GNOmeBrowser instance, and provide ID of div container to the instance.
+4. Call Init method with supported parameters.
+
+## Full Screen mode:
+If the whole html page is prepared for the GNOme browser, it is best to let the 
+GNOmeDisplayPresetFullScreen class to control resize, URL parameter, HTML title and other things.
+
+## Widget mode:
+1. Use a variety of set method to change widget width, height, Image source, icon style and other things.
+2. Use API to get the current status of the widget.
+3. Use API to change the current status.
+4. Use setfocus to focus on a few things.
+5. Use RefreshUI to refresh the widget to show the changes.
 
 See example: [GNOme Topology Browser](https://github.com/glygen-glycan-data/GNOme/blob/master/GNOme.browser.html)
 
@@ -31,3 +37,5 @@ See example: [GNOme Topology Browser](https://github.com/glygen-glycan-data/GNOm
 First version of GNOme viewer: [GlyTouCan](https://rawcdn.githack.com/glygen-glycan-data/GNOme/3df5b91aaafcc83fe24b14103d7288822200830d/GNOme.browser.old.html), 
 [BCSDB](https://rawcdn.githack.com/glygen-glycan-data/GNOme/3df5b91aaafcc83fe24b14103d7288822200830d/restrictions/GNOme_BCSDB.browser.old.html) and
 [GlyGen](https://rawcdn.githack.com/glygen-glycan-data/GNOme/3df5b91aaafcc83fe24b14103d7288822200830d/restrictions/GNOme_GlyGen.browser.old.html)
+
+
