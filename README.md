@@ -13,7 +13,7 @@ Use the [GNOme Glycan Structure Browser](https://gnome.glyomics.org/StructureBro
 
 Use the [GNOme Glycan Composition Browser](https://gnome.glyomics.org/CompositionBrowser.html?) to find glycan compositions by composition and subsumption relationships.
 
-Deep-linking is also supported, to jump to a specific GlyTouCan acccession: [G62109NW](https://gnome.glyomics.org/GNOme.browser.html?focus=G62109NW) or button state: [HexNAc(5)Hex(6)](https://gnome.glyomics.org/GNOme.browser.html?HexNAc=5&Hex=6).
+Deep-linking is also supported, to jump to a specific GlyTouCan acccession: [G62109NW](https://gnome.glyomics.org/StructureBrowser.html?focus=G62109NW) or button state: [HexNAc(5)Hex(6)](https://gnome.glyomics.org/StructureBrowser.html?HexNAc=5&Hex=6).
 
 ### Restrictions ###
 [GNOme restrictions](restrictions) support speciifc subsets of GlyTouCan accessions:
