@@ -723,6 +723,27 @@ let glycanviewer = {
             rightClickMenuGenerator(clickData, thisLib.para);
         }, false);
 
+        function CreateEntry() {
+            var entry = document.createElement("dt");
+            entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
+            entry.onmouseover = function(d){
+                this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #111111";
+            };
+            entry.onmouseout = function(d){
+                this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333";
+            };
+            return entry
+        }
+
+        function ToClipBoard(str) {
+            const el = document.createElement('textarea');
+            el.value = str;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+        }
+
         function rightClickMenuGenerator(clickData, para){
             //console.log(clickData);
             document.addEventListener("click",clearEverythingInContextMenu,{once: true});
@@ -735,13 +756,10 @@ let glycanviewer = {
             var x = clickData.layerX;
             var y = clickData.layerY;
             clickData.preventDefault();
+            menuELE.style = "margin: 0; padding: 0; overflow: hidden; position: absolute; left: "+x+"px; top: "+y+"px; background-color: #333333; border: none; ";//width: 100px; height: 100px
 
-            var root = thisLib.rootname;
-            //var selectedNodes = thisLib.network.getSelectedNodes();
+
             var selectedNode = thisLib.network.getNodeAt({x:x,y:y});
-            var selectedNodes = [ selectedNode ];
-            var connectedNodes = [];
-
             if (selectedNode !== undefined && selectedNode !== "Topology" && !selectedNode.startsWith("fake") && !selectedNode.endsWith("3dots")){
 
             }else{
@@ -751,70 +769,42 @@ let glycanviewer = {
             var pureGTCre = /^G\d{5}\w{2}$/;
             var pureGTCres = selectedNode.match(pureGTCre);
             if (Array.isArray(pureGTCres) && pureGTCres.length == 1){
-                var entry = document.createElement("dt");
-                entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
-                entry.onmouseover = function(d){
-                    this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #111111";
-                };
-                entry.onmouseout = function(d){
-                    this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333";
-                };
+                var entry = CreateEntry();
                 entry.innerHTML = "Copy accession"; //change the description
                 entry.name = selectedNode;
 
                 entry.onclick = function(){
-                    var nodeID = this.name;
-
-                    const el = document.createElement('textarea');
-                    el.value = nodeID;
-                    document.body.appendChild(el);
-                    el.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(el);
+                    ToClipBoard(this.name);
                 };
                 menuList.appendChild(entry);
             }
 
-            var descendants = thisLib.para.GNOmeBrowser.GetDescendants(selectedNode);
-            if (descendants.length > 0){
-                var entry = document.createElement("dt");
-                entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
-                entry.onmouseover = function(d){
-                    this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #111111";
-                };
-                entry.onmouseout = function(d){
-                    this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333";
-                };
-                entry.innerHTML = "Copy descendants"; //change the description
+            var things = [
+                ["ancestors", thisLib.para.GNOmeBrowser.GetAncestorsForCopy(selectedNode)],
+                ["descendants", thisLib.para.GNOmeBrowser.GetDescendantsForCopy(selectedNode)]
+            ];
 
-                var descendants_str = "";
-                for (var des of descendants){
-                    descendants_str += des + "\n";
+            for (var thing of things){
+                var title = thing[0];
+                var targets = thing[1];
+
+                if (targets.length > 1){
+                    var entry = CreateEntry();
+                    entry.innerHTML = "Copy "+title;
+
+                    var strx = "";
+                    for (var x of targets){
+                        strx += x + "\n";
+                    }
+                    entry.name = strx;
+
+                    entry.onclick = function(){
+                        ToClipBoard(this.name);
+                    };
+                    menuList.appendChild(entry);
                 }
-                entry.name = descendants_str;
-
-                entry.onclick = function(){
-                    var nodeID = this.name;
-
-                    const el = document.createElement('textarea');
-                    el.value = nodeID;
-                    document.body.appendChild(el);
-                    el.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(el);
-                };
-                menuList.appendChild(entry);
             }
 
-
-
-            //updateList("Close Menu","dt");
-            menuELE.style = "margin: 0; padding: 0; overflow: hidden; position: absolute; left: "+x+"px; top: "+y+"px; background-color: #333333; border: none; ";//width: 100px; height: 100px
-
-            var entry = document.createElement("dt");
-            entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
-            entry.innerHTML = "Go to:";
-            // menuList.appendChild(entry);
 
             var nojumpflag = true;
             var externalLinks = para["contextMenu"]["externalLinks"];
@@ -824,54 +814,35 @@ let glycanviewer = {
                 var suffix = externalLink["url_suffix"] || "";
                 var accs = externalLink["glycan_set"];
 
-                if (selectedNode !== undefined && selectedNode !== "Topology" && !selectedNode.startsWith("fake") && !selectedNode.endsWith("3dots")){
-                    var entry = document.createElement("dt");
-                    entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
-                    entry.onmouseover = function(d){
-                        this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #111111";
-                    };
-                    entry.onmouseout = function(d){
-                        this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333";
-                    };
-                    entry.innerHTML = "&nbsp&#x2192;&nbsp" + title; //change the description
-                    entry.name = selectedNode;
-                    entry.setAttribute("data-prefix", prefix);
-                    entry.setAttribute("data-suffix", suffix);
+                var entry = CreateEntry();
+                entry.innerHTML = "&nbsp&#x2192;&nbsp" + title; //change the description
+                entry.name = selectedNode;
+                entry.setAttribute("data-prefix", prefix);
+                entry.setAttribute("data-suffix", suffix);
 
-                    entry.onclick = function(){
-                        var nodeID = this.name;
-                        var pre = this.getAttribute("data-prefix");
-                        var suf = this.getAttribute("data-suffix");
-                        var externalURL = pre + nodeID + suf;
-                        window.open(externalURL);
-                    };
+                entry.onclick = function(){
+                    var nodeID = this.name;
+                    var pre = this.getAttribute("data-prefix");
+                    var suf = this.getAttribute("data-suffix");
+                    var externalURL = pre + nodeID + suf;
+                    window.open(externalURL);
+                };
 
-                    var existFlag = false;
-                    if (accs == undefined){
-                        existFlag = true;
-                    }
-                    else if (accs.includes(selectedNode)){
-                        existFlag = true;
-                    }
+                var existFlag = false;
+                if (accs == undefined){
+                    existFlag = true;
+                }
+                else if (accs.includes(selectedNode)){
+                    existFlag = true;
+                }
 
-                    if (existFlag){
-                        nojumpflag = false;
-                        menuList.appendChild(entry);
-                    }
+                if (existFlag){
+                    nojumpflag = false;
+                    menuList.appendChild(entry);
                 }
             }
-            /*
-            if (nojumpflag){
-                var entry = document.createElement("dt");
-                entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
-                entry.innerHTML = "Sorry, no link available.";
-                var menuList = document.createElement("dl");
-                menuList.appendChild(entry);
-            }
 
-             */
             menuELE.appendChild(menuList);
-
 
         }
 
@@ -1324,6 +1295,7 @@ function GNOmeBrowserBase (DIVID) {
     this.IUPACCompositionData = {};
     this.TopLevelThings = [];
     this.Synonym = {};
+    this.AllChildren = {};
 
     // Tailored parameter for different browser
     this.AllItems = undefined;
@@ -1545,6 +1517,8 @@ function GNOmeBrowserBase (DIVID) {
 
         this.RefreshUI();
 
+        this.ProcessRawDataWithRelationship(RawData);
+
     }
 
     this.GetJSON = function (url) {
@@ -1557,6 +1531,15 @@ function GNOmeBrowserBase (DIVID) {
 
     this.DataPreProcess = function (d) {
         throw "NotImplement";
+    }
+
+    this.ProcessRawDataWithRelationship = function (d) {
+
+        for (let acc of Object.keys(d)) {
+            if (Array.isArray(d[acc].children)) {
+                this.AllChildren[acc] = d[acc].children;
+            }
+        }
     }
 
     this.AllocateDIV = function (d) {
@@ -2224,11 +2207,69 @@ function GNOmeBrowserBase (DIVID) {
             res = res.concat(this.GetAncestors(p));
             let res2 = [];
             res.forEach(function (d) {
-                if (!Object.keys(res2).includes(d)){
+                if (!res2.includes(d)){
                     res2.push(d);
                 }
             });
             res = res2;
+        }
+        return res
+    }
+
+
+    this.GetDescendantsForCopy = function (acc) {
+        let res = [];
+        if (!Array.isArray(this.AllChildren[acc])){
+            return [acc]
+        }
+
+        for (let nc of this.AllChildren[acc]){
+            res = res.concat(JSON.parse(JSON.stringify(this.GetDescendantsForCopy(nc))));
+            res.push(nc);
+        }
+
+        let res2 = [];
+        res.forEach(function (d) {
+            if (!res2.includes(d)){
+                res2.push(d);
+            }
+        });
+        if (!res2.includes(acc)){
+            res2.push(acc)
+        }
+
+        return res2
+    }
+
+    this.GetParentsForCopy = function (acc) {
+        let res = [];
+        for (let p of Object.keys(this.AllChildren)){
+            if (this.AllChildren[p].includes(acc)){
+                res.push(p)
+            }
+        }
+        return res
+    }
+
+
+    this.GetAncestorsForCopy = function (acc) {
+        let res = this.GetParentsForCopy(acc);
+        if (res.length == 0){
+            return [acc]
+        }
+
+        for (let p of res){
+            res = res.concat(this.GetAncestorsForCopy(p));
+            let res2 = [];
+            res.forEach(function (d) {
+                if (!res2.includes(d)){
+                    res2.push(d);
+                }
+            });
+            res = res2;
+        }
+        if (!res.includes(acc)){
+            res.push(acc)
         }
         return res
     }
@@ -2654,7 +2695,7 @@ function GNOmeCompositionBrowser(DIVID) {
 
     this.AllItems = ['GlcNAc', 'GalNAc', 'ManNAc', 'HexNAc','Glc', 'Gal', 'Man', 'Hex','Fuc', 'dHex', 'NeuAc', 'NeuGc', 'Xxx', 'S', 'P', 'Me', 'X'];
     this.ScreenATitle = "GNOme Composition Selector";
-    this.MinHeight = 900;
+    this.MinHeight = 750;
     this.DataPreProcess = function (RawData) {
 
         let AllAccession = Object.keys(RawData);
