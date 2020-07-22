@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GNOme Browser</title>
+    <style>
+        * {
+            font-size: 100%;
+            font-family: Arial;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+
+    <script src="./JS/gnome.js"></script>
+
+</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164151077-4"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-164151077-4');
+</script>
+<body>
+<div id="gnome"></div>
+
+<script>
+    "use strict";
+
+    let gnome = new GNOmeStructureBrowser("gnome");
+    let FullScreenControl = new GNOmeDisplayPresetFullScreen(gnome);
+    let InitialPara = FullScreenControl.GetURLParameter();
+    InitialPara = FullScreenControl.FixAnyHexCount(InitialPara);
+
+    let Init = async function (){
+
+        // theme: default GlyTouCan GlyGen
+        await gnome.Init({
+            "data":"./BrowserData.json",
+            "theme":"./JS/theme/default.json",
+
+            // "icon_style":"cfg","image_url_prefix":"https://edwardslab.bmcb.georgetown.edu/~wzhang/web/glycan_images/cfg/extended/","image_url_suffix":".png",
+            // "icon_style":"cfg","image_url_prefix":"https://api.glygen.org/glycan/image/","image_url_suffix":"",
+            // "icon_style":"snfg", "image_url_prefix":"https://image.glycosmos.org/snfg/png/","image_url_suffix":"",
+        })
+
+        FullScreenControl.ResizeToCurrent();
+        FullScreenControl.StartMonitor();
+        FullScreenControl.UpdateGNOmeBrowser(InitialPara);
+
+    }
+    Init();
+
+
+</script>
+
+</body>
+</html>
