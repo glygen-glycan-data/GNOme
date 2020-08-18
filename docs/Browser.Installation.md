@@ -22,7 +22,8 @@ It is a minimal version of GNOme data encoded by JSON, only used to support GNOm
 
 ## Full Screen mode:
 If the whole html page is prepared for the GNOme browser, it is best to let the 
-GNOmeDisplayPresetFullScreen class to control resize, URL parameter, HTML title and other things.
+GNOmeDisplayPresetFullScreen class to control resize, URL parameter, HTML title and other things.<br>
+See example usage: [GNOme Topology Browser](https://github.com/glygen-glycan-data/GNOme/blob/master/StructureBrowser.html), [GNOme Composition Browser](https://github.com/glygen-glycan-data/GNOme/blob/master/CompositionBrowser.html)
 
 ## Widget mode:
 1. Use a variety of set method to change widget width, height, Image source, icon style and other things.
@@ -30,8 +31,6 @@ GNOmeDisplayPresetFullScreen class to control resize, URL parameter, HTML title 
 3. Use API to change the current status.
 4. Use setfocus to focus on a few things.
 5. Use RefreshUI to refresh the widget to show the changes.
-
-See example: [GNOme Topology Browser](https://github.com/glygen-glycan-data/GNOme/blob/master/GNOme.browser.html)
 
 ## Retired viewer
 First version of GNOme viewer: [GlyTouCan](https://rawcdn.githack.com/glygen-glycan-data/GNOme/3df5b91aaafcc83fe24b14103d7288822200830d/GNOme.browser.old.html), 

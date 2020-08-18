@@ -1,8 +1,8 @@
 # GNOme Browsers
 
-## [GNOme Structure Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html)
+## [GNOme Structure Browser](https://gnome.glyomics.org/StructureBrowser.html)
 Use the GNOme Glycan Structure Browser to find glycan structures by composition, topology, and subsumption relationships.
-## [GNOme Composition Browser](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.compositionselector.html)
+## [GNOme Composition Browser](https://gnome.glyomics.org/CompositionBrowser.html)
 Use the GNOme Glycan Composition Browser to find glycan compositions by composition and subsumption relationships.
 
 ## Topology/Composition Selection Tool
@@ -21,9 +21,9 @@ Simply clicked on the glycan images on the right to go to subsumption navigator.
 ### Quick help
 Simply clicked on the badge with question mark on top right.
 ### Example
-[Topology Selection Tool](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html?GlcNAc=2&HexNAc=2)
+[Topology Selection Tool](https://gnome.glyomics.org/StructureBrowser.html?GlcNAc=2&HexNAc=2)
 <br>
-[Composition Selection Tool](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.compositionselector.html?GlcNAc=2&HexNAc=2)
+[Composition Selection Tool](https://gnome.glyomics.org/CompositionBrowser.html?GlcNAc=2&HexNAc=2)
 
 ## Subsumption Navigator
 ### Browsing
@@ -35,13 +35,13 @@ Simply click on "Composition Browser" on top left.
 ### Ellipsis
 The ellipsis on the right hand side indicate there are more glycans are subsumed. The number below it indicate how many glycans were subsumed.  
 ### Example
-Subsumption Navigator for topology [G59480BZ](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html?focus=G59480BZ)
+Subsumption Navigator for topology [G59480BZ](https://gnome.glyomics.org/StructureBrowser.html?focus=G59480BZ)
 in structure browser.
 <br>
-Subsumption Navigator for composition [G27391WQ](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.compositionselector.html?focus=G27391WQ)
+Subsumption Navigator for composition [G27391WQ](https://gnome.glyomics.org/CompositionBrowser.html?focus=G27391WQ)
 in composition browser.
 <br>
-Subsumption Navigator for composition [G27391WQ](https://raw.githack.com/glygen-glycan-data/GNOme/master/GNOme.browser.html?focus=G27391WQ)
+Subsumption Navigator for composition [G27391WQ](https://gnome.glyomics.org/StructureBrowser.html?focus=G27391WQ)
 in structure browser.
 ## Banner on bottom
 Click on it to jump to GNOme repository.
