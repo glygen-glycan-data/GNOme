@@ -2507,10 +2507,10 @@ function GNOmeBrowserBase (DIVID) {
         else{
             let msg = '<br><br><br>';
             if (this.GlyTouCanAccessionRegex(acc)){
-                msg += 'Bad GlyTouCan accession: ' + acc;
+                msg += 'GlyTouCan accession not supported: ' + acc;
             }
             else{
-                msg += "Unable to recognize: " + d.trim();
+                msg += "Bad GlyTouCan accession: " + d.trim();
             }
 
             this.Alert('Error', msg, false)
