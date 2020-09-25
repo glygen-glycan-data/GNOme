@@ -1,7 +1,7 @@
 [GlyTouCan](http://glytoucan.org) provides stable accessions for glycans described at varyious degrees of characterization, including compositions (no linkage) and topologies (no carbon bond positions or anomeric configurations). 
 
 GNOme organizes these stable accessions  
-* for [interative browsing](#interactive-tools),
+* for [interactive browsing](#interactive-tools),
 * for [text-based searching](#semantic-names), and
 * for [automated reasoning](#current-release)
 * with well-defined characterization levels.
