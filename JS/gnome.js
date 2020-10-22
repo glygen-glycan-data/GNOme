@@ -1645,7 +1645,7 @@ function GNOmeBrowserBase (DIVID) {
 
             this.ContainerScreenAPartA.style = this.StyleScreenAPartA;
             this.ContainerScreenAPartB.style = this.StyleScreenAPartB;
-            this.ContainerScreenAPartB.style.width = this.Width - 130 + "px";
+            this.ContainerScreenAPartB.style.width = this.Width - 143 + "px";
             this.ContainerScreenAPartB.style.height = this.Height + "px";
 
             this.ContainerScreenSwitch.style.display = "none";
@@ -2510,7 +2510,7 @@ function GNOmeBrowserBase (DIVID) {
                 msg += 'GlyTouCan accession not supported: ' + acc;
             }
             else{
-                msg += "Bad GlyTouCan accession: " + d.trim();
+                msg += d.trim() + " could not be recognized";
             }
 
             this.Alert('Error', msg, false)
