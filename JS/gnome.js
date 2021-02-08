@@ -723,6 +723,24 @@ let glycanviewer = {
             rightClickMenuGenerator(clickData, thisLib.para);
         }, false);
 
+        var touchstartts;
+        thisLib.div_network.addEventListener("touchstart", function (clickData){
+            var d = new Date();
+            touchstartts = d.getTime();
+        }, false);
+
+        thisLib.div_network.addEventListener("touchend", function (clickData){
+
+            var d = new Date();
+            var touchduration = d.getTime() - touchstartts;
+
+            if (touchduration > 1000) {
+                rightClickMenuGenerator(clickData, thisLib.para);
+            }
+
+        }, false);
+
+
         function CreateEntry() {
             var entry = document.createElement("dt");
             entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
@@ -2929,11 +2947,17 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
             URLPara = "focus=" + Acc
         }
 
-        let FullURL = URL + "?" + URLPara;
+        let FullURL = URL;
+        if (URLPara.length > 0){
+            FullURL += "?" + URLPara;
+        }
         if (thisLib.PreventPushState){
             thisLib.PreventPushState = false;
         }else{
-            history.pushState({}, "", FullURL);
+            if (FullURL != window.location.href){
+                history.pushState({}, "", FullURL);
+            }
+
         }
 
 
