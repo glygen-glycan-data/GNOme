@@ -2220,7 +2220,6 @@ function GNOmeBrowserBase (DIVID) {
         let thisLib = this;
 
         let equivalent = d["result"]["equivalent"];
-        let image = d["result"]["image"];
         let relationship = d["result"]["relationship"];
         let subsumptionlvl = d["result"]["subsumption_level"];
         let buttonconfig = d["result"]["buttonconfig"]
@@ -2242,39 +2241,40 @@ function GNOmeBrowserBase (DIVID) {
         }
 
 
-        for (let parent of Object.keys(relationship)){
-            let children = relationship[parent];
-            // console.log(parent, children)
-
-            if (Object.keys(this.SubsumptionData).includes(parent)){
-                this.SubsumptionData[parent].Children = children
-            }
-
-            else if (parent.startsWith("Query")){
-
-                let eqgtcacc = equivalent[parent];
-                if (eqgtcacc != undefined){
-                    this.SubsumptionData[eqgtcacc].Children = children
-                }
-                else {
-
-                    this.SubsumptionData[parent] = {
-                        "SubsumptionLevel": subsumptionlvl[parent],
-                        "Children": children,
-                        "ButtonConfig": this.ButtonConfigCleanUp(buttonconfig[parent])
-                    }
-                }
-
-            }
-
-        }
-
-
-
         let focus = "Query";
         if (Object.keys(equivalent).includes("Query")){
             focus = equivalent["Query"]
+        } else {
+
+            for (let parent of Object.keys(relationship)) {
+                let children = relationship[parent];
+                // console.log(parent, children)
+
+                if (Object.keys(this.SubsumptionData).includes(parent)) {
+                    // IMPORTANT NOTE for multiple query support!
+                    // if children includes query glycans, and some query glycans are already existed in GlyTouCan. Than the translation from "Query_GlycanX" to "G0000XX" is needed
+                    this.SubsumptionData[parent].Children = children
+                } else if (parent.startsWith("Query")) {
+
+                    let eqgtcacc = equivalent[parent];
+                    if (eqgtcacc != undefined) {
+                        this.SubsumptionData[eqgtcacc].Children = children
+                    } else {
+
+                        this.SubsumptionData[parent] = {
+                            "SubsumptionLevel": subsumptionlvl[parent],
+                            "Children": children,
+                            "ButtonConfig": this.ButtonConfigCleanUp(buttonconfig[parent])
+                        }
+                    }
+
+                }
+
+            }
         }
+
+
+
 
         thisLib.SetFocus(focus);
         thisLib.RefreshUI();
