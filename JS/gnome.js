@@ -1413,7 +1413,7 @@ function GNOmeBrowserBase (DIVID) {
 
     // External links
     // this.SubsumptionComputingURL = "http://localhost:10984/";
-    this.SubsumptionComputingURL = "https://edwardslab.bmcb.georgetown.edu/subsumption/";
+    this.SubsumptionComputingURL = "https://subsumption.glyomics.org/";
     this.SubsumptionComputingDetailURL = "";
 
 
