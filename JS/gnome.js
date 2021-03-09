@@ -2216,6 +2216,7 @@ function GNOmeBrowserBase (DIVID) {
     this.SubsumptionRequest = function (sequences, ondemandtaskid){
         let thisLib = this;
 
+
         let imgURL = this.ImageGenerationURLBySeq(sequences);
         jQuery.getJSON(imgURL).then(function (d){});
         this.ImageComputed["Query"] = imgURL;
@@ -2235,6 +2236,13 @@ function GNOmeBrowserBase (DIVID) {
                 d = d[0];
                 if (d.finished){
 
+                    if (ondemandtaskid != undefined){
+                        let s = d.task.seqs.Query;
+                        let imgURL = thisLib.ImageGenerationURLBySeq(s);
+                        thisLib.ImageComputed["Query"] = imgURL;
+                        jQuery.getJSON(imgURL).then(function (d){});
+                    }
+
                     thisLib.CloseAlert();
                     thisLib.RenderRTResult(d);
 
@@ -2244,8 +2252,7 @@ function GNOmeBrowserBase (DIVID) {
             })
         }
 
-        // console.log(ondemandtaskid);
-        // ondemandtaskid=73397fd3cca82ef4c7403a87027abf6aol75l9nwy3jukip4d6ni
+
         if (ondemandtaskid == undefined){
             jQuery.getJSON(requestURL).then(function (d) {
                 d = d[0]
