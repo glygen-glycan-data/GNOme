@@ -1342,6 +1342,10 @@ function GNOmeBrowserBase (DIVID) {
     this.ScreenBTitle = "GNOme Subsumption Navigator";
     this.UpdateHighlightGlycansFlag = true;
     this.UpdateMonoFreqFlag = true;
+
+    this.ShowScoreFlag = false;
+
+
     this.TooltipHide = true;
     this.TooltipIndex = 0;
 
@@ -1395,8 +1399,8 @@ function GNOmeBrowserBase (DIVID) {
 
 
     // CSS style
-    this.StyleScreenA = "overflow: auto; ";
-    this.StyleScreenAPartA = "float: left; ";
+    this.StyleScreenA = "overflow: auto; padding-top: 8px; ";
+    this.StyleScreenAPartA = "float: left; padding-left: 8px; ";
     this.StyleScreenAPartB = "float: left; ";
     this.StyleScreenB = "";
 
@@ -1412,6 +1416,10 @@ function GNOmeBrowserBase (DIVID) {
 
 
     // External links
+
+    // this.GlyLookupURL = "http://localhost:10981/";
+    this.GlyLookupURL = "https://glylookup.glyomics.org/";
+
     // this.SubsumptionComputingURL = "http://localhost:10984/";
     this.SubsumptionComputingURL = "https://subsumption.glyomics.org/";
     this.SubsumptionComputingDetailURL = "";
@@ -1503,7 +1511,8 @@ function GNOmeBrowserBase (DIVID) {
 
     this.HintMessageForScreenA = "<ul style='position: relative; top: -20px; text-align: left; '><li>Click controls at left to add/remove monosaccharides</li>" +
         "<li>Click a Topology to jump to Subsumption Navigator</li>" +
-        "";
+        "<li>Click notepad on top right to align novel glycan</li>" +
+        "<li><a href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.OnDemandAlignment.md'>On-demand subsumption alignment manual</a></li>";
         //"<li>Shortcuts:</li><ul>" +
         //"<li>n/N - add/remove GlcNAc</li>" +
         //"<li>m/M - add/remove Man</li>" +
@@ -1572,14 +1581,19 @@ function GNOmeBrowserBase (DIVID) {
 
         let RawData = await this.GetJSON(para.data);
         this.DataPreProcess(RawData);
+        this.ComputeTopLevelThings();
         this.SubsumptionDataBackUp = JSON.parse(JSON.stringify(this.SubsumptionData));
         this.UpdateMaxPossibleComp();
 
         this.RefreshUI();
 
+        let tmp = this.GetCookie("ShowScoreFlag")
+        let ssf = tmp.toLowerCase() == "true";
+        this.SetShowScoreFlag(ssf)
         this.ProcessRawDataWithRelationship(RawData);
 
     }
+
 
     this.GetJSON = function (url) {
         return new Promise(resolve => {
@@ -1593,7 +1607,7 @@ function GNOmeBrowserBase (DIVID) {
         throw "NotImplement";
     }
 
-    this.DataPreProcessComputeTopLevel = function (d) {
+    this.ComputeTopLevelThings = function (d) {
         throw "NotImplement";
     }
 
@@ -1610,7 +1624,7 @@ function GNOmeBrowserBase (DIVID) {
 
         this.Container = document.getElementById(this.ContainerID);
         this.Container.innerHTML = "";
-        this.Container.style = ""; //
+        this.Container.style = "";
 
         this.ContainerInner = document.createElement("div");
         this.ContainerInner.style = "position: relative; overflow: hidden;";
@@ -1783,7 +1797,7 @@ function GNOmeBrowserBase (DIVID) {
 
             this.ContainerScreenAPartA.style = this.StyleScreenAPartA;
             this.ContainerScreenAPartB.style = this.StyleScreenAPartB;
-            this.ContainerScreenAPartB.style.width = this.Width - 143 + "px";
+            this.ContainerScreenAPartB.style.width = this.Width - 190 + "px";
             this.ContainerScreenAPartB.style.height = this.Height + "px";
 
             this.ContainerScreenSwitch.style.display = "none";
@@ -1840,9 +1854,8 @@ function GNOmeBrowserBase (DIVID) {
         this.SubsumptionNavigatorFocusAccession = "";
 
         this.ImageComputed = {};
-        this.ContainerCalculationSwitch.onclick = function (){
-            thisLib.CalculationBoxShow();
-        }
+
+        this.ComputeTopLevelThings();
 
         this.ClearCookie();
         this.RefreshUI();
@@ -2151,9 +2164,7 @@ function GNOmeBrowserBase (DIVID) {
     }
 
     this.CalculationGO = function (sequences, PreviousJobID){
-        // console.log(sequences);
 
-        // String of one glycan for now...
         sequences = sequences.trim();
 
         this.LoadingCircleShow();
@@ -2162,56 +2173,88 @@ function GNOmeBrowserBase (DIVID) {
 
         let thisLib = this;
 
-        let para = {};
-
-
         this.SetCookie("SubsumptionRTSeq", encodeURIComponent(sequences), 7);
 
-        let imgURL = this.ImageGenerationURLBySeq(sequences);
-        jQuery.getJSON(imgURL).then(function (d){});
-        // console.log(encodeURIComponent(sequences.trim()))
-        // console.log(imgURL)
 
-        para["seqs"] = {
-            "Query": sequences
+        let para = {
+            "seq": sequences
         };
 
-        this.ImageComputed["Query"] = imgURL;
+        let requestURL = thisLib.GlyLookupURL + "/submit?tasks=" + encodeURIComponent(JSON.stringify([para]));
 
 
-        let requestURL = thisLib.SubsumptionComputingURL + "/submit?tasks=" + encodeURIComponent(JSON.stringify([para]));
-
-
-        function GetResult(RealTimeCalculationHash){
-            let requestURL = thisLib.SubsumptionComputingURL + "/retrieve?list_ids=" + encodeURIComponent(JSON.stringify([RealTimeCalculationHash]));
-            thisLib.SubsumptionComputingDetailURL = requestURL;
+        function GetResult(GlylookupJobid){
+            let requestURL = thisLib.GlyLookupURL + "/retrieve?list_ids=" + encodeURIComponent(JSON.stringify([GlylookupJobid]));
 
             jQuery.getJSON(requestURL).then(function (d) {
                 d = d[0];
                 if (d.finished){
-                    // console.log(d["result"]);
 
-                    // Closing the spinning circle
+                    let eqgtcacc = d["result"];
+                    if (eqgtcacc.length > 0){
+                        thisLib.CloseAlert();
+                        thisLib.RenderRTResultWithKnownGlyTouCanAccession(eqgtcacc);
+                    } else {
+                        thisLib.SubsumptionRequest(sequences);
+                    }
+                }else{
+                    setTimeout(GetResult, 1000, GlylookupJobid);
+                }
+            })
+        }
+
+
+        jQuery.getJSON(requestURL).then(function (d) {
+            d = d[0]
+            thisLib.SetCookie("SubsumptionTaskID", d.id, 7);
+            GetResult(d.id);
+        })
+
+    }
+
+
+    this.SubsumptionRequest = function (sequences){
+        let thisLib = this;
+
+        let imgURL = this.ImageGenerationURLBySeq(sequences);
+        jQuery.getJSON(imgURL).then(function (d){});
+        this.ImageComputed["Query"] = imgURL;
+
+
+        let para = {};
+        para["seqs"] = {
+            "Query": sequences
+        };
+
+        let requestURL = thisLib.SubsumptionComputingURL + "/submit?tasks=" + encodeURIComponent(JSON.stringify([para]));
+
+        function GetResult(RealTimeCalculationHash){
+            let requestURL = thisLib.SubsumptionComputingURL + "/retrieve?list_ids=" + encodeURIComponent(JSON.stringify([RealTimeCalculationHash]));
+
+            jQuery.getJSON(requestURL).then(function (d) {
+                d = d[0];
+                if (d.finished){
+
                     thisLib.CloseAlert();
                     thisLib.RenderRTResult(d);
+
                 }else{
                     setTimeout(GetResult, 1000, RealTimeCalculationHash);
                 }
             })
         }
 
-        if (PreviousJobID == "") {
-            jQuery.getJSON(requestURL).then(function (d) {
-                d = d[0]
-                thisLib.SetCookie("SubsumptionTaskID", d.id, 7);
-                GetResult(d.id);
-            })
-        } else {
-            GetResult(PreviousJobID);
-        }
+
+        jQuery.getJSON(requestURL).then(function (d) {
+            d = d[0]
+            GetResult(d.id);
+        })
+    }
 
 
-
+    this.RenderRTResultWithKnownGlyTouCanAccession = function (accs) {
+        this.SetFocus(accs[0]);
+        this.RefreshUI();
     }
 
 
@@ -2240,45 +2283,74 @@ function GNOmeBrowserBase (DIVID) {
             this.Alert("Error(s)", message, false);
         }
 
+        if (Object.keys(equivalent).includes("Query")){
+            this.RenderRTResultWithKnownGlyTouCanAccession([equivalent["Query"]]);
+            return
+        }
+
 
         let focus = "Query";
-        if (Object.keys(equivalent).includes("Query")){
-            focus = equivalent["Query"]
-        } else {
+        let addquery = this.IsAllowedSubsumptionCategory(subsumptionlvl["Query"]);
+        for (let parent of Object.keys(relationship)) {
+            let children = relationship[parent];
 
-            for (let parent of Object.keys(relationship)) {
-                let children = relationship[parent];
-                // console.log(parent, children)
+            if (Object.keys(this.SubsumptionData).includes(parent)) {
+                this.SubsumptionData[parent].Children = this.FilterChildren(children, addquery)
+            } else if (parent.startsWith("Query")) {
 
-                if (Object.keys(this.SubsumptionData).includes(parent)) {
-                    // IMPORTANT NOTE for multiple query support!
-                    // if children includes query glycans, and some query glycans are already existed in GlyTouCan. Than the translation from "Query_GlycanX" to "G0000XX" is needed
-                    this.SubsumptionData[parent].Children = children
-                } else if (parent.startsWith("Query")) {
+                let eqgtcacc = equivalent[parent];
+                if (eqgtcacc != undefined) {
+                    this.SubsumptionData[eqgtcacc].Children = this.FilterChildren(children, addquery)
+                } else {
+                    let allow = this.IsAllowedSubsumptionCategory(subsumptionlvl[parent]);
 
-                    let eqgtcacc = equivalent[parent];
-                    if (eqgtcacc != undefined) {
-                        this.SubsumptionData[eqgtcacc].Children = children
-                    } else {
-
+                    if (allow){
                         this.SubsumptionData[parent] = {
                             "SubsumptionLevel": subsumptionlvl[parent],
-                            "Children": children,
+                            "Children": this.FilterChildren(children, addquery),
                             "ButtonConfig": this.ButtonConfigCleanUp(buttonconfig[parent])
                         }
                     }
 
+                    if (["composition", "basecomposition"].includes(subsumptionlvl[parent])){
+                        this.IUPACCompositionData[parent] = this.ButtonConfigCleanUp(buttonconfig[parent])
+                    }
                 }
-
             }
         }
 
-
-
+        this.ComputeTopLevelThings();
 
         thisLib.SetFocus(focus);
         thisLib.RefreshUI();
 
+    }
+
+    this.IsAllowedSubsumptionCategory = function (){
+        throw "NotImplement";
+    }
+
+    this.FilterChildren = function (children, addquery){
+        let allowedChildren = [];
+
+        for (let c of children){
+            if (c == "Query" && addquery){
+                allowedChildren.push(c)
+                continue
+            }
+
+            if (!Object.keys(this.SubsumptionData).includes(c)){
+                continue
+            }
+            if (allowedChildren.includes(c)){
+                continue
+            }
+            if (this.IsAllowedSubsumptionCategory(this.SubsumptionData[c].SubsumptionLevel)){
+                allowedChildren.push(c)
+            }
+        }
+
+        return allowedChildren
     }
 
     this.ImageGenerationURLBySeq = function (s) {
@@ -2489,7 +2561,12 @@ function GNOmeBrowserBase (DIVID) {
         figure.style.margin = 0;
         figure.id = "img_" + gtcid;
         let img = document.createElement("img");
-        img.src = this.ImageURLPrefix + gtcid + this.ImageURLSuffix;
+        if (gtcid.startsWith("Query")){
+            img.src = this.ImageComputed[gtcid];
+        } else {
+            img.src = this.ImageURLPrefix + gtcid + this.ImageURLSuffix;
+        }
+
         img.style = "width: 200px; height: auto;";
         let thisLib = this;
         img.onclick = function () {
@@ -2500,7 +2577,10 @@ function GNOmeBrowserBase (DIVID) {
             thisLib.RefreshUI();
         };
         let caption = document.createElement("figcaption");
-        caption.innerText = gtcid;
+        caption.innerHTML = gtcid;
+        if (this.ShowScoreFlag){
+            caption.innerHTML += "<br>" + this.SubsumptionData[gtcid].score
+        }
         caption.style.textAlign = "center";
 
         figure.appendChild(img);
@@ -2780,6 +2860,11 @@ function GNOmeBrowserBase (DIVID) {
         let nodes = {};
         for (let n of allNodes){
             nodes[n] = {"name": n};
+            if (this.ShowScoreFlag){
+                if (this.SubsumptionData[n] != undefined){
+                    nodes[n].label = n + "\n" + this.SubsumptionData[n].score;
+                }
+            }
             if (n == "Pseudo"){
                 nodes[n].type = "Pseudo";
                 nodes[n].hidden = true;
@@ -2882,8 +2967,6 @@ function GNOmeBrowserBase (DIVID) {
          */
 
     }
-
-
 
     // Functions for setting things
     this.SetIconConfig = function (IconStyle) {
@@ -3000,10 +3083,17 @@ function GNOmeBrowserBase (DIVID) {
 
     }
 
+
+    this.SetShowScoreFlag = function (f){
+        this.ShowScoreFlag = f;
+        this.SetCookie("ShowScoreFlag", f, 7)
+    }
+
     this.GlyTouCanAccessionRegex = function (acc) {
         let re = /g|G\d{5}\w{2}/;
         return re.test(acc)
     }
+
 
 
 
@@ -3034,21 +3124,70 @@ function GNOmeStructureBrowser (DIVID) {
     this.AllItems = ['GlcNAc', 'GalNAc', 'ManNAc', 'HexNAc','Glc', 'Gal', 'Man', 'Hex','Fuc', 'dHex', 'NeuAc', 'NeuGc', 'Xxx'];
     this.ScreenATitle = "GNOme Topology Selector";
 
-    this.DataPreProcess = function (RawData) {
+    this.IsAllowedSubsumptionCategory = function (d) {
+        return ['topology', 'saccharide'].includes(d)
+    }
 
-        let AllAccession = Object.keys(RawData);
+    this.ComputeTopLevelThings = function (){
+        this.TopLevelThings = [];
+
+        let TopLevelCandidate = [];
         let Parents = {};
 
-        for (let acc of AllAccession) {
+        let AllAccession = Object.keys(this.SubsumptionData);
 
-            let d = RawData[acc];
-            if (!['topology'].includes(d.level)) {
+        for (let acc of AllAccession){
+            Parents[acc] = []
+        }
+
+        for (let acc of AllAccession){
+            for (let c of this.SubsumptionData[acc].Children){
+                if (!Parents[c].includes(acc)){
+                    Parents[c].push(acc)
+                }
+            }
+        }
+
+        for (let acc of Object.keys(Parents)){
+
+            if (this.SubsumptionData[acc].SubsumptionLevel != "topology"){
                 continue
             }
-            Parents[acc] = [];
+
+            TopLevelCandidate.push(acc);
         }
 
 
+        for (let acc of TopLevelCandidate){
+
+            let AppendFlag = true;
+            for (let p of Parents[acc]){
+                let same = true;
+                let ItemCountP = this.SubsumptionData[p].ButtonConfig;
+                let ItemCountC = this.SubsumptionData[acc].ButtonConfig;
+
+                for (let m of this.AllItems){
+
+                    if (ItemCountP[m] != ItemCountC[m]){
+                        same = false;
+                        break
+                    }
+
+                }
+                if (same){
+                    AppendFlag = false;
+                }
+            }
+
+            if (AppendFlag){
+                this.TopLevelThings.push(acc);
+            }
+        }
+    }
+
+    this.DataPreProcess = function (RawData) {
+
+        let AllAccession = Object.keys(RawData);
 
         for (let acc of AllAccession){
 
@@ -3068,51 +3207,26 @@ function GNOmeStructureBrowser (DIVID) {
             if (d.children != undefined){
                 for (let c of d.children){
                     let tmp = RawData[c];
-                    if (tmp == undefined){continue}
-                    if (['topology', 'saccharide'].includes(tmp.level)){
+                    if (tmp == undefined){
+                        continue
+                    }
+                    if (this.IsAllowedSubsumptionCategory(tmp.level)){
                         Children.push(c);
-
-                        if ('topology' == d.level && 'topology' == tmp.level){
-                            Parents[c].push(acc);
-                        }
-
                     }
                 }
             }
 
-            if ( ['topology', 'saccharide'].includes(d.level) ){
+            if ( this.IsAllowedSubsumptionCategory(d.level) ){
                 this.SubsumptionData[acc] = {
                     "SubsumptionLevel": d.level,
                     "Children": Children,
-                    "ButtonConfig": ButtonConfig
+                    "ButtonConfig": ButtonConfig,
+                    "score": d.score
                 };
 
             }
             if ( ['basecomposition', 'composition'].includes(d.level) ){
                 this.IUPACCompositionData[acc] = ButtonConfig;
-            }
-
-
-        }
-
-        for (let acc of Object.keys(Parents)){
-            let f = true;
-
-            for (let p of Parents[acc]) {
-                let ItemCountP = this.SubsumptionData[p].ButtonConfig;
-                let ItemCountC = this.SubsumptionData[acc].ButtonConfig;
-
-                for (let m of this.AllItems) {
-
-                    if (ItemCountP[m] != ItemCountC[m]) {
-                        break
-                    }
-                    f = false;
-                }
-            }
-
-            if (f){
-                this.TopLevelThings.push(acc);
             }
 
         }
@@ -3175,25 +3289,70 @@ function GNOmeCompositionBrowser(DIVID) {
     this.AllItems = ['GlcNAc', 'GalNAc', 'ManNAc', 'HexNAc','Glc', 'Gal', 'Man', 'Hex','Fuc', 'dHex', 'NeuAc', 'NeuGc', 'Xxx', 'S', 'P', 'Me', 'X'];
     this.ScreenATitle = "GNOme Composition Selector";
     this.MinHeight = 750;
-    this.DataPreProcess = function (RawData) {
 
-        let AllAccession = Object.keys(RawData);
+    this.IsAllowedSubsumptionCategory = function (d) {
+        return ['basecomposition', 'composition'].includes(d)
+    }
+
+    this.ComputeTopLevelThings = function (){
+        this.TopLevelThings = [];
+
         let TopLevelCandidate = [];
         let Parents = {};
 
-        for (let acc of AllAccession) {
-
-            let d = RawData[acc];
-            if (!['basecomposition', 'composition'].includes(d.level)) {
-                continue
-            }
-            Parents[acc] = [];
+        for (let acc of Object.keys(this.SubsumptionData)){
+            Parents[acc] = []
         }
+
+
+        for (let acc of Object.keys(this.SubsumptionData)){
+            TopLevelCandidate.push(acc);
+
+            for (let c of this.SubsumptionData[acc].Children){
+
+                if (!Parents[c].includes(acc)){
+                    Parents[c].push(acc)
+                }
+            }
+
+        }
+
+        for (let acc of TopLevelCandidate){
+            let AppendFlag = true;
+
+            for (let p of Parents[acc]){
+                let same = true;
+                let ItemCountP = this.SubsumptionData[p].ButtonConfig;
+                let ItemCountC = this.SubsumptionData[acc].ButtonConfig;
+
+                for (let m of this.AllItems){
+
+                    if (ItemCountP[m] != ItemCountC[m]){
+                        same = false;
+                        break
+                    }
+
+                }
+                if (same){
+                    AppendFlag = false;
+                }
+            }
+
+            if (AppendFlag){
+                this.TopLevelThings.push(acc);
+            }
+        }
+    }
+
+
+    this.DataPreProcess = function (RawData) {
+
+        let AllAccession = Object.keys(RawData);
 
         for (let acc of AllAccession){
 
             let d = RawData[acc];
-            if ( !['basecomposition', 'composition'].includes(d.level) ){
+            if ( !this.IsAllowedSubsumptionCategory(d.level) ){
                 continue
             }
 
@@ -3212,9 +3371,8 @@ function GNOmeCompositionBrowser(DIVID) {
                 for (let c of d.children){
                     let tmp = RawData[c];
                     if (tmp == undefined){continue}
-                    if (['basecomposition', 'composition'].includes(tmp.level)){
+                    if (this.IsAllowedSubsumptionCategory(tmp.level)){
                         Children.push(c);
-                        Parents[c].push(acc);
                     }
                 }
             }
@@ -3222,32 +3380,14 @@ function GNOmeCompositionBrowser(DIVID) {
             this.SubsumptionData[acc] = {
                 "SubsumptionLevel": d.level,
                 "Children": Children,
-                "ButtonConfig": ButtonConfig
+                "ButtonConfig": ButtonConfig,
+                "score": d.score
             };
             this.IUPACCompositionData[acc] = ButtonConfig;
-            TopLevelCandidate.push(acc);
+
         }
 
-        for (let acc of TopLevelCandidate){
-            let AppendFlag = true;
-            for (let p of Parents[acc]){
 
-                let ItemCountP = this.SubsumptionData[p].ButtonConfig;
-                let ItemCountC = this.SubsumptionData[acc].ButtonConfig;
-
-                for (let m of this.AllItems){
-
-                    if (ItemCountP[m] != ItemCountC[m]){
-                        break
-                    }
-                    AppendFlag = false;
-                }
-            }
-
-            if (AppendFlag){
-                this.TopLevelThings.push(acc);
-            }
-        }
 
     }
 
@@ -3425,8 +3565,8 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
     }
 
     this.ResizeToCurrent = function () {
-        this.WindowWidth = window.innerWidth - 20;
-        this.WindowHeight = window.innerHeight - 20;
+        this.WindowWidth = window.innerWidth;
+        this.WindowHeight = window.innerHeight;
 
         GNOmeBrowserX.SetHeight(this.WindowHeight);
         GNOmeBrowserX.SetWidth(this.WindowWidth);
@@ -3450,6 +3590,15 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
             GNOmeBrowserX.SetItemCount(NewCount);
             GNOmeBrowserX.SetToScreenA();
         }
+
+        if (Object.keys(para).includes('score')){
+            if (["true", "t", "yes", "y", "on"].includes(para["score"].toLowerCase())){
+                GNOmeBrowserX.SetShowScoreFlag(true);
+            } else if (["false", "f", "no", "n", "off"].includes(para["score"].toLowerCase())){
+                GNOmeBrowserX.SetShowScoreFlag(false);
+            }
+        }
+
 
         GNOmeBrowserX.RefreshUI();
     }
@@ -3510,6 +3659,11 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
         }
         return p
 
+    }
+
+    this.FixBodyEle = function (){
+        let bodyele = document.getElementsByTagName("body")[0];
+        bodyele.style.margin = 0;
     }
 
 }

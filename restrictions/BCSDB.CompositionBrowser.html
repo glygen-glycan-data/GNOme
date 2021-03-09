@@ -32,6 +32,7 @@
 
     let gnome = new GNOmeCompositionBrowser("gnome");
     let FullScreenControl = new GNOmeDisplayPresetFullScreen(gnome);
+    FullScreenControl.FixBodyEle();
     let InitialPara = FullScreenControl.GetURLParameter();
     InitialPara = FullScreenControl.FixAnyHexCount(InitialPara);
 
