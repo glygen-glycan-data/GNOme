@@ -2213,7 +2213,7 @@ function GNOmeBrowserBase (DIVID) {
     }
 
 
-    this.SubsumptionRequest = function (sequences){
+    this.SubsumptionRequest = function (sequences, ondemandtaskid){
         let thisLib = this;
 
         let imgURL = this.ImageGenerationURLBySeq(sequences);
@@ -2244,11 +2244,16 @@ function GNOmeBrowserBase (DIVID) {
             })
         }
 
-
-        jQuery.getJSON(requestURL).then(function (d) {
-            d = d[0]
-            GetResult(d.id);
-        })
+        // console.log(ondemandtaskid);
+        // ondemandtaskid=73397fd3cca82ef4c7403a87027abf6aol75l9nwy3jukip4d6ni
+        if (ondemandtaskid == undefined){
+            jQuery.getJSON(requestURL).then(function (d) {
+                d = d[0]
+                GetResult(d.id);
+            })
+        } else {
+            GetResult(ondemandtaskid);
+        }
     }
 
 
@@ -3574,6 +3579,12 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
     }
 
     this.UpdateGNOmeBrowser = function (para) {
+
+        if (Object.keys(para).includes('ondemandtaskid')){
+            GNOmeBrowserX.LoadingCircleShow();
+            GNOmeBrowserX.SubsumptionRequest("", para.ondemandtaskid);
+            return
+        }
 
         if (Object.keys(para).includes('focus')){
             GNOmeBrowserX.SetFocus(para.focus);
