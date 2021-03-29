@@ -1324,9 +1324,15 @@ function GNOmeBrowserBase (DIVID) {
 
     // Image and icon style
     this.IconStyle = "snfg";
+
     this.ImageURLPrefix = "https://glymage.glyomics.org/image/snfg/extended/";
     this.ImageURLSuffix = ".png";
     this.ImageGenerationURL = "https://glymage.glyomics.org/getimage?"
+
+    // this.ImageURLPrefix = "http://localhost:10985/image/snfg/extended/";
+    // this.ImageURLSuffix = ".png";
+    // this.ImageGenerationURL = "http://localhost:10985/getimage?"
+
     this.IconConfig;
     this.ImageComputed = {};
 
@@ -1509,19 +1515,17 @@ function GNOmeBrowserBase (DIVID) {
     this.HintTitleForScreenA = 'Topology Selector';
     this.HintTitleForScreenB = 'Subsumption Navigator';
 
-    this.HintMessageForScreenA = "<ul style='position: relative; top: -20px; text-align: left; '><li>Click controls at left to add/remove monosaccharides</li>" +
-        "<li>Click a Topology to jump to Subsumption Navigator</li>" +
-        "<li>Click notepad on top right to align novel glycan</li>" +
-        "<li><a href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.OnDemandAlignment.md'>On-demand subsumption alignment manual</a></li>";
-        //"<li>Shortcuts:</li><ul>" +
-        //"<li>n/N - add/remove GlcNAc</li>" +
-        //"<li>m/M - add/remove Man</li>" +
-        //"<li>g/G - add/remove Gal</li>" +
-        //"<li>f/F - add/remove Fuc</li>" +
-        //"<li>s/S - add/remove NeuAc</li></ul></ul>";
-    this.HintMessageForScreenB = "<ul style='position: relative; top: -20px; text-align: left; '><li>Double click on structure to navigate subsumption hierarchy.</li>" +
-        "<li>Right click popup to jump to GlyGen, GlycanData, GlyTouCan.</li></ul>";
+    this.HintMessageForScreenA = "<ul style='position: relative; top: -20px; text-align: left; '>" +
+        "<li>User Guide:</li>" +
+        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.Selector.md'>Topology Selector</a></li>" +
+        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.OnDemandAlignment.md'>On-Demand Subsumption Alignment</a></li>" +
+        "</ul>";
 
+    this.HintMessageForScreenB = "<ul style='position: relative; top: -20px; text-align: left; '>" +
+        "<li>User Guide:</li>" +
+        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.Navigator.md'>Topology Navigator</a></li>" +
+        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.OnDemandAlignment.md'>On-Demand Subsumption Alignment</a></li>" +
+        "</ul>";
 
 
 
@@ -2188,6 +2192,7 @@ function GNOmeBrowserBase (DIVID) {
 
             jQuery.getJSON(requestURL).then(function (d) {
                 d = d[0];
+
                 if (d.finished){
 
                     let eqgtcacc = d["result"];
@@ -2234,6 +2239,12 @@ function GNOmeBrowserBase (DIVID) {
 
             jQuery.getJSON(requestURL).then(function (d) {
                 d = d[0];
+
+                if (d.Error != undefined){
+                    thisLib.Alert("Error", d.Error, false)
+                    return
+                }
+
                 if (d.finished){
 
                     if (ondemandtaskid != undefined){
@@ -2277,7 +2288,8 @@ function GNOmeBrowserBase (DIVID) {
         let equivalent = d["result"]["equivalent"];
         let relationship = d["result"]["relationship"];
         let subsumptionlvl = d["result"]["subsumption_level"];
-        let buttonconfig = d["result"]["buttonconfig"]
+        let buttonconfig = d["result"]["buttonconfig"];
+        let score = d["result"]["score"]
 
         let warningmsg = d["error"];
 
@@ -2320,7 +2332,8 @@ function GNOmeBrowserBase (DIVID) {
                         this.SubsumptionData[parent] = {
                             "SubsumptionLevel": subsumptionlvl[parent],
                             "Children": this.FilterChildren(children, addquery),
-                            "ButtonConfig": this.ButtonConfigCleanUp(buttonconfig[parent])
+                            "ButtonConfig": this.ButtonConfigCleanUp(buttonconfig[parent]),
+                            "score": score[parent]
                         }
                     }
 
@@ -3455,17 +3468,18 @@ function GNOmeCompositionBrowser(DIVID) {
     this.HintTitleForScreenA = 'Composition Selector';
     this.HintTitleForScreenB = 'Subsumption Navigator';
 
-    this.HintMessageForScreenA = "<ul style='position: relative; top: -20px; text-align: left; '><li>Click controls at left to add/remove monosaccharides</li>" +
-        "<li>Click a Composition to jump to Subsumption Navigator</li>" +
-        "";
-        // "<li>Shortcuts:</li><ul>" +
-        // "<li>n/N - add/remove GlcNAc</li>" +
-        // "<li>m/M - add/remove Man</li>" +
-        //  "<li>g/G - add/remove Gal</li>" +
-        //  "<li>f/F - add/remove Fuc</li>" +
-        //  "<li>s/S - add/remove NeuAc</li></ul></ul>";
-    this.HintMessageForScreenB = "<ul style='position: relative; top: -20px; text-align: left; '><li>Double click on structure to navigate subsumption hierarchy.</li>" +
-        "<li>Right click popup to jump to GlyGen, GlycanData, GlyTouCan.</li></ul>";
+    this.HintMessageForScreenA = "<ul style='position: relative; top: -20px; text-align: left; '>" +
+        "<li>User Guide:</li>" +
+        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.Selector.md'>Composition Selector</a></li>" +
+        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.OnDemandAlignment.md'>On-Demand Subsumption Alignment</a></li>" +
+        "</ul>";
+
+    this.HintMessageForScreenB = "<ul style='position: relative; top: -20px; text-align: left; '>" +
+        "<li>User Guide:</li>" +
+        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.Navigator.md'>Composition Navigator</a></li>" +
+        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.OnDemandAlignment.md'>On-Demand Subsumption Alignment</a></li>" +
+        "</ul>";
+
 
 }
 GNOmeCompositionBrowser.prototype = new GNOmeBrowserBase();

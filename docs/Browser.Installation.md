@@ -32,6 +32,9 @@ See example usage: [GNOme Topology Browser](https://github.com/glygen-glycan-dat
 4. Use setfocus to focus on a few things.
 5. Use RefreshUI to refresh the widget to show the changes.
 
+## On-demand subsumption alignment
+[How to deploy your own subsumption backend](https://subsumption.glyomics.org/about#Deployment_title)
+
 ## Retired viewer
 First version of GNOme viewer: [GlyTouCan](https://rawcdn.githack.com/glygen-glycan-data/GNOme/3df5b91aaafcc83fe24b14103d7288822200830d/GNOme.browser.old.html), 
 [BCSDB](https://rawcdn.githack.com/glygen-glycan-data/GNOme/3df5b91aaafcc83fe24b14103d7288822200830d/restrictions/GNOme_BCSDB.browser.old.html) and
