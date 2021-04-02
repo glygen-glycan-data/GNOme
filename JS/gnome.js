@@ -1344,6 +1344,7 @@ function GNOmeBrowserBase (DIVID) {
     this.HighLightGlycans = [];
     this.SubsumptionNavigatorFocusAccession = "";
     this.DisplayScreen = 0;
+    this.brand = null;
     this.ScreenATitle = "";
     this.ScreenBTitle = "GNOme Subsumption Navigator";
     this.UpdateHighlightGlycansFlag = true;
@@ -1516,15 +1517,16 @@ function GNOmeBrowserBase (DIVID) {
     this.HintTitleForScreenB = 'Subsumption Navigator';
 
     this.HintMessageForScreenA = "<ul style='position: relative; top: -20px; text-align: left; '>" +
-        "<li>User Guide:</li>" +
-        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.Selector.md'>Topology Selector</a></li>" +
-        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.OnDemandAlignment.md'>On-Demand Subsumption Alignment</a></li>" +
+        "<li>Click controls at left to add/remove monosaccharides</li>" +
+        "<li>Click a Topology to jump to Subsumption Navigator</li>" +
+        "<li>Click notepad on top right to align novel glycan</li>" +
+        "<li><a target='_blank' href='https://gnome.glyomics.org/docs/'>More...</a></li>" +
         "</ul>";
 
     this.HintMessageForScreenB = "<ul style='position: relative; top: -20px; text-align: left; '>" +
-        "<li>User Guide:</li>" +
-        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.Navigator.md'>Topology Navigator</a></li>" +
-        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.OnDemandAlignment.md'>On-Demand Subsumption Alignment</a></li>" +
+        "<li>Double click on structure to navigate subsumption hierarchy.</li>" +
+        "<li>Right click popup to jump to GlyGen, GlycanData, GlyTouCan.</li>" +
+        "<li><a target='_blank' href='https://gnome.glyomics.org/docs/'>More...</a></li>" +
         "</ul>";
 
 
@@ -1561,6 +1563,10 @@ function GNOmeBrowserBase (DIVID) {
 
         if (Object.keys(theme).includes('icon_style')){
             this.SetIconConfig(theme['icon_style']);
+        }
+
+        if (Object.keys(theme).includes('brand')){
+            this.SetBrand(theme['brand']);
         }
 
         if (Object.keys(theme).includes('image_url_prefix') && Object.keys(theme).includes('image_url_suffix')){
@@ -1751,11 +1757,8 @@ function GNOmeBrowserBase (DIVID) {
         this.ContainerScreenA.appendChild(this.ContainerScreenAPartB);
 
         this.ContainerBanner = document.createElement("h4");
-        this.ContainerBanner.innerHTML = "GNOme - Glycan Naming and Subsumption Ontology";
-        this.ContainerBanner.style = "position: absolute; bottom: 10px; z-index: 500; text-align: center; color: grey; cursor: pointer;";
-        this.ContainerBanner.onclick = function(){
-            window.open("https://gnome.glyomics.org/");
-        };
+        this.ContainerBanner.style = "position: absolute; bottom: 10px; z-index: 500; text-align: center; color: grey; ";
+
 
         this.ContainerGreyBackground = document.createElement("div");
         this.ContainerGreyBackground.style = this.StyleGreyBackground;
@@ -1839,6 +1842,11 @@ function GNOmeBrowserBase (DIVID) {
 
 
         this.ContainerBanner.style.width = this.Width * 0.97 + "px";
+        this.ContainerBanner.innerHTML = "<a href='https://gnome.glyomics.org/' target='_blank'>GNOme</a> - Glycan Naming and Subsumption Ontology";
+        if (this.brand){
+            this.ContainerBanner.innerHTML += " (" + this.brand + ")";
+
+        }
     }
 
     this.Reset = function (){
@@ -2240,8 +2248,8 @@ function GNOmeBrowserBase (DIVID) {
             jQuery.getJSON(requestURL).then(function (d) {
                 d = d[0];
 
-                if (d.Error != undefined){
-                    thisLib.Alert("Error", d.Error, false)
+                if (typeof d.error === "string" && d.error.includes("not found")){
+                    thisLib.Alert("Error", d.error, false)
                     return
                 }
 
@@ -3045,6 +3053,10 @@ function GNOmeBrowserBase (DIVID) {
 
     }
 
+    this.SetBrand = function (b) {
+        this.brand = b;
+    }
+
     this.SetToScreenA = function () {
         this.DisplayScreen = 0;
     }
@@ -3469,17 +3481,11 @@ function GNOmeCompositionBrowser(DIVID) {
     this.HintTitleForScreenB = 'Subsumption Navigator';
 
     this.HintMessageForScreenA = "<ul style='position: relative; top: -20px; text-align: left; '>" +
-        "<li>User Guide:</li>" +
-        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.Selector.md'>Composition Selector</a></li>" +
-        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.OnDemandAlignment.md'>On-Demand Subsumption Alignment</a></li>" +
+        "<li>Click controls at left to add/remove monosaccharides</li>" +
+        "<li>Click a Composition to jump to Subsumption Navigator</li>" +
+        "<li>Click notepad on top right to align novel glycan</li>" +
+        "<li><a target='_blank' href='https://gnome.glyomics.org/docs/'>More...</a></li>" +
         "</ul>";
-
-    this.HintMessageForScreenB = "<ul style='position: relative; top: -20px; text-align: left; '>" +
-        "<li>User Guide:</li>" +
-        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.Navigator.md'>Composition Navigator</a></li>" +
-        "<li>&nbsp&nbsp<a target='_blank' href='https://github.com/glygen-glycan-data/GNOme/blob/master/docs/Browser.OnDemandAlignment.md'>On-Demand Subsumption Alignment</a></li>" +
-        "</ul>";
-
 
 }
 GNOmeCompositionBrowser.prototype = new GNOmeBrowserBase();
