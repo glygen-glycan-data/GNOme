@@ -6,6 +6,8 @@ GNOme organizes these stable accessions
 * for [automated reasoning](#current-release)
 * with well-defined characterization levels.
 
+GNOme is a subproject of and is supported by the [GlyGen: Computational and Informatics Resources for Glycoscience](http://glygen.org/) project. 
+
 GNOme is an [OBO Foundry](http://obofoundry.org/ontology/gno) ontology.
 
 ## Interactive Tools
