@@ -778,9 +778,7 @@ let glycanviewer = {
 
 
             var selectedNode = thisLib.network.getNodeAt({x:x,y:y});
-            if (selectedNode !== undefined && selectedNode !== "Topology" && !selectedNode.startsWith("fake") && !selectedNode.endsWith("3dots")){
-
-            }else{
+            if (selectedNode == undefined || selectedNode == "Topology" || selectedNode.startsWith("fake") || selectedNode.startsWith("Query") || selectedNode.endsWith("3dots")){
                 return
             }
 
