@@ -741,15 +741,25 @@ let glycanviewer = {
         }, false);
 
 
-        function CreateEntry() {
+        function CreateEntryPrimary(display, menuList) {
             var entry = document.createElement("dt");
             entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
+
+            entry.innerHTML = "&nbsp" + display;
+            menuList.appendChild(entry)
+            return entry
+        }
+
+        function CreateEntrySecondary(display, menuList) {
+            var entry = CreateEntryPrimary("&nbsp&nbsp" + display, menuList);
+
             entry.onmouseover = function(d){
                 this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #111111";
             };
             entry.onmouseout = function(d){
                 this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333";
             };
+
             return entry
         }
 
@@ -773,8 +783,15 @@ let glycanviewer = {
 
             var x = clickData.layerX;
             var y = clickData.layerY;
+            var gnome = thisLib.para.GNOmeBrowser;
+
+            if (y + 350 > gnome.Height){
+                y = gnome.Height - 400;
+            }
             clickData.preventDefault();
-            menuELE.style = "margin: 0; padding: 0; overflow: hidden; position: absolute; left: "+x+"px; top: "+y+"px; background-color: #333333; border: none; ";//width: 100px; height: 100px
+
+            // Approx width 150 * height 350
+            menuELE.style = "margin: 0; padding: 0; overflow: hidden; position: absolute; left: "+x+"px; top: "+y+"px; background-color: #333333; border: none; width: 145px";//width: 100px; height: 100px
 
 
             var selectedNode = thisLib.network.getNodeAt({x:x,y:y});
@@ -784,29 +801,34 @@ let glycanviewer = {
 
             var pureGTCre = /^G\d{5}\w{2}$/;
             var pureGTCres = selectedNode.match(pureGTCre);
+
+            CreateEntryPrimary("Copy:", menuList);
+
             if (Array.isArray(pureGTCres) && pureGTCres.length == 1){
-                var entry = CreateEntry();
-                entry.innerHTML = "Copy accession"; //change the description
+                var entry = CreateEntrySecondary("Accession", menuList);
                 entry.name = selectedNode;
 
                 entry.onclick = function(){
                     ToClipBoard(this.name);
                 };
-                menuList.appendChild(entry);
             }
 
             var things = [
-                ["ancestors", thisLib.para.GNOmeBrowser.GetAncestorsForCopy(selectedNode)],
-                ["descendants", thisLib.para.GNOmeBrowser.GetDescendantsForCopy(selectedNode)]
+                ["Ancestors", gnome.GetAncestorsForCopy(selectedNode)],
+                ["Descendants", gnome.GetDescendantsForCopy(selectedNode)]
             ];
+
+            if (things[1][1].length == 1){
+                things[1][1] = []
+            }
+
 
             for (var thing of things){
                 var title = thing[0];
                 var targets = thing[1];
 
                 if (targets.length > 1){
-                    var entry = CreateEntry();
-                    entry.innerHTML = "Copy "+title;
+                    var entry = CreateEntrySecondary(title, menuList);
 
                     var strx = "";
                     for (var x of targets){
@@ -817,21 +839,41 @@ let glycanviewer = {
                     entry.onclick = function(){
                         ToClipBoard(this.name);
                     };
-                    menuList.appendChild(entry);
                 }
             }
 
+            CreateEntryPrimary("Links:", menuList);
 
             var nojumpflag = true;
-            var externalLinks = para["contextMenu"]["externalLinks"];
+            var externalLinks = JSON.parse(JSON.stringify(para["contextMenu"]["externalLinks"]));
+
+            var gnomepurl = {
+                "name": "GNOme",
+                "url_prefix": "http://purl.obolibrary.org/obo/GNO_",
+                "url_suffix": "",
+                "glycan_set": undefined,
+            }
+            externalLinks.splice(0, 0, gnomepurl);
+
             for (var externalLink of externalLinks){
                 var title = externalLink["name"] || "";
                 var prefix = externalLink["url_prefix"] || "";
                 var suffix = externalLink["url_suffix"] || "";
                 var accs = externalLink["glycan_set"];
 
-                var entry = CreateEntry();
-                entry.innerHTML = "&nbsp&#x2192;&nbsp" + title; //change the description
+                var existFlag = false;
+                if (accs == undefined){
+                    existFlag = true;
+                }
+                else if (accs.includes(selectedNode)){
+                    existFlag = true;
+                }
+
+                if (!existFlag){
+                    continue
+                }
+
+                var entry = CreateEntrySecondary(title, menuList);
                 entry.name = selectedNode;
                 entry.setAttribute("data-prefix", prefix);
                 entry.setAttribute("data-suffix", suffix);
@@ -844,18 +886,48 @@ let glycanviewer = {
                     window.open(externalURL);
                 };
 
-                var existFlag = false;
-                if (accs == undefined){
-                    existFlag = true;
-                }
-                else if (accs.includes(selectedNode)){
-                    existFlag = true;
-                }
 
-                if (existFlag){
-                    nojumpflag = false;
-                    menuList.appendChild(entry);
+            }
+
+
+            CreateEntryPrimary("Browse:", menuList);
+            var gnomejumptype = "Structure";
+            if (gnome instanceof GNOmeStructureBrowser){
+                gnomejumptype = "Composition"
+            }
+
+            var parentpath = window.location.pathname.split("/");
+            parentpath = parentpath.slice(0, parentpath.length-1)
+            parentpath = parentpath.join("/")
+
+            var externalURL = location.protocol
+                + '//'
+                +location.hostname
+                +(location.port ? ':'+location.port: '')
+                +parentpath
+                + "/"
+                + gnomejumptype + "Browser.html";
+
+            if (gnomejumptype == "Structure"){
+                externalURL += "?focus=" + selectedNode;
+            } else {
+                externalURL += "?";
+
+                var buttons = gnome.SubsumptionData[selectedNode].ButtonConfig;
+
+                for (var k of Object.keys(buttons)){
+                    var count = buttons[k];
+                    if (count != 0){
+                        externalURL += k + "=" + count.toString() + "&";
+                    }
                 }
+            }
+
+            var entry =CreateEntrySecondary(gnomejumptype, menuList);
+            entry.setAttribute("data-jumplink", externalURL);
+            entry.onclick = function (){
+                var externalURL = this.getAttribute("data-jumplink");
+                window.open(externalURL);
             }
 
             menuELE.appendChild(menuList);
@@ -863,7 +935,6 @@ let glycanviewer = {
         }
 
         function clearEverythingInContextMenu(){
-            //console.log("closing");
             var menuELE = thisLib.div_contextMenu;
             while (menuELE.firstChild){
                 menuELE.removeChild(menuELE.firstChild);
@@ -1314,7 +1385,6 @@ function GNOmeBrowserBase (DIVID) {
     this.AllChildren = {};
 
     this.SubsumptionDataBackUp = {};
-    this.SubsumptionDataSession = {};
 
 
     // Tailored parameter for different browser
@@ -2587,6 +2657,22 @@ function GNOmeBrowserBase (DIVID) {
         }
     }
 
+    this.findByonicSynonym = function (gtcid){
+
+        for (let sym0 of Object.keys(this.Synonym)){
+            if (this.Synonym[sym0] == gtcid){
+
+                if (sym0.includes("(")){
+                    // Well, determine whether this synonym is byonic
+                    return sym0
+                }
+
+            }
+        }
+
+        return undefined
+    }
+
     this.CreateGlycanFigure = function (gtcid) {
         let figure = document.createElement("figure");
         figure.style.margin = 0;
@@ -2609,8 +2695,14 @@ function GNOmeBrowserBase (DIVID) {
         };
         let caption = document.createElement("figcaption");
         caption.innerHTML = gtcid;
+
+
+        let sym = this.findByonicSynonym(gtcid);
+        if (sym){
+            caption.innerHTML += "<br>" + sym;
+        }
         if (this.ShowScoreFlag){
-            caption.innerHTML += "<br>" + this.SubsumptionData[gtcid].score
+            caption.innerHTML += "<br>" + this.SubsumptionData[gtcid].score;
         }
         caption.style.textAlign = "center";
 
@@ -2891,11 +2983,20 @@ function GNOmeBrowserBase (DIVID) {
         let nodes = {};
         for (let n of allNodes){
             nodes[n] = {"name": n};
-            if (this.ShowScoreFlag){
-                if (this.SubsumptionData[n] != undefined){
-                    nodes[n].label = n + "\n" + this.SubsumptionData[n].score;
-                }
+            let label = n;
+
+            let sym = this.findByonicSynonym(n)
+            if (sym){
+                label += "\n" + sym;
             }
+
+            if (this.ShowScoreFlag || this.SubsumptionData[n] != undefined){
+                label += "\n" + this.SubsumptionData[n].score;
+            }
+
+            nodes[n].label = label
+
+
             if (n == "Pseudo"){
                 nodes[n].type = "Pseudo";
                 nodes[n].hidden = true;
