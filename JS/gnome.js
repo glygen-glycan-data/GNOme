@@ -2990,7 +2990,7 @@ function GNOmeBrowserBase (DIVID) {
                 label += "\n" + sym;
             }
 
-            if (this.ShowScoreFlag || this.SubsumptionData[n] != undefined){
+            if (this.ShowScoreFlag && this.SubsumptionData[n] != undefined){
                 label += "\n" + this.SubsumptionData[n].score;
             }
 
