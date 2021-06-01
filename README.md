@@ -1,4 +1,4 @@
-<img align="left" width="200px" src="https://glygen.org/static/media/gnome-browser-img.d28fe1fa.svg"/><br/>
+<img align="right" width="300px" border="1" src="https://glygen.org/static/media/gnome-browser-img.d28fe1fa.svg"/><br/>
 [GlyTouCan](http://glytoucan.org) provides stable accessions for glycans described at varyious degrees of characterization, including compositions (no linkage) and topologies (no carbon bond positions or anomeric configurations).
 
 
