@@ -785,13 +785,15 @@ let glycanviewer = {
             var y = clickData.layerY;
             var gnome = thisLib.para.GNOmeBrowser;
 
+            var left = x;
+            var top = y;
             if (y + 350 > gnome.Height){
-                y = gnome.Height - 400;
+                top = gnome.Height - 400;
             }
             clickData.preventDefault();
 
             // Approx width 150 * height 350
-            menuELE.style = "margin: 0; padding: 0; overflow: hidden; position: absolute; left: "+x+"px; top: "+y+"px; background-color: #333333; border: none; width: 145px";//width: 100px; height: 100px
+            menuELE.style = "margin: 0; padding: 0; overflow: hidden; position: absolute; left: "+left+"px; top: "+top+"px; background-color: #333333; border: none; width: 145px";//width: 100px; height: 100px
 
 
             var selectedNode = thisLib.network.getNodeAt({x:x,y:y});
