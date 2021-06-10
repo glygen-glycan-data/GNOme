@@ -781,14 +781,15 @@ let glycanviewer = {
 
             clearEverythingInContextMenu();
 
-            var x = clickData.layerX;
-            var y = clickData.layerY;
+            // NEED to change if it is not working in full window mode
+            var x = clickData.clientX;
+            var y = clickData.clientY;
             var gnome = thisLib.para.GNOmeBrowser;
 
             var left = x;
             var top = y;
-            if (y + 350 > gnome.Height){
-                top = gnome.Height - 400;
+            if (y + 350 > window.innerHeight){
+                top = window.innerHeight - 400;
             }
             clickData.preventDefault();
 
