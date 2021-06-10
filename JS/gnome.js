@@ -903,13 +903,25 @@ let glycanviewer = {
             parentpath = parentpath.slice(0, parentpath.length-1)
             parentpath = parentpath.join("/")
 
+
+            var currenturl = window.location.pathname;
+            var filename = currenturl.substring(currenturl.lastIndexOf('/')+1);
+            var tmp = filename.split(".");
+
+            var restriction = "";
+            if (tmp.length == 3 && tmp[1].endsWith("Browser") && tmp[2] == "html"){
+                restriction = tmp[0] + ".";
+            }
+
+
+
             var externalURL = location.protocol
                 + '//'
                 +location.hostname
                 +(location.port ? ':'+location.port: '')
                 +parentpath
                 + "/"
-                + gnomejumptype + "Browser.html";
+                + restriction + gnomejumptype + "Browser.html";
 
             if (gnomejumptype == "Structure"){
                 externalURL += "?focus=" + selectedNode;
