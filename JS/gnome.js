@@ -1434,7 +1434,7 @@ function GNOmeBrowserBase (DIVID) {
     this.UpdateMonoFreqFlag = true;
 
     this.ShowScoreFlag = false;
-
+    this.ShowSynonymFlag = true;
 
     this.TooltipHide = true;
     this.TooltipIndex = 0;
@@ -1486,6 +1486,10 @@ function GNOmeBrowserBase (DIVID) {
         '  <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>\n' +
         '  <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>\n' +
         '</svg>';
+    this.SVGSetting = '<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">\n' +
+        '  <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>\n' +
+        '  <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>\n' +
+        '</svg>';
 
 
     // CSS style
@@ -1494,11 +1498,15 @@ function GNOmeBrowserBase (DIVID) {
     this.StyleScreenAPartB = "float: left; ";
     this.StyleScreenB = "";
 
-    this.StyleScreenSwitch = "position: absolute; top: 20px; left: 20px; display: none; z-index: 10; cursor: pointer;";
-    this.StyleSearchSwitch = "position: absolute; top: 20px; right: 20px; z-index: 10; cursor: pointer;";
-    this.StyleHintSwitch   = "position: absolute; top: 200px; right: 20px; z-index: 10; cursor: pointer; ";
-    this.StyleResetSwitch   = "position: absolute; top: 140px; right: 20px; z-index: 10; cursor: pointer;";
-    this.StyleCalculationSwitch   = "position: absolute; top: 80px; right: 20px; z-index: 10; cursor: pointer;";
+    this.StyleSwitchBase = "position: absolute; z-index: 10; cursor: pointer;";
+    this.StyleScreenSwitch = this.StyleSwitchBase + "left: 20px; top: 20px; display: none; ";
+    this.StyleSwitchBaseRight   = this.StyleSwitchBase + " right: 20px; ";
+    this.StyleSearchSwitch      = this.StyleSwitchBaseRight + " top: 20px; ";
+    this.StyleCalculationSwitch = this.StyleSwitchBaseRight + " top: 80px; ";
+    this.StyleResetSwitch       = this.StyleSwitchBaseRight + " top: 140px; ";
+    this.StyleSettingSwitch     = this.StyleSwitchBaseRight + " top: 200px; ";
+    this.StyleHintSwitch        = this.StyleSwitchBaseRight + " top: 260px; ";
+
     this.StyleGreyBackground = "position: absolute; z-index: 11; background-color: rgba(100,100,100,0.5); width: 101%; height: 100%; display: none; backdrop-filter: blur(3px);";
     this.StyleAlert = "position: absolute; z-index: 11; display: none; top: 50%; left: 50%; margin-top: -50px; margin-left: -100px;";
     this.StyleTooltip =      "position: absolute; z-index: 11; display: none; top: 10px; right: 100px; background-color: rgba(240, 240, 240, 0.9); width: 200px; height: 250px; border-radius: 10px 10px 10px 10px; box-shadow: 5px 5px 3px grey;";
@@ -1681,8 +1689,11 @@ function GNOmeBrowserBase (DIVID) {
         this.RefreshUI();
 
         let tmp = this.GetCookie("ShowScoreFlag")
-        let ssf = tmp.toLowerCase() == "true";
-        this.SetShowScoreFlag(ssf)
+        this.SetShowScoreFlag(tmp.toLowerCase() == "true")
+
+        let tmp2 = this.GetCookie("ShowSynonymFlag")
+        this.SetShowSynonymFlag(tmp2.toLowerCase() == "true")
+
         this.ProcessRawDataWithRelationship(RawData);
 
     }
@@ -1832,6 +1843,27 @@ function GNOmeBrowserBase (DIVID) {
         }
 
 
+        this.ContainerSettingSwitch = document.createElement("div");
+        this.ContainerSettingSwitch.innerHTML = this.SVGSetting;
+        this.ContainerSettingSwitch.title = "Setting";
+        this.ContainerSettingSwitch.style = this.StyleSettingSwitch;
+        this.ContainerSettingSwitch.onclick = function () {
+            thisLib.DisplaySetting();
+        };
+
+        this.ContainerSettingSwitch.onmouseover = function (){
+            thisLib.TooltipHide = false;
+            thisLib.TooltipIndex = 2;
+            setTimeout(function (){
+                thisLib.TooltipLowLevel();
+            }, 2000)
+        }
+        this.ContainerSettingSwitch.onmouseleave = function (){
+            thisLib.TooltipHide = true;
+            thisLib.TooltipClose();
+        }
+
+
         this.ContainerScreenAPartA = document.createElement("div");
         this.ContainerScreenAPartB = document.createElement("div");
         //this.ContainerScreenAPartA.style = "float: left; width: 130px; margin: 0px; padding: 0px;";
@@ -1860,6 +1892,7 @@ function GNOmeBrowserBase (DIVID) {
         this.ContainerInner.appendChild(this.ContainerHintSwitch);
         this.ContainerInner.appendChild(this.ContainerResetSwitch);
         this.ContainerInner.appendChild(this.ContainerCalculationSwitch);
+        this.ContainerInner.appendChild(this.ContainerSettingSwitch);
         //container.appendChild(leftTurnButton);
         //container.appendChild(rightTurnButton);
         this.ContainerInner.appendChild(this.ContainerScreenA);
@@ -2118,6 +2151,149 @@ function GNOmeBrowserBase (DIVID) {
         this.RefreshUI();
     }
 
+    this.ToggleSwitch = function (defalut_select){
+
+        let res = document.createElement("div");
+        res.style = "border-radius: 34px; cursor: pointer; width: 60px; height: 34px; ";
+
+        let select_color = "#2196F3";
+        let de_select_color = "#ccc";
+
+        let slider = document.createElement("div");
+        slider.style = "border-radius: 28px; width: 28px; height: 28px; background-color: white; position: relative; top: 3px";
+
+        let select_left = "28px";
+        let de_select_left = "3px";
+
+        res.appendChild(slider);
+
+
+        function selected(){
+            return slider.getAttribute("data-select") == "y";
+        }
+
+        function select(){
+            res.style.backgroundColor = select_color;
+            slider.style.left = select_left;
+            slider.setAttribute("data-select", "y")
+        }
+
+        function de_select(){
+            res.style.backgroundColor = de_select_color;
+            slider.style.left = de_select_left;
+            slider.setAttribute("data-select", "n")
+        }
+
+        if (defalut_select){
+            select();
+        }
+        else {
+            de_select();
+        }
+
+
+        res.onclick = function (){
+            if (selected()){
+                de_select();
+            }
+            else {
+                select();
+            }
+        }
+
+        return [res, selected]
+    }
+
+    this.DisplaySetting = function () {
+        let thisLib = this;
+
+        let DisplaySettingBox = document.createElement("div");
+        DisplaySettingBox.style = "width: 100%; height: 400px; overflow: hidden; background: rgb(255, 255, 255); opacity:0.8; border: none; border-radius: 10px; position: absolute; top: 40px; align: center; box-shadow: 5px 5px 3px grey;";
+
+        let DisplaySettingBoxTitle = document.createElement("p");
+        DisplaySettingBoxTitle.style = "width: 100%; height: 23px; opacity: 0.8; border: none; text-align: center; font-size: 20px;";
+        DisplaySettingBoxTitle.innerText = "Display Setting";
+
+
+
+
+        let DisplaySettingBoxContent = document.createElement("div");
+        DisplaySettingBoxContent.style = "font-size: 100%; height: 250px; width: 80%; max-width: 80%; background: transparent; overflow: hidden; margin: 0 0 0 55.6px; ";
+
+
+        let option_table = document.createElement("table");
+        option_table.style = "padding-top: 10px; width: 100%; "
+
+        let tr = document.createElement("tr");
+        let td1 = document.createElement("td");
+        td1.style.maxWidth = "30%; "
+        td1.innerText = "Synonym: "
+
+        let td2 = document.createElement("td");
+        let tmp = this.ToggleSwitch(this.ShowSynonymFlag);
+        let sym_toggle_switch = tmp[0];
+        let sym_selected = tmp[1];
+        td2.appendChild(sym_toggle_switch);
+
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+
+        option_table.appendChild(tr);
+
+
+        tr = document.createElement("tr");
+        td1 = document.createElement("td");
+        td1.style.maxWidth = "30%; "
+        td1.innerText = "Score: "
+
+        td2 = document.createElement("td");
+        tmp = this.ToggleSwitch(this.ShowScoreFlag);
+        let score_toggle_switch = tmp[0];
+        let score_selected = tmp[1];
+        td2.appendChild(score_toggle_switch);
+
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+
+        option_table.appendChild(tr);
+
+        DisplaySettingBoxContent.appendChild(option_table);
+
+
+
+
+        let DisplaySettingBoxButton = document.createElement("button");
+        DisplaySettingBoxButton.style = "position: absolute; bottom: 20px; left: 414px; font-size: 100%; border: solod border-color: black; width: 130px; height: 50px; background: inherit; ";
+        DisplaySettingBoxButton.innerHTML = "Save";
+        DisplaySettingBoxButton.type = "text";
+        DisplaySettingBoxButton.onclick = function (){
+            thisLib.CloseAlert();
+
+            let refresh = false;
+            if (sym_selected() != thisLib.ShowSynonymFlag){
+                refresh = true;
+            }
+            if (score_selected() != thisLib.ShowScoreFlag){
+                refresh = true;
+            }
+            thisLib.SetShowSynonymFlag(sym_selected());
+            thisLib.SetShowScoreFlag(score_selected());
+
+            if (refresh){
+                thisLib.RefreshUI();
+            }
+        }
+
+
+        DisplaySettingBox.appendChild(DisplaySettingBoxTitle);
+        DisplaySettingBox.appendChild(DisplaySettingBoxContent);
+        DisplaySettingBox.appendChild(DisplaySettingBoxButton);
+
+        let msg = DisplaySettingBox;
+        this.AlertLowLevel(msg, 600, 300, "25%");
+
+    }
+
     this.CalculationBoxShow = function () {
         let thisLib = this;
 
@@ -2136,7 +2312,7 @@ function GNOmeBrowserBase (DIVID) {
 
         if (thisLib.GetCookie("SubsumptionRTSeq") != ""){
             defaultSeq = decodeURIComponent(thisLib.GetCookie("SubsumptionRTSeq"));
-            console.log("Getting from cookie...", defaultSeq);
+            // console.log("Getting from cookie...", defaultSeq);
         }
 
         searchBoxInput.value = defaultSeq;
@@ -2713,7 +2889,7 @@ function GNOmeBrowserBase (DIVID) {
 
 
         let sym = this.findByonicSynonym(gtcid);
-        if (sym){
+        if (sym && this.ShowSynonymFlag){
             caption.innerHTML += "<br>" + sym;
         }
         if (this.ShowScoreFlag){
@@ -3001,7 +3177,7 @@ function GNOmeBrowserBase (DIVID) {
             let label = n;
 
             let sym = this.findByonicSynonym(n)
-            if (sym){
+            if (sym && this.ShowSynonymFlag){
                 label += "\n" + sym;
             }
 
@@ -3238,6 +3414,11 @@ function GNOmeBrowserBase (DIVID) {
     this.SetShowScoreFlag = function (f){
         this.ShowScoreFlag = f;
         this.SetCookie("ShowScoreFlag", f, 7)
+    }
+
+    this.SetShowSynonymFlag = function (f){
+        this.ShowSynonymFlag = f;
+        this.SetCookie("ShowSynonymFlag", f, 7)
     }
 
     this.GlyTouCanAccessionRegex = function (acc) {
