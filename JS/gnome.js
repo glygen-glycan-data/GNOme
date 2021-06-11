@@ -1689,10 +1689,22 @@ function GNOmeBrowserBase (DIVID) {
         this.RefreshUI();
 
         let tmp = this.GetCookie("ShowScoreFlag")
-        this.SetShowScoreFlag(tmp.toLowerCase() == "true")
+        if (tmp == "true"){
+            this.SetShowScoreFlag(true)
+        }
+        else if (tmp == "false"){
+            this.SetShowScoreFlag(false)
+        }
 
-        let tmp2 = this.GetCookie("ShowSynonymFlag")
-        this.SetShowSynonymFlag(tmp2.toLowerCase() == "true")
+
+        tmp = this.GetCookie("ShowSynonymFlag")
+        if (tmp == "true"){
+            this.SetShowSynonymFlag(true)
+        }
+        else if (tmp == "false"){
+            this.SetShowSynonymFlag(false)
+        }
+
 
         this.ProcessRawDataWithRelationship(RawData);
 
