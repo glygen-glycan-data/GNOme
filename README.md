@@ -17,7 +17,6 @@ Use the [GNOme Glycan Composition Browser](https://gnome.glyomics.org/Compositio
 
 Deep-linking is also supported, to jump to a specific GlyTouCan acccession: [G62109NW](https://gnome.glyomics.org/StructureBrowser.html?focus=G62109NW) or button state: [HexNAc(5)Hex(6)](https://gnome.glyomics.org/StructureBrowser.html?HexNAc=5&Hex=6).
 
-Turn on [missing information scores](https://gnome.glyomics.org/StructureBrowser.html?score=true), or turn them [off](https://gnome.glyomics.org/StructureBrowser.html?score=false). 
 
 ### Restrictions ###
 [GNOme restrictions](restrictions) support speciifc subsets of GlyTouCan accessions:

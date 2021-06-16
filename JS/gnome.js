@@ -2224,7 +2224,7 @@ function GNOmeBrowserBase (DIVID) {
 
         let DisplaySettingBoxTitle = document.createElement("p");
         DisplaySettingBoxTitle.style = "width: 100%; height: 23px; opacity: 0.8; border: none; text-align: center; font-size: 20px;";
-        DisplaySettingBoxTitle.innerText = "Display Setting";
+        DisplaySettingBoxTitle.innerText = "Display Settings";
 
 
 
@@ -2239,7 +2239,7 @@ function GNOmeBrowserBase (DIVID) {
         let tr = document.createElement("tr");
         let td1 = document.createElement("td");
         td1.style.maxWidth = "30%; "
-        td1.innerText = "Synonym: "
+        td1.innerText = "Show GNOme Synonym: "
 
         let td2 = document.createElement("td");
         let tmp = this.ToggleSwitch(this.ShowSynonymFlag);
@@ -2256,7 +2256,7 @@ function GNOmeBrowserBase (DIVID) {
         tr = document.createElement("tr");
         td1 = document.createElement("td");
         td1.style.maxWidth = "30%; "
-        td1.innerText = "Score: "
+        td1.innerText = "Show Character Score: "
 
         td2 = document.createElement("td");
         tmp = this.ToggleSwitch(this.ShowScoreFlag);
