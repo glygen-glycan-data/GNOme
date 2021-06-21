@@ -2250,13 +2250,14 @@ function GNOmeBrowserBase (DIVID) {
         tr.appendChild(td1);
         tr.appendChild(td2);
 
-        option_table.appendChild(tr);
-
+        if (thisLib instanceof GNOmeCompositionBrowser){
+            option_table.appendChild(tr);
+        }
 
         tr = document.createElement("tr");
         td1 = document.createElement("td");
         td1.style.maxWidth = "30%; "
-        td1.innerText = "Show Character Score: "
+        td1.innerText = "Show Structure Characterization Score: "
 
         td2 = document.createElement("td");
         tmp = this.ToggleSwitch(this.ShowScoreFlag);
