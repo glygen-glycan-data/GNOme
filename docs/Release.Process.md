@@ -46,9 +46,9 @@ Depending on network and machine, it may take 20~50 minutes to run.
 1. Check the expected changes.
 2. Check whether the GNOme browser functions correctly.
 We can use [raw.githack](https://raw.githack.com/) to exam the browsers before merging the braches.
-2.1. Structure Browser URL: https://raw.githack.com/glygen-glycan-data/GNOme/Branch_VX.Y.Z/StructureBrowser.html
-2.2. Composition Browser URL: https://raw.githack.com/glygen-glycan-data/GNOme/Branch_VX.Y.Z/CompositionBrowser.html
-2.3. GlyGen Restriction Structure Browser URL: https://raw.githack.com/glygen-glycan-data/GNOme/Branch_VX.Y.Z/restrictions/GlyGen.StructureBrowser.html
+  1. Structure Browser URL: https://raw.githack.com/glygen-glycan-data/GNOme/Branch_VX.Y.Z/StructureBrowser.html
+  2. Composition Browser URL: https://raw.githack.com/glygen-glycan-data/GNOme/Branch_VX.Y.Z/CompositionBrowser.html
+  3. GlyGen Restriction Structure Browser URL: https://raw.githack.com/glygen-glycan-data/GNOme/Branch_VX.Y.Z/restrictions/GlyGen.StructureBrowser.html
 3. Merge the branch back into master and delete it.
 
 
