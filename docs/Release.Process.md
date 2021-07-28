@@ -9,7 +9,7 @@
 ## Process
 ### Update raw materials for building process
 1. Raw GNOme subsumption file
-2. Accessions for each restriction sets: [BCSDB](https://github.com/glygen-glycan-data/GNOme/blob/master/restrictions/GNOme_BCSDB.accessions.txt), [GlyGen](https://github.com/glygen-glycan-data/GNOme/blob/master/restrictions/GNOme_GlyGen.accessions.txt) and [GlycanData](https://github.com/glygen-glycan-data/GNOme/blob/master/restrictions/GNOme_GlycanData.accessions.txt)
+2. Accessions for each restriction sets: [BCSDB](https://github.com/glygen-glycan-data/GNOme/blob/master/restrictions/GNOme_BCSDB.accessions.txt), [GlyGen](https://github.com/glygen-glycan-data/GNOme/blob/master/restrictions/GNOme_GlyGen.accessions.txt) and [GlyCosmos](https://github.com/glygen-glycan-data/GNOme/blob/master/restrictions/GNOme_GlyCosmos.accessions.txt)
 3. Synonyms
 4. Archived and replaced GlyTouCan accessions
 5. Push all the changes to GNOme repository master branch
