@@ -259,8 +259,8 @@ let glycanviewer = {
             };
             imgEle.onerror = function(){
                 // Do something while image can not be found?
-                thisLib.imageHeight.push(undefined);
-                thisLib.imageWidth.push(undefined);
+                //thisLib.imageHeight.push(undefined);
+                //thisLib.imageWidth.push(undefined);
 
                 thisLib.resourceStatus[this.name] = true;
                 thisLib.resourceSync();
@@ -1410,7 +1410,8 @@ function GNOmeBrowserBase (DIVID) {
 
     this.ImageURLPrefix = "https://glymage.glyomics.org/image/snfg/extended/";
     this.ImageURLSuffix = ".png";
-    this.ImageGenerationURL = "https://glymage.glyomics.org/getimage?"
+    this.ImageGenerationSubmitURL = "https://glymage.glyomics.org/submit"
+    this.ImageGenerationGetImageURL = "https://glymage.glyomics.org/getimage?"
 
     // this.ImageURLPrefix = "http://localhost:10985/image/snfg/extended/";
     // this.ImageURLSuffix = ".png";
@@ -1628,7 +1629,7 @@ function GNOmeBrowserBase (DIVID) {
         let theme = {};
 
         if (Object.keys(para).includes('theme')){
-            theme = await this.GetJSON(para.theme);
+            theme = await jQuery.getJSON(para.theme);
         }
 
         // Backward compatibility with theme encoding
@@ -1680,7 +1681,7 @@ function GNOmeBrowserBase (DIVID) {
         this.AllocateDIV();
 
 
-        let RawData = await this.GetJSON(para.data);
+        let RawData = await jQuery.getJSON(para.data);
         this.DataPreProcess(RawData);
         this.ComputeTopLevelThings();
         this.SubsumptionDataBackUp = JSON.parse(JSON.stringify(this.SubsumptionData));
@@ -1708,15 +1709,6 @@ function GNOmeBrowserBase (DIVID) {
 
         this.ProcessRawDataWithRelationship(RawData);
 
-    }
-
-
-    this.GetJSON = function (url) {
-        return new Promise(resolve => {
-            jQuery.getJSON(url, function(d) {
-                resolve(d);
-            });
-        })
     }
 
     this.DataPreProcess = function (d) {
@@ -2460,16 +2452,16 @@ function GNOmeBrowserBase (DIVID) {
         this.SetCookie("SubsumptionRTSeq", encodeURIComponent(sequences), 7);
 
 
-        let para = {
-            "seq": sequences,
-            "developer_email": "gnomebrowser@glyomics.org"
-        };
-
-        let requestURL = thisLib.GlyLookupURL + "/submit?tasks=" + encodeURIComponent(JSON.stringify([para]));
-
+        let requestURL = thisLib.GlyLookupURL + "/submit";
+        let requestPara = {
+            "task": JSON.stringify({
+                "seq": sequences,
+                "developer_email": "gnomebrowser@glyomics.org"
+            })
+        }
 
         function GetResult(GlylookupJobid){
-            let requestURL = thisLib.GlyLookupURL + "/retrieve?list_ids=" + encodeURIComponent(JSON.stringify([GlylookupJobid]));
+            let requestURL = thisLib.GlyLookupURL + "/retrieve?list_id=" + GlylookupJobid;
 
             jQuery.getJSON(requestURL).then(function (d) {
                 d = d[0];
@@ -2490,7 +2482,7 @@ function GNOmeBrowserBase (DIVID) {
         }
 
 
-        jQuery.getJSON(requestURL).then(function (d) {
+        jQuery.post(requestURL, requestPara).then(function (d) {
             d = d[0]
             thisLib.SetCookie("SubsumptionTaskID", d.id, 7);
             GetResult(d.id);
@@ -2503,20 +2495,25 @@ function GNOmeBrowserBase (DIVID) {
         let thisLib = this;
 
 
-        let imgURL = this.ImageGenerationURLBySeq(sequences);
-        jQuery.getJSON(imgURL).then(function (d){});
-        this.ImageComputed["Query"] = imgURL;
+        let imagepara = {
+            "notation": this.IconStyle,
+            "display": "extended",
+            "format": "png",
+            "seq": sequences,
+            "developer_email": "gnomebrowser@glyomics.org"
+        }
+        let QueryImageRequest = jQuery.post(this.ImageGenerationSubmitURL, {"task": JSON.stringify(imagepara)});
 
 
-        let para = {"developer_email": "gnomebrowser@glyomics.org"};
-        para["seqs"] = {
-            "Query": sequences,
-        };
-
-        let requestURL = thisLib.SubsumptionComputingURL + "/submit?tasks=" + encodeURIComponent(JSON.stringify([para]));
-
+        let requestURL = thisLib.SubsumptionComputingURL + "/submit";
+        let requestPara = {
+            "task": JSON.stringify({
+                "developer_email": "gnomebrowser@glyomics.org",
+                "seqs": {"Query": sequences}
+            })
+        }
         function GetResult(RealTimeCalculationHash){
-            let requestURL = thisLib.SubsumptionComputingURL + "/retrieve?list_ids=" + encodeURIComponent(JSON.stringify([RealTimeCalculationHash]));
+            let requestURL = thisLib.SubsumptionComputingURL + "/retrieve?list_id=" + RealTimeCalculationHash;
 
             jQuery.getJSON(requestURL).then(function (d) {
                 d = d[0];
@@ -2528,15 +2525,14 @@ function GNOmeBrowserBase (DIVID) {
 
                 if (d.finished){
 
-                    if (ondemandtaskid != undefined){
-                        let s = d.task.seqs.Query;
-                        let imgURL = thisLib.ImageGenerationURLBySeq(s);
-                        thisLib.ImageComputed["Query"] = imgURL;
-                        jQuery.getJSON(imgURL).then(function (d){});
-                    }
+                    QueryImageRequest.then(function (ImageTaskSubmitResult){
 
-                    thisLib.CloseAlert();
-                    thisLib.RenderRTResult(d);
+                        let imgURL = thisLib.ImageGenerationGetImageURL + "list_id=" + ImageTaskSubmitResult[0].id;
+                        thisLib.ImageComputed["Query"] = imgURL;
+
+                        thisLib.CloseAlert();
+                        thisLib.RenderRTResult(d);
+                    })
 
                 }else{
                     setTimeout(GetResult, 1000, RealTimeCalculationHash);
@@ -2546,7 +2542,7 @@ function GNOmeBrowserBase (DIVID) {
 
 
         if (ondemandtaskid == undefined){
-            jQuery.getJSON(requestURL).then(function (d) {
+            jQuery.post(requestURL, requestPara).then(function (d) {
                 d = d[0]
                 GetResult(d.id);
             })
@@ -2657,18 +2653,6 @@ function GNOmeBrowserBase (DIVID) {
         }
 
         return allowedChildren
-    }
-
-    this.ImageGenerationURLBySeq = function (s) {
-
-        if ( !s.startsWith("WURCS") ){
-            s = encodeURIComponent(s);
-        }
-
-        let para = "notation=" + this.IconStyle + "&display=extended&format=png&seq=" + s;
-
-        return this.ImageGenerationURL + para ;
-
     }
 
     this.AddAllMonoButtons = function () {
