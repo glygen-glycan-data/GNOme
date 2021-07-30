@@ -2462,7 +2462,7 @@ function GNOmeBrowserBase (DIVID) {
 
         let para = {
             "seq": sequences,
-            "developer_email": "interactive"
+            "developer_email": "gnomebrowser@glyomics.org"
         };
 
         let requestURL = thisLib.GlyLookupURL + "/submit?tasks=" + encodeURIComponent(JSON.stringify([para]));
@@ -2508,10 +2508,9 @@ function GNOmeBrowserBase (DIVID) {
         this.ImageComputed["Query"] = imgURL;
 
 
-        let para = {};
+        let para = {"developer_email": "gnomebrowser@glyomics.org"};
         para["seqs"] = {
             "Query": sequences,
-            "developer_email": "interactive"
         };
 
         let requestURL = thisLib.SubsumptionComputingURL + "/submit?tasks=" + encodeURIComponent(JSON.stringify([para]));
