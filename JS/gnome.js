@@ -2461,7 +2461,8 @@ function GNOmeBrowserBase (DIVID) {
 
 
         let para = {
-            "seq": sequences
+            "seq": sequences,
+            "developer_email": "interactive"
         };
 
         let requestURL = thisLib.GlyLookupURL + "/submit?tasks=" + encodeURIComponent(JSON.stringify([para]));
@@ -2509,7 +2510,8 @@ function GNOmeBrowserBase (DIVID) {
 
         let para = {};
         para["seqs"] = {
-            "Query": sequences
+            "Query": sequences,
+            "developer_email": "interactive"
         };
 
         let requestURL = thisLib.SubsumptionComputingURL + "/submit?tasks=" + encodeURIComponent(JSON.stringify([para]));
