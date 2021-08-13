@@ -11,9 +11,9 @@ GNOme is a subproject of and is supported by the [GlyGen: Computational and Info
 GNOme is an [OBO Foundry](http://obofoundry.org/ontology/gno) ontology.
 
 ## Interactive Tools
-Use the [GNOme Glycan Structure Browser](https://gnome.glyomics.org/StructureBrowser.html) to find glycan structures by composition, topology, and subsumption relationships. 
+Use the **[GNOme Glycan Structure Browser](https://gnome.glyomics.org/StructureBrowser.html)** to find glycan structures by composition, topology, and subsumption relationships. 
 
-Use the [GNOme Glycan Composition Browser](https://gnome.glyomics.org/CompositionBrowser.html) to find glycan compositions by composition and subsumption relationships.
+Use the **[GNOme Glycan Composition Browser](https://gnome.glyomics.org/CompositionBrowser.html)** to find glycan compositions by composition and subsumption relationships.
 
 Deep-linking is also supported, to jump to a specific GlyTouCan acccession: [G62109NW](https://gnome.glyomics.org/StructureBrowser.html?focus=G62109NW) or button state: [HexNAc(5)Hex(6)](https://gnome.glyomics.org/StructureBrowser.html?HexNAc=5&Hex=6).
 
