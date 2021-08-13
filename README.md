@@ -21,7 +21,7 @@ Deep-linking is also supported, to jump to a specific GlyTouCan acccession: [G62
 ### Restrictions ###
 [GNOme restrictions](restrictions) support speciifc subsets of GlyTouCan accessions:
 * [GlyGen](http://glygen.org): [Structure Browser](https://gnome.glyomics.org/restrictions/GlyGen.StructureBrowser.html), [Composition Browser](https://gnome.glyomics.org/restrictions/GlyGen.CompositionBrowser.html).
-* [GlycanData](http://grg.tn/GlycanData): [Structure Browser](https://gnome.glyomics.org/restrictions/GlycanData.StructureBrowser.html), [Composition Browser](https://gnome.glyomics.org/restrictions/GlycanData.CompositionBrowser.html).
+* [GlyCosmos](https://glycosmos.org/glycans/index): [Structure Browser](https://gnome.glyomics.org/restrictions/GlyCosmos.StructureBrowser.html), [Composition Browser](https://gnome.glyomics.org/restrictions/GlyCosmos.CompositionBrowser.html).
 * [BCSDB](http://csdb.glycoscience.ru/bacterial/): [Structure Browser](https://gnome.glyomics.org/restrictions/BCSDB.StructureBrowser.html), [Composition Browser](https://gnome.glyomics.org/restrictions/BCSDB.CompositionBrowser.html).
 
 ## Semantic Names
