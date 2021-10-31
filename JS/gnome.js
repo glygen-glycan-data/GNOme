@@ -2454,9 +2454,9 @@ function GNOmeBrowserBase (DIVID) {
 
         let requestURL = thisLib.GlyLookupURL + "/submit";
         let requestPara = {
+            "developer_email": "gnomebrowser@glyomics.org",
             "task": JSON.stringify({
-                "seq": sequences,
-                "developer_email": "gnomebrowser@glyomics.org"
+                "seq": sequences
             })
         }
 
@@ -2499,16 +2499,15 @@ function GNOmeBrowserBase (DIVID) {
             "notation": this.IconStyle,
             "display": "extended",
             "format": "png",
-            "seq": sequences,
-            "developer_email": "gnomebrowser@glyomics.org"
+            "seq": sequences
         }
-        let QueryImageRequest = jQuery.post(this.ImageGenerationSubmitURL, {"task": JSON.stringify(imagepara)});
+        let QueryImageRequest = jQuery.post(this.ImageGenerationSubmitURL, {"developer_email": "gnomebrowser@glyomics.org", "task": JSON.stringify(imagepara)});
 
 
         let requestURL = thisLib.SubsumptionComputingURL + "/submit";
         let requestPara = {
+            "developer_email": "gnomebrowser@glyomics.org",
             "task": JSON.stringify({
-                "developer_email": "gnomebrowser@glyomics.org",
                 "seqs": {"Query": sequences}
             })
         }
