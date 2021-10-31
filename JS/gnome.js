@@ -2461,7 +2461,7 @@ function GNOmeBrowserBase (DIVID) {
         }
 
         function GetResult(GlylookupJobid){
-            let requestURL = thisLib.GlyLookupURL + "/retrieve?list_id=" + GlylookupJobid;
+            let requestURL = thisLib.GlyLookupURL + "/retrieve?task_id=" + GlylookupJobid;
 
             jQuery.getJSON(requestURL).then(function (d) {
                 d = d[0];
@@ -2512,7 +2512,7 @@ function GNOmeBrowserBase (DIVID) {
             })
         }
         function GetResult(RealTimeCalculationHash){
-            let requestURL = thisLib.SubsumptionComputingURL + "/retrieve?list_id=" + RealTimeCalculationHash;
+            let requestURL = thisLib.SubsumptionComputingURL + "/retrieve?task_id=" + RealTimeCalculationHash;
 
             jQuery.getJSON(requestURL).then(function (d) {
                 d = d[0];
@@ -2526,7 +2526,7 @@ function GNOmeBrowserBase (DIVID) {
 
                     QueryImageRequest.then(function (ImageTaskSubmitResult){
 
-                        let imgURL = thisLib.ImageGenerationGetImageURL + "list_id=" + ImageTaskSubmitResult[0].id;
+                        let imgURL = thisLib.ImageGenerationGetImageURL + "task_id=" + ImageTaskSubmitResult[0].id;
                         thisLib.ImageComputed["Query"] = imgURL;
 
                         thisLib.CloseAlert();
