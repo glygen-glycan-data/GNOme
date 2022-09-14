@@ -2552,7 +2552,7 @@ function GNOmeBrowserBase (DIVID) {
 
 
     this.RenderRTResultWithKnownGlyTouCanAccession = function (accs) {
-        this.SetFocus(accs[0]);
+        this.SetFocus(accs[0].accession);
         this.RefreshUI();
     }
 
