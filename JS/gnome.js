@@ -2471,7 +2471,7 @@ function GNOmeBrowserBase (DIVID) {
                     let eqgtcacc = d["result"];
                     if (eqgtcacc.length > 0){
                         thisLib.CloseAlert();
-                        thisLib.RenderRTResultWithKnownGlyTouCanAccession(eqgtcacc);
+                        thisLib.RenderRTResultWithKnownGlyTouCanAccession(eqgtcacc[0].accession);
                     } else {
                         thisLib.SubsumptionRequest(sequences);
                     }
@@ -2551,8 +2551,8 @@ function GNOmeBrowserBase (DIVID) {
     }
 
 
-    this.RenderRTResultWithKnownGlyTouCanAccession = function (accs) {
-        this.SetFocus(accs[0].accession);
+    this.RenderRTResultWithKnownGlyTouCanAccession = function (acc) {
+        this.SetFocus(acc);
         this.RefreshUI();
     }
 
@@ -2584,7 +2584,7 @@ function GNOmeBrowserBase (DIVID) {
         }
 
         if (Object.keys(equivalent).includes("Query")){
-            this.RenderRTResultWithKnownGlyTouCanAccession([equivalent["Query"]]);
+            this.RenderRTResultWithKnownGlyTouCanAccession(equivalent["Query"]);
             return
         }
 
