@@ -2494,6 +2494,7 @@ function GNOmeBrowserBase (DIVID) {
     this.SubsumptionRequest = function (sequences, ondemandtaskid){
         let thisLib = this;
 
+	let QueryImageRequest = null;
 	if (sequences) {
             // We do this here since we already have access to the sequences
             let imagepara = {
@@ -2502,7 +2503,7 @@ function GNOmeBrowserBase (DIVID) {
 		"format": "png",
 		"seq": sequences
             }
-            let QueryImageRequest = jQuery.post(this.ImageGenerationSubmitURL, {"developer_email": "gnomebrowser@glyomics.org", "task": JSON.stringify(imagepara)});
+            QueryImageRequest = jQuery.post(this.ImageGenerationSubmitURL, {"developer_email": "gnomebrowser@glyomics.org", "task": JSON.stringify(imagepara)});
         }
 
        function GetResult(RealTimeCalculationHash){
@@ -2516,7 +2517,7 @@ function GNOmeBrowserBase (DIVID) {
                     return
                 }
 
-		if (QueryImageRequest == undefined) {
+		if (QueryImageRequest == null) {
 		    // need to submit the image request now we can get the sequences from the subsumption task result
 		    // don't need to wait for it to finish...since the task is always available there...
 
@@ -2526,7 +2527,7 @@ function GNOmeBrowserBase (DIVID) {
 			"format": "png",
 			"seq": d["task"]["seqs"]["Query"]
 		    }
-		    let QueryImageRequest = jQuery.post(this.ImageGenerationSubmitURL, {"developer_email": "gnomebrowser@glyomics.org", "task": JSON.stringify(imagepara)});
+		    QueryImageRequest = jQuery.post(this.ImageGenerationSubmitURL, {"developer_email": "gnomebrowser@glyomics.org", "task": JSON.stringify(imagepara)});
 			
                 }
 
