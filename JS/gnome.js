@@ -2517,19 +2517,16 @@ function GNOmeBrowserBase (DIVID) {
                     return
                 }
 
-		///////////
 		if (QueryImageRequest == null) {
 		    // need to submit the image request now we can get the sequences from the subsumption task result
 		    // don't need to wait for it to finish...since the task is always available there...
-
 		    let imagepara = {
 			"notation": this.IconStyle,
 			"display": "extended",
 			"format": "png",
 			"seq": d["task"]["seqs"]["Query"]
 		    }
-		    QueryImageRequest = jQuery.post(this.ImageGenerationSubmitURL, {"developer_email": "gnomebrowser@glyomics.org", "task": JSON.stringify(imagepara)});
-			
+		    QueryImageRequest = jQuery.post(thisLib.ImageGenerationSubmitURL, {"developer_email": "gnomebrowser@glyomics.org", "task": JSON.stringify(imagepara)});
                 }
 
                 if (d.finished){
