@@ -2517,6 +2517,7 @@ function GNOmeBrowserBase (DIVID) {
                     return
                 }
 
+		///////////
 		if (QueryImageRequest == null) {
 		    // need to submit the image request now we can get the sequences from the subsumption task result
 		    // don't need to wait for it to finish...since the task is always available there...
