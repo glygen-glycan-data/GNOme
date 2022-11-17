@@ -2494,24 +2494,18 @@ function GNOmeBrowserBase (DIVID) {
     this.SubsumptionRequest = function (sequences, ondemandtaskid){
         let thisLib = this;
 
-
-        let imagepara = {
-            "notation": this.IconStyle,
-            "display": "extended",
-            "format": "png",
-            "seq": sequences
+	if (sequences) {
+            // We do this here since we already have access to the sequences
+            let imagepara = {
+		"notation": this.IconStyle,
+		"display": "extended",
+		"format": "png",
+		"seq": sequences
+            }
+            let QueryImageRequest = jQuery.post(this.ImageGenerationSubmitURL, {"developer_email": "gnomebrowser@glyomics.org", "task": JSON.stringify(imagepara)});
         }
-        let QueryImageRequest = jQuery.post(this.ImageGenerationSubmitURL, {"developer_email": "gnomebrowser@glyomics.org", "task": JSON.stringify(imagepara)});
 
-
-        let requestURL = thisLib.SubsumptionComputingURL + "/submit";
-        let requestPara = {
-            "developer_email": "gnomebrowser@glyomics.org",
-            "task": JSON.stringify({
-                "seqs": {"Query": sequences}
-            })
-        }
-        function GetResult(RealTimeCalculationHash){
+       function GetResult(RealTimeCalculationHash){
             let requestURL = thisLib.SubsumptionComputingURL + "/retrieve?task_id=" + RealTimeCalculationHash;
 
             jQuery.getJSON(requestURL).then(function (d) {
@@ -2520,6 +2514,20 @@ function GNOmeBrowserBase (DIVID) {
                 if (typeof d.error === "string" && d.error.includes("not found")){
                     thisLib.Alert("Error", d.error, false)
                     return
+                }
+
+		if (QueryImageRequest == undefined) {
+		    // need to submit the image request now we can get the sequences from the subsumption task result
+		    // don't need to wait for it to finish...since the task is always available there...
+
+		    let imagepara = {
+			"notation": this.IconStyle,
+			"display": "extended",
+			"format": "png",
+			"seq": d["task"]["seqs"]["Query"]
+		    }
+		    let QueryImageRequest = jQuery.post(this.ImageGenerationSubmitURL, {"developer_email": "gnomebrowser@glyomics.org", "task": JSON.stringify(imagepara)});
+			
                 }
 
                 if (d.finished){
@@ -2539,15 +2547,21 @@ function GNOmeBrowserBase (DIVID) {
             })
         }
 
-
         if (ondemandtaskid == undefined){
+	    let requestURL = thisLib.SubsumptionComputingURL + "/submit";
+            let requestPara = {
+		"developer_email": "gnomebrowser@glyomics.org",
+		"task": JSON.stringify({
+                    "seqs": {"Query": sequences}
+		})
+            }
             jQuery.post(requestURL, requestPara).then(function (d) {
-                d = d[0]
-                GetResult(d.id);
+                GetResult(d[0].id);
             })
         } else {
             GetResult(ondemandtaskid);
         }
+
     }
 
 
