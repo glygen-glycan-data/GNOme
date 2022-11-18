@@ -3920,7 +3920,7 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
                         let thisComp = GnomeBrowserX.SubsumptionData[acc].ButtonConfig;
 
                         if (thisComp[k] < NewCount[k] ){
-                            NewCount[k] = thisComp[k]
+                            NewCount[k] = thisComp[k];
                         }
                     }
                 }
