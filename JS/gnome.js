@@ -3925,7 +3925,6 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
                     }
                 }
 	    })
-	}
             GNOmeBrowserX.SetItemCount(NewCount);
             GNOmeBrowserX.SetToScreenA();
         }
