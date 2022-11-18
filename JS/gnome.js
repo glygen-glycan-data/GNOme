@@ -3916,16 +3916,15 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
                 else{
                     NewCount[k] = 100;
 
-					for (let acc of GnomeBrowserX.TopLevelThings){
+		    for (let acc of GnomeBrowserX.TopLevelThings){
 
-						let thisComp = GnomeBrowserX.SubsumptionData[acc].ButtonConfig;
+			let thisComp = GnomeBrowserX.SubsumptionData[acc].ButtonConfig;
 						
-						if (thisComp[k] < NewCount[k] ){
-							NewCount[k] = thisComp[k]
-						}
-					}
-				}
-            }
+			if (thisComp[k] < NewCount[k] ){
+				NewCount[k] = thisComp[k]
+			}
+		    }
+		}
             })
             GNOmeBrowserX.SetItemCount(NewCount);
             GNOmeBrowserX.SetToScreenA();
