@@ -1404,6 +1404,9 @@ function GNOmeBrowserBase (DIVID) {
 
     // Tailored parameter for different browser
     this.AllItems = undefined;
+	
+	// Landing page mono parameters, change in theme for certain restrictions
+	this.DefaultURL = "";
 
     // Image and icon style
     this.IconStyle = "snfg";
@@ -1675,6 +1678,9 @@ function GNOmeBrowserBase (DIVID) {
                 }
             }
         }
+		
+		if (Object.keys(theme).includes('default_params')){
+			this.SetDefaultURL(theme['default_params']);
 
         for (var m of this.AllItems) {
             this.ItemCount[m] = 0;
@@ -3454,6 +3460,10 @@ function GNOmeBrowserBase (DIVID) {
         let re = /g|G\d{5}\w{2}/;
         return re.test(acc)
     }
+	
+	this.SetDefaultURL = function (f){
+		this.DefaultURL = f;
+	}
 
 
 
@@ -3941,9 +3951,12 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
             GNOmeBrowserX.SetFocus(para.focus);
         } else {
             let NewCount = {};
+			const defaultLandingParams = new URLSearchParams(this.DefaultURL);
+			para_set = false;
             GNOmeBrowserX.AllItems.forEach(function (k) {
                 if (Object.keys(para).includes(k)){
                     NewCount[k] = parseInt(para[k]);
+					para_set = true;
                 }
                 else{
                     NewCount[k] = 100;
@@ -3957,6 +3970,13 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
                     }
                 }
 	    })
+		if (!para_set){
+			GNOmeBrowserX.AllItems.forEach(function (k) {
+				if (Object.keys(defaultLandingParams).includes(k)) {
+					NewCount[k] = parseInt(para[k]);
+				}
+			}
+		}
 	    NewCount = this.FixAnyHexCount(NewCount);
             GNOmeBrowserX.SetItemCount(NewCount);
             GNOmeBrowserX.SetToScreenA();
@@ -4038,7 +4058,6 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
     }
 
 }
-
 
 
 
