@@ -3014,7 +3014,6 @@ function GNOmeBrowserBase (DIVID) {
 
     this.SubFlag = function () {
         let res = {};
-	console.log(this.ItemCountMin);
 
         for (var m of this.AllItems){
             res[m] = this.ItemCount[m] > this.ItemCountMin[m];
