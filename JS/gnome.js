@@ -1424,6 +1424,7 @@ function GNOmeBrowserBase (DIVID) {
     // The data decides what to show
     this.ItemCount = {};
     this.ItemCountMax = {};
+	this.ItemCountMin = {};
     this.MatchedGlycans = [];
     this.HighLightGlycans = [];
     this.SubsumptionNavigatorFocusAccession = "";
@@ -1686,6 +1687,7 @@ function GNOmeBrowserBase (DIVID) {
         this.ComputeTopLevelThings();
         this.SubsumptionDataBackUp = JSON.parse(JSON.stringify(this.SubsumptionData));
         this.UpdateMaxPossibleComp();
+		this.UpdateMinPossibleComp();
 
         this.RefreshUI();
 
@@ -2929,6 +2931,35 @@ function GNOmeBrowserBase (DIVID) {
         }
 
     }
+	
+    this.UpdateMinPossibleComp = function() {
+
+        for (let m of this.AllItems){
+            this.ItemCountMin[m] = 200;
+        }
+
+        for (let acc of this.TopLevelThings){
+
+            let thisComp = this.SubsumptionData[acc].ButtonConfig;
+            let f = true;
+
+            for (let m of this.AllItems) {
+                if (this.ItemCount[m] < thisComp[m]) {
+                    f = false;
+                    break;
+                }
+            }
+
+            if (f){
+                for (let m of this.AllItems){
+                    if (thisComp[m] < this.ItemCountMin[m] ){
+                        this.ItemCountMin[m] = thisComp[m]
+                    }
+                }
+            }
+        }
+
+    }	
 
     this.UpdateHighlightGlycans = function (acc) {
         this.HighLightGlycans = [];
@@ -2985,7 +3016,7 @@ function GNOmeBrowserBase (DIVID) {
         let res = {};
 
         for (var m of this.AllItems){
-            res[m] = this.ItemCount[m] > 0;
+            res[m] = this.ItemCount[m] > this.ItemCountMin[m];
         }
 
         let hexnacCount = 0;
@@ -3028,6 +3059,7 @@ function GNOmeBrowserBase (DIVID) {
         }
 
         this.UpdateMaxPossibleComp();
+		this.UpdateMinPossibleComp();
     }
 
     this.GetDescendants = function (acc) {
@@ -4008,7 +4040,6 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
     }
 
 }
-
 
 
 
