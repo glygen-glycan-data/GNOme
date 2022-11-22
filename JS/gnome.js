@@ -3014,6 +3014,7 @@ function GNOmeBrowserBase (DIVID) {
 
     this.SubFlag = function () {
         let res = {};
+	console.log(this.ItemCountMin);
 
         for (var m of this.AllItems){
             res[m] = this.ItemCount[m] > this.ItemCountMin[m];
@@ -3953,8 +3954,6 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
 
                         if (thisComp[k] < NewCount[k] ){
                             NewCount[k] = thisComp[k];
-			    console.log(thisComp);
-		    	    console.log(acc);
                         }
                     }
                 }
