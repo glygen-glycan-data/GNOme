@@ -3952,8 +3952,8 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
             GNOmeBrowserX.SetFocus(para.focus);
         } else {
             let NewCount = {};
-			const defaultLandingParams = new URLSearchParams(this.DefaultURL);
-			para_set = false;
+	    const defaultLandingParams = new URLSearchParams(this.DefaultURL);
+	    let para_set = false;
             GNOmeBrowserX.AllItems.forEach(function (k) {
                 if (Object.keys(para).includes(k)){
                     NewCount[k] = parseInt(para[k]);
