@@ -1681,6 +1681,8 @@ function GNOmeBrowserBase (DIVID) {
 		
 	if (Object.keys(theme).includes('default_params')){
 	    this.SetDefaultURL(theme['default_params']);
+	    console.log(theme['default_params']);
+	    console.log(this.DefaultURL);
 	}
 
         for (var m of this.AllItems) {
@@ -3464,6 +3466,7 @@ function GNOmeBrowserBase (DIVID) {
 	
 	this.SetDefaultURL = function (f){
 		this.DefaultURL = f;
+		console.log('setting');
 	}
 
 
@@ -3953,11 +3956,17 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
         } else {
             let NewCount = {};
 	    const defaultLandingParams = new URLSearchParams(this.DefaultURL);
-	    console.log(defaultLandingParams);
+            let default_res = {};
+
+            for (let k of defaultLandingParams.keys()){
+                default_res[k] = defaultLandingParams.get(k);
+            }
+	    console.log(default_res);
 	    let para_set = false;
             GNOmeBrowserX.AllItems.forEach(function (k) {
                 if (Object.keys(para).includes(k)){
                     NewCount[k] = parseInt(para[k]);
+		    console.log(k);
 		    para_set = true;
                 }
                 else{
@@ -3973,10 +3982,10 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
                 }
 	    })
 	    if (para_set === false){
-		console.log(defaultLandingParams);
+		console.log(default_res);
 		GNOmeBrowserX.AllItems.forEach(function (k) {
-		    if (Object.keys(defaultLandingParams).includes(k)) {
-			NewCount[k] = parseInt(defaultLandingParams[k]);
+		    if (Object.keys(default_res).includes(k)) {
+			NewCount[k] = parseInt(default_res[k]);
 		    }
 		})
 	    }
