@@ -3976,7 +3976,7 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
 				if (Object.keys(defaultLandingParams).includes(k)) {
 					NewCount[k] = parseInt(para[k]);
 				}
-			}
+			})
 		}
 	    NewCount = this.FixAnyHexCount(NewCount);
             GNOmeBrowserX.SetItemCount(NewCount);
