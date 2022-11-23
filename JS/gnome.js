@@ -3974,7 +3974,7 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
 		if (!para_set){
 			GNOmeBrowserX.AllItems.forEach(function (k) {
 				if (Object.keys(defaultLandingParams).includes(k)) {
-					NewCount[k] = parseInt(para[k]);
+					NewCount[k] = parseInt(defaultLandingParams[k]);
 				}
 			})
 		}
