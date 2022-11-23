@@ -3953,11 +3953,12 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
         } else {
             let NewCount = {};
 	    const defaultLandingParams = new URLSearchParams(this.DefaultURL);
+	    console.log(defaultLandingParams);
 	    let para_set = false;
             GNOmeBrowserX.AllItems.forEach(function (k) {
                 if (Object.keys(para).includes(k)){
                     NewCount[k] = parseInt(para[k]);
-					para_set = true;
+		    para_set = true;
                 }
                 else{
                     NewCount[k] = 100;
@@ -3971,13 +3972,14 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
                     }
                 }
 	    })
-		if (!para_set){
-			GNOmeBrowserX.AllItems.forEach(function (k) {
-				if (Object.keys(defaultLandingParams).includes(k)) {
-					NewCount[k] = parseInt(defaultLandingParams[k]);
-				}
-			})
-		}
+	    if (para_set === false){
+		console.log(defaultLandingParams);
+		GNOmeBrowserX.AllItems.forEach(function (k) {
+		    if (Object.keys(defaultLandingParams).includes(k)) {
+			NewCount[k] = parseInt(defaultLandingParams[k]);
+		    }
+		})
+	    }
 	    NewCount = this.FixAnyHexCount(NewCount);
             GNOmeBrowserX.SetItemCount(NewCount);
             GNOmeBrowserX.SetToScreenA();
