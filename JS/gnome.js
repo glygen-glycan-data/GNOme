@@ -4021,6 +4021,9 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
     }
 
     this.FixAnyHexCount = function (p) {
+	if (Object.keys(p).length === 0){
+	    return p
+	}
         let hex = 0;
         let hexnac = 0;
         let dhex = 0;
