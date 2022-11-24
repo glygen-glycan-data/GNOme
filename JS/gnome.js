@@ -3955,8 +3955,8 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
             GNOmeBrowserX.SetFocus(para.focus);
         } else {
             let NewCount = {};
-	    console.log(this.DefaultURL);
-	    const defaultLandingParams = new URLSearchParams(this.DefaultURL);
+	    console.log(GNOmeBrowserX.DefaultURL);
+	    const defaultLandingParams = new URLSearchParams(GNOmeBrowserX.DefaultURL);
             let default_res = {};
 
             for (let k of defaultLandingParams.keys()){
