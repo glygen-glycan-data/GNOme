@@ -3955,11 +3955,12 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
             GNOmeBrowserX.SetFocus(para.focus);
         } else {
             let NewCount = {};
+	    console.log(this.DefaultURL);
 	    const defaultLandingParams = new URLSearchParams(this.DefaultURL);
             let default_res = {};
 
             for (let k of defaultLandingParams.keys()){
-                default_res[k] = defaultLandingParams.get(k);
+                default_res[k] = defaultLandingParams.get(k)
             }
 	    console.log(default_res);
 	    let para_set = false;
@@ -3982,10 +3983,10 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
                 }
 	    })
 	    if (para_set === false){
-		console.log(default_res);
 		GNOmeBrowserX.AllItems.forEach(function (k) {
 		    if (Object.keys(default_res).includes(k)) {
 			NewCount[k] = parseInt(default_res[k]);
+			console.log(k);
 		    }
 		})
 	    }
