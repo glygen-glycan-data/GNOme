@@ -1679,11 +1679,11 @@ function GNOmeBrowserBase (DIVID) {
             }
         }
 		
-	if (Object.keys(theme).includes('default_params')){
-	    this.SetDefaultURL(theme['default_params']);
-	    //console.log(theme['default_params']);
-	    //console.log(this.DefaultURL);
-	}
+	    if (Object.keys(theme).includes('default_params')){
+	        this.SetDefaultURL(theme['default_params']);
+	        //console.log(theme['default_params']);
+	        //console.log(this.DefaultURL);
+	    }
 
         for (var m of this.AllItems) {
             this.ItemCount[m] = 0;
@@ -1984,11 +1984,23 @@ function GNOmeBrowserBase (DIVID) {
         let thisLib = this;
 
         this.SetToScreenA();
-
-        for (let m of Object.keys(this.ItemCount)){
-            // console.log(m, this.ItemCount[m])
-            this.ItemCount[m] = 0;
+		
+	    const defaultLandingParams = new URLSearchParams(this.DefaultURL);
+        let default_res = {};
+        for (let k of defaultLandingParams.keys()){
+            default_res[k] = defaultLandingParams.get(k)
         }
+		
+	    this.AllItems.forEach(function (k) {
+		    if (Object.keys(default_res).includes(k)) {
+			    this.ItemCount[k] = parseInt(default_res[k]);
+		    }
+			else{
+				this.ItemCount[k] = 0;
+			}
+		})
+        
+		this.ItemCount = this.FixAnyHexCount(this.ItemCount)
 
         this.SubsumptionData = JSON.parse(JSON.stringify(this.SubsumptionDataBackUp));
 
@@ -2002,6 +2014,53 @@ function GNOmeBrowserBase (DIVID) {
 
         this.ClearCookie();
         this.RefreshUI();
+    }
+	
+    this.FixAnyHexCount = function (p) {
+	if (Object.keys(p).length === 0){
+	    return p
+	}
+        let hex = 0;
+        let hexnac = 0;
+        let dhex = 0;
+
+        for (let m of ['Glc', 'Gal', 'Man']){
+            if (Object.keys(p).includes(m)){
+                hex += parseInt(p[m]);
+            }
+        }
+
+        for (let m of ['GlcNAc', 'GalNAc', 'ManNAc']){
+            if (Object.keys(p).includes(m)){
+                hexnac += parseInt(p[m]);
+            }
+        }
+
+        for (let m of ['Fuc']){
+            if (Object.keys(p).includes(m)){
+                dhex += parseInt(p[m]);
+            }
+        }
+
+        for (let m of ['Hex','HexNAc','dHex']){
+            if (p[m] == undefined){
+                p[m] = "0";
+            }
+        }
+
+        if (hex > 0 && parseInt(p['Hex']) < hex){
+            p['Hex'] = hex.toString();
+        }
+
+        if (hexnac > 0 && parseInt(p['HexNAc']) < hexnac){
+            p['HexNAc'] = hexnac.toString();
+        }
+
+        if (dhex > 0 && parseInt(p['dHex']) < dhex){
+            p['dHex'] = dhex.toString();
+        }
+        return p
+
     }
 
     this.SetCookie = function (k, v, exdays){
@@ -3964,23 +4023,23 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
             }
 	    //console.log(default_res);
 	    let para_set = false;
-            GNOmeBrowserX.AllItems.forEach(function (k) {
-                if (Object.keys(para).includes(k)){
-                    NewCount[k] = parseInt(para[k]);
-		    //console.log(k);
-		    para_set = true;
-                }
-                else{
-                    NewCount[k] = 100;
-		    for (let acc of GNOmeBrowserX.TopLevelThings){
+        GNOmeBrowserX.AllItems.forEach(function (k) {
+            if (Object.keys(para).includes(k)){
+                NewCount[k] = parseInt(para[k]);
+		        //console.log(k);
+		        para_set = true;
+            }
+            else{
+                NewCount[k] = 100;
+		        for (let acc of GNOmeBrowserX.TopLevelThings){
 
-                        let thisComp = GNOmeBrowserX.SubsumptionData[acc].ButtonConfig;
+                    let thisComp = GNOmeBrowserX.SubsumptionData[acc].ButtonConfig;
 
-                        if (thisComp[k] < NewCount[k] ){
-                            NewCount[k] = thisComp[k];
-                        }
+                    if (thisComp[k] < NewCount[k] ){
+                        NewCount[k] = thisComp[k];
                     }
                 }
+            }
 	    })
 	    if (para_set === false){
 		GNOmeBrowserX.AllItems.forEach(function (k) {
@@ -4022,49 +4081,8 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
     }
 
     this.FixAnyHexCount = function (p) {
-	if (Object.keys(p).length === 0){
-	    return p
-	}
-        let hex = 0;
-        let hexnac = 0;
-        let dhex = 0;
-
-        for (let m of ['Glc', 'Gal', 'Man']){
-            if (Object.keys(p).includes(m)){
-                hex += parseInt(p[m]);
-            }
-        }
-
-        for (let m of ['GlcNAc', 'GalNAc', 'ManNAc']){
-            if (Object.keys(p).includes(m)){
-                hexnac += parseInt(p[m]);
-            }
-        }
-
-        for (let m of ['Fuc']){
-            if (Object.keys(p).includes(m)){
-                dhex += parseInt(p[m]);
-            }
-        }
-
-        for (let m of ['Hex','HexNAc','dHex']){
-            if (p[m] == undefined){
-                p[m] = "0";
-            }
-        }
-
-        if (hex > 0 && parseInt(p['Hex']) < hex){
-            p['Hex'] = hex.toString();
-        }
-
-        if (hexnac > 0 && parseInt(p['HexNAc']) < hexnac){
-            p['HexNAc'] = hexnac.toString();
-        }
-
-        if (dhex > 0 && parseInt(p['dHex']) < dhex){
-            p['dHex'] = dhex.toString();
-        }
-        return p
+		p = GNOmeBrowserX.FixAnyHexCount(p);
+		return p
 
     }
 
