@@ -1990,17 +1990,19 @@ function GNOmeBrowserBase (DIVID) {
         for (let k of defaultLandingParams.keys()){
             default_res[k] = defaultLandingParams.get(k);
         }
+        let NewCount = {};
 		
         for (var m of this.AllItems) {
 		        if (Object.keys(default_res).includes(m)) {
-	              this.ItemCount[m] = parseInt(default_res[m]);
+	              NewCount[m] = default_res[m];
             }
 			      else{
-				        this.ItemCount[m] = 0;
+				        NewCount[m] = 0;
 			      }
         }
         
-		    this.ItemCount = this.FixAnyHexCount(this.ItemCount)
+		    NewCount = this.FixAnyHexCount(NewCount);
+        this.SetItemCount(NewCount);
 
         this.SubsumptionData = JSON.parse(JSON.stringify(this.SubsumptionDataBackUp));
 
@@ -2017,9 +2019,9 @@ function GNOmeBrowserBase (DIVID) {
     }
 	
     this.FixAnyHexCount = function (p) {
-	if (Object.keys(p).length === 0){
-	    return p
-	}
+	      if (Object.keys(p).length === 0){
+	         return p
+	      }
         let hex = 0;
         let hexnac = 0;
         let dhex = 0;
@@ -4014,14 +4016,12 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
             GNOmeBrowserX.SetFocus(para.focus);
         } else {
             let NewCount = {};
-	    //console.log(GNOmeBrowserX.DefaultURL);
 	    const defaultLandingParams = new URLSearchParams(GNOmeBrowserX.DefaultURL);
             let default_res = {};
 
             for (let k of defaultLandingParams.keys()){
                 default_res[k] = defaultLandingParams.get(k)
             }
-	    //console.log(default_res);
 	    let para_set = false;
         GNOmeBrowserX.AllItems.forEach(function (k) {
             if (Object.keys(para).includes(k)){
