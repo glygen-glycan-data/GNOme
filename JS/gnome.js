@@ -1988,19 +1988,19 @@ function GNOmeBrowserBase (DIVID) {
 	    const defaultLandingParams = new URLSearchParams(this.DefaultURL);
         let default_res = {};
         for (let k of defaultLandingParams.keys()){
-            default_res[k] = defaultLandingParams.get(k)
+            default_res[k] = defaultLandingParams.get(k);
         }
 		
-	    this.AllItems.forEach(function (k) {
-		    if (Object.keys(default_res).includes(k)) {
-			    this.ItemCount[k] = parseInt(default_res[k]);
-		    }
-			else{
-				this.ItemCount[k] = 0;
-			}
-		})
+        for (var m of this.AllItems) {
+		        if (Object.keys(default_res).includes(m)) {
+	              this.ItemCount[m] = parseInt(default_res[m]);
+            }
+			      else{
+				        this.ItemCount[m] = 0;
+			      }
+        }
         
-		this.ItemCount = this.FixAnyHexCount(this.ItemCount)
+		    this.ItemCount = this.FixAnyHexCount(this.ItemCount)
 
         this.SubsumptionData = JSON.parse(JSON.stringify(this.SubsumptionDataBackUp));
 
