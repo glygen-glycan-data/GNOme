@@ -1679,11 +1679,12 @@ function GNOmeBrowserBase (DIVID) {
             }
         }
 		
-	    if (Object.keys(theme).includes('default_params')){
-	        this.SetDefaultURL(theme['default_params']);
-	        //console.log(theme['default_params']);
-	        //console.log(this.DefaultURL);
-	    }
+	if (Object.keys(theme).includes('default_params')){
+	    this.SetDefaultURL(theme['default_params']);
+	}
+        if (Object.keys(para).includes('default_params')){
+            this.SetDefaultURL(para['default_params']);
+        }
 
         for (var m of this.AllItems) {
             this.ItemCount[m] = 0;
