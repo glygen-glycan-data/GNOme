@@ -1404,9 +1404,9 @@ function GNOmeBrowserBase (DIVID) {
 
     // Tailored parameter for different browser
     this.AllItems = undefined;
-	
-	// Landing page mono parameters, change in theme for certain restrictions
-	this.DefaultURL = "";
+
+    // Landing page mono parameters, change in theme for certain restrictions
+    this.DefaultURL = "";
 
     // Image and icon style
     this.IconStyle = "snfg";
@@ -1427,7 +1427,7 @@ function GNOmeBrowserBase (DIVID) {
     // The data decides what to show
     this.ItemCount = {};
     this.ItemCountMax = {};
-	this.ItemCountMin = {};
+    this.ItemCountMin = {};
     this.MatchedGlycans = [];
     this.HighLightGlycans = [];
     this.SubsumptionNavigatorFocusAccession = "";
@@ -1678,8 +1678,8 @@ function GNOmeBrowserBase (DIVID) {
                 }
             }
         }
-		
-	if (Object.keys(theme).includes('default_params')){
+
+        if (Object.keys(theme).includes('default_params')){
 	    this.SetDefaultURL(theme['default_params']);
 	}
         if (Object.keys(para).includes('default_params')){
@@ -1697,7 +1697,7 @@ function GNOmeBrowserBase (DIVID) {
         this.ComputeTopLevelThings();
         this.SubsumptionDataBackUp = JSON.parse(JSON.stringify(this.SubsumptionData));
         this.UpdateMaxPossibleComp();
-		this.UpdateMinPossibleComp();
+	this.UpdateMinPossibleComp();
 
         this.RefreshUI();
 
@@ -1985,8 +1985,8 @@ function GNOmeBrowserBase (DIVID) {
         let thisLib = this;
 
         this.SetToScreenA();
-		
-	    const defaultLandingParams = new URLSearchParams(this.DefaultURL);
+	
+	const defaultLandingParams = new URLSearchParams(this.DefaultURL);
         let default_res = {};
         for (let k of defaultLandingParams.keys()){
             default_res[k] = defaultLandingParams.get(k);
@@ -1994,15 +1994,15 @@ function GNOmeBrowserBase (DIVID) {
         let NewCount = {};
 		
         for (var m of this.AllItems) {
-		        if (Object.keys(default_res).includes(m)) {
-	              NewCount[m] = default_res[m];
+	    if (Object.keys(default_res).includes(m)) {
+	        NewCount[m] = default_res[m];
             }
-			      else{
-				        NewCount[m] = 0;
-			      }
+	    else{
+		NewCount[m] = 0;
+	    }
         }
         
-		    NewCount = this.FixAnyHexCount(NewCount);
+	NewCount = this.FixAnyHexCount(NewCount);
         this.SetItemCount(NewCount);
 
         this.SubsumptionData = JSON.parse(JSON.stringify(this.SubsumptionDataBackUp));
@@ -3143,7 +3143,7 @@ function GNOmeBrowserBase (DIVID) {
         }
 
         this.UpdateMaxPossibleComp();
-		this.UpdateMinPossibleComp();
+	this.UpdateMinPossibleComp();
     }
 
     this.GetDescendants = function (acc) {
@@ -3539,10 +3539,10 @@ function GNOmeBrowserBase (DIVID) {
         return re.test(acc)
     }
 	
-	this.SetDefaultURL = function (f){
-		this.DefaultURL = f;
-		//console.log('setting');
-	}
+    this.SetDefaultURL = function (f){
+	this.DefaultURL = f;
+	//console.log('setting');
+    }
 
 
 
@@ -4037,16 +4037,16 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
                 default_res[k] = defaultLandingParams.get(k)
             }
 	    let para_set = false;
-        GNOmeBrowserX.AllItems.forEach(function (k) {
+            GNOmeBrowserX.AllItems.forEach(function (k) {
             if (Object.keys(para).includes(k)){
                 NewCount[k] = parseInt(para[k]);
-		        //console.log(k);
-		        para_set = true;
+		//console.log(k);
+		para_set = true;
             }
             else{
                 NewCount[k] = 100;
-		        for (let acc of GNOmeBrowserX.TopLevelThings){
-
+		for (let acc of GNOmeBrowserX.TopLevelThings){
+		    
                     let thisComp = GNOmeBrowserX.SubsumptionData[acc].ButtonConfig;
 
                     if (thisComp[k] < NewCount[k] ){
@@ -4095,8 +4095,8 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
     }
 
     this.FixAnyHexCount = function (p) {
-		p = GNOmeBrowserX.FixAnyHexCount(p);
-		return p
+	p = GNOmeBrowserX.FixAnyHexCount(p);
+	return p
 
     }
 
