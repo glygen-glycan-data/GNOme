@@ -1,6 +1,5 @@
 {
   "brand": "A <a href='https://www.glygen.org/' target='_blank'>GlyGen</a> project",
-  "default_params": "GlcNAc=2&Man=3",
   "external_resources": [
     {
       "glycan_set": [
