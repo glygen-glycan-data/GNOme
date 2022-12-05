@@ -4076,7 +4076,8 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
             }
         }
 
-
+        GNOmeBrowserX.UpdateMaxPossibleComp();
+		GNOmeBrowserX.UpdateMinPossibleComp();
         GNOmeBrowserX.RefreshUI();
     }
 
