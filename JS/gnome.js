@@ -2016,6 +2016,8 @@ function GNOmeBrowserBase (DIVID) {
         this.ComputeTopLevelThings();
 
         this.ClearCookie();
+	this.UpdateMaxPossibleComp();
+	this.UpdateMinPossibleComp();
         this.RefreshUI();
     }
 	
