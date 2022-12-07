@@ -3028,13 +3028,15 @@ function GNOmeBrowserBase (DIVID) {
 
             let thisComp = this.SubsumptionData[acc].ButtonConfig;
             let f = true;
-
-            for (let m of this.AllItems) {
-                if (this.ItemCount[m] < thisComp[m]) {
-                    f = false;
-                    break;
-                }
-            }
+		
+            //Bloc removed to allow monosaccharide subtraction to global minimum values
+	    //instead of dynamic minimum calculation
+            //for (let m of this.AllItems) {
+                //if (this.ItemCount[m] < thisComp[m]) {
+                    //f = false;
+                    //break;
+                //}
+            //}
 
             if (f){
                 for (let m of this.AllItems){
