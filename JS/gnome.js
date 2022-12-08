@@ -3104,21 +3104,7 @@ function GNOmeBrowserBase (DIVID) {
         for (var m of this.AllItems){
             res[m] = this.ItemCount[m] > this.ItemCountMin[m];
         }
-	    
-	let hexnacCount = 0;
-        for (let m of ['GlcNAc', 'GalNAc', 'ManNAc']){
-            hexnacCount += this.ItemCount[m];
-        }
-        res["HexNAc"] = hexnacCount < this.ItemCount["HexNAc"];
 
-        let hexCount = 0;
-        for (let m of ['Glc', 'Gal', 'Man']){
-            hexCount += this.ItemCount[m];
-        }
-        res["Hex"] = hexCount < this.ItemCount["Hex"];
-
-        res["dHex"] = this.ItemCount["Fuc"] < this.ItemCount["dHex"];
-		
 	if (this.ItemCount["Hex"] == this.ItemCountMin["Hex"]){
             res["Glc"] = false;
             res["Gal"] = false;
@@ -3133,6 +3119,20 @@ function GNOmeBrowserBase (DIVID) {
             res["Fuc"] = false;
         }
 
+        let hexnacCount = 0;
+        for (let m of ['GlcNAc', 'GalNAc', 'ManNAc']){
+            hexnacCount += this.ItemCount[m];
+        }
+        res["HexNAc"] = hexnacCount < this.ItemCount["HexNAc"];
+
+        let hexCount = 0;
+        for (let m of ['Glc', 'Gal', 'Man']){
+            hexCount += this.ItemCount[m];
+        }
+        res["Hex"] = hexCount < this.ItemCount["Hex"];
+
+        res["dHex"] = this.ItemCount["Fuc"] < this.ItemCount["dHex"];
+		
 
         return res
     }
