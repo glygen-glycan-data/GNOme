@@ -3029,14 +3029,12 @@ function GNOmeBrowserBase (DIVID) {
             let thisComp = this.SubsumptionData[acc].ButtonConfig;
             let f = true;
 		
-            //Bloc removed to allow monosaccharide subtraction to global minimum values
-	    //instead of dynamic minimum calculation
-            //for (let m of this.AllItems) {
-                //if (this.ItemCount[m] < thisComp[m]) {
-                    //f = false;
-                    //break;
-                //}
-            //}
+            for (let m of this.AllItems) {
+                if (this.ItemCount[m] < thisComp[m]) {
+                    f = false;
+                    break;
+                }
+            }
 
             if (f){
                 for (let m of this.AllItems){
@@ -3120,6 +3118,21 @@ function GNOmeBrowserBase (DIVID) {
         res["Hex"] = hexCount < this.ItemCount["Hex"];
 
         res["dHex"] = this.ItemCount["Fuc"] < this.ItemCount["dHex"];
+		
+		if (this.ItemCount["Hex"] == this.ItemCountMax["Hex"]){
+            res["Glc"] = false;
+            res["Gal"] = false;
+            res["Man"] = false;
+        }
+        if (this.ItemCount["HexNAc"] == this.ItemCountMax["HexNAc"]){
+            res["GlcNAc"] = false;
+            res["GalNAc"] = false;
+            res["ManNAc"] = false;
+        }
+        if (this.ItemCount["dHex"] == this.ItemCountMax["dHex"]){
+            res["Fuc"] = false;
+        }
+
 
         return res
     }
