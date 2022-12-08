@@ -3104,32 +3104,18 @@ function GNOmeBrowserBase (DIVID) {
         for (var m of this.AllItems){
             res[m] = this.ItemCount[m] > this.ItemCountMin[m];
         }
-
-        let hexnacCount = 0;
-        for (let m of ['GlcNAc', 'GalNAc', 'ManNAc']){
-            hexnacCount += this.ItemCount[m];
-        }
-        res["HexNAc"] = hexnacCount < this.ItemCount["HexNAc"];
-
-        let hexCount = 0;
-        for (let m of ['Glc', 'Gal', 'Man']){
-            hexCount += this.ItemCount[m];
-        }
-        res["Hex"] = hexCount < this.ItemCount["Hex"];
-
-        res["dHex"] = this.ItemCount["Fuc"] < this.ItemCount["dHex"];
 		
-		if (this.ItemCount["Hex"] == this.ItemCountMax["Hex"]){
+	if (this.ItemCount["Hex"] == this.ItemCountMin["Hex"]){
             res["Glc"] = false;
             res["Gal"] = false;
             res["Man"] = false;
         }
-        if (this.ItemCount["HexNAc"] == this.ItemCountMax["HexNAc"]){
+        if (this.ItemCount["HexNAc"] == this.ItemCountMin["HexNAc"]){
             res["GlcNAc"] = false;
             res["GalNAc"] = false;
             res["ManNAc"] = false;
         }
-        if (this.ItemCount["dHex"] == this.ItemCountMax["dHex"]){
+        if (this.ItemCount["dHex"] == this.ItemCountMin["dHex"]){
             res["Fuc"] = false;
         }
 
