@@ -3020,6 +3020,7 @@ function GNOmeBrowserBase (DIVID) {
 	
     this.UpdateMinPossibleComp = function() {
 
+        // console.log("UpdateMinPossibleComp")
         for (let m of this.AllItems){
             this.ItemCountMin[m] = 200;
         }
@@ -3037,6 +3038,8 @@ function GNOmeBrowserBase (DIVID) {
             }
 
             if (f){
+                // console.log(acc);
+                // console.log(thisComp);
                 for (let m of this.AllItems){
                     if (thisComp[m] < this.ItemCountMin[m] ){
                         this.ItemCountMin[m] = thisComp[m]
@@ -3101,38 +3104,47 @@ function GNOmeBrowserBase (DIVID) {
     this.SubFlag = function () {
         let res = {};
 
+        // console.log("SubFlag");
+        // console.log(this.ItemCount['HexNAc'],this.ItemCount['GlcNAc'],this.ItemCount['Xxx']);
+        // console.log(this.ItemCountMin['HexNAc'],this.ItemCountMin['GlcNAc'],this.ItemCountMin['Xxx']);
         for (var m of this.AllItems){
             res[m] = this.ItemCount[m] > this.ItemCountMin[m];
         }
-
-	if (this.ItemCount["Hex"] == this.ItemCountMin["Hex"]){
-            res["Glc"] = false;
-            res["Gal"] = false;
-            res["Man"] = false;
-        }
-        if (this.ItemCount["HexNAc"] == this.ItemCountMin["HexNAc"]){
-            res["GlcNAc"] = false;
-            res["GalNAc"] = false;
-            res["ManNAc"] = false;
-        }
-        if (this.ItemCount["dHex"] == this.ItemCountMin["dHex"]){
-            res["Fuc"] = false;
-        }
+        // console.log(res['HexNAc'],res['GlcNAc'],res['Xxx']);
 
         let hexnacCount = 0;
         for (let m of ['GlcNAc', 'GalNAc', 'ManNAc']){
             hexnacCount += this.ItemCount[m];
         }
-        res["HexNAc"] = hexnacCount < this.ItemCount["HexNAc"];
-
         let hexCount = 0;
         for (let m of ['Glc', 'Gal', 'Man']){
             hexCount += this.ItemCount[m];
         }
-        res["Hex"] = hexCount < this.ItemCount["Hex"];
+        let dhexCount = this.ItemCount['Fuc'];
 
-        res["dHex"] = this.ItemCount["Fuc"] < this.ItemCount["dHex"];
-		
+        if (this.ItemCount["Hex"] <= this.ItemCountMin["Hex"] ||
+            (hexCount <= this.ItemCountMin["Hex"] && hexCount == this.ItemCount["Hex"])){
+            res["Glc"] = false;
+            res["Gal"] = false;
+            res["Man"] = false;
+        }
+        if (this.ItemCount["HexNAc"] <= this.ItemCountMin["HexNAc"] ||
+            (hexnacCount <= this.ItemCountMin["HexNAc"] && hexnacCount == this.ItemCount["HexNAc"])){
+            res["GlcNAc"] = false;
+            res["GalNAc"] = false;
+            res["ManNAc"] = false;
+        }
+        if (this.ItemCount["dHex"] <= this.ItemCountMin["dHex"] ||
+            (dhexCount <= this.ItemCountMin["dHex"] && dhexCount == this.ItemCount["dHex"])){
+            res["Fuc"] = false;
+        }
+        // console.log(res['HexNAc'],res['GlcNAc'],res['Xxx']);
+
+        res["HexNAc"] = res["HexNAc"] && (hexnacCount < this.ItemCount["HexNAc"]);
+        res["Hex"] = res["Hex"] && (hexCount < this.ItemCount["Hex"]);
+        res["dHex"] = res["dHex"] && (dhexCount < this.ItemCount["dHex"]);
+
+        // console.log(res['HexNAc'],res['GlcNAc'],res['Xxx']);
 
         return res
     }
@@ -4094,7 +4106,7 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
         }
 
         GNOmeBrowserX.UpdateMaxPossibleComp();
-		GNOmeBrowserX.UpdateMinPossibleComp();
+	GNOmeBrowserX.UpdateMinPossibleComp();
         GNOmeBrowserX.RefreshUI();
     }
 
