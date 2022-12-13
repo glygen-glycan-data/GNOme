@@ -3020,7 +3020,6 @@ function GNOmeBrowserBase (DIVID) {
 	
     this.UpdateMinPossibleComp = function() {
 
-        // console.log("UpdateMinPossibleComp")
         for (let m of this.AllItems){
             this.ItemCountMin[m] = 200;
         }
@@ -3038,8 +3037,6 @@ function GNOmeBrowserBase (DIVID) {
             }
 
             if (f){
-                // console.log(acc);
-                // console.log(thisComp);
                 for (let m of this.AllItems){
                     if (thisComp[m] < this.ItemCountMin[m] ){
                         this.ItemCountMin[m] = thisComp[m]
@@ -3104,13 +3101,9 @@ function GNOmeBrowserBase (DIVID) {
     this.SubFlag = function () {
         let res = {};
 
-        // console.log("SubFlag");
-        // console.log(this.ItemCount['HexNAc'],this.ItemCount['GlcNAc'],this.ItemCount['Xxx']);
-        // console.log(this.ItemCountMin['HexNAc'],this.ItemCountMin['GlcNAc'],this.ItemCountMin['Xxx']);
         for (var m of this.AllItems){
             res[m] = this.ItemCount[m] > this.ItemCountMin[m];
         }
-        // console.log(res['HexNAc'],res['GlcNAc'],res['Xxx']);
 
         let hexnacCount = 0;
         for (let m of ['GlcNAc', 'GalNAc', 'ManNAc']){
@@ -3138,13 +3131,10 @@ function GNOmeBrowserBase (DIVID) {
             (dhexCount <= this.ItemCountMin["dHex"] && dhexCount == this.ItemCount["dHex"])){
             res["Fuc"] = false;
         }
-        // console.log(res['HexNAc'],res['GlcNAc'],res['Xxx']);
 
         res["HexNAc"] = res["HexNAc"] && (hexnacCount < this.ItemCount["HexNAc"]);
         res["Hex"] = res["Hex"] && (hexCount < this.ItemCount["Hex"]);
         res["dHex"] = res["dHex"] && (dhexCount < this.ItemCount["dHex"]);
-
-        // console.log(res['HexNAc'],res['GlcNAc'],res['Xxx']);
 
         return res
     }
@@ -3570,7 +3560,6 @@ function GNOmeBrowserBase (DIVID) {
 	
     this.SetDefaultURL = function (f){
 	this.DefaultURL = f;
-	//console.log('setting');
     }
 
 
@@ -4069,7 +4058,6 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
             GNOmeBrowserX.AllItems.forEach(function (k) {
             if (Object.keys(para).includes(k)){
                 NewCount[k] = parseInt(para[k]);
-		//console.log(k);
 		para_set = true;
             }
             else{
@@ -4088,7 +4076,6 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
 		GNOmeBrowserX.AllItems.forEach(function (k) {
 		    if (Object.keys(default_res).includes(k)) {
 			NewCount[k] = parseInt(default_res[k]);
-			//console.log(k);
 		    }
 		})
 	    }
