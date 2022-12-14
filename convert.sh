@@ -1,5 +1,7 @@
 #!/bin/sh
 set -x
+# Ensure we have the latest....
+docker pull obolibrary/robot
 USER="`id -u`:`id -g`"
 for OWL in `find . -name "*.owl"`; do
   DIR=`dirname "$OWL"`

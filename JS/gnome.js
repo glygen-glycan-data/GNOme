@@ -2016,6 +2016,8 @@ function GNOmeBrowserBase (DIVID) {
         this.ComputeTopLevelThings();
 
         this.ClearCookie();
+	this.UpdateMaxPossibleComp();
+	this.UpdateMinPossibleComp();
         this.RefreshUI();
     }
 	
@@ -3026,7 +3028,7 @@ function GNOmeBrowserBase (DIVID) {
 
             let thisComp = this.SubsumptionData[acc].ButtonConfig;
             let f = true;
-
+		
             for (let m of this.AllItems) {
                 if (this.ItemCount[m] < thisComp[m]) {
                     f = false;
@@ -3107,15 +3109,32 @@ function GNOmeBrowserBase (DIVID) {
         for (let m of ['GlcNAc', 'GalNAc', 'ManNAc']){
             hexnacCount += this.ItemCount[m];
         }
-        res["HexNAc"] = hexnacCount < this.ItemCount["HexNAc"];
-
         let hexCount = 0;
         for (let m of ['Glc', 'Gal', 'Man']){
             hexCount += this.ItemCount[m];
         }
-        res["Hex"] = hexCount < this.ItemCount["Hex"];
+        let dhexCount = this.ItemCount['Fuc'];
 
-        res["dHex"] = this.ItemCount["Fuc"] < this.ItemCount["dHex"];
+        if (this.ItemCount["Hex"] <= this.ItemCountMin["Hex"] ||
+            (hexCount <= this.ItemCountMin["Hex"] && hexCount == this.ItemCount["Hex"])){
+            res["Glc"] = false;
+            res["Gal"] = false;
+            res["Man"] = false;
+        }
+        if (this.ItemCount["HexNAc"] <= this.ItemCountMin["HexNAc"] ||
+            (hexnacCount <= this.ItemCountMin["HexNAc"] && hexnacCount == this.ItemCount["HexNAc"])){
+            res["GlcNAc"] = false;
+            res["GalNAc"] = false;
+            res["ManNAc"] = false;
+        }
+        if (this.ItemCount["dHex"] <= this.ItemCountMin["dHex"] ||
+            (dhexCount <= this.ItemCountMin["dHex"] && dhexCount == this.ItemCount["dHex"])){
+            res["Fuc"] = false;
+        }
+
+        res["HexNAc"] = res["HexNAc"] && (hexnacCount < this.ItemCount["HexNAc"]);
+        res["Hex"] = res["Hex"] && (hexCount < this.ItemCount["Hex"]);
+        res["dHex"] = res["dHex"] && (dhexCount < this.ItemCount["dHex"]);
 
         return res
     }
@@ -3541,7 +3560,6 @@ function GNOmeBrowserBase (DIVID) {
 	
     this.SetDefaultURL = function (f){
 	this.DefaultURL = f;
-	//console.log('setting');
     }
 
 
@@ -4040,7 +4058,6 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
             GNOmeBrowserX.AllItems.forEach(function (k) {
             if (Object.keys(para).includes(k)){
                 NewCount[k] = parseInt(para[k]);
-		//console.log(k);
 		para_set = true;
             }
             else{
@@ -4059,7 +4076,6 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
 		GNOmeBrowserX.AllItems.forEach(function (k) {
 		    if (Object.keys(default_res).includes(k)) {
 			NewCount[k] = parseInt(default_res[k]);
-			//console.log(k);
 		    }
 		})
 	    }
@@ -4076,7 +4092,8 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
             }
         }
 
-
+        GNOmeBrowserX.UpdateMaxPossibleComp();
+	GNOmeBrowserX.UpdateMinPossibleComp();
         GNOmeBrowserX.RefreshUI();
     }
 
