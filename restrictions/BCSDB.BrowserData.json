@@ -746,7 +746,7 @@
       "G51535NO"
     ],
     "count": {
-      "Xxx": 1
+      "dHex": 1
     },
     "level": "topology",
     "score": "984"
@@ -820,7 +820,7 @@
   },
   "G08126ZF": {
     "count": {
-      "Xxx": 1
+      "Pent": 1
     },
     "level": "composition",
     "score": "1969"
@@ -984,7 +984,7 @@
       "G31080DL"
     ],
     "count": {
-      "Xxx": 1
+      "Pent": 1
     },
     "level": "composition",
     "score": "1969"
@@ -1044,7 +1044,7 @@
       "G22917YC"
     ],
     "count": {
-      "Xxx": 1
+      "Sia": 1
     },
     "level": "basecomposition",
     "score": "3939"
@@ -1069,7 +1069,8 @@
       "G80126GC"
     ],
     "count": {
-      "Xxx": 1
+      "Kdn": 1,
+      "Sia": 1
     },
     "level": "topology",
     "score": "984"
@@ -1333,7 +1334,6 @@
     "count": {
       "Hex": 3,
       "HexNAc": 1,
-      "NeuAc": 1,
       "Sia": 1
     },
     "level": "basecomposition",
@@ -1513,7 +1513,6 @@
     "count": {
       "Hex": 3,
       "HexNAc": 1,
-      "NeuAc": 4,
       "Sia": 4
     },
     "level": "basecomposition",
@@ -1521,7 +1520,7 @@
   },
   "G15255MA": {
     "count": {
-      "Xxx": 1
+      "Pent": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -1927,7 +1926,7 @@
     "count": {
       "Hex": 1,
       "Man": 1,
-      "Xxx": 2
+      "Pent": 2
     },
     "level": "saccharide",
     "score": "984"
@@ -1953,7 +1952,7 @@
     "count": {
       "Hex": 1,
       "Man": 1,
-      "Xxx": 1
+      "Pent": 1
     },
     "level": "saccharide",
     "score": "984"
@@ -1975,7 +1974,6 @@
     "count": {
       "Hex": 5,
       "HexNAc": 2,
-      "NeuAc": 2,
       "Sia": 2
     },
     "level": "basecomposition",
@@ -2001,7 +1999,6 @@
     "count": {
       "Hex": 1,
       "HexNAc": 1,
-      "NeuAc": 1,
       "Sia": 1
     },
     "level": "basecomposition",
@@ -2109,7 +2106,8 @@
       "G10167WZ"
     ],
     "count": {
-      "Xxx": 1
+      "Kdn": 1,
+      "Sia": 1
     },
     "level": "composition",
     "score": "1969",
@@ -2311,7 +2309,7 @@
     "count": {
       "Hex": 1,
       "Man": 1,
-      "Xxx": 2
+      "Pent": 2
     },
     "level": "saccharide",
     "score": "984"
@@ -2520,7 +2518,7 @@
   },
   "G26756OQ": {
     "count": {
-      "Xxx": 1
+      "Pent": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -2530,7 +2528,7 @@
       "G72539IR"
     ],
     "count": {
-      "Xxx": 1
+      "Pent": 1
     },
     "level": "topology",
     "score": "984"
@@ -2716,7 +2714,8 @@
   },
   "G28553JC": {
     "count": {
-      "Xxx": 1
+      "Kdn": 1,
+      "Sia": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -2966,7 +2965,7 @@
       "G26756OQ"
     ],
     "count": {
-      "Xxx": 1
+      "Pent": 1
     },
     "level": "topology",
     "score": "984"
@@ -3139,7 +3138,7 @@
     "count": {
       "Hex": 1,
       "Man": 1,
-      "Xxx": 2
+      "Pent": 2
     },
     "level": "topology",
     "score": "1969"
@@ -3187,7 +3186,6 @@
     ],
     "count": {
       "Hex": 2,
-      "NeuAc": 2,
       "Sia": 2,
       "X": 1
     },
@@ -3247,7 +3245,6 @@
       "G33147DG"
     ],
     "count": {
-      "NeuAc": 2,
       "Sia": 2
     },
     "level": "basecomposition",
@@ -3315,7 +3312,6 @@
     "count": {
       "Hex": 3,
       "HexNAc": 1,
-      "NeuAc": 3,
       "Sia": 3
     },
     "level": "basecomposition",
@@ -3596,7 +3592,7 @@
   },
   "G38999IM": {
     "count": {
-      "Xxx": 1
+      "dHex": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -3964,7 +3960,6 @@
     "count": {
       "Hex": 1,
       "HexNAc": 1,
-      "NeuAc": 1,
       "Sia": 1,
       "dHex": 1
     },
@@ -4458,7 +4453,7 @@
     "count": {
       "Hex": 1,
       "Man": 1,
-      "Xxx": 1
+      "Pent": 1
     },
     "level": "saccharide",
     "score": "984"
@@ -4758,7 +4753,7 @@
   },
   "G51535NO": {
     "count": {
-      "Xxx": 1
+      "dHex": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -5807,7 +5802,6 @@
     ],
     "count": {
       "Hex": 2,
-      "NeuAc": 1,
       "Sia": 1
     },
     "level": "basecomposition",
@@ -5951,7 +5945,6 @@
     "count": {
       "Hex": 2,
       "HexNAc": 1,
-      "NeuAc": 1,
       "Sia": 1
     },
     "level": "basecomposition",
@@ -6023,7 +6016,7 @@
     "count": {
       "Hex": 1,
       "Man": 1,
-      "Xxx": 1
+      "Pent": 1
     },
     "level": "topology",
     "score": "1969"
@@ -6697,7 +6690,7 @@
       "G26886DA"
     ],
     "count": {
-      "Xxx": 1
+      "Pent": 1
     },
     "level": "composition",
     "score": "1969"
@@ -6736,7 +6729,6 @@
     "count": {
       "Hex": 4,
       "HexNAc": 1,
-      "NeuAc": 1,
       "Sia": 1
     },
     "level": "basecomposition",
@@ -6763,7 +6755,6 @@
     "count": {
       "Hex": 2,
       "HexNAc": 1,
-      "NeuAc": 2,
       "Sia": 2
     },
     "level": "basecomposition",
@@ -6818,7 +6809,7 @@
   },
   "G72539IR": {
     "count": {
-      "Xxx": 1
+      "Pent": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -7316,7 +7307,6 @@
     "count": {
       "Hex": 3,
       "HexNAc": 1,
-      "NeuAc": 2,
       "Sia": 2
     },
     "level": "basecomposition",
@@ -7389,7 +7379,7 @@
       "G07006BT"
     ],
     "count": {
-      "Xxx": 1
+      "dHex": 1
     },
     "level": "composition",
     "score": "1969"
@@ -7616,7 +7606,8 @@
   },
   "G80126GC": {
     "count": {
-      "Xxx": 1
+      "Kdn": 1,
+      "Sia": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -7860,7 +7851,6 @@
     ],
     "count": {
       "Hex": 2,
-      "NeuAc": 2,
       "Sia": 2
     },
     "level": "basecomposition",
@@ -8181,7 +8171,6 @@
     "count": {
       "Hex": 1,
       "HexNAc": 2,
-      "NeuAc": 1,
       "Sia": 1
     },
     "level": "basecomposition",
@@ -9329,7 +9318,7 @@
     "count": {
       "Hex": 1,
       "Man": 1,
-      "Xxx": 2
+      "Pent": 2
     },
     "level": "composition",
     "score": "8030"
@@ -9622,7 +9611,7 @@
     "count": {
       "Hex": 1,
       "Man": 1,
-      "Xxx": 1
+      "Pent": 1
     },
     "level": "composition",
     "score": "8030"
