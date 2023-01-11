@@ -3718,6 +3718,11 @@ function GNOmeStructureBrowser (DIVID) {
                 xxx += d[m];
             }
         }
+	for (let m of ['NeuAc","NeuGc"]){
+            if (d[m]!= undefined){
+                xxx -= d[m];
+            }
+        }
         res["Xxx"] = xxx;
         return res
     }
