@@ -19,7 +19,7 @@ Deep-linking is also supported, to jump to a specific GlyTouCan acccession: [G62
 
 
 ### Restrictions ###
-[GNOme restrictions](restrictions) support speciifc subsets of GlyTouCan accessions:
+[GNOme restrictions](restrictions) support specific subsets of GlyTouCan accessions:
 * [N-linked](https://glycomotif.glyomics.org/glycomotifdev/GGM.001001#Alignments) Glycans: [Structure Browser](https://gnome.glyomics.org/restrictions/NGlycans.StructureBrowser.html), [Composition Browser](https://gnome.glyomics.org/restrictions/NGlycans.CompositionBrowser.html).
 * [GlyGen](http://glygen.org): [Structure Browser](https://gnome.glyomics.org/restrictions/GlyGen.StructureBrowser.html), [Composition Browser](https://gnome.glyomics.org/restrictions/GlyGen.CompositionBrowser.html).
   * [GlyGen](http://glygen.org) N-linked Glycans: [Structure Browser](https://gnome.glyomics.org/restrictions/GlyGen_NGlycans.StructureBrowser.html), [Composition Browser](https://gnome.glyomics.org/restrictions/GlyGen_NGlycans.CompositionBrowser.html).
