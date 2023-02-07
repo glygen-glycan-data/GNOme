@@ -3020,15 +3020,32 @@ function GNOmeBrowserBase (DIVID) {
 	
     this.UpdateMinPossibleComp = function() {
 
+        const defaultLandingParams = new URLSearchParams(this.DefaultURL);
+        let default_cnt = {};
+        for (let m of this.AllItems) {
+            if (defaultLandingParams.get(m)) {
+              default_cnt[m] = defaultLandingParams.get(m);
+            } else {
+              default_cnt[m] = 0;
+            }
+        }
+        this.FixAnyHexCount(default_cnt);
+        // console.log(default_cnt);
+
         for (let m of this.AllItems){
             this.ItemCountMin[m] = 200;
         }
 
-        for (let acc of this.TopLevelThings){
+        for (let acc of this.TopLevelThings.concat(["default"])){
 
-            let thisComp = this.SubsumptionData[acc].ButtonConfig;
+            var thisComp;
+            if ( acc != "default" ) {
+              thisComp = this.SubsumptionData[acc].ButtonConfig;
+            } else {
+              thisComp = default_cnt;
+            }
+            
             let f = true;
-		
             for (let m of this.AllItems) {
                 if (this.ItemCount[m] < thisComp[m]) {
                     f = false;
@@ -3037,9 +3054,11 @@ function GNOmeBrowserBase (DIVID) {
             }
 
             if (f){
+                // console.log(acc,thisComp);
                 for (let m of this.AllItems){
                     if (thisComp[m] < this.ItemCountMin[m] ){
                         this.ItemCountMin[m] = thisComp[m]
+                        // console.log(acc,m,thisComp[m]);
                     }
                 }
             }
