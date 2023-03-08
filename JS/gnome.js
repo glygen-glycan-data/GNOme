@@ -2545,8 +2545,15 @@ function GNOmeBrowserBase (DIVID) {
 
                     let eqgtcacc = d["result"];
                     if (eqgtcacc.length > 0){
-                        thisLib.CloseAlert();
-                        thisLib.RenderRTResultWithKnownGlyTouCanAccession(eqgtcacc[0].accession);
+                        if (Object.keys(thisLib.SubsumptionData).includes(eqgtcacc[0].accession)) {
+                            //console.log("knowngtca");
+                            thisLib.CloseAlert();
+                            thisLib.RenderRTResultWithKnownGlyTouCanAccession(eqgtcacc[0].accession);
+                        } else {
+                            let seq = eqgtcacc[0].sequences[0].seq;
+                            //console.log("subsumptionrequest"+seq);
+                            thisLib.SubsumptionRequest(seq);
+                        }
                     } else {
                         thisLib.SubsumptionRequest(sequences);
                     }
@@ -2647,6 +2654,7 @@ function GNOmeBrowserBase (DIVID) {
 
 
     this.RenderRTResult = function (d) {
+        //console.log("rendering");
         let thisLib = this;
 
         let equivalent = d["result"]["equivalent"];
@@ -2672,15 +2680,41 @@ function GNOmeBrowserBase (DIVID) {
         }
 
         if (Object.keys(equivalent).includes("Query")){
-            this.RenderRTResultWithKnownGlyTouCanAccession(equivalent["Query"]);
-            return
-        }
+            if (Object.keys(thisLib.SubsumptionData).includes(equivalent["Query"])) {
+                //console.log("equivalent");
+                this.RenderRTResultWithKnownGlyTouCanAccession(equivalent["Query"]);
+                return
+            } else {
+                let addquery = this.IsAllowedSubsumptionCategory(subsumptionlvl["Query"]);
+                for (let parent of Object.keys(relationship)) {
+                    let children = relationship[parent];
+                    //console.log(parent);
 
+                    if (Object.keys(this.SubsumptionData).includes(parent)) {
+                         this.SubsumptionData[parent].Children = this.FilterChildren(children, addquery)
+                    } else if (parent.startsWith("Query")) {
+                        let allow = this.IsAllowedSubsumptionCategory(subsumptionlvl[parent]);
 
-        let focus = "Query";
-        let addquery = this.IsAllowedSubsumptionCategory(subsumptionlvl["Query"]);
-        for (let parent of Object.keys(relationship)) {
+                        if (allow){
+                            this.SubsumptionData[parent] = {
+                                "SubsumptionLevel": subsumptionlvl[parent],
+                                "Children": this.FilterChildren(children, addquery),
+                                "ButtonConfig": this.ButtonConfigCleanUp(buttonconfig[parent]),
+                                "score": score[parent]
+                            }
+                        }
+
+                        if (["composition", "basecomposition"].includes(subsumptionlvl[parent])){
+                            this.IUPACCompositionData[parent] = this.ButtonConfigCleanUp(buttonconfig[parent])
+                        }
+                    }
+                } 
+            }
+        } else {
+            let addquery = this.IsAllowedSubsumptionCategory(subsumptionlvl["Query"]);
+            for (let parent of Object.keys(relationship)) {
             let children = relationship[parent];
+            //console.log(parent);
 
             if (Object.keys(this.SubsumptionData).includes(parent)) {
                 this.SubsumptionData[parent].Children = this.FilterChildren(children, addquery)
@@ -2707,9 +2741,16 @@ function GNOmeBrowserBase (DIVID) {
                 }
             }
         }
+        }
 
+        
+        let focus = "Query"
+
+        //console.log("subsumptioncomplete");
         this.ComputeTopLevelThings();
-
+        //console.log("toplevelthingscomputed");
+        
+        //console.log("settingfocus");
         thisLib.SetFocus(focus);
         thisLib.RefreshUI();
 
@@ -3527,28 +3568,42 @@ function GNOmeBrowserBase (DIVID) {
     this.SetFocus = function (d) {
         let s = d.trim();
         let acc = s;
-
+        
+        //checks for gtc accession format, doesn't check against any database
         if (this.GlyTouCanAccessionRegex(acc)){
             acc = acc.toUpperCase();
         }
 
+        //checks if the search term is a known synonym for a known accession
         if (Object.keys(this.Synonym).includes(s)){
             acc = this.Synonym[s];
         }
 
+        //checks if the accession is included in the browser's accession set; if so, sets focus
         if (Object.keys(this.SubsumptionData).includes(acc)){
             this.SetToScreenB();
             this.SetFocusAccession(acc);
         }
+        
+        else if (this.GlyTouCanAccessionRegex(acc)){
+            this.CalculationGO(acc);
+        }
+        
+        //checks if the accession is actually known composition description
+        //this works for format: HexNAc(5)Hex(3)
+        //sets screen to that composition
         else if (Object.keys(this.IUPACCompositionData).includes(acc)){
             this.SetToScreenA();
             this.ItemCount = JSON.parse(JSON.stringify(this.IUPACCompositionData[acc]))
         }
+        
+        //else: accession-formatted queries not supported, other queries not found
         else{
             let msg = '<br><br><br>';
             if (this.GlyTouCanAccessionRegex(acc)){
                 msg += 'GlyTouCan accession not supported: ' + acc;
             }
+            //this is activated with an unknown composition - for N GlycoTree this activates with HexNAc(1)Hex(2)
             else{
                 msg += d.trim() + " not found";
             }
@@ -3629,6 +3684,7 @@ function GNOmeStructureBrowser (DIVID) {
 
         for (let acc of AllAccession){
             for (let c of this.SubsumptionData[acc].Children){
+                //console.log(c)
                 if (!Parents[c].includes(acc)){
                     Parents[c].push(acc)
                 }
