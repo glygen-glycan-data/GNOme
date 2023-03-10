@@ -2451,7 +2451,7 @@ function GNOmeBrowserBase (DIVID) {
 
     }
 
-    this.LoadingCircleShow = function () {
+    this.LoadingCircleShow = function (msg) {
         let thisLib = this;
 
         let SpinningCircleContainer = document.createElement("div");
@@ -2463,7 +2463,7 @@ function GNOmeBrowserBase (DIVID) {
 
         let words = document.createElement("p");
         words.style = "text-align: center; "
-        words.innerText = "Computing subsumption alignment...";
+        words.innerText = msg;
 
         SpinningCircleContainer.style = "width: 400px; height: 320px; overflow: hidden; background: rgb(255, 255, 255); opacity:0.8; border: none; border-radius: 10px; position: absolute; top: 40px; align: center; box-shadow: 5px 5px 3px grey;"
 
@@ -2518,7 +2518,12 @@ function GNOmeBrowserBase (DIVID) {
 
         sequences = sequences.trim();
 
-        this.LoadingCircleShow();
+	if (this.GlyTouCanAccessionRegex(sequences) && 
+            window.location.pathname.indexOf('/restrictions/') >= 0) {
+	    this.LoadingCircleShow("Accession not in restriction...");
+        } else {
+	    this.LoadingCircleShow("Computing subsumption alignment...");
+	}
 
         this.Reset();
 
@@ -2651,7 +2656,54 @@ function GNOmeBrowserBase (DIVID) {
         this.RefreshUI();
     }
 
-
+    this.RestrictRelationships = function(relationship,restriction) {
+	// expand to complete descendants, unrestricted relationships
+	let newrelationship = {};
+	for (let parent of Object.keys(relationship)) {
+            let toexpand = Array.from(relationship[parent]);
+	    newrelationship[parent] = Array.from(relationship[parent]);
+	    while (toexpand.length > 0) {
+		let n = toexpand.shift();
+                for (let c of relationship[n]) {
+		    if (!(newrelationship[parent].includes(c))) {
+			newrelationship[parent].push(c);
+			toexpand.push(c);
+		    }
+		}
+	    }
+        }
+	// remove parents and children outside the restriction
+        let newrelationship1 = {};
+        for (let parent of Object.keys(newrelationship)) {
+	    if (parent == "Query" || restriction.has(parent)) {
+		newrelationship1[parent] = [];
+		for (let c of newrelationship[parent]) {
+		    if (c == "Query" || restriction.has(c)) {
+			newrelationship1[parent].push(c);
+		    }
+		}
+	    }
+	}
+	// find all shortcuts
+	let toremove = [];
+	for (let parent of Object.keys(newrelationship1)) {
+	    for (let ch of newrelationship1[parent]) {
+		for (let grch of newrelationship1[ch]) {
+		    if (newrelationship1[parent].includes(grch)) {
+			toremove.push([parent,grch]);
+		    }
+		}
+	    }
+	}
+	// remove shortcuts
+	for (let tr of toremove.entries()) {
+	    let i = newrelationship1[tr[1][0]].indexOf(tr[1][1]);
+	    if (i >= 0) {
+		newrelationship1[tr[1][0]].splice(i, 1);
+	    }
+	}
+	return newrelationship1;
+    }
 
     this.RenderRTResult = function (d) {
         //console.log("rendering");
@@ -2662,6 +2714,12 @@ function GNOmeBrowserBase (DIVID) {
         let subsumptionlvl = d["result"]["subsumption_level"];
         let buttonconfig = d["result"]["buttonconfig"];
         let score = d["result"]["score"]
+
+
+	if (window.location.pathname.indexOf('/restrictions/') >= 0) {
+	    console.log("here");
+	    relationship = this.RestrictRelationships(relationship,new Set(Object.keys(this.SubsumptionData)));
+	}
 
         let warningmsg = d["error"];
 
@@ -3628,7 +3686,7 @@ function GNOmeBrowserBase (DIVID) {
     }
 
     this.GlyTouCanAccessionRegex = function (acc) {
-        let re = /g|G\d{5}\w{2}/;
+        let re = /^\s*g|G\d{5}\w{2}\s*$/;
         return re.test(acc)
     }
 	
@@ -4119,7 +4177,7 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
     this.UpdateGNOmeBrowser = function (para) {
 
         if (Object.keys(para).includes('ondemandtaskid')){
-            GNOmeBrowserX.LoadingCircleShow();
+            GNOmeBrowserX.LoadingCircleShow("Waiting for subsumption alignment...");
             GNOmeBrowserX.SubsumptionRequest("", para.ondemandtaskid);
             return
         }
