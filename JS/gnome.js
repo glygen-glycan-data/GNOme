@@ -798,7 +798,7 @@ let glycanviewer = {
 
 
             var selectedNode = thisLib.network.getNodeAt({x:x,y:y});
-            if (selectedNode == undefined || selectedNode == "Topology" || selectedNode.startsWith("fake") || selectedNode.startsWith("Query") || selectedNode.endsWith("3dots")){
+            if (selectedNode == undefined || selectedNode == "Topology" || selectedNode.startsWith("fake") || selectedNode.endsWith("3dots")){
                 return
             }
 
@@ -814,12 +814,23 @@ let glycanviewer = {
                 entry.onclick = function(){
                     ToClipBoard(this.name);
                 };
+            } else if (selectedNode.startsWith("Query")){
+                //console.log(selectedNode);
+                //console.log(gnome.SubsumptionData[selectedNode]);
+                var queryacc = gnome.SubsumptionData[selectedNode].Accession;
+                var entry = CreateEntrySecondary("Accession", menuList);
+                entry.name = queryacc;
+
+                entry.onclick = function(){
+                    ToClipBoard(this.name);
+                };
             }
 
             var things = [
                 ["Ancestors", gnome.GetAncestorsForCopy(selectedNode)],
                 ["Descendants", gnome.GetDescendantsForCopy(selectedNode)]
             ];
+            //console.log(things);
 
             if (things[1][1].length == 1){
                 things[1][1] = []
@@ -871,13 +882,20 @@ let glycanviewer = {
                 else if (accs.includes(selectedNode)){
                     existFlag = true;
                 }
+                else if (selectedNode.startsWith("Query") && accs.includes(queryacc)) {
+                    existFlag = true;
+                }
 
                 if (!existFlag){
                     continue
                 }
 
                 var entry = CreateEntrySecondary(title, menuList);
-                entry.name = selectedNode;
+                if (selectedNode.startsWith("Query")) {
+                    entry.name = queryacc;
+                } else {
+                    entry.name = selectedNode;
+                }
                 entry.setAttribute("data-prefix", prefix);
                 entry.setAttribute("data-suffix", suffix);
 
@@ -2560,6 +2578,7 @@ function GNOmeBrowserBase (DIVID) {
                             thisLib.SubsumptionRequest(seq);
                         }
                     } else {
+                        //console.log("no accession");
                         thisLib.SubsumptionRequest(sequences);
                     }
                 }else{
@@ -2717,7 +2736,7 @@ function GNOmeBrowserBase (DIVID) {
 
 
 	if (window.location.pathname.indexOf('/restrictions/') >= 0) {
-	    console.log("here");
+	    //console.log("here");
 	    relationship = this.RestrictRelationships(relationship,new Set(Object.keys(this.SubsumptionData)));
 	}
 
@@ -2750,6 +2769,12 @@ function GNOmeBrowserBase (DIVID) {
 
                     if (Object.keys(this.SubsumptionData).includes(parent)) {
                          this.SubsumptionData[parent].Children = this.FilterChildren(children, addquery)
+                         if (Object.keys(this.AllChildren).includes(parent)) {
+                             this.AllChildren[parent].push("Query");
+                         } else {
+                             this.AllChildren[parent] = ["Query"];
+                         }
+                         
                     } else if (parent.startsWith("Query")) {
                         let allow = this.IsAllowedSubsumptionCategory(subsumptionlvl[parent]);
 
@@ -2758,7 +2783,9 @@ function GNOmeBrowserBase (DIVID) {
                                 "SubsumptionLevel": subsumptionlvl[parent],
                                 "Children": this.FilterChildren(children, addquery),
                                 "ButtonConfig": this.ButtonConfigCleanUp(buttonconfig[parent]),
-                                "score": score[parent]
+                                "score": score[parent],
+                                "Accession": equivalent["Query"],
+                                "DisplayName": "Query: " + equivalent["Query"]
                             }
                         }
 
@@ -3055,6 +3082,7 @@ function GNOmeBrowserBase (DIVID) {
         let img = document.createElement("img");
         if (gtcid.startsWith("Query")){
             img.src = this.ImageComputed[gtcid];
+            //console.log("hello");
         } else {
             img.src = this.ImageURLPrefix + gtcid + this.ImageURLSuffix;
         }
@@ -3069,6 +3097,7 @@ function GNOmeBrowserBase (DIVID) {
             thisLib.RefreshUI();
         };
         let caption = document.createElement("figcaption");
+
         caption.innerHTML = gtcid;
 
 
@@ -3434,6 +3463,12 @@ function GNOmeBrowserBase (DIVID) {
             if (this.ShowScoreFlag && this.SubsumptionData[n] != undefined){
                 label += "\n" + this.SubsumptionData[n].score;
             }
+            
+            if (n == "Query" && this.SubsumptionData[n].hasOwnProperty("DisplayName")) {
+                //console.log(nodes[n]);
+                //console.log(this.SubsumptionData[n]);
+                label = this.SubsumptionData[n].DisplayName;
+            }
 
             nodes[n].label = label
 
@@ -3644,6 +3679,7 @@ function GNOmeBrowserBase (DIVID) {
         }
         
         else if (this.GlyTouCanAccessionRegex(acc)){
+            //console.log("calculating");
             this.CalculationGO(acc);
         }
         
