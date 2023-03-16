@@ -2763,37 +2763,39 @@ function GNOmeBrowserBase (DIVID) {
                 return
             } else {
                 let addquery = this.IsAllowedSubsumptionCategory(subsumptionlvl["Query"]);
+                let displayname = "Query: " + equivalent["Query"]
                 for (let parent of Object.keys(relationship)) {
                     let children = relationship[parent];
                     //console.log(parent);
 
                     if (Object.keys(this.SubsumptionData).includes(parent)) {
-                         this.SubsumptionData[parent].Children = this.FilterChildren(children, addquery)
+                         this.SubsumptionData[parent].Children = this.FilterChildren(children, addquery, displayname)
                          if (Object.keys(this.AllChildren).includes(parent)) {
-                             this.AllChildren[parent].push("Query");
+                             this.AllChildren[parent].push(displayname);
                          } else {
-                             this.AllChildren[parent] = ["Query"];
+                             this.AllChildren[parent] = [displayname];
                          }
                          
                     } else if (parent.startsWith("Query")) {
                         let allow = this.IsAllowedSubsumptionCategory(subsumptionlvl[parent]);
 
                         if (allow){
-                            this.SubsumptionData[parent] = {
+                            this.SubsumptionData[displayname] = {
                                 "SubsumptionLevel": subsumptionlvl[parent],
-                                "Children": this.FilterChildren(children, addquery),
+                                "Children": this.FilterChildren(children, addquery, displayname),
                                 "ButtonConfig": this.ButtonConfigCleanUp(buttonconfig[parent]),
                                 "score": score[parent],
                                 "Accession": equivalent["Query"],
-                                "DisplayName": "Query: " + equivalent["Query"]
+                                //"DisplayName": "Query: " + equivalent["Query"]
                             }
                         }
 
                         if (["composition", "basecomposition"].includes(subsumptionlvl[parent])){
-                            this.IUPACCompositionData[parent] = this.ButtonConfigCleanUp(buttonconfig[parent])
+                            this.IUPACCompositionData[displayname] = this.ButtonConfigCleanUp(buttonconfig[parent])
                         }
                     }
                 } 
+            var focus = displayname
             }
         } else {
             let addquery = this.IsAllowedSubsumptionCategory(subsumptionlvl["Query"]);
@@ -2803,6 +2805,11 @@ function GNOmeBrowserBase (DIVID) {
 
             if (Object.keys(this.SubsumptionData).includes(parent)) {
                 this.SubsumptionData[parent].Children = this.FilterChildren(children, addquery)
+                if (Object.keys(this.AllChildren).includes(parent)) {
+                    this.AllChildren[parent].push("Query");
+                } else {
+                    this.AllChildren[parent] = ["Query"];
+                }
             } else if (parent.startsWith("Query")) {
 
                 let eqgtcacc = equivalent[parent];
@@ -2825,17 +2832,18 @@ function GNOmeBrowserBase (DIVID) {
                     }
                 }
             }
-        }
+            }
+            var focus = "Query";
         }
 
         
-        let focus = "Query"
 
         //console.log("subsumptioncomplete");
         this.ComputeTopLevelThings();
         //console.log("toplevelthingscomputed");
         
         //console.log("settingfocus");
+        //console.log(focus)
         thisLib.SetFocus(focus);
         thisLib.RefreshUI();
 
@@ -2845,19 +2853,22 @@ function GNOmeBrowserBase (DIVID) {
         throw "NotImplement";
     }
 
-    this.FilterChildren = function (children, addquery){
+    this.FilterChildren = function (children, addquery, displayname){
         let allowedChildren = [];
 
         for (let c of children){
-            if (c == "Query" && addquery){
+            if ((c == "Query") && addquery && (displayname == undefined)){
                 allowedChildren.push(c)
+                continue
+            } else if ((c == "Query") && addquery && (displayname != undefined)) {
+                allowedChildren.push(displayname)
                 continue
             }
 
             if (!Object.keys(this.SubsumptionData).includes(c)){
                 continue
             }
-            if (allowedChildren.includes(c)){
+            if (allowedChildren.includes(c)) {
                 continue
             }
             if (this.IsAllowedSubsumptionCategory(this.SubsumptionData[c].SubsumptionLevel)){
@@ -3081,8 +3092,7 @@ function GNOmeBrowserBase (DIVID) {
         figure.id = "img_" + gtcid;
         let img = document.createElement("img");
         if (gtcid.startsWith("Query")){
-            img.src = this.ImageComputed[gtcid];
-            //console.log("hello");
+            img.src = this.ImageComputed["Query"];
         } else {
             img.src = this.ImageURLPrefix + gtcid + this.ImageURLSuffix;
         }
@@ -3464,11 +3474,11 @@ function GNOmeBrowserBase (DIVID) {
                 label += "\n" + this.SubsumptionData[n].score;
             }
             
-            if (n == "Query" && this.SubsumptionData[n].hasOwnProperty("DisplayName")) {
+            //if (n == "Query" && this.SubsumptionData[n].hasOwnProperty("DisplayName")) {
                 //console.log(nodes[n]);
                 //console.log(this.SubsumptionData[n]);
-                label = this.SubsumptionData[n].DisplayName;
-            }
+                //label = this.SubsumptionData[n].DisplayName;
+            //}
 
             nodes[n].label = label
 
@@ -3480,7 +3490,7 @@ function GNOmeBrowserBase (DIVID) {
                 nodes[n].type = this.SubsumptionData[n].SubsumptionLevel;
 
                 if (n.startsWith("Query")){
-                    nodes[n].alternativeImageURL = this.ImageComputed[n];
+                    nodes[n].alternativeImageURL = this.ImageComputed["Query"];
                 }
             }
         }
@@ -3665,6 +3675,7 @@ function GNOmeBrowserBase (DIVID) {
         //checks for gtc accession format, doesn't check against any database
         if (this.GlyTouCanAccessionRegex(acc)){
             acc = acc.toUpperCase();
+            //console.log(acc, "gtcregex")
         }
 
         //checks if the search term is a known synonym for a known accession
@@ -3722,7 +3733,7 @@ function GNOmeBrowserBase (DIVID) {
     }
 
     this.GlyTouCanAccessionRegex = function (acc) {
-        let re = /^\s*g|G\d{5}\w{2}\s*$/;
+        let re = /^(g|G)\d{5}\w{2}$/;
         return re.test(acc)
     }
 	
