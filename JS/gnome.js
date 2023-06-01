@@ -3895,9 +3895,14 @@ function GNOmeCompositionBrowser(DIVID) {
             }
         }
         let xxx = 0
-        for (let m of ['Pent', 'HexA', 'HexN', "Xxx"]){
+        for (let m of ['Pent', 'HexA', 'HexN', "Sia", "Xxx"]){
             if (d[m]!= undefined){
                 xxx += d[m];
+            }
+        }
+	for (let m of ["NeuAc","NeuGc"]){
+            if (d[m]!= undefined){
+                xxx -= d[m];
             }
         }
         res["Xxx"] = xxx;
