@@ -222,7 +222,8 @@
       "GalNAc": 1,
       "GlcNAc": 3,
       "Hex": 3,
-      "HexNAc": 4
+      "HexNAc": 4,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -237,7 +238,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7636"
@@ -252,6 +254,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -324,6 +327,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -339,7 +343,7 @@
       "Hex": 2,
       "NeuAc": 2,
       "Sia": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -429,6 +433,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -485,6 +490,7 @@
       "GlcNAc": 1,
       "Hex": 4,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -515,6 +521,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -577,6 +584,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -607,6 +615,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -621,7 +630,7 @@
       "Hex": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1582"
@@ -790,6 +799,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -816,7 +826,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -996,7 +1007,7 @@
     "count": {
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1641"
@@ -1029,7 +1040,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1984"
@@ -1168,7 +1180,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -1181,7 +1193,8 @@
       "Hex": 3,
       "HexNAc": 4,
       "NeuAc": 4,
-      "Sia": 4
+      "Sia": 4,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -1280,7 +1293,8 @@
       "Hex": 1,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -1297,6 +1311,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -1394,6 +1409,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -1462,6 +1478,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -1477,6 +1494,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -1526,7 +1544,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -1599,7 +1618,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1753"
@@ -1642,6 +1661,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -1694,6 +1714,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -1724,6 +1745,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -1744,6 +1766,7 @@
       "HexNAc": 3,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "composition",
@@ -1793,6 +1816,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -1864,7 +1888,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -1882,6 +1906,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -1911,6 +1936,7 @@
       "GalNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -1938,7 +1964,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1582"
@@ -1955,6 +1981,7 @@
       "HexNAc": 3,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -1985,6 +2012,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -2000,6 +2028,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -2129,6 +2158,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -2234,6 +2264,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -2250,6 +2281,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 4
     },
     "level": "topology",
@@ -2739,7 +2771,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -2815,6 +2847,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -2829,6 +2862,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -2847,7 +2881,8 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "S": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7537"
@@ -2857,7 +2892,8 @@
       "Gal": 3,
       "GlcNAc": 3,
       "Hex": 3,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -2903,7 +2939,8 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "S": 2,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7748"
@@ -3002,7 +3039,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -3031,6 +3068,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -3140,6 +3178,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -3208,6 +3247,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -3331,6 +3371,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -3451,7 +3492,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -3563,6 +3604,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -3639,6 +3681,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -3664,6 +3707,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -3723,7 +3767,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1969"
@@ -3797,7 +3842,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1969"
@@ -3886,7 +3932,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "328"
@@ -3901,6 +3948,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -3999,6 +4047,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -4097,7 +4146,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "738"
@@ -4181,7 +4231,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -4197,6 +4247,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -4226,6 +4277,7 @@
       "GlcNAc": 4,
       "Hex": 5,
       "HexNAc": 6,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -4274,6 +4326,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -4454,7 +4507,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -4465,7 +4518,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -4535,7 +4588,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -4753,7 +4807,7 @@
   },
   "G05180BW": {
     "count": {
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -4778,7 +4832,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -4788,6 +4843,7 @@
       "Fuc": 1,
       "Gal": 1,
       "Hex": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -4845,7 +4901,8 @@
       "GalNAc": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -4901,7 +4958,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 2
     },
     "level": "topology",
@@ -4917,7 +4974,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -4979,6 +5037,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -4995,7 +5054,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1805"
@@ -5205,6 +5265,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -5230,7 +5291,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "574"
@@ -5378,6 +5440,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -5388,7 +5451,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -5554,6 +5618,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -5678,6 +5743,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -5790,10 +5856,26 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
     "score": "7702"
+  },
+  "G06230AO": {
+    "children": [
+      "G39115ZT",
+      "G75248WN"
+    ],
+    "count": {
+      "Gal": 1,
+      "Hex": 1,
+      "NeuAc": 1,
+      "Sia": 1,
+      "Xxx": 1
+    },
+    "level": "topology",
+    "score": "1994"
   },
   "G06248CM": {
     "children": [
@@ -5855,7 +5937,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -5868,6 +5950,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -5941,7 +6024,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -5956,6 +6040,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -6174,7 +6259,7 @@
     "count": {
       "Gal": 1,
       "Hex": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -6239,6 +6324,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -6280,6 +6366,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -6346,7 +6433,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -6392,6 +6480,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -6480,7 +6569,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -6514,6 +6604,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -6555,6 +6646,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -6622,7 +6714,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7636"
@@ -6818,7 +6911,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "443"
@@ -6835,6 +6929,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -6850,7 +6945,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -6976,7 +7071,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -7001,6 +7097,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -7030,7 +7127,8 @@
       "Hex": 1,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7702"
@@ -7248,7 +7346,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1716"
@@ -7260,6 +7358,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -7324,6 +7423,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -7337,6 +7437,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -7425,7 +7526,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -7450,6 +7552,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -7479,7 +7582,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -7491,6 +7595,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -7536,7 +7641,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1716"
@@ -7669,6 +7774,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -7736,7 +7842,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -7854,7 +7961,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -7911,7 +8019,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -7981,6 +8089,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -8027,7 +8136,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "140"
@@ -8073,7 +8182,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -8153,6 +8263,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -8288,7 +8399,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7537"
@@ -8363,7 +8475,8 @@
       "GlcNAc": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -8393,6 +8506,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -8586,7 +8700,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -8742,7 +8857,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -8791,6 +8907,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -8819,6 +8936,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -8834,7 +8952,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -8892,7 +9010,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1846"
@@ -8900,7 +9019,8 @@
   "G10110YZ": {
     "count": {
       "GlcNAc": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -8977,6 +9097,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -9140,7 +9261,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 2
     },
     "level": "saccharide",
@@ -9157,6 +9278,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "composition",
@@ -9330,7 +9452,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -9593,7 +9716,7 @@
       "Hex": 2,
       "NeuAc": 2,
       "Sia": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -9609,6 +9732,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -9657,6 +9781,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -9672,6 +9797,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -9716,6 +9842,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -9907,7 +10034,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1641"
@@ -9980,7 +10108,7 @@
     "count": {
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1582"
@@ -9990,7 +10118,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -10032,7 +10161,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -10141,6 +10271,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -10171,6 +10302,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -10438,7 +10570,7 @@
     "count": {
       "Gal": 1,
       "Hex": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "525"
@@ -10482,6 +10614,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -10525,6 +10658,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -10580,7 +10714,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -10596,6 +10731,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -10639,7 +10775,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "492"
@@ -10672,7 +10809,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -10686,6 +10824,7 @@
       "HexNAc": 3,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -10726,6 +10865,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -10754,6 +10894,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -10810,7 +10951,7 @@
     "count": {
       "GlcNAc": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -10918,6 +11059,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -10959,7 +11101,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 2
     },
     "level": "topology",
@@ -11033,7 +11175,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -11235,7 +11377,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1663"
@@ -11305,7 +11447,8 @@
       "Gal": 2,
       "GlcNAc": 3,
       "Hex": 2,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1805"
@@ -11352,7 +11495,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7748"
@@ -11442,7 +11586,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7636"
@@ -11471,6 +11616,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -11577,7 +11723,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -11636,7 +11783,8 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
-      "S": 3
+      "S": 3,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7702"
@@ -11651,7 +11799,8 @@
       "Gal": 3,
       "GlcNAc": 3,
       "Hex": 3,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7748"
@@ -11676,7 +11825,8 @@
       "Hex": 4,
       "HexNAc": 3,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -11795,6 +11945,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 4,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -11834,7 +11985,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -11868,6 +12020,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -11879,7 +12032,8 @@
       "G63830GM"
     ],
     "count": {
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "2462"
@@ -12079,7 +12233,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1716"
@@ -12096,6 +12250,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 5,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -12184,7 +12339,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "2090"
@@ -12238,7 +12394,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "246"
@@ -12250,6 +12407,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -12300,7 +12458,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -12328,7 +12486,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7537"
@@ -12369,7 +12528,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -12427,7 +12586,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -12437,7 +12597,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -12464,7 +12625,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -12514,7 +12676,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1663"
@@ -12625,7 +12787,8 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
-      "S": 1
+      "S": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7702"
@@ -12747,7 +12910,8 @@
     ],
     "count": {
       "Gal": 1,
-      "Hex": 1
+      "Hex": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1969"
@@ -12781,6 +12945,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -12793,7 +12958,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -12830,6 +12995,7 @@
       "HexNAc": 5,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -12842,6 +13008,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -12852,7 +13019,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -12894,7 +13062,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "328"
@@ -12968,7 +13137,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -12994,6 +13163,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -13034,6 +13204,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -13096,7 +13267,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1663"
@@ -13109,7 +13280,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "246"
@@ -13188,6 +13360,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -13284,6 +13457,7 @@
       "HexNAc": 3,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -13299,6 +13473,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -13360,6 +13535,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -13368,7 +13544,8 @@
   "G15144TI": {
     "count": {
       "GalNAc": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -13471,7 +13648,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -13530,7 +13708,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "574"
@@ -13659,7 +13838,8 @@
       "Hex": 2,
       "HexNAc": 3,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -13720,7 +13900,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -13982,6 +14163,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -14045,6 +14227,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -14112,6 +14295,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -14198,6 +14382,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -14271,6 +14456,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -14383,7 +14569,8 @@
       "Hex": 1,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1984"
@@ -14531,6 +14718,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -14574,7 +14762,7 @@
       "Fuc": 2,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 2
     },
     "level": "topology",
@@ -14636,7 +14824,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -14794,6 +14983,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -14858,7 +15048,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7537"
@@ -14868,7 +15059,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -14890,7 +15082,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -14919,7 +15111,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -14991,7 +15183,8 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "S": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7636"
@@ -15052,7 +15245,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "820"
@@ -15091,7 +15285,8 @@
       "GlcNAc": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7373"
@@ -15264,7 +15459,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -15292,7 +15488,8 @@
       "Gal": 1,
       "GalNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "492"
@@ -15309,7 +15506,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "761"
@@ -15439,7 +15637,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1772"
@@ -15753,6 +15951,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -15868,7 +16067,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -15932,6 +16132,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -15960,6 +16161,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -16007,7 +16209,8 @@
       "GlcNAc": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1641"
@@ -16033,7 +16236,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1641"
@@ -16112,6 +16316,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 4
     },
     "level": "composition",
@@ -16174,7 +16379,8 @@
       "Gal": 4,
       "GlcNAc": 3,
       "Hex": 4,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -16187,7 +16393,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "656"
@@ -16249,7 +16456,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "574"
@@ -16303,6 +16511,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -16333,6 +16542,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -16347,6 +16557,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -16391,6 +16602,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -16415,7 +16627,8 @@
   "G18833GC": {
     "count": {
       "GlcNAc": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -16491,6 +16704,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -16583,6 +16797,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -16599,7 +16814,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "140"
@@ -16644,6 +16859,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -16813,7 +17029,8 @@
       "GalNAc": 2,
       "GlcNAc": 3,
       "Hex": 3,
-      "HexNAc": 5
+      "HexNAc": 5,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -16884,7 +17101,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -17016,6 +17234,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -17027,7 +17246,8 @@
     ],
     "count": {
       "GlcNAc": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1641"
@@ -17074,6 +17294,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "composition",
@@ -17088,7 +17309,8 @@
       "GalNAc": 1,
       "GlcNAc": 3,
       "Hex": 2,
-      "HexNAc": 4
+      "HexNAc": 4,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1829"
@@ -17120,6 +17342,7 @@
       "HexNAc": 3,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -17160,6 +17383,7 @@
       "Fuc": 1,
       "Gal": 1,
       "Hex": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -17355,11 +17579,11 @@
   },
   "G19879XX": {
     "children": [
-      "G00257RE",
       "G40724HZ",
       "G51911LG",
       "G53176VA",
-      "G77101QR"
+      "G77101QR",
+      "G90529LH"
     ],
     "count": {
       "Fuc": 1,
@@ -17367,6 +17591,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -17484,7 +17709,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "328"
@@ -17496,7 +17722,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -17589,7 +17815,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1829"
@@ -17648,7 +17874,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -17680,7 +17906,8 @@
       "Hex": 4,
       "HexNAc": 3,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1860"
@@ -17729,6 +17956,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 4,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -17822,7 +18050,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -17848,7 +18077,8 @@
       "Gal": 1,
       "GalNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "328"
@@ -17959,7 +18189,8 @@
     ],
     "count": {
       "GalNAc": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7045"
@@ -18032,7 +18263,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -18072,6 +18304,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -18318,6 +18551,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -18431,7 +18665,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -18475,6 +18710,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -18622,6 +18858,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -18693,6 +18930,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -18726,7 +18964,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7636"
@@ -18828,6 +19067,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -18861,6 +19101,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -18896,6 +19137,7 @@
       "HexNAc": 3,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -18942,6 +19184,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -19068,7 +19311,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -19237,7 +19480,7 @@
     "count": {
       "Gal": 1,
       "Hex": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -19270,6 +19513,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -19313,7 +19557,7 @@
       "Fuc": 2,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 2
     },
     "level": "saccharide",
@@ -19360,7 +19604,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1582"
@@ -19374,6 +19618,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -19462,6 +19707,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -19525,6 +19771,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -19551,7 +19798,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -19579,6 +19827,7 @@
       "HexNAc": 5,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -19613,6 +19862,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -19655,6 +19905,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -19847,7 +20098,7 @@
     "count": {
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -19862,6 +20113,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -19922,7 +20174,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -19989,6 +20241,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -20035,6 +20288,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -20044,7 +20298,7 @@
     "count": {
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 3
+      "Xxx": 4
     },
     "level": "saccharide",
     "score": "0"
@@ -20075,7 +20329,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "1148"
@@ -20117,6 +20372,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -20149,6 +20405,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -20353,7 +20610,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -20365,7 +20622,8 @@
     "count": {
       "Gal": 1,
       "Hex": 1,
-      "S": 1
+      "S": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7045"
@@ -20508,6 +20766,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -20537,7 +20796,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "590"
@@ -20688,6 +20948,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -20720,6 +20981,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -20735,6 +20997,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -20747,6 +21010,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -20805,7 +21069,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -20818,7 +21082,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "328"
@@ -20887,6 +21152,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -20902,7 +21168,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -20993,6 +21259,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -21012,6 +21279,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -21087,6 +21355,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -21117,7 +21386,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -21205,7 +21475,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -21327,6 +21597,7 @@
       "Hex": 2,
       "HexNAc": 1,
       "S": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -21486,7 +21757,8 @@
       "Gal": 3,
       "GlcNAc": 1,
       "Hex": 3,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -21555,6 +21827,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -21565,7 +21838,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -21613,7 +21887,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -21672,6 +21946,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -21687,7 +21962,8 @@
       "Hex": 2,
       "HexNAc": 3,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1829"
@@ -21828,7 +22104,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1805"
@@ -22023,6 +22300,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -22180,6 +22458,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -22442,6 +22721,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -22547,6 +22827,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -22575,6 +22856,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -22666,7 +22948,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "656"
@@ -22740,7 +23023,8 @@
       "GalNAc": 1,
       "GlcNAc": 3,
       "Hex": 2,
-      "HexNAc": 4
+      "HexNAc": 4,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -22768,6 +23052,7 @@
       "GlcNAc": 4,
       "Hex": 5,
       "HexNAc": 4,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -22961,6 +23246,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -23006,7 +23292,7 @@
     "count": {
       "GlcNAc": 2,
       "HexNAc": 2,
-      "Xxx": 3
+      "Xxx": 4
     },
     "level": "topology",
     "score": "1578"
@@ -23021,7 +23307,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -23172,6 +23458,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -23214,6 +23501,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -23287,7 +23575,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1582"
@@ -23329,7 +23617,7 @@
     "count": {
       "Gal": 1,
       "Hex": 1,
-      "Xxx": 2
+      "Xxx": 3
     },
     "level": "saccharide",
     "score": "0"
@@ -23346,7 +23634,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1829"
@@ -23654,6 +23943,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -23733,7 +24023,7 @@
       "Hex": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 2
+      "Xxx": 3
     },
     "level": "topology",
     "score": "1575"
@@ -23745,6 +24035,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -23790,6 +24081,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -23805,7 +24097,8 @@
       "Hex": 1,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7636"
@@ -23880,6 +24173,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -23895,6 +24189,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -23957,6 +24252,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -23986,6 +24282,7 @@
       "HexNAc": 2,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -24042,7 +24339,7 @@
       "Hex": 3,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 2
+      "Xxx": 3
     },
     "level": "saccharide",
     "score": "0"
@@ -24073,6 +24370,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -24083,7 +24381,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -24311,6 +24610,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -24322,7 +24622,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -24352,6 +24652,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -24428,7 +24729,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -24491,7 +24793,8 @@
       "Hex": 1,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -24503,7 +24806,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -24544,6 +24848,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -24641,7 +24946,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -24751,6 +25057,7 @@
       "HexNAc": 1,
       "NeuGc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -24766,6 +25073,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -24840,6 +25148,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -24953,7 +25262,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "574"
@@ -24981,6 +25291,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -25088,7 +25399,7 @@
     "count": {
       "Gal": 1,
       "Hex": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1444"
@@ -25202,7 +25513,8 @@
       "Hex": 2,
       "HexNAc": 3,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1829"
@@ -25233,7 +25545,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "492"
@@ -25272,7 +25585,8 @@
       "Gal": 3,
       "GlcNAc": 1,
       "Hex": 3,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -25353,6 +25667,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -25414,7 +25729,8 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "S": 1
+      "S": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7373"
@@ -25447,7 +25763,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7537"
@@ -25618,6 +25935,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -25797,6 +26115,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -25806,7 +26125,7 @@
     "count": {
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -25820,7 +26139,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -25990,6 +26310,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -26049,6 +26370,7 @@
       "HexNAc": 3,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -26166,7 +26488,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -26247,7 +26570,7 @@
     "count": {
       "Gal": 3,
       "Hex": 3,
-      "Xxx": 2
+      "Xxx": 3
     },
     "level": "topology",
     "score": "1641"
@@ -26260,7 +26583,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1805"
@@ -26369,7 +26693,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -26550,6 +26875,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -26577,6 +26903,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -26694,7 +27021,8 @@
       "Gal": 2,
       "GlcNAc": 3,
       "Hex": 2,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -26708,7 +27036,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 3
+      "Xxx": 4
     },
     "level": "topology",
     "score": "1632"
@@ -26724,6 +27052,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -26797,6 +27126,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -26838,7 +27168,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -26848,7 +27178,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -26863,6 +27194,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -26893,7 +27225,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -26957,7 +27290,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1716"
@@ -26974,6 +27307,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -27015,7 +27349,7 @@
     "count": {
       "GlcNAc": 1,
       "HexNAc": 1,
-      "Xxx": 2
+      "Xxx": 3
     },
     "level": "topology",
     "score": "1477"
@@ -27070,7 +27404,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -27085,6 +27419,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -27294,6 +27629,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -27434,7 +27770,8 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
-      "S": 1
+      "S": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7537"
@@ -27491,6 +27828,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -27582,7 +27920,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -27611,7 +27950,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -27624,6 +27963,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -27696,6 +28036,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 5,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -27752,6 +28093,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -27784,6 +28126,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -27882,6 +28225,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -27899,6 +28243,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -27939,6 +28284,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -27988,7 +28334,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -28000,7 +28347,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -28034,6 +28382,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -28102,6 +28451,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -28116,7 +28466,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1582"
@@ -28249,6 +28599,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -28280,6 +28631,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -28440,6 +28792,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -28470,7 +28823,7 @@
       "Hex": 2,
       "NeuAc": 2,
       "Sia": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1716"
@@ -28503,6 +28856,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -28524,6 +28878,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -28550,6 +28905,7 @@
       "Fuc": 1,
       "Gal": 1,
       "Hex": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -28574,6 +28930,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 5,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -28612,7 +28969,8 @@
       "Gal": 1,
       "GalNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -28627,7 +28985,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1846"
@@ -28846,6 +29205,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -29264,7 +29624,7 @@
     "count": {
       "Gal": 1,
       "Hex": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "919"
@@ -29274,7 +29634,8 @@
       "Gal": 1,
       "GalNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -29301,7 +29662,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "123"
@@ -29328,7 +29690,8 @@
     ],
     "count": {
       "GlcNAc": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7045"
@@ -29338,7 +29701,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -29517,7 +29881,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "1083"
@@ -29611,6 +29976,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -29634,6 +30000,7 @@
       "NeuAc": 1,
       "S": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -29677,7 +30044,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "328"
@@ -29741,6 +30109,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -29757,7 +30126,8 @@
       "Hex": 1,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "1098"
@@ -29846,7 +30216,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "886"
@@ -29858,6 +30229,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -29948,7 +30320,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -30023,7 +30395,8 @@
       "GalNAc": 2,
       "GlcNAc": 3,
       "Hex": 3,
-      "HexNAc": 5
+      "HexNAc": 5,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1860"
@@ -30142,6 +30515,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -30173,7 +30547,8 @@
       "Hex": 4,
       "HexNAc": 3,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1871"
@@ -30292,7 +30667,7 @@
       "Hex": 2,
       "NeuAc": 2,
       "Sia": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -30421,6 +30796,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -30558,7 +30934,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1641"
@@ -30611,6 +30988,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -30721,7 +31099,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -30736,6 +31115,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -30795,6 +31175,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -30805,6 +31186,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -30852,6 +31234,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -30883,7 +31266,8 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
-      "S": 1
+      "S": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7748"
@@ -31031,7 +31415,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1663"
@@ -31239,6 +31623,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -31428,7 +31813,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -31503,6 +31888,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -31620,7 +32006,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -31636,7 +32023,8 @@
       "Hex": 1,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "2133"
@@ -31662,7 +32050,7 @@
     "count": {
       "GlcNAc": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -31765,6 +32153,7 @@
       "Hex": 3,
       "HexNAc": 2,
       "S": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -31873,6 +32262,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -31918,7 +32308,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1753"
@@ -31966,7 +32356,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1805"
@@ -31998,6 +32389,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -32011,7 +32403,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "492"
@@ -32152,7 +32545,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -32179,7 +32573,8 @@
       "Hex": 3,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -32211,6 +32606,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -32240,7 +32636,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7702"
@@ -32311,6 +32708,7 @@
       "HexNAc": 3,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -32356,6 +32754,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -32444,6 +32843,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -32570,7 +32970,7 @@
     "count": {
       "GlcNAc": 1,
       "HexNAc": 1,
-      "Xxx": 2
+      "Xxx": 3
     },
     "level": "saccharide",
     "score": "0"
@@ -32647,7 +33047,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -32677,7 +33077,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -32768,6 +33168,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -32932,7 +33333,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -33087,7 +33489,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -33207,6 +33609,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -33415,7 +33818,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -33458,6 +33862,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -33506,7 +33911,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -33615,7 +34021,8 @@
       "GlcNAc": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1641"
@@ -33659,7 +34066,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1641"
@@ -33697,6 +34105,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -33727,7 +34136,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -33758,6 +34167,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -33953,7 +34363,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -34032,6 +34443,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -34076,7 +34488,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1805"
@@ -34122,6 +34535,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -34147,7 +34561,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -34227,7 +34642,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -34258,7 +34673,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -34414,7 +34830,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "361"
@@ -34445,6 +34862,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -34464,6 +34882,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -34476,7 +34895,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -34513,7 +34933,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -34543,7 +34964,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -34620,6 +35042,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -34651,6 +35074,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -34663,7 +35087,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -34864,7 +35288,8 @@
       "Hex": 2,
       "HexNAc": 3,
       "NeuAc": 4,
-      "Sia": 4
+      "Sia": 4,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1871"
@@ -34951,7 +35376,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -34966,6 +35391,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -35016,6 +35442,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -35056,7 +35483,8 @@
       "Gal": 4,
       "GlcNAc": 3,
       "Hex": 4,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -35086,6 +35514,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -35339,7 +35768,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -35461,6 +35891,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -35627,6 +36058,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -35751,6 +36183,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -35851,7 +36284,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "761"
@@ -35879,7 +36313,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -35908,7 +36342,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "564"
@@ -36026,6 +36461,7 @@
       "HexNAc": 3,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -36057,7 +36493,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -36073,6 +36509,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -36206,7 +36643,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -36218,6 +36655,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -36260,6 +36698,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -36270,7 +36709,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -36313,6 +36753,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -36340,6 +36781,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -36355,7 +36797,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "246"
@@ -36367,6 +36810,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -36459,6 +36903,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -36474,6 +36919,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -36595,6 +37041,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -36614,7 +37061,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7702"
@@ -36693,6 +37141,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -36722,7 +37171,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -36736,6 +37186,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -36814,7 +37265,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -36858,7 +37309,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1829"
@@ -36916,6 +37368,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -36989,7 +37442,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -37003,6 +37456,7 @@
       "HexNAc": 2,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -37117,6 +37571,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -37260,6 +37715,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -37275,6 +37731,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -37318,7 +37775,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -37332,6 +37790,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -37345,7 +37804,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1641"
@@ -37603,6 +38063,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -37631,7 +38092,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -37690,6 +38152,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -37702,6 +38165,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -37744,6 +38208,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -37773,7 +38238,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -37848,7 +38313,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -37892,7 +38357,7 @@
       "Fuc": 2,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 2
     },
     "level": "saccharide",
@@ -37956,7 +38421,8 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "S": 3,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7748"
@@ -37997,7 +38463,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -38032,6 +38498,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -38118,6 +38585,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -38162,7 +38630,8 @@
       "Hex": 1,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1805"
@@ -38398,6 +38867,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -38426,7 +38896,7 @@
     "count": {
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1444"
@@ -38631,7 +39101,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -38767,7 +39238,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -38781,6 +39253,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -38827,6 +39300,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -39044,6 +39518,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -39086,7 +39561,8 @@
       "Gal": 3,
       "GlcNAc": 1,
       "Hex": 3,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -39103,6 +39579,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -39116,6 +39593,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 5,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -39216,6 +39694,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -39255,7 +39734,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -39301,7 +39781,8 @@
       "Hex": 4,
       "HexNAc": 3,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -39315,7 +39796,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1969"
@@ -39404,6 +39886,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -39508,6 +39991,7 @@
       "HexNAc": 4,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -39540,6 +40024,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "composition",
@@ -39589,6 +40074,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -39826,6 +40312,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -39964,7 +40451,8 @@
       "Gal": 4,
       "GlcNAc": 3,
       "Hex": 4,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "791"
@@ -40008,7 +40496,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1805"
@@ -40136,6 +40625,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -40192,7 +40682,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -40317,6 +40808,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -40358,7 +40850,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -40372,7 +40865,8 @@
       "Gal": 4,
       "GlcNAc": 3,
       "Hex": 4,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7784"
@@ -40575,7 +41069,7 @@
       "Hex": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1582"
@@ -40704,7 +41198,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -40888,7 +41382,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -41204,7 +41699,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "82"
@@ -41234,6 +41730,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -41282,7 +41779,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "525"
@@ -41315,6 +41812,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -41379,6 +41877,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -41609,6 +42108,7 @@
       "NeuAc": 1,
       "S": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -41869,6 +42369,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -41928,7 +42429,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 2
     },
     "level": "saccharide",
@@ -42090,7 +42591,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -42116,6 +42617,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -42292,6 +42794,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -42372,6 +42875,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -42436,6 +42940,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -42484,7 +42989,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1805"
@@ -42577,7 +43083,8 @@
       "Hex": 3,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7702"
@@ -42794,7 +43301,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "1318"
@@ -42813,6 +43321,7 @@
       "HexNAc": 4,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -42932,6 +43441,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -42987,7 +43497,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -42999,6 +43509,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 4
     },
     "level": "saccharide",
@@ -43027,7 +43538,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -43095,6 +43607,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -43211,7 +43724,8 @@
       "Hex": 2,
       "HexNAc": 3,
       "NeuAc": 4,
-      "Sia": 4
+      "Sia": 4,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7833"
@@ -43221,7 +43735,8 @@
       "Gal": 3,
       "GlcNAc": 3,
       "Hex": 3,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -43236,6 +43751,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -43396,6 +43912,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -43429,7 +43946,8 @@
       "Hex": 4,
       "HexNAc": 3,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7833"
@@ -43468,7 +43986,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -43542,6 +44061,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -43705,6 +44225,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -43843,6 +44364,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -44069,7 +44591,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "328"
@@ -44086,6 +44609,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -44114,6 +44638,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -44370,7 +44895,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "164"
@@ -44382,6 +44908,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -44412,6 +44939,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -44583,6 +45111,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -44628,7 +45157,7 @@
       "Hex": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -44640,7 +45169,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -44673,6 +45203,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -44700,7 +45231,8 @@
       "Hex": 1,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -45008,6 +45540,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -45072,7 +45605,8 @@
       "Hex": 4,
       "HexNAc": 3,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7811"
@@ -45318,7 +45852,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -45337,7 +45872,8 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "S": 1,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7702"
@@ -45349,6 +45885,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -45487,6 +46024,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -45519,6 +46057,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -45666,6 +46205,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -45698,6 +46238,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -45710,7 +46251,7 @@
     "count": {
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 3
+      "Xxx": 4
     },
     "level": "topology",
     "score": "1578"
@@ -45984,6 +46525,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -46011,7 +46553,8 @@
       "Hex": 3,
       "HexNAc": 4,
       "NeuAc": 4,
-      "Sia": 4
+      "Sia": 4,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7866"
@@ -46044,6 +46587,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -46059,6 +46603,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -46076,6 +46621,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -46150,6 +46696,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -46166,6 +46713,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -46214,7 +46762,8 @@
     "count": {
       "Gal": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "2626"
@@ -46230,6 +46779,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -46276,6 +46826,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -46308,7 +46859,8 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
-      "S": 1
+      "S": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7636"
@@ -46319,7 +46871,8 @@
     ],
     "count": {
       "Gal": 1,
-      "Hex": 1
+      "Hex": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "492"
@@ -46365,7 +46918,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -46429,6 +46983,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "composition",
@@ -46461,6 +47016,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -46561,6 +47117,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -46577,6 +47134,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -46708,6 +47266,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -46795,6 +47354,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -46891,6 +47451,7 @@
       "HexNAc": 3,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -46925,7 +47486,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -47015,6 +47577,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -47029,6 +47592,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -47045,6 +47609,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -47194,7 +47759,7 @@
       "Hex": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -47240,6 +47805,7 @@
       "Fuc": 1,
       "Gal": 1,
       "Hex": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -47362,7 +47928,8 @@
       "GlcNAc": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -47407,7 +47974,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1723"
@@ -47421,7 +47988,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1969"
@@ -47434,7 +48002,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "196"
@@ -47477,6 +48046,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -47598,7 +48168,8 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "S": 2,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7636"
@@ -47623,7 +48194,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -47689,6 +48261,7 @@
       "GlcNAc": 1,
       "Hex": 4,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -47779,7 +48352,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -47875,7 +48449,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "328"
@@ -47885,7 +48460,8 @@
       "Gal": 4,
       "GlcNAc": 3,
       "Hex": 4,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -47897,6 +48473,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -48022,6 +48599,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -48037,6 +48615,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -48189,7 +48768,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "1329"
@@ -48296,6 +48876,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -48306,7 +48887,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -48335,6 +48917,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -48349,6 +48932,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -48471,7 +49055,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1969"
@@ -48537,7 +49122,8 @@
       "Hex": 3,
       "HexNAc": 4,
       "NeuAc": 4,
-      "Sia": 4
+      "Sia": 4,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1887"
@@ -48551,7 +49137,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
-      "Xxx": 2
+      "Xxx": 3
     },
     "level": "topology",
     "score": "1641"
@@ -48565,6 +49151,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -48609,7 +49196,8 @@
       "GalNAc": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7373"
@@ -48645,14 +49233,14 @@
   },
   "G56335QN": {
     "children": [
-      "G39115ZT",
-      "G75248WN"
+      "G06230AO"
     ],
     "count": {
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7373"
@@ -48715,7 +49303,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -48760,6 +49349,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -48799,7 +49389,8 @@
       "Hex": 3,
       "HexNAc": 3,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -48827,7 +49418,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1582"
@@ -48870,7 +49461,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1716"
@@ -48956,7 +49547,8 @@
       "Gal": 1,
       "GalNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1641"
@@ -48994,6 +49586,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -49021,7 +49614,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -49032,7 +49625,8 @@
     ],
     "count": {
       "GalNAc": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1477"
@@ -49046,6 +49640,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -49072,7 +49667,7 @@
     "count": {
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1444"
@@ -49084,6 +49679,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -49150,6 +49746,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -49164,7 +49761,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -49203,7 +49800,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -49403,6 +50001,7 @@
       "Gal": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -49416,7 +50015,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "328"
@@ -49428,6 +50028,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -49451,6 +50052,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -49463,7 +50065,7 @@
     "count": {
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1582"
@@ -49668,6 +50270,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -49795,6 +50398,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -49981,7 +50585,8 @@
       "Hex": 3,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -50004,6 +50609,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -50036,7 +50642,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -50221,6 +50827,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -50229,7 +50836,8 @@
   "G58645HA": {
     "count": {
       "Gal": 1,
-      "Hex": 1
+      "Hex": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -50319,7 +50927,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -50389,7 +50998,8 @@
     "count": {
       "Gal": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "1313"
@@ -50463,6 +51073,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -50517,6 +51128,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -50561,6 +51173,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -50574,7 +51187,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -50649,6 +51263,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -50709,7 +51324,8 @@
       "Hex": 1,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -50789,6 +51405,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -50875,7 +51492,8 @@
       "Hex": 4,
       "HexNAc": 3,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1860"
@@ -50893,6 +51511,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -51100,6 +51719,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -51275,6 +51895,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -51303,7 +51924,8 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "S": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7373"
@@ -51315,6 +51937,7 @@
       "Hex": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -51329,7 +51952,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "2090"
@@ -51402,7 +52026,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -51472,7 +52096,8 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
-      "S": 1
+      "S": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7537"
@@ -51486,7 +52111,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1641"
@@ -51498,7 +52124,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -51539,7 +52166,7 @@
     "count": {
       "GlcNAc": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1444"
@@ -51594,6 +52221,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -51998,6 +52626,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -52030,6 +52659,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -52039,7 +52669,7 @@
     "count": {
       "Gal": 1,
       "Hex": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -52117,6 +52747,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 4,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -52131,7 +52762,8 @@
       "Gal": 2,
       "GlcNAc": 3,
       "Hex": 2,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7702"
@@ -52224,7 +52856,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -52236,6 +52869,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -52280,7 +52914,8 @@
       "Hex": 3,
       "HexNAc": 4,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -52292,6 +52927,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -52305,6 +52941,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -52337,7 +52974,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1846"
@@ -52362,7 +53000,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -52432,7 +53070,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -52457,7 +53095,8 @@
   "G61833XV": {
     "count": {
       "GlcNAc": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -52566,6 +53205,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -52776,6 +53416,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -52837,6 +53478,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -52900,6 +53542,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -52912,7 +53555,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -52975,6 +53619,7 @@
       "GlcNAc": 4,
       "Hex": 5,
       "HexNAc": 4,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -52990,6 +53635,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -53009,6 +53655,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -53053,6 +53700,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -53148,7 +53796,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7373"
@@ -53195,7 +53844,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "246"
@@ -53260,7 +53909,8 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "S": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7636"
@@ -53319,7 +53969,7 @@
       "Fuc": 2,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 2
     },
     "level": "topology",
@@ -53333,7 +53983,7 @@
       "Fuc": 2,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 2
     },
     "level": "topology",
@@ -53569,6 +54219,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -53643,6 +54294,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -53787,7 +54439,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -53845,6 +54497,7 @@
       "GalNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -53857,6 +54510,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -53991,7 +54645,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 3
+      "Xxx": 4
     },
     "level": "saccharide",
     "score": "0"
@@ -54003,7 +54657,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -54034,7 +54689,8 @@
     ],
     "count": {
       "GlcNAc": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1477"
@@ -54154,6 +54810,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -54306,7 +54963,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -54373,7 +55031,8 @@
       "Gal": 3,
       "GlcNAc": 1,
       "Hex": 3,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -54409,6 +55068,7 @@
       "HexNAc": 3,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -54512,6 +55172,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -54730,7 +55391,7 @@
       "HexNAc": 2,
       "NeuAc": 2,
       "Sia": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -54825,7 +55486,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -54937,7 +55599,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "98"
@@ -55051,6 +55714,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -55233,7 +55897,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -55362,6 +56026,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -55393,7 +56058,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -55440,6 +56106,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -55485,7 +56152,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -55688,7 +56355,7 @@
       "Hex": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -55700,6 +56367,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -55727,7 +56395,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -55788,7 +56456,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -55876,6 +56545,7 @@
       "GlcNAc": 4,
       "Hex": 5,
       "HexNAc": 6,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "composition",
@@ -55927,6 +56597,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -55988,7 +56659,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -56032,7 +56704,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -56047,7 +56720,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -56152,6 +56825,7 @@
       "HexNAc": 4,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -56228,6 +56902,7 @@
       "NeuAc": 1,
       "S": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -56254,7 +56929,7 @@
     "count": {
       "Gal": 1,
       "Hex": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -56329,7 +57004,8 @@
       "Hex": 2,
       "HexNAc": 3,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7811"
@@ -56455,6 +57131,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -56513,7 +57190,7 @@
       "Hex": 2,
       "NeuAc": 2,
       "Sia": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -56540,6 +57217,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -56644,7 +57322,8 @@
     ],
     "count": {
       "GlcNAc": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7373"
@@ -56699,7 +57378,8 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
-      "S": 2
+      "S": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7702"
@@ -56747,7 +57427,8 @@
       "Gal": 2,
       "GlcNAc": 3,
       "Hex": 2,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -56837,6 +57518,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -56847,7 +57529,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -56905,6 +57588,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -56949,6 +57633,7 @@
       "GlcNAc": 4,
       "Hex": 5,
       "HexNAc": 6,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -57132,7 +57817,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -57145,7 +57831,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "820"
@@ -57220,7 +57907,7 @@
     "count": {
       "Gal": 1,
       "Hex": 1,
-      "Xxx": 2
+      "Xxx": 3
     },
     "level": "topology",
     "score": "1477"
@@ -57246,7 +57933,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -57333,6 +58021,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -57459,6 +58148,7 @@
       "Hex": 2,
       "HexNAc": 2,
       "S": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -57475,7 +58165,8 @@
       "Hex": 3,
       "HexNAc": 4,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7833"
@@ -57487,7 +58178,8 @@
       "Hex": 2,
       "HexNAc": 3,
       "NeuAc": 4,
-      "Sia": 4
+      "Sia": 4,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -57594,6 +58286,7 @@
       "HexNAc": 3,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -57647,6 +58340,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -57659,6 +58353,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -57675,6 +58370,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -57689,6 +58385,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -57702,7 +58399,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "328"
@@ -57715,7 +58413,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -57762,6 +58460,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 4,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -58153,7 +58852,7 @@
     "count": {
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "140"
@@ -58262,6 +58961,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -58323,7 +59023,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7702"
@@ -58336,7 +59037,8 @@
       "Gal": 4,
       "GlcNAc": 3,
       "Hex": 4,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1846"
@@ -58373,7 +59075,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -58401,7 +59103,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -58582,6 +59284,7 @@
       "Fuc": 1,
       "Gal": 1,
       "Hex": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -58597,6 +59300,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -58696,6 +59400,7 @@
       "NeuAc": 1,
       "S": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -58741,6 +59446,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -58797,7 +59503,8 @@
       "Hex": 2,
       "HexNAc": 3,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -58989,7 +59696,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -59065,7 +59772,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -59124,6 +59832,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -59137,7 +59846,7 @@
     "count": {
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1723"
@@ -59258,7 +59967,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1663"
@@ -59285,6 +59994,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -59445,6 +60155,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -59508,6 +60219,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -59702,6 +60414,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -59807,6 +60520,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -59850,7 +60564,8 @@
       "Gal": 3,
       "GlcNAc": 3,
       "Hex": 3,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1829"
@@ -59863,7 +60578,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -59891,7 +60606,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -59918,7 +60634,8 @@
       "Gal": 1,
       "GalNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7373"
@@ -60047,6 +60764,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -60145,6 +60863,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -60202,6 +60921,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -60232,6 +60952,7 @@
       "HexNAc": 3,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -60291,6 +61012,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -60336,6 +61058,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -60384,6 +61107,7 @@
       "Fuc": 1,
       "Gal": 1,
       "Hex": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -60428,7 +61152,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "164"
@@ -60508,7 +61233,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -60753,6 +61479,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -60766,7 +61493,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "1444"
@@ -60796,6 +61524,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 4,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -60949,7 +61678,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "196"
@@ -61079,6 +61809,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -61142,7 +61873,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1663"
@@ -61315,6 +62046,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -61376,7 +62108,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "98"
@@ -61391,7 +62124,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -61521,6 +62254,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -61538,6 +62272,7 @@
       "HexNAc": 3,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -61550,6 +62285,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -61579,6 +62315,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -61591,6 +62328,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -61696,6 +62434,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -61723,7 +62462,7 @@
     "count": {
       "Gal": 3,
       "Hex": 3,
-      "Xxx": 2
+      "Xxx": 3
     },
     "level": "saccharide",
     "score": "0"
@@ -61752,7 +62491,8 @@
       "GalNAc": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -61776,7 +62516,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -61819,7 +62560,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1582"
@@ -61831,6 +62572,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -61892,6 +62634,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -61924,7 +62667,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1716"
@@ -61977,7 +62720,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -62062,7 +62806,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -62103,7 +62847,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -62136,7 +62880,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "98"
@@ -62158,7 +62903,8 @@
       "Gal": 3,
       "GlcNAc": 1,
       "Hex": 3,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -62191,7 +62937,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1772"
@@ -62248,6 +62994,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -62265,6 +63012,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -62341,6 +63089,7 @@
       "Hex": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -62403,7 +63152,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "123"
@@ -62524,7 +63274,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -62565,7 +63316,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -62697,7 +63449,8 @@
     ],
     "count": {
       "Gal": 1,
-      "Hex": 1
+      "Hex": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7045"
@@ -62746,7 +63499,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1805"
@@ -62796,7 +63550,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -62870,6 +63625,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -63067,7 +63823,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -63115,7 +63872,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -63174,6 +63931,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -63378,7 +64136,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -63405,7 +64164,8 @@
     ],
     "count": {
       "GlcNAc": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "492"
@@ -63432,6 +64192,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -63490,7 +64251,8 @@
       "GalNAc": 2,
       "GlcNAc": 3,
       "Hex": 3,
-      "HexNAc": 5
+      "HexNAc": 5,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7811"
@@ -63582,7 +64344,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -63595,7 +64357,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -63715,7 +64478,8 @@
       "Hex": 3,
       "HexNAc": 4,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1871"
@@ -63816,6 +64580,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -63828,6 +64593,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -63892,7 +64658,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1641"
@@ -63935,7 +64702,7 @@
       "Hex": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 2
+      "Xxx": 3
     },
     "level": "saccharide",
     "score": "0"
@@ -64127,6 +64894,7 @@
       "GalNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -64155,6 +64923,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -64216,7 +64985,7 @@
       "Hex": 3,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 2
+      "Xxx": 3
     },
     "level": "topology",
     "score": "1688"
@@ -64328,6 +65097,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -64387,6 +65157,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -64426,7 +65197,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "328"
@@ -64504,6 +65276,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -64585,7 +65358,8 @@
       "Gal": 2,
       "GlcNAc": 3,
       "Hex": 2,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -64616,6 +65390,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -64644,6 +65419,7 @@
       "Fuc": 1,
       "Gal": 1,
       "Hex": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -64751,6 +65527,7 @@
       "Hex": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -64794,7 +65571,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "328"
@@ -64850,7 +65628,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "328"
@@ -64913,6 +65692,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -64941,7 +65721,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -65039,6 +65820,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -65109,6 +65891,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -65121,6 +65904,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 4
     },
     "level": "saccharide",
@@ -65235,6 +66019,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -65378,6 +66163,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -65407,6 +66193,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -65461,6 +66248,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -65488,7 +66276,8 @@
     ],
     "count": {
       "Gal": 1,
-      "Hex": 1
+      "Hex": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1477"
@@ -65517,6 +66306,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -65532,6 +66322,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -65552,6 +66343,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -65573,7 +66365,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -65679,6 +66472,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -65696,6 +66490,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -65747,6 +66542,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -65826,7 +66622,8 @@
       "Hex": 2,
       "HexNAc": 3,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7748"
@@ -65933,6 +66730,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -65962,7 +66760,7 @@
     "count": {
       "Gal": 1,
       "Hex": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1444"
@@ -66013,6 +66811,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -66029,6 +66828,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -66140,6 +66940,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -66310,6 +67111,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -66358,6 +67160,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -66408,6 +67211,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -66454,7 +67258,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -66514,7 +67318,8 @@
       "Hex": 3,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -66539,6 +67344,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -66606,6 +67412,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -66679,6 +67486,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -66696,6 +67504,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -66806,7 +67615,8 @@
       "GalNAc": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1641"
@@ -66867,6 +67677,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -66910,7 +67721,7 @@
       "Fuc": 2,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 2
     },
     "level": "saccharide",
@@ -66973,7 +67784,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1663"
@@ -67022,6 +67833,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -67067,6 +67879,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -67099,6 +67912,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -67128,6 +67942,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -67141,7 +67956,8 @@
       "GlcNAc": 1,
       "HexNAc": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7373"
@@ -67171,7 +67987,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1984"
@@ -67220,6 +68037,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -67236,6 +68054,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -67249,7 +68068,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -67259,7 +68079,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -67338,6 +68159,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -67353,6 +68175,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -67387,6 +68210,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -67403,7 +68227,8 @@
       "HexNAc": 2,
       "NeuAc": 2,
       "S": 1,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7784"
@@ -67488,6 +68313,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -67608,6 +68434,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -67696,6 +68523,7 @@
       "GlcNAc": 1,
       "Hex": 4,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -67770,6 +68598,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -67823,7 +68652,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7537"
@@ -67901,6 +68731,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -68044,6 +68875,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -68123,7 +68955,7 @@
     "count": {
       "Gal": 1,
       "Hex": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1444"
@@ -68196,7 +69028,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -68230,6 +69063,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -68413,7 +69247,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -68429,7 +69263,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -68508,6 +69342,7 @@
       "HexNAc": 3,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -68616,6 +69451,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -68842,7 +69678,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "820"
@@ -68852,7 +69689,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -68877,6 +69715,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -68930,6 +69769,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -69029,6 +69869,7 @@
       "NeuAc": 1,
       "S": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -69134,7 +69975,8 @@
       "Hex": 3,
       "HexNAc": 3,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7833"
@@ -69240,6 +70082,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -69292,7 +70135,7 @@
       "G88356CV"
     ],
     "count": {
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1148"
@@ -69321,6 +70164,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -69559,7 +70403,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1582"
@@ -69606,6 +70450,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -69658,6 +70503,7 @@
       "HexNAc": 3,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -69794,7 +70640,8 @@
       "GalNAc": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1641"
@@ -69860,7 +70707,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "246"
@@ -69992,7 +70840,8 @@
       "Hex": 2,
       "HexNAc": 3,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -70020,7 +70869,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -70135,7 +70985,8 @@
       "Hex": 1,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "1772"
@@ -70176,6 +71027,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -70211,7 +71063,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 2
     },
     "level": "topology",
@@ -70261,6 +71113,7 @@
       "NeuAc": 2,
       "S": 1,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -70274,6 +71127,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -70289,7 +71143,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "492"
@@ -70594,7 +71449,8 @@
       "Gal": 3,
       "GlcNAc": 3,
       "Hex": 3,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1829"
@@ -70640,7 +71496,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -70728,7 +71585,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "1148"
@@ -70743,7 +71601,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "886"
@@ -70811,7 +71670,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1663"
@@ -71069,6 +71928,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -71101,7 +71961,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "525"
@@ -71116,7 +71976,8 @@
       "Hex": 3,
       "HexNAc": 3,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1871"
@@ -71171,7 +72032,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -71296,6 +72157,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -71343,7 +72205,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -71353,7 +72216,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -71466,7 +72330,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1663"
@@ -71489,7 +72353,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -71559,6 +72423,7 @@
       "HexNAc": 1,
       "NeuGc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -71656,7 +72521,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -71668,6 +72534,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -71700,7 +72567,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7784"
@@ -71732,6 +72600,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -72289,7 +73158,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "196"
@@ -72301,7 +73171,8 @@
       "Hex": 4,
       "HexNAc": 3,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -72312,7 +73183,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -72340,6 +73211,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -72386,7 +73258,8 @@
       "Hex": 4,
       "HexNAc": 3,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "1395"
@@ -72514,7 +73387,7 @@
       "G05180BW"
     ],
     "count": {
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1148"
@@ -72549,6 +73422,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -72563,7 +73437,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1716"
@@ -72577,7 +73451,8 @@
       "GalNAc": 1,
       "GlcNAc": 3,
       "Hex": 2,
-      "HexNAc": 4
+      "HexNAc": 4,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7748"
@@ -72593,6 +73468,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -72723,7 +73599,8 @@
     ],
     "count": {
       "GlcNAc": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "492"
@@ -72827,7 +73704,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -72863,6 +73740,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -72909,6 +73787,7 @@
       "HexNAc": 3,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -72982,6 +73861,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -73032,6 +73912,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -73064,6 +73945,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -73105,7 +73987,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -73351,7 +74234,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "328"
@@ -73365,7 +74249,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "492"
@@ -73412,7 +74297,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1805"
@@ -73444,6 +74330,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -73506,6 +74393,7 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -73521,7 +74409,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "361"
@@ -73543,7 +74432,7 @@
     "count": {
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -73661,6 +74550,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -73674,7 +74564,7 @@
       "Fuc": 2,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 2
     },
     "level": "topology",
@@ -73693,7 +74583,8 @@
       "Hex": 3,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1805"
@@ -73766,6 +74657,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "composition",
@@ -73827,6 +74719,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -73869,7 +74762,8 @@
       "Gal": 2,
       "GlcNAc": 3,
       "Hex": 2,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -73883,7 +74777,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1582"
@@ -73929,7 +74823,8 @@
       "Gal": 3,
       "GlcNAc": 3,
       "Hex": 3,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1829"
@@ -73981,6 +74876,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -74017,6 +74913,7 @@
       "Hex": 2,
       "HexNAc": 1,
       "S": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -74186,6 +75083,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -74238,7 +75136,7 @@
   },
   "G88356CV": {
     "count": {
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -74265,6 +75163,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -74362,7 +75261,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7784"
@@ -74407,6 +75307,7 @@
       "GlcNAc": 3,
       "Hex": 2,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -74719,6 +75620,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -74730,7 +75632,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -74759,7 +75661,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "492"
@@ -74843,7 +75746,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "2088"
@@ -74856,7 +75760,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "328"
@@ -74915,7 +75820,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -74948,6 +75853,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -75008,6 +75914,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -75097,6 +76004,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -75172,7 +76080,8 @@
       "Gal": 3,
       "GlcNAc": 1,
       "Hex": 3,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7636"
@@ -75187,7 +76096,8 @@
       "Hex": 2,
       "HexNAc": 3,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1860"
@@ -75258,6 +76168,7 @@
       "GlcNAc": 4,
       "Hex": 5,
       "HexNAc": 4,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "composition",
@@ -75285,7 +76196,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuGc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -75433,6 +76345,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -75526,7 +76439,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -75642,7 +76555,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1829"
@@ -75659,6 +76573,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -75675,7 +76590,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -75849,6 +76765,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -75892,7 +76809,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7636"
@@ -76031,6 +76949,22 @@
     "level": "topology",
     "score": "1969"
   },
+  "G90529LH": {
+    "children": [
+      "G00257RE"
+    ],
+    "count": {
+      "Fuc": 1,
+      "Gal": 1,
+      "GlcNAc": 2,
+      "Hex": 1,
+      "HexNAc": 2,
+      "Xxx": 1,
+      "dHex": 1
+    },
+    "level": "topology",
+    "score": "2196"
+  },
   "G90558DO": {
     "children": [
       "G43315IV"
@@ -76086,7 +77020,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7748"
@@ -76148,6 +77083,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -76237,6 +77173,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -76294,6 +77231,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -76377,7 +77315,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -76457,7 +77395,8 @@
     ],
     "count": {
       "GlcNAc": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "492"
@@ -76630,7 +77569,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -76660,6 +77600,7 @@
       "HexNAc": 3,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -76752,7 +77693,8 @@
       "Hex": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -76768,6 +77710,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -76817,6 +77760,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -76896,7 +77840,8 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "S": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7702"
@@ -76958,6 +77903,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -76973,6 +77919,7 @@
       "HexNAc": 3,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -77017,6 +77964,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -77091,7 +78039,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1663"
@@ -77106,7 +78054,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1829"
@@ -77210,7 +78159,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1772"
@@ -77223,7 +78173,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "787"
@@ -77241,6 +78192,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -77311,6 +78263,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -77393,7 +78346,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1582"
@@ -77411,6 +78364,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -77465,6 +78419,7 @@
       "HexNAc": 4,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -77481,7 +78436,7 @@
       "HexNAc": 2,
       "NeuAc": 2,
       "Sia": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1780"
@@ -77564,7 +78519,8 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -77680,7 +78636,8 @@
       "Gal": 1,
       "GalNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1969"
@@ -77746,7 +78703,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1716"
@@ -77772,7 +78729,7 @@
       "Fuc": 2,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 2
     },
     "level": "saccharide",
@@ -77796,7 +78753,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -77839,6 +78797,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -77898,6 +78857,7 @@
       "HexNAc": 5,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -78018,6 +78978,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -78096,6 +79057,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -78231,6 +79193,7 @@
       "GlcNAc": 4,
       "Hex": 5,
       "HexNAc": 4,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -78273,7 +79236,8 @@
       "GalNAc": 1,
       "GlcNAc": 3,
       "Hex": 3,
-      "HexNAc": 4
+      "HexNAc": 4,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1846"
@@ -78417,7 +79381,8 @@
       "Hex": 3,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -78507,7 +79472,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1716"
@@ -78552,6 +79517,7 @@
       "HexNAc": 1,
       "NeuGc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -78597,6 +79563,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "topology",
@@ -78638,7 +79605,7 @@
     "count": {
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -78654,6 +79621,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -78810,7 +79778,7 @@
       "Hex": 2,
       "NeuAc": 2,
       "Sia": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1716"
@@ -78840,7 +79808,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -78853,7 +79821,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "saccharide",
@@ -78884,7 +79852,8 @@
       "Hex": 3,
       "HexNAc": 2,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "1219"
@@ -78990,6 +79959,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -79264,7 +80234,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "492"
@@ -79447,6 +80418,7 @@
       "GlcNAc": 4,
       "Hex": 5,
       "HexNAc": 6,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -79462,6 +80434,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -79686,7 +80659,7 @@
     "count": {
       "GlcNAc": 2,
       "HexNAc": 2,
-      "Xxx": 3
+      "Xxx": 4
     },
     "level": "saccharide",
     "score": "0"
@@ -79922,7 +80895,8 @@
       "Hex": 1,
       "NeuAc": 1,
       "S": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7373"
@@ -80213,6 +81187,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -80407,7 +81382,8 @@
       "Gal": 1,
       "GlcNAc": 2,
       "Hex": 1,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -80417,7 +81393,8 @@
       "Gal": 2,
       "GlcNAc": 2,
       "Hex": 2,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -80485,7 +81462,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "318"
@@ -80534,6 +81512,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -80566,7 +81545,8 @@
       "Gal": 2,
       "GlcNAc": 3,
       "Hex": 2,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "722"
@@ -80637,6 +81617,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "saccharide",
@@ -80662,7 +81643,8 @@
       "Gal": 3,
       "GlcNAc": 3,
       "Hex": 3,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -80733,6 +81715,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -80880,7 +81863,8 @@
       "Gal": 2,
       "GlcNAc": 3,
       "Hex": 2,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1805"
@@ -80892,6 +81876,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -80970,7 +81955,8 @@
       "Gal": 3,
       "GlcNAc": 2,
       "Hex": 3,
-      "HexNAc": 2
+      "HexNAc": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "787"
@@ -81079,6 +82065,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -81225,6 +82212,7 @@
       "HexNAc": 2,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -81237,6 +82225,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -81302,6 +82291,7 @@
       "HexNAc": 1,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -81341,7 +82331,8 @@
       "Gal": 1,
       "Hex": 1,
       "NeuAc": 3,
-      "Sia": 3
+      "Sia": 3,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7636"
@@ -81402,6 +82393,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -81414,6 +82406,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -81494,7 +82487,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -81656,7 +82649,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
-      "Xxx": 2
+      "Xxx": 3
     },
     "level": "saccharide",
     "score": "0"
@@ -81782,6 +82775,7 @@
       "GlcNAc": 1,
       "Hex": 3,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
@@ -81888,6 +82882,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -81901,7 +82896,8 @@
       "Gal": 4,
       "GlcNAc": 3,
       "Hex": 4,
-      "HexNAc": 3
+      "HexNAc": 3,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1846"
@@ -81971,6 +82967,7 @@
       "GlcNAc": 3,
       "Hex": 3,
       "HexNAc": 4,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -82084,6 +83081,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -82128,6 +83126,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "saccharide",
@@ -82370,6 +83369,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -82395,7 +83395,8 @@
     ],
     "count": {
       "Gal": 1,
-      "Hex": 1
+      "Hex": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "492"
@@ -82409,7 +83410,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1716"
@@ -82469,6 +83470,7 @@
       "HexNAc": 2,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "composition",
@@ -82539,7 +83541,7 @@
       "G86248YA"
     ],
     "count": {
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1477"
@@ -82631,7 +83633,8 @@
       "Gal": 1,
       "GlcNAc": 1,
       "Hex": 1,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7373"
@@ -82645,7 +83648,7 @@
     "count": {
       "Gal": 1,
       "Hex": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1641"
@@ -82738,6 +83741,7 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -82781,7 +83785,8 @@
       "Hex": 4,
       "HexNAc": 3,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -82808,7 +83813,8 @@
       "GalNAc": 1,
       "GlcNAc": 3,
       "Hex": 3,
-      "HexNAc": 4
+      "HexNAc": 4,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7784"
@@ -82835,6 +83841,7 @@
       "HexNAc": 2,
       "NeuAc": 2,
       "Sia": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -82863,6 +83870,7 @@
       "GlcNAc": 2,
       "Hex": 3,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -82919,7 +83927,8 @@
       "GlcNAc": 1,
       "Hex": 2,
       "HexNAc": 1,
-      "S": 2
+      "S": 2,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7537"
@@ -83001,7 +84010,7 @@
       "GlcNAc": 2,
       "Hex": 2,
       "HexNAc": 2,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "saccharide",
     "score": "0"
@@ -83060,7 +84069,7 @@
       "Fuc": 1,
       "Gal": 2,
       "Hex": 2,
-      "Xxx": 1,
+      "Xxx": 2,
       "dHex": 1
     },
     "level": "topology",
@@ -83196,7 +84205,8 @@
       "Gal": 2,
       "GlcNAc": 1,
       "Hex": 2,
-      "HexNAc": 1
+      "HexNAc": 1,
+      "Xxx": 1
     },
     "level": "topology",
     "score": "1723"
@@ -83340,7 +84350,7 @@
       "Hex": 2,
       "NeuAc": 1,
       "Sia": 1,
-      "Xxx": 1
+      "Xxx": 2
     },
     "level": "topology",
     "score": "1772"
@@ -83404,6 +84414,7 @@
       "HexNAc": 3,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 3
     },
     "level": "topology",
@@ -83447,7 +84458,8 @@
       "Hex": 4,
       "HexNAc": 3,
       "NeuAc": 2,
-      "Sia": 2
+      "Sia": 2,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "0"
@@ -83488,7 +84500,8 @@
       "GalNAc": 1,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "composition",
     "score": "7373"
@@ -83556,6 +84569,7 @@
       "GlcNAc": 1,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -83583,6 +84597,7 @@
       "GlcNAc": 2,
       "Hex": 1,
       "HexNAc": 2,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "saccharide",
@@ -83598,7 +84613,8 @@
       "Hex": 2,
       "HexNAc": 1,
       "NeuAc": 1,
-      "Sia": 1
+      "Sia": 1,
+      "Xxx": 1
     },
     "level": "saccharide",
     "score": "443"
@@ -83627,6 +84643,7 @@
       "GlcNAc": 3,
       "Hex": 4,
       "HexNAc": 3,
+      "Xxx": 1,
       "dHex": 1
     },
     "level": "topology",
@@ -83664,6 +84681,7 @@
       "HexNAc": 1,
       "NeuAc": 1,
       "Sia": 1,
+      "Xxx": 1,
       "dHex": 2
     },
     "level": "composition",
