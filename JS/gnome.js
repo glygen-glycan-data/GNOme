@@ -3637,7 +3637,8 @@ function GNOmeStructureBrowser (DIVID) {
 
         for (let acc of Object.keys(Parents)){
 
-            if (this.SubsumptionData[acc].SubsumptionLevel != "topology"){
+            if (this.SubsumptionData[acc].SubsumptionLevel != "topology" && 
+		this.SubsumptionData[acc].SubsumptionLevel != "saccharide"){
                 continue
             }
 
