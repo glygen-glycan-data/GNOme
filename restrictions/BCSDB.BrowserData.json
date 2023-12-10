@@ -1275,7 +1275,7 @@
     "count": {
       "Hex": 3,
       "HexN": 1,
-      "Xxx": 2
+      "X": 2
     },
     "level": "basecomposition",
     "score": "9326"
@@ -3187,7 +3187,7 @@
     "count": {
       "Hex": 2,
       "Sia": 2,
-      "Xxx": 1
+      "X": 1
     },
     "level": "basecomposition",
     "score": "10000"
@@ -3235,7 +3235,7 @@
       "Hex": 3,
       "HexN": 1,
       "Man": 3,
-      "Xxx": 2
+      "X": 2
     },
     "level": "composition",
     "score": "7356"
@@ -4011,7 +4011,7 @@
       "Hex": 2,
       "NeuAc": 2,
       "Sia": 2,
-      "Xxx": 1
+      "X": 1
     },
     "level": "composition",
     "score": "8030"
@@ -5555,7 +5555,7 @@
     "count": {
       "Hex": 3,
       "HexN": 1,
-      "Xxx": 1
+      "X": 1
     },
     "level": "basecomposition",
     "score": "9242"
@@ -7215,7 +7215,7 @@
       "Hex": 3,
       "HexN": 1,
       "Man": 3,
-      "Xxx": 1
+      "X": 1
     },
     "level": "composition",
     "score": "7272"

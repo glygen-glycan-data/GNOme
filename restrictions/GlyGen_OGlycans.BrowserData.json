@@ -60279,6 +60279,21 @@
     "level": "saccharide",
     "score": "328"
   },
+  "G49489TR": {
+    "children": [
+      "G38542FY",
+      "G93935AM"
+    ],
+    "count": {
+      "Gal": 2,
+      "Hex": 2,
+      "NeuAc": 2,
+      "Sia": 2,
+      "Xxx": 2
+    },
+    "level": "topology",
+    "score": "1805"
+  },
   "G49499SW": {
     "children": [
       "G43925AD",
@@ -64751,7 +64766,7 @@
   },
   "G53010TY": {
     "children": [
-      "G38542FY",
+      "G49489TR",
       "G60537OR",
       "G96250TQ"
     ],
