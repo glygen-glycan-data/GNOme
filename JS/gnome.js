@@ -163,7 +163,7 @@ let glycanviewer = {
             for(var i=0; i < thisLevelNodes.length; i++){
                 var currentNode = thisLevelNodes[i];
                 var edgesOfCurrentNode = component.edges[currentNode];
-                if ( edgesOfCurrentNode != undefined ){
+                if ( edgesOfCurrentNode !== undefined ){
                     for (var currentEdgeIndex in edgesOfCurrentNode){
                         var currentEdge = edgesOfCurrentNode[currentEdgeIndex];
                         nextLevelNodes.push(currentEdge.to);
@@ -332,7 +332,7 @@ let glycanviewer = {
         // horizontal space is the distance between the center of 2 image
         var horizontalSpace, verticalSpace;
 
-        if (greatestWidth != undefined && greatestHeight != undefined ){
+        if (greatestWidth !== undefined && greatestHeight !== undefined ){
             if ([2,4].includes(this.para.display.orientation)){
                 verticalSpace = greatestWidth * 1.3;
                 horizontalSpace = greatestHeight * 1.3 + 30; // Extra 35 is for the label
@@ -493,11 +493,15 @@ let glycanviewer = {
                 if (k == "Pseudo"){
                     e.hidden = true;
                 }
+                e.dashes = false;
                 e.arrows = 'middle';
                 if (e.type == 'equals') {
                     e.color = {color:'red'};
                 } else if (e.type == 'contains') {
                     e.color = {color: 'blue'};
+                } else if (e.type == 'contains+special') {
+                    e.color = {color: 'blue'};
+                    e.dashes = true;
                 }else{
                     e.color = {};
                 }
@@ -507,6 +511,7 @@ let glycanviewer = {
                     }
 
                 }
+                // console.log(e);
             });
         });
 
@@ -524,6 +529,40 @@ let glycanviewer = {
 
     forceRedraw: function(init){
         var thisLib = this;
+        thisLib.network.setData(thisLib.data);
+        let nodes = thisLib.data.nodes;
+        let pos = thisLib.network.getPositions();
+        let posbylevel = {};
+        let idbylevel = {};
+        for (let id in pos) {
+            let n = nodes.get(id)
+            if (posbylevel[n.level] === undefined){
+                posbylevel[n.level] = [];
+                idbylevel[n.level] = [];
+            }
+            posbylevel[n.level].push([ pos[id].x, pos[id].y ]);
+            idbylevel[n.level].push(id);
+        }
+        for (let level in posbylevel) {
+            posbylevel[level].sort(function(a,b){ if (a[0] !== b[0]) {return a[0]-b[0];} else {return a[1]-b[1];}});
+        }
+        console.log(posbylevel);
+        for (let level of [ 1, 3, '3.67' ]) {
+            if (idbylevel[level] === undefined) {
+                continue;
+            }
+            console.log(level,idbylevel[level]);
+            if ([1,3].includes(level)) {
+                idbylevel[level].sort(function(a,b){return nodes.get(a).order - nodes.get(b).order;});
+            } else {
+                idbylevel[level].sort(function(a,b){return nodes.get(a.substring(0,8)).order - nodes.get(b.substring(0,8)).order;});
+            }
+            console.log(level,idbylevel[level]);
+            for (let i in idbylevel[level]) {
+                let id = idbylevel[level][i];
+                this.data.nodes.update([{id: id, x: posbylevel[level][i][0], y: posbylevel[level][i][1]}]);
+            }
+        }
         thisLib.network.setData(thisLib.data);
         function drawNavi(){
             if (init){
@@ -593,7 +632,7 @@ let glycanviewer = {
         thisLib.network.on("doubleClick",highlightWhenDoubleClicked);
         function highlightWhenDoubleClicked(data){
             var selectnode = data.nodes;
-            if (selectnode == undefined){
+            if (selectnode === undefined){
                 selectnode = [];
             }
             if (selectnode.length > 0){
@@ -743,7 +782,7 @@ let glycanviewer = {
 
         function CreateEntryPrimary(display, menuList) {
             var entry = document.createElement("dt");
-            entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none;";
+            entry.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; font-size: 70%;";
 
             entry.innerHTML = "&nbsp" + display;
             menuList.appendChild(entry)
@@ -751,13 +790,13 @@ let glycanviewer = {
         }
 
         function CreateEntrySecondary(display, menuList) {
-            var entry = CreateEntryPrimary("&nbsp&nbsp" + display, menuList);
+            var entry = CreateEntryPrimary("&nbsp&nbsp&nbsp&nbsp" + display, menuList);
 
             entry.onmouseover = function(d){
-                this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #111111";
+                this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #111111; font-size: 70%;";
             };
             entry.onmouseout = function(d){
-                this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333";
+                this.style = "cursor: default; display: block; color: white; text-align: left; padding: 5px; text-decoration: none; background-color: #333333; font-size: 70%;";
             };
 
             return entry
@@ -796,9 +835,8 @@ let glycanviewer = {
             // Approx width 150 * height 350
             menuELE.style = "margin: 0; padding: 0; overflow: hidden; position: absolute; left: "+left+"px; top: "+top+"px; background-color: #333333; border: none; width: 145px";//width: 100px; height: 100px
 
-
             var selectedNode = thisLib.network.getNodeAt({x:x,y:y});
-            if (selectedNode == undefined || selectedNode == "Topology" || selectedNode.startsWith("fake") || selectedNode.startsWith("Query") || selectedNode.endsWith("3dots")){
+            if (selectedNode === undefined || selectedNode == "Topology" || selectedNode.startsWith("fake") || selectedNode.startsWith("Query") || selectedNode.endsWith("3dots")){
                 return
             }
 
@@ -850,6 +888,14 @@ let glycanviewer = {
             var nojumpflag = true;
             var externalLinks = JSON.parse(JSON.stringify(para["contextMenu"]["externalLinks"]));
 
+            var imageurl = {
+                "name": "Glymage",
+                "url_prefix": "https://glymage.glyomics.org/image/snfg/extended/",
+                "url_suffix": ".svg",
+                "glycan_set": undefined,
+            }
+            externalLinks.splice(0, 0, imageurl);
+
             var gnomepurl = {
                 "name": "GNOme",
                 "url_prefix": "http://purl.obolibrary.org/obo/GNO_",
@@ -857,7 +903,7 @@ let glycanviewer = {
                 "glycan_set": undefined,
             }
             externalLinks.splice(0, 0, gnomepurl);
-
+            
             for (var externalLink of externalLinks){
                 var title = externalLink["name"] || "";
                 var prefix = externalLink["url_prefix"] || "";
@@ -865,7 +911,7 @@ let glycanviewer = {
                 var accs = externalLink["glycan_set"];
 
                 var existFlag = false;
-                if (accs == undefined){
+                if (accs === undefined){
                     existFlag = true;
                 }
                 else if (accs.includes(selectedNode)){
@@ -892,6 +938,16 @@ let glycanviewer = {
 
             }
 
+            if ((gnome.SubsumptionData[selectedNode] !== undefined) && (gnome.SubsumptionData[selectedNode].Archetype !== undefined) && (gnome.SubsumptionData[selectedNode].Archetype != selectedNode)) {
+                CreateEntryPrimary("Focus:", menuList);
+                var entry =CreateEntrySecondary("Archetype", menuList);
+                var arch = gnome.SubsumptionData[selectedNode].Archetype;
+                entry.setAttribute("data-jumpacc", arch);
+                entry.onclick = function (){
+                    var acc = this.getAttribute("data-jumpacc");
+                    gnome.SearchGo(acc);
+                }
+            }
 
             CreateEntryPrimary("Browse:", menuList);
             var gnomejumptype = "Structure";
@@ -1070,7 +1126,7 @@ let glycanviewer = {
         var data = thisLib.createNodeAndEdges();
 
         thisLib.naviNetwork.setData(data);
-        var pos =thisLib.network.getPositions();
+        var pos = thisLib.network.getPositions();
 
         for (var id in pos){
             var x = pos[id]["x"];
@@ -1355,10 +1411,14 @@ let glycanviewer = {
         Object.keys(component.edges).forEach(function (k) {
             component.edges[k].forEach(function(e) {
                 e.arrows = 'middle';
+                e.dashes = false;
                 if (e.type == 'equals') {
                     e.color = {color:'red'};
                 } else if (e.type == 'contains') {
                     e.color = {color: 'blue'};
+                } else if (e.type == 'contains+special') {
+                    e.color = {color: 'blue'};
+                    e.dashes = true;
                 }
                 edges.update(e);
             });
@@ -1398,6 +1458,9 @@ function GNOmeBrowserBase (DIVID) {
     this.TopLevelThings = [];
     this.Synonym = {};
     this.AllChildren = {};
+    this.AllParents = {};
+    this.AllAncestors = {};
+    this.AllDescendants = {};
 
     this.SubsumptionDataBackUp = {};
 
@@ -1412,7 +1475,7 @@ function GNOmeBrowserBase (DIVID) {
     this.IconStyle = "snfg";
 
     this.ImageURLPrefix = "https://glymage.glyomics.org/image/snfg/extended/";
-    this.ImageURLSuffix = ".png";
+    this.ImageURLSuffix = ".svg";
     this.ImageGenerationSubmitURL = "https://glymage.glyomics.org/submit"
     this.ImageGenerationGetImageURL = "https://glymage.glyomics.org/getimage?"
 
@@ -1440,6 +1503,7 @@ function GNOmeBrowserBase (DIVID) {
 
     this.ShowScoreFlag = false;
     this.ShowSynonymFlag = true;
+    this.ShowArchetypeFlag = true;
 
     this.TooltipHide = true;
     this.TooltipIndex = 0;
@@ -1718,6 +1782,14 @@ function GNOmeBrowserBase (DIVID) {
             this.SetShowSynonymFlag(false)
         }
 
+        tmp = this.GetCookie("ShowArchetypeFlag")
+        if (tmp == "true"){
+            this.SetShowArchetypeFlag(true)
+        }
+        else if (tmp == "false"){
+            this.SetShowArchetypeFlag(false)
+        }
+
 
         this.ProcessRawDataWithRelationship(RawData);
 
@@ -1733,9 +1805,19 @@ function GNOmeBrowserBase (DIVID) {
 
     this.ProcessRawDataWithRelationship = function (d) {
 
-        for (let acc of Object.keys(d)) {
-            if (Array.isArray(d[acc].children)) {
+        for (let acc in d) {
+            if (d[acc].children !== undefined) {
                 this.AllChildren[acc] = d[acc].children;
+            } else {
+                this.AllChildren[acc] = [];
+            }
+            this.AllParents[acc] = [];
+        }
+        for (let acc in this.AllChildren) {
+            for (let c of this.AllChildren[acc]) {
+                if (!this.AllParents[c].includes(acc)) {
+                    this.AllParents[c].push(acc);
+                }
             }
         }
     }
@@ -2048,7 +2130,7 @@ function GNOmeBrowserBase (DIVID) {
         }
 
         for (let m of ['Hex','HexNAc','dHex']){
-            if (p[m] == undefined){
+            if (p[m] === undefined){
                 p[m] = "0";
             }
         }
@@ -2337,6 +2419,26 @@ function GNOmeBrowserBase (DIVID) {
 
         option_table.appendChild(tr);
 
+        tr = document.createElement("tr");
+        td1 = document.createElement("td");
+        td1.style.maxWidth = "30%; "
+        td1.innerText = "Show Archetype Marker [A]: "
+
+        td2 = document.createElement("td");
+        tmp = this.ToggleSwitch(this.ShowArchetypeFlag);
+        let arch_toggle_switch = tmp[0];
+        let arch_selected = tmp[1];
+        td2.appendChild(arch_toggle_switch);
+
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+
+        option_table.appendChild(tr);
+
+        if (!(thisLib instanceof GNOmeCompositionBrowser)){
+            option_table.appendChild(tr);
+        }
+
         DisplaySettingBoxContent.appendChild(option_table);
 
 
@@ -2356,8 +2458,12 @@ function GNOmeBrowserBase (DIVID) {
             if (score_selected() != thisLib.ShowScoreFlag){
                 refresh = true;
             }
+            if (arch_selected() != thisLib.ShowArchetypeFlag){
+                refresh = true;
+            }
             thisLib.SetShowSynonymFlag(sym_selected());
             thisLib.SetShowScoreFlag(score_selected());
+            thisLib.SetShowArchetypeFlag(arch_selected());
 
             if (refresh){
                 thisLib.RefreshUI();
@@ -2652,6 +2758,8 @@ function GNOmeBrowserBase (DIVID) {
         let equivalent = d["result"]["equivalent"];
         let relationship = d["result"]["relationship"];
         let subsumptionlvl = d["result"]["subsumption_level"];
+        // console.log(this.SubsumptionData[acc]);
+
         let buttonconfig = d["result"]["buttonconfig"];
         let score = d["result"]["score"]
 
@@ -2679,15 +2787,18 @@ function GNOmeBrowserBase (DIVID) {
 
         let focus = "Query";
         let addquery = this.IsAllowedSubsumptionCategory(subsumptionlvl["Query"]);
+        let queryParents = [];
         for (let parent of Object.keys(relationship)) {
             let children = relationship[parent];
 
-            if (Object.keys(this.SubsumptionData).includes(parent)) {
+            if (this.SubsumptionData[parent] !== undefined) {
                 this.SubsumptionData[parent].Children = this.FilterChildren(children, addquery)
+                if (this.SubsumptionData[parent].Children.includes("Query")) {
+                    queryParents.push(parent);
+                }
             } else if (parent.startsWith("Query")) {
-
                 let eqgtcacc = equivalent[parent];
-                if (eqgtcacc != undefined) {
+                if (eqgtcacc !== undefined) {
                     this.SubsumptionData[eqgtcacc].Children = this.FilterChildren(children, addquery)
                 } else {
                     let allow = this.IsAllowedSubsumptionCategory(subsumptionlvl[parent]);
@@ -2707,7 +2818,14 @@ function GNOmeBrowserBase (DIVID) {
                 }
             }
         }
-
+        this.SubsumptionData["Query"].Parents = queryParents;
+        this.SubsumptionData["Query"].EdgeType = {};
+        for (let n of this.SubsumptionData["Query"].Children) {
+             this.SubsumptionData["Query"].EdgeType[n] = 'subsumes';
+        }
+        for (let n of this.SubsumptionData["Query"].Parents) {
+             this.SubsumptionData["Query"].EdgeType[n] = 'subsumes';
+        }
         this.ComputeTopLevelThings();
 
         thisLib.SetFocus(focus);
@@ -2727,7 +2845,6 @@ function GNOmeBrowserBase (DIVID) {
                 allowedChildren.push(c)
                 continue
             }
-
             if (!Object.keys(this.SubsumptionData).includes(c)){
                 continue
             }
@@ -2972,6 +3089,9 @@ function GNOmeBrowserBase (DIVID) {
         let caption = document.createElement("figcaption");
         caption.innerHTML = gtcid;
 
+        if (false && this.ShowArchetypeFlag) {
+            caption.innerHTML += "&nbsp;[A]";
+        }
 
         let sym = this.findByonicSynonym(gtcid);
         if (sym && this.ShowSynonymFlag){
@@ -3070,15 +3190,16 @@ function GNOmeBrowserBase (DIVID) {
         this.HighLightGlycans = [];
         let anc = this.GetAncestors(acc);
         anc.push(acc);
+        // console.log(anc);
 
         for (let x of anc){
             if (!this.HighLightGlycans.includes(x)){
                 if (this.TopLevelThings.includes(x)){
-
+                    this.HighLightGlycans.push(x);
                 }
-                this.HighLightGlycans.push(x);
             }
         }
+        // console.log(this.HighLightGlycans);
 
         return 0
     }
@@ -3185,115 +3306,75 @@ function GNOmeBrowserBase (DIVID) {
     }
 
     this.GetDescendants = function (acc) {
-        let res = [];
-        if (!Array.isArray(this.SubsumptionData[acc].Children)){
-            return res
+
+        if (this.SubsumptionData[acc].Descendants !== undefined) {
+            return this.SubsumptionData[acc].Descendants;
         }
 
+        let res = new Set();
         for (let nc of this.SubsumptionData[acc].Children){
-            res = res.concat(JSON.parse(JSON.stringify(this.GetDescendants(nc))));
-            res.push(nc);
-        }
-
-        let res2 = [];
-        res.forEach(function (d) {
-            if (!res2.includes(d)){
-                res2.push(d);
-            }
-        });
-
-        return res2
-    }
-
-
-    this.GetParents = function (acc) {
-        let res = [];
-        for (let p of Object.keys(this.SubsumptionData)){
-            if (this.SubsumptionData[p].Children.includes(acc)){
-                res.push(p)
+            res.add(nc);
+            for (let d of this.GetDescendants(nc)) {
+                 res.add(d);
             }
         }
-        return res
+        res = Array.from(res);
+        this.SubsumptionData[acc].Descendants = res;
+        return res;
+
     }
 
 
     this.GetAncestors = function (acc) {
-        let res = this.GetParents(acc);
-        if (res.length == 0){
-            return []
+
+        if (this.SubsumptionData[acc].Ancestors !== undefined) {
+            return this.SubsumptionData[acc].Ancestors;
         }
 
-        for (let p of res){
-            res = res.concat(this.GetAncestors(p));
-            let res2 = [];
-            res.forEach(function (d) {
-                if (!res2.includes(d)){
-                    res2.push(d);
-                }
-            });
-            res = res2;
+        let res = new Set();
+        for (let np of this.SubsumptionData[acc].Parents){
+            res.add(np);
+            for (let a of this.GetAncestors(np)) {
+                 res.add(a);
+            }
         }
-        return res
+        res = Array.from(res);
+        this.SubsumptionData[acc].Ancestors = res;
+        return res;
     }
 
 
     this.GetDescendantsForCopy = function (acc) {
-        let res = [];
-        if (!Array.isArray(this.AllChildren[acc])){
-            return [acc]
+        if (this.AllDescendants[acc] !== undefined) {
+            return this.AllDescendants[acc];
         }
-
-        for (let nc of this.AllChildren[acc]){
-            res = res.concat(JSON.parse(JSON.stringify(this.GetDescendantsForCopy(nc))));
-            res.push(nc);
-        }
-
-        let res2 = [];
-        res.forEach(function (d) {
-            if (!res2.includes(d)){
-                res2.push(d);
-            }
-        });
-        if (!res2.includes(acc)){
-            res2.push(acc)
-        }
-
-        return res2
-    }
-
-    this.GetParentsForCopy = function (acc) {
-        let res = [];
-        for (let p of Object.keys(this.AllChildren)){
-            if (this.AllChildren[p].includes(acc)){
-                res.push(p)
+        let res = new Set();
+        for (let c of this.AllChildren[acc]) {
+            res.add(c);
+            for (let d of this.GetDescendantsForCopy(c)) {
+                 res.add(d);
             }
         }
-        return res
+        res = Array.from(res);
+        this.AllDescendants[acc] = res;
+        return res;
     }
-
 
     this.GetAncestorsForCopy = function (acc) {
-        let res = this.GetParentsForCopy(acc);
-        if (res.length == 0){
-            return [acc]
+        if (this.AllAncestors[acc] !== undefined) {
+            return this.AllAncestors[acc];
         }
-
-        for (let p of res){
-            res = res.concat(this.GetAncestorsForCopy(p));
-            let res2 = [];
-            res.forEach(function (d) {
-                if (!res2.includes(d)){
-                    res2.push(d);
-                }
-            });
-            res = res2;
+        let res = new Set();
+        for (let p of this.AllParents[acc]) {
+            res.add(p);
+            for (let a of this.GetAncestorsForCopy(p)) {
+                 res.add(a);
+            }
         }
-        if (!res.includes(acc)){
-            res.push(acc)
-        }
-        return res
+        res = Array.from(res);
+        this.AllAncestors[acc] = res;
+        return res;
     }
-
 
     this.ShowSubsumptionNavigator = function () {
 
@@ -3301,22 +3382,11 @@ function GNOmeBrowserBase (DIVID) {
         let thisLib = this;
 
         let component = {};
-        let parent = [];
 
-        for (let p of Object.keys(this.SubsumptionData)){
-            let tmpx = this.SubsumptionData[p].Children;
-            if (tmpx == undefined){
-                continue
-            }
-            if (tmpx.includes(acc)){
-                parent.push(p);
-            }
-        }
-
+        // console.log(this.SubsumptionData[acc]);
+        let parent = this.SubsumptionData[acc].Parents;
         let children = this.SubsumptionData[acc].Children;
-        if (children == undefined){
-            children = [];
-        }
+        let edgetype = this.SubsumptionData[acc].EdgeType;
 
         let allNodes = parent.concat(children);
         allNodes.push(acc);
@@ -3327,17 +3397,28 @@ function GNOmeBrowserBase (DIVID) {
             nodes[n] = {"name": n};
             let label = n;
 
+            if (this.ShowArchetypeFlag && this.SubsumptionData[n] !== undefined) {
+                if (this.SubsumptionData[n].IsArchetype) {
+                  label += " [A]";
+                }
+            }
+
             let sym = this.findByonicSynonym(n)
             if (sym && this.ShowSynonymFlag){
                 label += "\n" + sym;
             }
 
-            if (this.ShowScoreFlag && this.SubsumptionData[n] != undefined){
+            if (this.ShowScoreFlag && this.SubsumptionData[n] !== undefined){
                 label += "\n" + this.SubsumptionData[n].score;
             }
 
-            nodes[n].label = label
+            nodes[n].label = label;
 
+            if (parent.includes(n)) {
+                nodes[n].order = this.SubsumptionData[n].score;
+            } else if (children.includes(n)) {
+                nodes[n].order = this.SubsumptionData[n].score;
+            }
 
             if (n == "Pseudo"){
                 nodes[n].type = "Pseudo";
@@ -3356,7 +3437,11 @@ function GNOmeBrowserBase (DIVID) {
             let e = {};
             e.from = n;
             e.to = acc;
-            e.type = "contains";
+            if (edgetype[n] == 'other') {
+                e.type = "contains+special";
+            } else {
+                e.type = "contains";
+            }
             edges[n] = [e];
         }
         let temp = [];
@@ -3364,7 +3449,11 @@ function GNOmeBrowserBase (DIVID) {
             let e = {};
             e.from = acc;
             e.to = n;
-            e.type = "contains";
+            if (edgetype[n] == 'other') {
+                e.type = "contains+special";
+            } else {
+                e.type = "contains";
+            }
             temp.push(e);
         }
         if (children.length > 0){
@@ -3380,12 +3469,6 @@ function GNOmeBrowserBase (DIVID) {
                 e.to = n;
                 e.type = "contains";
                 temp2.push(e);
-
-                let e2 = {};
-                e2.from = n;
-                e2.to = acc;
-                e2.type = "contains";
-                edges[n] = [e2];
             }
         }else{
             let e = {};
@@ -3524,23 +3607,72 @@ function GNOmeBrowserBase (DIVID) {
 
     }
 
+    this.normalizeCompStr = function (sin) {
+        let s = sin.trim();
+        let comp = {};
+
+        let re1 = /^((Hex|HexNAc|dHex|Fuc|NeuAc|NeuGc|Pent|Sulpho|Phospho)(\(?(\d+)\)?)?\s*)/;
+        let re2 = /^((H|N|F|S|P)(\d+)?\s*)/;
+        let maxsymlen = 0;
+        let usem1m2 = 0;
+        while (s.length > 0) {
+            let sym = null;
+            let num = 1;
+            for (let symi of ["HexNAc","Hex","dHex","Fuc","NeuAc","NeuGc","Pent","Sulpho","Phospho","H","N","F","S","P"]) {
+                if (s.startsWith(symi)) {
+                    sym = symi;
+                    break;
+                }
+            }
+            if (!sym) {
+                return sin;
+            } 
+            s = s.substring(sym.length);
+            let m = s.match(/^(\(?(\d+)\)?)/);
+            if (m) {
+                num = parseInt(m[2]);
+            } 
+            s = s.substring(m[1].length);
+            comp[sym] = num;
+            if (sym.length > maxsymlen) {
+                maxsymlen = sym.length;
+            } 
+        }
+        if (maxsymlen == 1) { 
+            comp['Hex'] = comp['H'];
+            comp['HexNAc'] = comp['N'];
+            comp['Fuc'] = comp['F'];
+            comp['NeuAc'] = comp['S'];
+            comp['Phospho'] = comp['P'];
+        } else {
+            comp['Sulpho'] = comp['S'];
+            comp['Phospho'] = comp['P'];
+        }
+        let compstr = "";
+        for (let sym of ["HexNAc","Hex","Fuc","dHex","NeuAc","NeuGc","Pent","Sulpho","Phospho"]) {
+            if (comp[sym] !== undefined && comp[sym] > 0) {
+                compstr = compstr + sym + "(" + comp[sym] + ")";
+            }
+        }
+        return compstr;
+    }
+
     this.SetFocus = function (d) {
         let s = d.trim();
         let acc = s;
 
         if (this.GlyTouCanAccessionRegex(acc)){
             acc = acc.toUpperCase();
-        }
-
-        if (Object.keys(this.Synonym).includes(s)){
+        } else if (this.Synonym[s] !== undefined) {
             acc = this.Synonym[s];
+        } else if (this.Synonym[this.normalizeCompStr(s)] !== undefined) {
+            acc = this.Synonym[this.normalizeCompStr(s)];
         }
-
-        if (Object.keys(this.SubsumptionData).includes(acc)){
+        if (this.SubsumptionData[acc] !== undefined) {
             this.SetToScreenB();
             this.SetFocusAccession(acc);
         }
-        else if (Object.keys(this.IUPACCompositionData).includes(acc)){
+        else if (this.IUPACCompositionData[acc] !== undefined) {
             this.SetToScreenA();
             this.ItemCount = JSON.parse(JSON.stringify(this.IUPACCompositionData[acc]))
         }
@@ -3565,6 +3697,11 @@ function GNOmeBrowserBase (DIVID) {
     this.SetShowScoreFlag = function (f){
         this.ShowScoreFlag = f;
         this.SetCookie("ShowScoreFlag", f, 7)
+    }
+
+    this.SetShowArchetypeFlag = function (f){
+        this.ShowArchetypeFlag = f;
+        this.SetCookie("ShowArchetypeFlag", f, 7)
     }
 
     this.SetShowSynonymFlag = function (f){
@@ -3675,31 +3812,32 @@ function GNOmeStructureBrowser (DIVID) {
 
     this.DataPreProcess = function (RawData) {
 
-        let AllAccession = Object.keys(RawData);
-
-        for (let acc of AllAccession){
+        for (let acc in RawData){
 
             let d = RawData[acc];
 
             let ButtonConfig = this.ButtonConfigCleanUp(d.count);
             let Children = [];
+            let Parents = [];
+            let EdgeType = {};
             let syms = d.syms;
 
-            if (syms != undefined){
+            if (syms !== undefined){
                 for (let sym of syms){
                     this.Synonym[sym] = acc;
                 }
             }
 
             // Filter which child to keep
-            if (d.children != undefined){
+            if (d.children !== undefined){
                 for (let c of d.children){
-                    let tmp = RawData[c];
-                    if (tmp == undefined){
-                        continue
-                    }
-                    if (this.IsAllowedSubsumptionCategory(tmp.level)){
+                    if (RawData[c] !== undefined && this.IsAllowedSubsumptionCategory(RawData[c].level)){
                         Children.push(c);
+                        if (RawData[acc].edgetype !== undefined && RawData[acc].edgetype[c] !== undefined) {
+                            EdgeType[c] = RawData[acc].edgetype[c];
+                        } else {
+                            EdgeType[c] = 'subsumes';
+                        }
                     }
                 }
             }
@@ -3708,10 +3846,13 @@ function GNOmeStructureBrowser (DIVID) {
                 this.SubsumptionData[acc] = {
                     "SubsumptionLevel": d.level,
                     "Children": Children,
+                    "Parents": Parents,
+                    "EdgeType": EdgeType,
+                    "IsArchetype": ((d.archetype == acc) || false),
+                    "Archetype": d.archetype,
                     "ButtonConfig": ButtonConfig,
                     "score": d.score
                 };
-
             }
             if ( ['basecomposition', 'composition'].includes(d.level) ){
                 this.IUPACCompositionData[acc] = ButtonConfig;
@@ -3719,13 +3860,29 @@ function GNOmeStructureBrowser (DIVID) {
 
         }
 
+        for (let acc in this.SubsumptionData){
+            for (let c of this.SubsumptionData[acc].Children){
+                if (!this.SubsumptionData[c].Parents.includes(acc)) {
+                    this.SubsumptionData[c].Parents.push(acc)
+                    if (RawData[acc].edgetype !== undefined && RawData[acc].edgetype[c] !== undefined)  {
+                        this.SubsumptionData[c].EdgeType[acc] = RawData[acc].edgetype[c];
+                    } else {
+                        this.SubsumptionData[c].EdgeType[acc] = 'subsumes';
+                    }
+                }
+            }
+            this.GetDescendants(acc);
+        }
+        for (let acc in this.SubsumptionData){
+            this.GetAncestors(acc);
+        }
     }
 
     this.ButtonConfigCleanUp = function (d) {
         let res = {};
 
         for (let m of ['GlcNAc', 'GalNAc', 'ManNAc', 'Glc', 'Gal', 'Man', 'Fuc', 'NeuAc', 'NeuGc', "Hex", "HexNAc", "dHex"]){
-            if (d[m]!= undefined){
+            if (d[m] !== undefined){
                 res[m] = d[m];
             }
             else{
@@ -3734,12 +3891,12 @@ function GNOmeStructureBrowser (DIVID) {
         }
         let xxx = 0
         for (let m of ['Pent', 'HexA', 'HexN', "Sia", "Xxx"]){
-            if (d[m]!= undefined){
+            if (d[m] !== undefined){
                 xxx += d[m];
             }
         }
 	for (let m of ["NeuAc","NeuGc"]){
-            if (d[m]!= undefined){
+            if (d[m] !== undefined){
                 xxx -= d[m];
             }
         }
@@ -3790,30 +3947,10 @@ function GNOmeCompositionBrowser(DIVID) {
     this.ComputeTopLevelThings = function (){
         this.TopLevelThings = [];
 
-        let TopLevelCandidate = [];
-        let Parents = {};
-
-        for (let acc of Object.keys(this.SubsumptionData)){
-            Parents[acc] = []
-        }
-
-
-        for (let acc of Object.keys(this.SubsumptionData)){
-            TopLevelCandidate.push(acc);
-
-            for (let c of this.SubsumptionData[acc].Children){
-
-                if (!Parents[c].includes(acc)){
-                    Parents[c].push(acc)
-                }
-            }
-
-        }
-
-        for (let acc of TopLevelCandidate){
+        for (let acc in this.SubsumptionData) {
             let AppendFlag = true;
 
-            for (let p of Parents[acc]){
+            for (let p of this.SubsumptionData[acc].Parents){
                 let same = true;
                 let ItemCountP = this.SubsumptionData[p].ButtonConfig;
                 let ItemCountC = this.SubsumptionData[acc].ButtonConfig;
@@ -3837,7 +3974,6 @@ function GNOmeCompositionBrowser(DIVID) {
         }
     }
 
-
     this.DataPreProcess = function (RawData) {
 
         let AllAccession = Object.keys(RawData);
@@ -3851,21 +3987,26 @@ function GNOmeCompositionBrowser(DIVID) {
 
             let ButtonConfig = this.ButtonConfigCleanUp(d.count);
             let Children = [];
+            let Parents = [];
+            let EdgeType = {};
 
             let syms = d.syms;
 
-            if (syms != undefined){
+            if (syms !== undefined){
                 for (let sym of syms){
                     this.Synonym[sym] = acc;
                 }
             }
 
-            if (d.children != undefined){
+            if (d.children !== undefined){
                 for (let c of d.children){
-                    let tmp = RawData[c];
-                    if (tmp == undefined){continue}
-                    if (this.IsAllowedSubsumptionCategory(tmp.level)){
+                    if (RawData[c] !== undefined && this.IsAllowedSubsumptionCategory(RawData[c].level)){
                         Children.push(c);
+                        if (RawData[acc].edgetype !== undefined && RawData[acc].edgetype[c] !== undefined) {
+                            EdgeType[c] = RawData[acc].edgetype[c];
+                        } else {
+                            EdgeType[c] = 'subsumes';
+                        }
                     }
                 }
             }
@@ -3873,6 +4014,10 @@ function GNOmeCompositionBrowser(DIVID) {
             this.SubsumptionData[acc] = {
                 "SubsumptionLevel": d.level,
                 "Children": Children,
+                "Parents": Parents,
+                "EdgeType": EdgeType,
+                "IsArchetype": ((d.archetype==acc) || false),
+                "Archetype": d.archetype,
                 "ButtonConfig": ButtonConfig,
                 "score": d.score
             };
@@ -3880,15 +4025,29 @@ function GNOmeCompositionBrowser(DIVID) {
 
         }
 
-
-
+        for (let acc in this.SubsumptionData){
+            for (let c of this.SubsumptionData[acc].Children){
+                if (!this.SubsumptionData[c].Parents.includes(acc)) {
+                    this.SubsumptionData[c].Parents.push(acc)
+                    if (RawData[acc].edgetype !== undefined && RawData[acc].edgetype[c] !== undefined)  {
+                        this.SubsumptionData[c].EdgeType[acc] = RawData[acc].edgetype[c];
+                    } else {
+                        this.SubsumptionData[c].EdgeType[acc] = 'subsumes';
+                    }
+                }
+            }
+            this.GetDescendants(acc);
+        }
+        for (let acc in this.SubsumptionData){
+            this.GetAncestors(acc);
+        }
     }
 
     this.ButtonConfigCleanUp = function (d) {
         let res = {};
 
         for (let m of ['GlcNAc', 'GalNAc', 'ManNAc', 'Glc', 'Gal', 'Man', 'Fuc', 'NeuAc', 'NeuGc', "Hex", "HexNAc", "dHex", 'S', 'P', 'Me', 'X']){
-            if (d[m]!= undefined){
+            if (d[m] !== undefined){
                 res[m] = d[m];
             }
             else{
@@ -3897,12 +4056,12 @@ function GNOmeCompositionBrowser(DIVID) {
         }
         let xxx = 0
         for (let m of ['Pent', 'HexA', 'HexN', "Sia", "Xxx"]){
-            if (d[m]!= undefined){
+            if (d[m] !== undefined){
                 xxx += d[m];
             }
         }
 	for (let m of ["NeuAc","NeuGc"]){
-            if (d[m]!= undefined){
+            if (d[m] !== undefined){
                 xxx -= d[m];
             }
         }
@@ -4119,6 +4278,14 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
                 GNOmeBrowserX.SetShowScoreFlag(true);
             } else if (["false", "f", "no", "n", "off"].includes(para["score"].toLowerCase())){
                 GNOmeBrowserX.SetShowScoreFlag(false);
+            }
+        }
+
+        if (Object.keys(para).includes('achetype')){
+            if (["true", "t", "yes", "y", "on"].includes(para["achetype"].toLowerCase())){
+                GNOmeBrowserX.SetShowArchetypeFlag(true);
+            } else if (["false", "f", "no", "n", "off"].includes(para["archetype"].toLowerCase())){
+                GNOmeBrowserX.SetShowArchetypeFlag(false);
             }
         }
 
