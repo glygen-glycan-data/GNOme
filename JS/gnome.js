@@ -371,7 +371,7 @@ let glycanviewer = {
                 initiallyActive: true,
                 addNode: false,
                 addEdge:  function(edgeData,callback) {
-                    console.log(JSON.stringify(edgeData,null,4));
+                    // console.log(JSON.stringify(edgeData,null,4));
                     var lvl = nodes._data[edgeData.from].level;
                     Object.values(edges._data).forEach(function (e) {
                         if ((e.to == edgeData.to) && (e.id != edgeData.id)) {
@@ -385,7 +385,7 @@ let glycanviewer = {
                     forceredraw(false);
                 },
                 editEdge: function(edgeData,callback) {
-                    console.log(JSON.stringify(edgeData,null,4));
+                    // console.log(JSON.stringify(edgeData,null,4));
                     var lvl = nodes._data[edgeData.from].level;
                     Object.values(edges._data).forEach(function (e) {
                         if ((e.to == edgeData.to) && (e.id != edgeData.id)) {
@@ -546,18 +546,18 @@ let glycanviewer = {
         for (let level in posbylevel) {
             posbylevel[level].sort(function(a,b){ if (a[0] !== b[0]) {return a[0]-b[0];} else {return a[1]-b[1];}});
         }
-        console.log(posbylevel);
+        // console.log(posbylevel);
         for (let level of [ 1, 3, '3.67' ]) {
             if (idbylevel[level] === undefined) {
                 continue;
             }
-            console.log(level,idbylevel[level]);
+            // console.log(level,idbylevel[level]);
             if ([1,3].includes(level)) {
                 idbylevel[level].sort(function(a,b){return nodes.get(a).order - nodes.get(b).order;});
             } else {
                 idbylevel[level].sort(function(a,b){return nodes.get(a.substring(0,8)).order - nodes.get(b.substring(0,8)).order;});
             }
-            console.log(level,idbylevel[level]);
+            // console.log(level,idbylevel[level]);
             for (let i in idbylevel[level]) {
                 let id = idbylevel[level][i];
                 this.data.nodes.update([{id: id, x: posbylevel[level][i][0], y: posbylevel[level][i][1]}]);
