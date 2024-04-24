@@ -3612,13 +3612,13 @@ function GNOmeBrowserBase (DIVID) {
         let comp = {};
 
         let re1 = /^((Hex|HexNAc|dHex|Fuc|NeuAc|NeuGc|Pent|Sulpho|Phospho)(\(?(\d+)\)?)?\s*)/;
-        let re2 = /^((H|N|F|S|P)(\d+)?\s*)/;
+        let re2 = /^((H|N|F|S|G|P)(\d+)?\s*)/;
         let maxsymlen = 0;
         let usem1m2 = 0;
         while (s.length > 0) {
             let sym = null;
             let num = 1;
-            for (let symi of ["HexNAc","Hex","dHex","Fuc","NeuAc","NeuGc","Pent","Sulpho","Phospho","H","N","F","S","P"]) {
+            for (let symi of ["HexNAc","Hex","dHex","Fuc","NeuAc","NeuGc","Pent","Sulpho","Phospho","H","N","F","S","G","P"]) {
                 if (s.startsWith(symi)) {
                     sym = symi;
                     break;
@@ -3643,6 +3643,7 @@ function GNOmeBrowserBase (DIVID) {
             comp['HexNAc'] = comp['N'];
             comp['Fuc'] = comp['F'];
             comp['NeuAc'] = comp['S'];
+	    comp['NeuGc'] = comp['G'];
             comp['Phospho'] = comp['P'];
         } else {
             comp['Sulpho'] = comp['S'];
