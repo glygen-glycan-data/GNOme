@@ -1,10 +1,17 @@
-# GNOme Topology Navigator & Composition Navigator
+# GNOme Navigators
 
 ## Subsumption Navigator
+
+### Notation
+1. Archetype glycans marked with "[A]" (configure using settings)
+2. Strict subsumption relationships (mass-preserving) are shown as solid edges.
+3. Non-strict subsumption relationships (not mass-preserving) are shown as dashed edges.
+
 ### Browsing
 1. Use mouse wheel to zoom in/out.
 2. Double click on glycan image to change focus.
 3. Right click to see external resources about choosing glycan.
+
 
 ### Go back to Topology/Composition Selection Tool
 Simply click on "Upward Arrow" on top left.
