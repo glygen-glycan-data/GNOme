@@ -1510,9 +1510,9 @@ function GNOmeBrowserBase (DIVID) {
 
     // Display parameters
     this.Width = 1000;
-    this.Height = 600;
+    this.Height = 500;
     this.MinWidth = 600;
-    this.MinHeight = 600;
+    this.MinHeight = 500;
 
     // HTML elements
     this.Container;
@@ -1644,11 +1644,11 @@ function GNOmeBrowserBase (DIVID) {
         'Fuc': {"shape": "triangle", "icon_color": "rgb(250,0,0)", "count_color": "white"},
         'NeuAc': {"shape": "diamond", "icon_color": "rgb(200,0,200)", "count_color": "white"},
         'NeuGc': {"shape": "diamond", "icon_color": "rgb(233,255,255)", "count_color": "black"},
-        'Xxx': {"shape": "circle", "icon_color": "grey", "count_color": "white"},
-        'S': {"shape": "empty", "icon_color": "lightgrey", "count_color": "black"},
-        'P': {"shape": "empty", "icon_color": "lightgrey", "count_color": "black"},
-        'Me': {"shape": "empty", "icon_color": "lightgrey", "count_color": "black"},
-        'X': {"shape": "empty", "icon_color": "grey", "count_color": "black"}
+        'Xxx': {"shape": "flathexagon", "icon_color": "rgb(255,255,255)", "count_color": "black"},
+        'S': {"shape": "smallsquare", "icon_color": "rgb(255,255,255)", "count_color": "black"},
+        'P': {"shape": "smallsquare", "icon_color": "rgb(255,255,255)", "count_color": "black"},
+        'Me': {"shape": "smallsquare", "icon_color": "rgb(255,255,255)", "count_color": "black"},
+        'X': {"shape": "smallsquare", "icon_color": "rgb(255,255,255)", "count_color": "black"}
     };
 
     const IconConfigSNFG = {
@@ -1664,11 +1664,11 @@ function GNOmeBrowserBase (DIVID) {
         'Fuc': {"shape": "triangle", "icon_color": "rgb(237,29,37)", "count_color": "white"},
         'NeuAc': {"shape": "diamond", "icon_color": "rgb(165,68,153)", "count_color": "white"},
         'NeuGc': {"shape": "diamond", "icon_color": "rgb(143,203,233)", "count_color": "black"},
-        'Xxx': {"shape": "circle", "icon_color": "grey", "count_color": "white"},
-        'S': {"shape": "empty", "icon_color": "lightgrey", "count_color": "black"},
-        'P': {"shape": "empty", "icon_color": "lightgrey", "count_color": "black"},
-        'Me': {"shape": "empty", "icon_color": "lightgrey", "count_color": "black"},
-        'X': {"shape": "empty", "icon_color": "grey", "count_color": "black"}
+        'Xxx': {"shape": "flathexagon", "icon_color": "rgb(255,255,255)", "count_color": "black"},
+        'S': {"shape": "smallsquare", "icon_color": "rgb(255,255,255)", "count_color": "black"},
+        'P': {"shape": "smallsquare", "icon_color": "rgb(255,255,255)", "count_color": "black"},
+        'Me': {"shape": "smallsquare", "icon_color": "rgb(255,255,255)", "count_color": "black"},
+        'X': {"shape": "smallsquare", "icon_color": "rgb(255,255,255)", "count_color": "black"}
     };
     this.IconConfig = IconConfigCFG;
 
@@ -2020,10 +2020,14 @@ function GNOmeBrowserBase (DIVID) {
             this.ContainerScreenAPartB.style = this.StyleScreenAPartB;
             this.ContainerScreenAPartB.style.width = this.Width - 190 + "px";
             this.ContainerScreenAPartB.style.height = this.Height + "px";
+	    
+            this.AddAllMonoButtons();
+	    let buttonsHeight=630;
+	    let scale=Math.min(this.Height/buttonsHeight,1.0);
+	    this.ContainerScreenAPartA.style =  this.StyleScreenAPartA + " transform: scale(" + scale + "," + scale + "); transform-origin: 0 0;"
 
             this.ContainerScreenSwitch.style.display = "none";
 
-            this.AddAllMonoButtons();
             this.FindAllMatchedThings();
             this.RefreshMatchedGlycans();
 
@@ -2117,7 +2121,7 @@ function GNOmeBrowserBase (DIVID) {
             }
         }
 
-        for (let m of ['GlcNAc', 'GalNAc', 'ManNAc']){
+        for (let m of ['GlcNAc', 'GalNAc']){
             if (Object.keys(p).includes(m)){
                 hexnac += parseInt(p[m]);
             }
@@ -2918,6 +2922,11 @@ function GNOmeBrowserBase (DIVID) {
             ctx.lineTo(2, 38);
             ctx.lineTo(38, 38);
             ctx.lineTo(38, 2);
+        } else if (config.shape == "smallsquare") {
+            ctx.moveTo(11, 11);
+            ctx.lineTo(11, 29);
+            ctx.lineTo(29, 29);
+            ctx.lineTo(29, 11);
         } else if (config.shape == "circle") {
             ctx.arc(20, 20, 19, 0, 2 * Math.PI);
         } else if (config.shape == "triangle") {
@@ -2934,6 +2943,25 @@ function GNOmeBrowserBase (DIVID) {
             ctx.lineTo(0, 41);
             ctx.lineTo(41, 41);
             ctx.lineTo(41, 0);
+        } else if (config.shape == "flathexagon") {
+            // X-pos: 7, 40.5, 107.5, 141
+            //        2, 11, 29, 38
+            // Y-pos: 32.971, 74, 115.029
+            //        9, 20, 31
+            // M 107.5 32.971
+            // L 141 74
+            // L 107.5 115.029
+            // L 40.5 115.029
+            // L 7 74
+            // L 40.5 32.971
+            // L 107.5 32.971
+            ctx.moveTo(29,9);
+            ctx.lineTo(38,20);
+            ctx.lineTo(29,31);
+            ctx.lineTo(11,31);
+            ctx.lineTo(2,20);
+            ctx.lineTo(11,9);
+            ctx.lineTo(20,9);
         } else {
             throw "UnsupportedShape";
         }
@@ -2945,10 +2973,10 @@ function GNOmeBrowserBase (DIVID) {
         let t = this.ItemCount[IUPACSym].toString();
         let x, y = 30;
 
-        if (["S", "P", "Me", "X"].includes(IUPACSym)){
+        if (["S", "P", "X"].includes(IUPACSym)){
             ctx.font = "11px Arial";
             ctx.fillText(IUPACSym, 3, 10);
-            ctx.font = "26px Arial";
+            ctx.font = "20px Arial";
         }
 
         if (t.length == 1) {
@@ -2961,6 +2989,11 @@ function GNOmeBrowserBase (DIVID) {
             if (t.length == 1) {
                 y += 3;
             }
+        }
+
+        if (["S", "P", "X"].includes(IUPACSym)){
+            y -= 2;
+            x += 2;
         }
 
         ctx.fillText(t, x, y);
@@ -3229,10 +3262,6 @@ function GNOmeBrowserBase (DIVID) {
         if (this.ItemCount["HexNAc"] == this.ItemCountMax["HexNAc"]){
             res["GlcNAc"] = false;
             res["GalNAc"] = false;
-            res["ManNAc"] = false;
-        }
-        if (this.ItemCount["dHex"] == this.ItemCountMax["dHex"]){
-            res["Fuc"] = false;
         }
 
         return res
@@ -3246,14 +3275,13 @@ function GNOmeBrowserBase (DIVID) {
         }
 
         let hexnacCount = 0;
-        for (let m of ['GlcNAc', 'GalNAc', 'ManNAc']){
+        for (let m of ['GlcNAc', 'GalNAc']){
             hexnacCount += this.ItemCount[m];
         }
         let hexCount = 0;
         for (let m of ['Glc', 'Gal', 'Man']){
             hexCount += this.ItemCount[m];
         }
-        let dhexCount = this.ItemCount['Fuc'];
 
         if (this.ItemCount["Hex"] <= this.ItemCountMin["Hex"] ||
             (hexCount <= this.ItemCountMin["Hex"] && hexCount == this.ItemCount["Hex"])){
@@ -3265,16 +3293,10 @@ function GNOmeBrowserBase (DIVID) {
             (hexnacCount <= this.ItemCountMin["HexNAc"] && hexnacCount == this.ItemCount["HexNAc"])){
             res["GlcNAc"] = false;
             res["GalNAc"] = false;
-            res["ManNAc"] = false;
-        }
-        if (this.ItemCount["dHex"] <= this.ItemCountMin["dHex"] ||
-            (dhexCount <= this.ItemCountMin["dHex"] && dhexCount == this.ItemCount["dHex"])){
-            res["Fuc"] = false;
         }
 
         res["HexNAc"] = res["HexNAc"] && (hexnacCount < this.ItemCount["HexNAc"]);
         res["Hex"] = res["Hex"] && (hexCount < this.ItemCount["Hex"]);
-        res["dHex"] = res["dHex"] && (dhexCount < this.ItemCount["dHex"]);
 
         return res
     }
@@ -3293,11 +3315,8 @@ function GNOmeBrowserBase (DIVID) {
             // exceed maximum possible configuration
         } else {
             this.ItemCount[iupac] = this.ItemCount[iupac] + num;
-            if (['GlcNAc', 'GalNAc', 'ManNAc', 'Glc', 'Gal', 'Man'].includes(iupac)){
+            if (['GlcNAc', 'GalNAc', 'Glc', 'Gal', 'Man'].includes(iupac)){
                 this.ItemCount[{3: "Hex", 6:"HexNAc"}[iupac.length]] = this.ItemCount[{3: "Hex", 6:"HexNAc"}[iupac.length]]+ num;
-            }
-            if (iupac == "Fuc"){
-                this.ItemCount["dHex"] = this.ItemCount["dHex"] + num;
             }
         }
 
@@ -3746,7 +3765,7 @@ function GNOmeBrowserBase (DIVID) {
 function GNOmeStructureBrowser (DIVID) {
     GNOmeBrowserBase.call(this, DIVID);
 
-    this.AllItems = ['GlcNAc', 'GalNAc', 'ManNAc', 'HexNAc','Glc', 'Gal', 'Man', 'Hex','Fuc', 'dHex', 'NeuAc', 'NeuGc', 'Xxx'];
+    this.AllItems = ['GlcNAc', 'GalNAc', 'HexNAc','Glc', 'Gal', 'Man', 'Hex','Fuc', 'NeuAc', 'NeuGc', 'Xxx', 'S', 'P', 'X'];
     this.ScreenATitle = "GNOme Topology Selector";
 
     this.IsAllowedSubsumptionCategory = function (d) {
@@ -3882,7 +3901,7 @@ function GNOmeStructureBrowser (DIVID) {
     this.ButtonConfigCleanUp = function (d) {
         let res = {};
 
-        for (let m of ['GlcNAc', 'GalNAc', 'ManNAc', 'Glc', 'Gal', 'Man', 'Fuc', 'NeuAc', 'NeuGc', "Hex", "HexNAc", "dHex"]){
+        for (let m of ['GlcNAc', 'GalNAc', 'Glc', 'Gal', 'Man', 'Fuc', 'NeuAc', 'NeuGc', "Hex", "HexNAc", "S","P"]){
             if (d[m] !== undefined){
                 res[m] = d[m];
             }
@@ -3890,18 +3909,25 @@ function GNOmeStructureBrowser (DIVID) {
                 res[m] = 0;
             }
         }
-        let xxx = 0
-        for (let m of ['Pent', 'HexA', 'HexN', "Sia", "Xxx"]){
+        let xxx = 0;
+        for (let m of ['Pent', 'HexA', 'HexN', "Sia", "Xxx", "dHex"]){
             if (d[m] !== undefined){
                 xxx += d[m];
             }
         }
-	for (let m of ["NeuAc","NeuGc"]){
+	for (let m of ["NeuAc","NeuGc","Fuc"]){
             if (d[m] !== undefined){
                 xxx -= d[m];
             }
         }
         res["Xxx"] = xxx;
+	let x = 0;
+        for (let m of ['X', 'Me']){
+            if (d[m] !== undefined){
+                x += d[m];
+            }
+        }
+        res["X"] = x;
         return res
     }
 
@@ -3912,7 +3938,7 @@ function GNOmeStructureBrowser (DIVID) {
                 if (this.ItemCount[mc] != ItemCountX[mc]) {
                     return false
                 }
-            }else if (['NeuAc', 'NeuGc', "Xxx"].includes(mc)){
+            }else if (['NeuAc', 'NeuGc', "Fuc", "Xxx", "S", "P", "X"].includes(mc)){
                 if (this.ItemCount[mc] != ItemCountX[mc]) {
                     return false
                 }
@@ -3937,9 +3963,9 @@ GNOmeStructureBrowser.prototype.constructor = GNOmeStructureBrowser;
 function GNOmeCompositionBrowser(DIVID) {
     GNOmeBrowserBase.call(this, DIVID);
 
-    this.AllItems = ['GlcNAc', 'GalNAc', 'ManNAc', 'HexNAc','Glc', 'Gal', 'Man', 'Hex','Fuc', 'dHex', 'NeuAc', 'NeuGc', 'Xxx', 'S', 'P', 'Me', 'X'];
+    this.AllItems = ['GlcNAc', 'GalNAc', 'HexNAc','Glc', 'Gal', 'Man', 'Hex', 'Fuc', 'NeuAc', 'NeuGc', 'Xxx', 'S', 'P', 'X'];
     this.ScreenATitle = "GNOme Composition Selector";
-    this.MinHeight = 750;
+    this.MinHeight = 500;
 
     this.IsAllowedSubsumptionCategory = function (d) {
         return ['basecomposition', 'composition'].includes(d)
@@ -4046,8 +4072,7 @@ function GNOmeCompositionBrowser(DIVID) {
 
     this.ButtonConfigCleanUp = function (d) {
         let res = {};
-
-        for (let m of ['GlcNAc', 'GalNAc', 'ManNAc', 'Glc', 'Gal', 'Man', 'Fuc', 'NeuAc', 'NeuGc', "Hex", "HexNAc", "dHex", 'S', 'P', 'Me', 'X']){
+        for (let m of ['GlcNAc', 'GalNAc', 'Glc', 'Gal', 'Man', 'Fuc', 'NeuAc', 'NeuGc', "Hex", "HexNAc", 'S', 'P']){
             if (d[m] !== undefined){
                 res[m] = d[m];
             }
@@ -4056,17 +4081,24 @@ function GNOmeCompositionBrowser(DIVID) {
             }
         }
         let xxx = 0
-        for (let m of ['Pent', 'HexA', 'HexN', "Sia", "Xxx"]){
+        for (let m of ['Pent', 'HexA', 'HexN', "Sia", "Xxx", "dHex"]){
             if (d[m] !== undefined){
                 xxx += d[m];
             }
         }
-	for (let m of ["NeuAc","NeuGc"]){
+	for (let m of ["NeuAc","NeuGc","Fuc"]){
             if (d[m] !== undefined){
                 xxx -= d[m];
             }
         }
         res["Xxx"] = xxx;
+        let x = 0;
+        for (let m of ['X', 'Me']){
+            if (d[m] !== undefined){
+                x += d[m];
+            }
+        }
+        res["X"] = x;
         return res
     }
 
@@ -4081,7 +4113,7 @@ function GNOmeCompositionBrowser(DIVID) {
                 if (this.ItemCount[mc] != ItemCountX[mc]) {
                     return false
                 }
-            }else if (['NeuAc', 'NeuGc', "Xxx", 'S', 'P', 'Me', 'X'].includes(mc)){
+            }else if (['NeuAc', 'NeuGc', "Fuc", "Xxx", 'S', 'P', 'X'].includes(mc)){
                 if (this.ItemCount[mc] != ItemCountX[mc]) {
                     return false
                 }
