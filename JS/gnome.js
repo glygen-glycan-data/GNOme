@@ -547,12 +547,15 @@ let glycanviewer = {
             posbylevel[level].sort(function(a,b){ if (a[0] !== b[0]) {return a[0]-b[0];} else {return a[1]-b[1];}});
         }
         // console.log(posbylevel);
-        for (let level of [ 1, 3, '3.67' ]) {
+        for (let level of [ 1, 2, '2.67', 3, '3.67' ]) {
             if (idbylevel[level] === undefined) {
                 continue;
             }
-            // console.log(level,idbylevel[level]);
-            if ([1,3].includes(level)) {
+            if (idbylevel[level].length == 1) {
+                continue;
+            }
+            // console.log(level,idbylevel[level],level.toString().endsWith(".67"));
+            if (!level.toString().endsWith(".67")) {
                 idbylevel[level].sort(function(a,b){return nodes.get(a).order - nodes.get(b).order;});
             } else {
                 idbylevel[level].sort(function(a,b){return nodes.get(a.substring(0,8)).order - nodes.get(b.substring(0,8)).order;});
@@ -911,19 +914,22 @@ let glycanviewer = {
                 var accs = externalLink["glycan_set"];
 
                 var existFlag = false;
+                var jumpid = selectedNode;
                 if (accs === undefined){
                     existFlag = true;
                 }
-                else if (accs.includes(selectedNode)){
+                else if (Array.isArray(accs) && accs.includes(selectedNode)) {
                     existFlag = true;
+                } else if (accs.constructor == Object && accs[selectedNode] !== undefined) {
+                    existFlag = true;
+                    jumpid = accs[selectedNode];
                 }
-
                 if (!existFlag){
                     continue
                 }
 
                 var entry = CreateEntrySecondary(title, menuList);
-                entry.name = selectedNode;
+                entry.name = jumpid;
                 entry.setAttribute("data-prefix", prefix);
                 entry.setAttribute("data-suffix", suffix);
 
@@ -3434,9 +3440,9 @@ function GNOmeBrowserBase (DIVID) {
             nodes[n].label = label;
 
             if (parent.includes(n)) {
-                nodes[n].order = this.SubsumptionData[n].score;
+                nodes[n].order = parseInt(this.SubsumptionData[n].score);
             } else if (children.includes(n)) {
-                nodes[n].order = this.SubsumptionData[n].score;
+                nodes[n].order = parseInt(this.SubsumptionData[n].score);
             }
 
             if (n == "Pseudo"){
