@@ -1477,6 +1477,10 @@ function GNOmeBrowserBase (DIVID) {
     // Landing page mono parameters, change in theme for certain restrictions
     this.DefaultURL = "";
 
+    // Restriction info
+    this.restriction = null;
+    this.restrictionSet = null;
+
     // Image and icon style
     this.IconStyle = "snfg";
 
@@ -1508,8 +1512,9 @@ function GNOmeBrowserBase (DIVID) {
     this.UpdateMonoFreqFlag = true;
 
     this.ShowScoreFlag = false;
-    this.ShowSynonymFlag = true;
+    this.ShowSynonymFlag = false;
     this.ShowArchetypeFlag = true;
+    this.ShowRestrictionFlag = true;
 
     this.TooltipHide = true;
     this.TooltipIndex = 0;
@@ -1726,7 +1731,6 @@ function GNOmeBrowserBase (DIVID) {
             theme['image_url_suffix'] = para['image_url_suffix'];
         }
 
-
         if (Object.keys(theme).includes('icon_style')){
             this.SetIconConfig(theme['icon_style']);
         }
@@ -1761,6 +1765,19 @@ function GNOmeBrowserBase (DIVID) {
         }
         this.AllocateDIV();
 
+        let splitfilename = para.data.split('.');
+        if (splitfilename.length == 5) {
+            this.restriction = splitfilename[1].substring(1);
+            let restrictionSetString = await jQuery.get("./GNOme_" + this.restriction + ".accessions.txt");
+            this.restrictionSet = new Set();
+            for (let l of restrictionSetString.split(/\r\n|\r|\n/)) {
+                if (l.trim() == "") {
+                    continue;
+                }
+                let tokens = l.replace(/^\s+|\s+$/g, '').split(/\s+/);
+                this.restrictionSet.add(tokens[0]);
+            }
+        }
 
         let RawData = await jQuery.getJSON(para.data);
         this.DataPreProcess(RawData);
@@ -1794,6 +1811,13 @@ function GNOmeBrowserBase (DIVID) {
         }
         else if (tmp == "false"){
             this.SetShowArchetypeFlag(false)
+        }
+        tmp = this.GetCookie("ShowRestrictionFlag")
+        if (tmp == "true"){
+            this.SetShowRestrictionFlag(true)
+        }
+        else if (tmp == "false"){
+            this.SetShowRestrictionFlag(false)
         }
 
 
@@ -2070,6 +2094,9 @@ function GNOmeBrowserBase (DIVID) {
         if (this.brand){
             this.ContainerBanner.innerHTML += " (" + this.brand + ")";
 
+        }
+        if (this.restriction) {
+            this.ContainerBanner.innerHTML += " [" + this.restriction + "]";
         }
     }
 
@@ -2443,9 +2470,25 @@ function GNOmeBrowserBase (DIVID) {
         tr.appendChild(td1);
         tr.appendChild(td2);
 
-        option_table.appendChild(tr);
-
         if (!(thisLib instanceof GNOmeCompositionBrowser)){
+            option_table.appendChild(tr);
+        }
+
+        tr = document.createElement("tr");
+        td1 = document.createElement("td");
+        td1.style.maxWidth = "30%; "
+        td1.innerText = "Show Restriction Membership *: "
+
+        td2 = document.createElement("td");
+        tmp = this.ToggleSwitch(this.ShowRestrictionFlag);
+        let restr_toggle_switch = tmp[0];
+        let restr_selected = tmp[1];
+        td2.appendChild(restr_toggle_switch);
+
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+
+        if (thisLib.restriction !== null) {
             option_table.appendChild(tr);
         }
 
@@ -2471,9 +2514,13 @@ function GNOmeBrowserBase (DIVID) {
             if (arch_selected() != thisLib.ShowArchetypeFlag){
                 refresh = true;
             }
+            if (restr_selected() != thisLib.ShowRestrictionFlag){
+                refresh = true;
+            }
             thisLib.SetShowSynonymFlag(sym_selected());
             thisLib.SetShowScoreFlag(score_selected());
             thisLib.SetShowArchetypeFlag(arch_selected());
+            thisLib.SetShowRestrictionFlag(restr_selected());
 
             if (refresh){
                 thisLib.RefreshUI();
@@ -3422,6 +3469,12 @@ function GNOmeBrowserBase (DIVID) {
             nodes[n] = {"name": n};
             let label = n;
 
+            if (this.restriction && this.ShowRestrictionFlag) {
+                if (this.restrictionSet.has(n)) {
+                    label += "*";
+                }
+            }
+
             if (this.ShowArchetypeFlag && this.SubsumptionData[n] !== undefined) {
                 if (this.SubsumptionData[n].IsArchetype) {
                   label += " [A]";
@@ -3728,6 +3781,11 @@ function GNOmeBrowserBase (DIVID) {
     this.SetShowArchetypeFlag = function (f){
         this.ShowArchetypeFlag = f;
         this.SetCookie("ShowArchetypeFlag", f, 7)
+    }
+
+    this.SetShowRestrictionFlag = function (f){
+        this.ShowRestrictionFlag = f;
+        this.SetCookie("ShowRestrictionFlag", f, 7)
     }
 
     this.SetShowSynonymFlag = function (f){
@@ -4325,6 +4383,14 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
                 GNOmeBrowserX.SetShowArchetypeFlag(true);
             } else if (["false", "f", "no", "n", "off"].includes(para["archetype"].toLowerCase())){
                 GNOmeBrowserX.SetShowArchetypeFlag(false);
+            }
+        }
+
+        if (Object.keys(para).includes('restrictmark')){
+            if (["true", "t", "yes", "y", "on"].includes(para["restrictmark"].toLowerCase())){
+                GNOmeBrowserX.SetShowRestrictionFlag(true);
+            } else if (["false", "f", "no", "n", "off"].includes(para["restrictmark"].toLowerCase())){
+                GNOmeBrowserX.SetShowRestrictionFlag(false);
             }
         }
 
