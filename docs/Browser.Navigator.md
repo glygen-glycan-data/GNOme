@@ -4,8 +4,9 @@
 
 ### Notation
 1. Archetype glycans marked with "[A]" (configure using settings)
-2. Strict subsumption relationships (mass-preserving) are shown as solid edges.
-3. Non-strict subsumption relationships (not mass-preserving) are shown as dashed edges.
+2. In restricted glycan set browsers, glycans in the restriction set are marked with "*" (configure using settings)
+3. Strict subsumption relationships (mass-preserving) are shown as solid edges.
+4. Non-strict subsumption relationships (not mass-preserving) are shown as dashed edges.
 
 ### Browsing
 1. Use mouse wheel to zoom in/out.
