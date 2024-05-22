@@ -1696,7 +1696,7 @@ function GNOmeBrowserBase (DIVID) {
 
     this.HintMessageForScreenB = "<ul style='position: relative; top: -20px; text-align: left; '>" +
         "<li>Double click on structure to navigate subsumption hierarchy.</li>" +
-        "<li>Right click popup to jump to GlyGen, GlycanData, GlyTouCan.</li>" +
+        "<li>Right click popup to jump to GNOme, Glymage, GlyGen, GlyCosmos, GlyTouCan, ...</li>" +
         "<li><a target='_blank' href='https://gnome.glyomics.org/docs/'>More...</a></li>" +
         "</ul>";
 
