@@ -1479,7 +1479,6 @@ function GNOmeBrowserBase (DIVID) {
 
     // Restriction info
     this.restriction = null;
-    this.restrictionSet = null;
 
     // Image and icon style
     this.IconStyle = "snfg";
@@ -1768,15 +1767,6 @@ function GNOmeBrowserBase (DIVID) {
         let splitfilename = para.data.split('.');
         if (splitfilename.length == 5) {
             this.restriction = splitfilename[1].substring(1);
-            let restrictionSetString = await jQuery.get("./GNOme_" + this.restriction + ".accessions.txt");
-            this.restrictionSet = new Set();
-            for (let l of restrictionSetString.split(/\r\n|\r|\n/)) {
-                if (l.trim() == "") {
-                    continue;
-                }
-                let tokens = l.replace(/^\s+|\s+$/g, '').split(/\s+/);
-                this.restrictionSet.add(tokens[0]);
-            }
         }
 
         let RawData = await jQuery.getJSON(para.data);
@@ -3469,8 +3459,8 @@ function GNOmeBrowserBase (DIVID) {
             nodes[n] = {"name": n};
             let label = n;
 
-            if (this.restriction && this.ShowRestrictionFlag) {
-                if (this.restrictionSet.has(n)) {
+            if (this.restriction && this.ShowRestrictionFlag && this.SubsumptionData[n] !== undefined) {
+                if (this.SubsumptionData[n].InRestriction) {
                     label += "*";
                 }
             }
@@ -3933,6 +3923,7 @@ function GNOmeStructureBrowser (DIVID) {
                     "Parents": Parents,
                     "EdgeType": EdgeType,
                     "IsArchetype": ((d.archetype == acc) || false),
+                    "InRestriction": (d.inrestriction === true),
                     "Archetype": d.archetype,
                     "ButtonConfig": ButtonConfig,
                     "score": d.score
@@ -4107,6 +4098,7 @@ function GNOmeCompositionBrowser(DIVID) {
                 "Children": Children,
                 "Parents": Parents,
                 "EdgeType": EdgeType,
+                "InRestriction": d.inrestriction,
                 "IsArchetype": ((d.archetype==acc) || false),
                 "Archetype": d.archetype,
                 "ButtonConfig": ButtonConfig,
