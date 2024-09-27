@@ -75859,8 +75859,7 @@
   "G53869BW": {
     "archetype": "G29068FM",
     "children": [
-      "G57321FI",
-      "G68544GH"
+      "G57321FI"
     ],
     "count": {
       "HexNAc": 1
@@ -89547,8 +89546,7 @@
   "G64581RP": {
     "archetype": "G14843DJ",
     "children": [
-      "G49108TO",
-      "G68544GH"
+      "G49108TO"
     ],
     "count": {
       "GlcNAc": 1,
@@ -95069,16 +95067,6 @@
     },
     "level": "topology",
     "score": 1969
-  },
-  "G68544GH": {
-    "archetype": "G14843DJ",
-    "count": {
-      "GlcNAc": 1,
-      "HexNAc": 1
-    },
-    "inrestriction": true,
-    "level": "saccharide",
-    "score": 0
   },
   "G68563JG": {
     "archetype": "G83029ZD",
@@ -106407,18 +106395,6 @@
     },
     "level": "topology",
     "score": 1969
-  },
-  "G76540HB": {
-    "archetype": "G14843DJ",
-    "children": [
-      "G68544GH"
-    ],
-    "count": {
-      "GlcNAc": 1,
-      "HexNAc": 1
-    },
-    "level": "saccharide",
-    "score": 492
   },
   "G76542BD": {
     "children": [
@@ -118760,8 +118736,7 @@
   "G86089ZC": {
     "archetype": "G14843DJ",
     "children": [
-      "G64581RP",
-      "G76540HB"
+      "G64581RP"
     ],
     "count": {
       "GlcNAc": 1,
