@@ -1,0 +1,89 @@
+[ 
+  {
+    "label": "ID",
+    "tag": "ID",
+    "width": "50px",
+    "align": "right",
+    "type": "int",
+    "sortable": true
+  },
+  {
+    "label": "SNFG",
+    "tag": "SNFG",
+    "width": "80px",
+    "sortable": true,
+    "searchable": true
+  },
+  {
+    "label": "Name",
+    "tag": "Name" ,
+    "sortable": true,
+    "searchable": true
+  },
+  {
+    "tag": "GlyTouCan",
+    "type": "img",
+    "width": "100px",
+    "imgurl": "https://glymage.glyomics.org/image/snfg/compact/{}.svg",
+    "label": ""
+  },
+  {
+    "label": "MW",
+    "tag": "MW",
+    "width": "80px",
+    "align": "right",
+    "type": "float",
+    "sortable": true,
+    "searchable": true
+  },
+  { 
+    "label": "PubChem",
+    "tag": "PubChem CID",
+    "type": "extid",
+    "idtype": "int",
+    "align": "right",
+    "width": "100px",
+    "exturl": "https://pubchem.ncbi.nlm.nih.gov/compound/",
+    "sortable": true,
+    "searchable": true
+  },
+  { 
+    "label": "GlyTouCan",
+    "tag": "GlyTouCan",
+    "type": "extid",
+    "width": "100px",
+    "align": "right",
+    "exturl": "https://glytoucan.org/Structures/Glycans/",
+    "sortable": true,
+    "searchable": true
+  },
+  {
+    "label": "WURCS",
+    "tag": "WURCS" ,
+    "sortable": true,
+    "searchable": true
+  },
+  {
+    "label": "GlycoCT",
+    "tag": "GlycoCT" ,
+    "sortable": true,
+    "searchable": true
+  },
+  {
+    "label": "Row",
+    "tag": "Row",
+    "type": "str",
+    "width": "120px",
+    "sortable": true,
+    "searchable": true,
+    "oddeven": true
+  },
+  {
+    "label": "Color",
+    "tag": "Color",
+    "width": "50px",
+    "align": "left",
+    "sortable": true,
+    "searchable": true
+  }
+]

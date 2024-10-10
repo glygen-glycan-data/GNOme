@@ -1,0 +1,86 @@
+table.ExcelTable2007 {
+	border: 1px solid #B0CBEF;
+	border-width: 1px 0px 0px 1px;
+	font-size: 11pt;
+	font-family: Calibri;
+	font-weight: 100;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+table.ExcelTable2007 tr.even {
+        background-color: #EDEFF2;
+}
+
+table.ExcelTable2007 tr.odd {
+        background-color: white;
+}
+
+table.ExcelTable2007 th {
+	background-image: url(excel-2007-header-bg.gif);
+	background-repeat: repeat-x; 
+	font-weight: normal;
+	font-size: 14px;
+	border: 1px solid #9EB6CE;
+	border-width: 0px 1px 1px 0px;
+	height: 17px;
+	padding: inherit;
+	font-family: inherit;
+        color: inherit;
+}
+
+table.ExcelTable2007 td {
+	border: 0px;
+	padding: 0px 4px 0px 2px;
+	border: 1px solid #D0D7E5;
+	border-width: 0px 1px 1px 0px;
+}
+
+table.ExcelTable2007 td b {
+	border: 0px;
+	// background-color: white;
+	font-weight: bold;
+}
+
+table.ExcelTable2007 td.heading {
+	background-color: #E4ECF7;
+	text-align: center;
+	border: 1px solid #9EB6CE;
+	border-width: 0px 1px 1px 0px;
+}
+
+table.ExcelTable2007 th span.search {
+	color: grey;
+	font-weight: 100;
+}
+
+table.ExcelTable2007 th span.infilter {
+        // font-weight: 1000;
+	font-weight: bold;
+	color: black;
+}
+
+table.ExcelTable2007 th span.sortinc {
+	display: none;
+}
+
+table.ExcelTable2007 th span.sortdec {
+	display: none;
+}
+
+table.ExcelTable2007 th span.sortshow {
+	display: inline;
+}
+
+table.ExcelTable2007 td.rowindex {
+    background-color: #ecf1f6;
+    // background-color: #E4ECF7;
+    border: 1px solid #9EB6CE;
+    border-width: 0px 1px 1px 0px;
+    font-weight: normal;
+}
+
+table.ExcelTable2007 th.heading {
+	background-image: url(excel-2007-header-left.gif);
+	background-repeat: none;
+}

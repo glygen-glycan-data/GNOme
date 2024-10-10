@@ -1,0 +1,95 @@
+SNFG	Name	PubChem CID	GlyTouCan	WURCS	Color	ColorID	Row	RowID	ID	MW	GlycoCT
+Glc	D-Glucose	5793	G15021LG	"WURCS=2.0/1,1,0/[a2122h-1x_1-5]/1/"	Blue	1	Filled Circle	1	1	180.06	x-dglc-HEX-1:5
+Man	D-Mannose	18950	G70323CJ	"WURCS=2.0/1,1,0/[a1122h-1x_1-5]/1/"	Green	2	Filled Circle	1	2	180.06	x-dman-HEX-1:5
+Gal	D-Galactose	6036	G68158BT	"WURCS=2.0/1,1,0/[a2112h-1x_1-5]/1/"	Yellow	3	Filled Circle	1	3	180.06	x-dgal-HEX-1:5
+Gul	D-Gulose	441033	G14783GG	"WURCS=2.0/1,1,0/[a2212h-1x_1-5]/1/"	Orange	4	Filled Circle	1	4	180.06	x-dgul-HEX-1:5
+Alt	L-Altrose	10219674	G98187HG	"WURCS=2.0/1,1,0/[a2111h-1x_1-5]/1/"	Pink	5	Filled Circle	1	5	180.06	x-lalt-HEX-1:5
+All	D-Allose	439507	G74407MX	"WURCS=2.0/1,1,0/[a2222h-1x_1-5]/1/"	Purple	6	Filled Circle	1	6	180.06	x-dall-HEX-1:5
+Tal	D-Talose	441035	G05946XD	"WURCS=2.0/1,1,0/[a1112h-1x_1-5]/1/"	Light Blue	7	Filled Circle	1	7	180.06	x-dtal-HEX-1:5
+Ido	L-Idose	11030410	G44782GU	"WURCS=2.0/1,1,0/[a2121h-1x_1-5]/1/"	Brown	8	Filled Circle	1	8	180.06	x-lido-HEX-1:5
+Hex	Hexose	206	G38776RF	"WURCS=2.0/1,1,0/[axxxxh-1x_1-5]/1/"	White	10	Filled Circle	1	9	180.06	x-HEX-1:5	
+Hex	Hexose	206	G81399MY	"WURCS=2.0/1,1,0/[uxxxxh]/1/"	White	10	Filled Circle	1	10	180.06	x-HEX-x:x
+GlcNAc	N-Acetyl-D-Glucosamine	439174	G64581RP	"WURCS=2.0/1,1,0/[a2122h-1x_1-5_2*NCC/3=O]/1/"	Blue	1	Filled Square	2	11	221.09	x-dglc-HEX-1:5||(2d:1)n-acetyl
+ManNAc	N-Acetyl-D-Mannosamine	439281	G29494LA	"WURCS=2.0/1,1,0/[a1122h-1x_1-5_2*NCC/3=O]/1/"	Green	2	Filled Square	2	12	221.09	x-dman-HEX-1:5||(2d:1)n-acetyl
+GalNAc	N-Acetyl-D-Galactosamine	35717	G27025MB	"WURCS=2.0/1,1,0/[a2112h-1x_1-5_2*NCC/3=O]/1/"	Yellow	3	Filled Square	2	13	221.09	x-dgal-HEX-1:5||(2d:1)n-acetyl
+GulNAc	N-Acetyl-D-Gulosamine	13201633	G77116KB	"WURCS=2.0/1,1,0/[a2212h-1x_1-5_2*NCC/3=O]/1/"	Orange	4	Filled Square	2	14	221.09	x-dgul-HEX-1:5||(2d:1)n-acetyl
+AltNAc	N-Acetyl-L-Altrosamine	44717159	G64522FS	"WURCS=2.0/1,1,0/[a2111h-1x_1-5_2*NCC/3=O]/1/"	Pink	5	Filled Square	2	15	221.09	x-lalt-HEX-1:5||(2d:1)n-acetyl
+AllNAc	N-Acetyl-D-Allosamine	10944029	G65908CH	"WURCS=2.0/1,1,0/[a2222h-1x_1-5_2*NCC/3=O]/1/"	Purple	6	Filled Square	2	16	221.09	x-dall-HEX-1:5||(2d:1)n-acetyl
+TalNAc	N-Acetyl-D-Talosamine	57376616	G71663MX	"WURCS=2.0/1,1,0/[a1112h-1x_1-5_2*NCC/3=O]/1/"	Light Blue	7	Filled Square	2	17	221.09	x-dtal-HEX-1:5||(2d:1)n-acetyl
+IdoNAc	N-Acetyl-L-Idosamine	13201636	G15624ZV	"WURCS=2.0/1,1,0/[a2121h-1x_1-5_2*NCC/3=O]/1/"	Brown	8	Filled Square	2	18	221.09	x-lido-HEX-1:5||(2d:1)n-acetyl
+HexNAc	N-Acetylhexosamine	899	G70994MS	"WURCS=2.0/1,1,0/[axxxxh-1x_1-5_2*NCC/3=O]/1/"	White	10	Filled Square	2	19	221.09	x-HEX-1:5||(2d:1)n-acetyl
+HexNAc	N-Acetylhexosamine	899	G29068FM	"WURCS=2.0/1,1,0/[uxxxxh_2*NCC/3=O]/1/"	White	10	Filled Square	2	20	221.09	x-HEX-x:x||(2d:1)n-acetyl
+GlcN	D-Glucosamine	439213	G80384UV	"WURCS=2.0/1,1,0/[a2122h-1x_1-5_2*N]/1/"	Blue	1	Crossed Square	3	21	179.08	x-dglc-HEX-1:5||(2d:1)amino
+ManN	D-Mannosamine	440049	G95571UD	"WURCS=2.0/1,1,0/[a1122h-1x_1-5_2*N]/1/"	Green	2	Crossed Square	3	22	179.08	x-dman-HEX-1:5||(2d:1)amino
+GalN	D-Galactosamine	24154	G16633GB	"WURCS=2.0/1,1,0/[a2112h-1x_1-5_2*N]/1/"	Yellow	3	Crossed Square	3	23	179.08	x-dgal-HEX-1:5||(2d:1)amino
+GulN	D-Gulosamine	9920528	G24804KF	"WURCS=2.0/1,1,0/[a2212h-1x_1-5_2*N]/1/"	Orange	4	Crossed Square	3	24	179.08	x-dgul-HEX-1:5||(2d:1)amino
+AltN	L-Altrosamine	6602094	G06046CY	"WURCS=2.0/1,1,0/[a2111h-1x_1-5_2*N]/1/"	Pink	5	Crossed Square	3	25	179.08	x-lalt-HEX-1:5||(2d:1)amino
+AllN	D-Allosamine	6915732	G56398AB	"WURCS=2.0/1,1,0/[a2222h-1x_1-5_2*N]/1/"	Purple	6	Crossed Square	3	26	179.08	x-dall-HEX-1:5||(2d:1)amino
+TalN	D-Talosamine	9834117	G27483FW	"WURCS=2.0/1,1,0/[a1112h-1x_1-5_2*N]/1/"	Light Blue	7	Crossed Square	3	27	179.08	x-dtal-HEX-1:5||(2d:1)amino
+IdoN	L-Idosamine	91864695	G91207GQ	"WURCS=2.0/1,1,0/[a2121h-1x_1-5_2*N]/1/"	Brown	8	Crossed Square	3	28	179.08	x-lido-HEX-1:5||(2d:1)amino
+HexN	Hexosamine	739	G43933IM	"WURCS=2.0/1,1,0/[axxxxh-1x_1-5_2*N]/1/"	White	10	Crossed Square	3	29	179.08	x-HEX-1:5||(2d:1)amino
+HexN	Hexosamine	739	G99055MR	"WURCS=2.0/1,1,0/[uxxxxh_2*N]/1/"	White	10	Crossed Square	3	30	179.08	x-HEX-x:x||(2d:1)amino
+GlcA	D-Glucuronic Acid	94715	G33059TI	"WURCS=2.0/1,1,0/[a2122A-1x_1-5]/1/"	Blue	1	Divided Diamond	4	31	194.14	x-dglc-HEX-1:5|6:a
+ManA	D-Mannuronic Acid	439630	G75516WW	"WURCS=2.0/1,1,0/[a1122A-1x_1-5]/1/"	Green	2	Divided Diamond	4	32	194.14	x-dman-HEX-1:5|6:a
+GalA	D-Galacturonic Acid	439215	G66410IV	"WURCS=2.0/1,1,0/[a2112A-1x_1-5]/1/"	Yellow	3	Divided Diamond	4	33	194.14	x-dgal-HEX-1:5|6:a
+GulA	D-Guluronic Acid	11788788	G78179EH	"WURCS=2.0/1,1,0/[a2212A-1x_1-5]/1/"	Orange	4	Divided Diamond	4	34	194.14	x-dgul-HEX-1:5|6:a
+AltA	L-Alturonic Acid	56845780	G28681EG	"WURCS=2.0/1,1,0/[a2111A-1x_1-5]/1/"	Pink	5	Divided Diamond	4	35	194.14	x-lalt-HEX-1:5|6:a
+AllA	D-Alluronic Acid	6602103	G76229VJ	"WURCS=2.0/1,1,0/[a2222A-1x_1-5]/1/"	Purple	6	Divided Diamond	4	36	194.14	x-dall-HEX-1:5|6:a
+TalA	D-Taluronic Acid	11298488	G88346QR	"WURCS=2.0/1,1,0/[a1112A-1x_1-5]/1/"	Light Blue	7	Divided Diamond	4	37	194.14	x-dtal-HEX-1:5|6:a
+IdoA	L-Iduronic Acid	441039	G18340JN	"WURCS=2.0/1,1,0/[a2121A-1x_1-5]/1/"	Brown	8	Divided Diamond	4	38	194.14	x-lido-HEX-1:5|6:a
+HexA	Hexuronic Acid	610	G54692AR	"WURCS=2.0/1,1,0/[axxxxA-1x_1-5]/1/"	White	10	Divided Diamond	4	39	194.14	x-HEX-1:5|6:a
+HexA	Hexuronic Acid	610	G37064VH	"WURCS=2.0/1,1,0/[uxxxxA]/1/"	White	10	Divided Diamond	4	40	194.14	x-HEX-x:x|6:a
+Qui	D-Quinovose	439746	G96361GW	"WURCS=2.0/1,1,0/[a2122m-1x_1-5]/1/"	Blue	1	Filled Triangle	5	41	164.16	x-dglc-HEX-1:5|6:d
+Rha	L-Rhamnose	25310	G07006BT	"WURCS=2.0/1,1,0/[a2211m-1x_1-5]/1/"	Green	2	Filled Triangle	5	42	164.16	x-lman-HEX-1:5|6:d
+6dGul	6-Deoxy-D-Gulose	12302960	G89581PC	"WURCS=2.0/1,1,0/[a2212m-1x_1-5]/1/"	Orange	3	Filled Triangle	5	43	164.16	x-dgul-HEX-1:5|6:d
+6dAlt	6-Deoxy-L-Altose	12302958	G90613GA	"WURCS=2.0/1,1,0/[a2111m-1x_1-5]/1/"	Pink	5	Filled Triangle	5	44	164.16	x-lalt-HEX-1:5|6:d
+6dTal	6-Deoxy-D-Talose	44119431	G27037RL	"WURCS=2.0/1,1,0/[a1112m-1x_1-5]/1/"	Light Blue	7	Filled Triangle	5	45	164.16	x-dtal-HEX-1:5|6:d
+Fuc	L-Fucose	17106	G82576YO	"WURCS=2.0/1,1,0/[a1221m-1x_1-5]/1/"	Red	9	Filled Triangle	5	46	164.16	x-lgal-HEX-1:5|6:d
+dHex	Deoxyhexose	840	G34240UR	"WURCS=2.0/1,1,0/[axxxxm-1x_1-5]/1/"	White	10	Filled Triangle	5	47	164.16	x-HEX-1:5|6:d
+dHex	Deoxyhexose	840	G02438LG	"WURCS=2.0/1,1,0/[uxxxxm]/1/"	White	10	Filled Triangle	5	48	164.16	x-HEX-x:x|6:d
+QuiNAc	N-Acetyl-D-Quinovosamine	11954187	G16049XQ	"WURCS=2.0/1,1,0/[a2122m-1x_1-5_2*NCC/3=O]/1/"	Blue	1	Divided Triangle	6	49	205.21	x-dglc-HEX-1:5|6:d||(2d:1)n-acetyl
+RhaNAc	N-Acetyl-L-Rhamnosamine	91807222	G15208DG	"WURCS=2.0/1,1,0/[a2211m-1x_1-5_2*NCC/3=O]/1/"	Green	2	Divided Triangle	6	50	205.21	x-lman-HEX-1:5|6:d||(2d:1)n-acetyl
+6dAltNAc	N-Acetyl-6-Deoxy-L-Altrosamine	126961777	G87549RI	"WURCS=2.0/1,1,0/[a2111m-1x_1-5_2*NCC/3=O]/1/"	Pink	5	Divided Triangle	6	51	205.21	x-lalt-HEX-1:5|6:d||(2d:1)n-acetyl
+6dTalNAc	N-Acetyl-6-Deoxy-D-Talosamine	126961778	G90873FY	"WURCS=2.0/1,1,0/[a1112m-1x_1-5_2*NCC/3=O]/1/"	Light Blue	7	Divided Triangle	6	52	205.21	x-dtal-HEX-1:5|6:d||(2d:1)n-acetyl
+FucNAc	N-Acetyl-L-Fucosamine	91810489	G99368VP	"WURCS=2.0/1,1,0/[a1221m-1x_1-5_2*NCC/3=O]/1/"	Red	9	Divided Triangle	6	53	205.21	x-dgal-HEX-1:5|6:d||(2d:1)n-acetyl
+dHexNAc	DeoxyhexNAc	20829700	G47353FB	"WURCS=2.0/1,1,0/[axxxxm-1x_1-5_2*NCC/3=O]/1/"	White	10	Divided Triangle	6	54	205.21	x-HEX-1:5|6:d||(2d:1)n-acetyl
+dHexNAc	DeoxyhexNAc	20829700	G65395VC	"WURCS=2.0/1,1,0/[uxxxxm_2*NCC/3=O]/1/"	White	10	Divided Triangle	6	55	205.21	x-HEX-x:x|6:d||(2d:1)n-acetyl
+Oli	D-Olivose	10888063	G45893GG	"WURCS=2.0/1,1,0/[ad122m-1x_1-5]/1/"	Blue	1	Flat Rectangle	7	56	148.16	x-dglc-HEX-1:5|2:d|6:d
+Tyv	D-Tyvelose	12303782	G32527QZ	"WURCS=2.0/1,1,0/[a1d22m-1x_1-5]/1/"	Green	2	Flat Rectangle	7	57	148.16	x-lman-HEX-1:5|3:d|6:d
+Abe	D-Abequose	160540	G04505XT	"WURCS=2.0/1,1,0/[a2d12m-1x_1-5]/1/"	Orange	4	Flat Rectangle	7	58	148.16	x-dgul-HEX-1:5|3:d|6:d
+Par	D-Paratose	12303783	G13641BC	"WURCS=2.0/1,1,0/[a2d22m-1x_1-5]/1/"	Pink	5	Flat Rectangle	7	59	148.16	x-lalt-HEX-1:5|3:d|6:d
+Dig	D-Digitoxose	2723626	G92438NI	"WURCS=2.0/1,1,0/[ad222m-1x_1-5]/1/"	Purple	6	Flat Rectangle	7	60	148.16	x-dall-HEX-1:5|2:d|6:d
+Col	L-Colitose	12303780	G93198SW	"WURCS=2.0/1,1,0/[a1d21m-1x_1-5]/1/"	Light Blue	7	Flat Rectangle	7	61	148.16	x-dtal-HEX-1:5|3:d|6:d
+ddHex	Di-deoxyhexose	325714	G59037DH	"WURCS=2.0/1,1,0/[adxxxm-1x_1-5]/1/"	White	10	Flat Rectangle	7	62	148.16	x-HEX-1:5|2:d|6:d
+ddHex	Di-deoxyhexose	4471182	G63876RR	"WURCS=2.0/1,1,0/[axdxxm-1x_1-5]/1/"	White	10	Flat Rectangle	7	63	148.16	x-HEX-1:5|3:d|6:d
+ddHex	Di-deoxyhexose	325714	G68203AJ	"WURCS=2.0/1,1,0/[udxxxm]/1/"	White	10	Flat Rectangle	7	64	148.16	x-HEX-x:x|2:d|6:d
+ddHex	Di-deoxyhexose	4471182	G25821FT	"WURCS=2.0/1,1,0/[uxdxxm]/1/"	White	10	Flat Rectangle	7	65	148.16	x-HEX-x:x|3:d|6:d
+Ara	L-Arabinose	439195	G88980IR	"WURCS=2.0/1,1,0/[a211h-1x_1-5]/1/"	Green	2	Filled Star	8	66	150.13	x-lara-PEN-1:5
+Lyx	D-Lyxose	439240	G84489FR	"WURCS=2.0/1,1,0/[a112h-1x_1-5]/1/"	Yellow	3	Filled Star	8	67	150.13	x-dlyx-PEN-1:5
+Xyl	D-Xylose	135191	G53308XG	"WURCS=2.0/1,1,0/[a212h-1x_1-5]/1/"	Orange	4	Filled Star	8	68	150.13	x-dxyl-PEN-1:5
+Rib	D-Ribose	10975657	G75380KK	"WURCS=2.0/1,1,0/[a222h-1x_1-5]/1/"	Pink	5	Filled Star	8	69	150.13	x-drib-PEN-1:5
+Pent	Pentose	229	G04045FF	"WURCS=2.0/1,1,0/[axxxh-1x_1-5]/1/"	White	10	Filled Star	8	70	150.13	x-PEN-1:5
+Pent	Pentose	229	G47957HH	"WURCS=2.0/1,1,0/[uxxxh]/1/"	White	10	Filled Star	8	71	150.13	x-PEN-x:x
+Kdn	Keto-Deoxy-Nonulonic Acid	13991616	G10167WZ	"WURCS=2.0/1,1,0/[Aad21122h-2x_2-6]/1/"	Green	2	Filled Diamond	9	72	268.22	x-dgro-dgal-NON-2:6|1:a|2:keto|3:d
+Neu5Ac	N-Acetyl-Neuraminic Acid	439197	G81533KY	"WURCS=2.0/1,1,0/[Aad21122h-2x_2-6_5*NCC/3=O]/1/"	Purple	6	Filled Diamond	9	73	309.27	x-dgro-dgal-NON-2:6|1:a|2:keto|3:d||(5d:1)n-acetyl
+Neu5Gc	N-Glycolyl-Neuraminic Acid	440001	G43724HA	"WURCS=2.0/1,1,0/[Aad21122h-2x_2-6_5*NCCO/3=O]/1/"	Light Blue	7	Filled Diamond	9	74	325.27	x-dgro-dgal-NON-2:6|1:a|2:keto|3:d||(5d:1)n-glycolyl
+Neu	Neuraminic Acid	441037	G67888YP	"WURCS=2.0/1,1,0/[Aad21122h-2x_2-6_5*N]/1/"	Brown	8	Filled Diamond	9	75	267.23	x-dgro-dgal-NON-2:6|1:a|2:keto|3:d||(5d:1)amino
+	Deoxynonulosonate	5086735	G37442BS	"WURCS=2.0/1,1,0/[Aadxxxxxh-2x_2-6]/1/"	White	10	Filled Diamond	9	76	268.22	x-NON-2:6|1:a|2:keto|3:d
+Pse	Pseudaminic acid	101137651	G03409RR	"WURCS=2.0/1,1,0/[Aad22111m-2x_2-6_5*N_7*N]/1/"	Green	2	Flat Diamond	10	77	250.25	x-lgro-lman-NON-2:6|1:a|2:keto|3:d|9:d||(5d:1)amino||(7d:1)amino
+Leg	Legionaminic acid	70678967	G91844KR	"WURCS=2.0/1,1,0/[Aad21122m-2x_2-6_5*N_7*N]/1/"	Yellow	3	Flat Diamond	10	78	250.25	x-dgro-dgal-NON-2:6|1:a|2:keto|3:d|9:d||(5d:1)amino||(7d:1)amino
+Aci	Acinetaminic acid	126961779	G36835YE	"WURCS=2.0/1,1,0/[Aad21111m-2x_2-6_5*N_7*N]/1/"	Pink	5	Flat Diamond	10	79	250.25	x-lgro-lalt-NON-2:6|1:a|2:keto|3:d|9:d||(5d:1)amino||(7d:1)amino
+4eLeg	4-Epilegionaminic acid	126961780	G21985PU	"WURCS=2.0/1,1,0/[Aad11122m-2x_2-6_5*N_7*N]/1/"	Light Blue	7	Flat Diamond	10	80	250.25	x-dgro-dtal-NON-2:6|1:a|2:keto|3:d|9:d||(5d:1)amino||(7d:1)amino
+	Di-deoxynonulosonate	77908764	G70761BI	"WURCS=2.0/1,1,0/[Aadxxxxxm-2x_2-6_5*N_7*N]/1/"	White	10	Flat Diamond	10	81	250.25	x-NON-2:6|1:a|2:keto|3:d|9:d||(5d:1)amino||(7d:1)amino
+Bac	D-Bacillosamine	54029194	G12262YK	"WURCS=2.0/1,1,0/[a2122m-1x_1-5_2*N_4*N]/1/"	Blue	1	Flat Hexagon	11	82	162.19	x-dglc-HEX-1:5|6:d||(2d:1)amino||(4d:1)amino
+LDmanHep	L-Glycero-D-Manno-Heptose	21120522	G79085KK	"WURCS=2.0/1,1,0/[a11221h-1x_1-5]/1/"	Green	2	Flat Hexagon	11	83	210.18	x-lgro-dman-HEP-1:5
+Kdo	2-Keto-3-Deoxy-D-Mannooctanoic Acid	10857507	G85465GD	"WURCS=2.0/1,1,0/[Aad1122h-2x_2-6]/1/"	Yellow	3	Flat Hexagon	11	84	238.19	x-dman-OCT-2:6|1:a|2:keto|3:d
+Dha	3-Deoxy-Lyxo-Heptulosaric Acid 	15608515	G84200LK	"WURCS=2.0/1,1,0/[Aad112A-2x_2-6]/1/"	Orange	4	Flat Hexagon	11	85	222.15	x-dlyx-HEP-2:6|1:a|2:keto|3:d|7:a
+DDmanHep	D-Glycero-D-Manno-Heptose	53681436	G99199AD	"WURCS=2.0/1,1,0/[a11222h-1x_1-5]/1/"	Pink	5	Flat Hexagon	11	86	210.18	x-dgro-dman-HEP-1:5
+MurNAc	N-Acetyl-Muramic Acid	5462244	G57115LW	"WURCS=2.0/1,1,0/[a2122h-1x_1-5_2*NCC/3=O_3*OC^RCO/4=O/3C]/1/"	Purple	6	Flat Hexagon	11	87	293.27	x-dglc-HEX-1:5||(2d:1)n-acetyl||(3o:1)(r)-carboxyethyl
+MurNGc	N-Glycolyl-Muramic Acid	91810748	G52336YX	"WURCS=2.0/1,1,0/[a2122h-1x_1-5_2*NCCO/3=O_3*OC^RCO/4=O/3C]/1/"	Light Blue	7	Flat Hexagon	11	88	309.27	x-dglc-HEX-1:5||(2d:1)n-glycolyl||(3o:1)(r)-carboxyethyl
+Mur	Muramic acid	441038	G42792MV	"WURCS=2.0/1,1,0/[a2122h-1x_1-5_2*N_3*OC^RCO/4=O/3C]/1/"	Brown	8	Flat Hexagon	11	89	251.23	x-dglc-HEX-1:5||(2d:1)amino||(3o:1)(r)-carboxyethyl
+Api	L-Apiose	12306753	G30093HX	"WURCS=2.0/1,1,0/[a26h-1x_1-4_3*CO]/1/"	Blue	1	Pentagon	12	90	150.13	x-dery-TET-1:4||(3h:1)hydroxymethyl
+Fru	D-Fructose	2723872	G72000NJ	"WURCS=2.0/1,1,0/[ha122h-2x_2-6]/1/"	Green	2	Pentagon	12	91	180.16	x-dara-HEX-2:6|2:keto
+Tag	D-Tagatose	439312	G08132VZ	"WURCS=2.0/1,1,0/[ha112h-2x_2-6]/1/"	Yellow	3	Pentagon	12	92	180.16	x-dlyx-HEX-2:6|2:keto
+Sor	L-Sorbose	439192	G60662XR	"WURCS=2.0/1,1,0/[ha121h-2x_2-6]/1/"	Orange	4	Pentagon	12	93	180.16	x-lxyl-HEX-2:6|2:keto
+Psi	D-Psicose	441036	G53469UZ	"WURCS=2.0/1,1,0/[ha222h-2x_2-6]/1/"	Pink	5	Pentagon	12	94	180.16	x-dall-HEX-2:6|2:keto
