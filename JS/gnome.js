@@ -1748,6 +1748,10 @@ function GNOmeBrowserBase (DIVID) {
             for (let er of theme["external_resources"]){
                 if (er["glycan_set"] == null){
                     er["glycan_set"] = undefined;
+                } else if (er["glycan_set"].constructor == Object){
+                    for (let acc of Object.keys(er["glycan_set"])) {
+                        this.Synonym[er["glycan_set"][acc]] = acc;
+                    }
                 }
             }
         }
