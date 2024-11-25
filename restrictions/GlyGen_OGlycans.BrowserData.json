@@ -160569,5 +160569,6 @@
     "inrestriction": true,
     "level": "saccharide",
     "score": 574
-  }
+  },
+  "__VERSION__": "v2.3.1"
 }
