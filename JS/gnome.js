@@ -3904,7 +3904,7 @@ function GNOmeBrowserBase (DIVID) {
         res.ScreenATitle = this.ScreenATitle;
         res.ScreenBTitle = this.ScreenBTitle;
 
-        return JSON.parse(JSON.stringify(res))
+        return JSON.parse(JSON.stringify(res));
     }
 
 
