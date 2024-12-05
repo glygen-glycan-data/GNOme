@@ -3239,7 +3239,7 @@ function GNOmeBrowserBase (DIVID) {
         };
         let caption = document.createElement("figcaption");
         caption.innerHTML = gtcid;
-
+        if (this.restriction && this.ShowRestrictionFlag && this.SubsumptionData[n] !== undefined) {
             if (this.SubsumptionData[gtcid].InRestriction) {
                 caption.innerHTML += "*";
             }
@@ -3905,9 +3905,7 @@ function GNOmeBrowserBase (DIVID) {
         res.ScreenBTitle = this.ScreenBTitle;
 
         return JSON.parse(JSON.stringify(res));
-    }
-
-
+    };
 
 }
 
