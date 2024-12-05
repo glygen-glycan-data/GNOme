@@ -3239,7 +3239,7 @@ function GNOmeBrowserBase (DIVID) {
         };
         let caption = document.createElement("figcaption");
         caption.innerHTML = gtcid;
-        if (this.restriction && this.ShowRestrictionFlag && this.SubsumptionData[n] !== undefined) {
+        if (this.restriction && this.ShowRestrictionFlag && this.SubsumptionData[gtcid] !== undefined) {
             if (this.SubsumptionData[gtcid].InRestriction) {
                 caption.innerHTML += "*";
             }
