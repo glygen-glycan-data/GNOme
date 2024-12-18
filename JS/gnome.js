@@ -595,6 +595,7 @@ let glycanviewer = {
             zoomWhenDoubleClicked(clickData, thisLib.para)
         });
         function zoomWhenDoubleClicked(data, para) {
+            para.GNOmeBrowser.hideBanner();
             var selectnode = data.nodes;
 
             if (selectnode.length>0){
@@ -1463,6 +1464,8 @@ function GNOmeBrowserBase (DIVID) {
     this.IUPACCompositionData = {};
     this.TopLevelThings = [];
     this.Synonym = {};
+    this.ToByonic = {};
+    this.ToExtID = {};
     this.AllChildren = {};
     this.AllParents = {};
     this.AllAncestors = {};
@@ -1511,7 +1514,8 @@ function GNOmeBrowserBase (DIVID) {
     this.UpdateMonoFreqFlag = true;
 
     this.ShowScoreFlag = false;
-    this.ShowSynonymFlag = false;
+    this.ShowByonicFlag = false;
+    this.ShowExtIDFlag = false;
     this.ShowArchetypeFlag = true;
     this.ShowRestrictionFlag = true;
 
@@ -1519,8 +1523,8 @@ function GNOmeBrowserBase (DIVID) {
     this.TooltipIndex = 0;
 
     // Display parameters
-    this.Width = 1000;
-    this.Height = 500;
+    this.Width = window.innerWidth;
+    this.Height = window.innerHeight;
     this.MinWidth = 600;
     this.MinHeight = 500;
 
@@ -1682,6 +1686,15 @@ function GNOmeBrowserBase (DIVID) {
     };
     this.IconConfig = IconConfigCFG;
 
+    if (this instanceof GNOmeCompositionBrowser) {
+        this.SplashTitle = 'GNOme Composition Browser';
+    } else {
+        this.SplashTitle = 'GNOme Structure Browser';
+    }
+    this.SplashMessage1 = "<div style='text-align: center; '>";
+    this.SplashMessage1 += "Downloading data and initializing...";
+    this.SplashMessage1 += "</div>";
+
     // Hint title and message
     this.HintTitleForScreenA = 'Topology Selector';
     this.HintTitleForScreenB = 'Subsumption Navigator';
@@ -1705,6 +1718,10 @@ function GNOmeBrowserBase (DIVID) {
     this.Init = async function (para) {
 
         let theme = {};
+
+        this.AllocateDIV();
+
+        this.SplashShow(1);
 
         if (Object.keys(para).includes('theme')){
             theme = await jQuery.getJSON(para.theme);
@@ -1748,6 +1765,14 @@ function GNOmeBrowserBase (DIVID) {
             for (let er of theme["external_resources"]){
                 if (er["glycan_set"] == null){
                     er["glycan_set"] = undefined;
+                } else if (er["glycan_set"].constructor == Object){
+                    for (let acc of Object.keys(er["glycan_set"])) {
+                        this.Synonym[er["glycan_set"][acc]] = acc;
+                        if (this.ToExtID[acc] === undefined) {
+                            this.ToExtID[acc] = [];
+                        }
+                        this.ToExtID[acc].push(er["glycan_set"][acc]);
+                    }
                 }
             }
         }
@@ -1762,7 +1787,6 @@ function GNOmeBrowserBase (DIVID) {
         for (var m of this.AllItems) {
             this.ItemCount[m] = 0;
         }
-        this.AllocateDIV();
 
         let splitfilename = para.data.split('.');
         if (splitfilename.length == 5) {
@@ -1770,6 +1794,13 @@ function GNOmeBrowserBase (DIVID) {
         }
 
         let RawData = await jQuery.getJSON(para.data);
+        this.version = RawData['__VERSION__']
+        if (this.version == null) {
+            this.version = "v2.3.0";
+        } else {
+            delete RawData['__VERSION__'];
+        }
+
         this.DataPreProcess(RawData);
         this.ComputeTopLevelThings();
         this.SubsumptionDataBackUp = JSON.parse(JSON.stringify(this.SubsumptionData));
@@ -1786,13 +1817,12 @@ function GNOmeBrowserBase (DIVID) {
             this.SetShowScoreFlag(false)
         }
 
-
-        tmp = this.GetCookie("ShowSynonymFlag")
+        tmp = this.GetCookie("ShowByonicFlag")
         if (tmp == "true"){
-            this.SetShowSynonymFlag(true)
+            this.SetShowByonicFlag(true)
         }
         else if (tmp == "false"){
-            this.SetShowSynonymFlag(false)
+            this.SetShowByonicFlag(false)
         }
 
         tmp = this.GetCookie("ShowArchetypeFlag")
@@ -1809,9 +1839,16 @@ function GNOmeBrowserBase (DIVID) {
         else if (tmp == "false"){
             this.SetShowRestrictionFlag(false)
         }
-
+        tmp = this.GetCookie("ShowExtIDFlag")
+        if (tmp == "true"){
+            this.SetShowExtIDFlag(true)
+        }
+        else if (tmp == "false"){
+            this.SetShowExtIDFlag(false)
+        }
 
         this.ProcessRawDataWithRelationship(RawData);
+        this.SplashShow(10);
 
     }
 
@@ -2058,6 +2095,8 @@ function GNOmeBrowserBase (DIVID) {
             this.ContainerScreenB.style.width = this.Width + "px";
             this.ContainerScreenB.style.height = this.Height + "px";
 
+            // this.hideBanner();
+
             this.ContainerScreenSwitch.style.display = "inline";
 
             if (this.UpdateMonoFreqFlag){
@@ -2080,20 +2119,28 @@ function GNOmeBrowserBase (DIVID) {
 
 
         this.ContainerBanner.style.width = this.Width * 0.97 + "px";
-        this.ContainerBanner.innerHTML = "<a href='https://gnome.glyomics.org/' target='_blank'>GNOme</a> - Glycan Naming and Subsumption Ontology";
+        this.ContainerBanner.innerHTML = "<a href='https://gnome.glyomics.org/' target='_blank'>Glycan Naming and Subsumption Ontology</A> " + this.version;
         if (this.brand){
             this.ContainerBanner.innerHTML += " (" + this.brand + ")";
-
         }
         if (this.restriction) {
-            this.ContainerBanner.innerHTML += " [" + this.restriction + "]";
+            this.ContainerBanner.innerHTML += " [ Restriction: " + this.restriction + " ]";
         }
+    }
+
+    this.showBanner = function () {
+        this.ContainerBanner.style.display = "";
+    }
+
+    this.hideBanner = function () {
+        this.ContainerBanner.style.display = "none";
     }
 
     this.Reset = function (){
         let thisLib = this;
 
         this.SetToScreenA();
+        this.showBanner();
 	
 	const defaultLandingParams = new URLSearchParams(this.DefaultURL);
         let default_res = {};
@@ -2285,6 +2332,17 @@ function GNOmeBrowserBase (DIVID) {
         this.ContainerAlert.style.display = "none";
     }
 
+    this.SplashShow = function (stage) {
+        if (stage > 1) {
+            this.CloseAlert();
+        } 
+        if (stage == 1) {
+            this.Alert(this.SplashTitle,this.SplashMessage1,false);
+        } else if (stage == 2) {
+            this.Alert(this.SplashTitle,this.SplashMessage2,false);
+        }
+    }
+
     this.HintShow = function () {
         let title, msg;
         if (this.DisplayScreen == 0){
@@ -2415,10 +2473,10 @@ function GNOmeBrowserBase (DIVID) {
         let tr = document.createElement("tr");
         let td1 = document.createElement("td");
         td1.style.maxWidth = "30%; "
-        td1.innerText = "Show GNOme Synonym: "
+        td1.innerText = "Show Byonic Synonym: "
 
         let td2 = document.createElement("td");
-        let tmp = this.ToggleSwitch(this.ShowSynonymFlag);
+        let tmp = this.ToggleSwitch(this.ShowByonicFlag);
         let sym_toggle_switch = tmp[0];
         let sym_selected = tmp[1];
         td2.appendChild(sym_toggle_switch);
@@ -2426,7 +2484,25 @@ function GNOmeBrowserBase (DIVID) {
         tr.appendChild(td1);
         tr.appendChild(td2);
 
-        if (thisLib instanceof GNOmeCompositionBrowser){
+        if (thisLib instanceof GNOmeCompositionBrowser) {
+          option_table.appendChild(tr);
+        }
+
+        tr = document.createElement("tr");
+        td1 = document.createElement("td");
+        td1.style.maxWidth = "30%; "
+        td1.innerText = "Show External ID: "
+
+        td2 = document.createElement("td");
+        tmp = this.ToggleSwitch(this.ShowExtIDFlag);
+        let extid_toggle_switch = tmp[0];
+        let extid_selected = tmp[1];
+        td2.appendChild(extid_toggle_switch);
+
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+
+        if (["PubChemCID","GlyConnect"].includes(thisLib.restriction)) {
             option_table.appendChild(tr);
         }
 
@@ -2495,7 +2571,10 @@ function GNOmeBrowserBase (DIVID) {
             thisLib.CloseAlert();
 
             let refresh = false;
-            if (sym_selected() != thisLib.ShowSynonymFlag){
+            if (sym_selected() != thisLib.ShowByonicFlag){
+                refresh = true;
+            }
+            if (extid_selected() != thisLib.ShowExtIDFlag){
                 refresh = true;
             }
             if (score_selected() != thisLib.ShowScoreFlag){
@@ -2507,7 +2586,8 @@ function GNOmeBrowserBase (DIVID) {
             if (restr_selected() != thisLib.ShowRestrictionFlag){
                 refresh = true;
             }
-            thisLib.SetShowSynonymFlag(sym_selected());
+            thisLib.SetShowByonicFlag(sym_selected());
+            thisLib.SetShowExtIDFlag(extid_selected());
             thisLib.SetShowScoreFlag(score_selected());
             thisLib.SetShowArchetypeFlag(arch_selected());
             thisLib.SetShowRestrictionFlag(restr_selected());
@@ -2611,7 +2691,7 @@ function GNOmeBrowserBase (DIVID) {
 
 
         let SpinningCircle = document.createElement("img");
-        SpinningCircle.src = "https://gnome.glyomics.org/JS/loader.gif"
+        SpinningCircle.src = "JS/loader.gif"
         SpinningCircle.style = "width: 200px; height: 200px; align: center; padding: 40px 0 0 100px";
 
         let words = document.createElement("p");
@@ -2929,13 +3009,15 @@ function GNOmeBrowserBase (DIVID) {
         SubButton.onclick = function () {
             thisLib.CompositionChange(IUPACSym, -1);
             thisLib.RefreshUI();
+            thisLib.hideBanner();
         };
 
         g = !this.AddFlag()[IUPACSym];
         let AddButton = this.CreateAddAndSubButton(true, g);
         AddButton.onclick = function () {
             thisLib.CompositionChange(IUPACSym, 1);
-            thisLib.RefreshUI()
+            thisLib.RefreshUI();
+            thisLib.hideBanner();
         };
 
         this.ContainerScreenAPartA.appendChild(SubButton);
@@ -3127,19 +3209,11 @@ function GNOmeBrowserBase (DIVID) {
     }
 
     this.findByonicSynonym = function (gtcid){
+        return this.ToByonic[gtcid];
+    }
 
-        for (let sym0 of Object.keys(this.Synonym)){
-            if (this.Synonym[sym0] == gtcid){
-
-                if (sym0.includes("(")){
-                    // Well, determine whether this synonym is byonic
-                    return sym0
-                }
-
-            }
-        }
-
-        return undefined
+    this.findExtIDSynonym = function (gtcid){
+        return this.ToExtID[gtcid];
     }
 
     this.CreateGlycanFigure = function (gtcid) {
@@ -3160,19 +3234,31 @@ function GNOmeBrowserBase (DIVID) {
             thisLib.SetToScreenB();
             thisLib.UpdateHighlightGlycansFlag = false;
             thisLib.UpdateMonoFreqFlag = false;
+            thisLib.hideBanner();
             thisLib.RefreshUI();
         };
         let caption = document.createElement("figcaption");
         caption.innerHTML = gtcid;
+        if (this.restriction && this.ShowRestrictionFlag && this.SubsumptionData[gtcid] !== undefined) {
+            if (this.SubsumptionData[gtcid].InRestriction) {
+                caption.innerHTML += "*";
+            }
+        }
 
         if (false && this.ShowArchetypeFlag) {
             caption.innerHTML += "&nbsp;[A]";
         }
 
         let sym = this.findByonicSynonym(gtcid);
-        if (sym && this.ShowSynonymFlag){
-            caption.innerHTML += "<br>" + sym;
+        if (sym && this.ShowByonicFlag){
+            caption.innerHTML += "<br>" + sym[0];
         }
+
+        sym = this.findExtIDSynonym(gtcid);
+        if (sym && this.ShowExtIDFlag){
+            caption.innerHTML += "<br>" + sym[0];
+        }
+
         if (this.ShowScoreFlag){
             caption.innerHTML += "<br>" + this.SubsumptionData[gtcid].score;
         }
@@ -3472,8 +3558,13 @@ function GNOmeBrowserBase (DIVID) {
             }
 
             let sym = this.findByonicSynonym(n)
-            if (sym && this.ShowSynonymFlag){
-                label += "\n" + sym;
+            if (sym && this.ShowByonicFlag){
+                label += "\n" + sym[0];
+            }
+
+            sym = this.findExtIDSynonym(n)
+            if (sym && this.ShowExtIDFlag){
+                label += "\n" + sym[0];
             }
 
             if (this.ShowScoreFlag && this.SubsumptionData[n] !== undefined){
@@ -3778,9 +3869,14 @@ function GNOmeBrowserBase (DIVID) {
         this.SetCookie("ShowRestrictionFlag", f, 7)
     }
 
-    this.SetShowSynonymFlag = function (f){
-        this.ShowSynonymFlag = f;
-        this.SetCookie("ShowSynonymFlag", f, 7)
+    this.SetShowByonicFlag = function (f){
+        this.ShowByonicFlag = f;
+        this.SetCookie("ShowByonicFlag", f, 7)
+    }
+
+    this.SetShowExtIDFlag = function (f){
+        this.ShowExtIDFlag = f;
+        this.SetCookie("ShowExtIDFlag", f, 7)
     }
 
     this.GlyTouCanAccessionRegex = function (acc) {
@@ -3808,10 +3904,8 @@ function GNOmeBrowserBase (DIVID) {
         res.ScreenATitle = this.ScreenATitle;
         res.ScreenBTitle = this.ScreenBTitle;
 
-        return JSON.parse(JSON.stringify(res))
-    }
-
-
+        return JSON.parse(JSON.stringify(res));
+    };
 
 }
 
@@ -3899,6 +3993,12 @@ function GNOmeStructureBrowser (DIVID) {
             if (syms !== undefined){
                 for (let sym of syms){
                     this.Synonym[sym] = acc;
+                    if (sym.indexOf('(') > -1) {
+                        if (this.ToByonic[acc] === undefined) {
+                            this.ToByonic[acc] = [];
+                        }
+                        this.ToByonic[acc].push(sym);
+                    }
                 }
             }
 
@@ -4077,6 +4177,12 @@ function GNOmeCompositionBrowser(DIVID) {
             if (syms !== undefined){
                 for (let sym of syms){
                     this.Synonym[sym] = acc;
+                    if (sym.indexOf('(') > -1) {
+                        if (this.ToByonic[acc] === undefined) {
+                            this.ToByonic[acc] = [];
+                        }
+                        this.ToByonic[acc].push(sym);
+                    }
                 }
             }
 

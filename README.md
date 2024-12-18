@@ -28,6 +28,7 @@ Deep-linking is also supported, to jump to a specific GlyTouCan acccession: [G62
   * [GlyGen](http://glygen.org) O-linked [GlycoTree](https://sandbox.glyomics.org/) Glycans: [Structure Browser](https://gnome.glyomics.org/restrictions/GlycoTree_OGlycans.StructureBrowser.html), [Composition Browser](https://gnome.glyomics.org/restrictions/GlycoTree_OGlycans.CompositionBrowser.html).
 * [GlyCosmos](https://glycosmos.org/glycans/index): [Structure Browser](https://gnome.glyomics.org/restrictions/GlyCosmos.StructureBrowser.html), [Composition Browser](https://gnome.glyomics.org/restrictions/GlyCosmos.CompositionBrowser.html).
 * [PubChem Compounds](https://pubchem.ncbi.nlm.nih.gov/): [Structure Browser](https://gnome.glyomics.org/restrictions/PubChemCID.StructureBrowser.html), [Composition Browser](https://gnome.glyomics.org/restrictions/PubChemCID.CompositionBrowser.html).
+* [GlyConnect Structures](https://glyconnect.expasy.org/): [Structure Browser](https://gnome.glyomics.org/restrictions/GlyConnect.StructureBrowser.html), [Composition Browser](https://gnome.glyomics.org/restrictions/GlyConnect.CompositionBrowser.html).
 * [BCSDB](http://csdb.glycoscience.ru/bacterial/): [Structure Browser](https://gnome.glyomics.org/restrictions/BCSDB.StructureBrowser.html), [Composition Browser](https://gnome.glyomics.org/restrictions/BCSDB.CompositionBrowser.html).
 
 ## Semantic Names
