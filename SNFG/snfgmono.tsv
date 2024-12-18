@@ -7,7 +7,7 @@ Alt	L-Altrose	10219674	G98187HG	"WURCS=2.0/1,1,0/[a2111h-1x_1-5]/1/"	Pink	5	Fill
 All	D-Allose	439507	G74407MX	"WURCS=2.0/1,1,0/[a2222h-1x_1-5]/1/"	Purple	6	Filled Circle	1	6	180.06	x-dall-HEX-1:5
 Tal	D-Talose	441035	G05946XD	"WURCS=2.0/1,1,0/[a1112h-1x_1-5]/1/"	Light Blue	7	Filled Circle	1	7	180.06	x-dtal-HEX-1:5
 Ido	L-Idose	11030410	G44782GU	"WURCS=2.0/1,1,0/[a2121h-1x_1-5]/1/"	Brown	8	Filled Circle	1	8	180.06	x-lido-HEX-1:5
-Hex	Hexose	206	G38776RF	"WURCS=2.0/1,1,0/[axxxxh-1x_1-5]/1/"	White	10	Filled Circle	1	9	180.06	x-HEX-1:5	
+Hex	Hexose	206	G38776RF	"WURCS=2.0/1,1,0/[axxxxh-1x_1-5]/1/"	White	10	Filled Circle	1	9	180.06	x-HEX-1:5
 Hex	Hexose	206	G81399MY	"WURCS=2.0/1,1,0/[uxxxxh]/1/"	White	10	Filled Circle	1	10	180.06	x-HEX-x:x
 GlcNAc	N-Acetyl-D-Glucosamine	439174	G64581RP	"WURCS=2.0/1,1,0/[a2122h-1x_1-5_2*NCC/3=O]/1/"	Blue	1	Filled Square	2	11	221.09	x-dglc-HEX-1:5||(2d:1)n-acetyl
 ManNAc	N-Acetyl-D-Mannosamine	439281	G29494LA	"WURCS=2.0/1,1,0/[a1122h-1x_1-5_2*NCC/3=O]/1/"	Green	2	Filled Square	2	12	221.09	x-dman-HEX-1:5||(2d:1)n-acetyl
