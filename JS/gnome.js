@@ -3770,7 +3770,7 @@ function GNOmeBrowserBase (DIVID) {
         let s = sin.trim();
         let comp = {};
 
-        let re1 = /^((Hex|HexNAc|dHex|Fuc|NeuAc|NeuGc|Pent|Sulpho|Phospho)(\(?(\d+)\)?)?\s*)/;
+        let re1 = /^((Hex|Man|Gal|Glc|HexNAc|GalNAc|GlcNAc|dHex|Fuc|NeuAc|NeuGc|Pent|Xyl|Sulpho|Phospho)(\(?(\d+)\)?)?\s*)/;
         let re2 = /^((H|N|F|S|G|P)(\d+)?\s*)/;
         let maxsymlen = 0;
         let usem1m2 = 0;
@@ -3809,7 +3809,7 @@ function GNOmeBrowserBase (DIVID) {
             comp['Phospho'] = comp['P'];
         }
         let compstr = "";
-        for (let sym of ["HexNAc","Hex","Fuc","dHex","NeuAc","NeuGc","Pent","Sulpho","Phospho"]) {
+        for (let sym of ["HexNAc","GalNAc","GlcNAc","Hex","Man","Gal","Glc","Fuc","dHex","NeuAc","NeuGc","Pent","Xyl","Sulpho","Phospho"]) {
             if (comp[sym] !== undefined && comp[sym] > 0) {
                 compstr = compstr + sym + "(" + comp[sym] + ")";
             }
