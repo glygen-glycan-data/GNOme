@@ -3784,7 +3784,7 @@ function GNOmeBrowserBase (DIVID) {
                 }
             }
             if (!sym) {
-                return sin;
+                return {'comp': undefined, 'compstr': undefined};
             } 
             s = s.substring(sym.length);
             let m = s.match(/^(\(?(\d+)\)?)/);
@@ -3808,34 +3808,43 @@ function GNOmeBrowserBase (DIVID) {
             comp['Sulpho'] = comp['S'];
             comp['Phospho'] = comp['P'];
         }
-	comp = this.FixAnyHexCount(comp);
         let compstr = "";
         for (let sym of ["HexNAc","GalNAc","GlcNAc","Hex","Man","Gal","Glc","Fuc","dHex","NeuAc","NeuGc","Pent","Xyl","Sulpho","Phospho"]) {
             if (comp[sym] !== undefined && comp[sym] > 0) {
                 compstr = compstr + sym + "(" + comp[sym] + ")";
             }
         }
-        return compstr;
+        let result = {}
+        result.comp = comp;
+        result.compstr = compstr;
+        return result;
     }
 
     this.SetFocus = function (d) {
         let s = d.trim();
+        let normcompstr = this.normalizeCompStr(s).compstr;
+        let comp = this.normalizeCompStr(s).comp;
         let acc = s;
 
         if (this.GlyTouCanAccessionRegex(acc)){
             acc = acc.toUpperCase();
         } else if (this.Synonym[s] !== undefined) {
             acc = this.Synonym[s];
-        } else if (this.Synonym[this.normalizeCompStr(s)] !== undefined) {
-            acc = this.Synonym[this.normalizeCompStr(s)];
+        } else if (this.Synonym[normcompstr] !== undefined) {
+            acc = this.Synonym[normcompstr];
         }
         if (this.SubsumptionData[acc] !== undefined) {
             this.SetToScreenB();
             this.SetFocusAccession(acc);
         }
         else if (this.IUPACCompositionData[acc] !== undefined) {
-            this.SetToScreenA();
             this.ItemCount = JSON.parse(JSON.stringify(this.IUPACCompositionData[acc]))
+            this.SetToScreenA();
+        }
+        else if (comp !== undefined) {
+            let cnts = this.FixAnyHexCount(this.normalizeCompStr(s).comp);
+            this.SetItemCount(cnts);
+            this.SetToScreenA();
         }
         else{
             let msg = '<br><br><br>';
