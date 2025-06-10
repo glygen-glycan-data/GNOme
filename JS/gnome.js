@@ -3808,6 +3808,7 @@ function GNOmeBrowserBase (DIVID) {
             comp['Sulpho'] = comp['S'];
             comp['Phospho'] = comp['P'];
         }
+	comp = this.FixAnyHexCount(comp);
         let compstr = "";
         for (let sym of ["HexNAc","GalNAc","GlcNAc","Hex","Man","Gal","Glc","Fuc","dHex","NeuAc","NeuGc","Pent","Xyl","Sulpho","Phospho"]) {
             if (comp[sym] !== undefined && comp[sym] > 0) {
