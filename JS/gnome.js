@@ -3777,7 +3777,7 @@ function GNOmeBrowserBase (DIVID) {
         while (s.length > 0) {
             let sym = null;
             let num = 1;
-            for (let symi of ["HexNAc","Hex","dHex","Fuc","NeuAc","NeuGc","Pent","Sulpho","Phospho","H","N","F","S","G","P"]) {
+            for (let symi of ["HexNAc","GlcNAc","GalNAc","Hex","Glc","Gal","Man","dHex","Fuc","NeuAc","NeuGc","Pent","Xyl","Sulpho","Phospho","H","N","F","S","G","P"]) {
                 if (s.startsWith(symi)) {
                     sym = symi;
                     break;
@@ -3790,9 +3790,9 @@ function GNOmeBrowserBase (DIVID) {
             let m = s.match(/^(\(?(\d+)\)?)/);
             if (m) {
                 num = parseInt(m[2]);
-            } 
-            s = s.substring(m[1].length);
-            comp[sym] = num;
+                s = s.substring(m[1].length);
+	    } 
+	    comp[sym] = num;
             if (sym.length > maxsymlen) {
                 maxsymlen = sym.length;
             } 
