@@ -794,6 +794,19 @@
     "level": "topology",
     "score": 1860
   },
+  "G00387BU": {
+    "children": [
+      "G02747VH"
+    ],
+    "count": {
+      "Gal": 1,
+      "GalNAc": 1,
+      "Hex": 1,
+      "HexNAc": 1
+    },
+    "level": "saccharide",
+    "score": 492
+  },
   "G00388FS": {
     "archetype": "G79343TP",
     "count": {
@@ -4310,6 +4323,8 @@
   },
   "G02653CW": {
     "children": [
+      "G22104MB",
+      "G40652SR",
       "G51445EM"
     ],
     "count": {
@@ -4659,6 +4674,19 @@
     },
     "level": "topology",
     "score": 1969
+  },
+  "G02937FA": {
+    "children": [
+      "G32397EL"
+    ],
+    "count": {
+      "Gal": 1,
+      "GalNAc": 2,
+      "Hex": 1,
+      "HexNAc": 2
+    },
+    "level": "saccharide",
+    "score": 492
   },
   "G02942YF": {
     "archetype": "G83754KL",
@@ -8452,6 +8480,21 @@
     "level": "saccharide",
     "score": 0
   },
+  "G05543BI": {
+    "archetype": "G08892TX",
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 2,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G05545HU": {
     "archetype": "G05545HU",
     "children": [
@@ -9496,6 +9539,21 @@
     "level": "topology",
     "score": 1994
   },
+  "G06233HK": {
+    "children": [
+      "G74960IM"
+    ],
+    "count": {
+      "Fuc": 1,
+      "Gal": 1,
+      "GalNAc": 2,
+      "Hex": 1,
+      "HexNAc": 2,
+      "dHex": 1
+    },
+    "level": "saccharide",
+    "score": 492
+  },
   "G06242TR": {
     "archetype": "G48501BN",
     "children": [
@@ -9610,7 +9668,8 @@
   "G06366AC": {
     "archetype": "G70074GW",
     "children": [
-      "G04527KW"
+      "G04527KW",
+      "G33350UC"
     ],
     "count": {
       "Gal": 2,
@@ -10395,7 +10454,8 @@
   "G06843SA": {
     "archetype": "G72434SG",
     "children": [
-      "G01488BS"
+      "G01488BS",
+      "G24107UV"
     ],
     "count": {
       "Fuc": 1,
@@ -10626,6 +10686,22 @@
     "level": "topology",
     "score": 4554
   },
+  "G07014IX": {
+    "children": [
+      "G86199GK"
+    ],
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 2,
+      "NeuAc": 1,
+      "Sia": 1
+    },
+    "level": "saccharide",
+    "score": 984
+  },
   "G07025FE": {
     "archetype": "G58699XL",
     "children": [
@@ -10730,6 +10806,10 @@
   },
   "G07100CS": {
     "archetype": "G52166JE",
+    "children": [
+      "G38838BG",
+      "G90615MJ"
+    ],
     "count": {
       "Fuc": 1,
       "Gal": 2,
@@ -15218,7 +15298,8 @@
       "G06275FY",
       "G13178PD",
       "G15010LB",
-      "G31975LN"
+      "G31975LN",
+      "G77194JD"
     ],
     "count": {
       "Fuc": 1,
@@ -16204,7 +16285,8 @@
   "G11198HA": {
     "archetype": "G14188TW",
     "children": [
-      "G39890DX"
+      "G39890DX",
+      "G76247UK"
     ],
     "count": {
       "Gal": 2,
@@ -16891,6 +16973,19 @@
     },
     "level": "composition",
     "score": 8030
+  },
+  "G11589YK": {
+    "archetype": "G71222KY",
+    "count": {
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "HexNAc": 2,
+      "NeuAc": 1,
+      "Sia": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G11647UD": {
     "archetype": "G16527XF",
@@ -18372,6 +18467,22 @@
     "level": "topology",
     "score": 4136
   },
+  "G12893IS": {
+    "archetype": "G77194JD",
+    "count": {
+      "Fuc": 1,
+      "Gal": 1,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 1,
+      "HexNAc": 2,
+      "S": 1,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G12900GB": {
     "archetype": "G80565QS",
     "count": {
@@ -18380,6 +18491,20 @@
       "Hex": 2,
       "HexNAc": 2,
       "NeuAc": 1,
+      "Sia": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
+  "G12902SM": {
+    "archetype": "G38229RW",
+    "count": {
+      "Gal": 1,
+      "GalNAc": 1,
+      "Hex": 1,
+      "HexNAc": 1,
+      "NeuGc": 1,
       "Sia": 1
     },
     "inrestriction": true,
@@ -18483,6 +18608,22 @@
     },
     "level": "basecomposition",
     "score": 10000
+  },
+  "G13074CJ": {
+    "archetype": "G37614SE",
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 1,
+      "Hex": 2,
+      "HexNAc": 1,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G13095SJ": {
     "archetype": "G13095SJ",
@@ -19903,6 +20044,7 @@
   "G13890JV": {
     "archetype": "G07982LO",
     "children": [
+      "G26629OM",
       "G32910OR"
     ],
     "count": {
@@ -20613,6 +20755,7 @@
     "archetype": "G14375KO",
     "children": [
       "G02078ZZ",
+      "G74702CZ",
       "G81825YE"
     ],
     "count": {
@@ -22182,7 +22325,8 @@
   "G15249CA": {
     "archetype": "G31087MR",
     "children": [
-      "G37239FO"
+      "G37239FO",
+      "G95889EP"
     ],
     "count": {
       "Fuc": 2,
@@ -22466,6 +22610,8 @@
   "G15562AE": {
     "archetype": "G49112ZN",
     "children": [
+      "G17012LI",
+      "G18898JN",
       "G47060VP",
       "G82576YO"
     ],
@@ -23232,6 +23378,19 @@
     },
     "level": "saccharide",
     "score": 738
+  },
+  "G16040DE": {
+    "children": [
+      "G60729FR"
+    ],
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "Hex": 2,
+      "HexNAc": 1
+    },
+    "level": "saccharide",
+    "score": 492
   },
   "G16040ZU": {
     "archetype": "G16040ZU",
@@ -24610,6 +24769,20 @@
     "level": "saccharide",
     "score": 0
   },
+  "G17012LI": {
+    "archetype": "G49112ZN",
+    "children": [
+      "G85196CF",
+      "G85357CZ"
+    ],
+    "count": {
+      "Fuc": 1,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 492
+  },
   "G17024OR": {
     "archetype": "G05384EB",
     "count": {
@@ -25119,6 +25292,20 @@
     "level": "saccharide",
     "score": 164
   },
+  "G17318DR": {
+    "children": [
+      "G55055JS"
+    ],
+    "count": {
+      "Gal": 1,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 1,
+      "HexNAc": 2
+    },
+    "level": "saccharide",
+    "score": 492
+  },
   "G17320JG": {
     "children": [
       "G18815VY",
@@ -25621,6 +25808,7 @@
     "children": [
       "G04074KJ",
       "G41330YY",
+      "G78482II",
       "G90746ZG",
       "G93828IC"
     ],
@@ -27351,6 +27539,20 @@
     "level": "saccharide",
     "score": 328
   },
+  "G18898JN": {
+    "archetype": "G49112ZN",
+    "children": [
+      "G42917OE",
+      "G96881BQ"
+    ],
+    "count": {
+      "Fuc": 1,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 492
+  },
   "G18904HJ": {
     "archetype": "G26332EL",
     "children": [
@@ -28057,6 +28259,18 @@
     },
     "level": "topology",
     "score": 1829
+  },
+  "G19454WY": {
+    "archetype": "G56498UL",
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "Hex": 2,
+      "HexNAc": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G19474IX": {
     "children": [
@@ -28920,6 +29134,23 @@
     },
     "level": "saccharide",
     "score": 1280
+  },
+  "G20169US": {
+    "archetype": "G75500ME",
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 2,
+      "Hex": 2,
+      "HexNAc": 3,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G20174EZ": {
     "children": [
@@ -31514,6 +31745,20 @@
     "level": "topology",
     "score": 1880
   },
+  "G22104MB": {
+    "children": [
+      "G04522ZB"
+    ],
+    "count": {
+      "Gal": 1,
+      "GalNAc": 1,
+      "Glc": 1,
+      "Hex": 2,
+      "HexNAc": 1
+    },
+    "level": "saccharide",
+    "score": 492
+  },
   "G22130CJ": {
     "archetype": "G47421TD",
     "count": {
@@ -33854,7 +34099,8 @@
   "G23652VU": {
     "archetype": "G00044MO",
     "children": [
-      "G00043MO"
+      "G00043MO",
+      "G73941VE"
     ],
     "count": {
       "GalNAc": 2,
@@ -34235,6 +34481,23 @@
     },
     "level": "saccharide",
     "score": 1887
+  },
+  "G24107UV": {
+    "archetype": "G33166CK",
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 2,
+      "Hex": 2,
+      "HexNAc": 3,
+      "NeuAc": 2,
+      "Sia": 2,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G24108KP": {
     "archetype": "G24108KP",
@@ -35271,6 +35534,21 @@
     "level": "saccharide",
     "score": 2708
   },
+  "G24646NC": {
+    "archetype": "G74975UG",
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 2,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G24649MY": {
     "archetype": "G65808UZ",
     "children": [
@@ -36202,6 +36480,24 @@
     "level": "topology",
     "score": 1805
   },
+  "G25339LR": {
+    "children": [
+      "G38838BG"
+    ],
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 2,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 3,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 1
+    },
+    "level": "saccharide",
+    "score": 1219
+  },
   "G25340RJ": {
     "archetype": "G49128NT",
     "children": [
@@ -36417,7 +36713,8 @@
   "G25421NH": {
     "archetype": "G07360NF",
     "children": [
-      "G21412CQ"
+      "G21412CQ",
+      "G66788MF"
     ],
     "count": {
       "Gal": 1,
@@ -36851,6 +37148,22 @@
     "level": "saccharide",
     "score": 164
   },
+  "G25709GM": {
+    "children": [
+      "G15178AV",
+      "G52887ZR"
+    ],
+    "count": {
+      "Gal": 1,
+      "GalNAc": 1,
+      "Hex": 1,
+      "HexNAc": 1,
+      "NeuAc": 1,
+      "Sia": 1
+    },
+    "level": "saccharide",
+    "score": 984
+  },
   "G25716MV": {
     "archetype": "G25716MV",
     "children": [
@@ -37245,7 +37558,8 @@
   "G25937FN": {
     "archetype": "G74975UG",
     "children": [
-      "G12396GB"
+      "G12396GB",
+      "G24646NC"
     ],
     "count": {
       "Fuc": 1,
@@ -37529,7 +37843,8 @@
   "G26099QT": {
     "archetype": "G30431XW",
     "children": [
-      "G01457KB"
+      "G01457KB",
+      "G76974OT"
     ],
     "count": {
       "Gal": 1,
@@ -37547,7 +37862,9 @@
   "G26162MM": {
     "children": [
       "G02404UN",
+      "G02937FA",
       "G34641KA",
+      "G91965NG",
       "G95994QZ"
     ],
     "count": {
@@ -38316,6 +38633,19 @@
     },
     "level": "topology",
     "score": 1829
+  },
+  "G26629OM": {
+    "archetype": "G07982LO",
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 2,
+      "Hex": 2,
+      "HexNAc": 3
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G26651YZ": {
     "archetype": "G83920DK",
@@ -41648,6 +41978,7 @@
   "G28960YA": {
     "archetype": "G85977BN",
     "children": [
+      "G47058RI",
       "G81016SV"
     ],
     "count": {
@@ -42462,6 +42793,18 @@
       "NeuAc": 1,
       "Sia": 1,
       "dHex": 2
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
+  "G29546CR": {
+    "archetype": "G05384EB",
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "Hex": 2,
+      "HexNAc": 1
     },
     "inrestriction": true,
     "level": "saccharide",
@@ -45565,6 +45908,24 @@
     "level": "topology",
     "score": 1969
   },
+  "G32021YB": {
+    "children": [
+      "G07014IX",
+      "G21227CT",
+      "G36231CI"
+    ],
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 2,
+      "NeuAc": 1,
+      "Sia": 1
+    },
+    "level": "saccharide",
+    "score": 1231
+  },
   "G32026LV": {
     "archetype": "G20988ZU",
     "children": [
@@ -46396,6 +46757,7 @@
   "G32588AA": {
     "archetype": "G78293EI",
     "children": [
+      "G66055IE",
       "G96066HD"
     ],
     "count": {
@@ -47204,6 +47566,7 @@
     "archetype": "G33166CK",
     "children": [
       "G01488BS",
+      "G24107UV",
       "G40981ZJ"
     ],
     "count": {
@@ -47376,6 +47739,23 @@
     "level": "saccharide",
     "score": 246
   },
+  "G33350UC": {
+    "archetype": "G70074GW",
+    "children": [
+      "G83434MW"
+    ],
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 2,
+      "Hex": 2,
+      "HexNAc": 3,
+      "NeuAc": 1,
+      "Sia": 1
+    },
+    "level": "saccharide",
+    "score": 361
+  },
   "G33368AN": {
     "archetype": "G33368AN",
     "children": [
@@ -47532,6 +47912,24 @@
     "inrestriction": true,
     "level": "saccharide",
     "score": 0
+  },
+  "G33545WT": {
+    "children": [
+      "G57161TY"
+    ],
+    "count": {
+      "Fuc": 2,
+      "Gal": 3,
+      "GalNAc": 2,
+      "GlcNAc": 3,
+      "Hex": 3,
+      "HexNAc": 5,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 2
+    },
+    "level": "saccharide",
+    "score": 188
   },
   "G33569OU": {
     "archetype": "G33569OU",
@@ -47733,7 +48131,8 @@
   "G33696UB": {
     "archetype": "G03852KN",
     "children": [
-      "G20059NZ"
+      "G20059NZ",
+      "G82393KC"
     ],
     "count": {
       "Fuc": 1,
@@ -48791,6 +49190,19 @@
     },
     "level": "saccharide",
     "score": 765
+  },
+  "G34592BE": {
+    "archetype": "G88815IR",
+    "count": {
+      "Gal": 1,
+      "GalNAc": 1,
+      "GlcNAc": 2,
+      "Hex": 1,
+      "HexNAc": 3
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G34596BP": {
     "children": [
@@ -50302,6 +50714,20 @@
     "level": "saccharide",
     "score": 0
   },
+  "G35539BB": {
+    "children": [
+      "G42051BB"
+    ],
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "Glc": 1,
+      "Hex": 3,
+      "HexNAc": 1
+    },
+    "level": "saccharide",
+    "score": 492
+  },
   "G35549NN": {
     "archetype": "G35549NN",
     "children": [
@@ -50590,7 +51016,7 @@
     "archetype": "G12510ID",
     "children": [
       "G04490OD",
-      "G71121NN"
+      "G84917IA"
     ],
     "count": {
       "Fuc": 1,
@@ -51787,6 +52213,23 @@
     "level": "saccharide",
     "score": 246
   },
+  "G36443XA": {
+    "archetype": "G45718WR",
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 2,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G36453XQ": {
     "archetype": "G36453XQ",
     "children": [
@@ -52098,6 +52541,21 @@
     "level": "saccharide",
     "score": 196
   },
+  "G36672CQ": {
+    "archetype": "G20835CN",
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 2,
+      "GlcNAc": 2,
+      "Hex": 2,
+      "HexNAc": 4,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G36674QY": {
     "archetype": "G55205VX",
     "count": {
@@ -52133,6 +52591,8 @@
   },
   "G36694YR": {
     "children": [
+      "G06233HK",
+      "G41835FB",
       "G49794AK",
       "G50631BD"
     ],
@@ -52315,7 +52775,8 @@
   "G36983SB": {
     "archetype": "G56186MJ",
     "children": [
-      "G59155GF"
+      "G59155GF",
+      "G70539LS"
     ],
     "count": {
       "Fuc": 1,
@@ -52994,6 +53455,27 @@
     "level": "topology",
     "score": 1829
   },
+  "G37382VX": {
+    "archetype": "G37382VX",
+    "children": [
+      "G57161TY",
+      "G87175JX"
+    ],
+    "count": {
+      "Fuc": 2,
+      "Gal": 3,
+      "GalNAc": 2,
+      "GlcNAc": 3,
+      "Hex": 3,
+      "HexNAc": 5,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 2
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 179
+  },
   "G37416IO": {
     "archetype": "G37416IO",
     "children": [
@@ -53178,6 +53660,7 @@
   "G37614SE": {
     "archetype": "G37614SE",
     "children": [
+      "G13074CJ",
       "G73314OH"
     ],
     "count": {
@@ -53430,7 +53913,8 @@
   "G37836EO": {
     "archetype": "G89798LS",
     "children": [
-      "G79544NP"
+      "G79544NP",
+      "G85192RG"
     ],
     "count": {
       "Fuc": 1,
@@ -54185,6 +54669,7 @@
   "G38450KX": {
     "archetype": "G14524OA",
     "children": [
+      "G79562FE",
       "G84818UM",
       "G97227KS"
     ],
@@ -54796,6 +55281,7 @@
   "G38802WX": {
     "archetype": "G88815IR",
     "children": [
+      "G34592BE",
       "G75032PM"
     ],
     "count": {
@@ -54841,6 +55327,23 @@
     },
     "level": "saccharide",
     "score": 1119
+  },
+  "G38838BG": {
+    "archetype": "G52166JE",
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 2,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 3,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G38844QV": {
     "count": {
@@ -55119,6 +55622,21 @@
     },
     "level": "topology",
     "score": 1641
+  },
+  "G39037TZ": {
+    "archetype": "G39037TZ",
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 2,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 3,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 328
   },
   "G39070AV": {
     "archetype": "G39963CO",
@@ -56329,6 +56847,21 @@
     "level": "saccharide",
     "score": 140
   },
+  "G39952OA": {
+    "children": [
+      "G32948PW"
+    ],
+    "count": {
+      "Gal": 1,
+      "GalNAc": 1,
+      "Hex": 1,
+      "HexNAc": 1,
+      "NeuAc": 3,
+      "Sia": 3
+    },
+    "level": "saccharide",
+    "score": 1231
+  },
   "G39963CO": {
     "archetype": "G39963CO",
     "children": [
@@ -56418,6 +56951,19 @@
     },
     "level": "topology",
     "score": 1829
+  },
+  "G40067QO": {
+    "archetype": "G06171MB",
+    "count": {
+      "Gal": 2,
+      "GlcNAc": 2,
+      "Hex": 3,
+      "HexNAc": 2,
+      "Man": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G40069TO": {
     "archetype": "G40069TO",
@@ -57145,6 +57691,7 @@
   "G40589UV": {
     "archetype": "G40589UV",
     "children": [
+      "G00387BU",
       "G01567JL",
       "G14660IB",
       "G79323CW"
@@ -57219,6 +57766,20 @@
     },
     "level": "topology",
     "score": 4021
+  },
+  "G40652SR": {
+    "children": [
+      "G75168BA"
+    ],
+    "count": {
+      "Gal": 1,
+      "GalNAc": 1,
+      "Glc": 1,
+      "Hex": 2,
+      "HexNAc": 1
+    },
+    "level": "saccharide",
+    "score": 492
   },
   "G40654FB": {
     "archetype": "G81399MY",
@@ -58853,6 +59414,21 @@
     },
     "level": "saccharide",
     "score": 564
+  },
+  "G41835FB": {
+    "children": [
+      "G62243CB"
+    ],
+    "count": {
+      "Fuc": 1,
+      "Gal": 1,
+      "GalNAc": 2,
+      "Hex": 1,
+      "HexNAc": 2,
+      "dHex": 1
+    },
+    "level": "saccharide",
+    "score": 492
   },
   "G41836YE": {
     "archetype": "G07789RJ",
@@ -60878,6 +61454,7 @@
   "G43167FQ": {
     "archetype": "G75500ME",
     "children": [
+      "G20169US",
       "G60687DB"
     ],
     "count": {
@@ -65788,6 +66365,17 @@
     "level": "basecomposition",
     "score": 10000
   },
+  "G46887YC": {
+    "children": [
+      "G00039MO"
+    ],
+    "count": {
+      "GalNAc": 2,
+      "HexNAc": 2
+    },
+    "level": "saccharide",
+    "score": 492
+  },
   "G46890BI": {
     "archetype": "G46890BI",
     "children": [
@@ -65961,6 +66549,18 @@
     },
     "level": "composition",
     "score": 7636
+  },
+  "G47058RI": {
+    "archetype": "G85977BN",
+    "count": {
+      "GalNAc": 2,
+      "HexNAc": 2,
+      "NeuAc": 1,
+      "Sia": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G47060VP": {
     "archetype": "G49112ZN",
@@ -69405,6 +70005,36 @@
     "level": "saccharide",
     "score": 328
   },
+  "G49398PG": {
+    "archetype": "G79323CW",
+    "children": [
+      "G23202WP",
+      "G50849VH"
+    ],
+    "count": {
+      "Gal": 1,
+      "GalNAc": 1,
+      "Hex": 1,
+      "HexNAc": 1
+    },
+    "level": "saccharide",
+    "score": 492
+  },
+  "G49418IP": {
+    "archetype": "G47772RH",
+    "count": {
+      "Fuc": 3,
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 2,
+      "dHex": 3
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G49424IS": {
     "archetype": "G54829JY",
     "children": [
@@ -69790,7 +70420,9 @@
     "archetype": "G39738WL",
     "children": [
       "G27025MB",
-      "G35438KN"
+      "G35438KN",
+      "G57055PH",
+      "G86164WK"
     ],
     "count": {
       "GalNAc": 1,
@@ -69859,6 +70491,7 @@
   "G49604IR": {
     "archetype": "G38229RW",
     "children": [
+      "G12902SM",
       "G64851ON"
     ],
     "count": {
@@ -70089,6 +70722,21 @@
     },
     "level": "composition",
     "score": 7702
+  },
+  "G49721KD": {
+    "archetype": "G64575OQ",
+    "count": {
+      "Gal": 2,
+      "GalNAc": 2,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 3,
+      "NeuAc": 1,
+      "Sia": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G49741NU": {
     "archetype": "G27854QS",
@@ -72594,7 +73242,8 @@
   "G51586EE": {
     "archetype": "G25499LZ",
     "children": [
-      "G25127JU"
+      "G25127JU",
+      "G97118EJ"
     ],
     "count": {
       "Gal": 3,
@@ -73025,8 +73674,8 @@
   "G51931HC": {
     "archetype": "G63083UK",
     "children": [
+      "G25709GM",
       "G48905NO",
-      "G52887ZR",
       "G85595RO"
     ],
     "count": {
@@ -73309,6 +73958,21 @@
       "Hex": 2,
       "HexNAc": 4,
       "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
+  "G52071EY": {
+    "archetype": "G16438UK",
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 2,
+      "NeuAc": 1,
+      "Sia": 1
     },
     "inrestriction": true,
     "level": "saccharide",
@@ -75352,6 +76016,7 @@
   },
   "G53509NM": {
     "children": [
+      "G35539BB",
       "G51633YN"
     ],
     "count": {
@@ -78945,6 +79610,7 @@
   "G55838UV": {
     "archetype": "G12696IX",
     "children": [
+      "G32021YB",
       "G76855CI",
       "G83476KH"
     ],
@@ -79627,6 +80293,7 @@
   "G56418NV": {
     "archetype": "G45718WR",
     "children": [
+      "G36443XA",
       "G80643JD"
     ],
     "count": {
@@ -79699,6 +80366,7 @@
   "G56498UL": {
     "archetype": "G56498UL",
     "children": [
+      "G19454WY",
       "G46026IB"
     ],
     "count": {
@@ -80277,6 +80945,20 @@
     "level": "topology",
     "score": 2215
   },
+  "G57055PH": {
+    "archetype": "G39738WL",
+    "children": [
+      "G61418DU",
+      "G91777ES"
+    ],
+    "count": {
+      "GalNAc": 1,
+      "HexNAc": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 492
+  },
   "G57061PX": {
     "archetype": "G57753FT",
     "children": [
@@ -80442,6 +81124,23 @@
       "HexNAc": 2,
       "NeuAc": 1,
       "Sia": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
+  "G57161TY": {
+    "archetype": "G37382VX",
+    "count": {
+      "Fuc": 2,
+      "Gal": 3,
+      "GalNAc": 2,
+      "GlcNAc": 3,
+      "Hex": 3,
+      "HexNAc": 5,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 2
     },
     "inrestriction": true,
     "level": "saccharide",
@@ -81045,6 +81744,7 @@
   },
   "G57729DA": {
     "children": [
+      "G17318DR",
       "G29323AG",
       "G51750BS",
       "G74989BK"
@@ -82191,7 +82891,8 @@
   "G58683GH": {
     "archetype": "G21564HN",
     "children": [
-      "G27893KR"
+      "G27893KR",
+      "G73209SM"
     ],
     "count": {
       "Fuc": 1,
@@ -82333,6 +83034,7 @@
   "G58793GF": {
     "archetype": "G16438UK",
     "children": [
+      "G52071EY",
       "G57144YM"
     ],
     "count": {
@@ -82450,7 +83152,9 @@
   },
   "G58852GK": {
     "children": [
-      "G43482PE"
+      "G43482PE",
+      "G46887YC",
+      "G99650PY"
     ],
     "count": {
       "GalNAc": 2,
@@ -83568,6 +84272,7 @@
   },
   "G59848RU": {
     "children": [
+      "G17318DR",
       "G39113GN",
       "G43592PN",
       "G68529CM",
@@ -83984,6 +84689,22 @@
       "NeuAc": 1,
       "Sia": 1,
       "aldi": 1,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
+  "G60190AL": {
+    "archetype": "G77194JD",
+    "count": {
+      "Fuc": 1,
+      "Gal": 1,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 1,
+      "HexNAc": 2,
+      "S": 1,
       "dHex": 1
     },
     "inrestriction": true,
@@ -85020,7 +85741,8 @@
   "G60949GI": {
     "archetype": "G19806ZW",
     "children": [
-      "G26596ON"
+      "G26596ON",
+      "G79301TW"
     ],
     "count": {
       "Gal": 2,
@@ -85577,6 +86299,19 @@
     "level": "saccharide",
     "score": 0
   },
+  "G61392DS": {
+    "children": [
+      "G90719NY"
+    ],
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "Hex": 2,
+      "HexNAc": 1
+    },
+    "level": "saccharide",
+    "score": 492
+  },
   "G61406KC": {
     "archetype": "G39738WL",
     "count": {
@@ -85898,6 +86633,23 @@
     },
     "level": "topology",
     "score": 1829
+  },
+  "G61788PW": {
+    "archetype": "G68733PD",
+    "count": {
+      "Fuc": 1,
+      "Gal": 1,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 1,
+      "HexNAc": 2,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G61809JE": {
     "archetype": "G94622EM",
@@ -88989,7 +89741,8 @@
   "G64208CW": {
     "archetype": "G06171MB",
     "children": [
-      "G16404NW"
+      "G16404NW",
+      "G40067QO"
     ],
     "count": {
       "Gal": 2,
@@ -90203,8 +90956,10 @@
   },
   "G65070RM": {
     "children": [
+      "G06233HK",
       "G12847GY",
       "G17497PZ",
+      "G41835FB",
       "G96783GY"
     ],
     "count": {
@@ -91565,6 +92320,21 @@
     "level": "saccharide",
     "score": 0
   },
+  "G66055IE": {
+    "archetype": "G78293EI",
+    "count": {
+      "Fuc": 1,
+      "Gal": 1,
+      "GalNAc": 2,
+      "GlcNAc": 1,
+      "Hex": 1,
+      "HexNAc": 3,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G66058VW": {
     "archetype": "G81464TV",
     "children": [
@@ -91809,6 +92579,22 @@
     "inrestriction": true,
     "level": "saccharide",
     "score": 492
+  },
+  "G66225EE": {
+    "children": [
+      "G80147HT"
+    ],
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 2,
+      "NeuAc": 1,
+      "Sia": 1
+    },
+    "level": "saccharide",
+    "score": 984
   },
   "G66231VJ": {
     "children": [
@@ -92078,6 +92864,7 @@
     "archetype": "G66421OE",
     "children": [
       "G04712IG",
+      "G78482II",
       "G93828IC"
     ],
     "count": {
@@ -92523,6 +93310,19 @@
     "level": "saccharide",
     "score": 0
   },
+  "G66788MF": {
+    "archetype": "G07360NF",
+    "count": {
+      "Gal": 1,
+      "GalNAc": 1,
+      "GlcNAc": 2,
+      "Hex": 1,
+      "HexNAc": 3
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G66828DB": {
     "count": {
       "Fuc": 1,
@@ -92552,6 +93352,19 @@
     "inrestriction": true,
     "level": "saccharide",
     "score": 0
+  },
+  "G66831KA": {
+    "archetype": "G14843DJ",
+    "children": [
+      "G49108TO"
+    ],
+    "count": {
+      "GlcNAc": 1,
+      "HexNAc": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 492
   },
   "G66835HJ": {
     "children": [
@@ -93376,7 +94189,9 @@
     "children": [
       "G29636OK",
       "G31613VR",
-      "G78267EY"
+      "G46887YC",
+      "G78267EY",
+      "G99650PY"
     ],
     "count": {
       "HexNAc": 2
@@ -94080,6 +94895,7 @@
   "G67893HC": {
     "archetype": "G67893HC",
     "children": [
+      "G39037TZ",
       "G79779MR",
       "G80738PE",
       "G87649DU"
@@ -94728,9 +95544,12 @@
   "G68199DI": {
     "archetype": "G22015OG",
     "children": [
+      "G00387BU",
       "G20015ZD",
       "G36124QZ",
-      "G67221IP"
+      "G49398PG",
+      "G67221IP",
+      "G90375IE"
     ],
     "count": {
       "Hex": 1,
@@ -96550,6 +97369,7 @@
     "archetype": "G75828CP",
     "children": [
       "G06661NE",
+      "G66225EE",
       "G73382HV",
       "G94971CC"
     ],
@@ -96654,6 +97474,21 @@
     },
     "level": "topology",
     "score": 1663
+  },
+  "G69555NF": {
+    "archetype": "G15253IZ",
+    "count": {
+      "Fuc": 2,
+      "Gal": 4,
+      "GalNAc": 1,
+      "GlcNAc": 2,
+      "Hex": 4,
+      "HexNAc": 3,
+      "dHex": 2
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G69558AD": {
     "archetype": "G27583IK",
@@ -98011,6 +98846,23 @@
     "level": "composition",
     "score": 7373
   },
+  "G70539LS": {
+    "archetype": "G56186MJ",
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 2,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G70555JJ": {
     "children": [
       "G56256KD"
@@ -98247,8 +99099,8 @@
   "G70649KP": {
     "archetype": "G51127XF",
     "children": [
-      "G04210UW",
-      "G66414OW"
+      "G66414OW",
+      "G75927LH"
     ],
     "count": {
       "Gal": 2,
@@ -98708,6 +99560,8 @@
   },
   "G71031QP": {
     "children": [
+      "G07014IX",
+      "G66225EE",
       "G68053UD",
       "G85633MF"
     ],
@@ -101082,7 +101936,8 @@
   "G72647JE": {
     "archetype": "G68733PD",
     "children": [
-      "G42545LJ"
+      "G42545LJ",
+      "G61788PW"
     ],
     "count": {
       "Fuc": 1,
@@ -101917,6 +102772,21 @@
     "level": "topology",
     "score": 2057
   },
+  "G73209SM": {
+    "archetype": "G21564HN",
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 2,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 3,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G73210RQ": {
     "children": [
       "G13918JY",
@@ -102585,6 +103455,19 @@
     "level": "saccharide",
     "score": 0
   },
+  "G73809WP": {
+    "children": [
+      "G03714XC"
+    ],
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "Hex": 2,
+      "HexNAc": 1
+    },
+    "level": "saccharide",
+    "score": 492
+  },
   "G73844QC": {
     "archetype": "G73844QC",
     "children": [
@@ -102687,8 +103570,8 @@
   "G73882WS": {
     "archetype": "G99752IF",
     "children": [
-      "G29014XV",
-      "G56418NV"
+      "G56418NV",
+      "G84663MB"
     ],
     "count": {
       "Fuc": 1,
@@ -102798,6 +103681,16 @@
     },
     "level": "topology",
     "score": 2040
+  },
+  "G73941VE": {
+    "archetype": "G00044MO",
+    "count": {
+      "GalNAc": 2,
+      "HexNAc": 2
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G73946JV": {
     "children": [
@@ -103785,6 +104678,21 @@
     "level": "saccharide",
     "score": 0
   },
+  "G74702CZ": {
+    "archetype": "G14375KO",
+    "count": {
+      "Fuc": 1,
+      "Gal": 3,
+      "GalNAc": 1,
+      "GlcNAc": 2,
+      "Hex": 3,
+      "HexNAc": 3,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G74714MV": {
     "archetype": "G93924RQ",
     "children": [
@@ -103981,6 +104889,7 @@
   "G74814JR": {
     "archetype": "G08892TX",
     "children": [
+      "G05543BI",
       "G43438SM"
     ],
     "count": {
@@ -105224,7 +106133,8 @@
   "G75599HG": {
     "archetype": "G47772RH",
     "children": [
-      "G21845NG"
+      "G21845NG",
+      "G49418IP"
     ],
     "count": {
       "Fuc": 3,
@@ -105295,7 +106205,8 @@
   "G75637RB": {
     "archetype": "G89990JE",
     "children": [
-      "G15631KB"
+      "G15631KB",
+      "G74702CZ"
     ],
     "count": {
       "Fuc": 1,
@@ -105802,6 +106713,23 @@
     "level": "saccharide",
     "score": 393
   },
+  "G75927LH": {
+    "children": [
+      "G04210UW",
+      "G38722VX"
+    ],
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 2,
+      "NeuAc": 2,
+      "Sia": 2
+    },
+    "level": "saccharide",
+    "score": 1181
+  },
   "G75953VR": {
     "children": [
       "G39596ID",
@@ -106065,6 +106993,19 @@
     },
     "level": "topology",
     "score": 1723
+  },
+  "G76247UK": {
+    "archetype": "G14188TW",
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 2,
+      "Hex": 2,
+      "HexNAc": 3
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G76299ZG": {
     "archetype": "G07061YF",
@@ -106885,6 +107826,21 @@
     "level": "saccharide",
     "score": 0
   },
+  "G76974OT": {
+    "archetype": "G30431XW",
+    "count": {
+      "Gal": 1,
+      "GalNAc": 1,
+      "GlcNAc": 2,
+      "Hex": 1,
+      "HexNAc": 3,
+      "NeuAc": 1,
+      "Sia": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G76986FH": {
     "archetype": "G39321UZ",
     "children": [
@@ -107115,6 +108071,26 @@
     },
     "level": "saccharide",
     "score": 2954
+  },
+  "G77194JD": {
+    "archetype": "G77194JD",
+    "children": [
+      "G12893IS",
+      "G60190AL"
+    ],
+    "count": {
+      "Fuc": 1,
+      "Gal": 1,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 1,
+      "HexNAc": 2,
+      "S": 1,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 492
   },
   "G77208XM": {
     "archetype": "G75381CL",
@@ -107849,6 +108825,7 @@
   "G77915WT": {
     "archetype": "G71222KY",
     "children": [
+      "G11589YK",
       "G63334FZ"
     ],
     "count": {
@@ -108059,6 +109036,10 @@
   },
   "G78008YE": {
     "archetype": "G15253IZ",
+    "children": [
+      "G69555NF",
+      "G87127SV"
+    ],
     "count": {
       "Fuc": 2,
       "Gal": 4,
@@ -108673,6 +109654,21 @@
       "NeuAc": 1,
       "Sia": 1,
       "aldi": 1,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
+  "G78482II": {
+    "archetype": "G66421OE",
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 2,
       "dHex": 1
     },
     "inrestriction": true,
@@ -109863,6 +110859,21 @@
     "level": "topology",
     "score": 1887
   },
+  "G79301TW": {
+    "archetype": "G19806ZW",
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 2,
+      "Hex": 2,
+      "HexNAc": 3,
+      "NeuAc": 1,
+      "Sia": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G79308EQ": {
     "children": [
       "G04557PM"
@@ -109923,7 +110934,8 @@
     "archetype": "G79323CW",
     "children": [
       "G00032MO",
-      "G50849VH"
+      "G49398PG",
+      "G90375IE"
     ],
     "count": {
       "Gal": 1,
@@ -110138,6 +111150,22 @@
     "inrestriction": true,
     "level": "saccharide",
     "score": 0
+  },
+  "G79562FE": {
+    "children": [
+      "G02594WS"
+    ],
+    "count": {
+      "Gal": 1,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 1,
+      "HexNAc": 2,
+      "NeuAc": 1,
+      "Sia": 1
+    },
+    "level": "saccharide",
+    "score": 984
   },
   "G79566BO": {
     "archetype": "G71234WE",
@@ -112819,7 +113847,7 @@
   "G81652FN": {
     "archetype": "G42910NP",
     "children": [
-      "G15178AV",
+      "G25709GM",
       "G51518AE"
     ],
     "count": {
@@ -113722,7 +114750,8 @@
   "G82286VD": {
     "archetype": "G05384EB",
     "children": [
-      "G17024OR"
+      "G17024OR",
+      "G29546CR"
     ],
     "count": {
       "Gal": 2,
@@ -113966,6 +114995,21 @@
     },
     "level": "saccharide",
     "score": 1477
+  },
+  "G82393KC": {
+    "archetype": "G03852KN",
+    "count": {
+      "Fuc": 1,
+      "Gal": 1,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 1,
+      "HexNAc": 2,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G82406IZ": {
     "children": [
@@ -115201,6 +116245,21 @@
       "HexNAc": 2,
       "S": 1,
       "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
+  "G83434MW": {
+    "archetype": "G96568SI",
+    "count": {
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 2,
+      "Hex": 2,
+      "HexNAc": 3,
+      "NeuAc": 1,
+      "Sia": 1
     },
     "inrestriction": true,
     "level": "saccharide",
@@ -116790,6 +117849,24 @@
     "level": "topology",
     "score": 2110
   },
+  "G84663MB": {
+    "children": [
+      "G29014XV"
+    ],
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 2,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 1
+    },
+    "level": "saccharide",
+    "score": 984
+  },
   "G84675XL": {
     "archetype": "G84675XL",
     "children": [
@@ -117102,6 +118179,25 @@
     "level": "topology",
     "score": 2133
   },
+  "G84917IA": {
+    "children": [
+      "G43220WQ",
+      "G71121NN"
+    ],
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 2,
+      "NeuAc": 2,
+      "Sia": 2,
+      "dHex": 1
+    },
+    "level": "saccharide",
+    "score": 984
+  },
   "G84919ZX": {
     "archetype": "G43592PN",
     "children": [
@@ -117374,6 +118470,23 @@
     },
     "level": "topology",
     "score": 2068
+  },
+  "G85192RG": {
+    "archetype": "G89798LS",
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 3,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 4,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G85196CF": {
     "archetype": "G49112ZN",
@@ -117964,7 +119077,9 @@
   },
   "G85564NH": {
     "children": [
+      "G02937FA",
       "G57440CD",
+      "G91965NG",
       "G92421ZT"
     ],
     "count": {
@@ -118806,7 +119921,8 @@
   "G86089ZC": {
     "archetype": "G14843DJ",
     "children": [
-      "G64581RP"
+      "G64581RP",
+      "G66831KA"
     ],
     "count": {
       "GlcNAc": 1,
@@ -118847,6 +119963,20 @@
     },
     "level": "saccharide",
     "score": 738
+  },
+  "G86164WK": {
+    "archetype": "G39738WL",
+    "children": [
+      "G57321FI",
+      "G86543BA"
+    ],
+    "count": {
+      "GalNAc": 1,
+      "HexNAc": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 492
   },
   "G86167MF": {
     "archetype": "G86167MF",
@@ -119318,8 +120448,8 @@
     "archetype": "G50390GB",
     "children": [
       "G57857CB",
-      "G85302NF",
-      "G93692RJ"
+      "G93692RJ",
+      "G95455DG"
     ],
     "count": {
       "Fuc": 1,
@@ -120510,6 +121640,21 @@
     "level": "saccharide",
     "score": 328
   },
+  "G87127SV": {
+    "archetype": "G15253IZ",
+    "count": {
+      "Fuc": 2,
+      "Gal": 4,
+      "GalNAc": 1,
+      "GlcNAc": 2,
+      "Hex": 4,
+      "HexNAc": 3,
+      "dHex": 2
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G87157JK": {
     "archetype": "G44900DK",
     "children": [
@@ -120527,6 +121672,23 @@
     },
     "level": "saccharide",
     "score": 492
+  },
+  "G87175JX": {
+    "archetype": "G37382VX",
+    "count": {
+      "Fuc": 2,
+      "Gal": 3,
+      "GalNAc": 2,
+      "GlcNAc": 3,
+      "Hex": 3,
+      "HexNAc": 5,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 2
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G87185IP": {
     "children": [
@@ -123171,6 +124333,7 @@
   "G88828CK": {
     "archetype": "G20835CN",
     "children": [
+      "G36672CQ",
       "G49277CJ"
     ],
     "count": {
@@ -124802,6 +125965,20 @@
     "level": "topology",
     "score": 2215
   },
+  "G90375IE": {
+    "archetype": "G79323CW",
+    "children": [
+      "G05633TS"
+    ],
+    "count": {
+      "Gal": 1,
+      "GalNAc": 1,
+      "Hex": 1,
+      "HexNAc": 1
+    },
+    "level": "saccharide",
+    "score": 492
+  },
   "G90402OU": {
     "archetype": "G86871XB",
     "count": {
@@ -125058,6 +126235,23 @@
     "level": "saccharide",
     "score": 0
   },
+  "G90615MJ": {
+    "archetype": "G52166JE",
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 2,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 3,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 1
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G90619MM": {
     "children": [
       "G50683ZR",
@@ -125193,6 +126387,25 @@
     "inrestriction": true,
     "level": "saccharide",
     "score": 0
+  },
+  "G90705GV": {
+    "children": [
+      "G33545WT",
+      "G87175JX"
+    ],
+    "count": {
+      "Fuc": 2,
+      "Gal": 3,
+      "GalNAc": 2,
+      "GlcNAc": 3,
+      "Hex": 3,
+      "HexNAc": 5,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 2
+    },
+    "level": "topology",
+    "score": 1969
   },
   "G90719NY": {
     "archetype": "G42448YD",
@@ -126891,6 +128104,19 @@
     "level": "saccharide",
     "score": 328
   },
+  "G91965NG": {
+    "children": [
+      "G29908ZA"
+    ],
+    "count": {
+      "Gal": 1,
+      "GalNAc": 2,
+      "Hex": 1,
+      "HexNAc": 2
+    },
+    "level": "saccharide",
+    "score": 492
+  },
   "G91975KX": {
     "children": [
       "G86207UE"
@@ -127237,6 +128463,7 @@
   "G92190YN": {
     "archetype": "G16706SR",
     "children": [
+      "G19454WY",
       "G65376QI",
       "G70693FX",
       "G90719NY"
@@ -129710,6 +130937,9 @@
     "archetype": "G93861DJ",
     "children": [
       "G04269FO",
+      "G16040DE",
+      "G61392DS",
+      "G73809WP",
       "G95159TE"
     ],
     "count": {
@@ -132048,6 +133278,24 @@
     "level": "saccharide",
     "score": 134
   },
+  "G95455DG": {
+    "children": [
+      "G85302NF"
+    ],
+    "count": {
+      "Fuc": 1,
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 2,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 1
+    },
+    "level": "saccharide",
+    "score": 984
+  },
   "G95495MU": {
     "children": [
       "G22166AH"
@@ -132497,6 +133745,23 @@
     "level": "topology",
     "score": 3939
   },
+  "G95889EP": {
+    "archetype": "G31087MR",
+    "count": {
+      "Fuc": 2,
+      "Gal": 2,
+      "GalNAc": 1,
+      "GlcNAc": 1,
+      "Hex": 2,
+      "HexNAc": 2,
+      "NeuAc": 1,
+      "Sia": 1,
+      "dHex": 2
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
+  },
   "G95890CG": {
     "archetype": "G95890CG",
     "children": [
@@ -132671,7 +133936,8 @@
   "G95994VV": {
     "archetype": "G78063CA",
     "children": [
-      "G07100CS"
+      "G07100CS",
+      "G25339LR"
     ],
     "count": {
       "Fuc": 1,
@@ -133192,6 +134458,7 @@
     "archetype": "G85619FU",
     "children": [
       "G03264JE",
+      "G13074CJ",
       "G73314OH"
     ],
     "count": {
@@ -133459,7 +134726,8 @@
   "G96568SI": {
     "archetype": "G96568SI",
     "children": [
-      "G04527KW"
+      "G04527KW",
+      "G83434MW"
     ],
     "count": {
       "Gal": 2,
@@ -133915,7 +135183,7 @@
   "G96890VV": {
     "archetype": "G02841PN",
     "children": [
-      "G32948PW",
+      "G39952OA",
       "G52244NI"
     ],
     "count": {
@@ -134265,6 +135533,21 @@
     },
     "level": "composition",
     "score": 7636
+  },
+  "G97118EJ": {
+    "archetype": "G25499LZ",
+    "count": {
+      "Gal": 3,
+      "GalNAc": 1,
+      "GlcNAc": 2,
+      "Hex": 3,
+      "HexNAc": 3,
+      "NeuAc": 2,
+      "Sia": 2
+    },
+    "inrestriction": true,
+    "level": "saccharide",
+    "score": 0
   },
   "G97127IZ": {
     "archetype": "G97127IZ",
@@ -137417,6 +138700,18 @@
     "level": "topology",
     "score": 2068
   },
+  "G99650PY": {
+    "children": [
+      "G80228HI",
+      "G97834OQ"
+    ],
+    "count": {
+      "GalNAc": 2,
+      "HexNAc": 2
+    },
+    "level": "saccharide",
+    "score": 492
+  },
   "G99657DS": {
     "archetype": "G05892LT",
     "children": [
@@ -137539,6 +138834,7 @@
   "G99738HT": {
     "archetype": "G64575OQ",
     "children": [
+      "G49721KD",
       "G72446TS"
     ],
     "count": {

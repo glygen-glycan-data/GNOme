@@ -12759,8 +12759,10 @@
     ],
     "count": {
       "Gal": 3,
+      "GlcNAc": 1,
       "Hex": 3,
-      "Xxx": 1
+      "HexNAc": 1,
+      "Me": 1
     },
     "level": "topology",
     "score": 1829
@@ -78020,8 +78022,10 @@
     ],
     "count": {
       "Gal": 2,
+      "GlcNAc": 1,
       "Hex": 2,
-      "Xxx": 1
+      "HexNAc": 1,
+      "Me": 1
     },
     "level": "saccharide",
     "score": 656
@@ -81843,8 +81847,10 @@
     "archetype": "G57807DJ",
     "count": {
       "Gal": 3,
+      "GlcNAc": 1,
       "Hex": 3,
-      "Xxx": 1
+      "HexNAc": 1,
+      "Me": 1
     },
     "inrestriction": true,
     "level": "saccharide",
@@ -91702,8 +91708,10 @@
     ],
     "count": {
       "Gal": 2,
+      "GlcNAc": 1,
       "Hex": 2,
-      "Xxx": 1
+      "HexNAc": 1,
+      "Me": 1
     },
     "level": "topology",
     "score": 1772
@@ -94347,8 +94355,10 @@
     ],
     "count": {
       "Gal": 3,
+      "GlcNAc": 1,
       "Hex": 3,
-      "Xxx": 1
+      "HexNAc": 1,
+      "Me": 1
     },
     "level": "saccharide",
     "score": 492
@@ -132563,8 +132573,10 @@
     "archetype": "G47833NG",
     "count": {
       "Gal": 2,
+      "GlcNAc": 1,
       "Hex": 2,
-      "Xxx": 1
+      "HexNAc": 1,
+      "Me": 1
     },
     "inrestriction": true,
     "level": "saccharide",
