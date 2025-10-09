@@ -55,5 +55,5 @@ GNOme input data-files, resulting ontologies, and interactive widgets are manage
 Please submit issues, suggestions, corrections to the [issue tracker](https://github.com/glygen-glycan-data/GNOme/issues).
 
 ## Reference
-If you use GNOme in your work, please cite the GNOme manuscript: Zhang W, Vesser M, Edwards N. [GNOme, an ontology for glycan naming and subsumption.](https://doi.org/10.1007/s00216-025-05757-8) Anal Bioanal Chem. 2025 Feb 8. doi:[10.1007/s00216-025-05757-8](https://doi.org/10.1007/s00216-025-05757-8). Epub ahead of print. PMID:[39921684](https://pubmed.ncbi.nlm.nih.gov/39921684/).
+If you use GNOme in your work, please cite the GNOme manuscript: Zhang W, Vesser M, Edwards N. [GNOme, an ontology for glycan naming and subsumption.](https://doi.org/10.1007/s00216-025-05757-8) Analytical and Bioanalytical Chemistry (2025). doi:[10.1007/s00216-025-05757-8](https://doi.org/10.1007/s00216-025-05757-8). PMID:[39921684](https://pubmed.ncbi.nlm.nih.gov/39921684/).
 
