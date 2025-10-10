@@ -2808,7 +2808,7 @@ function GNOmeBrowserBase (DIVID) {
             let imagepara = {
 		"notation": this.IconStyle,
 		"display": "extended",
-		"format": "png",
+		"format": "svg",
 		"seq": sequences
             }
             QueryImageRequest = jQuery.post(this.ImageGenerationSubmitURL, {"developer_email": "gnomebrowser@glyomics.org", "task": JSON.stringify(imagepara)});
