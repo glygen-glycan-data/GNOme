@@ -2764,7 +2764,8 @@ function GNOmeBrowserBase (DIVID) {
         let requestPara = {
             "developer_email": "gnomebrowser@glyomics.org",
             "task": JSON.stringify({
-                "seq": sequences
+                "seq": sequences,
+				"image_foramt": "svg"
             })
         }
 
@@ -2808,7 +2809,7 @@ function GNOmeBrowserBase (DIVID) {
             let imagepara = {
 		"notation": this.IconStyle,
 		"display": "extended",
-		"format": "svg",
+		"image_format": "svg",
 		"seq": sequences
             }
             QueryImageRequest = jQuery.post(this.ImageGenerationSubmitURL, {"developer_email": "gnomebrowser@glyomics.org", "task": JSON.stringify(imagepara)});
@@ -2831,7 +2832,7 @@ function GNOmeBrowserBase (DIVID) {
 		    let imagepara = {
 			"notation": this.IconStyle,
 			"display": "extended",
-			"format": "svg",
+			"image_format": "svg",
 			"seq": d["task"]["seqs"]["Query"]
 		    }
 		    QueryImageRequest = jQuery.post(thisLib.ImageGenerationSubmitURL, {"developer_email": "gnomebrowser@glyomics.org", "task": JSON.stringify(imagepara)});
@@ -2859,7 +2860,8 @@ function GNOmeBrowserBase (DIVID) {
             let requestPara = {
 		"developer_email": "gnomebrowser@glyomics.org",
 		"task": JSON.stringify({
-                    "seqs": {"Query": sequences}
+                    "seqs": {"Query": sequences},
+			        "image_format": "svg"
 		})
             }
             jQuery.post(requestURL, requestPara).then(function (d) {
