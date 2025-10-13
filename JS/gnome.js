@@ -558,7 +558,7 @@ let glycanviewer = {
             if (!level.toString().endsWith(".67")) {
                 idbylevel[level].sort(function(a,b){return nodes.get(a).order - nodes.get(b).order;});
             } else {
-                idbylevel[level].sort(function(a,b){return nodes.get(a.substring(0,8)).order - nodes.get(b.substring(0,8)).order;});
+                idbylevel[level].sort(function(a,b){return nodes.get(a.slice(0,-5)).order - nodes.get(b.slice(0,-5)).order;});
             }
             // console.log(level,idbylevel[level]);
             for (let i in idbylevel[level]) {
@@ -2928,7 +2928,7 @@ function GNOmeBrowserBase (DIVID) {
             } else if (parent.startsWith("Query")) {
                 let eqgtcacc = equivalent[parent];
                 if (eqgtcacc !== undefined) {
-                    this.SubsumptionData[eqgtcacc].Children = this.FilterChildren(children, addquery)
+                    this.SubsumptionData[eqgtcacc].Children = this.FilterChildren(children, addquery);
                 } else {
                     let allow = this.IsAllowedSubsumptionCategory(subsumptionlvl[parent]);
 
@@ -2951,6 +2951,7 @@ function GNOmeBrowserBase (DIVID) {
         this.SubsumptionData["Query"].EdgeType = {};
         for (let n of this.SubsumptionData["Query"].Children) {
              this.SubsumptionData["Query"].EdgeType[n] = 'subsumes';
+	         this.SubsumptionData[n].Parents.push("Query");
         }
         for (let n of this.SubsumptionData["Query"].Parents) {
              this.SubsumptionData["Query"].EdgeType[n] = 'subsumes';
