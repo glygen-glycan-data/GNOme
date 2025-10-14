@@ -1497,6 +1497,7 @@ function GNOmeBrowserBase (DIVID) {
 
     this.IconConfig;
     this.ImageComputed = {};
+    this.ondemandtaskid = undefined;
 
 
     // The data decides what to show
@@ -1805,7 +1806,7 @@ function GNOmeBrowserBase (DIVID) {
         this.ComputeTopLevelThings();
         this.SubsumptionDataBackUp = JSON.parse(JSON.stringify(this.SubsumptionData));
         this.UpdateMaxPossibleComp();
-	this.UpdateMinPossibleComp();
+	    this.UpdateMinPossibleComp();
 
         this.RefreshUI();
 
@@ -2056,6 +2057,7 @@ function GNOmeBrowserBase (DIVID) {
     }
 
     this.RefreshUI = function (cmd) {
+        // console.log("RefreshUI")
 
         this.ContainerScreenAPartA.innerHTML = "";
         this.ContainerScreenAPartB.innerHTML = "";
@@ -2141,8 +2143,9 @@ function GNOmeBrowserBase (DIVID) {
 
         this.SetToScreenA();
         this.showBanner();
-	
-	const defaultLandingParams = new URLSearchParams(this.DefaultURL);
+        this.ondemandtaskid = undefined;
+
+	    const defaultLandingParams = new URLSearchParams(this.DefaultURL);
         let default_res = {};
         for (let k of defaultLandingParams.keys()){
             default_res[k] = defaultLandingParams.get(k);
@@ -2800,22 +2803,25 @@ function GNOmeBrowserBase (DIVID) {
     }
 
 
-    this.SubsumptionRequest = function (sequences, ondemandtaskid){
+    this.SubsumptionRequest = function (sequences, ondemandtaskid, dorefresh){
         let thisLib = this;
+        if (dorefresh === undefined) {
+            dorefresh = "Query";
+        }
 
-	let QueryImageRequest = null;
-	if (sequences) {
+	    let QueryImageRequest = null;
+	    if (sequences) {
             // We do this here since we already have access to the sequences
             let imagepara = {
-		"notation": this.IconStyle,
-		"display": "extended",
-		"image_format": "svg",
-		"seq": sequences
+		        "notation": this.IconStyle,
+		        "display": "extended",
+		        "image_format": "svg",
+		        "seq": sequences
             }
             QueryImageRequest = jQuery.post(this.ImageGenerationSubmitURL, {"developer_email": "gnomebrowser@glyomics.org", "task": JSON.stringify(imagepara)});
         }
 
-       function GetResult(RealTimeCalculationHash){
+       function GetResult(RealTimeCalculationHash, dorefresh){
             let requestURL = thisLib.SubsumptionComputingURL + "/retrieve?task_id=" + RealTimeCalculationHash;
 
             jQuery.getJSON(requestURL).then(function (d) {
@@ -2846,7 +2852,8 @@ function GNOmeBrowserBase (DIVID) {
                         thisLib.ImageComputed["Query"] = imgURL;
 
                         thisLib.CloseAlert();
-                        thisLib.RenderRTResult(d);
+			            thisLib.ondemandtaskid = RealTimeCalculationHash;
+                        thisLib.RenderRTResult(d,dorefresh);
                     })
 
                 }else{
@@ -2858,21 +2865,19 @@ function GNOmeBrowserBase (DIVID) {
         if (ondemandtaskid == undefined){
 	    let requestURL = thisLib.SubsumptionComputingURL + "/submit";
             let requestPara = {
-		"developer_email": "gnomebrowser@glyomics.org",
-		"task": JSON.stringify({
-                    "seqs": {"Query": sequences},
-			        "image_format": "svg"
-		})
+		        "developer_email": "gnomebrowser@glyomics.org",
+		        "task": JSON.stringify({
+                    "seqs": {"Query": sequences}
+		        })
             }
             jQuery.post(requestURL, requestPara).then(function (d) {
-                GetResult(d[0].id);
+                GetResult(d[0].id, dorefresh);
             })
         } else {
-            GetResult(ondemandtaskid);
+            GetResult(ondemandtaskid, dorefresh);
         }
 
     }
-
 
     this.RenderRTResultWithKnownGlyTouCanAccession = function (acc) {
         this.SetFocus(acc);
@@ -2881,7 +2886,7 @@ function GNOmeBrowserBase (DIVID) {
 
 
 
-    this.RenderRTResult = function (d) {
+    this.RenderRTResult = function (d,dorefresh) {
         let thisLib = this;
 
         let equivalent = d["result"]["equivalent"];
@@ -2909,12 +2914,16 @@ function GNOmeBrowserBase (DIVID) {
         }
 
         if (Object.keys(equivalent).includes("Query")){
-            this.RenderRTResultWithKnownGlyTouCanAccession(equivalent["Query"]);
+            if (dorefresh == "Query") {
+                this.RenderRTResultWithKnownGlyTouCanAccession(equivalent["Query"]);
+            } else {
+                this.RenderRTResultWithKnownGlyTouCanAccession(dorefresh);
+            }
             return
         }
 
 
-        let focus = "Query";
+        // let focus = "Query";
         let addquery = this.IsAllowedSubsumptionCategory(subsumptionlvl["Query"]);
         let queryParents = [];
         for (let parent of Object.keys(relationship)) {
@@ -2958,9 +2967,8 @@ function GNOmeBrowserBase (DIVID) {
         }
         this.ComputeTopLevelThings();
 
-        thisLib.SetFocus(focus);
+        thisLib.SetFocus(dorefresh);
         thisLib.RefreshUI();
-
     }
 
     this.IsAllowedSubsumptionCategory = function (){
@@ -3824,6 +3832,7 @@ function GNOmeBrowserBase (DIVID) {
     }
 
     this.SetFocus = function (d) {
+        // console.log("SetFocus:",d)
         let s = d.trim();
         let normcompstr = this.normalizeCompStr(s).compstr;
         let comp = this.normalizeCompStr(s).comp;
@@ -3914,6 +3923,7 @@ function GNOmeBrowserBase (DIVID) {
         res.Screen = this.DisplayScreen;
         res.MonoCount = this.ItemCount;
         res.FocusAccession = this.SubsumptionNavigatorFocusAccession;
+        res.ondemandtaskid = this.ondemandtaskid;
         res.ScreenATitle = this.ScreenATitle;
         res.ScreenBTitle = this.ScreenBTitle;
 
@@ -4380,21 +4390,22 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
         else if (Screen == 1) {
             URLPara = "focus=" + Acc
         }
+        
+	    if (BrowserStatus.ondemandtaskid !== undefined) {
+	        URLPara += "&ondemandtaskid="+BrowserStatus.ondemandtaskid;
+        }
 
         let FullURL = URL;
         if (URLPara.length > 0){
             FullURL += "?" + URLPara;
         }
-        if (thisLib.PreventPushState){
+        if (thisLib.PreventPushState) {
             thisLib.PreventPushState = false;
-        }else{
+        } else {
             if (FullURL != window.location.href){
                 history.pushState({}, "", FullURL);
             }
-
         }
-
-
     }
 
 
@@ -4435,9 +4446,11 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
 
     this.UpdateGNOmeBrowser = function (para) {
 
-        if (Object.keys(para).includes('ondemandtaskid')){
+        if (Object.keys(para).includes('ondemandtaskid')) {
             GNOmeBrowserX.LoadingCircleShow();
-            GNOmeBrowserX.SubsumptionRequest("", para.ondemandtaskid);
+            let focus = para.focus || "Query";
+            GNOmeBrowserX.SubsumptionRequest("", para.ondemandtaskid, focus);
+            GNOmeBrowserX.RefreshUI();
             return
         }
 
@@ -4445,21 +4458,21 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
             GNOmeBrowserX.SetFocus(para.focus);
         } else {
             let NewCount = {};
-	    const defaultLandingParams = new URLSearchParams(GNOmeBrowserX.DefaultURL);
+	        const defaultLandingParams = new URLSearchParams(GNOmeBrowserX.DefaultURL);
             let default_res = {};
 
             for (let k of defaultLandingParams.keys()){
                 default_res[k] = defaultLandingParams.get(k)
             }
-	    let para_set = false;
+	        let para_set = false;
             GNOmeBrowserX.AllItems.forEach(function (k) {
             if (Object.keys(para).includes(k)){
                 NewCount[k] = parseInt(para[k]);
-		para_set = true;
+		        para_set = true;
             }
             else{
                 NewCount[k] = 100;
-		for (let acc of GNOmeBrowserX.TopLevelThings){
+		        for (let acc of GNOmeBrowserX.TopLevelThings){
 		    
                     let thisComp = GNOmeBrowserX.SubsumptionData[acc].ButtonConfig;
 
@@ -4469,12 +4482,13 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
                 }
             }
 	    })
+
 	    if (para_set === false){
-		GNOmeBrowserX.AllItems.forEach(function (k) {
-		    if (Object.keys(default_res).includes(k)) {
-			NewCount[k] = parseInt(default_res[k]);
-		    }
-		})
+		    GNOmeBrowserX.AllItems.forEach(function (k) {
+		        if (Object.keys(default_res).includes(k)) {
+			        NewCount[k] = parseInt(default_res[k]);
+		        }
+		    })
 	    }
 	    NewCount = this.FixAnyHexCount(NewCount);
             GNOmeBrowserX.SetItemCount(NewCount);
@@ -4506,7 +4520,7 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
         }
 
         GNOmeBrowserX.UpdateMaxPossibleComp();
-	GNOmeBrowserX.UpdateMinPossibleComp();
+	    GNOmeBrowserX.UpdateMinPossibleComp();
         GNOmeBrowserX.RefreshUI();
     }
 
