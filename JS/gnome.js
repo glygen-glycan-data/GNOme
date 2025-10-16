@@ -2791,8 +2791,7 @@ function GNOmeBrowserBase (DIVID) {
         let requestPara = {
             "developer_email": "gnomebrowser@glyomics.org",
             "task": JSON.stringify({
-                "seq": sequences,
-				"image_foramt": "svg"
+                "seq": sequences
             })
         }
 
