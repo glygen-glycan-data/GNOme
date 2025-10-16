@@ -2837,6 +2837,7 @@ function GNOmeBrowserBase (DIVID) {
         if (dorefresh === undefined) {
             dorefresh = "Query";
         }
+        // console.log(dorefresh);
 
 	    let QueryImageRequest = null;
 	    if (sequences) {
@@ -2886,7 +2887,7 @@ function GNOmeBrowserBase (DIVID) {
                     })
 
                 }else{
-                    setTimeout(GetResult, 1000, RealTimeCalculationHash);
+                    setTimeout(GetResult, 1000, RealTimeCalculationHash, dorefresh);
                 }
             })
         }
