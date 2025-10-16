@@ -2805,8 +2805,14 @@ function GNOmeBrowserBase (DIVID) {
 
                     let eqgtcacc = d["result"];
                     if (eqgtcacc.length > 0){
+                        if (thisLib.isFocusAccession(eqgtcacc[0].accession)) {
                         thisLib.CloseAlert();
                         thisLib.RenderRTResultWithKnownGlyTouCanAccession(eqgtcacc[0].accession);
+                    } else {
+                            let seq = eqgtcacc[0].sequences[0].seq;
+                            //console.log("subsumptionrequest"+seq);
+                            thisLib.SubsumptionRequest(seq);
+                        }
                     } else {
                         thisLib.SubsumptionRequest(sequences);
                     }
@@ -2907,7 +2913,58 @@ function GNOmeBrowserBase (DIVID) {
         this.RefreshUI();
     }
 
-
+    this.RestrictRelationships = function(relationship,restriction) {
+	    // expand to complete descendants, unrestricted relationships
+	    let newrelationship = {};
+	    for (let parent of Object.keys(relationship)) {
+            let toexpand = Array.from(relationship[parent]);
+	        newrelationship[parent] = Array.from(relationship[parent]);
+	        while (toexpand.length > 0) {
+		        let n = toexpand.shift();
+                for (let c of relationship[n]) {
+		            if (!(newrelationship[parent].includes(c))) {
+			            newrelationship[parent].push(c);
+			            toexpand.push(c);
+		            }
+		        }
+	        }
+        }
+	
+        // remove parents and children outside the restriction
+        let newrelationship1 = {};
+        for (let parent of Object.keys(newrelationship)) {
+	        if (parent == "Query" || restriction.has(parent)) {
+		        newrelationship1[parent] = [];
+		        for (let c of newrelationship[parent]) {
+		            if (c == "Query" || restriction.has(c)) {
+			            newrelationship1[parent].push(c);
+		            }
+		        }
+	        }
+	    }
+	
+        // find all shortcuts
+	    let toremove = [];
+	    for (let parent of Object.keys(newrelationship1)) {
+	        for (let ch of newrelationship1[parent]) {
+		        for (let grch of newrelationship1[ch]) {
+		            if (newrelationship1[parent].includes(grch)) {
+			            toremove.push([parent,grch]);
+		            }
+		        }
+	        }
+	    }
+	
+        // remove shortcuts
+	    for (let tr of toremove.entries()) {
+	        let i = newrelationship1[tr[1][0]].indexOf(tr[1][1]);
+	        if (i >= 0) {
+		        newrelationship1[tr[1][0]].splice(i, 1);
+	        }
+	    }
+	
+        return newrelationship1;
+    }
 
     this.RenderRTResult = function (d,dorefresh) {
         let thisLib = this;
