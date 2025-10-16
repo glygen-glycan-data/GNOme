@@ -840,22 +840,38 @@ let glycanviewer = {
             menuELE.style = "margin: 0; padding: 0; overflow: hidden; position: absolute; left: "+left+"px; top: "+top+"px; background-color: #333333; border: none; width: 145px";//width: 100px; height: 100px
 
             var selectedNode = thisLib.network.getNodeAt({x:x,y:y});
-            if (selectedNode === undefined || selectedNode == "Topology" || selectedNode.startsWith("fake") || selectedNode.startsWith("Query") || selectedNode.endsWith("3dots")){
+            if (selectedNode === undefined || selectedNode == "Topology" || selectedNode.startsWith("fake") || selectedNode.endsWith("3dots")){
                 return
             }
+            // console.log(selectedNode);
 
             var pureGTCre = /^G\d{5}\w{2}$/;
             var pureGTCres = selectedNode.match(pureGTCre);
+            var SelIsGTCAcc = (Array.isArray(pureGTCres) && pureGTCres.length == 1)
 
             CreateEntryPrimary("Copy:", menuList);
+            var queryacc = undefined;
+            if (SelIsGTCAcc){
 
-            if (Array.isArray(pureGTCres) && pureGTCres.length == 1){
                 var entry = CreateEntrySecondary("Accession", menuList);
                 entry.name = selectedNode;
+                queryacc = selectedNode;
 
                 entry.onclick = function(){
                     ToClipBoard(this.name);
                 };
+
+            } else if (selectedNode.startsWith("Query")){
+                queryacc = gnome.SubsumptionData[selectedNode].Accession;
+                if (queryacc) {
+                    var entry = CreateEntrySecondary("Accession", menuList);
+                    entry.name = queryacc;
+
+                    entry.onclick = function() {
+                        console.log(this.name);
+                        ToClipBoard(this.name);
+                    };
+                }
             }
 
             var things = [
@@ -863,16 +879,11 @@ let glycanviewer = {
                 ["Descendants", gnome.GetDescendantsForCopy(selectedNode)]
             ];
 
-            if (things[1][1].length == 1){
-                things[1][1] = []
-            }
-
-
             for (var thing of things){
                 var title = thing[0];
                 var targets = thing[1];
 
-                if (targets.length > 1){
+                if (targets.length >= 1){
                     var entry = CreateEntrySecondary(title, menuList);
 
                     var strx = "";
@@ -886,7 +897,7 @@ let glycanviewer = {
                     };
                 }
             }
-
+            if (queryacc) {
             CreateEntryPrimary("Links:", menuList);
 
             var nojumpflag = true;
@@ -915,15 +926,15 @@ let glycanviewer = {
                 var accs = externalLink["glycan_set"];
 
                 var existFlag = false;
-                var jumpid = selectedNode;
+                    var jumpid = queryacc;
                 if (accs === undefined){
                     existFlag = true;
                 }
-                else if (Array.isArray(accs) && accs.includes(selectedNode)) {
+                    else if (Array.isArray(accs) && accs.includes(queryacc)) {
                     existFlag = true;
-                } else if (accs.constructor == Object && accs[selectedNode] !== undefined) {
+                    } else if (accs.constructor == Object && accs[queryacc] !== undefined) {
                     existFlag = true;
-                    jumpid = accs[selectedNode];
+                        jumpid = accs[queryacc];
                 }
                 if (!existFlag){
                     continue
@@ -945,15 +956,16 @@ let glycanviewer = {
 
             }
 
-            if ((gnome.SubsumptionData[selectedNode] !== undefined) && (gnome.SubsumptionData[selectedNode].Archetype !== undefined) && (gnome.SubsumptionData[selectedNode].Archetype != selectedNode)) {
+                if ((gnome.SubsumptionData[queryacc] !== undefined) && (gnome.SubsumptionData[queryacc].Archetype !== undefined) && (gnome.SubsumptionData[queryacc].Archetype != queryacc)) {
                 CreateEntryPrimary("Focus:", menuList);
                 var entry =CreateEntrySecondary("Archetype", menuList);
-                var arch = gnome.SubsumptionData[selectedNode].Archetype;
+                    var arch = gnome.SubsumptionData[queryacc].Archetype;
                 entry.setAttribute("data-jumpacc", arch);
                 entry.onclick = function (){
                     var acc = this.getAttribute("data-jumpacc");
                     gnome.SearchGo(acc);
                 }
+            }
             }
 
             CreateEntryPrimary("Browse:", menuList);
@@ -986,19 +998,9 @@ let glycanviewer = {
                 + "/"
                 + restriction + gnomejumptype + "Browser.html";
 
-            if (gnomejumptype == "Structure"){
                 externalURL += "?focus=" + selectedNode;
-            } else {
-                externalURL += "?";
-
-                var buttons = gnome.SubsumptionData[selectedNode].ButtonConfig;
-
-                for (var k of Object.keys(buttons)){
-                    var count = buttons[k];
-                    if (count != 0){
-                        externalURL += k + "=" + count.toString() + "&";
-                    }
-                }
+            if (gnome.ondemandtaskid) {
+                externalURL += "&ondemandtaskid="+gnome.ondemandtaskid;
             }
 
             var entry =CreateEntrySecondary(gnomejumptype, menuList);
