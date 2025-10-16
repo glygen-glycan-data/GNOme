@@ -1855,6 +1855,10 @@ function GNOmeBrowserBase (DIVID) {
 
     }
 
+    this.isRestrictionBrowser = function () {
+        return (this.restriction !== null);
+    }
+
     this.DataPreProcess = function (d) {
         throw "NotImplement";
     }
@@ -2330,6 +2334,15 @@ function GNOmeBrowserBase (DIVID) {
             }
         })
 
+    }
+
+    this.isNodeAccession = function(acc) {
+        return Object.keys(this.SubsumptionData).includes(acc)
+    }
+
+    this.isFocusAccession = function(acc) {
+        return (this.isNodeAccession(acc) || 
+                Object.keys(this.IUPACCompositionData).includes(acc))
     }
 
     this.CloseAlert = function () {
