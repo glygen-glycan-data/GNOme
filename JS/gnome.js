@@ -2702,19 +2702,23 @@ function GNOmeBrowserBase (DIVID) {
 
     }
 
-    this.LoadingCircleShow = function () {
+    this.LoadingCircleShow = function (msg) {
         let thisLib = this;
 
         let SpinningCircleContainer = document.createElement("div");
 
 
         let SpinningCircle = document.createElement("img");
+        if (window.location.pathname.indexOf('/restrictions/') >= 0) {
+            SpinningCircle.src = "../JS/loader.gif"
+        } else {
         SpinningCircle.src = "JS/loader.gif"
+        }
         SpinningCircle.style = "width: 200px; height: 200px; align: center; padding: 40px 0 0 100px";
 
         let words = document.createElement("p");
         words.style = "text-align: center; "
-        words.innerText = "Computing subsumption alignment...";
+        words.innerText = msg;
 
         SpinningCircleContainer.style = "width: 400px; height: 320px; overflow: hidden; background: rgb(255, 255, 255); opacity:0.8; border: none; border-radius: 10px; position: absolute; top: 40px; align: center; box-shadow: 5px 5px 3px grey;"
 
@@ -2769,7 +2773,12 @@ function GNOmeBrowserBase (DIVID) {
 
         sequences = sequences.trim();
 
-        this.LoadingCircleShow();
+        if (this.GlyTouCanAccessionRegex(sequences) && 
+            window.location.pathname.indexOf('/restrictions/') >= 0) {
+	        this.LoadingCircleShow("Accession not in restriction...");
+        } else {
+	        this.LoadingCircleShow("Computing subsumption alignment...");
+	    }
 
         this.Reset();
 
