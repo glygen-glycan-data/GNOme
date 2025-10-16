@@ -878,7 +878,7 @@ let glycanviewer = {
                 ["Ancestors", gnome.GetAncestorsForCopy(selectedNode)],
                 ["Descendants", gnome.GetDescendantsForCopy(selectedNode)]
             ];
-
+            
             for (var thing of things){
                 var title = thing[0];
                 var targets = thing[1];
@@ -898,74 +898,74 @@ let glycanviewer = {
                 }
             }
             if (queryacc) {
-            CreateEntryPrimary("Links:", menuList);
+                CreateEntryPrimary("Links:", menuList);
 
-            var nojumpflag = true;
-            var externalLinks = JSON.parse(JSON.stringify(para["contextMenu"]["externalLinks"]));
+                var nojumpflag = true;
+                var externalLinks = JSON.parse(JSON.stringify(para["contextMenu"]["externalLinks"]));
 
-            var imageurl = {
-                "name": "Glymage",
-                "url_prefix": "https://glymage.glyomics.org/image/snfg/extended/",
-                "url_suffix": ".svg",
-                "glycan_set": undefined,
-            }
-            externalLinks.splice(0, 0, imageurl);
+                var imageurl = {
+                    "name": "Glymage",
+                    "url_prefix": "https://glymage.glyomics.org/image/snfg/extended/",
+                    "url_suffix": ".svg",
+                    "glycan_set": undefined,
+                }
+                externalLinks.splice(0, 0, imageurl);
 
-            var gnomepurl = {
-                "name": "GNOme",
-                "url_prefix": "http://purl.obolibrary.org/obo/GNO_",
-                "url_suffix": "",
-                "glycan_set": undefined,
-            }
-            externalLinks.splice(0, 0, gnomepurl);
-            
-            for (var externalLink of externalLinks){
-                var title = externalLink["name"] || "";
-                var prefix = externalLink["url_prefix"] || "";
-                var suffix = externalLink["url_suffix"] || "";
-                var accs = externalLink["glycan_set"];
+                var gnomepurl = {
+                    "name": "GNOme",
+                    "url_prefix": "http://purl.obolibrary.org/obo/GNO_",
+                    "url_suffix": "",
+                    "glycan_set": undefined,
+                }
+                externalLinks.splice(0, 0, gnomepurl);
+                
+                for (var externalLink of externalLinks){
+                    var title = externalLink["name"] || "";
+                    var prefix = externalLink["url_prefix"] || "";
+                    var suffix = externalLink["url_suffix"] || "";
+                    var accs = externalLink["glycan_set"];
 
-                var existFlag = false;
+                    var existFlag = false;
                     var jumpid = queryacc;
-                if (accs === undefined){
-                    existFlag = true;
-                }
+                    if (accs === undefined){
+                        existFlag = true;
+                    }
                     else if (Array.isArray(accs) && accs.includes(queryacc)) {
-                    existFlag = true;
+                        existFlag = true;
                     } else if (accs.constructor == Object && accs[queryacc] !== undefined) {
-                    existFlag = true;
+                        existFlag = true;
                         jumpid = accs[queryacc];
+                    }
+                    if (!existFlag){
+                        continue
+                    }
+
+                    var entry = CreateEntrySecondary(title, menuList);
+                    entry.name = jumpid;
+                    entry.setAttribute("data-prefix", prefix);
+                    entry.setAttribute("data-suffix", suffix);
+
+                    entry.onclick = function(){
+                        var nodeID = this.name;
+                        var pre = this.getAttribute("data-prefix");
+                        var suf = this.getAttribute("data-suffix");
+                        var externalURL = pre + nodeID + suf;
+                        window.open(externalURL);
+                    };
+
+
                 }
-                if (!existFlag){
-                    continue
-                }
-
-                var entry = CreateEntrySecondary(title, menuList);
-                entry.name = jumpid;
-                entry.setAttribute("data-prefix", prefix);
-                entry.setAttribute("data-suffix", suffix);
-
-                entry.onclick = function(){
-                    var nodeID = this.name;
-                    var pre = this.getAttribute("data-prefix");
-                    var suf = this.getAttribute("data-suffix");
-                    var externalURL = pre + nodeID + suf;
-                    window.open(externalURL);
-                };
-
-
-            }
 
                 if ((gnome.SubsumptionData[queryacc] !== undefined) && (gnome.SubsumptionData[queryacc].Archetype !== undefined) && (gnome.SubsumptionData[queryacc].Archetype != queryacc)) {
-                CreateEntryPrimary("Focus:", menuList);
-                var entry =CreateEntrySecondary("Archetype", menuList);
+                    CreateEntryPrimary("Focus:", menuList);
+                    var entry =CreateEntrySecondary("Archetype", menuList);
                     var arch = gnome.SubsumptionData[queryacc].Archetype;
-                entry.setAttribute("data-jumpacc", arch);
-                entry.onclick = function (){
-                    var acc = this.getAttribute("data-jumpacc");
-                    gnome.SearchGo(acc);
+                    entry.setAttribute("data-jumpacc", arch);
+                    entry.onclick = function (){
+                        var acc = this.getAttribute("data-jumpacc");
+                        gnome.SearchGo(acc);
+                    }
                 }
-            }
             }
 
             CreateEntryPrimary("Browse:", menuList);
@@ -998,7 +998,7 @@ let glycanviewer = {
                 + "/"
                 + restriction + gnomejumptype + "Browser.html";
 
-                externalURL += "?focus=" + selectedNode;
+            externalURL += "?focus=" + selectedNode;
             if (gnome.ondemandtaskid) {
                 externalURL += "&ondemandtaskid="+gnome.ondemandtaskid;
             }
@@ -2712,7 +2712,7 @@ function GNOmeBrowserBase (DIVID) {
         if (window.location.pathname.indexOf('/restrictions/') >= 0) {
             SpinningCircle.src = "../JS/loader.gif"
         } else {
-        SpinningCircle.src = "JS/loader.gif"
+            SpinningCircle.src = "JS/loader.gif"
         }
         SpinningCircle.style = "width: 200px; height: 200px; align: center; padding: 40px 0 0 100px";
 
@@ -2806,9 +2806,9 @@ function GNOmeBrowserBase (DIVID) {
                     let eqgtcacc = d["result"];
                     if (eqgtcacc.length > 0){
                         if (thisLib.isFocusAccession(eqgtcacc[0].accession)) {
-                        thisLib.CloseAlert();
-                        thisLib.RenderRTResultWithKnownGlyTouCanAccession(eqgtcacc[0].accession);
-                    } else {
+                            thisLib.CloseAlert();
+                            thisLib.RenderRTResultWithKnownGlyTouCanAccession(eqgtcacc[0].accession);
+                        } else {
                             let seq = eqgtcacc[0].sequences[0].seq;
                             //console.log("subsumptionrequest"+seq);
                             thisLib.SubsumptionRequest(seq);
@@ -2978,6 +2978,11 @@ function GNOmeBrowserBase (DIVID) {
         let buttonconfig = d["result"]["buttonconfig"];
         let score = d["result"]["score"]
 
+        if (this.isRestrictionBrowser()) {
+            //console.log("here");
+            relationship = this.RestrictRelationships(relationship,new Set(Object.keys(this.SubsumptionData)));
+        }
+
         let warningmsg = d["error"];
 
         if (warningmsg.length > 0){
@@ -2992,79 +2997,139 @@ function GNOmeBrowserBase (DIVID) {
 
 
             this.Alert("Error(s)", message, false);
-        }
-
-        if (Object.keys(equivalent).includes("Query")){
-            if (dorefresh == "Query") {
-                this.RenderRTResultWithKnownGlyTouCanAccession(equivalent["Query"]);
-            } else {
-                this.RenderRTResultWithKnownGlyTouCanAccession(dorefresh);
-            }
             return
         }
 
-
-        // let focus = "Query";
-        let addquery = this.IsAllowedSubsumptionCategory(subsumptionlvl["Query"]);
-        let queryParents = [];
-        for (let parent of Object.keys(relationship)) {
-            let children = relationship[parent];
-
-            if (this.SubsumptionData[parent] !== undefined) {
-                this.SubsumptionData[parent].Children = this.FilterChildren(children, addquery)
-                if (this.SubsumptionData[parent].Children.includes("Query")) {
-                    queryParents.push(parent);
-                }
-            } else if (parent.startsWith("Query")) {
-                let eqgtcacc = equivalent[parent];
-                if (eqgtcacc !== undefined) {
-                    this.SubsumptionData[eqgtcacc].Children = this.FilterChildren(children, addquery);
+        if (Object.keys(equivalent).includes("Query")){
+            if (thisLib.isNodeAccession(equivalent["Query"])) {
+                if (dorefresh == "Query") {
+                    this.RenderRTResultWithKnownGlyTouCanAccession(equivalent["Query"]);
                 } else {
-                    let allow = this.IsAllowedSubsumptionCategory(subsumptionlvl[parent]);
-
-                    if (allow){
-                        this.SubsumptionData[parent] = {
-                            "SubsumptionLevel": subsumptionlvl[parent],
-                            "Children": this.FilterChildren(children, addquery),
-                            "ButtonConfig": this.ButtonConfigCleanUp(buttonconfig[parent]),
-                            "score": score[parent]
+                    this.RenderRTResultWithKnownGlyTouCanAccession(dorefresh);
+                }
+                return
+            } else {
+                let addquery = this.IsAllowedSubsumptionCategory(subsumptionlvl["Query"]);
+                let displayname = "Query: " + equivalent["Query"]
+                // console.log("Displayname:",displayname)
+                let queryParents = [];
+                for (let parent of Object.keys(relationship)) {
+                    let children = relationship[parent];
+    
+                    if (this.isNodeAccession(parent)) {
+                        this.SubsumptionData[parent].Children = this.FilterChildren(children, addquery, displayname)
+                        if (children.includes("Query")) {
+                            queryParents.push(parent);
+                        }
+                    } else if (parent.startsWith("Query")) {
+                        let allow = this.IsAllowedSubsumptionCategory(subsumptionlvl[parent]);
+                        if (allow) {
+                            this.SubsumptionData[displayname] = {
+                                "SubsumptionLevel": subsumptionlvl[parent],
+                                "Children": this.FilterChildren(children, addquery, displayname),
+                                "ButtonConfig": this.ButtonConfigCleanUp(buttonconfig[parent]),
+                                "score": score[parent],
+                                "Accession": equivalent["Query"],
+                                //"DisplayName": "Query: " + equivalent["Query"]
+                            }
+                            this.AllChildren[displayname] = this.SubsumptionData[displayname].Children;
+                        } else {
+                            this.IUPACCompositionData[displayname] = this.ButtonConfigCleanUp(buttonconfig[parent])
                         }
                     }
-
-                    if (["composition", "basecomposition"].includes(subsumptionlvl[parent])){
-                        this.IUPACCompositionData[parent] = this.ButtonConfigCleanUp(buttonconfig[parent])
+                }
+                if (dorefresh == "Query") {
+                    dorefresh = displayname;
+                }
+                if (this.isNodeAccession(displayname)) {
+                    this.SubsumptionData[displayname].Parents = queryParents;
+                    this.AllParents[displayname] = queryParents;
+                    this.SubsumptionData[displayname].EdgeType = {};
+                    for (let n of this.SubsumptionData[displayname].Children) {
+                        this.SubsumptionData[displayname].EdgeType[n] = 'subsumes';
+                        this.SubsumptionData[n].Parents.push(displayname);
+                        this.AllParents[n].push(displayname);
+                    }
+                    for (let n of this.SubsumptionData[displayname].Parents) {
+                        this.SubsumptionData[displayname].EdgeType[n] = 'subsumes';
+                        this.AllChildren[n].push(displayname);
                     }
                 }
             }
-        }
-        this.SubsumptionData["Query"].Parents = queryParents;
-        this.SubsumptionData["Query"].EdgeType = {};
-        for (let n of this.SubsumptionData["Query"].Children) {
-             this.SubsumptionData["Query"].EdgeType[n] = 'subsumes';
-	         this.SubsumptionData[n].Parents.push("Query");
-        }
-        for (let n of this.SubsumptionData["Query"].Parents) {
-             this.SubsumptionData["Query"].EdgeType[n] = 'subsumes';
+        } else {
+
+            // let focus = "Query";
+            let addquery = this.IsAllowedSubsumptionCategory(subsumptionlvl["Query"]);
+            let queryParents = [];
+            for (let parent of Object.keys(relationship)) {
+                let children = relationship[parent];
+
+                if (this.SubsumptionData[parent] !== undefined) {
+                    this.SubsumptionData[parent].Children = this.FilterChildren(children, addquery)
+                    if (children.includes("Query")) {
+                        queryParents.push(parent);
+                    }
+                } else if (parent.startsWith("Query")) {
+                    let eqgtcacc = equivalent[parent];
+                    if (eqgtcacc !== undefined) {
+                        this.SubsumptionData[eqgtcacc].Children = this.FilterChildren(children, addquery);
+                    } else {
+                        let allow = this.IsAllowedSubsumptionCategory(subsumptionlvl[parent]);
+                        if (allow){
+                            this.SubsumptionData[parent] = {
+                                "SubsumptionLevel": subsumptionlvl[parent],
+                                "Children": this.FilterChildren(children, addquery),
+                                "ButtonConfig": this.ButtonConfigCleanUp(buttonconfig[parent]),
+                                "score": score[parent]
+                            }
+                            this.AllChildren[parent] = this.SubsumptionData[parent].Children;
+
+                        } 
+                        this.IUPACCompositionData[parent] = this.ButtonConfigCleanUp(buttonconfig[parent]);
+                    }
+                }
+            }
+            if (this.isNodeAccession("Query")) {
+                this.SubsumptionData["Query"].Parents = queryParents;
+                this.AllParents["Query"] = queryParents;
+                this.SubsumptionData["Query"].EdgeType = {};
+                for (let n of this.SubsumptionData["Query"].Children) {
+                    this.SubsumptionData["Query"].EdgeType[n] = 'subsumes';
+                    this.SubsumptionData[n].Parents.push("Query");
+                    this.AllParents[n].push("Query");
+                }
+                for (let n of this.SubsumptionData["Query"].Parents) {
+                    this.SubsumptionData["Query"].EdgeType[n] = 'subsumes';
+                    this.AllChildren[n].push("Query");
+                }
+            }    
+            // console.log(this.AllChildren["Query"]);
+            // console.log(this.AllDescendants["Query"]);
+            // console.log("here2");
         }
         this.ComputeTopLevelThings();
 
         thisLib.SetFocus(dorefresh);
         thisLib.RefreshUI();
+        // console.log("here")
     }
 
     this.IsAllowedSubsumptionCategory = function (){
         throw "NotImplement";
     }
 
-    this.FilterChildren = function (children, addquery){
+    this.FilterChildren = function (children, addquery, displayname){
         let allowedChildren = [];
 
         for (let c of children){
-            if (c == "Query" && addquery){
+            if ((c == "Query") && addquery && (displayname == undefined)){
                 allowedChildren.push(c)
                 continue
+            } else if ((c == "Query") && addquery && (displayname != undefined)) {
+                allowedChildren.push(displayname)
+                continue
             }
-            if (!Object.keys(this.SubsumptionData).includes(c)){
+            if (!this.isNodeAccession(c)){
                 continue
             }
             if (allowedChildren.includes(c)){
@@ -3314,7 +3379,7 @@ function GNOmeBrowserBase (DIVID) {
         figure.id = "img_" + gtcid;
         let img = document.createElement("img");
         if (gtcid.startsWith("Query")){
-            img.src = this.ImageComputed[gtcid];
+            img.src = this.ImageComputed["Query"];
         } else {
             img.src = this.ImageURLPrefix + gtcid + this.ImageURLSuffix;
         }
@@ -3588,6 +3653,7 @@ function GNOmeBrowserBase (DIVID) {
         if (this.AllDescendants[acc] !== undefined) {
             return this.AllDescendants[acc];
         }
+        // console.log(acc);
         let res = new Set();
         for (let c of this.AllChildren[acc]) {
             res.add(c);
@@ -3678,7 +3744,7 @@ function GNOmeBrowserBase (DIVID) {
                 nodes[n].type = this.SubsumptionData[n].SubsumptionLevel;
 
                 if (n.startsWith("Query")){
-                    nodes[n].alternativeImageURL = this.ImageComputed[n];
+                    nodes[n].alternativeImageURL = this.ImageComputed["Query"];
                 }
             }
         }
@@ -3939,6 +4005,10 @@ function GNOmeBrowserBase (DIVID) {
             this.SetItemCount(cnts);
             this.SetToScreenA();
         }
+        else if (this.isRestrictionBrowser() && this.GlyTouCanAccessionRegex(acc)) {
+            // console.log("calculating");
+            this.CalculationGO(acc);
+        }
         else{
             let msg = '<br><br><br>';
             if (this.GlyTouCanAccessionRegex(acc)){
@@ -3983,7 +4053,7 @@ function GNOmeBrowserBase (DIVID) {
     }
 
     this.GlyTouCanAccessionRegex = function (acc) {
-        let re = /g|G\d{5}\w{2}/;
+        let re = /^(g|G)\d{5}\w{2}$/;
         return re.test(acc)
     }
 	
@@ -4267,8 +4337,9 @@ function GNOmeCompositionBrowser(DIVID) {
         for (let acc of AllAccession){
 
             let d = RawData[acc];
-            if ( !this.IsAllowedSubsumptionCategory(d.level) ){
-                continue
+            if ( !this.IsAllowedSubsumptionCategory(d.level) ) {
+                this.IUPACCompositionData[acc] = this.ButtonConfigCleanUp(d.count);
+                continue;
             }
 
             let ButtonConfig = this.ButtonConfigCleanUp(d.count);
@@ -4528,7 +4599,7 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
     this.UpdateGNOmeBrowser = function (para) {
 
         if (Object.keys(para).includes('ondemandtaskid')) {
-            GNOmeBrowserX.LoadingCircleShow();
+            GNOmeBrowserX.LoadingCircleShow("Retrieving subsumption alignment...");
             let focus = para.focus || "Query";
             GNOmeBrowserX.SubsumptionRequest("", para.ondemandtaskid, focus);
             GNOmeBrowserX.RefreshUI();
