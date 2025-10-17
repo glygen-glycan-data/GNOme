@@ -897,20 +897,26 @@ let glycanviewer = {
                     };
                 }
             }
+            
+            CreateEntryPrimary("Links:", menuList);
+
+            var nojumpflag = true;
+            var externalLinks = JSON.parse(JSON.stringify(para["contextMenu"]["externalLinks"]));
+
+            var imageurl = {
+                "name": "Glymage",
+                "url_prefix": "https://glymage.glyomics.org/image/snfg/extended/",
+                "url_suffix": ".svg",
+                "glycan_set": undefined,
+            }
+            if (!queryacc) {
+                // console.log(gnome.ImageComputed)
+                imageurl.url_prefix = gnome.ImageComputed['Query'];
+                imageurl.url_suffix = "";
+            }
+            externalLinks.splice(0, 0, imageurl);
+        
             if (queryacc) {
-                CreateEntryPrimary("Links:", menuList);
-
-                var nojumpflag = true;
-                var externalLinks = JSON.parse(JSON.stringify(para["contextMenu"]["externalLinks"]));
-
-                var imageurl = {
-                    "name": "Glymage",
-                    "url_prefix": "https://glymage.glyomics.org/image/snfg/extended/",
-                    "url_suffix": ".svg",
-                    "glycan_set": undefined,
-                }
-                externalLinks.splice(0, 0, imageurl);
-
                 var gnomepurl = {
                     "name": "GNOme",
                     "url_prefix": "http://purl.obolibrary.org/obo/GNO_",
@@ -918,53 +924,63 @@ let glycanviewer = {
                     "glycan_set": undefined,
                 }
                 externalLinks.splice(0, 0, gnomepurl);
+            }
                 
-                for (var externalLink of externalLinks){
-                    var title = externalLink["name"] || "";
-                    var prefix = externalLink["url_prefix"] || "";
-                    var suffix = externalLink["url_suffix"] || "";
-                    var accs = externalLink["glycan_set"];
+            for (var externalLink of externalLinks){
+                var title = externalLink["name"] || "";
+                var prefix = externalLink["url_prefix"] || "";
+                var suffix = externalLink["url_suffix"] || "";
+                var accs = externalLink["glycan_set"];
 
-                    var existFlag = false;
-                    var jumpid = queryacc;
-                    if (accs === undefined){
+                // console.log(accs,title=="GlyTouCan",queryacc)
+                var existFlag = false;
+                var jumpid = queryacc;
+                if (accs === undefined && title != "GlyTouCan") {
+                    existFlag = true;
+                }
+                else if (title == "GlyTouCan") {
+                    if (queryacc !== undefined) {
                         existFlag = true;
+                    } else {
+                        existFlag = false;
                     }
-                    else if (Array.isArray(accs) && accs.includes(queryacc)) {
-                        existFlag = true;
-                    } else if (accs.constructor == Object && accs[queryacc] !== undefined) {
-                        existFlag = true;
-                        jumpid = accs[queryacc];
-                    }
-                    if (!existFlag){
-                        continue
-                    }
-
-                    var entry = CreateEntrySecondary(title, menuList);
-                    entry.name = jumpid;
-                    entry.setAttribute("data-prefix", prefix);
-                    entry.setAttribute("data-suffix", suffix);
-
-                    entry.onclick = function(){
-                        var nodeID = this.name;
-                        var pre = this.getAttribute("data-prefix");
-                        var suf = this.getAttribute("data-suffix");
-                        var externalURL = pre + nodeID + suf;
-                        window.open(externalURL);
-                    };
-
-
+                }
+                else if (Array.isArray(accs) && accs.includes(queryacc)) {
+                    existFlag = true;
+                } 
+                else if (accs.constructor == Object && accs[queryacc] !== undefined) {
+                    existFlag = true;
+                    jumpid = accs[queryacc];
+                }
+                if (!existFlag){
+                    continue
                 }
 
-                if ((gnome.SubsumptionData[queryacc] !== undefined) && (gnome.SubsumptionData[queryacc].Archetype !== undefined) && (gnome.SubsumptionData[queryacc].Archetype != queryacc)) {
-                    CreateEntryPrimary("Focus:", menuList);
-                    var entry =CreateEntrySecondary("Archetype", menuList);
-                    var arch = gnome.SubsumptionData[queryacc].Archetype;
-                    entry.setAttribute("data-jumpacc", arch);
-                    entry.onclick = function (){
-                        var acc = this.getAttribute("data-jumpacc");
-                        gnome.SearchGo(acc);
+                var entry = CreateEntrySecondary(title, menuList);
+                entry.name = jumpid;
+                entry.setAttribute("data-prefix", prefix);
+                entry.setAttribute("data-suffix", suffix);
+
+                entry.onclick = function(){
+                    var nodeID = this.name;
+                    var pre = this.getAttribute("data-prefix");
+                    var suf = this.getAttribute("data-suffix");
+                    var externalURL = pre + suf;
+                    if (nodeID !== undefined) { 
+                        externalURL = pre + nodeID + suf;
                     }
+                    window.open(externalURL);
+                };
+            }
+
+            if ((gnome.SubsumptionData[queryacc] !== undefined) && (gnome.SubsumptionData[queryacc].Archetype !== undefined) && (gnome.SubsumptionData[queryacc].Archetype != queryacc)) {
+                CreateEntryPrimary("Focus:", menuList);
+                var entry =CreateEntrySecondary("Archetype", menuList);
+                var arch = gnome.SubsumptionData[queryacc].Archetype;
+                entry.setAttribute("data-jumpacc", arch);
+                entry.onclick = function (){
+                    var acc = this.getAttribute("data-jumpacc");
+                    gnome.SearchGo(acc);
                 }
             }
 
