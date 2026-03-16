@@ -309786,7 +309786,7 @@
     {
       "glycan_set": null,
       "name": "PubChem",
-      "url_prefix": "https://pubchem.ncbi.nlm.nih.gov/compound/GlyTouCan_",
+      "url_prefix": "https://pubchem.ncbi.nlm.nih.gov/compound/GlyTouCan%3A",
       "url_suffix": ""
     },
     {
