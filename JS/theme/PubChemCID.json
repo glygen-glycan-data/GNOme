@@ -52942,8 +52942,14 @@
         "G99999CQ": "171127085",
         "G99999DC": "124526411"
       },
-      "name": "PubChem",
+      "name": "PubChem (Compound)",
       "url_prefix": "https://pubchem.ncbi.nlm.nih.gov/compound/",
+      "url_suffix": ""
+    },
+    {
+      "glycan_set": null,
+      "name": "PubChem (RefChem)",
+      "url_prefix": "https://pubchem.ncbi.nlm.nih.gov/compound/GlyTouCan%3A",
       "url_suffix": ""
     },
     {
