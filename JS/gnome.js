@@ -4687,6 +4687,15 @@ function GNOmeDisplayPresetFullScreen(GNOmeBrowserX) {
             }
         }
 
+		if (Object.keys(para).includes('externalid')){
+            if (["true", "t", "yes", "y", "on"].includes(para["externalid"].toLowerCase())){
+                GNOmeBrowserX.SetShowExtIDFlag(true);
+            } else if (["false", "f", "no", "n", "off"].includes(para["externalid"].toLowerCase())){
+                GNOmeBrowserX.SetShowExtIDFlag(false);
+            }
+        }
+
+		
         GNOmeBrowserX.UpdateMaxPossibleComp();
 	    GNOmeBrowserX.UpdateMinPossibleComp();
         GNOmeBrowserX.RefreshUI();
