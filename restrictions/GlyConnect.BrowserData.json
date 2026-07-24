@@ -7469,8 +7469,8 @@
     "children": [
       "G02358GX",
       "G02841EM",
-      "G18144ZF",
-      "G65107DM"
+      "G16863TT",
+      "G18144ZF"
     ],
     "count": {
       "Fuc": 2,
@@ -28220,6 +28220,22 @@
     },
     "level": "saccharide",
     "score": 196
+  },
+  "G16863TT": {
+    "children": [
+      "G68800OF"
+    ],
+    "count": {
+      "Fuc": 2,
+      "Gal": 1,
+      "GlcNAc": 5,
+      "Hex": 4,
+      "HexNAc": 5,
+      "Man": 3,
+      "dHex": 2
+    },
+    "level": "topology",
+    "score": 2278
   },
   "G16873YG": {
     "archetype": "G30229IT",
@@ -105876,22 +105892,6 @@
     "level": "composition",
     "score": 8030
   },
-  "G65107DM": {
-    "children": [
-      "G68800OF"
-    ],
-    "count": {
-      "Fuc": 2,
-      "Gal": 1,
-      "GlcNAc": 5,
-      "Hex": 4,
-      "HexNAc": 5,
-      "Man": 3,
-      "dHex": 2
-    },
-    "level": "topology",
-    "score": 2278
-  },
   "G65124UZ": {
     "archetype": "G27866VO",
     "children": [
@@ -161544,5 +161544,5 @@
     "level": "composition",
     "score": 8030
   },
-  "__VERSION__": "v2.6.1"
+  "__VERSION__": "v2.7.0"
 }
