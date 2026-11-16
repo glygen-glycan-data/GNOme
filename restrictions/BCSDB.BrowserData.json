@@ -330,7 +330,6 @@
   },
   "G00803PJ": {
     "children": [
-      "G24276RE",
       "G64260NK",
       "G72079HR"
     ],
@@ -6165,8 +6164,7 @@
     "children": [
       "G01232PN",
       "G30532XG",
-      "G58732VR",
-      "G60184IZ"
+      "G58732VR"
     ],
     "count": {
       "Glc": 4,
@@ -7693,7 +7691,8 @@
   "G63977XF": {
     "archetype": "G62082AD",
     "children": [
-      "G00024MO"
+      "G00024MO",
+      "G41211IT"
     ],
     "count": {
       "Glc": 3,
@@ -8737,6 +8736,7 @@
     "archetype": "G72079HR",
     "children": [
       "G23068LG",
+      "G24276RE",
       "G55699TS",
       "G62288XJ",
       "G93641DP"
@@ -10861,7 +10861,6 @@
       "G14769CB",
       "G28141KV",
       "G37117TJ",
-      "G41211IT",
       "G76044NZ"
     ],
     "count": {
@@ -11446,6 +11445,7 @@
   "G92495JT": {
     "archetype": "G93921SI",
     "children": [
+      "G60184IZ",
       "G87841AX"
     ],
     "count": {
@@ -12526,5 +12526,5 @@
     "level": "saccharide",
     "score": 0
   },
-  "__VERSION__": "v2.7.0"
+  "__VERSION__": "v2.8.0"
 }
